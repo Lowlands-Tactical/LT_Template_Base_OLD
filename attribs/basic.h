@@ -1,0 +1,11 @@
+disabledAI 	= 1;
+ShowGPS 	= 1;
+showCompass	= 1;
+showWatch	= 1;
+aiKills		= 0;
+debriefing	= 1;
+showMap		= 1;
+showUAVFeed 	= 1;
+disableChannels[] 	= [0,2,4,5,6];
+enableItemsDropping 	= 0;
+allowFunctionsRecompile = 1; 
