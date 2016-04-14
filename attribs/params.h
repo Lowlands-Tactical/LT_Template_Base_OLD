@@ -1,7 +1,7 @@
 class Params
 {
 
-	class lt_param_mission_timer
+	class lt_param_timer
 	{
 		title = "Mission safety timer (minutes)";
 		values[] = {0,1,2,3,4,5,6,7,8,9,10,15};
@@ -32,7 +32,7 @@ class Params
 		code = "lt_param_fog = %1";
 	};
 
-	class f_param_timeOfDay
+	class lt_param_timeOfDay
 	{
 		title = "Time of Day";
 		values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25};
