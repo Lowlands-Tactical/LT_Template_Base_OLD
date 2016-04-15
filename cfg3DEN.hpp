@@ -1,5 +1,7 @@
 #include "\a3\3DEN\UI\macros.inc"
 
+class ctrlCombo;
+
 class Cfg3DEN
 {
 	class Attributes

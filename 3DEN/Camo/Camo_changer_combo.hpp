@@ -13,9 +13,9 @@ class LT_Camo_changer_combo: Title
 	class Controls: Controls
 	{
 		class Title: Title{}; // Inherit existing title control. Text of any control with class Title will be changed to attribute displayName
-		class Value: LT_Camo_changer
+		class Value: ctrlCombo
 		{
-			idc = 5691; //LOW1 5=L, 6=O, 9=W, no.1
+			idc = 100; 
 			x = ATTRIBUTE_TITLE_W * GRID_W;
 			w = ATTRIBUTE_CONTENT_W * GRID_W;
 			h = SIZE_M * GRID_H;
@@ -26,6 +26,7 @@ class LT_Camo_changer_combo: Title
 					{
 						text = "Current camouflage";
 						data = "None";
+						default = 1;
 					};
 					class LT_Camo_Desert
 					{
