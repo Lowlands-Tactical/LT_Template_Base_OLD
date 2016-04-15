@@ -1,8 +1,6 @@
-//BlaBla just here for fun
+lt_camo_ARRAY =["None","Infantry_Desert","Infantry_Woodland","Infantry_Support","Infantry_UN_Woodland","Infantry_UN_Desert","Infantry_NFPTAN","Infantry_NFPGREEN","Infantry_WINTER","Infantry_JUNGLE","Infantry_SF","Infantry_SFMTP","Infantry_KM","Infantry_Diver"];
 
-WIS_camo_ARRAY =["None","Infantry_Desert","Infantry_Woodland","Infantry_Support","Infantry_UN_Woodland","Infantry_UN_Desert","Infantry_NFPTAN","Infantry_NFPGREEN","Infantry_WINTER","Infantry_JUNGLE","Infantry_SF","Infantry_SFMTP","Infantry_KM","Infantry_Diver"];
-
-switch (WIS_camo) do {
+switch (LT_camo) do {
 	case "Infantry_Desert": { };
 	case "Infantry_Woodland": { };
 	case "Infantry_Support": { };
