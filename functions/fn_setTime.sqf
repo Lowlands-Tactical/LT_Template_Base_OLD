@@ -14,7 +14,7 @@ private ["_timeOfDay","_date","_now"];
 _timeOfDay = _this select 0;
 
 // Exit when using mission settings
-if ( _timeOfDay == 25 ) exitWith {};
+if ( _timeOfDay == 24 ) exitWith {};
 
 // ====================================================================================
 
