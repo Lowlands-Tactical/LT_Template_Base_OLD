@@ -1,4 +1,4 @@
 class Cfg3DEN
 {
-  #include "3DEN/Camo_changer/Camo_combolist.hpp"
+  #include "3DEN/Camo/Camo_combolist.hpp"
 };
