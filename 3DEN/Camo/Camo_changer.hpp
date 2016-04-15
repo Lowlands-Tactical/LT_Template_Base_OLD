@@ -106,22 +106,10 @@ class Mission
 							};
 							*/
 						};
-						
-						//expression = "_this setVariable [%s,_value];";
+
 						expression = "WIS_Camo = _value;";
- 
-						// Expression called when custom property is undefined yet (i.e., when setting the attribute for the first time)
-						// Entity is passed as _this
-						// Returned value is the default value
-						// Used when no value is returned, or when it's of other type than NUMBER, STRING or ARRAY
-						// Custom attributes of logic entities (e.g., modules) are saved always, even when they have default value
-						defaultValue = "42";
- 
-						//--- Optional properties
-						unique = 0; // When 1, only one entity of the type can have the value in the mission (used for example for variable names or player control)
-						validate = "number"; // Validate the value before saving. Can be "none", "expression", "condition", "number" or "variable"
-						condition = "object"; // Condition for attribute to appear (see the table below)
-						typeName = "NUMBER"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
+						defaultValue = "None";
+						
 					};
 				};
 			};
