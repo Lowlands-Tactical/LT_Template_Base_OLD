@@ -37,11 +37,6 @@ class LT_Camo_changer_combo: Title
 						text = "Woodland camouflage";
 						data = "Woodland";
 					};
-					class LT_Camo_Support
-					{
-						text = "Support outfits";
-						data = "Support";
-					};
 					class LT_Camo_UN_Woodland
 					{
 						text = "UN_Woodland camouflage";
