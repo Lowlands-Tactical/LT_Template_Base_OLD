@@ -109,7 +109,7 @@ class Mission
 
 						expression = "WIS_Camo = _value;";
 						defaultValue = "None";
-						
+            					typeName = "STRING";						
 					};
 				};
 			};
