@@ -8,7 +8,9 @@ class cfgFunctions
     {
       file = "\lt_template_base\functions";
       class printVersion {};
-
+      class setFog {};
+      class setWeather {};
+      class setTime {};
     };
   };
 };
