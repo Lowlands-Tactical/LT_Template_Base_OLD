@@ -17,12 +17,15 @@ class Cfg3DEN
 		#include "3DEN/Camo/Camo_changer_combo.hpp";
 		
 	};
-	class LT_Section
+	class Mission
 	{
-		displayName = "Lowlands Tactical";
-		class AttributeCategories
+		class LT_Section
 		{
-				#include "3DEN/Camo/Camo_changer.hpp"			
+			displayName = "Lowlands Tactical";
+			class AttributeCategories
+			{
+					#include "3DEN/Camo/Camo_changer.hpp"			
+			};
 		};
 	};
 };
