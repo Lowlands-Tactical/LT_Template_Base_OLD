@@ -24,7 +24,7 @@ class Cfg3DEN
 			displayName = "Lowlands Tactical";
 			class AttributeCategories
 			{
-					#include "3DEN/Camo/Camo_changer.hpp"			
+				#include "3DEN/Camo/Camo_changer.hpp"			
 			};
 		};
 	};
