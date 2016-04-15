@@ -3,7 +3,6 @@
 switch (LT_camo_var) do {
 	case "Desert": { };
 	case "Woodland": { };
-	case "Support": { };
 	case "UN_Woodland": { };
 	case "UN_Desert": { };
 	case "NFPTAN": { };
