@@ -16,7 +16,7 @@ class Cfg3DEN
 			};
 		}; 
  
-		#include "3DEN/Camo/Camo_changer_combo.hpp";
+		#include "3DEN\Camo\Camo_changer_combo.hpp"
 		
 	};
 	class Mission
@@ -26,7 +26,7 @@ class Cfg3DEN
 			displayName = "Lowlands Tactical";
 			class AttributeCategories
 			{
-				#include "3DEN/Camo/Camo_changer.hpp"			
+				#include "3DEN\Camo\Camo_changer.hpp"		
 			};
 		};
 	};

@@ -4,22 +4,22 @@ class LT_Camo_changer_combo: Title
 	// Expression called when the control is loaded, used to apply the value
 	// Passed params are: _this - control, _value - saved value
 	attributeLoad = /*"(_this controlsGroupCtrl 100) ctrlSetText _value"*/;
-	
+
 	// Expression called when attributes window is closed and changes confirmed. Used to save the value.
 	// Passed param: _this - control
 	attributeSave = /*"ctrlText (_this controlsGroupCtrl 100)"*/;
-	
+
 	// List of controls, structure is the same as with any other controls group
 	class Controls: Controls
 	{
 		class Title: Title{}; // Inherit existing title control. Text of any control with class Title will be changed to attribute displayName
 		class Value: ctrlCombo
 		{
-			idc = 100; 
+			idc = 100;
 			x = ATTRIBUTE_TITLE_W * GRID_W;
 			w = ATTRIBUTE_CONTENT_W * GRID_W;
 			h = SIZE_M * GRID_H;
-			{
+
 				class Items
 				{
 					class LT_Camo_None
@@ -93,9 +93,9 @@ class LT_Camo_changer_combo: Title
 						text = "Divinggear";
 						data = "DIVER";
 					};
-				};
 				
-				
+
+
 				/* (Will be used when proof that camo changer works) https://community.bistudio.com/wiki/Notification
 				// Dynamically loaded items
 				class ItemsConfig
