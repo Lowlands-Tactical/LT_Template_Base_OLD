@@ -11,3 +11,9 @@ player switchMove "AmovPercMstpSrasWrflDnon_AmovPercMstpSlowWrflDnon";
 
 // Start with Earbuds in
 player setVariable ["ACE_hasEarPlugsIn", true, true];
+
+// Disable saving ever.
+enableSaving [false, false];
+
+// Fuck you
+enableSentences false;
