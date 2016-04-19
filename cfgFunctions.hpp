@@ -11,6 +11,7 @@ class cfgFunctions
       class setFog {};
       class setWeather {};
       class setTime {};
+      class changeBackpack {};
     };
   };
 };
