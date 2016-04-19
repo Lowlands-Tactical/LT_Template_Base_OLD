@@ -1,6 +1,7 @@
-//#include "\a3\3DEN\UI\macros.inc"
+#include "\a3\3DEN\UI\macros.inc"
 
 class ctrlCombo;
+class ctrlEdit;
 
 class Cfg3DEN
 {
@@ -14,21 +15,21 @@ class Cfg3DEN
 			{
 				class Title;
 			};
-		}; 
- 
-		#include "3DEN\Camo\Camo_changer_combo.hpp"
-		
+		};
+
+		#include "3DEN\Camo\Camo_combo.hpp"
+		//#include "3DEN\Gear\Gear_combo.hpp"
+
 	};
 	class Mission
 	{
-		class LT_Section
+		class Scenario
 		{
-			displayName = "Lowlands Tactical";
 			class AttributeCategories
 			{
-				#include "3DEN\Camo\Camo_changer.hpp"		
+						#include "3DEN\Camo\Camo.hpp"
+						//#include "3DEN\Gear\Gear.hpp"
 			};
 		};
 	};
 };
-
