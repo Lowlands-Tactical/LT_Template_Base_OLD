@@ -1,4 +1,4 @@
-#include "\a3\3DEN\UI\macros.inc"
+#include "3DEN\macros.inc"
 
 class ctrlCombo;
 class ctrlEdit;
