@@ -17,63 +17,63 @@ class LT_Camo_combo: Title
 			{
 				class LT_Camo_None
 				{
-					text = "Current camouflage";
+					text = "None";
 					data = "None";
 					default = 1;
 				};
 				class LT_Camo_Desert
 				{
-					text = "Desert camouflage";
+					text = "Desert";
 					data = "DST";
 				};
 				class LT_Camo_Woodland
 				{
-					text = "Woodland camouflage";
+					text = "Woodland";
 					data = "WLD";
 				};
 				class LT_Camo_UN_Woodland
 				{
-					text = "UN_Woodland camouflage";
+					text = "UN (Woodland)";
 					data = "UN";
 				};
 				class LT_Camo_UN_Desert
 				{
-					text = "UN_Desert camouflage";
+					text = "UN (Desert)";
 					data = "UND";
 				};
 				class LT_Camo_NFPTAN
 				{
-					text = "NFPTAN camouflage";
+					text = "NFP-TAN";
 					data = "NFPT";
 				};
 				class LT_Camo_NFPGREEN
 				{
-					text = "NFPGREEN camouflage";
+					text = "NFP-GREEN";
 					data = "NFPG";
 				};
 				class LT_Camo_WINTER
 				{
-					text = "Winter camouflage";
+					text = "Winter";
 					data = "WTR";
 				};
 				class LT_Camo_JUNGLE
 				{
-					text = "Jungle camouflage";
+					text = "Jungle";
 					data = "JGL";
 				};
 				class LT_Camo_SF
 				{
-					text = "Special forces camouflage";
+					text = "Special Forces Black";
 					data = "SF";
 				};
 				class LT_Camo_SFMTP
 				{
-					text = "Special forces MTP camouflage";
+					text = "Special forces MTP";
 					data = "SFMTP";
 				};
 				class LT_Camo_KM
 				{
-					text = "Koninklijke marine camouflage";
+					text = "Koninklijke Marine";
 					data = "KM";
 				};
 			};
