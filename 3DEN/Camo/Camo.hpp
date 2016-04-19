@@ -1,8 +1,8 @@
 // The following structure is the same as the one used for entity attributes
 class LT_Category
 {
-	displayname = "Lowlands Tactical scenario settings";
-	collapsed 	= 1;
+	displayname = "Lowlands Tactical: Scenario Settings";
+	collapsed 	= 0;
 	class Attributes
 	{
 		class LT_Camo_changer
