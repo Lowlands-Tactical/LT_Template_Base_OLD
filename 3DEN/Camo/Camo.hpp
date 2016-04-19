@@ -1,5 +1,5 @@
 // The following structure is the same as the one used for entity attributes
-class LT_Catagory
+class LT_Category
 {
 	displayname = "Lowlands Tactical scenario settings";
 	collapsed 	= 1;
