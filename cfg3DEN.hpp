@@ -18,7 +18,9 @@ class Cfg3DEN
 		};
 
 		#include "3DEN\Camo\Camo_combo.hpp"
-		
+
+		#include "3DEN\TFR\TFR_combo.hpp"
+
 	};
 	class Mission
 	{
@@ -27,8 +29,16 @@ class Cfg3DEN
 			class AttributeCategories
 			{
 
+				class LT_Category
+				{
+					displayname = "Lowlands Tactical: Scenario Settings";
+					collapsed 	= 0;
+					class Attributes
+					{
 						#include "3DEN\Camo\Camo.hpp"
-
+						#include "3DEN\TFR\TFR.hpp"
+					};
+				};
 			};
 		};
 	};
