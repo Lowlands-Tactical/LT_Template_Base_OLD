@@ -18,8 +18,7 @@ class Cfg3DEN
 		};
 
 		#include "3DEN\Camo\Camo_combo.hpp"
-		//#include "3DEN\Gear\Gear_combo.hpp"
-
+		
 	};
 	class Mission
 	{
@@ -27,8 +26,9 @@ class Cfg3DEN
 		{
 			class AttributeCategories
 			{
+
 						#include "3DEN\Camo\Camo.hpp"
-						//#include "3DEN\Gear\Gear.hpp"
+
 			};
 		};
 	};
