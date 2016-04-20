@@ -6,8 +6,14 @@ class CfgPatches {
 		requiredAddons[] = {"A3_Characters_F_BLUFOR"};
 		author[] = {"Lowlands Tactical"};
 		authorUrl = "http://lowtac.nl/";
+		version = "20160421";
+		versionAr[] = {2016,04,21};
+		versionStr = "v20160421";
+		mail = "staff@lowtac.nl";
+		fileName = "lt_template_base.pbo";
 	};
 };
 
 #include "cfgFunctions.hpp"
 #include "cfg3DEN.hpp"
+#include "adminMenu.hpp"
