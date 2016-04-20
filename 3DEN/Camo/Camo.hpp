@@ -4,7 +4,7 @@ class LT_Camo_changer
 		tooltip = "Choose the camouflage the units will have";
 		property = "LT_camo_selector_id";
 		control = "LT_Camo_combo";
-		expression = "LT_Camo_var = _value;";
+		expression = "LT_Camo_var = _value; publicvariable 'LT_Camo_var'";
 		defaultValue = "None";
 		typeName = "STRING";
 	};
