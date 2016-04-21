@@ -18,8 +18,8 @@ class Cfg3DEN
 		};
 
 		#include "3DEN\Camo\Camo_combo.hpp"
-
 		#include "3DEN\TFR\TFR_combo.hpp"
+		#include "3DEN\Roles\Role_combo.hpp"
 
 	};
 	class Mission
@@ -38,6 +38,22 @@ class Cfg3DEN
 						#include "3DEN\Camo\Camo.hpp"
 						#include "3DEN\TFR\TFR.hpp"
 					};
+				};
+			};
+		};
+	};
+	class Object
+	{
+		class AttributeCategories
+		{
+			class LT_Object_Category
+			{
+				displayName = "Lowlands Tactical: Objectsettings"; 
+				collapsed = 1; 
+				class Attributes
+				{
+					#include "3DEN\Roles\Role_selector.hpp"
+					#include "3DEN\Camo\Camo_exclude_unit.hpp"
 				};
 			};
 		};
