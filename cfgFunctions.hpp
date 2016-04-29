@@ -12,6 +12,10 @@ class cfgFunctions
       class setWeather {};
       class setTime {};
       class changeBackpack {};
+	  class setGear {
+		  postInit = 1;
+	  };
+    class checkClassExist {};
     };
   };
 };

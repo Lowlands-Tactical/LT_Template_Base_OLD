@@ -1,7 +1,7 @@
 class LT_role_selector
 {
 	displayName = "Select role";
-	tooltip = "Configure all the things!";
+	tooltip = "Configure the role of this unit";
 	property = "LT_role_combo_ID";
 	control = "LT_role_combo";
 	expression = "_this setVariable ['LT_unit_role',_value];";

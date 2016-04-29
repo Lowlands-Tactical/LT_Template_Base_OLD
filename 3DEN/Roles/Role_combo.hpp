@@ -15,12 +15,13 @@ class LT_role_combo: Title
 			x = ATTRIBUTE_TITLE_W * GRID_W;
 			w = ATTRIBUTE_CONTENT_W * GRID_W;
 			h = SIZE_M * GRID_H;
-			
+
 			class Items
 			{
 				class LT_Role_custom {
 					text = "Custom role (via arsenal)";
 					data = "custom";
+					default = 1;
 				};
 				class LT_Role_CO {
 					text = "Commander";
@@ -34,19 +35,19 @@ class LT_role_combo: Title
 					data = "m";
 					text = "Medic";
 				};
-				class LT_Role_FTL {		
+				class LT_Role_FTL {
 					data = "ftl";
 					text = "Fire team leader";
 				};
-				class LT_Role_AR {	
+				class LT_Role_AR {
 					data = "ar";
 					text = "Automatic rifleman";
 				};
-				class LT_Role_AAR {	
+				class LT_Role_AAR {
 					data = "aar";
 					text = "Assistant automatic rifleman";
 				};
-				class LT_Role_RAT {		
+				class LT_Role_RAT {
 					data = "rat";
 					text = "Rifleman (AT)";
 				};
@@ -54,15 +55,15 @@ class LT_role_combo: Title
 					data = "dm";
 					text = "Designated marksman";
 				};
-				class LT_Role_MMGG {		
+				class LT_Role_MMGG {
 					data = "mmgg";
 					text = "Medium mg gunner";
 				};
-				class LT_Role_MMGAG {		
+				class LT_Role_MMGAG {
 					data = "mmgag";
 					text = "Medium mg assistant";
 				};
-				class LT_Role_MATG {		
+				class LT_Role_MATG {
 					data = "matg";
 					text = "Medium AT gunner";
 				};
@@ -86,39 +87,39 @@ class LT_role_combo: Title
 					data = "vg";
 					text = "Vehicle gunner";
 				};
-				class LT_Role_VD {		
+				class LT_Role_VD {
 					data = "vd";
 					text = "Vehicle driver (repair)";
 				};
-				class LT_Role_PP {	
+				class LT_Role_PP {
 					data = "pp";
 					text = "Air vehicle pilot / co-pilot";
 				};
-				class LT_Role_PCC {		
+				class LT_Role_PCC {
 					data = "pcc";
 					text = "Air vehicle co-pilot (repair) / crew chief (repair)";
 				};
-				class LT_Role_PC {		
+				class LT_Role_PC {
 					data = "pc";
 					text = "Air vehicle crew";
 				};
-				class LT_Role_ENG {		
+				class LT_Role_ENG {
 					data = "eng";
 					text = "Engineer (demo)";
 				};
-				class LT_Role_ENGM {		
+				class LT_Role_ENGM {
 					data = "engm";
 					text = "Engineer (mines)";
 				};
-				class LT_Role_UAV {		
+				class LT_Role_UAV {
 					data = "uav";
 					text = "UAV operator";
 				};
-				class LT_Role_DIV {		
+				class LT_Role_DIV {
 					data = "div";
 					text = "Divers";
 				};
-				class LT_Role_R {		
+				class LT_Role_R {
 					data = "r";
 					text = "Rifleman";
 				};
@@ -130,7 +131,7 @@ class LT_role_combo: Title
 					data = "smg";
 					text = "Submachinegunner";
 				};
-				class LT_Role_GREN {		
+				class LT_Role_GREN {
 					data = "gren";
 					text = "Grenadier";
 				};

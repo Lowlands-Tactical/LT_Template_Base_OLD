@@ -42,5 +42,11 @@ class Params
 		isGlobal = 0;						// Execute this only on the server
 		code = "lt_param_timeOfDay = %1";
 	};
-
+	class lt_nvg_onoff
+	{
+		titles = "Units have NVG's";
+		values[] = {0,1};
+		texts[] = {"Yes", "No"};
+		default = 0;
+	};
 };
