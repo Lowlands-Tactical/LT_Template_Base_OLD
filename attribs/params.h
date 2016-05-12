@@ -46,7 +46,7 @@ class Params
 	{
 		titles = "Units have NVG's";
 		values[] = {0,1};
-		texts[] = {"Yes", "No"};
-		default = 0;
+		texts[] = {"No", "Yes"};
+		default = 1;
 	};
 };

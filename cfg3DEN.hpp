@@ -48,8 +48,8 @@ class Cfg3DEN
 		{
 			class LT_Object_Category
 			{
-				displayName = "Lowlands Tactical: Objectsettings"; 
-				collapsed = 1; 
+				displayName = "Lowlands Tactical: Soldier settings";
+				collapsed = 0;
 				class Attributes
 				{
 					#include "3DEN\Roles\Role_selector.hpp"
