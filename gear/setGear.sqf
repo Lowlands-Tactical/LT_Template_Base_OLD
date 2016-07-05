@@ -153,7 +153,6 @@ _DMriflemag = "CUP_5Rnd_86x70_L115A1";
 
 // Rifleman AT
 _RAT = "NLD_AT4";
-_RATmag = "CUP_M136_M";
 
 // Medium AT
 _MAT = "launch_NLAW_F";
@@ -213,8 +212,6 @@ if !( _role IN _vehicles) then {
 	_unit linkItem "ItemWatch";				// Add and equip a watch
 	_unit addItem "ACE_MapTools";			// Add MapTools
 	_unit addItem "ACE_Flashlight_XL50";	// Add Flashlight XL50
-	_unit addItem "ItemcTabHCam";
-	_unit addItem "ItemAndroid";
 
 };
 // ====================================================================================
@@ -377,7 +374,6 @@ switch (_role) do
 		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
-		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
 		_unit addweapon _RAT;
 
 	};
@@ -523,12 +519,9 @@ switch (_role) do
 	{
 		_unit addmagazines [_carbinemag,7];
 		_unit addweapon _carbine;
-		//["hatg"] call _backpack;
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-
 		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 2];
 		_unit addWeapon _HAT;
-
 	};
 
 // LOADOUT: HEAVY AT ASSISTANT GUNNER
@@ -541,10 +534,8 @@ switch (_role) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,1];
-
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 2];
-
 	};
 
 // LOADOUT: MORTAR GUNNER
@@ -556,9 +547,7 @@ switch (_role) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,1];
-		//["mtrg"] call _backpack;
 		_unit addBackpack _bagmtrg;
-
 	};
 
 // LOADOUT: MORTAR ASSISTANT GUNNER
@@ -571,17 +560,13 @@ switch (_role) do
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,1];
 		_unit addWeapon "ACE_Yardage450";
-		//["mtrag"] call _backpack;
 		_unit addBackpack _bagmtrag;
-
 	};
 
 // LOADOUT: MEDIUM SAM GUNNER
 	case "msamg":
 	{
-		//["msamg"] call _backpack;
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-
 		(unitBackpack _unit) addMagazineCargoGlobal [_SAMmag, 2];
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
@@ -601,11 +586,8 @@ switch (_role) do
 		_unit addWeapon "ACE_Yardage450";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,1];
-		//["msamag"] call _backpack;
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-
 		(unitBackpack _unit) addMagazineCargoGlobal [_SAMmag, 2];
-
 	};
 
 // LOADOUT: HEAVY SAM GUNNER
@@ -617,9 +599,7 @@ switch (_role) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,1];
-		//["hsamg"] call _backpack;
 		_unit addBackpack _baghsamg;
-
 	};
 
 // LOADOUT: HEAVY SAM ASSISTANT GUNNER
@@ -632,9 +612,7 @@ switch (_role) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,1];
-		//["hsamag"] call _backpack;
 		_unit addBackpack _baghsamag;
-
 	};
 
 // LOADOUT: SNIPER
@@ -646,7 +624,6 @@ switch (_role) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_attachments = [_scope3];
-
 	};
 
 // LOADOUT: SPOTTER
@@ -664,7 +641,6 @@ switch (_role) do
 		_unit addItem "ACE_SpottingScope";
 		_unit addItem "ACE_RangeCard";
 		_unit addItem "ACE_Kestrel4500";
-
 	};
 
 // LOADOUT: VEHICLE COMMANDER
@@ -686,9 +662,8 @@ switch (_role) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
-		//["cc"] call _backpack;
-		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 
+		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addItemCargoGlobal ["ToolKit",1];
 
 	};
@@ -890,7 +865,6 @@ switch (_role) do
 		_unit addMagazineCargoGlobal [_glriflemag, 8];
 		_unit addMagazineCargoGlobal [_carbinemag, 10];
 		_unit addMagazineCargoGlobal [_armag, 5];
-		_unit addMagazineCargoGlobal [_ratmag, 1];
 		_unit addMagazineCargoGlobal [_grenade, 4];
 		_unit addMagazineCargoGlobal [_smokegrenade, 4];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
@@ -911,7 +885,6 @@ switch (_role) do
 		_unit addMagazineCargoGlobal [_glriflemag, 40];
 		_unit addMagazineCargoGlobal [_carbinemag, 40];
 		_unit addMagazineCargoGlobal [_armag, 22];
-		_unit addMagazineCargoGlobal [_ratmag, 6];
 		_unit addMagazineCargoGlobal [_grenade, 12];
 		_unit addmagazineCargoGlobal [_mgrenade,12];
 		_unit addMagazineCargoGlobal [_smokegrenade, 12];
