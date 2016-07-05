@@ -1,10 +1,9 @@
 //#define pixelW  (1 / (getResolution select 2))
 //#define pixelH  (1 / (getResolution select 3))
-#define pixelScale	1.25
-#define pixelGrid 4
+#define pixelScale	0.25
 
-#define GRID_W (pixelW * pixelScale * pixelGrid)
-#define GRID_H (pixelH * pixelScale * pixelGrid)
+#define GRID_W (pixelW * pixelGrid * pixelScale)
+#define GRID_H (pixelH * pixelGrid * pixelScale)
 
 #define CENTER_X	((getResolution select 2) * 0.5 * pixelW)
 #define CENTER_Y	((getResolution select 3) * 0.5 * pixelH)
@@ -27,6 +26,7 @@
 // Fonts
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #define FONT_NORMAL			"RobotoCondensedLight"
+#define FONT_SEMIBOLD			"RobotoCondensed"
 #define FONT_BOLD			"RobotoCondensedBold"
 #define FONT_THIN			"RobotoCondensedLight"
 #define FONT2_NORMAL			"PuristaMedium"
@@ -48,7 +48,7 @@
 #define SIZEEX_L	5.0
 #define SIZEEX_XL	6.0
 
-#define SIZE_XS	3
+#define SIZE_XS	3.5
 #define SIZE_S	4
 #define SIZE_M	5
 #define SIZE_L	5
@@ -92,6 +92,15 @@
 
 #define COLOR_POSZ_RGB	0.26,	0.52,	0.92
 #define COLOR_POSZ_RGBA	COLOR_POSZ_RGB, 1
+
+#define COLOR_NOTE_DEFAULT_RGB	0.12549,	0.505882,	0.313726
+#define COLOR_NOTE_DEFAULT_RGBA	COLOR_NOTE_DEFAULT_RGB,	0.9
+
+#define COLOR_NOTE_WARNING_RGB	0.8,		0.35,		0
+#define COLOR_NOTE_WARNING_RGBA	COLOR_NOTE_WARNING_RGB,	0.9
+
+#define COLOR_NOTE_ERROR_RGB	0.815686,	0.266667,	0.215686
+#define COLOR_NOTE_ERROR_RGBA	COLOR_NOTE_ERROR_RGB,	0.9
 
 //--- BLUFOR
 #define COLOR_WEST_R		"(profilenamespace getvariable ['Map_BLUFOR_R',0])"
