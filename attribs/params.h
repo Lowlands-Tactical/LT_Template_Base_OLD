@@ -3,7 +3,7 @@ class Params
 
 	class lt_param_timer
 	{
-		title = "Mission safety timer (minutes)";
+		title = "Mission safety timer (minutes) NOT IMPLEMENTED";
 		values[] = {0,1,2,3,4,5,6,7,8,9,10,15};
 		texts[] = {"No timer","1","2","3","4","5","6","7","8","9","10","15"};
 		default = 5;
@@ -44,7 +44,7 @@ class Params
 	};
 	class lt_nvg_onoff
 	{
-		titles = "Units have NVG's";
+		title = "Units have NVG's";
 		values[] = {0,1};
 		texts[] = {"No", "Yes"};
 		default = 1;
