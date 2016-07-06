@@ -7,7 +7,7 @@ if (lt_tfr_var == "1") then {
 
   // diag_log format["TFR is on with the role: %1",_role];
 
-  if (lt_camo_var != "None") then {
+  if (lt_camo_var != "None" and _role in _roles) then {
 
     _dst = ["DST","UND","NFPT"];
     _wdl = ["WLD","UN","NFPG","WTR","JGL","SF","SFMTP","KM"];
