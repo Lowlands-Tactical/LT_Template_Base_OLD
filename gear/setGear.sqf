@@ -8,6 +8,7 @@ diag_log format ["*-* role is %1 and exclude is %2*-*",_role, _exclude];
 
 if (_role == "custom") exitwith {};
 
+#include "setItems.sqf"
 
 // ADD UNIVERSAL ITEMS
 // Add items universal to all units of this faction

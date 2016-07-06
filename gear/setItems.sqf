@@ -118,6 +118,7 @@ _dagr = "ACE_DAGR";
 _spotting_scope = "ACE_SpottingScope";
 _rangecard = "ACE_RangeCard";
 _kestrel = "ACE_Kestrel4500";
+_gps = "ItemGPS";
 
 // Backpacks
 _bag 		= IF(lt_camo_var == "None") then {"NLD_WLD_Carryall_Empty"} else {[(format ["NLD?_%1_Carryall_Empty", lt_camo_var])	,"NLD_WLD_Carryall_Empty","CfgVehicles"] call LT_fnc_checkClassExist;};
