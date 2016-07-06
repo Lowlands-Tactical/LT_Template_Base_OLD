@@ -12,6 +12,8 @@ class cfgFunctions
       class setWeather {};
       class setTime {};
       class changeBackpack {};
+      class changeVest {};
+      class changeUniform {};
       class checkClassExist {};
     };
   };
