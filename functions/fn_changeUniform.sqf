@@ -1,5 +1,5 @@
-// Change the backpack of a (local) unit.
-// Example: null = [player,"lt_tfr_dst"] call lt_fnc_changeBackpack;
+// Change the Uniform of a (local) unit.
+// Example: null = [player,"nld_camo_wld"] call lt_fnc_changeUniform;
 
 private ["_unit","_type","_UniformItems", "_LinkedItems"];
 
