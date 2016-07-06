@@ -95,6 +95,10 @@ _smokegrenadegreen = "SmokeShellGreen";
 // misc medical items.
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
+_bandages = "ACE_fieldDressing";
+_morphine = "ACE_morphine";
+_epinephrine = "ACE_epinephrine";
+_bloodbags = "ACE_bloodIV";
 
 // Night Vision Goggles (NVGoggles)
 _nvg = "ACE_NVG_Wide";
@@ -111,14 +115,29 @@ _chemblue = "Chemlight_blue";
 // Other items
 _cigarette = "murshun_cigs_lighter";
 _minedetector = "MineDetector";
-_binoculars = "ACE_Yardage450";
-_vector = "ACE_Vector";
-_trag = "ACE_ATragMX";
+
+_rangefinder = "ACE_Yardage450";
+_advancedbinoculars = "ACE_Vector";
+_simplebinoculars = "Binocular";
+
+_atragmx = "ACE_ATragMX";
 _dagr = "ACE_DAGR";
 _spotting_scope = "ACE_SpottingScope";
 _rangecard = "ACE_RangeCard";
 _kestrel = "ACE_Kestrel4500";
+
 _gps = "ItemGPS";
+_telephone = "ItemAndroid";
+
+_toolkit = "ToolKit";
+_clacker = "ACE_Clacker";
+
+_maptools = "ACE_MapTools";
+_mapflashlight = "ACE_Flashlight_XL50";
+_map = "ItemMap";			
+_compass = "ItemCompass";			
+_radio = "ItemRadio";				
+_watch = "ItemWatch";		
 
 // Backpacks
 _bag 		= IF(lt_camo_var == "None") then {"NLD_WLD_Carryall_Empty"} else {[(format ["NLD?_%1_Carryall_Empty", lt_camo_var])	,"NLD_WLD_Carryall_Empty","CfgVehicles"] call LT_fnc_checkClassExist;};

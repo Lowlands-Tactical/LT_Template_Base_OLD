@@ -28,20 +28,20 @@ if !( _role IN _vehicles) then {
 
 	_nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
 	if ( _nvg_enabled == 1 ) then { _unit linkItem _nvg; };
-	_unit addItem "ACE_fieldDressing";
-	_unit addItem "ACE_fieldDressing";
-	_unit addItem "ACE_fieldDressing";
-	_unit addItem "ACE_fieldDressing";
-	_unit addItem "ACE_fieldDressing";
-	_unit addItem "ACE_fieldDressing";
-	_unit addItem "ACE_morphine";
-	_unit addItem "ACE_morphine";
-	_unit linkItem "ItemMap";				// Add and equip the map
-	_unit linkItem "ItemCompass";			// Add and equip a compass
-	_unit linkItem "ItemRadio";				// Add and equip A3's default radio
-	_unit linkItem "ItemWatch";				// Add and equip a watch
-	_unit addItem "ACE_MapTools";			// Add MapTools
-	_unit addItem "ACE_Flashlight_XL50";	// Add Flashlight XL50
+	_unit addItem _bandages;
+	_unit addItem _bandages;
+	_unit addItem _bandages;
+	_unit addItem _bandages;
+	_unit addItem _bandages;
+	_unit addItem _bandages;
+	_unit addItem _morphine;
+	_unit addItem _morphine;
+	_unit linkItem _map;				// Add and equip the map
+	_unit linkItem _compass;			// Add and equip a compass
+	_unit linkItem _radio;				// Add and equip A3's default radio
+	_unit linkItem _watch;				// Add and equip a watch
+	_unit addItem _maptools;			// Add MapTools
+	_unit addItem _mapflashlight;	// Add Flashlight XL50
 
 };
 // ====================================================================================
@@ -67,8 +67,8 @@ switch (_role) do
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "ACE_Yardage450";
-		_unit addItem "murshun_cigs_lighter";
+		_unit addWeapon _rangefinder;
+		_unit addItem _cigarette;
 
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
@@ -93,8 +93,8 @@ switch (_role) do
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "ACE_Yardage450";
-		_unit addItem "murshun_cigs_lighter";
+		_unit addWeapon _rangefinder;
+		_unit addItem _cigarette;
 
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
@@ -113,10 +113,10 @@ switch (_role) do
 		_unit addmagazines [_smokegrenade,4];
 
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-		(unitBackpack _unit) addItemCargoGlobal ["ACE_fieldDressing",30];
-		(unitBackpack _unit) addItemCargoGlobal ["ACE_morphine",15];
-		(unitBackpack _unit) addItemCargoGlobal ["ACE_epinephrine",10];
-		(unitBackpack _unit) addItemCargoGlobal ["ACE_bloodIV",5];
+		(unitBackpack _unit) addItemCargoGlobal [_bandages,30];
+		(unitBackpack _unit) addItemCargoGlobal [_morphine,15];
+		(unitBackpack _unit) addItemCargoGlobal [_epinephrine,10];
+		(unitBackpack _unit) addItemCargoGlobal [_bloodbags,5];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
 		(unitBackpack _unit) addItemCargoGlobal [_firstaid, 4];
 	};
@@ -133,8 +133,8 @@ switch (_role) do
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "ACE_Yardage450";
-		_unit addItem "murshun_cigs_lighter";
+		_unit addWeapon _rangefinder;
+		_unit addItem _cigarette;
 
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
@@ -143,7 +143,7 @@ switch (_role) do
 		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
-		(unitBackpack _unit) addItemCargoGlobal ["ItemAndroid",1];
+		(unitBackpack _unit) addItemCargoGlobal [_telephone,1];
 
 	};
 
@@ -178,7 +178,7 @@ switch (_role) do
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_mgrenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "Binocular";
+		_unit addWeapon _simplebinoculars;
 		//["aar"] call _backpack;
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 4];
@@ -218,18 +218,18 @@ switch (_role) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _advancedbinoculars;
 
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addMagazineCargoGlobal [_DMriflemag, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
-		(unitBackpack _unit) addItemCargoGlobal ["ACE_ATragMX",1];
-		(unitBackpack _unit) addItemCargoGlobal ["ACE_DAGR",1];
-		(unitBackpack _unit) addItemCargoGlobal ["ACE_SpottingScope",1];
-		(unitBackpack _unit) addItemCargoGlobal ["ACE_RangeCard",1];
-		(unitBackpack _unit) addItemCargoGlobal ["ACE_Kestrel4500",1];
+		(unitBackpack _unit) addItemCargoGlobal [_atragmx,1];
+		(unitBackpack _unit) addItemCargoGlobal [_dagr,1];
+		(unitBackpack _unit) addItemCargoGlobal [_spotting_scope,1];
+		(unitBackpack _unit) addItemCargoGlobal [_rangecard,1];
+		(unitBackpack _unit) addItemCargoGlobal [_kestrel,1];
 		_attachments = [_attach1,_scope2];
 	};
 
@@ -258,7 +258,7 @@ switch (_role) do
 		_unit addmagazines [_riflemag,7];
 		_unit addmagazines [_riflemag_tr,2];
 		_unit addweapon _rifle;
-		_unit addWeapon "ACE_Yardage450";
+		_unit addWeapon _rangefinder;
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_mgrenade,2];
 		_unit addmagazines [_smokegrenade,2];
@@ -294,7 +294,7 @@ switch (_role) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Yardage450";
+		_unit addWeapon _rangefinder;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,1];
@@ -329,7 +329,7 @@ switch (_role) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Yardage450";;
+		_unit addWeapon _rangefinder;;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,2];
@@ -360,7 +360,7 @@ switch (_role) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Yardage450";
+		_unit addWeapon _rangefinder;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,1];
@@ -389,7 +389,7 @@ switch (_role) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,1];
-		_unit addWeapon "ACE_Yardage450";
+		_unit addWeapon _rangefinder;
 		_unit addBackpack _bagmtrag;
 	};
 
@@ -413,7 +413,7 @@ switch (_role) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Yardage450";
+		_unit addWeapon _rangefinder;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,1];
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
@@ -438,7 +438,7 @@ switch (_role) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Yardage450";
+		_unit addWeapon _rangefinder;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,1];
@@ -465,12 +465,12 @@ switch (_role) do
 		_unit addmagazines [_glsmokewhite,4];
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "ACE_Vector";
-		_unit addItem "ACE_ATragMX";
-		_unit addItem "ACE_DAGR";
-		_unit addItem "ACE_SpottingScope";
-		_unit addItem "ACE_RangeCard";
-		_unit addItem "ACE_Kestrel4500";
+		_unit addWeapon _advancedbinoculars;
+		_unit addItem _atragmx;
+		_unit addItem _dagr;
+		_unit addItem _spotting_scope;
+		_unit addItem _rangecard;
+		_unit addItem _kestrel;
 	};
 
 // LOADOUT: VEHICLE COMMANDER
@@ -479,9 +479,9 @@ switch (_role) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
-		_unit addWeapon "ACE_Yardage450";
+		_unit addItem _gps;
+		_unit assignItem _gps;
+		_unit addWeapon _rangefinder;
 	};
 
 // LOADOUT: VEHICLE DRIVER
@@ -490,11 +490,11 @@ switch (_role) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit addItem _gps;
+		_unit assignItem _gps;
 
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-		(unitBackpack _unit) addItemCargoGlobal ["ToolKit",1];
+		(unitBackpack _unit) addItemCargoGlobal [_toolkit,1];
 
 	};
 
@@ -504,8 +504,8 @@ switch (_role) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit addItem _gps;
+		_unit assignItem _gps;
 	};
 
 // LOADOUT: AIR VEHICLE PILOTS
@@ -514,8 +514,8 @@ switch (_role) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
+		_unit addItem _gps;
+		_unit assignItem _gps;
 	};
 
 // LOADOUT: AIR VEHICLE CREW CHIEF
@@ -527,7 +527,7 @@ switch (_role) do
 		//["cc"] call _backpack;
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 
-		(unitBackpack _unit) addItemCargoGlobal ["ToolKit",1];
+		(unitBackpack _unit) addItemCargoGlobal [_toolkit,1];
 
 	};
 
@@ -548,12 +548,12 @@ switch (_role) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_satchel,2];
-		_unit addItem "MineDetector";
+		_unit addItem _minedetector;
 		//["eng"] call _backpack;
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 
-		(unitBackpack _unit) addItemCargoGlobal ["ToolKit",1];
-		(unitBackpack _unit) addItemCargoGlobal ["ACE_Clacker",1];
+		(unitBackpack _unit) addItemCargoGlobal [_toolkit,1];
+		(unitBackpack _unit) addItemCargoGlobal [_clacker,1];
 		(unitBackpack _unit) addItemCargoGlobal [_satchel,2];
 	};
 
@@ -566,13 +566,13 @@ switch (_role) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_APmine2,2];
-		_unit addItem "MineDetector";
+		_unit addItem _minedetector;
 		//["engm"] call _backpack;
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 
-		(unitBackpack _unit) addItemCargoGlobal ["ToolKit",1];
+		(unitBackpack _unit) addItemCargoGlobal [_toolkit,1];
 		(unitBackpack _unit) addMagazineCargoGlobal [_ATmine,1];
-		(unitBackpack _unit) addItemCargoGlobal ["ACE_Clacker",1];
+		(unitBackpack _unit) addItemCargoGlobal [_clacker,1];
 
 	};
 
