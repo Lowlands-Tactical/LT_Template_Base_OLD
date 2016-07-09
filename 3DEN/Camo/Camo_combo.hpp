@@ -15,70 +15,76 @@ class LT_Camo_combo: Title
 			x = ATTRIBUTE_TITLE_W * GRID_W;
 			w = ATTRIBUTE_CONTENT_W * GRID_W;
 			h = SIZE_M * GRID_H;
-
+			
 			class Items
 			{
 				class LT_Camo_None
 				{
 					text = "None";
-					data = "None";
+					data = ["None","None","None","None","None"];
 					default = 1;
 				};
 				class LT_Camo_Desert
 				{
 					text = "Desert";
-					data = "DST";
+					data =  ["NLD_DST_Camo","NLD_DST_Vest","NLD_DST_Carryall_Empty","NLD_DST_Helmet","lt_tfr_dst"];
 				};
 				class LT_Camo_Woodland
 				{
 					text = "Woodland";
-					data = "WLD";
+					data = ["NLD_WLD_Camo","NLD_WLD_Vest","NLD_WLD_Carryall_Empty","NLD_WLD_Helmet","lt_tfr_wdl"];
 				};
 				class LT_Camo_UN_Woodland
 				{
 					text = "UN (Woodland)";
-					data = "UN";
+					data = ["NLD_WLD_Camo","NLD_UN_Vest","NLD_WLD_Carryall_B","NLD_UN_Helmet","lt_tfr_wdl"];
 				};
 				class LT_Camo_UN_Desert
 				{
 					text = "UN (Desert)";
-					data = "UND";
+					data = ["NLD_DST_Camo","NLD_UN_Vest","NLD_DST_Carryall_Empty","NLD_UN_Helmet","lt_tfr_dst"];
 				};
 				class LT_Camo_NFPTAN
 				{
 					text = "NFP-TAN";
-					data = "NFPT";
+					data = ["NLD_NFPT_Camo","NLD_NFPT_Vest","NLD_NFPT_Carryall_Empty","NLD_NFPT_Helmet","lt_tfr_dst"];
 				};
 				class LT_Camo_NFPGREEN
 				{
 					text = "NFP-GREEN";
-					data = "NFPG";
+					data = ["NLD_NFPG_Camo","NLD_NFPG_Vest","NLD_NFPG_Carryall_Empty","NLD_NFPG_Helmet","lt_tfr_wdl"];
 				};
 				class LT_Camo_WINTER
 				{
 					text = "Winter";
-					data = "WTR";
+					data = ["NLD_WTR_Camo","NLD_WTR_Vest","NLD_WTR_Carryall_Empty","NLD_WTR_Helmet","lt_tfr_wdl"];
 				};
 				class LT_Camo_JUNGLE
 				{
 					text = "Jungle";
-					data = "JGL";
+					data = ["NLD_JGL_Camo","NLD_JGL_Vest","NLD_JGL_Carryall_Empty","NLD_JGL_Helmet","lt_tfr_wdl"];
 				};
 				class LT_Camo_SF
 				{
 					text = "Special Forces Black";
-					data = "SF";
+					data = ["NLD_SF_Camo","NLD_SF_Vest","NLD_SF_Carryall_Empty","NLD_SF_Helmet","lt_tfr_wdl"];
 				};
 				class LT_Camo_SFMTP
 				{
 					text = "Special forces MTP";
-					data = "SFMTP";
+					data = ["NLD_MTP_Camo","NLD_MTP_PlateCarrier","NLD_MTP_Carryall_Empty","NLD_MTP_ECH","lt_tfr_wdl"];
 				};
 				class LT_Camo_KM
 				{
 					text = "Koninklijke Marine";
-					data = "KM";
+					data = ["NLD_KM_Camo","V_I_G_resistanceLeader_F","NLD_KM_Carryall_Empty","NLD_KM_Helmet","lt_tfr_wdl"];
 				};
+			};
+			class ItemsConfig
+			{
+				path[] = {"CfgCamouflage"};
+				localConfig = 1;
+				propertyText = "text";
 			};
 		};
 	};

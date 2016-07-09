@@ -8,6 +8,15 @@ diag_log format ["*-* role is %1 and exclude is %2*-*",_role, _exclude];
 
 if (_role == "custom") exitwith {};
 
+_light = [];
+_heavy =  ["eng","engm"];
+_diver = ["div"];
+_pilot = ["pp","pcc","pc"];
+_crew = ["vc","vg","vd"];
+_ghillie = ["sn","sp"];
+_specOp = [];
+_vehicles = ["v_tr","v_car","crate_large","crate_med","crate_small"];
+
 #include "setItems.sqf"
 
 // ADD UNIVERSAL ITEMS

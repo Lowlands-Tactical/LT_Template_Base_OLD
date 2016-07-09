@@ -1,4 +1,10 @@
+_lt_camo_var_array = call compile lt_camo_var;
+
+_constraint 	= _lt_camo_var_array  select 0;
+_tfrpack 	= _lt_camo_var_array select 4;
+
 // Only execute this when we want it to run.
+
 if (lt_tfr_var == "1") then {
   tf_no_auto_long_range_radio = true;
 
@@ -6,19 +12,10 @@ if (lt_tfr_var == "1") then {
   _role = player getVariable "lt_unit_role";
 
   // diag_log format["TFR is on with the role: %1",_role];
+  
+  if (_constraint != "None" and _role in _roles) then {
 
-  if (lt_camo_var != "None" and _role in _roles) then {
-
-    _dst = ["DST","UND","NFPT"];
-    _wdl = ["WLD","UN","NFPG","WTR","JGL","SF","SFMTP","KM"];
-
-    if ( lt_camo_var in _dst ) then {
-      null = [player,"lt_tfr_dst"] call lt_fnc_changeBackpack;
-    };
-
-    if ( lt_camo_var in _wdl ) then {
-      null = [player,"lt_tfr_wdl"] call lt_fnc_changeBackpack;
-    };
+      null = [player, _tfrpack] call lt_fnc_changeBackpack;
 
   } else {
     // Give at least something...
