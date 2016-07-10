@@ -104,6 +104,7 @@ _chemblue = if (isNil "lt_template_chemblue") then {"Chemlight_blue"} else {lt_t
 _cigarette = if (isNil "lt_templatecigarette") then {"murshun_cigs_lighter"} else {lt_templatecigarette};
 _minedetector = if (isNil "lt_template_minedetector") then {"MineDetector"} else {lt_template_minedetector};
 
+_rangefinder = if (isNil "lt_template_rangefinder") then {"ACE_Vector"} else {lt_template_rangefinder};
 _advancedbinoculars = if (isNil "lt_template_advancedbinoculars") then {"ACE_Vector"} else {lt_template_advancedbinoculars};
 _simplebinoculars = if (isNil "lt_template_simplebinoculars") then {"Binocular"} else {lt_template_simplebinoculars};
 
@@ -121,10 +122,10 @@ _clacker = if (isNil "lt_template_clacker") then {"ACE_Clacker"} else {lt_templa
 
 _maptools = if (isNil "lt_template_maptools") then {"ACE_MapTools"} else {lt_template_maptools};
 _mapflashlight = if (isNil "lt_template_mapflashlight") then {"ACE_Flashlight_XL50"} else {lt_template_mapflashlight};
-_map = if (isNil "lt_template_map") then {"ItemMap"} else {lt_template_map};			
-_compass = if (isNil "lt_template_compass") then {"ItemCompass"} else {lt_template_compass};			
-_radio = if (isNil "lt_template_radio") then {"ItemRadio"} else {lt_template_radio};				
-_watch = if (isNil "lt_template_watch") then {"ItemWatch"} else {lt_template_watch}; 
+_map = if (isNil "lt_template_map") then {"ItemMap"} else {lt_template_map};
+_compass = if (isNil "lt_template_compass") then {"ItemCompass"} else {lt_template_compass};
+_radio = if (isNil "lt_template_radio") then {"ItemRadio"} else {lt_template_radio};
+_watch = if (isNil "lt_template_watch") then {"ItemWatch"} else {lt_template_watch};
 
 
 // Backpacks

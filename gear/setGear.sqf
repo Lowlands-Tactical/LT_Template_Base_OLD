@@ -22,9 +22,6 @@ _vehicles = ["v_tr","v_car","crate_large","crate_med","crate_small"];
 // ADD UNIVERSAL ITEMS
 // Add items universal to all units of this faction
 
-//Exclude ammoboxes and vehicles
-
-
 // Clean up the player
 removeAllAssignedItems _unit;
 removeAllWeapons _unit;
@@ -70,7 +67,7 @@ switch (_role) do
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,3];
 		_unit addmagazines [_glsmokewhite,4];
-		_unit addweapon _glrifle;					//_COrifle
+		_unit addweapon _glrifle;
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
@@ -79,6 +76,7 @@ switch (_role) do
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon _rangefinder;
 		_unit addItem _cigarette;
+		_unit addItem _dagr;
 
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
@@ -96,7 +94,7 @@ switch (_role) do
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,3];
 		_unit addmagazines [_glsmokewhite,4];
-		_unit addweapon _glrifle;					//_DCrifle
+		_unit addweapon _glrifle;
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
@@ -105,6 +103,7 @@ switch (_role) do
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon _rangefinder;
 		_unit addItem _cigarette;
+		_unit addItem _dagr;
 
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
@@ -138,13 +137,14 @@ switch (_role) do
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,5];
 		_unit addmagazines [_glsmokewhite,4];
-		_unit addweapon _glrifle;					//_FTLrifle
+		_unit addweapon _glrifle;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon _rangefinder;
 		_unit addItem _cigarette;
+		_unit addItem _dagr;
 
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
@@ -189,7 +189,7 @@ switch (_role) do
 		_unit addmagazines [_mgrenade,2];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addWeapon _simplebinoculars;
-		//["aar"] call _backpack;
+
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 4];
 		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
@@ -229,17 +229,17 @@ switch (_role) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addWeapon _advancedbinoculars;
+		_unit addItem _atragmx;
+		_unit addItem _dagr;
+		_unit addItem _kestrel;
 
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addMagazineCargoGlobal [_DMriflemag, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
-		(unitBackpack _unit) addItemCargoGlobal [_atragmx,1];
-		(unitBackpack _unit) addItemCargoGlobal [_dagr,1];
 		(unitBackpack _unit) addItemCargoGlobal [_spotting_scope,1];
 		(unitBackpack _unit) addItemCargoGlobal [_rangecard,1];
-		(unitBackpack _unit) addItemCargoGlobal [_kestrel,1];
 		_attachments = [_attach1,_scope2];
 	};
 
