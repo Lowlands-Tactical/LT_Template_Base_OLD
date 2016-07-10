@@ -36,7 +36,7 @@ if !( _role IN _vehicles) then {
 	};
 
 	_nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
-	if ( _nvg_enabled == 1 ) then { _unit linkItem _nvg; };
+	if ( _nvg_enabled == 1 ) then { _unit linkItem _nvg; } else {_unit unlinkItem _nvg;};
 	_unit addItem _bandages;
 	_unit addItem _bandages;
 	_unit addItem _bandages;
@@ -463,6 +463,10 @@ switch (_role) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_attachments = [_scope3];
+		_unit addItem _atragmx;
+		_unit addItem _dagr;
+		_unit addItem _rangecard;
+		_unit addItem _kestrel;
 	};
 
 // LOADOUT: SPOTTER

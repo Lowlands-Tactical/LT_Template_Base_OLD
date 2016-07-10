@@ -29,4 +29,33 @@ class CfgDebriefing
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
+	class End4
+	{
+		title = "BLUFOR wins!";
+		subtitle = "Good job being total badasses BLUFOR!";
+		description = "You can laugh at everyone else now.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End5
+	{
+		title = "REDFOR wins!";
+		subtitle = "Good job being total badasses REDFOR!";
+		description = "You can laugh at everyone else now.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End6
+	{
+		title = "GREENFOR wins!";
+		subtitle = "Good job being total badasses GREENFOR!";
+		description = "You can laugh at everyone else now.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
 };

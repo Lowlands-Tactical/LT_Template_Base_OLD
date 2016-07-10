@@ -49,4 +49,11 @@ class Params
 		texts[] = {"No", "Yes"};
 		default = 1;
 	};
+	class lt_fatigue_onoff
+	{
+		title = "Fatigue";
+		values[] = {0,1};
+		texts[] = {"No","Yes"};
+		default = 1;
+	}
 };
