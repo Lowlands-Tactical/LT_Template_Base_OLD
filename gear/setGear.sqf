@@ -1,9 +1,9 @@
 _unit 		= player;
-_role			= _unit getvariable "LT_unit_role";
+_role		= _unit getvariable "LT_unit_role";
 
-waituntil {(( _unit getvariable "LT_camo_exclude") == 0) or (( _unit getvariable "LT_camo_exclude") == 1)};
+//waituntil {(( _unit getvariable "LT_camo_exclude") == 0) or (( _unit getvariable "LT_camo_exclude") == 1)};
 
-_exclude	= _unit getvariable "LT_camo_exclude";
+_exclude	= _unit getVariable ["LT_camo_exclude", 0];
 diag_log format ["*-* role is %1 and exclude is %2*-*",_role, _exclude];
 
 if (_role == "custom") exitwith {};
@@ -22,37 +22,38 @@ _vehicles = ["v_tr","v_car","crate_large","crate_med","crate_small"];
 // ADD UNIVERSAL ITEMS
 // Add items universal to all units of this faction
 
-	//Exclude ammoboxes and vehicles
-if !( _role IN _vehicles) then {
+//Exclude ammoboxes and vehicles
 
-	// Clean up the player
-	removeAllAssignedItems _unit;
-	removeAllWeapons _unit;
 
-	if (!isNull (unitBackpack _unit)) then {
-		clearMagazineCargoGlobal (unitBackpack _unit);
-		clearWeaponCargoGlobal (unitBackpack _unit);
-		clearItemCargoGlobal (unitBackpack _unit);
-	};
+// Clean up the player
+removeAllAssignedItems _unit;
+removeAllWeapons _unit;
 
-	_nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
-	if ( _nvg_enabled == 1 ) then { _unit linkItem _nvg; } else {_unit unlinkItem _nvg;};
-	_unit addItem _bandages;
-	_unit addItem _bandages;
-	_unit addItem _bandages;
-	_unit addItem _bandages;
-	_unit addItem _bandages;
-	_unit addItem _bandages;
-	_unit addItem _morphine;
-	_unit addItem _morphine;
-	_unit linkItem _map;				// Add and equip the map
-	_unit linkItem _compass;			// Add and equip a compass
-	_unit linkItem _radio;				// Add and equip A3's default radio
-	_unit linkItem _watch;				// Add and equip a watch
-	_unit addItem _maptools;			// Add MapTools
-	_unit addItem _mapflashlight;	// Add Flashlight XL50
-
+if (!isNull (unitBackpack _unit)) then {
+	diag_log format ["*-* test *-* has backpack: %1", (unitBackpack _unit)];
+	clearMagazineCargoGlobal (unitBackpack _unit);
+	clearWeaponCargoGlobal (unitBackpack _unit);
+	clearItemCargoGlobal (unitBackpack _unit);
 };
+
+_nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
+if ( _nvg_enabled == 1 ) then { _unit linkItem _nvg; } else {_unit unlinkItem _nvg;};
+_unit addItem _bandages;
+_unit addItem _bandages;
+_unit addItem _bandages;
+_unit addItem _bandages;
+_unit addItem _bandages;
+_unit addItem _bandages;
+_unit addItem _morphine;
+_unit addItem _morphine;
+_unit linkItem _map;				// Add and equip the map
+_unit linkItem _compass;			// Add and equip a compass
+_unit linkItem _radio;				// Add and equip A3's default radio
+_unit linkItem _watch;				// Add and equip a watch
+_unit addItem _maptools;			// Add MapTools
+_unit addItem _mapflashlight;	// Add Flashlight XL50
+
+
 // ====================================================================================
 
 // SETUP LOADOUTS

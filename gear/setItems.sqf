@@ -104,7 +104,6 @@ _chemblue = if (isNil "lt_template_chemblue") then {"Chemlight_blue"} else {lt_t
 _cigarette = if (isNil "lt_templatecigarette") then {"murshun_cigs_lighter"} else {lt_templatecigarette};
 _minedetector = if (isNil "lt_template_minedetector") then {"MineDetector"} else {lt_template_minedetector};
 
-_rangefinder = if (isNil "lt_template_rangefinder") then {"ACE_Yardage450"} else {lt_template_rangefinder};
 _advancedbinoculars = if (isNil "lt_template_advancedbinoculars") then {"ACE_Vector"} else {lt_template_advancedbinoculars};
 _simplebinoculars = if (isNil "lt_template_simplebinoculars") then {"Binocular"} else {lt_template_simplebinoculars};
 
