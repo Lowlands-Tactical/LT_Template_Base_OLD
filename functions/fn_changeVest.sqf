@@ -6,7 +6,7 @@ private ["_unit","_type","_vestItems"];
 _unit = _this select 0;
 _type = _this select 1;
 
-diag_log "*-* test *-* fnc change vest started";
+diag_log "LT template DEBUG: fnc change vest started";
 
 if (!local _unit) exitWith {};
 

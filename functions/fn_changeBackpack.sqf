@@ -6,7 +6,7 @@ private ["_unit","_type","_backpackItems"];
 _unit = _this select 0;
 _type = _this select 1;
 
-diag_log "*-* test *-* fnc change backpack started";
+diag_log "LT template DEBUG: fnc change backpack started";
 
 if (!local _unit) exitWith {};
 

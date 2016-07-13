@@ -1,6 +1,6 @@
 // Default TFR Settings.
 
-diag_log "*-* test *-* TFR Settings loading";
+diag_log "LT template DEBUG: TFR Settings loading";
 
 if (lt_tfr_var == "1") then {
   tf_no_auto_long_range_radio = true;
@@ -24,4 +24,4 @@ tf_same_lr_frequencies_for_side = true;
 // Enables distribution of commander radios to squadmates.
 // TF_give_personal_radio_to_regular_soldier = true;
 
-diag_log "*-* test *-* TFR Settings loaded";
+diag_log "LT template DEBUG: TFR Settings loaded";

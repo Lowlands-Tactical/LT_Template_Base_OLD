@@ -6,7 +6,7 @@ private ["_unit","_type","_uniformItems", "_linkedItems"];
 _unit = _this select 0;
 _type = _this select 1;
 
-diag_log "*-* test *-* fnc change uniform started";
+diag_log "LT template DEBUG: fnc change uniform started";
 
 if (!local _unit) exitWith {};
 

@@ -27,7 +27,7 @@ removeAllAssignedItems _unit;
 removeAllWeapons _unit;
 
 if (!isNull (unitBackpack _unit)) then {
-	diag_log format ["*-* test *-* has backpack: %1", (unitBackpack _unit)];
+	diag_log format ["LT template DEBUG: has backpack: %1", (unitBackpack _unit)];
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	clearWeaponCargoGlobal (unitBackpack _unit);
 	clearItemCargoGlobal (unitBackpack _unit);
