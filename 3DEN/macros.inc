@@ -1,6 +1,6 @@
 //#define pixelW  (1 / (getResolution select 2))
 //#define pixelH  (1 / (getResolution select 3))
-#define pixelScale	0.25
+#define pixelScale	0.50
 
 #define GRID_W (pixelW * pixelGrid * pixelScale)
 #define GRID_H (pixelH * pixelGrid * pixelScale)
