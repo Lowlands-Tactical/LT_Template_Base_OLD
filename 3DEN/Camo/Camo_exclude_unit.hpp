@@ -4,7 +4,7 @@ class LT_camo_exclude_unit
 	tooltip = "Exclude unit from camouflage-setter";
 	property = "LT_camo_exclude_unit_ID";
 	control = "CheckboxNumber";
-	expression = "_this setVariable ['LT_camo_exclude', _value];";
+	expression = "_this setVariable ['LT_camo_exclude', _value, true];";
 	validate = "number";
 	defaultValue = "0";
 	condition = "objectBrain + objectControllable"; // Condition for attribute to appear (see the table below)
