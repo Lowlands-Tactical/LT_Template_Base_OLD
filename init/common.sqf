@@ -20,3 +20,5 @@ enableSentences false;
 
 // Player fatigue (set via params)
 if ("lt_fatigue_onoff" call BIS_fnc_getParamValue == 0) then {player enableFatigue false};
+
+lt_safe_starten = [] execVM "\lt_template_base\functions\f\safeStart\f_safeStart.sqf";

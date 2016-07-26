@@ -14,6 +14,7 @@ class CfgPatches {
 	};
 };
 
+#include "cfgNotifications.hpp"
 #include "cfgFunctions.hpp"
 #include "cfg3DEN.hpp"
 #include "adminMenu.hpp"
