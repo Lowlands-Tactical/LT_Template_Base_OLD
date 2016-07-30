@@ -77,6 +77,7 @@ switch (_role) do
 		_unit addWeapon _rangefinder;
 		_unit addItem _cigarette;
 		_unit addItem _dagr;
+		_unit linkItem _map;
 
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
@@ -153,8 +154,7 @@ switch (_role) do
 		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
-		(unitBackpack _unit) addItemCargoGlobal [_telephone,1];
-
+		
 	};
 
 
