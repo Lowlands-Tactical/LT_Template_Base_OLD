@@ -63,7 +63,7 @@ player sideChat "Admin page loaded";
 
 	_briefing = _briefing + "
 	<font size='18'>SAFE START CONTROL</font><br/>
-	|- <execute expression=""f_param_mission_timer = f_param_mission_timer + 1; publicVariable 'lt_param_timer'; hintsilent format ['Mission Timer: %1',lt_param_timer];"">
+	|- <execute expression=""lt_param_timer = lt_param_timer + 1; publicVariable 'lt_param_timer'; hintsilent format ['Mission Timer: %1',lt_param_timer];"">
 	Increase Safe Start timer by 1 minute</execute><br/>
 
 	|- <execute expression=""lt_param_timer = lt_param_timer - 1; publicVariable 'lt_param_timer'; hintsilent format ['Mission Timer: %1',lt_param_timer];"">
