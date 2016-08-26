@@ -15,29 +15,36 @@ class cfgFunctions
       class changeVest {};
       class changeUniform {};
       class checkClassExist {};
+      class setItems {};
+    };
+    class UPSMON
+    {
+      file = "\lt_template_base\functions\UPSMON";
+      class UPSMONInitMainModule {};
+      class UPSMONPatrolModule {};
     };
   };
   // Functions of F3 template - Thank you Ferstabinde!
   class F
   {
   	class zeus
-	{
-		file = "\lt_template_base\functions\f\zeus";
-		class zeusInit {};
-		class zeusAddAddons{};
-		class zeusAddObjects{};
-	};
-	class safeStart
-	{
-		file = "\lt_template_base\functions\f\safestart";
-		class safety{};
-    class safeStartLoop{};
-	};
-	class mpEnd
-	{
-		file = "\lt_template_base\functions\f\mpEnd";
-		class mpEnd{};
-		class mpEndReceiver{};
-	};
+  	{
+  		file = "\lt_template_base\functions\f\zeus";
+  		class zeusInit {};
+  		class zeusAddAddons{};
+  		class zeusAddObjects{};
+  	};
+  	class safeStart
+  	{
+  		file = "\lt_template_base\functions\f\safestart";
+  		class safety{};
+      class safeStartLoop{};
+  	};
+  	class mpEnd
+  	{
+  		file = "\lt_template_base\functions\f\mpEnd";
+  		class mpEnd{};
+  		class mpEndReceiver{};
+  	};
   };
 };

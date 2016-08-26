@@ -18,4 +18,5 @@ class CfgPatches {
 #include "cfgFunctions.hpp"
 #include "cfg3DEN.hpp"
 #include "adminMenu.hpp"
-
+#include "cfgFactionClasses.hpp"
+#include "cfgVehicles.hpp"
