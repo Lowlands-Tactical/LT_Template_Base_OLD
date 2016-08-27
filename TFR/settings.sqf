@@ -1,9 +1,18 @@
 // Default TFR Settings.
 
-diag_log "LT template DEBUG: TFR Settings loading";
+diag_log "LT template DEBUG: Radio Settings loading";
 
 if (lt_tfr_var == "1") then {
   tf_no_auto_long_range_radio = true;
+
+  _status = [true, true] call acre_api_fnc_setupMission;
+  _status = [true] call acre_api_fnc_setRevealToAI;
+  _status = [0] call acre_api_fnc_setLossModelScale;
+  
+//  _status = [true] call acre_api_fnc_setFullDuplex;
+//  _status = [true] call acre_api_fnc_setInterference;
+  ACRE_TEST_OCCLUSION = false;
+
 };
 
 // PingWing's contribution
@@ -24,4 +33,4 @@ tf_same_lr_frequencies_for_side = true;
 // Enables distribution of commander radios to squadmates.
 // TF_give_personal_radio_to_regular_soldier = true;
 
-diag_log "LT template DEBUG: TFR Settings loaded";
+diag_log "LT template DEBUG: Radio Settings loaded";
