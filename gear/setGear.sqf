@@ -47,7 +47,6 @@ _unit linkItem _map;				// Add and equip the map
 _unit linkItem _compass;			// Add and equip a compass
 _unit linkItem _radio;				// Add and equip A3's default radio
 _unit linkItem _watch;				// Add and equip a watch
-_unit addItem _maptools;			// Add MapTools
 _unit addItem _mapflashlight;	// Add Flashlight XL50
 
 
@@ -77,7 +76,6 @@ switch (_role) do
 		_unit addWeapon _rangefinder;
 		_unit addItem _cigarette;
 		_unit addItem _dagr;
-		_unit linkItem _map;
 
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
@@ -105,7 +103,6 @@ switch (_role) do
 		_unit addWeapon _rangefinder;
 		_unit addItem _cigarette;
 		_unit addItem _dagr;
-		_unit linkItem _map;
 
 		if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
