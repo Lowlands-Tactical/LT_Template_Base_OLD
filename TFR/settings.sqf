@@ -8,9 +8,9 @@ if (lt_tfr_var == "1") then {
   _status = [true, true] call acre_api_fnc_setupMission;
   _status = [true] call acre_api_fnc_setRevealToAI;
   _status = [0] call acre_api_fnc_setLossModelScale;
-  
-//  _status = [true] call acre_api_fnc_setFullDuplex;
-//  _status = [true] call acre_api_fnc_setInterference;
+  [true] call acre_api_fnc_ignoreAntennaDirection;
+  [true] call acre_api_fnc_setFullDuplex;
+  [true] call acre_api_fnc_setInterference;
   ACRE_TEST_OCCLUSION = false;
 
 };
