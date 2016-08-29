@@ -23,6 +23,11 @@ class cfgFunctions
       class UPSMONInitMainModule {};
       class UPSMONPatrolModule {};
     };
+  	class GARRISON
+  	{
+  		file = "lt_template_base\functions\GARRISON";
+  		class GarrisonInit {};
+  	};
   };
   // Functions of F3 template - Thank you Ferstabinde!
   class F

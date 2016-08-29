@@ -4,7 +4,7 @@ class LT_PatrolModuleUPSMON: Module_F {
   icon = "\lt_template_base\logos\lowtac-texture-128px.paa";
   category = "LT_missionModules";
   function = "lt_fnc_UPSMONPatrolModule";
-  functionPriority = 2;
+  functionPriority = 3;
   isGlobal = 1;
   isTriggerActivated = 1;
   class Arguments {
