@@ -37,6 +37,7 @@ class Cfg3DEN
 					{
 						#include "3DEN\Camo\Camo.hpp"
 						#include "3DEN\TFR\TFR.hpp"
+						#include "3DEN\PD\PermaDeath.hpp"
 					};
 				};
 			};
