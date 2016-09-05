@@ -135,9 +135,9 @@ class LT_PatrolModuleUPSMON: Module_F {
     };
     class RadioRangeNumber {
       displayName = "Radio Range";
-      description = "You can set the radio range (in meters) for each UPSMON group, the radio range is linked to the reinforcement and artillery module. (by default:8000)";
+      description = "You can set the radio range (in meters) for each UPSMON group, the radio range is linked to the reinforcement and artillery module. (by default:500)";
       typeName = "NUMBER";
-      defaultValue = 8000;
+      defaultValue = 500;
     };
 	class DoRelax {
 		displayName = "";

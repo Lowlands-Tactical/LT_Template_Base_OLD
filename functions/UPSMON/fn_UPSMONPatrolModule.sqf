@@ -67,7 +67,7 @@ if(_activated && _cnt > 0 && UPSMON_INIT==1) then {
 	if (_CloneMax > 0) then {_UPSMONparams pushBack "MAX:"; _UPSMONparams pushBack _CloneMax;};
 
 	_RadioRangeNumber = _logic getVariable "RadioRangeNumber";
-	if (_RadioRangeNumber != 8000) then {_UPSMONparams pushBack "RADIORANGE:"; _UPSMONparams pushBack _RadioRangeNumber;};
+	if (_RadioRangeNumber != 500) then {_UPSMONparams pushBack "RADIORANGE:"; _UPSMONparams pushBack _RadioRangeNumber;};
 
 	_RespawnX = _logic getVariable "RespawnX";
 	if (_RespawnX > 0) then {_UPSMONparams pushBack "RESPAWN:"; _UPSMONparams pushBack _RespawnX;};

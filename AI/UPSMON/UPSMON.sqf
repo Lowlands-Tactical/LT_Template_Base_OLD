@@ -224,7 +224,7 @@ _grp setvariable ["UPSMON_NOWP",_nowpType];
 _ambush= if (("AMBUSH" in _UCthis) || ("AMBUSHDIR:" in _UCthis) || ("AMBUSH2" in _UCthis) || ("AMBUSHDIR2:" in _UCthis)) then {true} else {false};
 	
 // Range of AI radio so AI can call Arty or Reinforcement
-_RadioRange = ["RADIORANGE:",8000,_UCthis] call UPSMON_getArg; // ajout
+_RadioRange = ["RADIORANGE:",500,_UCthis] call UPSMON_getArg; // ajout
 
 // set drop units at random positions
 _initpos = "ORIGINAL";
