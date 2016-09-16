@@ -1,6 +1,6 @@
 private ["_staff","_lt_main","_action"];
 
-_staff = ["76561197972132272","76561198023151588","76561197972110272"];
+_staff = ["76561198007493141","76561198023151588","76561197972110272"];
 
 if ( missionNamespace getVariable ["ace_common", false] and (serverCommandAvailable "#kick" or getPlayerUID player in _staff) ) then {
 
