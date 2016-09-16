@@ -21,9 +21,6 @@ if ( missionNamespace getVariable ["ace_common", false] and (serverCommandAvaila
 	_action = ["lt_main_disableFatigue", "Disable Fatigue", "", {player enableFatigue false}, {alive player}] call ace_interact_menu_fnc_createAction;
 	[player, 1, ["ACE_SelfActions", "lt_main"], _action] call ace_interact_menu_fnc_addActionToObject;
 
-	_action = ["lt_main_camera", "Splendid Camera", "", {call BIS_fnc_camera}, {alive player}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions", "lt_main"], _action] call ace_interact_menu_fnc_addActionToObject;
-
 	_action = ["lt_main_debugConsole", "Debug Console", "", {(finddisplay 12) createdisplay 'RscDisplayDebugPublic';}, {alive player}] call ace_interact_menu_fnc_createAction;
 	[player, 1, ["ACE_SelfActions", "lt_main"], _action] call ace_interact_menu_fnc_addActionToObject;
 
