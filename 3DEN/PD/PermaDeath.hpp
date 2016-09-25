@@ -4,7 +4,7 @@ class LT_camo_exclude_unit
 	tooltip = "Check if this is a PermaDeath scenario";
 	property = "LT_PermaDeath_ID";
 	control = "CheckboxNumber";
-	expression = "LT_PermaDeath =  _value;";
+	expression = "LT_PermaDeath = _value;";
 	validate = "number";
 	defaultValue = "0";
 	typeName = "NUMBER";

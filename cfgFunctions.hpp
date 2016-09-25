@@ -16,6 +16,7 @@ class cfgFunctions
       class changeUniform {};
       class checkClassExist {};
       class setItems {};
+	    class setVehicleGear {};
     };
     class UPSMON
     {

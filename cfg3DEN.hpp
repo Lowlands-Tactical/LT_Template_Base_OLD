@@ -20,6 +20,7 @@ class Cfg3DEN
 		#include "3DEN\Camo\Camo_combo.hpp"
 		#include "3DEN\TFR\TFR_combo.hpp"
 		#include "3DEN\Roles\Role_combo.hpp"
+		#include "3DEN\Roles\Role_veh_combo.hpp"
 
 	};
 	class Mission
@@ -54,7 +55,9 @@ class Cfg3DEN
 				class Attributes
 				{
 					#include "3DEN\Roles\Role_selector.hpp"
+					#include "3DEN\Roles\Role_veh_selector.hpp"
 					#include "3DEN\Camo\Camo_exclude_unit.hpp"
+					#include "3DEN\StaticUnit\setUnitStatic.hpp"
 				};
 			};
 		};
