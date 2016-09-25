@@ -4,7 +4,7 @@ class CfgPatches {
 		weapons[] = {};
 		requiredVersion = 1.0;
 		requiredAddons[] = {"A3_Characters_F_BLUFOR"};
-		author[] = {"Lowlands Tactical"};
+		author = "Lowlands Tactical";
 		authorUrl = "http://lowtac.nl/";
 		version = "20160512";
 		versionAr[] = {2016,05,12};
