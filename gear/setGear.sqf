@@ -1,21 +1,13 @@
 _unit 		= player;
 _role		= _unit getvariable "LT_unit_role";
-
-//waituntil {(( _unit getvariable "LT_camo_exclude") == 0) or (( _unit getvariable "LT_camo_exclude") == 1)};
-
 _exclude	= _unit getVariable ["LT_camo_exclude", 0];
-diag_log format ["*-* role is %1 and exclude is %2*-*",_role, _exclude];
 
-if (_role != "custom") then {
+_RolesArray = ["custom","co","dc","m","ftl","ar","aar","rat","dm","mmgg","mmgag","hmgg","hmgag","matg","matag","hatg","hatag","mtrg","mtrag","msamg","msamag","hsamg","hsamag","sn","sp","vc","vd","vg","pp","pcc","pc","eng","engm","uav","div","r","car","smg","gren"];
 
-	_light = [];
-	_heavy =  ["eng","engm"];
-	_diver = ["div"];
-	_pilot = ["pp","pcc","pc"];
-	_crew = ["vc","vg","vd"];
-	_ghillie = ["sn","sp"];
-	_specOp = [];
-	_vehicles = ["v_tr","v_car","crate_large","crate_med","crate_small"];
+diag_log format ["LT Template DEBUG: role is %1 and exclude is %2",_role, _exclude];
+diag_log format ["LT Template DEBUG: setGear.sqf Role in RolesArray: %1", _role IN _RolesArray];
+
+if (_role != "custom" && _role IN _RolesArray) then {
 
 	#include "setItems.sqf"
 
@@ -35,19 +27,20 @@ if (_role != "custom") then {
 
 	_nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
 	if ( _nvg_enabled == 1 ) then { _unit linkItem _nvg; } else {_unit unlinkItem _nvg;};
-	_unit addItem _bandages;
-	_unit addItem _bandages;
-	_unit addItem _bandages;
-	_unit addItem _bandages;
-	_unit addItem _bandages;
-	_unit addItem _bandages;
-	_unit addItem _morphine;
-	_unit addItem _morphine;
+	
+	_unit addItemToBackpack _bandages;
+	_unit addItemToBackpack _bandages;
+	_unit addItemToBackpack _bandages;
+	_unit addItemToBackpack _bandages;
+	_unit addItemToBackpack _bandages;
+	_unit addItemToBackpack _bandages;
+	_unit addItemToBackpack _morphine;
+	_unit addItemToBackpack _morphine;
 	_unit linkItem _map;				// Add and equip the map
 	_unit linkItem _compass;			// Add and equip a compass
 	_unit linkItem _radio;				// Add and equip A3's default radio
 	_unit linkItem _watch;				// Add and equip a watch
-	_unit addItem _mapflashlight;	// Add Flashlight XL50
+	_unit addItemToBackpack _mapflashlight;	// Add Flashlight XL50
 
 
 	// ====================================================================================
@@ -695,47 +688,6 @@ if (_role != "custom") then {
 
 		};
 
-	// CARGO: CAR - room for 10 weapons and 50 cargo items
-		case "v_car":
-		{
-			clearWeaponCargoGlobal _unit;
-			clearMagazineCargoGlobal _unit;
-			clearItemCargoGlobal _unit;
-			clearBackpackCargoGlobal _unit;
-			_unit addWeaponCargoGlobal [_carbine, 2];
-			_unit addMagazineCargoGlobal [_riflemag, 8];
-			_unit addMagazineCargoGlobal [_glriflemag, 8];
-			_unit addMagazineCargoGlobal [_carbinemag, 10];
-			_unit addMagazineCargoGlobal [_armag, 5];
-			_unit addMagazineCargoGlobal [_grenade, 4];
-			_unit addMagazineCargoGlobal [_smokegrenade, 4];
-			_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
-			_unit addMagazineCargoGlobal [_glmag, 4];
-			_unit addMagazineCargoGlobal [_glsmokewhite, 4];
-			_unit addItemCargoGlobal [_firstaid,4];
-		};
-
-	// CARGO: TRUCK - room for 50 weapons and 200 cargo items
-		case "v_tr":
-		{
-			clearWeaponCargoGlobal _unit;
-			clearMagazineCargoGlobal _unit;
-			clearItemCargoGlobal _unit;
-			clearBackpackCargoGlobal _unit;
-			_unit addWeaponCargoGlobal [_carbine, 10];
-			_unit addMagazineCargoGlobal [_riflemag, 40];
-			_unit addMagazineCargoGlobal [_glriflemag, 40];
-			_unit addMagazineCargoGlobal [_carbinemag, 40];
-			_unit addMagazineCargoGlobal [_armag, 22];
-			_unit addMagazineCargoGlobal [_grenade, 12];
-			_unit addmagazineCargoGlobal [_mgrenade,12];
-			_unit addMagazineCargoGlobal [_smokegrenade, 12];
-			_unit addMagazineCargoGlobal [_smokegrenadegreen, 4];
-			_unit addMagazineCargoGlobal [_glmag, 12];
-			_unit addMagazineCargoGlobal [_glsmokewhite, 12];
-			_unit addItemCargoGlobal [_firstaid,8];
-		};
-
 	// LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
 	   default
 	   {
@@ -751,24 +703,27 @@ if (_role != "custom") then {
 
 	// END SWITCH FOR DEFINE UNIT TYPE LOADOUTS
 	};
-		//Exclude ammoboxes and vehicles
-	if  !(_role IN _vehicles) then {
+	
+	diag_log format ["LT Template DEBUG: setGear.sqf Switch/Case define done"];
 
-		if (typeName _attachments == typeName []) then {
-			removeAllPrimaryWeaponItems _unit;
-			{
-				// loop trough the attachments and add them to the weapon
-				_unit addPrimaryWeaponItem _x;
-			} foreach _attachments;
-		};
-
-		// Handle handgun attachments
-		if (typeName _hg_attachments == typeName []) then {
-			removeAllHandgunItems _unit;
-			{
-				// loop trough the attachments and add them to the weapon
-				_unit addHandgunItem _x;
-			} foreach _hg_attachments;
-		};
+	if (typeName _attachments == typeName []) then {
+		removeAllPrimaryWeaponItems _unit;
+		{
+			// loop trough the attachments and add them to the weapon
+			_unit addPrimaryWeaponItem _x;
+		} foreach _attachments;
 	};
+
+	// Handle handgun attachments
+	if (typeName _hg_attachments == typeName []) then {
+		removeAllHandgunItems _unit;
+		{
+			// loop trough the attachments and add them to the weapon
+			_unit addHandgunItem _x;
+		} foreach _hg_attachments;
+	};
+	
+	diag_log format ["LT Template DEBUG: setGear.sqf attachments attached to weapons"];
 };
+
+diag_log format ["LT Template DEBUG: setGear.sqf finished"];
