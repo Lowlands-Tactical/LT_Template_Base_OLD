@@ -27,7 +27,7 @@ if (_role != "custom" && _role IN _RolesArray) then {
 
 	_nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
 	if ( _nvg_enabled == 1 ) then { _unit linkItem _nvg; } else {_unit unlinkItem _nvg;};
-	
+
 	_unit addItemToBackpack _bandages;
 	_unit addItemToBackpack _bandages;
 	_unit addItemToBackpack _bandages;
@@ -310,8 +310,6 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			//["matg"] call _backpack;
 			if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 
-			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
 			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
 			(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 1];
@@ -336,8 +334,6 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			_unit addmagazines [_smokegrenade,2];
 
 			if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
 			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 			(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
@@ -703,7 +699,7 @@ if (_role != "custom" && _role IN _RolesArray) then {
 
 	// END SWITCH FOR DEFINE UNIT TYPE LOADOUTS
 	};
-	
+
 	diag_log format ["LT Template DEBUG: setGear.sqf Switch/Case define done"];
 
 	if (typeName _attachments == typeName []) then {
@@ -722,7 +718,7 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			_unit addHandgunItem _x;
 		} foreach _hg_attachments;
 	};
-	
+
 	diag_log format ["LT Template DEBUG: setGear.sqf attachments attached to weapons"];
 };
 
