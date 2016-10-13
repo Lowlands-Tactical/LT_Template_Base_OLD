@@ -20,3 +20,5 @@ class CfgPatches {
 #include "adminMenu.hpp"
 #include "cfgFactionClasses.hpp"
 #include "cfgVehicles.hpp"
+#include "cfgMissions.hpp"
+#include "cfgNonAIVehicles.hpp"
