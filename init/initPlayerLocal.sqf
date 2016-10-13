@@ -8,6 +8,7 @@ if (LT_PermaDeath == 1) then {
   diag_log format ["Template Base Permadeath: %1", LT_PermaDeath];
   waitUntil {!alive player};
   diag_log format ["LT Template Acre Permadeath: %1 died and now is spectator", name player];
+  ["west", "east", "resistance", "civ"] call acre_api_fnc_babelSetSpokenLanguages;
   [true] call acre_api_fnc_setSpectator;
 
 };
