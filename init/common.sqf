@@ -21,4 +21,17 @@ enableSentences false;
 // Player fatigue (set via params)
 if ("lt_fatigue_onoff" call BIS_fnc_getParamValue == 0) then {player enableFatigue false};
 
+if (isServer) then {
+
+	_vehicleArray = vehicles;
+
+	{
+	  _vehRole = _x getVariable ["LT_vehicle_role",nil];
+	  if !(isNil "_vehRole") then {
+		[_x, _vehRole] call LT_fnc_setVehicleGear;
+	  };
+	} foreach _vehicleArray;
+
+};
+
 lt_safe_starten = [] execVM "\lt_template_base\functions\f\safeStart\f_safeStart.sqf";
