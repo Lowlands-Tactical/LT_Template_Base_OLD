@@ -17,6 +17,7 @@ class cfgFunctions
       class checkClassExist {};
       class setItems {};
 	    class setVehicleGear {};
+      class createGroup {};
     };
     class UPSMON
     {
@@ -26,9 +27,14 @@ class cfgFunctions
     };
   	class GARRISON
   	{
-  		file = "lt_template_base\functions\GARRISON";
+  		file = "\lt_template_base\functions\GARRISON";
   		class GarrisonInit {};
   	};
+    class AutoZone
+    {
+      file = "\lt_template_base\functions\autozone";
+      class autozone {};
+    };
   };
   // Functions of F3 template - Thank you Ferstabinde!
   class F

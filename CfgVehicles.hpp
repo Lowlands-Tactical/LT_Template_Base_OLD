@@ -8,4 +8,5 @@ class CfgVehicles {
 	#include "AI\UPSMON\MissionModules\UPSMON_MainModule.hpp" 	// periority 2
 	#include "AI\UPSMON\MissionModules\UPSMON_PatrolModule.hpp" // periority 3
 	#include "AI\GARRISON\MissionModules\Garrison_Module.hpp" 	// periority 4
+	#include "AI\AutoZone\AutoZone.hpp" 	// priority 5
 };
