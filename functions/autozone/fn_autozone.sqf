@@ -74,6 +74,8 @@ _ind_c_f_ifv = [];
 _ind_c_f_tank = [];
 _ind_c_f_heli = [];
 
+
+
 // Select factions
 private ["_faction_units","_faction_side","_faction_car","_faction_ifv","_faction_tank","_faction_heli"];
 
