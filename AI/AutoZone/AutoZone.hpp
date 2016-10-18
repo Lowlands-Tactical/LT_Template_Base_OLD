@@ -27,6 +27,7 @@ class LT_AutoZone_Module: Module_F {
         class OPF_G_F {name = "REDFOR Guerilla"; value="OPF_G_F";};
         class IND_F {name = "A.A.F."; value="IND_F";};
         class IND_G_F {name = "GREENFOR Guerilla"; value="IND_G_F";};
+				class OPF_T_F {name = "C.S.A.T. (Tanoa)"; value="OPF_T_F";};
       };
     };
 

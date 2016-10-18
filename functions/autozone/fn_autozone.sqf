@@ -60,44 +60,21 @@ _ind_g_f_units = ["I_G_Soldier_F","I_G_Soldier_lite_F","I_G_Soldier_SL_F","I_G_S
 _ind_g_f_car = ["I_G_Offroad_01_armed_F"];
 _ind_g_f_ifv = ["I_APC_Wheeled_03_cannon_F"];
 
+// Chinese
+_opf_t_f_units = ["O_T_Soldier_A_F","O_T_Medic_F","O_T_Soldier_AR_F","O_T_Engineer_F","O_T_Soldier_Exp_F","O_T_Soldier_GL_F","O_T_Support_GMG_F","O_T_Soldier_UAV_F","O_T_Soldier_universal_F","O_T_Soldier_TL_F","O_T_Soldier_SL_F","O_T_Soldier_LAT_F","O_T_Soldier_F","O_T_Soldier_Repair_F","O_T_Soldier_PG_F","O_T_Officer_F","O_T_Soldier_AT_F","O_T_Soldier_AA_F","O_T_Soldier_M_F"];
+_opf_t_f_car = ["O_T_LSV_02_armed_F","O_T_LSV_02_armed_viper_F","O_T_LSV_02_unarmed_F","O_T_LSV_02_unarmed_viper_F","O_T_LSV_02_armed_black_F","O_T_LSV_02_armed_ghex_F","O_T_LSV_02_armed_arid_F","O_T_LSV_02_unarmed_black_F","O_T_LSV_02_unarmed_ghex_F","O_T_LSV_02_unarmed_arid_F","O_T_MRAP_02_hmg_ghex_F","O_T_MRAP_02_gmg_ghex_F","","","","","","","","",""];
+_opf_t_f_ifv = ["O_T_APC_Tracked_02_cannon_ghex_F","O_T_APC_Wheeled_02_rcws_ghex_F"];
+_opf_t_f_tank = ["O_T_MBT_02_cannon_ghex_F"];
+_opf_t_f_heli = ["O_T_VTOL_02_infantry_F","O_T_VTOL_02_vehicle_F","O_T_VTOL_02_infantry_hex_F","O_T_VTOL_02_infantry_ghex_F","O_T_VTOL_02_infantry_grey_F","O_T_VTOL_02_vehicle_hex_F","O_T_VTOL_02_vehicle_ghex_F","O_T_VTOL_02_vehicle_grey_F"];
+
 // Select factions
 private ["_faction_units","_faction_side","_faction_car","_faction_ifv","_faction_tank","_faction_heli"];
 
-if (_az_faction == "OPF_F") then {
-  _faction_units = _opf_f_units;
-  _faction_side = east;
-  _faction_car = _opf_f_car;
-  _faction_ifv = _opf_f_ifv;
-  _faction_tank = _opf_f_tank;
-  _faction_heli = _opf_f_heli;
-};
-
-if (_az_faction == "OPF_G_F") then {
-  _faction_units = _opf_g_f_units;
-  _faction_side = east;
-  _faction_car = _opf_g_f_car;
-  _faction_ifv = _opf_g_f_ifv;
-  _faction_tank = [];
-  _faction_heli = [];
-};
-
-if (_az_faction == "IND_F") then {
-  _faction_units = _ind_f_units;
-  _faction_side = independent;
-  _faction_car = _ind_f_car;
-  _faction_ifv = _ind_f_ifv;
-  _faction_tank = _ind_f_tank;
-  _faction_heli = _ind_f_heli;
-};
-
-if (_az_faction == "IND_G_F") then {
-  _faction_units = _ind_g_f_units;
-  _faction_side = independent;
-  _faction_car = _ind_g_f_car;
-  _faction_ifv = _ind_g_f_ifv;
-  _faction_tank = [];
-  _faction_heli = [];
-};
+if (_az_faction == "OPF_F") then { _faction_units = _opf_f_units; _faction_side = east; _faction_car = _opf_f_car; _faction_ifv = _opf_f_ifv; _faction_tank = _opf_f_tank; _faction_heli = _opf_f_heli; };
+if (_az_faction == "OPF_G_F") then { _faction_units = _opf_g_f_units; _faction_side = east; _faction_car = _opf_g_f_car; _faction_ifv = _opf_g_f_ifv; _faction_tank = []; _faction_heli = []; };
+if (_az_faction == "IND_F") then { _faction_units = _ind_f_units; _faction_side = independent; _faction_car = _ind_f_car;  _faction_ifv = _ind_f_ifv; _faction_tank = _ind_f_tank; _faction_heli = _ind_f_heli; };
+if (_az_faction == "IND_G_F") then { _faction_units = _ind_g_f_units; _faction_side = independent; _faction_car = _ind_g_f_car; _faction_ifv = _ind_g_f_ifv; _faction_tank = []; _faction_heli = []; };
+if (_az_faction == "OPF_T_F") then { _faction_units = _opf_t_f_units; _faction_size = east; _faction_car = _opf_t_f_car; _faction_ifv = _opf_t_f_ifv; _faction_tank = _opf_t_f_tank; _faction_heli = _opf_t_f_heli; };
 
 // Create Infantry
 if (_az_infantry > 0) then {
