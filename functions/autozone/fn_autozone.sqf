@@ -67,6 +67,13 @@ _opf_t_f_ifv = ["O_T_APC_Tracked_02_cannon_ghex_F","O_T_APC_Wheeled_02_rcws_ghex
 _opf_t_f_tank = ["O_T_MBT_02_cannon_ghex_F"];
 _opf_t_f_heli = ["O_T_VTOL_02_infantry_F","O_T_VTOL_02_vehicle_F","O_T_VTOL_02_infantry_hex_F","O_T_VTOL_02_infantry_ghex_F","O_T_VTOL_02_infantry_grey_F","O_T_VTOL_02_vehicle_hex_F","O_T_VTOL_02_vehicle_ghex_F","O_T_VTOL_02_vehicle_grey_F"];
 
+// Some Tanoa faction
+_ind_c_f_units = ["I_C_Soldier_universal_F","I_C_Soldier_Bandit_8_F","I_C_Soldier_Bandit_7_F","I_C_Soldier_Bandit_6_F","I_C_Soldier_Bandit_5_F","I_C_Soldier_Bandit_4_F","I_C_Soldier_Bandit_3_F","I_C_Soldier_Bandit_2_F","I_C_Soldier_Bandit_1_F","I_C_Soldier_Para_8_F","I_C_Soldier_Para_7_F","I_C_Soldier_Para_6_F","I_C_Soldier_Para_5_F","I_C_Soldier_Para_4_F","I_C_Soldier_Para_3_F","I_C_Soldier_Para_2_F","I_C_Soldier_Para_1_F "];
+_ind_c_f_car = ["I_C_Offroad_02_unarmed_F","I_C_Offroad_02_unarmed_brown_F","I_C_Offroad_02_unarmed_olive_F"];
+_ind_c_f_ifv = [];
+_ind_c_f_tank = [];
+_ind_c_f_heli = [];
+
 // Select factions
 private ["_faction_units","_faction_side","_faction_car","_faction_ifv","_faction_tank","_faction_heli"];
 
@@ -75,6 +82,7 @@ if (_az_faction == "OPF_G_F") then { _faction_units = _opf_g_f_units; _faction_s
 if (_az_faction == "IND_F") then { _faction_units = _ind_f_units; _faction_side = independent; _faction_car = _ind_f_car;  _faction_ifv = _ind_f_ifv; _faction_tank = _ind_f_tank; _faction_heli = _ind_f_heli; };
 if (_az_faction == "IND_G_F") then { _faction_units = _ind_g_f_units; _faction_side = independent; _faction_car = _ind_g_f_car; _faction_ifv = _ind_g_f_ifv; _faction_tank = []; _faction_heli = []; };
 if (_az_faction == "OPF_T_F") then { _faction_units = _opf_t_f_units; _faction_size = east; _faction_car = _opf_t_f_car; _faction_ifv = _opf_t_f_ifv; _faction_tank = _opf_t_f_tank; _faction_heli = _opf_t_f_heli; };
+if (_az_faction == "IND_C_F") then { _faction_units = _ind_c_f_units; _faction_side = independent; _faction_car = _ind_c_f_car; _faction_ifv = _ind_c_f_ifv; _faction_tank = _ind_c_f_tank; _faction_heli = _ind_c_f_heli; };
 
 // Create Infantry
 if (_az_infantry > 0) then {

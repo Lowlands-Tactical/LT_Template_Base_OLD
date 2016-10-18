@@ -23,11 +23,12 @@ class LT_AutoZone_Module: Module_F {
       description = "Select the faction that patrols the indicated marker. Please note, not all factions have all the gear.";
       typeName = "STRING";
       class values {
-        class OPF_F {name = "C.S.A.T."; value="OPF_F";};
-        class OPF_G_F {name = "REDFOR Guerilla"; value="OPF_G_F";};
-        class IND_F {name = "A.A.F."; value="IND_F";};
-        class IND_G_F {name = "GREENFOR Guerilla"; value="IND_G_F";};
-				class OPF_T_F {name = "C.S.A.T. (Tanoa)"; value="OPF_T_F";};
+        class OPF_F {name = "C.S.A.T."; value="OPF_F"; };
+        class OPF_G_F {name = "REDFOR Guerilla"; value="OPF_G_F"; };
+        class IND_F {name = "A.A.F."; value="IND_F"; };
+        class IND_G_F {name = "GREENFOR Guerilla"; value="IND_G_F"; };
+				class OPF_T_F {name = "C.S.A.T. (Tanoa)"; value="OPF_T_F"; };
+				class IND_C_F {name = "IND C?"; value="IND_C_F"; };
       };
     };
 
