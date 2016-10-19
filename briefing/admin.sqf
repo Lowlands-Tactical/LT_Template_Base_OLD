@@ -7,7 +7,7 @@ if (serverCommandAvailable "#kick" or getPlayerUID player in _staff) then
 {
 
 // Insert Magic Here!
-player sideChat "Admin page loaded";
+//player sideChat "Admin page loaded";
 
 	// F3 - Briefing
 	// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
@@ -22,6 +22,44 @@ player sideChat "Admin page loaded";
 	This briefing section can only be seen by the current admin.
 	<br/><br/>
 	";
+
+	// ====================================================================================
+
+	// TASKSTATES
+
+	// Create array of tasks
+	_tasks 	= player call BIS_fnc_tasksUnit;
+	diag_log format ["LT template DEBUG: Taskarray: %1",_tasks];
+
+	// Get side of player so taskstate will be remoteExec only to that side.
+	_side 	= side player;
+
+	lt_fnc_setTaskState = {
+		PRIVATE ["_taskIndex", "_state", "_side","_taskArray","_task"];
+		_taskIndex = _this select 0;
+		_state = _this select 1;
+		_side = _this select 2;
+		_taskArray = player call BIS_fnc_tasksUnit;
+		_task = _taskArray select _taskIndex;
+		[_task, _state, true] remoteExec ['BIS_fnc_taskSetState', _side, true];
+	};
+
+	// Foreach through _tasks and add description of task and the expressions for succeeded and failed in _briefing
+	_briefing = _briefing + "<font size='18'>Tasks</font><br/>";
+	if (count _tasks > 0) then {
+		{
+			_taskID = _x;
+			_taskIndex = (player call BIS_fnc_tasksUnit) find _x;
+			_TaskDescriptionArray = _taskID call BIS_fnc_taskDescription;
+			_TaskDescription = _TaskDescriptionArray select 1;
+			_briefing = _briefing + format [
+			"<br/><font size='14'>Task: %2</font><br/>
+			Set state to: <executeClose expression=""[%1, 'Succeeded', %3] call lt_fnc_setTaskState;"">'Succeeded'</executeClose>
+			 or <executeClose expression=""[%1, 'Failed', %3] call lt_fnc_setTaskState;"">'Failed'</executeClose><br/><br/>", _taskIndex, _TaskDescription, _side];
+		} forEach _tasks;
+	} else {
+		_briefing = _briefing + "No tasks specified at beginning<br/><br/>";
+	};
 
 	// ====================================================================================
 
