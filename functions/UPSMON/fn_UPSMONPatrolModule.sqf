@@ -6,10 +6,10 @@ _units = param [1,[],[[]]];
 // True when the module was activated, false when it's deactivated (i.e., synced triggers are no longer active)
 _activated = param [2,true,[true]];
 
-//Count units in Argument
-_cnt = count _units;
+//diag_log format ["Template Base Units: %1",_units];
+//diag_log format ["Template Base Count units: %1",count _units];
 
-if(_activated && _cnt > 0 && UPSMON_INIT==1) then {
+if(_activated) then {
 
 	// Get config root of module so we can get underlying values
 	_UPSMONparams =[];
@@ -17,7 +17,7 @@ if(_activated && _cnt > 0 && UPSMON_INIT==1) then {
 	//Marker
 	_mrk = _logic getVariable "MarkerName";
 	_UPSMONparams set [1, _mrk];
-	diag_log format ["*-* LT Template Base *-* marker: %1 and pos %2", _mrk, getMarkerPos _mrk];
+	//diag_log format ["*-* LT Template Base *-* marker: %1 and pos %2", _mrk, getMarkerPos _mrk];
 
 	//Random
 	_random = _logic getVariable "Random";
@@ -83,18 +83,19 @@ if(_activated && _cnt > 0 && UPSMON_INIT==1) then {
 
 	// Pass on parameters to UPSMON.
 	{
-		if ( _x isKindOf "Car" || _x isKindOf "Man" || _x isKindOf "Air") then {
+			//diag_log format ["Template Base Unit: %1",_x];
+			//diag_log format ["Template Base Leader: %1",leader _x];
+			//diag_log format ["Template Base Group: %1", group _x];
+			//diag_log format ["Template Base Type of variable: %1", typename _x];
+
 			_UPSMONparams set [0, _x];
-			nul = _UPSMONparams execVM "\lt_template_base\AI\UPSMON\UPSMON.sqf"
-		} else {
-			hint format ["%1 is not a Car, Man or Air", _x];
-		};
+			//diag_log format ["Template Base UPSMON Params: %1",_UPSMONparams];
+			_nul = _UPSMONparams execVM "\lt_template_base\AI\UPSMON\UPSMON.sqf";
+			sleep 1;
 	} foreach _units;
 
 } else {
-	if (UPSMON_INIT == 0) then {
-		hint "You did not place the main UPSMON module.";
-	};
+
 };
 
 true
