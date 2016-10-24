@@ -85,6 +85,13 @@ _cup_o_tk_militia_ifv = ["CUP_O_BTR40_MG_TKM","CUP_O_BTR40_TKM"];
 _cup_o_tk_militia_tank = [];
 _cup_o_tk_militia_heli = [];
 
+// Takistan Army
+_cup_o_tk_units = ["CUP_O_TK_Soldier","CUP_O_TK_Soldier_GL","CUP_O_TK_Soldier_Backpack","CUP_O_TK_Soldier_AAT","CUP_O_TK_Soldier_AMG","CUP_O_TK_Soldier_LAT","CUP_O_TK_Soldier_AT","CUP_O_TK_Soldier_HAT","CUP_O_TK_Soldier_AA","CUP_O_TK_Engineer","CUP_O_TK_Soldier_MG","CUP_O_TK_Soldier_AR","CUP_O_TK_Medic","CUP_O_TK_Soldier_SL","CUP_O_TK_Officer","CUP_O_TK_Spotter","CUP_O_TK_Sniper","CUP_O_TK_Sniper_KSVK","CUP_O_TK_Sniper_SVD_Night","CUP_O_TK_Soldier_AKS_Night","CUP_O_TK_Soldier_FNFAL_Night","CUP_O_TK_Soldier_AKS_74_GOSHAWK"];
+_cup_o_tk_car = ["CUP_O_LR_Transport_TKA","CUP_O_LR_Transport_TKA","CUP_O_LR_SPG9_TKA","CUP_O_UAZ_MG_TKA","CUP_O_UAZ_AGS30_TKA","CUP_O_UAZ_SPG9_TKA","CUP_O_UAZ_METIS_TKA","CUP_O_Ural_ZU23_TKA","CUP_O_BM21_TKA","CUP_O_SUV_TKA"];
+_cup_o_tk_ifv = ["CUP_O_UH1H_TKA","CUP_O_BMP1P_TKA","CUP_O_BMP2_TKA","CUP_O_BMP2_ZU_TKA","CUP_O_BRDM2_TKA","CUP_O_BRDM2_ATGM_TKA","CUP_O_BTR40_MG_TKA","CUP_O_BTR40_TKA","CUP_O_BTR60_TK","CUP_O_M113_TKA"];
+_cup_o_tk_tank = ["CUP_O_T34_TKA","CUP_O_T55_TK","CUP_O_ZSU23_TK","CUP_O_ZU23_TK"];
+_cup_o_tk_heli = ["CUP_O_UH1H_TKA"];
+
 // Select factions
 private ["_faction_units","_faction_side","_faction_car","_faction_ifv","_faction_tank","_faction_heli"];
 
@@ -98,6 +105,7 @@ if (_az_faction == "NLDO_RU_VDV_76") then { _faction_units = _nldo_ru_vdv_76_uni
 if (_az_faction == "NLDO_RU_VDV_31") then { _faction_units = _nldo_ru_vdv_31_units; _faction_size = east; _faction_car = _nldo_ru_vdv_31_car; _faction_ifv = _nldo_ru_vdv_31_ifv; _faction_tank = _nldo_ru_vdv_31_tank; _faction_heli = _nldo_ru_vdv_31_heli; };
 if (_az_faction == "NLDO_UA_UAF_95") then { _faction_units = _nldo_ua_uaf_95_units; _faction_size = independent; _faction_car = _nldo_ua_uaf_95_car; _faction_ifv = _nldo_ua_uaf_95_ifv; _faction_tank = _nldo_ua_uaf_95_tank; _faction_heli = _nldo_ua_uaf_95_heli; };
 if (_az_faction == "CUP_O_TK_INS") then { _faction_units = _cup_o_tk_militia_units; _faction_size = east; _faction_car = _cup_o_tk_militia_car; _faction_ifv = _cup_o_tk_militia_ifv; _faction_tank = _cup_o_tk_militia_tank; _faction_heli = _cup_o_tk_militia_heli; };
+if (_az_faction == "CUP_O_TK") then { _faction_units = _cup_o_tk_units; _faction_size = east; _faction_car = _cup_o_tk_car; _faction_ifv = _cup_o_tk_ifv; _faction_tank = _cup_o_tk_tank; _faction_heli = _cup_o_tk_heli; };
 
 
 private ["_GrpSize"];

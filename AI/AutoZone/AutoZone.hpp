@@ -32,7 +32,8 @@ class LT_AutoZone_Module: Module_F {
 				class NLDO_RU_VDV_76 {name = "Russian VDV 76"; value="NLDO_RU_VDV_76"; };
 				class NLDO_RU_VDV_31 {name = "Russian VDV 31"; value="NLDO_RU_VDV_31"; };
 				class NLDO_UA_UAF_95 {name = "Ukraine 95th inf bat"; value="NLDO_UA_UAF_95"; };
-				class CUP_O_TK_INS {name = "Takistan Militia"; value="CUP_O_TK_INS"; };
+				class CUP_O_TK_INS {name = "Takistani Militia"; value="CUP_O_TK_INS"; };
+				class CUP_O_TK {name = "Takistani Army"; value="CUP_O_TK"; };
 			};
 		};
 
