@@ -1,39 +1,21 @@
 // Automatic Zones
-// [area, faction, radio-range, infantry (groups), cars (groups), IFVs (groups), Tanks, Helicopters ] execVM "autozone.sqf";
-// ["area0", "OPF_F", 300, 10, 4, 2, 1, 1, 10, 10 ] execVM "autozone.sqf";
+// [area, faction, radio-range, infantry (groups), Group size #, Group Variation, cars (groups), IFVs (groups), Tanks, Helicopters ] execVM "autozone.sqf";
+// ["area0", "OPF_F", 300, 10, 8, 4, 4, 2, 1, 1, 10, 10 ] execVM "autozone.sqf";
 
-// Argument 0 is module logic.
-_logic = param [0,objNull,[objNull]];
+private ["_az_zone","_az_faction","_az_range","_az_infantry","_az_cars","_az_ifvs","_az_tanks","_az_helicopters","_i","_az_occupy","_az_patrol","_az_GrpSize","_az_GrpVar"];
 
-// True when the module was activated, false when it's deactivated (i.e., synced triggers are no longer active)
-_activated = param [2,true,[true]];
-
-// Please Work
-
-private ["_az_zone","_az_faction","_az_range","_az_infantry","_az_cars","_az_ifvs","_az_tanks","_az_helicopters","_i","_az_occupy","_az_patrol"];
-
-//  _az_zone         = _this select 0;
-// _az_faction      = _this select 1;
-// _az_range        = _this select 2;
-// _az_infantry     = _this select 3;
-// _az_cars         = _this select 4;
-// _az_ifvs         = _this select 5;
-// _az_tanks        = _this select 6;
-// _az_helicopters  = _this select 7;
-// _az_occupy       = _this select 8;
-// _az_patrol       = _this select 9;
-
-
-_az_zone = _logic getVariable "MarkerName";
-_az_faction = _logic getVariable "Faction";
-_az_range = _logic getVariable "RadioRange";
-_az_infantry = _logic getVariable "Infantry";
-_az_cars = _logic getVariable "Cars";
-_az_ifvs = _logic getVariable "IFVs";
-_az_tanks = _logic getVariable "Tanks";
-_az_helicopters= _logic getVariable "Helicopters";
-_az_occupy = _logic getVariable "Occupation";
-_az_patrol = _logic getVariable "Patrol";
+_az_zone         = _this select 0;
+_az_faction      = _this select 1;
+_az_range        = _this select 2;
+_az_infantry     = _this select 3;
+_az_GrpSize      = _this select 4;
+_az_GrpVar       = _this select 5;
+_az_cars         = _this select 6;
+_az_ifvs         = _this select 7;
+_az_tanks        = _this select 8;
+_az_helicopters  = _this select 9;
+_az_occupy       = _this select 10;
+_az_patrol       = _this select 11;
 
 // Faction definitions
 // OPFOR
@@ -86,9 +68,16 @@ if (_az_faction == "IND_G_F") then { _faction_units = _ind_g_f_units; _faction_s
 if (_az_faction == "OPF_T_F") then { _faction_units = _opf_t_f_units; _faction_size = east; _faction_car = _opf_t_f_car; _faction_ifv = _opf_t_f_ifv; _faction_tank = _opf_t_f_tank; _faction_heli = _opf_t_f_heli; };
 if (_az_faction == "IND_C_F") then { _faction_units = _ind_c_f_units; _faction_side = independent; _faction_car = _ind_c_f_car; _faction_ifv = _ind_c_f_ifv; _faction_tank = _ind_c_f_tank; _faction_heli = _ind_c_f_heli; };
 
+private ["_GrpSize"];
+
 // Create Infantry
 if (_az_infantry > 0) then {
   for "_i" from 1 to _az_infantry do {
+    if ( _az_GrpVar == 0 ) then {
+      _GrpSize = _az_GrpSize;
+    } else {
+      _GrpSize = ((_az_GrpSize - _az_GrpVar ) + (round ((random _az_GrpVar) + (random _az_GrpVar))));
+    };
     _grp = [_faction_side, random [5,8,11], ([getMarkerPos _az_zone, 50, random 360] call BIS_fnc_relPos), _faction_units] call lt_fnc_createGroup;
     nul = [leader _grp, _az_zone,"STAG COLUMN", "SAFE", "LIMITED","NOFOLLOW","RANDOM","RADIORANGE:",_az_range] execVM "\lt_template_base\AI\UPSMON\UPSMON.sqf";
     sleep 5;

@@ -34,6 +34,7 @@ class cfgFunctions
     {
       file = "\lt_template_base\functions\autozone";
       class autozone {};
+      class autozoneWrapper {};
     };
   };
   // Functions of F3 template - Thank you Ferstabinde!

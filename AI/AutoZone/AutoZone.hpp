@@ -3,7 +3,7 @@ class LT_AutoZone_Module: Module_F {
 	displayName = "Automatic Zones";
 	icon = "\lt_template_base\logos\lowtac-texture-128px.paa";
 	category = "LT_missionModules";
-	function = "lt_fnc_autozone";
+	function = "lt_fnc_autozoneWrapper";
 	functionPriority = 4;
 	isGlobal = 0;
 	isTriggerActivated = 0;
@@ -12,25 +12,25 @@ class LT_AutoZone_Module: Module_F {
 
 	class Arguments {
 		class MarkerName {
-      displayName = "MarkerName";
-      description = "Name of the marker in which the units will patrol";
-      typeName = "STRING";
-      defaultValue = "";
-    };
+			displayName = "MarkerName";
+			description = "Name of the marker in which the units will patrol";
+			typeName = "STRING";
+			defaultValue = "";
+		};
 
 		class Faction {
-      displayName = "Faction";
-      description = "Select the faction that patrols the indicated marker. Please note, not all factions have all the gear.";
-      typeName = "STRING";
-      class values {
-        class OPF_F {name = "C.S.A.T."; value="OPF_F"; };
-        class OPF_G_F {name = "REDFOR Guerilla"; value="OPF_G_F"; };
-        class IND_F {name = "A.A.F."; value="IND_F"; };
-        class IND_G_F {name = "GREENFOR Guerilla"; value="IND_G_F"; };
+			displayName = "Faction";
+			description = "Select the faction that patrols the indicated marker. Please note, not all factions have all the gear.";
+			typeName = "STRING";
+			class values {
+				class OPF_F {name = "C.S.A.T."; value="OPF_F"; };
+				class OPF_G_F {name = "REDFOR Guerilla"; value="OPF_G_F"; };
+				class IND_F {name = "A.A.F."; value="IND_F"; };
+				class IND_G_F {name = "GREENFOR Guerilla"; value="IND_G_F"; };
 				class OPF_T_F {name = "C.S.A.T. (Tanoa)"; value="OPF_T_F"; };
 				class IND_C_F {name = "Syndikat"; value="IND_C_F"; };
-      };
-    };
+			};
+		};
 
 		class RadioRange {
 			displayName = "Radio Range";
@@ -43,7 +43,21 @@ class LT_AutoZone_Module: Module_F {
 			displayName = "Infantry";
 			description = "The amount of groups in the managed zone.";
 			typeName = "NUMBER";
-			defaultValue = 0;
+			defaultValue = 1;
+		};
+
+		class GroupSize {
+			displayName = "Group Size";
+			description = "The size of groups in the amount of units.";
+			typeName = "NUMBER";
+			defaultValue = 8;
+		};
+
+		class GroupVariation {
+			displayName = "Group Variation";
+			description = "Upper and lower limit of group size variation.";
+			typeName = "NUMBER";
+			defaultValue = 1;
 		};
 
 		class Cars {
