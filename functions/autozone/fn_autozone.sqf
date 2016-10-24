@@ -20,9 +20,9 @@ _az_patrol       = _this select 11;
 // Faction definitions
 // OPFOR
 _opf_f_units = ["O_Soldier_F","O_Soldier_lite_F","O_Soldier_GL_F","O_Soldier_AR_F","O_Soldier_SL_F","O_Soldier_TL_F","O_Soldier_M_F","O_Soldier_LAT_F","O_medic_F","O_Soldier_repair_F","O_Soldier_exp_F","O_Soldier_A_F","O_Soldier_AA_F","O_engineer_F"];
-_opf_f_car = ["O_MRAP_02_hmg_F","O_MRAP_02_gmg_F"];
-_opf_f_ifv = ["O_APC_Tracked_02_cannon_F","O_APC_Tracked_02_AA_F","O_APC_Wheeled_02_rcws_F"];
-_opf_f_tank = ["O_MBT_02_cannon_F"];
+_opf_f_car = ["O_MRAP_02_hmg_F","O_MRAP_02_gmg_F","CUP_O_UAZ_Unarmed_CSAT","CUP_O_UAZ_Militia_CSAT","CUP_O_UAZ_Open_CSAT","CUP_O_UAZ_MG_CSAT","CUP_O_UAZ_AGS30_CSAT","CUP_O_UAZ_SPG9_CSAT","CUP_O_UAZ_METIS_CSAT"];
+_opf_f_ifv = ["O_APC_Tracked_02_cannon_F","O_APC_Tracked_02_AA_F","O_APC_Wheeled_02_rcws_F","CUP_O_BMP1_CSAT","CUP_O_BMP1P_CSAT","CUP_O_BMP2_CSAT","CUP_O_BMP2_ZU_CSAT","CUP_O_BRDM2_CSAT","CUP_O_BRDM2_ATGM_CSAT","CUP_O_BTR60_CSAT"];
+_opf_f_tank = ["O_MBT_02_cannon_F","CUP_O_T72_CSAT", "CUP_O_T55_CSAT" ];
 _opf_f_heli = ["O_Heli_Light_02_F","O_Heli_Light_02_unarmed_F"];
 
 // OPFOR Guerilla
@@ -49,14 +49,41 @@ _opf_t_f_ifv = ["O_T_APC_Tracked_02_cannon_ghex_F","O_T_APC_Wheeled_02_rcws_ghex
 _opf_t_f_tank = ["O_T_MBT_02_cannon_ghex_F"];
 _opf_t_f_heli = ["O_T_VTOL_02_infantry_F","O_T_VTOL_02_vehicle_F","O_T_VTOL_02_infantry_hex_F","O_T_VTOL_02_infantry_ghex_F","O_T_VTOL_02_infantry_grey_F","O_T_VTOL_02_vehicle_hex_F","O_T_VTOL_02_vehicle_ghex_F","O_T_VTOL_02_vehicle_grey_F"];
 
-// Some Tanoa faction
-_ind_c_f_units = ["I_C_Soldier_universal_F","I_C_Soldier_Bandit_8_F","I_C_Soldier_Bandit_7_F","I_C_Soldier_Bandit_6_F","I_C_Soldier_Bandit_5_F","I_C_Soldier_Bandit_4_F","I_C_Soldier_Bandit_3_F","I_C_Soldier_Bandit_2_F","I_C_Soldier_Bandit_1_F","I_C_Soldier_Para_8_F","I_C_Soldier_Para_7_F","I_C_Soldier_Para_6_F","I_C_Soldier_Para_5_F","I_C_Soldier_Para_4_F","I_C_Soldier_Para_3_F","I_C_Soldier_Para_2_F","I_C_Soldier_Para_1_F "];
+// Syndikat oid
+_ind_c_f_units = ["I_C_Soldier_universal_F","I_C_Soldier_Bandit_8_F","I_C_Soldier_Bandit_7_F","I_C_Soldier_Bandit_6_F","I_C_Soldier_Bandit_5_F","I_C_Soldier_Bandit_4_F","I_C_Soldier_Bandit_3_F","I_C_Soldier_Bandit_2_F","I_C_Soldier_Bandit_1_F","I_C_Soldier_Para_8_F","I_C_Soldier_Para_7_F","I_C_Soldier_Para_6_F","I_C_Soldier_Para_5_F","I_C_Soldier_Para_4_F","I_C_Soldier_Para_3_F","I_C_Soldier_Para_2_F","I_C_Soldier_Para_1_F"];
 _ind_c_f_car = ["I_C_Offroad_02_unarmed_F","I_C_Offroad_02_unarmed_brown_F","I_C_Offroad_02_unarmed_olive_F"];
 _ind_c_f_ifv = [];
 _ind_c_f_tank = [];
 _ind_c_f_heli = [];
 
+// NLD Units OPFOR: VDV 76th
+_nldo_ru_vdv_76_units = ["NLDO_RU_VDV_76_aar","NLDO_RU_VDV_76_amat","NLDO_RU_VDV_76_ammg","NLDO_RU_VDV_76_ammo","NLDO_RU_VDV_76_ar","NLDO_RU_VDV_76_at","NLDO_RU_VDV_76_cls","NLDO_RU_VDV_76_gl","NLDO_RU_VDV_76_marksman","NLDO_RU_VDV_76_mat","NLDO_RU_VDV_76_mmg","NLDO_RU_VDV_76_officer","NLDO_RU_VDV_76_rifleman","NLDO_RU_VDV_76_sl","NLDO_RU_VDV_76_tl","NLDO_RU_VDV_76_sniper","NLDO_RU_VDV_76_spotter"];
+_nldo_ru_vdv_76_car = ["NLDO_Punisher_76","NLDO_Punisher_76_HMG","NLDO_Punisher_76_GMG"];
+_nldo_ru_vdv_76_ifv = ["NLDO_TUNGUSKA_76","NLDO_BMP_T_76"];
+_nldo_ru_vdv_76_tank = ["NLDO_T95_76"];
+_nldo_ru_vdv_76_heli = ["NLDO_KA60_Armed_76"];
 
+
+// NLD Units: OPFOR VDV 31th
+_nldo_ru_vdv_31_units = ["NLDO_RU_VDV_31_marksman","NLDO_RU_VDV_31_sniper","NLDO_RU_VDV_31_spotter","NLDO_RU_VDV_31_rifleman","NLDO_RU_VDV_31_aar","NLDO_RU_VDV_31_eng","NLDO_RU_VDV_31_expl","NLDO_RU_VDV_31_ammg","NLDO_RU_VDV_31_mmg","NLDO_RU_VDV_31_tl","NLDO_RU_VDV_31_ar","NLDO_RU_VDV_31_ammo","NLDO_RU_VDV_31_aa","NLDO_RU_VDV_31_officer","NLDO_RU_VDV_31_amat","NLDO_RU_VDV_31_cls","NLDO_RU_VDV_31_mat","NLDO_RU_VDV_31_at","NLDO_RU_VDV_31_gl","NLDO_RU_VDV_31_sl"];
+_nldo_ru_vdv_31_car = ["NLDO_Punisher_31","NLDO_Punisher_31_HMG","NLDO_Punisher_31_GMG"];
+_nldo_ru_vdv_31_ifv = ["NLDO_TUNGUSKA_31","NLDO_BMP_T_31"];
+_nldo_ru_vdv_31_tank = ["NLDO_T00_31"];
+_nldo_ru_vdv_31_heli = ["NLDO_KA60_Armed_31"];
+
+// NLD Units: OPFOR Ukraine 95th
+_nldo_ua_uaf_95_units = ["nldo_ua_uaf_95_aar","nldo_ua_uaf_95_sl","nldo_ua_uaf_95_mat","nldo_ua_uaf_95_mmg","nldo_ua_uaf_95_explosive","nldo_ua_uaf_95_dm","nldo_ua_uaf_95_aa","nldo_ua_uaf_95_ammo","nldo_ua_uaf_95_ammg","nldo_ua_uaf_95_officer","nldo_ua_uaf_95_rifleman","nldo_ua_uaf_95_cls","nldo_ua_uaf_95_engineer","nldo_ua_uaf_95_amat","nldo_ua_uaf_95_fac","nldo_ua_uaf_95_at","nldo_ua_uaf_95_ar","nldo_ua_uaf_95_gl","nldo_ua_uaf_95_tl"];
+_nldo_ua_uaf_95_car = ["nldo_ua_uaf_95_kraz","nldo_ua_uaf_95_kraz_hmg","nldo_ua_uaf_95_kraz_gmg"];
+_nldo_ua_uaf_95_ifv = ["nldo_ua_uaf_95_bmp1u","nldo_ua_uaf_95_tunguska"];
+_nldo_ua_uaf_95_tank = ["nldo_ua_uaf_95_t84"];
+_nldo_ua_uaf_95_heli = [];
+
+// Takistani Militia
+_cup_o_tk_militia_units = ["CUP_O_TK_INS_Soldier","CUP_O_TK_INS_Soldier_AAT","CUP_O_TK_INS_Soldier_GL","CUP_O_TK_INS_Soldier_Enfield","CUP_O_TK_INS_Soldier_FNFAL","CUP_O_TK_INS_Soldier_AA","CUP_O_TK_INS_Soldier_AT","CUP_O_TK_INS_Soldier_TL","CUP_O_TK_INS_Sniper","CUP_O_TK_INS_Soldier_AR","CUP_O_TK_INS_Soldier_MG","CUP_O_TK_INS_Guerilla_Medic","CUP_O_TK_INS_Commander","CUP_O_TK_INS_Mechanic","CUP_O_TK_INS_Bomber"];
+_cup_o_tk_militia_car = ["CUP_O_LR_Transport_TKM","CUP_O_LR_MG_TKM","CUP_O_LR_SPG9_TKM","CUP_O_Ural_ZU23_TKM"];
+_cup_o_tk_militia_ifv = ["CUP_O_BTR40_MG_TKM","CUP_O_BTR40_TKM"];
+_cup_o_tk_militia_tank = [];
+_cup_o_tk_militia_heli = [];
 
 // Select factions
 private ["_faction_units","_faction_side","_faction_car","_faction_ifv","_faction_tank","_faction_heli"];
@@ -67,6 +94,11 @@ if (_az_faction == "IND_F") then { _faction_units = _ind_f_units; _faction_side 
 if (_az_faction == "IND_G_F") then { _faction_units = _ind_g_f_units; _faction_side = independent; _faction_car = _ind_g_f_car; _faction_ifv = _ind_g_f_ifv; _faction_tank = []; _faction_heli = []; };
 if (_az_faction == "OPF_T_F") then { _faction_units = _opf_t_f_units; _faction_size = east; _faction_car = _opf_t_f_car; _faction_ifv = _opf_t_f_ifv; _faction_tank = _opf_t_f_tank; _faction_heli = _opf_t_f_heli; };
 if (_az_faction == "IND_C_F") then { _faction_units = _ind_c_f_units; _faction_side = independent; _faction_car = _ind_c_f_car; _faction_ifv = _ind_c_f_ifv; _faction_tank = _ind_c_f_tank; _faction_heli = _ind_c_f_heli; };
+if (_az_faction == "NLDO_RU_VDV_76") then { _faction_units = _nldo_ru_vdv_76_units; _faction_size = east; _faction_car = _nldo_ru_vdv_76_car; _faction_ifv = _nldo_ru_vdv_76_ifv; _faction_tank = _nldo_ru_vdv_76_tank; _faction_heli = _nldo_ru_vdv_76_heli; };
+if (_az_faction == "NLDO_RU_VDV_31") then { _faction_units = _nldo_ru_vdv_31_units; _faction_size = east; _faction_car = _nldo_ru_vdv_31_car; _faction_ifv = _nldo_ru_vdv_31_ifv; _faction_tank = _nldo_ru_vdv_31_tank; _faction_heli = _nldo_ru_vdv_31_heli; };
+if (_az_faction == "NLDO_UA_UAF_95") then { _faction_units = _nldo_ua_uaf_95_units; _faction_size = independent; _faction_car = _nldo_ua_uaf_95_car; _faction_ifv = _nldo_ua_uaf_95_ifv; _faction_tank = _nldo_ua_uaf_95_tank; _faction_heli = _nldo_ua_uaf_95_heli; };
+if (_az_faction == "CUP_O_TK_INS") then { _faction_units = _cup_o_tk_militia_units; _faction_size = east; _faction_car = _cup_o_tk_militia_car; _faction_ifv = _cup_o_tk_militia_ifv; _faction_tank = _cup_o_tk_militia_tank; _faction_heli = _cup_o_tk_militia_heli; };
+
 
 private ["_GrpSize"];
 
