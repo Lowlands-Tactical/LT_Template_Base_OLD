@@ -99,13 +99,13 @@ if (_az_faction == "OPF_F") then { _faction_units = _opf_f_units; _faction_side 
 if (_az_faction == "OPF_G_F") then { _faction_units = _opf_g_f_units; _faction_side = east; _faction_car = _opf_g_f_car; _faction_ifv = _opf_g_f_ifv; _faction_tank = []; _faction_heli = []; };
 if (_az_faction == "IND_F") then { _faction_units = _ind_f_units; _faction_side = independent; _faction_car = _ind_f_car;  _faction_ifv = _ind_f_ifv; _faction_tank = _ind_f_tank; _faction_heli = _ind_f_heli; };
 if (_az_faction == "IND_G_F") then { _faction_units = _ind_g_f_units; _faction_side = independent; _faction_car = _ind_g_f_car; _faction_ifv = _ind_g_f_ifv; _faction_tank = []; _faction_heli = []; };
-if (_az_faction == "OPF_T_F") then { _faction_units = _opf_t_f_units; _faction_size = east; _faction_car = _opf_t_f_car; _faction_ifv = _opf_t_f_ifv; _faction_tank = _opf_t_f_tank; _faction_heli = _opf_t_f_heli; };
+if (_az_faction == "OPF_T_F") then { _faction_units = _opf_t_f_units; _faction_side = east; _faction_car = _opf_t_f_car; _faction_ifv = _opf_t_f_ifv; _faction_tank = _opf_t_f_tank; _faction_heli = _opf_t_f_heli; };
 if (_az_faction == "IND_C_F") then { _faction_units = _ind_c_f_units; _faction_side = independent; _faction_car = _ind_c_f_car; _faction_ifv = _ind_c_f_ifv; _faction_tank = _ind_c_f_tank; _faction_heli = _ind_c_f_heli; };
-if (_az_faction == "NLDO_RU_VDV_76") then { _faction_units = _nldo_ru_vdv_76_units; _faction_size = east; _faction_car = _nldo_ru_vdv_76_car; _faction_ifv = _nldo_ru_vdv_76_ifv; _faction_tank = _nldo_ru_vdv_76_tank; _faction_heli = _nldo_ru_vdv_76_heli; };
-if (_az_faction == "NLDO_RU_VDV_31") then { _faction_units = _nldo_ru_vdv_31_units; _faction_size = east; _faction_car = _nldo_ru_vdv_31_car; _faction_ifv = _nldo_ru_vdv_31_ifv; _faction_tank = _nldo_ru_vdv_31_tank; _faction_heli = _nldo_ru_vdv_31_heli; };
-if (_az_faction == "NLDO_UA_UAF_95") then { _faction_units = _nldo_ua_uaf_95_units; _faction_size = independent; _faction_car = _nldo_ua_uaf_95_car; _faction_ifv = _nldo_ua_uaf_95_ifv; _faction_tank = _nldo_ua_uaf_95_tank; _faction_heli = _nldo_ua_uaf_95_heli; };
-if (_az_faction == "CUP_O_TK_INS") then { _faction_units = _cup_o_tk_militia_units; _faction_size = east; _faction_car = _cup_o_tk_militia_car; _faction_ifv = _cup_o_tk_militia_ifv; _faction_tank = _cup_o_tk_militia_tank; _faction_heli = _cup_o_tk_militia_heli; };
-if (_az_faction == "CUP_O_TK") then { _faction_units = _cup_o_tk_units; _faction_size = east; _faction_car = _cup_o_tk_car; _faction_ifv = _cup_o_tk_ifv; _faction_tank = _cup_o_tk_tank; _faction_heli = _cup_o_tk_heli; };
+if (_az_faction == "NLDO_RU_VDV_76") then { _faction_units = _nldo_ru_vdv_76_units; _faction_side = east; _faction_car = _nldo_ru_vdv_76_car; _faction_ifv = _nldo_ru_vdv_76_ifv; _faction_tank = _nldo_ru_vdv_76_tank; _faction_heli = _nldo_ru_vdv_76_heli; };
+if (_az_faction == "NLDO_RU_VDV_31") then { _faction_units = _nldo_ru_vdv_31_units; _faction_side = east; _faction_car = _nldo_ru_vdv_31_car; _faction_ifv = _nldo_ru_vdv_31_ifv; _faction_tank = _nldo_ru_vdv_31_tank; _faction_heli = _nldo_ru_vdv_31_heli; };
+if (_az_faction == "NLDO_UA_UAF_95") then { _faction_units = _nldo_ua_uaf_95_units; _faction_side = independent; _faction_car = _nldo_ua_uaf_95_car; _faction_ifv = _nldo_ua_uaf_95_ifv; _faction_tank = _nldo_ua_uaf_95_tank; _faction_heli = _nldo_ua_uaf_95_heli; };
+if (_az_faction == "CUP_O_TK_INS") then { _faction_units = _cup_o_tk_militia_units; _faction_side = east; _faction_car = _cup_o_tk_militia_car; _faction_ifv = _cup_o_tk_militia_ifv; _faction_tank = _cup_o_tk_militia_tank; _faction_heli = _cup_o_tk_militia_heli; };
+if (_az_faction == "CUP_O_TK") then { _faction_units = _cup_o_tk_units; _faction_side = east; _faction_car = _cup_o_tk_car; _faction_ifv = _cup_o_tk_ifv; _faction_tank = _cup_o_tk_tank; _faction_heli = _cup_o_tk_heli; };
 
 
 private ["_GrpSize"];
@@ -118,7 +118,7 @@ if (_az_infantry > 0) then {
     } else {
       _GrpSize = ((_az_GrpSize - _az_GrpVar ) + (round ((random _az_GrpVar) + (random _az_GrpVar))));
     };
-    _grp = [_faction_side, random [5,8,11], ([getMarkerPos _az_zone, 50, random 360] call BIS_fnc_relPos), _faction_units] call lt_fnc_createGroup;
+    _grp = [_faction_side, _GrpSize, ([getMarkerPos _az_zone, 50, random 360] call BIS_fnc_relPos), _faction_units] call lt_fnc_createGroup;
     nul = [leader _grp, _az_zone,"STAG COLUMN", "SAFE", "LIMITED","NOFOLLOW","RANDOM","RADIORANGE:",_az_range] execVM "\lt_template_base\AI\UPSMON\UPSMON.sqf";
     sleep 5;
   };
