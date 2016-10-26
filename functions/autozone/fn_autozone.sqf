@@ -120,6 +120,28 @@ _cup_o_ru_flora_ifv = ["CUP_O_BMP2_RU","CUP_O_BMP_HQ_RU","CUP_O_BMP2_AMB_RU","CU
 _cup_o_ru_flora_tank = ["CUP_O_T72_RU"];
 _cup_o_ru_flora_heli = ["CUP_O_Mi24_P_RU","CUP_O_Mi24_V_RU","CUP_O_MI6A_RU","CUP_O_MI6T_RU","CUP_O_Mi8_VIV_RU","CUP_O_Mi8_RU"];
 
+
+// NAPA
+_cup_i_napa_units = ["CUP_I_GUE_Soldier_AKSU","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AKS74","CUP_I_GUE_Soldier_GL","CUP_I_GUE_Officer","CUP_I_GUE_Soldier_AT","CUP_I_GUE_Soldier_AA","CUP_I_GUE_Soldier_AR","CUP_I_GUE_Soldier_MG","CUP_I_GUE_Saboteur","CUP_I_GUE_Medic","CUP_I_GUE_Engineer","CUP_I_GUE_Ammobearer","CUP_I_GUE_Soldier_AA2","CUP_I_GUE_Sniper","CUP_I_GUE_Soldier_Scout","CUP_I_GUE_Commander","CUP_I_GUE_Local","CUP_I_GUE_Woodman","CUP_I_GUE_Gamekeeper","CUP_I_GUE_Forester","CUP_I_GUE_Farmer","CUP_I_GUE_Villager"];
+_cup_i_napa_car = ["CUP_I_Ural_ZU23_NAPA","CUP_I_Datsun_PK","CUP_I_Datsun_PK_Random"];
+_cup_i_napa_ifv = ["CUP_I_BMP2_NAPA","CUP_I_BMP_HQ_NAPA","CUP_I_BRDM2_NAPA","CUP_I_BRDM2_ATGM_NAPA","CUP_I_BRDM2_HQ_NAPA"];
+_cup_i_napa_tank = ["CUP_I_T72_NAPA","CUP_I_T34_NAPA"];
+_cup_i_napa_heli = [];
+
+// RACS
+_cup_i_racs_units = [];
+_cup_i_racs_ifv = [];
+_cup_i_racs_car = [];
+_cup_i_racs_tank = [];
+_cup_i_racs_heli = [];
+
+// Takistani Locals
+_cup_i_tk_gue_units = [];
+_cup_i_tk_gue_car = [];
+_cup_i_tk_gue_ifv = [];
+_cup_i_tk_gue_tank = [];
+_cup_i_tk_gue_heli = [];
+
 // Select factions
 private ["_faction_units","_faction_side","_faction_car","_faction_ifv","_faction_tank","_faction_heli"];
 
@@ -138,6 +160,9 @@ if (_az_faction == "CUP_O_CHDKZ") then { _faction_units = _cup_o_chdkz_units; _f
 if (_az_faction == "CUP_O_SLA") then { _faction_units = _cup_o_sla_units; _faction_side = east; _faction_car = _cup_o_sla_car; _faction_ifv = _cup_o_sla_ifv; _faction_tank = _cup_o_sla_tank; _faction_heli = _cup_o_sla_heli; };
 if (_az_faction == "CUP_O_RU_EMR") then { _faction_units = _cup_o_ru_emr_units; _faction_side = east; _faction_car = _cup_o_ru_emr_car; _faction_ifv = _cup_o_ru_emr_ifv; _faction_tank = _cup_o_ru_emr_tank; _faction_heli = _cup_o_ru_emr_heli; };
 if (_az_faction == "CUP_O_RU_FLORA") then { _faction_units = _cup_o_ru_flora_units; _faction_side = east; _faction_car = _cup_o_ru_flora_car; _faction_ifv = _cup_o_ru_flora_ifv; _faction_tank = _cup_o_ru_flora_tank; _faction_heli = _cup_o_ru_flora_heli; };
+if (_az_faction == "CUP_I_NAPA") then { _faction_units = _cup_i_napa_units; _faction_side = east; _faction_car = _cup_i_napa_car; _faction_ifv = _cup_i_napa_ifv; _faction_tank = _cup_i_napa_tank; _faction_heli = _cup_i_napa_heli; };
+if (_az_faction == "CUP_I_RACS") then { _faction_units = _cup_i_racs_units; _faction_side = east; _faction_car = _cup_i_racs_car; _faction_ifv = _cup_i_racs_ifv; _faction_tank = _cup_i_racs_tank; _faction_heli = _cup_i_racs_heli; };
+if (_az_faction == "CUP_I_TK_GUE") then { _faction_units = _cup_i_tk_gue_units; _faction_side = east; _faction_car = _cup_i_tk_gue_car; _faction_ifv = _cup_i_tk_gue_ifv; _faction_tank = _cup_i_tk_gue_tank; _faction_heli = _cup_i_tk_gue_heli; };
 
 private ["_GrpSize"];
 
