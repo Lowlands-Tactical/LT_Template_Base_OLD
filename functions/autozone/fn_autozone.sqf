@@ -32,10 +32,10 @@ _opf_g_f_ifv = ["O_APC_Wheeled_02_rcws_F"];
 
 // AAF
 _ind_f_units = ["I_Soldier_A_F","I_soldier_AR_F","I_medic_F","I_engineer_F","I_soldier_exp_F","I_Soldier_GL_F","I_soldier_M_F","I_soldier_AA_F","I_soldier_AT_F","I_officer_F","I_soldier_repair_F","I_Soldier_F","I_soldier_LAT_F","I_Soldier_lite_F","I_Soldier_SL_F","I_Soldier_TL_F"];
-_ind_f_car = ["I_MRAP_03_hmg_F", "I_MRAP_03_gmg_F"];
-_ind_f_ifv = ["I_APC_tracked_03_cannon_F","I_APC_Wheeled_03_cannon_F"];
+_ind_f_car = ["I_MRAP_03_hmg_F", "I_MRAP_03_gmg_F","CUP_I_LR_MG_AAF"];
+_ind_f_ifv = ["I_APC_tracked_03_cannon_F","I_APC_Wheeled_03_cannon_F","CUP_I_M113_AAF","CUP_I_M163_AAF","CUP_I_ZSU23_AAF"];
 _ind_f_tank = ["I_MBT_03_cannon_F"];
-_ind_f_heli = ["I_Heli_Transport_02_F"];
+_ind_f_heli = ["I_Heli_Transport_02_F","CUP_B_Wildcat_Unarmed_Green_AAF","CUP_B_Wildcat_Hellfire_Armed_Green_AAF","CUP_B_Wildcat_Cannon_Armed_Green_AAF","CUP_B_Wildcat_Unarmed_Digital_AAF","CUP_B_Wildcat_Hellfire_Armed_Digital_AAF","CUP_B_Wildcat_Cannon_Armed_Digital_AAF","CUP_I_Ka60_GL_Digi_AAF","CUP_I_Ka60_Digi_AAF"];
 
 // Altis Guerilla
 _ind_g_f_units = ["I_G_Soldier_F","I_G_Soldier_lite_F","I_G_Soldier_SL_F","I_G_Soldier_TL_F","I_G_Soldier_AR_F","I_G_medic_F","I_G_engineer_F","I_G_Soldier_exp_F","I_G_Soldier_GL_F","I_G_Soldier_M_F","I_G_Soldier_LAT_F","I_G_Soldier_A_F"];
