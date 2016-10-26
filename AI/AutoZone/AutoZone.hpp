@@ -34,6 +34,10 @@ class LT_AutoZone_Module: Module_F {
 				class NLDO_UA_UAF_95 {name = "Ukraine 95th inf bat"; value="NLDO_UA_UAF_95"; };
 				class CUP_O_TK_INS {name = "Takistani Militia"; value="CUP_O_TK_INS"; };
 				class CUP_O_TK {name = "Takistani Army"; value="CUP_O_TK"; };
+				class CUP_O_CHDKZ {name = "ChDKZ"; value="CUP_O_CHDKZ"; };
+				class CUP_O_SLA {name = "Sahrani Liberation Army"; value="CUP_O_SLA"; };
+				class CUP_O_RU_EMR {name = "Russia (EMR)"; value="CUP_O_RU_EMR"; };
+				class CUP_O_RU_FLORA {name = "Russia (Flora)"; value="CUP_O_RU_FLORA"; };
 			};
 		};
 
