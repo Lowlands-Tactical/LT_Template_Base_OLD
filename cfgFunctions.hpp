@@ -18,6 +18,7 @@ class cfgFunctions
       class setItems {};
 	    class setVehicleGear {};
       class createGroup {};
+	  class checkUnitWeight {};
     };
     class UPSMON
     {

@@ -720,6 +720,8 @@ if (_role != "custom" && _role IN _RolesArray) then {
 	};
 
 	diag_log format ["LT Template DEBUG: setGear.sqf attachments attached to weapons"];
+
+	[_unit] call LT_fnc_checkUnitWeight;
 };
 
 diag_log format ["LT Template DEBUG: setGear.sqf finished"];
