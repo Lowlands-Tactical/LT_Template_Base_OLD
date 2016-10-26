@@ -129,11 +129,11 @@ _cup_i_napa_tank = ["CUP_I_T72_NAPA","CUP_I_T34_NAPA"];
 _cup_i_napa_heli = [];
 
 // RACS
-_cup_i_racs_units = [];
-_cup_i_racs_ifv = [];
-_cup_i_racs_car = [];
-_cup_i_racs_tank = [];
-_cup_i_racs_heli = [];
+_cup_i_racs_units = ["CUP_I_RACS_Soldier","CUP_I_RACS_Officer","CUP_I_RACS_Medic","CUP_I_RACS_SL","CUP_I_RACS_GL","CUP_I_RACS_MMG","CUP_I_RACS_Soldier_AA","CUP_I_RACS_Soldier_MAT","CUP_I_RACS_Soldier_HAT","CUP_I_RACS_Sniper","CUP_I_RACS_Engineer","CUP_I_RACS_RoyalCommando","CUP_I_RACS_RoyalGuard","CUP_I_RACS_RoyalMarksman","CUP_I_RACS_Urban_Soldier","CUP_I_RACS_wdl_Soldier","CUP_I_RACS_Mech_Soldier"];
+_cup_i_racs_ifv = ["CUP_I_AAV_RACS","CUP_I_M113_RACS","CUP_I_M163_RACS"];
+_cup_i_racs_car = ["CUP_I_LR_Transport_RACS","CUP_I_LR_MG_RACS"];
+_cup_i_racs_tank = ["CUP_I_T72_RACS"];
+_cup_i_racs_heli = ["CUP_I_UH60L_RACS","CUP_I_UH60L_FFV_RACS","CUP_I_UH60L_Unarmed_RACS","CUP_I_UH60L_Unarmed_FFV_Racs","CUP_I_UH60L_Unarmed_FFV_MEV_Racs","CUP_I_AH6J_Escort_RACS","CUP_I_AH6J_AT_RACS","CUP_I_AH6J_MP_RACS","CUP_I_AH6J_Escort19_RACS","CUP_I_MH6J_RACS","CUP_I_SA330_Puma_HC1_RACS","CUP_I_SA330_Puma_HC2_RACS"];
 
 // Takistani Locals
 _cup_i_tk_gue_units = [];
