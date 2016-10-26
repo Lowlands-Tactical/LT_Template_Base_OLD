@@ -136,11 +136,11 @@ _cup_i_racs_tank = ["CUP_I_T72_RACS"];
 _cup_i_racs_heli = ["CUP_I_UH60L_RACS","CUP_I_UH60L_FFV_RACS","CUP_I_UH60L_Unarmed_RACS","CUP_I_UH60L_Unarmed_FFV_Racs","CUP_I_UH60L_Unarmed_FFV_MEV_Racs","CUP_I_AH6J_Escort_RACS","CUP_I_AH6J_AT_RACS","CUP_I_AH6J_MP_RACS","CUP_I_AH6J_Escort19_RACS","CUP_I_MH6J_RACS","CUP_I_SA330_Puma_HC1_RACS","CUP_I_SA330_Puma_HC2_RACS"];
 
 // Takistani Locals
-_cup_i_tk_gue_units = [];
-_cup_i_tk_gue_car = [];
-_cup_i_tk_gue_ifv = [];
-_cup_i_tk_gue_tank = [];
-_cup_i_tk_gue_heli = [];
+_cup_i_tk_gue_units = ["CUP_I_TK_GUE_Soldier","CUP_I_TK_GUE_Soldier_AAT","CUP_I_TK_GUE_Soldier_AK_47S","CUP_I_TK_GUE_Soldier_M16A2","CUP_I_TK_GUE_Soldier_GL","CUP_I_TK_GUE_Guerilla_Enfield","CUP_I_TK_GUE_Soldier_AA","CUP_I_TK_GUE_Soldier_AT","CUP_I_TK_GUE_Soldier_HAT","CUP_I_TK_GUE_Soldier_TL","CUP_I_TK_GUE_Sniper","CUP_I_TK_GUE_Soldier_AR","CUP_I_TK_GUE_Soldier_MG","CUP_I_TK_GUE_Guerilla_Medic","CUP_I_TK_GUE_Commander","CUP_I_TK_GUE_Mechanic","CUP_I_TK_GUE_Demo"];
+_cup_i_tk_gue_car = ["CUP_I_Ural_ZU23_TK_Gue","CUP_I_Datsun_PK_TK","CUP_I_Datsun_PK_TK_Random"];
+_cup_i_tk_gue_ifv = ["CUP_I_BMP1_TK_GUE","CUP_I_BRDM2_TK_Gue","CUP_I_BRDM2_ATGM_TK_Gue","CUP_I_BRDM2_HQ_TK_Gue","CUP_I_BTR40_MG_TKG","CUP_I_BTR40_TKG"];
+_cup_i_tk_gue_tank = ["CUP_I_T55_TK_GUE","CUP_I_T34_TK_GUE"];
+_cup_i_tk_gue_heli = ["CUP_I_UH1H_TK_GUE"];
 
 // Select factions
 private ["_faction_units","_faction_side","_faction_car","_faction_ifv","_faction_tank","_faction_heli"];
