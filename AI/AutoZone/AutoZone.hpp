@@ -38,6 +38,9 @@ class LT_AutoZone_Module: Module_F {
 				class CUP_O_SLA {name = "Sahrani Liberation Army"; value="CUP_O_SLA"; };
 				class CUP_O_RU_EMR {name = "Russia (EMR)"; value="CUP_O_RU_EMR"; };
 				class CUP_O_RU_FLORA {name = "Russia (Flora)"; value="CUP_O_RU_FLORA"; };
+				class CUP_I_NAPA { name = "N.A.P.A."; value="CUP_I_NAPA"; };
+				class CUP_I_RACS { name = "Royal Army Corp of Sahrani"; value="CUP_I_RACS"; };
+				class CUP_I_TK_GUE { name = "Takistani Locals"; value="CUP_I_TK_GUE"; };
 			};
 		};
 
