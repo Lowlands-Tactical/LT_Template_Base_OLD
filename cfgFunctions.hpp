@@ -16,9 +16,10 @@ class cfgFunctions
       class changeUniform {};
       class checkClassExist {};
       class setItems {};
-	    class setVehicleGear {};
+	  class setVehicleGear {};
       class createGroup {};
 	  class checkUnitWeight {};
+      class getWeaponMagazineClasses {};
     };
     class UPSMON
     {
