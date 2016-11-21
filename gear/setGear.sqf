@@ -68,7 +68,8 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			_unit addmagazines [_smokegrenadegreen,2];
 			_unit addWeapon _rangefinder;
 			_unit addItem _cigarette;
-			_unit addItem _dagr;
+			_unit addItem _gps;
+			_unit assignItem _gps;
 
 			if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 			(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
@@ -95,7 +96,8 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			_unit addmagazines [_smokegrenadegreen,2];
 			_unit addWeapon _rangefinder;
 			_unit addItem _cigarette;
-			_unit addItem _dagr;
+			_unit addItem _gps;
+			_unit assignItem _gps;
 
 			if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 			(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
@@ -136,7 +138,8 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			_unit addmagazines [_smokegrenadegreen,2];
 			_unit addWeapon _rangefinder;
 			_unit addItem _cigarette;
-			_unit addItem _dagr;
+			_unit addItem _gps;
+			_unit assignItem _gps;
 
 			if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 			(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
@@ -455,6 +458,8 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			_unit addItem _dagr;
 			_unit addItem _rangecard;
 			_unit addItem _kestrel;
+			_unit addItem _gps;
+			_unit assignItem _gps;
 		};
 
 	// LOADOUT: SPOTTER
@@ -472,6 +477,8 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			_unit addItem _spotting_scope;
 			_unit addItem _rangecard;
 			_unit addItem _kestrel;
+			_unit addItem _gps;
+			_unit assignItem _gps;
 		};
 
 	// LOADOUT: VEHICLE COMMANDER
