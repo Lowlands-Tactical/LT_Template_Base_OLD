@@ -175,7 +175,7 @@ if (_az_infantry > 0) then {
       _GrpSize = ((_az_GrpSize - _az_GrpVar ) + (round ((random _az_GrpVar) + (random _az_GrpVar))));
     };
     _grp = [_faction_side, _GrpSize, ([getMarkerPos _az_zone, 50, random 360] call BIS_fnc_relPos), _faction_units] call lt_fnc_createGroup;
-    nul = [leader _grp, _az_zone,"STAG COLUMN", "SAFE", "LIMITED","NOFOLLOW","RANDOM","RADIORANGE:",_az_range] execVM "\lt_template_base\AI\UPSMON\UPSMON.sqf";
+    nul = [leader _grp, _az_zone,"STAG COLUMN", "SAFE", "LIMITED","RANDOM","RADIORANGE:",_az_range] execVM "\lt_template_base\AI\UPSMON\UPSMON.sqf";
     sleep 5;
   };
 };
@@ -185,7 +185,7 @@ if (_az_cars > 0) then {
   for "_i" from 1 to _az_cars do {
     _tmp_pos = [getMarkerPos _az_zone,random 50,random 360] call BIS_fnc_relPos;
     _veh = [_tmp_pos,random 360, (_faction_car call BIS_fnc_selectRandom), _faction_side] call BIS_fnc_spawnVehicle;
-    nul = [leader (_veh select 2), _az_zone, "SAFE", "LIMITED","NOFOLLOW","NOSMOKE","RADIORANGE:",(_az_range * 2)] execVM "\lt_template_base\AI\UPSMON\UPSMON.sqf";
+    nul = [leader (_veh select 2), _az_zone, "SAFE", "LIMITED","NOSMOKE","RADIORANGE:",(_az_range * 2)] execVM "\lt_template_base\AI\UPSMON\UPSMON.sqf";
     sleep 10;
   };
 };
