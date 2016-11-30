@@ -54,8 +54,8 @@ if(_activated) then {
 	_Track 			= _logic getVariable "Track"		; IF (_Track) then {_UPSMONparams pushBack "TRACK"; };
 	_Respawn 		= _logic getVariable "Respawn"		; IF (_Respawn) then {_UPSMONparams pushBack "RESPAWN"; };
 	_Ambush 		= _logic getVariable "Ambush"		; IF (_Ambush) then {_UPSMONparams pushBack "AMBUSH"; };
-	_Ambush2 		= _logic getVariable "Ambush2"		; IF (_Ambush2) then {_UPSMONparams pushBack "AMBUSH"; };
-	_DoRelax 		= _logic getVariable "DoRelax"		; IF (_DoRelax) then {_UPSMONparams pushBack "DOLRELAX"; };
+	_Ambush2 		= _logic getVariable "Ambush2"		; IF (_Ambush2) then {_UPSMONparams pushBack "AMBUSH2"; };
+	_DoRelax 		= _logic getVariable "DoRelax"		; IF (_DoRelax) then {_UPSMONparams pushBack "DORELAX"; };
 
 	_deleteNumber = _logic getVariable "DeleteNumber";
 	if (_deleteNumber > 0) then {_UPSMONparams pushBack "DELETE:"; _UPSMONparams pushBack _deleteNumber;};
