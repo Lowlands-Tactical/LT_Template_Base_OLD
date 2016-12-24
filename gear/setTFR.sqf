@@ -12,7 +12,7 @@ if (lt_tfr_var == "1") then {
   _roles = ["co","dc","ftl"];
   _role = player getVariable "lt_unit_role";
 
-  // diag_log format["TFR is on with the role: %1",_role];
+  diag_log format["TFR is on with the role: %1",_role];
 
   if (_constraint != "None" and _role in _roles) then {
 
