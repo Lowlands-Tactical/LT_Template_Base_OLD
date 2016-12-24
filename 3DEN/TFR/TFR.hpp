@@ -1,6 +1,5 @@
 class LT_TFR_changer
 	{
-		displayName = "Mission ACRE2 settings";
 		tooltip = "Which type of TFR ";
 		property = "LT_tfr_selector_id";
 		control = "LT_TFR_combo";
