@@ -25,7 +25,7 @@ class LT_TFR_combo: Title
 				};
 				class LT_TFR_unmanaged
 				{
-					text = "Use ACRE2 settings";
+					text = "Use TFR settings";
 					data = "0";
 					default = 1;
 				};
