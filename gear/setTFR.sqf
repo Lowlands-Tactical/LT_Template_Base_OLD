@@ -6,6 +6,8 @@ _tfrpack 	= _lt_camo_var_array select 4;
 
 // Only execute this when we want it to run.
 
+diag_log format["LT template DEBUG: lt_tfr_var == %1",lt_tfr_var];
+
 if (lt_tfr_var == "1") then {
   tf_no_auto_long_range_radio = true;
 
