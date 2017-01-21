@@ -47,6 +47,10 @@ class LT_veh_role_combo: Title
 					data = "crate_small";
 					text = "Small ammocrate";
 				};
+				class LT_Veh_Role_Empty {
+					data = "empty";
+					text = "Empty";
+				};
 			};
 		};
 	};

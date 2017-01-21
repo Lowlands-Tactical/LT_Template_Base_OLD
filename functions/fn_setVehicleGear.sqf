@@ -156,6 +156,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_glriflemag, 8];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 10];
 		_vehicle addMagazineCargoGlobal [_armag, 5];
+		_vehicle addMagazineCargoGlobal [_DMriflemag, 3];
 		_vehicle addWeaponCargoGlobal [_rat, 2];
 		_vehicle addMagazineCargoGlobal [_grenade, 4];
 		_vehicle addMagazineCargoGlobal [_smokegrenade, 4];
@@ -180,6 +181,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_glriflemag, 40];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 40];
 		_vehicle addMagazineCargoGlobal [_armag, 22];
+		_vehicle addMagazineCargoGlobal [_DMriflemag, 20];
 		_vehicle addWeaponCargoGlobal [_rat, 6];
 		_vehicle addMagazineCargoGlobal [_grenade, 12];
 		_vehicle addmagazineCargoGlobal [_mgrenade,12];
@@ -205,6 +207,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_glriflemag, 20];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 20];
 		_vehicle addMagazineCargoGlobal [_armag, 8];
+		_vehicle addMagazineCargoGlobal [_DMriflemag, 10];
 		_vehicle addWeaponCargoGlobal [_rat, 2];
 		_vehicle addMagazineCargoGlobal [_grenade, 8];
 		_vehicle addmagazineCargoGlobal [_mgrenade,8];
@@ -229,6 +232,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_glriflemag, 5];
 		_vehicle addMagazineCargoGlobal [_armag, 5];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 5];
+		_vehicle addMagazineCargoGlobal [_DMriflemag, 5];
 		_vehicle addMagazineCargoGlobal [_glmag, 5];
 		_vehicle addMagazineCargoGlobal [_glsmokewhite, 4];
 		_vehicle addWeaponCargoGlobal [_rat, 2];
@@ -255,6 +259,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_carbinemag, 20];
 		_vehicle addMagazineCargoGlobal [_glmag, 20];
 		_vehicle addMagazineCargoGlobal [_glsmokewhite,16];
+		_vehicle addMagazineCargoGlobal [_DMriflemag, 12];
 		_vehicle addWeaponCargoGlobal [_rat, 6];
 		_vehicle addMagazineCargoGlobal [_grenade, 25];
 		_vehicle addMagazineCargoGlobal [_mgrenade, 25];
@@ -277,6 +282,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_glriflemag, 60];
 		_vehicle addMagazineCargoGlobal [_armag, 45];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 60];
+		_vehicle addMagazineCargoGlobal [_DMriflemag, 45];
 		_vehicle addMagazineCargoGlobal [_glmag, 60];
 		_vehicle addMagazineCargoGlobal [_glsmokewhite,50];
 		_vehicle addWeaponCargoGlobal [_rat, 20];
@@ -288,5 +294,12 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,20];
 		_vehicle addItemCargoGlobal [_morphine,35];
 		_vehicle addItemCargoGlobal [_epinephrine,35];
+	};
+	case "empty":
+	{
+		clearWeaponCargoGlobal _vehicle;
+		clearMagazineCargoGlobal _vehicle;
+		clearItemCargoGlobal _vehicle;
+		clearBackpackCargoGlobal _vehicle;
 	};
 };
