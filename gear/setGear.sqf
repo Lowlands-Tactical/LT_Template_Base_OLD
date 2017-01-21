@@ -1,6 +1,7 @@
 _unit 		= player;
 _role		= _unit getvariable "LT_unit_role";
 _exclude	= _unit getVariable ["LT_camo_exclude", 0];
+_nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
 
 _RolesArray = ["custom","co","dc","m","ftl","ar","aar","rat","dm","mmgg","mmgag","hmgg","hmgag","matg","matag","hatg","hatag","mtrg","mtrag","msamg","msamag","hsamg","hsamag","sn","sp","vc","vd","vg","pp","pcc","pc","eng","engm","uav","div","r","car","smg","gren"];
 
@@ -25,8 +26,6 @@ if (_role != "custom" && _role IN _RolesArray) then {
 		clearItemCargoGlobal (unitBackpack _unit);
 	};
 
-	_nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
-	if ( _nvg_enabled == 1 ) then { _unit linkItem _nvg; } else {_unit unlinkItem _nvg;};
 
 	_unit addItemToBackpack _bandages;
 	_unit addItemToBackpack _bandages;
@@ -235,6 +234,7 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			(unitBackpack _unit) addItemCargoGlobal [_spotting_scope,1];
 			(unitBackpack _unit) addItemCargoGlobal [_rangecard,1];
 			_attachments = [_attach1,_scope2];
+      if ( _nvg_enabled == 1 ) then {(unitBackpack _unit) addItemCargoGlobal [ "optic_NVS", 1]};
 		};
 
 	// LOADOUT: MEDIUM MG GUNNER
@@ -460,6 +460,8 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			_unit addItem _kestrel;
 			_unit addItem _gps;
 			_unit assignItem _gps;
+			_attachments = [_attach1,_scope2];
+			if ( _nvg_enabled == 1 ) then {(unitBackpack _unit) addItemCargoGlobal [ "optic_NVS", 1]};
 		};
 
 	// LOADOUT: SPOTTER
@@ -479,6 +481,8 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			_unit addItem _kestrel;
 			_unit addItem _gps;
 			_unit assignItem _gps;
+			_attachments = [_attach1,_scope2];
+			if ( _nvg_enabled == 1 ) then {(unitBackpack _unit) addItemCargoGlobal [ "optic_NVS", 1]};
 		};
 
 	// LOADOUT: VEHICLE COMMANDER
@@ -730,5 +734,11 @@ if (_role != "custom" && _role IN _RolesArray) then {
 
 	[_unit] call LT_fnc_checkUnitWeight;
 };
+
+// NVG
+_nvg = if (isNil "lt_template_nvg") then {"ACE_NVG_Wide"} else {lt_template_nvg};
+_nvgLinked = hmd _unit;
+_nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
+[_unit, _nvgLinked, _nvg_enabled, _nvg] call LT_fnc_NVGParameters;
 
 diag_log format ["LT Template DEBUG: setGear.sqf finished"];
