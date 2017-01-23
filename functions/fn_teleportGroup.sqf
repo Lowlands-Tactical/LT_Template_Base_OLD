@@ -6,7 +6,7 @@ _dest = 0;
 _count = 0;
 
 openMap[true,true];
-onMapSingleClick { _dest = _pos; openMap[false]; };
+onMapSingleClick { _dest = _pos; openMap[false]; onMapSingleClick ""; };
 
 _myUnits = units player - player;
 
