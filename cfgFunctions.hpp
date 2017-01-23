@@ -16,11 +16,12 @@ class cfgFunctions
       class changeUniform {};
       class checkClassExist {};
       class setItems {};
-	    class setVehicleGear {};
+      class setVehicleGear {};
       class createGroup {};
-	    class checkUnitWeight {};
+      class checkUnitWeight {};
       class getWeaponMagazineClasses {};
       class NVGParameters {};
+      class teleportGroup {};
     };
     class UPSMON
     {
