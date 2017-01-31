@@ -317,9 +317,12 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
 			(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 1];
 			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
+			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 1];
+			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
 			_unit addmagazines [_carbinemag,7];
 			_unit addmagazines [_carbinemag_tr,2];
 			_unit addmagazines [_smokegrenade,2];
+			_Unit addMagazines [_MATmag1, 1];
 			_unit addweapon _carbine;
 			_unit addweapon _MAT;
 
@@ -341,6 +344,8 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 			(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
 			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
 
 		};
 
