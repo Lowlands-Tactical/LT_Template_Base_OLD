@@ -1,5 +1,5 @@
 class LT_LowTacSetItemsModule: Module_F {
-		scope = 2;
+		scope = 1;
 		displayName = "Lowtac Gear/Item settings";
 		icon = "\lt_template_base\logos\lowtac-texture-128px.paa";
 		category = "LT_missionModules";
