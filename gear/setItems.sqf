@@ -17,7 +17,7 @@ _bipod1 = if (isNil "lt_template_bipod1") then {"bipod_01_F_snd"} else {lt_templ
 _bipod2 = if (isNil "lt_template_bipod2") then {"bipod_02_F_blk"} else {lt_template_bipod2};		// Black bipod
 
 // Default setup
-_attachments = if (isNil "lt_template_attachments") then {[_attach1,_scope1]} else {lt_template_attachments splitstring " ,";}; // The default attachment set for most units, overwritten in the individual unitType
+_attachments = if (isNil "lt_template_attachments") then {[_attach1,_scope1]} else {if (typename lt_template_attachments == "ARRAY") then {lt_template_attachments} else {lt_template_attachments splitstring " ,";};}; // The default attachment set for most units, overwritten in the individual unitType
 diag_log format ["*-* LT Template Base *-* array: %1 select 0: %2 typename: %3", _attachments, _attachments select 0, typename _attachments];
 // ====================================================================================
 
