@@ -68,7 +68,7 @@ class LT_Camo_combo: Title
 				class LT_Camo_SF
 				{
 					text = "Special Forces Black";
-					data = ["NLD_SF_Camo","NLD_SF_Vest","NLD_SF_Carryall_Empty","NLD_SF_Helmet","NLD_rt1523g_KM"];
+					data = ["NLD_SF_Camo","NLD_SF_Vest","NLD_SF_Carryall_Empty","NLD_SF_ECH","NLD_rt1523g_KM"];
 				};
 				class LT_Camo_SFMTP
 				{
