@@ -22,6 +22,7 @@ class cfgFunctions
       class getWeaponMagazineClasses {};
       class NVGParameters {};
       class teleportGroup {};
+      class PreInitFactionCompositions {preInit = 1;};
     };
     class UPSMON
     {
@@ -39,6 +40,11 @@ class cfgFunctions
       file = "\lt_template_base\functions\autozone";
       class autozone {};
       class autozoneWrapper {};
+    };
+    class ModuleDefense
+    {
+      file = "\lt_template_base\functions\ModuleDefense";
+      class defenseModule {};
     };
   };
   // Functions of F3 template - Thank you Ferstabinde!
