@@ -128,8 +128,10 @@ _watch = if (isNil "lt_template_watch") then {"ItemWatch"} else {lt_template_wat
 
 
 // Backpacks
-_bag 			= IF(_lt_camo_var_array select 0 == "None") then {"NLD_WLD_Carryall_Empty"} else {_lt_camo_var_array select 2;};
-_baguav 		= IF(_lt_camo_var_array select 0 == "None") then {"NLD_WLD_Carryall_UAV"  } else {_lt_camo_var_array select 2;};
+_TypeName = typename _lt_camo_var_array;
+_CamoVarBag = _lt_camo_var_array select 2;
+_bag 			= IF (_TypeName == "ARRAY") then {selectrandom _CamoVarBag} else {IF(_lt_camo_var_array select 0 == "None") then {"NLD_WLD_Carryall_Empty"} else {_lt_camo_var_array select 2;};};
+_baguav 		= IF (_TypeName == "ARRAY") then {selectrandom _CamoVarBag} else {IF(_lt_camo_var_array select 0 == "None") then {"NLD_WLD_Carryall_UAV"} else {_lt_camo_var_array select 2;};};
 _bagmediumdiver = if (isNil "lt_template_bagmediumdiver") then {"B_AssaultPack_blk"} else {lt_template_bagmediumdiver};			// used by divers
 _baghmgg 		= if (isNil "lt_template_baghmgg") then {"B_HMG_01_weapon_F"} else {lt_template_baghmgg};			// used by Heavy MG gunner
 _baghmgag 		= if (isNil "lt_template_baghmgag") then {"B_HMG_01_support_F"} else {lt_template_baghmgag};			// used by Heavy MG assistant gunner
