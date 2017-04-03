@@ -24,6 +24,9 @@ if ("lt_fatigue_onoff" call BIS_fnc_getParamValue == 0) then {player enableFatig
 // Disable STHUD Occlusion
 STUI_Occlusion = false;  
 
+// Disable infested rabbits and birds, allow sounds.
+enableEnvironment [false, true];
+
 if (isServer) then {
 
 	_vehicleArray = vehicles;
