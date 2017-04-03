@@ -21,6 +21,9 @@ enableSentences false;
 // Player fatigue (set via params)
 if ("lt_fatigue_onoff" call BIS_fnc_getParamValue == 0) then {player enableFatigue false};
 
+// Disable STHUD Occlusion
+STUI_Occlusion = false;  
+
 if (isServer) then {
 
 	_vehicleArray = vehicles;
