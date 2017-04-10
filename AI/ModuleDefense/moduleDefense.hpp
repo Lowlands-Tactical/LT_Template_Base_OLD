@@ -22,6 +22,12 @@ class LT_Defense_Module: Module_F
 			typeName = "STRING";
 			defaultValue = "";
 		};
+		class Defense_SearchAreaSize {
+			displayName = "Defense area size";
+			description = "Size of area enemies will search. If marker is rectangle or ellipse that size will be used.";
+			typeName = "NUMBER";
+			defaultValue = 100;
+		};
 		class EmptyLine0 {
 			displayName = "Faction settings";
 			description = "";
@@ -105,6 +111,12 @@ class LT_Defense_Module: Module_F
 			typeName = "STRING";
 			defaultValue = 0;
 		};
+		class Defense_AirAmount {
+			displayName = "Amount of helicopters per wave";
+			description = "";
+			typeNmae = "STRING";
+			defaultValue = 0;
+		};
 		class EmptyLine3 {
 			displayName = "Direction and distance";
 			description = "";
@@ -128,10 +140,32 @@ class LT_Defense_Module: Module_F
 		};
 		// From which direction should the units come from?
 		class Defense_Direction {
-			displayName = "Degrees";
-			description = "Direction in degrees from 0 - 360 degrees. If -1 the direction of module will be taken. If -2 enemies will spawn all around.";
+			displayName = "Direction of attack";
+			description = "Direction from which the attack will come from.";
 			typeName = "NUMBER";
-			defaultValue = -1;
+			class values {
+				class ModuleDirection {name = "Module direction"; value= -1; default=1;};
+				class RandomDirection {name = "Random directions (Surrounded)"; value= -2;};
+				class SpawnMarkers {name = "Markers"; value = -3;};
+			};
+		};
+		class Defense_MarkerInfantrySpawn {
+			displayName = "Infantry Spawn markers";
+			description = "";
+			typeName = "STRING";
+			defaultValue = "";
+		};
+		class Defense_MarkerVehicleSpawn {
+			displayName = "Vehicle Spawn markers";
+			description = "";
+			typeName = "STRING";
+			defaultValue = "";
+		};
+		class Defense_MarkerAirSpawn {
+			displayName = "Airvehicles Spawn markers";
+			description = "";
+			typeName = "STRING";
+			defaultValue = "";
 		};
 		class EmptyLine4 {
 			displayName = "Enemy Behaviour and speed";
@@ -161,6 +195,55 @@ class LT_Defense_Module: Module_F
         			class Limited 	{name = "Limited"; value="LIMITED";};
         			class Normal	{name = "Normal"; value="NORMAL"; default =1;};
         			class Full		{name = "Full" ; value="FULL" ;};
+			};
+		};
+		class EmptyLine5 {
+			displayName = "Artillery";
+			description = "";
+			typeName = "STRING";
+			class values {
+				class Empty {name = "-----------"; value = ""; default = 1;};
+			};
+		};
+		class Defense_EnableArty {
+			displayName = "";
+			description = "";
+			typeName = "BOOL";
+			class values {
+				class True 	{name = "Yes"; value = true;};
+				class False {name = "No"; value = false;};
+			};
+		};
+		class Defense_ArtyAmmoType {
+			displayName = "Type of artillery";
+			description = "Chose the type of artillery";
+			typeName = "STRING";
+			class values {
+				class ModuleOrdnanceMortar_F_ammo {name = "Mortar"; value = "ModuleOrdnanceMortar_F_ammo"; default = 1;};
+				class ModuleOrdnanceHowitzer_F_ammo {name = "Howitzer HE"; value = "ModuleOrdnanceHowitzer_F_ammo";};
+				class ModuleOrdnanceRocket_F_ammo {name = "MLRS Rockets"; value = "ModuleOrdnanceRocket_F_ammo";};
+				class ModuleOrdnanceRocket_F_subammo {name = "MLRS Rockets (sub)"; value = "ModuleOrdnanceRocket_F_subammo";};
+			};
+		};
+		class Defense_ArtyRounds {
+			displayName = "Amount of rounds per barrage";
+			description = "Amount of rounds per barrage. If waveamount is -1 then you can enter artillery rounds per wave";
+			typeName = "STRING";
+			defaultValue = "3";
+		};
+		class Defense_ArtyDelay {
+			displayName = "Delay between rounds";
+			description = "Delay between rounds";
+			typeName = "NUMBER";
+			defaultValue = 7;
+		};
+		class Defense_ArtyDamagePlayers {
+			displayName = "Playerdamage";
+			description = "Artillery does damage to players";
+			typeName = "BOOL";
+			class values {
+				class True 	{name = "Yes"; value = true;};
+				class False {name = "No"; value = false;};
 			};
 		};
 	};

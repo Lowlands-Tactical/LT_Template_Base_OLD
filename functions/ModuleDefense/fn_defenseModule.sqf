@@ -4,7 +4,11 @@ _activated = param [2,true,[true]];
 
 if (_activated) then {
 	if (isServer) then {
-		_mrk 		= _logic getVariable "Defense_MarkerModule";
+		_mrkDefPos 	= _logic getVariable "Defense_MarkerModule";
+		_SearchAreaSize = _logic getVariable "Defense_SearchAreaSize"; // nw
+		_mrkInfSpawn = _logic getVariable "Defense_MarkerInfantrySpawn"; //nw
+		_mrkVehSpawn = _logic getVariable "Defense_MarkerVehicleSpawn"; // nw
+		_mrkAirSpawn = _logic getVariable "Defense_MarkerAirSpawn"; // nw
 		_faction	= _logic getVariable "Defense_Faction";
 		_waves 		= _logic getVariable "Defense_Waves";
 		_wavetime 	= _logic getVariable "Defense_WaveTime";
@@ -13,23 +17,44 @@ if (_activated) then {
 		_veh 		= _logic getVariable "Defense_Light_VehicleAmount";
 		_mech		= _logic getVariable "Defense_MechanizedAmount";
 		_armor 		= _logic getVariable "Defense_ArmorAmount";
+		_air 		= _logic getVariable "Defense_AirAmount";
 		_mindist 	= _logic getVariable "Defense_MinSpawnDistance";
 		_maxdist 	= _logic getVariable "Defense_MaxSpawnDistance";
 		_dir 		= _logic getVariable "Defense_Direction";
 		_behaviour	= _logic getVariable "Defense_Behaviour";
 		_speed 		= _logic getVariable "Defense_Speed";
+		_artyEnabled = _logic getVariable "Defense_EnableArty";
+		_artyAmmoType = _logic getVariable "Defense_ArtyAmmoType";
+		_artyRounds 	= _logic getVariable "Defense_ArtyRounds";
+		_artyDelay = _logic getVariable "Defense_ArtyDelay";
+		_artyDamage = _logic getVariable "Defense_ArtyDamagePlayers";
 
+		// Verify distance value
 		if (_maxdist - _mindist <= 0) exitWith {
 			systemchat format ["-=Defense Module=- Min dist is higher than or equal to Max dist: %1", _maxdist - _mindist];
 			diag_log format ["LT template DEBUG: -=Defense Module=- Min dist is higher than or equal to Max dist: %1", _maxdist - _mindist];
 		};
 
-		_defensepos = if (_mrk == "") then {getpos _logic} else {getMarkerpos _mrk};
-		_searchArea = createMarker ["Search Area", _defensepos];
-		_searchArea setMarkerShape "ELLIPSE";
-		_searchArea setMarkerSize [100, 100];
-		_searchArea setMarkerAlpha 0;
+		// Define defenseposition
+		_defensepos = if (_mrkDefPos == "") then {getpos _logic} else {getMarkerpos _mrkDefPos};
 
+		_searchArea = if (markerShape _mrkDefPos == "ICON" || _mrkDefPos == "") then {
+			createMarker ["Search Area", _defensepos];
+		} else {
+			_defensepos
+		};
+		if (markerShape _mrkDefPos == "ICON" || _mrkDefPos == "") then {
+				_searchArea setMarkerShape "ELLIPSE";
+				_searchArea setMarkerSize [_SearchAreaSize,_SearchAreaSize];
+				_searchArea setMarkerAlpha 0;
+		};
+
+		// Define Spawnmarkerarrays
+		_InfSpawnArray = _mrkInfSpawn splitstring ",";
+		_VehSpawnArray = _mrkVehSpawn splitstring ",";
+		_SpawnMarkerArray = [_InfSpawnArray, _VehSpawnArray, _VehSpawnArray,_VehSpawnArray];
+
+		// Define side
 		DIAG_LOG FORMAT ["LT template DEBUG: -=Defense Module=- Faction  %1", _faction];
 		_factionUnitArray = switch (_faction) do {
 				case "LT_OPF_F": {LT_OPF_F};
@@ -66,7 +91,7 @@ if (_activated) then {
 			case 3: {CIVILIAN};
 		};
 
-
+		// Define spawned quantities of units
 		_inputArray = [_infy , _veh , _mech , _armor];
 		_outputArray = [[],[],[],[]];
 		_tempArray = [];
@@ -75,7 +100,7 @@ if (_activated) then {
 			if (_waves == -1) then {
 				_tempArray 	= _inputArray select _i splitstring ",";
 				{
-					_outputArray select _i append [_x];
+					_outputArray select _i append [parsenumber _x];
 				} forEach _tempArray;
 			} else {
 				if (_waves > 0) then {
@@ -90,84 +115,140 @@ if (_activated) then {
 		};
 		diag_log format ["LT template DEBUG: -=Defense Module= outputArray: %1",_outputArray];
 
-		//_cntArray = [count _outputArray select 0, count _outputArray select 1, count _outputArray select 2, count _outputArray select 3];
+		// Define amount of waves
 		_wavesAmnt = if (_waves == -1) then {
 
 			diag_log format ["LT template DEBUG: -=Defense Module= outputArray 0: %1",_outputArray select 0];
 			_my = _outputArray select 0;
 			diag_log format ["LT template DEBUG: -=Defense Module= outputArray type: %1", typename _my];
-			diag_log format ["LT template DEBUG: -=Defense Module= outputArray type: %1", typename (_my select 0)];
+			diag_log format ["LT template DEBUG: -=Defense Module= outputArray select 0 type: %1", typename (_my select 0)];
 			(selectMax [count (_outputArray select 0), count (_outputArray select 1), count (_outputArray select 2), count (_outputArray select 3)]) - 1
 		} else {
 			_waves - 1
 		};
+		diag_log format ["LT template DEBUG: -=Defense Module= Waves amount: %1",_wavesAmnt];
+		
+		// Define amount of artyrounds per wave
+		_roundsArray = []
+		_roundsArray = if (_waves == -1 && Defense_EnableArty) then {
+			_artyRounds splitstring ",";
+		} else {
+			for "_r" from 0 to _wavesAmnt do {
+				_roundsArray set [_r, parsenumber _artyRounds];
+			};
+		};
 
+		// Initialise waves
 		for "_i" from 0 to _wavesAmnt do {
+			
+			// Define amount of players
+			_playersAmnt = count (allPlayers - entities "HeadlessClient_F");
 
+			// Log wave number
 			diag_log format ["LT template DEBUG: -=Defense Module=- Wave %1", _i + 1];
-			_playersamnt = count (allPlayers - entities "HeadlessClient_F");
-			_infyArray = _outputArray select 0;
-			_vehArray = _outputArray  select 1;
-			_mechArray = _outputArray  select 2;
-			_armorArray = _outputArray  select 3;
+			hint format ["Wave %1 started", _i + 1];
 
-			_infyamnt = if (parsenumber (_infyArray select _i) == -1) then {if (_playersamnt > 1) then {round (random [4, _playersamnt * 0.75,_playersamnt])} else {_playersamnt * 4}} else {parsenumber (_infyArray select _i) };
-			_vehamnt = if (parsenumber (_vehArray select _i) == -1) then {if (_playersamnt > 1) then {round (random [2, _playersamnt * 0.3,_playersamnt * 0.5])} else {_playersamnt * 2}} else {parsenumber (_vehArray select _i) };
-			_mechamnt = if (parsenumber (_mechArray select _i) == -1) then {if (_playersamnt > 1) then {round (random [2, _playersamnt * 0.3,_playersamnt * 0.5])} else {_playersamnt * 2}} else {parsenumber (_mechArray select _i) };
-			_armoramnt = if (parsenumber (_armorArray select _i) == -1) then {if (_playersamnt > 1) then {round (random [1, _playersamnt * 0.2,_playersamnt * 0.4])} else {_playersamnt}} else {parsenumber (_armorArray select _i) };
+			// Array of spawnamounts
+			_SpawnAmountArray = [[0, "Infantry"], [0, "Motorized"], [0, "Mechanized"], [0, "Armor"], [0,"Air"]];
 
-			_Array = [[_infyamnt, "Infantry"], [_vehamnt, "Motorized"], [_mechamnt, "Mechanized"], [_armoramnt, "Armor"]];
-			diag_log format ["LT template DEBUG: -=Defense Module=- Unitstype %1", _Array];
+			_weights = [4,2,2,1, 0.5];
+			_factors = [0.75, 0.3, 0.3, 0.2, 0.1];
+			// Define spawnamounts
+			{
+				//diag_log format ["LT template DEBUG: -=Defense Module= ForEachIndex: %1",_forEachIndex];
+				diag_log format ["LT template DEBUG: -=Defense Module=- ForeachIndex: %1 _i: %2", _forEachIndex, _i];
+				if (_outputarray select _forEachIndex select _i == -1) then {
+					_w = _weights select _forEachIndex;
+					_f = _factors select _forEachIndex;
+					if (_playersAmnt > 1) then {round (random [_w, _playersAmnt * _f,_playersAmnt])} else {_playersAmnt * _w};
+					_SpawnAmountArray select _forEachIndex set [0, if (_playersAmnt > 1) then {round (random [_w, _playersAmnt * _f,_playersAmnt])} else {_playersAmnt * _w}];
+				} else {
+					_SpawnAmountArray select _forEachIndex set [0, _outputarray select _forEachIndex select _i];
+				};
+			} forEach _SpawnAmountArray;
+			diag_log format ["LT template DEBUG: -=Defense Module=- SpawnAmountArray %1", _SpawnAmountArray];
 
+			// ForEach unittype spawn units with the amounts that come out of the
 			{
 				_amnt		= _x select 0;
 				_UnitType 	= _x select 1;
-				for "_n" from 1 to _amnt do {
+				diag_log format ["LT template DEBUG: -=Defense Module=- Amount: %1 Unittype: %2",_amnt,_UnitType];
+				
+				if (_amnt == 0) then {
+					diag_log format ["LT template DEBUG: -=Defense Module=- No spawn %1", _unitType];
+				} else {
+				
+					for "_n" from 1 to _amnt do {
+						
+						// Get array of units of type _x from the selected faction
+						_groupArray = _factionUnitArray select (_forEachIndex);
+						diag_log format ["LT template DEBUG: -=Defense Module=- Grouparray %1", _groupArray];
+						
+						_unitcap = 120;
+						
+						// Define spawn position
+						_spawndist = random [_mindist ,_maxdist - _mindist, _maxdist];
+						_minspawndist = random [1 , 5 , 10];
+						_maxspawndist = random [11 , 15, 20];
 
-					_spawndist = random [_mindist ,_maxdist - _mindist, _maxdist];
-					_minspawndist = random [1 , 5 , 10];
-					_maxspawndist = random [11 , 15, 20];
-
-					_relpos = if (_dir == -1 || _dir == -2) then {
-						if (_dir == -1) then {
-							[_defensepos , _spawndist, getdir _logic] call BIS_fnc_relPos;
-						} else {
-							[_defensepos , _spawndist, random 360] call BIS_fnc_relPos;
+						_relpos = switch (_dir) do {
+							case -1: {[_defensepos , _spawndist, getdir _logic] call BIS_fnc_relPos;};
+							case -2: {[_defensepos , _spawndist, random 360] call BIS_fnc_relPos;};
+							case -3: {[selectRandom (_SpawnMarkerArray select (_forEachIndex))] call CBA_fnc_randPosArea;};
 						};
-					} else {
-						[_defensepos , _spawndist, _dir] call BIS_fnc_relPos;
-					};
+						// https://community.bistudio.com/wiki/findEmptyPosition
 
-					_spawnpos = [_relpos, _minspawndist, _maxspawndist, 2, 0, 2, 0,[], _relpos] call BIS_fnc_findSafePos;
-					diag_log format ["LT template DEBUG: -=Defense Module=- Spawnpos after switch %1", _spawnpos];
+						_spawnpos = _relpos findEmptyPosition [0, 20];
+						//_spawnpos = [_relpos, _minspawndist, _maxspawndist, 2, 0, 2, 0,[], _relpos] call BIS_fnc_findSafePos;
+						diag_log format ["LT template DEBUG: -=Defense Module=- Spawnpos after switch %1", _spawnpos];
 
-					_groupArray = _factionUnitArray select _i;
-					_unitcap = 120;
-
-					diag_log format ["LT template DEBUG: -=Defense Module=- Grouparray %1", _groupArray];
-					if (count _groupArray == 0) then {
-						diag_log format ["LT template DEBUG: -=Defense Module=- No spawn "];
-					} else {
-						if (_UnitType == "Infantry") then {
-							diag_log format ["LT template DEBUG: -=Defense Module=- Waituntil %1",((count allunits - _playersamnt) + 1) <= _unitcap];
-							//waitUntil {((count allunits - _playersamnt) + _infyGroupSize) <= _unitcap};
-							_grp = [_factionSide, _infyGroupSize, _spawnpos, _groupArray] call LT_fnc_createGroup;
-							diag_log format ["LT template DEBUG: -=Defense Module=- Group: %1", _grp];
-							[_grp, _searchArea, _behaviour, "RED", _speed] call CBA_fnc_taskSearchArea;
+						if (count _groupArray == 0) then {
+							diag_log format ["LT template DEBUG: -=Defense Module=- No spawn "];
 						} else {
-							diag_log format ["LT template DEBUG: -=Defense Module=- Waituntil %1",((count allunits - _playersamnt) + 1) <= _unitcap];
-							//waitUntil {((count allunits - _playersamnt) + 1) <= _unitcap};
-							//[position,direction,type,side or group] call BIS_fnc_spawnVehicle
-							_grp = [_spawnpos, _spawnpos getdir _defensepos, selectRandom _groupArray, _factionSide] call BIS_fnc_spawnVehicle;
-							diag_log format ["LT template DEBUG: -=Defense Module=- Group: %1", _grp];
-							[_grp, _searchArea, 100] call CBA_fnc_taskAttack;
-						};
+							// If infantry then spawn and give taskSearch area. If Vehicle spawn and give taskAttack.
+							switch (_unitType) do {
+								
+								case "Infantry": {
+									//waitUntil {((count allunits - _playersamnt) + _infyGroupSize) <= _unitcap};
+									_grp = [_factionSide, _infyGroupSize, _spawnpos, _groupArray] call LT_fnc_createGroup;
+									
+									diag_log format ["LT template DEBUG: -=Defense Module=- Group: %1", _grp];
+									[_grp, _searchArea, _behaviour, "RED", _speed] call CBA_fnc_taskSearchArea;
+								};
+								case "Air": {
+									//waitUntil {((count allunits - _playersamnt) + 1) <= _unitcap};
+									_grp = [_spawnpos, _spawnpos getdir _defensepos, selectRandom _groupArray, _factionSide] call BIS_fnc_spawnVehicle;
+									_grp flyInHeight 100;
+									diag_log format ["LT template DEBUG: -=Defense Module=- Group: %1", _grp];
+									[_grp, _searchArea, _SearchAreaSize] call CBA_fnc_taskAttack;
+								};
 
-					};
+								default {
+									//waitUntil {((count allunits - _playersamnt) + 1) <= _unitcap};
+									_grp = [_spawnpos, _spawnpos getdir _defensepos, selectRandom _groupArray, _factionSide] call BIS_fnc_spawnVehicle;
+									
+									diag_log format ["LT template DEBUG: -=Defense Module=- Group: %1", _grp];
+									[_grp, _searchArea, _SearchAreaSize] call CBA_fnc_taskAttack;
+								};
+							};
+						};
+						
+					};	
+					diag_log format ["LT template DEBUG: -=Defense Module=- %1 spawning done for wave %2", _unittype,_i + 1];					
 				};
-
-			} forEach _Array;
-
+			} forEach _SpawnAmountArray;
+			
+			diag_log format ["LT template DEBUG: -=Defense Module=- Spawning wave %1 done", _i + 1];
+			
+			// Artillery startup
+			if (Defense_EnableArty) then {
+				_rounds = _roundsArray select _i;
+				[_artyAmmoType,_rounds,_artyDelay,_artyDamage] call LT_fnc_doMortar;
+			};
+			
+			
+			/*
+			// Sleep
 			if (_wavetime find "," >= 0 && _wavetime != "-1") then {
 				_timeArray = _wavetime splitstring ",";
 				_timeMin = _timeArray select 0;
@@ -186,6 +267,8 @@ if (_activated) then {
 					sleep _wavetimer;
 				};
 			};
+			*/
+			sleep parsenumber _wavetime;
 
 			diag_log format ["LT template DEBUG: -=Defense Module=- Sleep check"];
 		};
