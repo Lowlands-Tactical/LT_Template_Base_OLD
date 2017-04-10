@@ -1,6 +1,6 @@
 _lt_camo_var_array = call compile lt_camo_var;
 
-_constraint 	= if (typename _lt_camo_var_array == "ARRAY") then {selectRandom _lt_camo_var_array select 0} else {_lt_camo_var_array select 0};
+_constraint 	= if (typename (_lt_camo_var_array select 0) == "ARRAY") then {selectRandom (_lt_camo_var_array select 0)} else {_lt_camo_var_array select 0};
 // _pack	= _lt_camo_var_array select 2;
 _tfrpack 	= _lt_camo_var_array select 4;
 
