@@ -129,7 +129,7 @@ if (_activated) then {
 		diag_log format ["LT template DEBUG: -=Defense Module= Waves amount: %1",_wavesAmnt];
 		
 		// Define amount of artyrounds per wave
-		_roundsArray = []
+		_roundsArray = [];
 		_roundsArray = if (_waves == -1 && Defense_EnableArty) then {
 			_artyRounds splitstring ",";
 		} else {
