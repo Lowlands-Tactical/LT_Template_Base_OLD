@@ -251,8 +251,8 @@ if (_activated) then {
 			// Sleep
 			if (_wavetime find "," >= 0 && _wavetime != "-1") then {
 				_timeArray = _wavetime splitstring ",";
-				_timeMin = _timeArray select 0;
-				_timeMax = _timeArray select 1;
+				_timeMin = parsenumber (_timeArray select 0);
+				_timeMax = parsenumber (_timeArray select 1);
 				_wavetimernd = random [_timeMin, _timeMax - _timeMin, _timeMax];
 				diag_log format ["LT template DEBUG: -=Defense Module=- Sleep %1", _wavetime];
 				sleep _wavetimernd;
