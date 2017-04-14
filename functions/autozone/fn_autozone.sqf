@@ -17,152 +17,67 @@ _az_helicopters  = _this select 9;
 _az_occupy       = _this select 10;
 _az_patrol       = _this select 11;
 
-// Faction definitions
-// OPFOR
-_opf_f_units = ["O_Soldier_F","O_Soldier_lite_F","O_Soldier_GL_F","O_Soldier_AR_F","O_Soldier_SL_F","O_Soldier_TL_F","O_Soldier_M_F","O_Soldier_LAT_F","O_medic_F","O_Soldier_repair_F","O_Soldier_exp_F","O_Soldier_A_F","O_Soldier_AA_F","O_engineer_F"];
-_opf_f_car = ["O_MRAP_02_hmg_F","O_MRAP_02_gmg_F","CUP_O_UAZ_Unarmed_CSAT","CUP_O_UAZ_Militia_CSAT","CUP_O_UAZ_Open_CSAT","CUP_O_UAZ_MG_CSAT","CUP_O_UAZ_AGS30_CSAT","CUP_O_UAZ_SPG9_CSAT","CUP_O_UAZ_METIS_CSAT"];
-_opf_f_ifv = ["O_APC_Tracked_02_cannon_F","O_APC_Tracked_02_AA_F","O_APC_Wheeled_02_rcws_F","CUP_O_BMP1_CSAT","CUP_O_BMP1P_CSAT","CUP_O_BMP2_CSAT","CUP_O_BMP2_ZU_CSAT","CUP_O_BRDM2_CSAT","CUP_O_BRDM2_ATGM_CSAT","CUP_O_BTR60_CSAT"];
-_opf_f_tank = ["O_MBT_02_cannon_F","CUP_O_T72_CSAT", "CUP_O_T55_CSAT" ];
-_opf_f_heli = ["O_Heli_Light_02_F","O_Heli_Light_02_unarmed_F"];
-
-// OPFOR Guerilla
-_opf_g_f_units = ["O_G_Soldier_F","O_G_Soldier_lite_F","O_G_Soldier_SL_F","O_G_Soldier_TL_F","O_G_Soldier_AR_F","O_G_medic_F","O_G_engineer_F","O_G_Soldier_exp_F","O_G_Soldier_GL_F","O_G_Soldier_M_F","O_G_Soldier_LAT_F","O_G_Soldier_A_F"];
-_opf_g_f_car = ["O_G_Offroad_01_armed_F"];
-_opf_g_f_ifv = ["O_APC_Wheeled_02_rcws_F"];
-
-// AAF
-_ind_f_units = ["I_Soldier_A_F","I_soldier_AR_F","I_medic_F","I_engineer_F","I_soldier_exp_F","I_Soldier_GL_F","I_soldier_M_F","I_soldier_AA_F","I_soldier_AT_F","I_officer_F","I_soldier_repair_F","I_Soldier_F","I_soldier_LAT_F","I_Soldier_lite_F","I_Soldier_SL_F","I_Soldier_TL_F"];
-_ind_f_car = ["I_MRAP_03_hmg_F", "I_MRAP_03_gmg_F","CUP_I_LR_MG_AAF"];
-_ind_f_ifv = ["I_APC_tracked_03_cannon_F","I_APC_Wheeled_03_cannon_F","CUP_I_M113_AAF","CUP_I_M163_AAF","CUP_I_ZSU23_AAF"];
-_ind_f_tank = ["I_MBT_03_cannon_F"];
-_ind_f_heli = ["I_Heli_Transport_02_F","CUP_B_Wildcat_Unarmed_Green_AAF","CUP_B_Wildcat_Hellfire_Armed_Green_AAF","CUP_B_Wildcat_Cannon_Armed_Green_AAF","CUP_B_Wildcat_Unarmed_Digital_AAF","CUP_B_Wildcat_Hellfire_Armed_Digital_AAF","CUP_B_Wildcat_Cannon_Armed_Digital_AAF","CUP_I_Ka60_GL_Digi_AAF","CUP_I_Ka60_Digi_AAF"];
-
-// Altis Guerilla
-_ind_g_f_units = ["I_G_Soldier_F","I_G_Soldier_lite_F","I_G_Soldier_SL_F","I_G_Soldier_TL_F","I_G_Soldier_AR_F","I_G_medic_F","I_G_engineer_F","I_G_Soldier_exp_F","I_G_Soldier_GL_F","I_G_Soldier_M_F","I_G_Soldier_LAT_F","I_G_Soldier_A_F"];
-_ind_g_f_car = ["I_G_Offroad_01_armed_F"];
-_ind_g_f_ifv = ["I_APC_Wheeled_03_cannon_F"];
-
-// Chinese
-_opf_t_f_units = ["O_T_Soldier_A_F","O_T_Medic_F","O_T_Soldier_AR_F","O_T_Engineer_F","O_T_Soldier_Exp_F","O_T_Soldier_GL_F","O_T_Support_GMG_F","O_T_Soldier_UAV_F","O_T_Soldier_universal_F","O_T_Soldier_TL_F","O_T_Soldier_SL_F","O_T_Soldier_LAT_F","O_T_Soldier_F","O_T_Soldier_Repair_F","O_T_Soldier_PG_F","O_T_Officer_F","O_T_Soldier_AT_F","O_T_Soldier_AA_F","O_T_Soldier_M_F"];
-_opf_t_f_car = ["O_T_LSV_02_armed_F","O_T_LSV_02_armed_viper_F","O_T_LSV_02_unarmed_F","O_T_LSV_02_unarmed_viper_F","O_T_LSV_02_armed_black_F","O_T_LSV_02_armed_ghex_F","O_T_LSV_02_armed_arid_F","O_T_LSV_02_unarmed_black_F","O_T_LSV_02_unarmed_ghex_F","O_T_LSV_02_unarmed_arid_F","O_T_MRAP_02_hmg_ghex_F","O_T_MRAP_02_gmg_ghex_F","","","","","","","","",""];
-_opf_t_f_ifv = ["O_T_APC_Tracked_02_cannon_ghex_F","O_T_APC_Wheeled_02_rcws_ghex_F"];
-_opf_t_f_tank = ["O_T_MBT_02_cannon_ghex_F"];
-_opf_t_f_heli = ["O_T_VTOL_02_infantry_F","O_T_VTOL_02_vehicle_F","O_T_VTOL_02_infantry_hex_F","O_T_VTOL_02_infantry_ghex_F","O_T_VTOL_02_infantry_grey_F","O_T_VTOL_02_vehicle_hex_F","O_T_VTOL_02_vehicle_ghex_F","O_T_VTOL_02_vehicle_grey_F"];
-
-// Syndikat oid
-_ind_c_f_units = ["I_C_Soldier_universal_F","I_C_Soldier_Bandit_8_F","I_C_Soldier_Bandit_7_F","I_C_Soldier_Bandit_6_F","I_C_Soldier_Bandit_5_F","I_C_Soldier_Bandit_4_F","I_C_Soldier_Bandit_3_F","I_C_Soldier_Bandit_2_F","I_C_Soldier_Bandit_1_F","I_C_Soldier_Para_8_F","I_C_Soldier_Para_7_F","I_C_Soldier_Para_6_F","I_C_Soldier_Para_5_F","I_C_Soldier_Para_4_F","I_C_Soldier_Para_3_F","I_C_Soldier_Para_2_F","I_C_Soldier_Para_1_F"];
-_ind_c_f_car = ["I_C_Offroad_02_unarmed_F","I_C_Offroad_02_unarmed_brown_F","I_C_Offroad_02_unarmed_olive_F"];
-_ind_c_f_ifv = [];
-_ind_c_f_tank = [];
-_ind_c_f_heli = [];
-
-// NLD Units OPFOR: VDV 76th
-_nldo_ru_vdv_76_units = ["NLDO_RU_VDV_76_aar","NLDO_RU_VDV_76_amat","NLDO_RU_VDV_76_ammg","NLDO_RU_VDV_76_ammo","NLDO_RU_VDV_76_ar","NLDO_RU_VDV_76_at","NLDO_RU_VDV_76_cls","NLDO_RU_VDV_76_gl","NLDO_RU_VDV_76_marksman","NLDO_RU_VDV_76_mat","NLDO_RU_VDV_76_mmg","NLDO_RU_VDV_76_officer","NLDO_RU_VDV_76_rifleman","NLDO_RU_VDV_76_sl","NLDO_RU_VDV_76_tl","NLDO_RU_VDV_76_sniper","NLDO_RU_VDV_76_spotter"];
-_nldo_ru_vdv_76_car = ["NLDO_Punisher_76","NLDO_Punisher_76_HMG","NLDO_Punisher_76_GMG"];
-_nldo_ru_vdv_76_ifv = ["NLDO_TUNGUSKA_76","NLDO_BMP_T_76"];
-_nldo_ru_vdv_76_tank = ["NLDO_T95_76"];
-_nldo_ru_vdv_76_heli = ["NLDO_KA60_Armed_76"];
-
-
-// NLD Units: OPFOR VDV 31th
-_nldo_ru_vdv_31_units = ["NLDO_RU_VDV_31_marksman","NLDO_RU_VDV_31_sniper","NLDO_RU_VDV_31_spotter","NLDO_RU_VDV_31_rifleman","NLDO_RU_VDV_31_aar","NLDO_RU_VDV_31_eng","NLDO_RU_VDV_31_expl","NLDO_RU_VDV_31_ammg","NLDO_RU_VDV_31_mmg","NLDO_RU_VDV_31_tl","NLDO_RU_VDV_31_ar","NLDO_RU_VDV_31_ammo","NLDO_RU_VDV_31_aa","NLDO_RU_VDV_31_officer","NLDO_RU_VDV_31_amat","NLDO_RU_VDV_31_cls","NLDO_RU_VDV_31_mat","NLDO_RU_VDV_31_at","NLDO_RU_VDV_31_gl","NLDO_RU_VDV_31_sl"];
-_nldo_ru_vdv_31_car = ["NLDO_Punisher_31","NLDO_Punisher_31_HMG","NLDO_Punisher_31_GMG"];
-_nldo_ru_vdv_31_ifv = ["NLDO_TUNGUSKA_31","NLDO_BMP_T_31"];
-_nldo_ru_vdv_31_tank = ["NLDO_T00_31"];
-_nldo_ru_vdv_31_heli = ["NLDO_KA60_Armed_31"];
-
-// NLD Units: OPFOR Ukraine 95th
-_nldo_ua_uaf_95_units = ["nldo_ua_uaf_95_aar","nldo_ua_uaf_95_sl","nldo_ua_uaf_95_mat","nldo_ua_uaf_95_mmg","nldo_ua_uaf_95_explosive","nldo_ua_uaf_95_dm","nldo_ua_uaf_95_aa","nldo_ua_uaf_95_ammo","nldo_ua_uaf_95_ammg","nldo_ua_uaf_95_officer","nldo_ua_uaf_95_rifleman","nldo_ua_uaf_95_cls","nldo_ua_uaf_95_engineer","nldo_ua_uaf_95_amat","nldo_ua_uaf_95_fac","nldo_ua_uaf_95_at","nldo_ua_uaf_95_ar","nldo_ua_uaf_95_gl","nldo_ua_uaf_95_tl"];
-_nldo_ua_uaf_95_car = ["nldo_ua_uaf_95_kraz","nldo_ua_uaf_95_kraz_hmg","nldo_ua_uaf_95_kraz_gmg"];
-_nldo_ua_uaf_95_ifv = ["nldo_ua_uaf_95_bmp1u","nldo_ua_uaf_95_tunguska"];
-_nldo_ua_uaf_95_tank = ["nldo_ua_uaf_95_t84"];
-_nldo_ua_uaf_95_heli = [];
-
-// Takistani Militia
-_cup_o_tk_militia_units = ["CUP_O_TK_INS_Soldier","CUP_O_TK_INS_Soldier_AAT","CUP_O_TK_INS_Soldier_GL","CUP_O_TK_INS_Soldier_Enfield","CUP_O_TK_INS_Soldier_FNFAL","CUP_O_TK_INS_Soldier_AA","CUP_O_TK_INS_Soldier_AT","CUP_O_TK_INS_Soldier_TL","CUP_O_TK_INS_Sniper","CUP_O_TK_INS_Soldier_AR","CUP_O_TK_INS_Soldier_MG","CUP_O_TK_INS_Guerilla_Medic","CUP_O_TK_INS_Commander","CUP_O_TK_INS_Mechanic","CUP_O_TK_INS_Bomber"];
-_cup_o_tk_militia_car = ["CUP_O_LR_Transport_TKM","CUP_O_LR_MG_TKM","CUP_O_LR_SPG9_TKM"];
-_cup_o_tk_militia_ifv = ["CUP_O_BTR40_MG_TKM","CUP_O_BTR40_TKM"];
-_cup_o_tk_militia_tank = [];
-_cup_o_tk_militia_heli = [];
-
-// Takistan Army
-_cup_o_tk_units = ["CUP_O_TK_Soldier","CUP_O_TK_Soldier_GL","CUP_O_TK_Soldier_Backpack","CUP_O_TK_Soldier_AAT","CUP_O_TK_Soldier_AMG","CUP_O_TK_Soldier_LAT","CUP_O_TK_Soldier_AT","CUP_O_TK_Soldier_HAT","CUP_O_TK_Soldier_AA","CUP_O_TK_Engineer","CUP_O_TK_Soldier_MG","CUP_O_TK_Soldier_AR","CUP_O_TK_Medic","CUP_O_TK_Soldier_SL","CUP_O_TK_Officer","CUP_O_TK_Spotter","CUP_O_TK_Sniper","CUP_O_TK_Sniper_KSVK","CUP_O_TK_Sniper_SVD_Night","CUP_O_TK_Soldier_AKS_Night","CUP_O_TK_Soldier_FNFAL_Night","CUP_O_TK_Soldier_AKS_74_GOSHAWK"];
-_cup_o_tk_car = ["CUP_O_LR_Transport_TKA","CUP_O_LR_Transport_TKA","CUP_O_LR_SPG9_TKA","CUP_O_UAZ_MG_TKA","CUP_O_UAZ_AGS30_TKA","CUP_O_UAZ_SPG9_TKA","CUP_O_UAZ_METIS_TKA","CUP_O_SUV_TKA"];
-_cup_o_tk_ifv = ["CUP_O_UH1H_TKA","CUP_O_BMP1P_TKA","CUP_O_BMP2_TKA","CUP_O_BMP2_ZU_TKA","CUP_O_BRDM2_TKA","CUP_O_BRDM2_ATGM_TKA","CUP_O_BTR40_MG_TKA","CUP_O_BTR40_TKA","CUP_O_BTR60_TK","CUP_O_M113_TKA"];
-_cup_o_tk_tank = ["CUP_O_T34_TKA","CUP_O_T55_TK","CUP_O_ZSU23_TK","CUP_O_ZU23_TK"];
-_cup_o_tk_heli = ["CUP_O_UH1H_TKA"];
-
-// Stje-Daki
-_cup_o_chdkz_units = ["CUP_O_INS_Soldier_AK74","CUP_O_INS_Soldier_Engineer","CUP_O_INS_Soldier","CUP_O_INS_Soldier_Ammo","CUP_O_INS_Soldier_GL","CUP_O_INS_Officer","CUP_O_INS_Medic","CUP_O_INS_Commander","CUP_O_INS_Soldier_AR","CUP_O_INS_Soldier_MG","CUP_O_INS_Soldier_AT","CUP_O_INS_Soldier_AA","CUP_O_INS_Sniper","CUP_O_INS_Soldier_Exp","CUP_O_INS_Saboteur","CUP_O_INS_Worker2","CUP_O_INS_Woodlander1","CUP_O_INS_Woodlander2","CUP_O_INS_Woodlander3","CUP_O_INS_Villager3","CUP_O_INS_Villager4"];
-_cup_o_chdkz_car = ["CUP_O_UAZ_Unarmed_CHDKZ","CUP_O_UAZ_Open_CHDKZ","CUP_O_UAZ_MG_CHDKZ","CUP_O_UAZ_AGS30_CHDKZ","CUP_O_UAZ_SPG9_CHDKZ","CUP_O_UAZ_METIS_CHDKZ","CUP_O_Datsun_PK_Random"];
-_cup_o_chdkz_ifv = ["CUP_O_BMP2_CHDKZ","CUP_O_BRDM2_CHDKZ","CUP_O_BMP_HQ_CHDKZ","CUP_O_BRDM2_ATGM_CHDKZ","CUP_O_BRDM2_HQ_CHDKZ","CUP_O_ZSU23_ChDKZ"];
-_cup_o_chdkz_tank = ["CUP_O_T72_CHDKZ"];
-_cup_o_chdkz_heli = ["CUP_O_MI6A_CHDKZ","CUP_O_MI6T_CHDKZ","CUP_O_Mi8_CHDKZ","CUP_O_Mi8_VIV_CHDKZ"];
-
-// Geen Schutter Lange Afstand
-_cup_o_sla_units = ["CUP_O_sla_Soldier","CUP_O_sla_Soldier_GL","CUP_O_SLA_Soldier_Backpack","CUP_O_sla_Soldier_AAT","CUP_O_sla_Soldier_AMG","CUP_O_sla_Soldier_LAT","CUP_O_sla_Soldier_AT","CUP_O_sla_Soldier_HAT","CUP_O_sla_Soldier_AA","CUP_O_sla_Engineer","CUP_O_sla_Soldier_MG","CUP_O_sla_Soldier_AR","CUP_O_sla_Medic","CUP_O_sla_Soldier_SL","CUP_O_sla_Officer","CUP_O_SLA_Spotter","CUP_O_sla_Sniper","CUP_O_sla_Sniper_KSVK","CUP_O_SLA_Sniper_SVD_Night","CUP_O_sla_Soldier_AKS_Night","CUP_O_sla_Soldier_AKS_74_GOSHAWK"];
-_cup_o_sla_car = ["CUP_O_UAZ_Unarmed_SLA","CUP_O_UAZ_Militia_SLA","CUP_O_UAZ_Open_SLA","CUP_O_UAZ_MG_SLA","CUP_O_UAZ_AGS30_SLA","CUP_O_UAZ_SPG9_SLA","CUP_O_UAZ_METIS_SLA"];
-_cup_o_sla_ifv = ["CUP_O_BMP2_SLA","CUP_O_BMP_HQ_sla","CUP_O_BRDM2_SLA","CUP_O_BRDM2_ATGM_SLA","CUP_O_BRDM2_HQ_SLA"];
-_cup_o_sla_tank = ["CUP_O_T72_SLA"];
-_cup_o_sla_heli = ["CUP_O_Mi8_SLA_1","CUP_O_Mi8_SLA_2"];
-
-// Ruskies EMR
-_cup_o_ru_emr_units = ["CUP_O_RU_Soldier_EMR","CUP_O_RU_Soldier_Saiga_EMR","CUP_O_RU_Soldier_GL_EMR","CUP_O_RU_Soldier_SL_EMR","CUP_O_RU_Soldier_TL_EMR","CUP_O_RU_Soldier_MG_EMR","CUP_O_RU_Soldier_AR_EMR","CUP_O_RU_Soldier_LAT_EMR","CUP_O_RU_Soldier_AT_EMR","CUP_O_RU_Soldier_HAT_EMR","CUP_O_RU_Soldier_AA_EMR","CUP_O_RU_Sniper_EMR","CUP_O_RU_Sniper_KSVK_EMR","CUP_O_RU_Spotter_EMR","CUP_O_RU_Soldier_Marksman_EMR","CUP_O_RU_Medic_EMR","CUP_O_RU_Engineer_EMR","CUP_O_RU_Explosive_Specialist_EMR","CUP_O_RU_Soldier_Light_EMR","CUP_O_RU_Officer_EMR"];
-_cup_o_ru_emr_car = ["CUP_O_UAZ_Unarmed_RU","CUP_O_UAZ_Open_RU","CUP_O_UAZ_MG_RU","CUP_O_UAZ_AGS30_RU","CUP_O_UAZ_SPG9_RU","CUP_O_UAZ_METIS_RU"];
-_cup_o_ru_emr_ifv = ["CUP_O_BMP2_RU","CUP_O_BMP_HQ_RU","CUP_O_BMP2_AMB_RU","CUP_O_BRDM2_RUS","CUP_O_BRDM2_ATGM_RUS","CUP_O_BRDM2_HQ_RUS","CUP_O_2S6M_RU","CUP_O_BTR90_RU","CUP_O_BTR90_HQ_RU","CUP_O_BMP3_RU"];
-_cup_o_ru_emr_tank = ["CUP_O_T72_RU"];
-_cup_o_ru_emr_heli = ["CUP_O_Mi24_P_RU","CUP_O_Mi24_V_RU","CUP_O_MI6A_RU","CUP_O_MI6T_RU","CUP_O_Mi8_VIV_RU","CUP_O_Mi8_RU"];
-
-// Ruskies FLORA
-_cup_o_ru_flora_units = ["CUP_O_RU_Soldier_VDV","CUP_O_RU_Soldier_Saiga_VDV","CUP_O_RU_Soldier_GL_VDV","CUP_O_RU_Soldier_SL_VDV","CUP_O_RU_Soldier_TL_VDV","CUP_O_RU_Soldier_MG_VDV","CUP_O_RU_Soldier_AR_VDV","CUP_O_RU_Soldier_LAT_VDV","CUP_O_RU_Soldier_AT_VDV","CUP_O_RU_Soldier_HAT_VDV","CUP_O_RU_Soldier_AA_VDV","CUP_O_RU_Sniper_VDV","CUP_O_RU_Sniper_KSVK_VDV","CUP_O_RU_Spotter_VDV","CUP_O_RU_Soldier_Marksman_VDV","CUP_O_RU_Medic_VDV","CUP_O_RU_Engineer_VDV","CUP_O_RU_Explosive_Specialist_VDV","CUP_O_RU_Soldier_Light_VDV","CUP_O_RU_Officer_VDV","CUP_O_RU_Commander_VDV"];
-_cup_o_ru_flora_car = ["CUP_O_UAZ_Unarmed_RU","CUP_O_UAZ_Open_RU","CUP_O_UAZ_MG_RU","CUP_O_UAZ_AGS30_RU","CUP_O_UAZ_SPG9_RU","CUP_O_UAZ_METIS_RU"];
-_cup_o_ru_flora_ifv = ["CUP_O_BMP2_RU","CUP_O_BMP_HQ_RU","CUP_O_BMP2_AMB_RU","CUP_O_BRDM2_RUS","CUP_O_BRDM2_ATGM_RUS","CUP_O_BRDM2_HQ_RUS","CUP_O_2S6M_RU","CUP_O_BTR90_RU","CUP_O_BTR90_HQ_RU","CUP_O_BMP3_RU"];
-_cup_o_ru_flora_tank = ["CUP_O_T72_RU"];
-_cup_o_ru_flora_heli = ["CUP_O_Mi24_P_RU","CUP_O_Mi24_V_RU","CUP_O_MI6A_RU","CUP_O_MI6T_RU","CUP_O_Mi8_VIV_RU","CUP_O_Mi8_RU"];
-
-
-// NAPA
-_cup_i_napa_units = ["CUP_I_GUE_Soldier_AKSU","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AKS74","CUP_I_GUE_Soldier_GL","CUP_I_GUE_Officer","CUP_I_GUE_Soldier_AT","CUP_I_GUE_Soldier_AA","CUP_I_GUE_Soldier_AR","CUP_I_GUE_Soldier_MG","CUP_I_GUE_Saboteur","CUP_I_GUE_Medic","CUP_I_GUE_Engineer","CUP_I_GUE_Ammobearer","CUP_I_GUE_Soldier_AA2","CUP_I_GUE_Sniper","CUP_I_GUE_Soldier_Scout","CUP_I_GUE_Commander","CUP_I_GUE_Local","CUP_I_GUE_Woodman","CUP_I_GUE_Gamekeeper","CUP_I_GUE_Forester","CUP_I_GUE_Farmer","CUP_I_GUE_Villager"];
-_cup_i_napa_car = ["CUP_I_Datsun_PK","CUP_I_Datsun_PK_Random"];
-_cup_i_napa_ifv = ["CUP_I_BMP2_NAPA","CUP_I_BMP_HQ_NAPA","CUP_I_BRDM2_NAPA","CUP_I_BRDM2_ATGM_NAPA","CUP_I_BRDM2_HQ_NAPA"];
-_cup_i_napa_tank = ["CUP_I_T72_NAPA","CUP_I_T34_NAPA"];
-_cup_i_napa_heli = [];
-
-// RACS
-_cup_i_racs_units = ["CUP_I_RACS_Soldier","CUP_I_RACS_Officer","CUP_I_RACS_Medic","CUP_I_RACS_SL","CUP_I_RACS_GL","CUP_I_RACS_MMG","CUP_I_RACS_Soldier_AA","CUP_I_RACS_Soldier_MAT","CUP_I_RACS_Soldier_HAT","CUP_I_RACS_Sniper","CUP_I_RACS_Engineer","CUP_I_RACS_RoyalCommando","CUP_I_RACS_RoyalGuard","CUP_I_RACS_RoyalMarksman","CUP_I_RACS_Urban_Soldier","CUP_I_RACS_wdl_Soldier","CUP_I_RACS_Mech_Soldier"];
-_cup_i_racs_ifv = ["CUP_I_AAV_RACS","CUP_I_M113_RACS","CUP_I_M163_RACS"];
-_cup_i_racs_car = ["CUP_I_LR_Transport_RACS","CUP_I_LR_MG_RACS"];
-_cup_i_racs_tank = ["CUP_I_T72_RACS"];
-_cup_i_racs_heli = ["CUP_I_UH60L_RACS","CUP_I_UH60L_FFV_RACS","CUP_I_UH60L_Unarmed_RACS","CUP_I_UH60L_Unarmed_FFV_Racs","CUP_I_UH60L_Unarmed_FFV_MEV_Racs","CUP_I_AH6J_Escort_RACS","CUP_I_AH6J_AT_RACS","CUP_I_AH6J_MP_RACS","CUP_I_AH6J_Escort19_RACS","CUP_I_MH6J_RACS","CUP_I_SA330_Puma_HC1_RACS","CUP_I_SA330_Puma_HC2_RACS"];
-
-// Takistani Locals
-_cup_i_tk_gue_units = ["CUP_I_TK_GUE_Soldier","CUP_I_TK_GUE_Soldier_AAT","CUP_I_TK_GUE_Soldier_AK_47S","CUP_I_TK_GUE_Soldier_M16A2","CUP_I_TK_GUE_Soldier_GL","CUP_I_TK_GUE_Guerilla_Enfield","CUP_I_TK_GUE_Soldier_AA","CUP_I_TK_GUE_Soldier_AT","CUP_I_TK_GUE_Soldier_HAT","CUP_I_TK_GUE_Soldier_TL","CUP_I_TK_GUE_Sniper","CUP_I_TK_GUE_Soldier_AR","CUP_I_TK_GUE_Soldier_MG","CUP_I_TK_GUE_Guerilla_Medic","CUP_I_TK_GUE_Commander","CUP_I_TK_GUE_Mechanic","CUP_I_TK_GUE_Demo"];
-_cup_i_tk_gue_car = ["CUP_I_Datsun_PK_TK","CUP_I_Datsun_PK_TK_Random"];
-_cup_i_tk_gue_ifv = ["CUP_I_BMP1_TK_GUE","CUP_I_BRDM2_TK_Gue","CUP_I_BRDM2_ATGM_TK_Gue","CUP_I_BRDM2_HQ_TK_Gue","CUP_I_BTR40_MG_TKG","CUP_I_BTR40_TKG"];
-_cup_i_tk_gue_tank = ["CUP_I_T55_TK_GUE","CUP_I_T34_TK_GUE"];
-_cup_i_tk_gue_heli = ["CUP_I_UH1H_TK_GUE"];
-
 // Select factions
 private ["_faction_units","_faction_side","_faction_car","_faction_ifv","_faction_tank","_faction_heli"];
 
-if (_az_faction == "OPF_F") then { _faction_units = _opf_f_units; _faction_side = east; _faction_car = _opf_f_car; _faction_ifv = _opf_f_ifv; _faction_tank = _opf_f_tank; _faction_heli = _opf_f_heli; };
-if (_az_faction == "OPF_G_F") then { _faction_units = _opf_g_f_units; _faction_side = east; _faction_car = _opf_g_f_car; _faction_ifv = _opf_g_f_ifv; _faction_tank = []; _faction_heli = []; };
-if (_az_faction == "IND_F") then { _faction_units = _ind_f_units; _faction_side = independent; _faction_car = _ind_f_car;  _faction_ifv = _ind_f_ifv; _faction_tank = _ind_f_tank; _faction_heli = _ind_f_heli; };
-if (_az_faction == "IND_G_F") then { _faction_units = _ind_g_f_units; _faction_side = independent; _faction_car = _ind_g_f_car; _faction_ifv = _ind_g_f_ifv; _faction_tank = []; _faction_heli = []; };
-if (_az_faction == "OPF_T_F") then { _faction_units = _opf_t_f_units; _faction_side = east; _faction_car = _opf_t_f_car; _faction_ifv = _opf_t_f_ifv; _faction_tank = _opf_t_f_tank; _faction_heli = _opf_t_f_heli; };
-if (_az_faction == "IND_C_F") then { _faction_units = _ind_c_f_units; _faction_side = independent; _faction_car = _ind_c_f_car; _faction_ifv = _ind_c_f_ifv; _faction_tank = _ind_c_f_tank; _faction_heli = _ind_c_f_heli; };
-if (_az_faction == "NLDO_RU_VDV_76") then { _faction_units = _nldo_ru_vdv_76_units; _faction_side = east; _faction_car = _nldo_ru_vdv_76_car; _faction_ifv = _nldo_ru_vdv_76_ifv; _faction_tank = _nldo_ru_vdv_76_tank; _faction_heli = _nldo_ru_vdv_76_heli; };
-if (_az_faction == "NLDO_RU_VDV_31") then { _faction_units = _nldo_ru_vdv_31_units; _faction_side = east; _faction_car = _nldo_ru_vdv_31_car; _faction_ifv = _nldo_ru_vdv_31_ifv; _faction_tank = _nldo_ru_vdv_31_tank; _faction_heli = _nldo_ru_vdv_31_heli; };
-if (_az_faction == "NLDO_UA_UAF_95") then { _faction_units = _nldo_ua_uaf_95_units; _faction_side = independent; _faction_car = _nldo_ua_uaf_95_car; _faction_ifv = _nldo_ua_uaf_95_ifv; _faction_tank = _nldo_ua_uaf_95_tank; _faction_heli = _nldo_ua_uaf_95_heli; };
-if (_az_faction == "CUP_O_TK_INS") then { _faction_units = _cup_o_tk_militia_units; _faction_side = east; _faction_car = _cup_o_tk_militia_car; _faction_ifv = _cup_o_tk_militia_ifv; _faction_tank = _cup_o_tk_militia_tank; _faction_heli = _cup_o_tk_militia_heli; };
-if (_az_faction == "CUP_O_TK") then { _faction_units = _cup_o_tk_units; _faction_side = east; _faction_car = _cup_o_tk_car; _faction_ifv = _cup_o_tk_ifv; _faction_tank = _cup_o_tk_tank; _faction_heli = _cup_o_tk_heli; };
-if (_az_faction == "CUP_O_CHDKZ") then { _faction_units = _cup_o_chdkz_units; _faction_side = east; _faction_car = _cup_o_chdkz_car; _faction_ifv = _cup_o_chdkz_ifv; _faction_tank = _cup_o_chdkz_tank; _faction_heli = _cup_o_chdkz_heli; };
-if (_az_faction == "CUP_O_SLA") then { _faction_units = _cup_o_sla_units; _faction_side = east; _faction_car = _cup_o_sla_car; _faction_ifv = _cup_o_sla_ifv; _faction_tank = _cup_o_sla_tank; _faction_heli = _cup_o_sla_heli; };
-if (_az_faction == "CUP_O_RU_EMR") then { _faction_units = _cup_o_ru_emr_units; _faction_side = east; _faction_car = _cup_o_ru_emr_car; _faction_ifv = _cup_o_ru_emr_ifv; _faction_tank = _cup_o_ru_emr_tank; _faction_heli = _cup_o_ru_emr_heli; };
-if (_az_faction == "CUP_O_RU_FLORA") then { _faction_units = _cup_o_ru_flora_units; _faction_side = east; _faction_car = _cup_o_ru_flora_car; _faction_ifv = _cup_o_ru_flora_ifv; _faction_tank = _cup_o_ru_flora_tank; _faction_heli = _cup_o_ru_flora_heli; };
-if (_az_faction == "CUP_I_NAPA") then { _faction_units = _cup_i_napa_units; _faction_side = east; _faction_car = _cup_i_napa_car; _faction_ifv = _cup_i_napa_ifv; _faction_tank = _cup_i_napa_tank; _faction_heli = _cup_i_napa_heli; };
-if (_az_faction == "CUP_I_RACS") then { _faction_units = _cup_i_racs_units; _faction_side = east; _faction_car = _cup_i_racs_car; _faction_ifv = _cup_i_racs_ifv; _faction_tank = _cup_i_racs_tank; _faction_heli = _cup_i_racs_heli; };
-if (_az_faction == "CUP_I_TK_GUE") then { _faction_units = _cup_i_tk_gue_units; _faction_side = east; _faction_car = _cup_i_tk_gue_car; _faction_ifv = _cup_i_tk_gue_ifv; _faction_tank = _cup_i_tk_gue_tank; _faction_heli = _cup_i_tk_gue_heli; };
+_factionUnitArray = switch (_az_faction) do {
+  case "LT_OPF_F": {LT_OPF_F};
+  case "LT_OPF_G_F": {LT_OPF_G_F};
+  case "LT_IND_F": {LT_IND_F};
+  case "LT_IND_G_F": {LT_IND_G_F};
+  case "LT_OPF_T_F": {LT_OPF_T_F};
+  case "LT_IND_C_F": {LT_IND_C_F};
+  case "LT_NLDO_RU_VDV_76": {LT_NLDO_RU_VDV_76};
+  case "LT_NLDO_RU_VDV_31": {LT_NLDO_RU_VDV_31};
+  case "LT_NLDO_UA_UAF_95": {LT_NLDO_UA_UAF_95};
+  case "LT_CUP_O_TK_INS": {LT_CUP_O_TK_INS};
+  case "LT_CUP_O_TK": {LT_CUP_O_TK};
+  case "LT_CUP_O_CHDKZ": {LT_CUP_O_CHDKZ};
+  case "LT_CUP_O_SLA": {LT_CUP_O_SLA};
+  case "LT_CUP_O_RU_EMR": {LT_CUP_O_RU_EMR};
+  case "LT_CUP_O_RU_FLORA": {LT_CUP_O_RU_FLORA};
+  case "LT_CUP_I_NAPA": {LT_CUP_I_NAPA};
+  case "LT_CUP_I_RACS": {LT_CUP_I_RACS};
+  case "LT_CUP_I_TK_GUE": {LT_CUP_I_TK_GUE};
+
+  // Backwards compatability
+  case "OPF_F": {LT_OPF_F};
+  case "OPF_G_F": {LT_OPF_G_F};
+  case "IND_F": {LT_IND_F};
+  case "IND_G_F": {LT_IND_G_F};
+  case "OPF_T_F": {LT_OPF_T_F};
+  case "IND_C_F": {LT_IND_C_F};
+  case "NLDO_RU_VDV_76": {LT_NLDO_RU_VDV_76};
+  case "NLDO_RU_VDV_31": {LT_NLDO_RU_VDV_31};
+  case "NLDO_UA_UAF_95": {LT_NLDO_UA_UAF_95};
+  case "CUP_O_TK_INS": {LT_CUP_O_TK_INS};
+  case "CUP_O_TK": {LT_CUP_O_TK};
+  case "CUP_O_CHDKZ": {LT_CUP_O_CHDKZ};
+  case "CUP_O_SLA": {LT_CUP_O_SLA};
+  case "CUP_O_RU_EMR": {LT_CUP_O_RU_EMR};
+  case "CUP_O_RU_FLORA": {LT_CUP_O_RU_FLORA};
+  case "CUP_I_NAPA": {LT_CUP_I_NAPA};
+  case "CUP_I_RACS": {LT_CUP_I_RACS};
+  case "CUP_I_TK_GUE": {LT_CUP_I_TK_GUE};
+
+  case "LT_CUSTOM": {LT_CUSTOM};
+};
+
+_factionClass = getText (configfile >> "CfgVehicles" >> (_factionUnitArray select 0 select 0) >> "faction");
+
+_SideNo 	= getnumber (configfile >> "CfgFactionClasses" >> _factionClass >> "side");
+_faction_side = switch (_SideNo) do {
+  case 0: {EAST};
+  case 1: {WEST};
+  case 2: {RESISTANCE};
+  case 3: {CIVILIAN};
+};
+
+_faction_units  = _factionUnitArray select 0;
+_faction_car    = _factionUnitArray select 1;
+_faction_ifv    = _factionUnitArray select 2;
+_faction_tank   = _factionUnitArray select 3;
+_faction_heli   = _factionUnitArray select 4;
 
 private ["_GrpSize"];
 

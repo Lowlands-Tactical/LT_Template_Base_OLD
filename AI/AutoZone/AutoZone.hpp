@@ -23,24 +23,7 @@ class LT_AutoZone_Module: Module_F {
 			description = "Select the faction that patrols the indicated marker. Please note, not all factions have all the gear.";
 			typeName = "STRING";
 			class values {
-				class OPF_F {name = "C.S.A.T."; value="OPF_F"; };
-				class OPF_G_F {name = "REDFOR Guerilla"; value="OPF_G_F"; };
-				class IND_F {name = "A.A.F."; value="IND_F"; };
-				class IND_G_F {name = "GREENFOR Guerilla"; value="IND_G_F"; };
-				class OPF_T_F {name = "C.S.A.T. (Tanoa)"; value="OPF_T_F"; };
-				class IND_C_F {name = "Syndikat"; value="IND_C_F"; };
-				class NLDO_RU_VDV_76 {name = "Russian VDV 76"; value="NLDO_RU_VDV_76"; };
-				class NLDO_RU_VDV_31 {name = "Russian VDV 31"; value="NLDO_RU_VDV_31"; };
-				class NLDO_UA_UAF_95 {name = "Ukraine 95th inf bat"; value="NLDO_UA_UAF_95"; };
-				class CUP_O_TK_INS {name = "Takistani Militia"; value="CUP_O_TK_INS"; };
-				class CUP_O_TK {name = "Takistani Army"; value="CUP_O_TK"; };
-				class CUP_O_CHDKZ {name = "ChDKZ"; value="CUP_O_CHDKZ"; };
-				class CUP_O_SLA {name = "Sahrani Liberation Army"; value="CUP_O_SLA"; };
-				class CUP_O_RU_EMR {name = "Russia (EMR)"; value="CUP_O_RU_EMR"; };
-				class CUP_O_RU_FLORA {name = "Russia (Flora)"; value="CUP_O_RU_FLORA"; };
-				class CUP_I_NAPA { name = "N.A.P.A."; value="CUP_I_NAPA"; };
-				class CUP_I_RACS { name = "Royal Army Corp of Sahrani"; value="CUP_I_RACS"; };
-				class CUP_I_TK_GUE { name = "Takistani Locals"; value="CUP_I_TK_GUE"; };
+				#include "..\FactionValues.hpp"
 			};
 		};
 
