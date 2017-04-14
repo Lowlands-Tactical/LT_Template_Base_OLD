@@ -227,8 +227,8 @@ class LT_Defense_Module: Module_F
 			class values {
 				class ModuleOrdnanceMortar_F_ammo {name = "Mortar"; value = "ModuleOrdnanceMortar_F_ammo"; default = 1;};
 				class ModuleOrdnanceHowitzer_F_ammo {name = "Howitzer HE"; value = "ModuleOrdnanceHowitzer_F_ammo";};
-				class ModuleOrdnanceRocket_F_ammo {name = "MLRS Rockets"; value = "ModuleOrdnanceRocket_F_ammo";};
-				class ModuleOrdnanceRocket_F_subammo {name = "MLRS Rockets (sub)"; value = "ModuleOrdnanceRocket_F_subammo";};
+				class ModuleOrdnanceRocket_F_ammo {name = "MLRS Rockets (cluster)"; value = "ModuleOrdnanceRocket_F_ammo";};
+				class ModuleOrdnanceRocket_F_subammo {name = "MLRS Rockets (single)"; value = "ModuleOrdnanceRocket_F_subammo";};
 			};
 		};
 		class Defense_ArtyRounds {
