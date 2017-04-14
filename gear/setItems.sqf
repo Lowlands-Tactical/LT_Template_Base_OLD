@@ -128,7 +128,7 @@ _watch = if (isNil "lt_template_watch") then {"ItemWatch"} else {lt_template_wat
 
 
 // Backpacks
-_TypeName = typename _lt_camo_var_array;
+_TypeName = typename (_lt_camo_var_array select 2);
 _CamoVarBag = _lt_camo_var_array select 2;
 _bag 			= IF (_TypeName == "ARRAY") then {selectrandom _CamoVarBag} else {IF(_lt_camo_var_array select 0 == "None") then {"NLD_WLD_Carryall_Empty"} else {_lt_camo_var_array select 2;};};
 _baguav 		= IF (_TypeName == "ARRAY") then {selectrandom _CamoVarBag} else {IF(_lt_camo_var_array select 0 == "None") then {"NLD_WLD_Carryall_UAV"} else {_lt_camo_var_array select 2;};};
