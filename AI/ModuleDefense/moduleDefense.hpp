@@ -57,7 +57,7 @@ class LT_Defense_Module: Module_F
 		// Aantal golven
 		class Defense_Waves {
 			displayName = "Amount of waves";
-			description = "Amount of waves. To enter wave compositions below enter -1.";
+			description = "Amount of waves. To enter wave compositions below enter -1. You will need to enter compositions for all unittypes plus artillery (if enabled)";
 			typeName = "NUMBER";
 			defaultValue = 3;
 		};
@@ -113,9 +113,15 @@ class LT_Defense_Module: Module_F
 		};
 		class Defense_AirAmount {
 			displayName = "Amount of helicopters per wave";
-			description = "";
-			typeNmae = "STRING";
+			description = "Amount of helicopters per wave. If you set it to -1 it will be randomized";
+			typeName = "STRING";
 			defaultValue = 0;
+		};
+		class Defense_AirHeight {
+			displayName = "Fly height of helicopter";
+			description = "Fly height of helicopter";
+			typeName = "NUMBER";
+			defaultValue = 100;
 		};
 		class EmptyLine3 {
 			displayName = "Direction and distance";
@@ -227,7 +233,7 @@ class LT_Defense_Module: Module_F
 		};
 		class Defense_ArtyRounds {
 			displayName = "Amount of rounds per barrage";
-			description = "Amount of rounds per barrage. If waveamount is -1 then you can enter artillery rounds per wave";
+			description = "Amount of rounds per barrage. If waveamount is -1 then you need to enter artillery rounds per wave";
 			typeName = "STRING";
 			defaultValue = "3";
 		};
