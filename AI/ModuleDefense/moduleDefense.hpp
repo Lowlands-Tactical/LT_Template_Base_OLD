@@ -198,7 +198,7 @@ class LT_Defense_Module: Module_F
 			};
 		};
 		class EmptyLine5 {
-			displayName = "Artillery";
+			displayName = "Artillery settings";
 			description = "";
 			typeName = "STRING";
 			class values {
@@ -206,8 +206,8 @@ class LT_Defense_Module: Module_F
 			};
 		};
 		class Defense_EnableArty {
-			displayName = "";
-			description = "";
+			displayName = "Artillery enabled";
+			description = "Enable artillery";
 			typeName = "BOOL";
 			class values {
 				class True 	{name = "Yes"; value = true;};
