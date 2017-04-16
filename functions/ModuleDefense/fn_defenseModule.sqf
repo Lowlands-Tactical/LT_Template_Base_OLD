@@ -46,16 +46,26 @@ if (_activated) then {
 		// Define defenseposition
 		_defensepos = if (_mrkDefPos == "") then {getpos _logic} else {getMarkerpos _mrkDefPos};
 
+		diag_log format ["LT template DEBUG: -=Defense Module=- Marker info Defensepos. Pos: %1, Shape %2, Size %3", _defensepos, MarkerShape _mrkDefPos, getMarkerSize _mrkDefPos];
+		
 		_searchArea = if (markerShape _mrkDefPos == "ICON" || _mrkDefPos == "") then {
 			createMarker ["Search Area", _defensepos];
 		} else {
-			_defensepos
+			_mrkDefPos
 		};
+		
 		if (markerShape _mrkDefPos == "ICON" || _mrkDefPos == "") then {
-				_searchArea setMarkerShape "ELLIPSE";
-				_searchArea setMarkerSize [_SearchAreaSize,_SearchAreaSize];
-				_searchArea setMarkerAlpha 0;
+			_searchArea setMarkerShape "ELLIPSE";
+			_searchArea setMarkerSize [_SearchAreaSize,_SearchAreaSize];
+			_searchArea setMarkerAlpha 0;
+		} else {
+			_shape = MarkerShape _mrkDefPos;
+			_size = getMarkerSize _mrkDefPos;
+			_searchArea setMarkerShape _shape;
+			_searchArea setMarkerSize [(_size select 0),(_size select 1)];	
 		};
+		
+		diag_log format ["LT template DEBUG: -=Defense Module=- Marker info Searcharea. Pos: %1, Shape %2, Size %3", getmarkerpos _searchArea, MarkerShape _searchArea, getMarkerSize _searchArea];
 
 		// Define Spawnmarkerarrays
 		_InfSpawnArray = _mrkInfSpawn splitstring ",";
