@@ -47,13 +47,13 @@ if (_activated) then {
 		_defensepos = if (_mrkDefPos == "") then {getpos _logic} else {getMarkerpos _mrkDefPos};
 
 		diag_log format ["LT template DEBUG: -=Defense Module=- Marker info Defensepos. Pos: %1, Shape %2, Size %3", _defensepos, MarkerShape _mrkDefPos, getMarkerSize _mrkDefPos];
-		
+
 		_searchArea = if (markerShape _mrkDefPos == "ICON" || _mrkDefPos == "") then {
 			createMarker ["Search Area", _defensepos];
 		} else {
 			_mrkDefPos
 		};
-		
+
 		if (markerShape _mrkDefPos == "ICON" || _mrkDefPos == "") then {
 			_searchArea setMarkerShape "ELLIPSE";
 			_searchArea setMarkerSize [_SearchAreaSize,_SearchAreaSize];
@@ -62,9 +62,9 @@ if (_activated) then {
 			_shape = MarkerShape _mrkDefPos;
 			_size = getMarkerSize _mrkDefPos;
 			_searchArea setMarkerShape _shape;
-			_searchArea setMarkerSize [(_size select 0),(_size select 1)];	
+			_searchArea setMarkerSize [(_size select 0),(_size select 1)];
 		};
-		
+
 		diag_log format ["LT template DEBUG: -=Defense Module=- Marker info Searcharea. Pos: %1, Shape %2, Size %3", getmarkerpos _searchArea, MarkerShape _searchArea, getMarkerSize _searchArea];
 
 		// Define Spawnmarkerarrays
@@ -165,6 +165,9 @@ if (_activated) then {
 
 		// Initialise waves
 		for "_i" from 0 to _wavesAmnt do {
+
+			// Send wave id
+			_logic setVariable ["LT_DefenseWave", (_i + 1), true];
 
 			// Define amount of players
 			_playersAmnt = count (allPlayers - entities "HeadlessClient_F");
