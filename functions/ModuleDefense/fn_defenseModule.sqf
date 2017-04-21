@@ -33,7 +33,7 @@ if (_activated) then {
 		// Verify some things (maybe needs more work in the future?)
 		if (_maxdist - _mindist <= 0) exitWith {
 			systemchat format ["-=Defense Module=- Min dist is higher than or equal to Max dist: %1", _maxdist - _mindist];
-			diag_log format ["LT template DEBUG: -=Defense Module=- Min dist is higher than or equal to Max dist: %1", _maxdist - _mindist];
+			// diag_log format ["LT template DEBUG: -=Defense Module=- Min dist is higher than or equal to Max dist: %1", _maxdist - _mindist];
 		};
 		if (_height < 100) then {systemchat format ["-=Defense Module=- Fly height of helicopters is %1. Changed it to minimum (100)", _height];};
 
@@ -46,7 +46,7 @@ if (_activated) then {
 		// Define defenseposition
 		_defensepos = if (_mrkDefPos == "") then {getpos _logic} else {getMarkerpos _mrkDefPos};
 
-		diag_log format ["LT template DEBUG: -=Defense Module=- Marker info Defensepos. Pos: %1, Shape %2, Size %3", _defensepos, MarkerShape _mrkDefPos, getMarkerSize _mrkDefPos];
+		// diag_log format ["LT template DEBUG: -=Defense Module=- Marker info Defensepos. Pos: %1, Shape %2, Size %3", _defensepos, MarkerShape _mrkDefPos, getMarkerSize _mrkDefPos];
 
 		_searchArea = if (markerShape _mrkDefPos == "ICON" || _mrkDefPos == "") then {
 			createMarker ["Search Area", _defensepos];
@@ -65,7 +65,7 @@ if (_activated) then {
 			_searchArea setMarkerSize [(_size select 0),(_size select 1)];
 		};
 
-		diag_log format ["LT template DEBUG: -=Defense Module=- Marker info Searcharea. Pos: %1, Shape %2, Size %3", getmarkerpos _searchArea, MarkerShape _searchArea, getMarkerSize _searchArea];
+		// diag_log format ["LT template DEBUG: -=Defense Module=- Marker info Searcharea. Pos: %1, Shape %2, Size %3", getmarkerpos _searchArea, MarkerShape _searchArea, getMarkerSize _searchArea];
 
 		// Define Spawnmarkerarrays
 		_InfSpawnArray = _mrkInfSpawn splitstring ",";
@@ -74,7 +74,7 @@ if (_activated) then {
 		_SpawnMarkerArray = [_InfSpawnArray, _VehSpawnArray, _VehSpawnArray,_VehSpawnArray,_AirSpawnArray];
 
 		// Define side
-		DIAG_LOG FORMAT ["LT template DEBUG: -=Defense Module=- Faction  %1", _faction];
+		// diag_log FORMAT ["LT template DEBUG: -=Defense Module=- Faction  %1", _faction];
 		_factionUnitArray = switch (_faction) do {
 				case "LT_OPF_F": {LT_OPF_F};
 				case "LT_OPF_G_F": {LT_OPF_G_F};
@@ -97,8 +97,8 @@ if (_activated) then {
 				case "LT_CUSTOM": {LT_CUSTOM};
 		};
 
-		DIAG_LOG FORMAT ["LT template DEBUG: -=Defense Module=- Faction unit array %1", _factionUnitArray];
-		DIAG_LOG FORMAT ["LT template DEBUG: -=Defense Module=- Faction unit array %1", _factionUnitArray select 0 select 0];
+		// diag_log FORMAT ["LT template DEBUG: -=Defense Module=- Faction unit array %1", _factionUnitArray];
+		// diag_log FORMAT ["LT template DEBUG: -=Defense Module=- Faction unit array %1", _factionUnitArray select 0 select 0];
 
 		_factionClass = getText (configfile >> "CfgVehicles" >> (_factionUnitArray select 0 select 0) >> "faction");
 
@@ -128,24 +128,18 @@ if (_activated) then {
 					};
 				} else {
 					systemchat format ["LT template DEBUG: -=Defense Module= Error in amount of Waves: %1", _waves];
-					diag_log format ["LT template DEBUG: -=Defense Module= Error in amount of Waves. Entered amount: %1",_waves];
 				};
 			};
 		};
-		diag_log format ["LT template DEBUG: -=Defense Module= outputArray: %1",_outputArray];
 
 		// Define amount of waves
 		_wavesAmnt = if (_waves == -1) then {
 
-			diag_log format ["LT template DEBUG: -=Defense Module= outputArray 0: %1",_outputArray select 0];
 			_my = _outputArray select 0;
-			diag_log format ["LT template DEBUG: -=Defense Module= outputArray type: %1", typename _my];
-			diag_log format ["LT template DEBUG: -=Defense Module= outputArray select 0 type: %1", typename (_my select 0)];
 			(selectMax [count (_outputArray select 0), count (_outputArray select 1), count (_outputArray select 2), count (_outputArray select 3), count (_outputArray select 4)]) - 1
 		} else {
 			_waves - 1
 		};
-		diag_log format ["LT template DEBUG: -=Defense Module= Waves amount: %1",_wavesAmnt];
 
 		// Define amount of artyrounds per wave
 		_roundsArray = [];
@@ -156,7 +150,6 @@ if (_activated) then {
 				_roundsArray append [_artyRounds];
 			};
 		};
-		diag_log format ["LT template DEBUG: -=Defense Module= Rounds array: %1",_roundsArray];
 
 		if ((count _roundsArray) != (_wavesAmnt + 1)) then {
 			systemchat format ["-=Defense Module=- You did not enter rounds per barrage in module: %1", _roundsArray];
@@ -167,7 +160,7 @@ if (_activated) then {
 		for "_i" from 0 to _wavesAmnt do {
 
 			// Send wave id
-			_logic setVariable ["LT_DefenseWave", (_i + 1), true];
+			_logic setVariable ["LT_DefenseWave", [(_i + 1), _logic], true];
 
 			// Define amount of players
 			_playersAmnt = count (allPlayers - entities "HeadlessClient_F");
@@ -183,8 +176,6 @@ if (_activated) then {
 			_factors = [0.75, 0.3, 0.3, 0.2, 0.1];
 			// Define spawnamounts
 			{
-				//diag_log format ["LT template DEBUG: -=Defense Module= ForEachIndex: %1",_forEachIndex];
-				diag_log format ["LT template DEBUG: -=Defense Module=- ForeachIndex: %1 _i: %2", _forEachIndex, _i];
 				if (_outputarray select _forEachIndex select _i == -1) then {
 					_w = _weights select _forEachIndex;
 					_f = _factors select _forEachIndex;
@@ -194,79 +185,109 @@ if (_activated) then {
 					_SpawnAmountArray select _forEachIndex set [0, _outputarray select _forEachIndex select _i];
 				};
 			} forEach _SpawnAmountArray;
-			diag_log format ["LT template DEBUG: -=Defense Module=- SpawnAmountArray %1", _SpawnAmountArray];
 
 			// ForEach unittype spawn units with the amounts that come out of the
 			{
 				_amnt		= _x select 0;
 				_UnitType 	= _x select 1;
-				diag_log format ["LT template DEBUG: -=Defense Module=- Amount: %1 Unittype: %2",_amnt,_UnitType];
 
 				if (_amnt == 0) then {
-					diag_log format ["LT template DEBUG: -=Defense Module=- No spawn %1", _unitType];
+
 				} else {
 
 					for "_n" from 1 to _amnt do {
 
 						// Get array of units of type _x from the selected faction
 						_groupArray = _factionUnitArray select (_forEachIndex);
-						diag_log format ["LT template DEBUG: -=Defense Module=- Grouparray %1", _groupArray];
 
 						_unitcap = 120;
 
-						// Define spawn position
-						_spawndist = random [_mindist ,_maxdist - _mindist, _maxdist];
-						_minspawndist = random [1 , 5 , 10];
-						_maxspawndist = random [11 , 15, 20];
-
-						_relpos = switch (_dir) do {
-							case -1: {[_defensepos , _spawndist, getdir _logic] call BIS_fnc_relPos;};
-							case -2: {[_defensepos , _spawndist, random 360] call BIS_fnc_relPos;};
-							case -3: {[selectRandom (_SpawnMarkerArray select (_forEachIndex))] call CBA_fnc_randPosArea;};
-						};
-						// https://community.bistudio.com/wiki/findEmptyPosition
-
-						_spawnpos = _relpos findEmptyPosition [0, 20];
-						//_spawnpos = [_relpos, _minspawndist, _maxspawndist, 2, 0, 2, 0,[], _relpos] call BIS_fnc_findSafePos;
-						diag_log format ["LT template DEBUG: -=Defense Module=- Spawnpos after switch %1", _spawnpos];
+						// Wait until under unitcap.
+						diag_log format ["LT template DEBUG: -=Defense Module= Unitcap waituntil: %1",(_unitcap < (count allUnits))];
+						waitUntil {(_unitcap > (count allUnits))};
 
 						if (count _groupArray == 0) then {
-							diag_log format ["LT template DEBUG: -=Defense Module=- No spawn "];
+
 						} else {
 							// If infantry then spawn and give taskSearch area. If Vehicle spawn and give taskAttack.
 							switch (_unitType) do {
 
 								case "Infantry": {
-									//waitUntil {((count allunits - _playersamnt) + _infyGroupSize) <= _unitcap};
+
+									// Define spawn position
+									_medDist 	= ((_maxdist + _mindist) / 2);
+									_minMedDist = ((_mindist + _medDist) / 2);
+									_minMedDist2 = ((_minMedDist + _mindist) / 2);
+									_spawndist = random [_mindist , _minMedDist2, _minMedDist];
+
+									_relpos = switch (_dir) do {
+										case -1: {[_defensepos , _spawndist, getdir _logic] call BIS_fnc_relPos;};
+										case -2: {[_defensepos , _spawndist, random 360] call BIS_fnc_relPos;};
+										case -3: {[selectRandom (_SpawnMarkerArray select (_forEachIndex))] call CBA_fnc_randPosArea;};
+									};
+
+									_spawnpos = _relpos findEmptyPosition [0, 20];
+
+									// Spawn unit(s)
 									_grp = [_factionSide, _infyGroupSize, _spawnpos, _groupArray] call LT_fnc_createGroup;
 
-									diag_log format ["LT template DEBUG: -=Defense Module=- Group: %1", _grp];
+									// Give units task
 									[_grp, _searchArea, _behaviour, "RED", _speed] call CBA_fnc_taskSearchArea;
+
 								};
 								case "Air": {
-									//waitUntil {((count allunits - _playersamnt) + 1) <= _unitcap};
+
+									// Define spawn position
+									_medDist = ((_maxDist + _minDist) / 2);
+									_MedMaxDist = ((_maxDist + _medDist) / 2);
+									_MedMaxDist2 = ((_maxDist + _medMaxDist) / 2);
+									_spawndist = random [_medMaxDist , _medMaxDist2, _maxDist];
+
+									_relpos = switch (_dir) do {
+										case -1: {[_defensepos , _spawndist, getdir _logic] call BIS_fnc_relPos;};
+										case -2: {[_defensepos , _spawndist, random 360] call BIS_fnc_relPos;};
+										case -3: {[selectRandom (_SpawnMarkerArray select (_forEachIndex))] call CBA_fnc_randPosArea;};
+									};
+
+									_spawnpos = _relpos findEmptyPosition [0, 20];
+
+									// Spawn unit(s)
 									_grp = [_spawnpos, _spawnpos getdir _defensepos, selectRandom _groupArray, _factionSide] call BIS_fnc_spawnVehicle;
+
+									// Flyheight setup
 									(_grp select 0) flyInHeight _flyheight;
-									diag_log format ["LT template DEBUG: -=Defense Module=- Group: %1", _grp];
+
+									// Give units task
 									[_grp, _searchArea, _SearchAreaSize] call CBA_fnc_taskAttack;
 								};
 
 								default {
-									//waitUntil {((count allunits - _playersamnt) + 1) <= _unitcap};
+
+									// Define spawn position
+									_medDist = (_maxDist + _minDist) / 2;
+									_medMaxDist = ((_maxDist + _medDist) / 2);
+									_spawndist = random [_medDist , _medMaxDist, _maxDist];
+
+									_relpos = switch (_dir) do {
+										case -1: {[_defensepos , _spawndist, getdir _logic] call BIS_fnc_relPos;};
+										case -2: {[_defensepos , _spawndist, random 360] call BIS_fnc_relPos;};
+										case -3: {[selectRandom (_SpawnMarkerArray select (_forEachIndex))] call CBA_fnc_randPosArea;};
+									};
+
+									_spawnpos = _relpos findEmptyPosition [0, 20];
+
+									// Spawn unit(s)
 									_grp = [_spawnpos, _spawnpos getdir _defensepos, selectRandom _groupArray, _factionSide] call BIS_fnc_spawnVehicle;
 
-									diag_log format ["LT template DEBUG: -=Defense Module=- Group: %1", _grp];
+									// Give units task
 									[_grp, _searchArea, _SearchAreaSize] call CBA_fnc_taskAttack;
 								};
 							};
 						};
 
 					};
-					diag_log format ["LT template DEBUG: -=Defense Module=- %1 spawning done for wave %2", _unittype,_i + 1];
 				};
 			} forEach _SpawnAmountArray;
-
-			diag_log format ["LT template DEBUG: -=Defense Module=- Spawning wave %1 done", _i + 1];
 
 			// Artillery startup
 			if (_artyEnabled) then {
@@ -274,31 +295,22 @@ if (_activated) then {
 				[_searchArea,_artyAmmoType,_rounds,_artyDelay,_artyDamage] call LT_fnc_doMortar;
 			};
 
-			diag_log format ["LT template DEBUG: -=Defense Module=- Sleep start"];
-
 			// Sleep
 			if (_wavetime find "," >= 0 && _wavetime != "-1") then {
 				_timeArray = _wavetime splitstring ",";
 				_timeMin = parsenumber (_timeArray select 0);
 				_timeMax = parsenumber (_timeArray select 1);
 				_wavetimernd = random [_timeMin, _timeMax - _timeMin, _timeMax];
-				diag_log format ["LT template DEBUG: -=Defense Module=- Sleep %1", _wavetimernd];
 				sleep _wavetimernd;
 			} else {
 				if (_wavetime == "-1") then {
 					_wavetimernd = ((_infyamnt * 4) + (_vehamnt * 20) + (_mechamnt * 60) + (_armoramnt * 120));
-					diag_log format ["LT template DEBUG: -=Defense Module=- Sleep %1", _wavetimernd];
 					sleep _wavetimernd;
 				} else {
-					diag_log format ["LT template DEBUG: -=Defense Module=- Sleep %1", _wavetime];
 					_wavetimer = parseNumber _wavetime;
 					sleep _wavetimer;
 				};
 			};
-
-			//sleep parsenumber _wavetime;
-
-			diag_log format ["LT template DEBUG: -=Defense Module=- Sleep end"];
 		};
 	};
 };
