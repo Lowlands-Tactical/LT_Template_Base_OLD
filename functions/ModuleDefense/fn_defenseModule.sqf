@@ -220,8 +220,11 @@ if (_activated) then {
 									_minMedDist2 = ((_minMedDist + _mindist) / 2);
 									_spawndist = random [_mindist , _minMedDist2, _minMedDist];
 
+									_logdir = getDir _logic;
+									_rndDir = random [(_logdir - 10),_logdir,(_logdir + 10)];
+
 									_relpos = switch (_dir) do {
-										case -1: {[_defensepos , _spawndist, getdir _logic] call BIS_fnc_relPos;};
+										case -1: {[_defensepos , _spawndist, _rndDir] call BIS_fnc_relPos;};
 										case -2: {[_defensepos , _spawndist, random 360] call BIS_fnc_relPos;};
 										case -3: {[selectRandom (_SpawnMarkerArray select (_forEachIndex))] call CBA_fnc_randPosArea;};
 									};
@@ -243,8 +246,11 @@ if (_activated) then {
 									_MedMaxDist2 = ((_maxDist + _medMaxDist) / 2);
 									_spawndist = random [_medMaxDist , _medMaxDist2, _maxDist];
 
+									_logdir = getDir _logic;
+									_rndDir = random [(_logdir - 2), _logdir, (_logdir + 2)];
+
 									_relpos = switch (_dir) do {
-										case -1: {[_defensepos , _spawndist, getdir _logic] call BIS_fnc_relPos;};
+										case -1: {[_defensepos , _spawndist, _rndDir] call BIS_fnc_relPos;};
 										case -2: {[_defensepos , _spawndist, random 360] call BIS_fnc_relPos;};
 										case -3: {[selectRandom (_SpawnMarkerArray select (_forEachIndex))] call CBA_fnc_randPosArea;};
 									};
@@ -267,9 +273,12 @@ if (_activated) then {
 									_medDist = (_maxDist + _minDist) / 2;
 									_medMaxDist = ((_maxDist + _medDist) / 2);
 									_spawndist = random [_medDist , _medMaxDist, _maxDist];
+									
+									_logdir = getDir _logic;
+									_rndDir = random [ (_logdir - 5), _logdir, (_logdir + 5)];
 
 									_relpos = switch (_dir) do {
-										case -1: {[_defensepos , _spawndist, getdir _logic] call BIS_fnc_relPos;};
+										case -1: {[_defensepos , _spawndist, _rndDir] call BIS_fnc_relPos;};
 										case -2: {[_defensepos , _spawndist, random 360] call BIS_fnc_relPos;};
 										case -3: {[selectRandom (_SpawnMarkerArray select (_forEachIndex))] call CBA_fnc_randPosArea;};
 									};
