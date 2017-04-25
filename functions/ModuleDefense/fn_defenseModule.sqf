@@ -76,25 +76,7 @@ if (_activated) then {
 		// Define side
 		// diag_log FORMAT ["LT template DEBUG: -=Defense Module=- Faction  %1", _faction];
 		_factionUnitArray = switch (_faction) do {
-				case "LT_OPF_F": {LT_OPF_F};
-				case "LT_OPF_G_F": {LT_OPF_G_F};
-				case "LT_IND_F": {LT_IND_F};
-				case "LT_IND_G_F": {LT_IND_G_F};
-				case "LT_OPF_T_F": {LT_OPF_T_F};
-				case "LT_IND_C_F": {LT_IND_C_F};
-				case "LT_NLDO_RU_VDV_76": {LT_NLDO_RU_VDV_76};
-				case "LT_NLDO_RU_VDV_31": {LT_NLDO_RU_VDV_31};
-				case "LT_NLDO_UA_UAF_95": {LT_NLDO_UA_UAF_95};
-				case "LT_CUP_O_TK_INS": {LT_CUP_O_TK_INS};
-				case "LT_CUP_O_TK": {LT_CUP_O_TK};
-				case "LT_CUP_O_CHDKZ": {LT_CUP_O_CHDKZ};
-				case "LT_CUP_O_SLA": {LT_CUP_O_SLA};
-				case "LT_CUP_O_RU_EMR": {LT_CUP_O_RU_EMR};
-				case "LT_CUP_O_RU_FLORA": {LT_CUP_O_RU_FLORA};
-				case "LT_CUP_I_NAPA": {LT_CUP_I_NAPA};
-				case "LT_CUP_I_RACS": {LT_CUP_I_RACS};
-				case "LT_CUP_I_TK_GUE": {LT_CUP_I_TK_GUE};
-				case "LT_CUSTOM": {LT_CUSTOM};
+			#include "..\FactionSwitch.sqf"
 		};
 
 		// diag_log FORMAT ["LT template DEBUG: -=Defense Module=- Faction unit array %1", _factionUnitArray];
@@ -273,7 +255,7 @@ if (_activated) then {
 									_medDist = (_maxDist + _minDist) / 2;
 									_medMaxDist = ((_maxDist + _medDist) / 2);
 									_spawndist = random [_medDist , _medMaxDist, _maxDist];
-									
+
 									_logdir = getDir _logic;
 									_rndDir = random [ (_logdir - 5), _logdir, (_logdir + 5)];
 
