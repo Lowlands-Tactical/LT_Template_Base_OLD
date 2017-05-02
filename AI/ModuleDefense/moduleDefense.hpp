@@ -244,8 +244,8 @@ class LT_Defense_Module: Module_F
 			defaultValue = 7;
 		};
 		class Defense_ArtyDamagePlayers {
-			displayName = "Playerdamage";
-			description = "Artillery does damage to players";
+			displayName = "Player Safety";
+			description = "Artillery does not damage to players";
 			typeName = "BOOL";
 			class values {
 				class True 	{name = "Yes"; value = true;};
