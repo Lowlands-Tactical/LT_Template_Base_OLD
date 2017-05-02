@@ -117,6 +117,12 @@ class LT_Defense_Module: Module_F
 			typeName = "STRING";
 			defaultValue = 0;
 		};
+		class Defense_ArtyRounds {
+			displayName = "Amount of rounds per barrage";
+			description = "Amount of rounds per barrage. If waveamount is -1 then you need to enter artillery rounds per wave";
+			typeName = "STRING";
+			defaultValue = "3";
+		};
 		class Defense_AirHeight {
 			displayName = "Fly height of helicopter";
 			description = "Fly height of helicopter";
@@ -230,12 +236,6 @@ class LT_Defense_Module: Module_F
 				class ModuleOrdnanceRocket_F_ammo {name = "MLRS Rockets (cluster)"; value = "ModuleOrdnanceRocket_F_ammo";};
 				class ModuleOrdnanceRocket_F_subammo {name = "MLRS Rockets (single)"; value = "ModuleOrdnanceRocket_F_subammo";};
 			};
-		};
-		class Defense_ArtyRounds {
-			displayName = "Amount of rounds per barrage";
-			description = "Amount of rounds per barrage. If waveamount is -1 then you need to enter artillery rounds per wave";
-			typeName = "STRING";
-			defaultValue = "3";
 		};
 		class Defense_ArtyDelay {
 			displayName = "Delay between rounds";
