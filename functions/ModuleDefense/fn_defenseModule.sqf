@@ -24,11 +24,13 @@ if (_activated) then {
 		_dir 		= _logic getVariable "Defense_Direction";
 		_behaviour	= _logic getVariable "Defense_Behaviour";
 		_speed 		= _logic getVariable "Defense_Speed";
+		_formation = _logic getVariable "Defense_Formation";
 		_artyEnabled = _logic getVariable "Defense_EnableArty";
 		_artyAmmoType = _logic getVariable "Defense_ArtyAmmoType";
 		_artyRounds 	= _logic getVariable "Defense_ArtyRounds";
 		_artyDelay = _logic getVariable "Defense_ArtyDelay";
 		_artyDamage = _logic getVariable "Defense_ArtyDamagePlayers";
+		_unitcap = _logic getVariable "Defense_UnitCap";
 
 		// Verify some things (maybe needs more work in the future?)
 		if (_maxdist - _mindist <= 0) exitWith {
@@ -182,8 +184,6 @@ if (_activated) then {
 						// Get array of units of type _x from the selected faction
 						_groupArray = _factionUnitArray select (_forEachIndex);
 
-						_unitcap = 120;
-
 						// Wait until under unitcap.
 						diag_log format ["LT template DEBUG: -=Defense Module= Unitcap waituntil: %1",(_unitcap < (count allUnits))];
 						waitUntil {(_unitcap > (count allUnits))};
@@ -217,7 +217,7 @@ if (_activated) then {
 									_grp = [_factionSide, _infyGroupSize, _spawnpos, _groupArray] call LT_fnc_createGroup;
 
 									// Give units task
-									[_grp, _searchArea, _behaviour, "RED", _speed] call CBA_fnc_taskSearchArea;
+									[_grp, _searchArea, _behaviour, "RED", _speed,_formation] call CBA_fnc_taskSearchArea;
 
 								};
 								case "Air": {

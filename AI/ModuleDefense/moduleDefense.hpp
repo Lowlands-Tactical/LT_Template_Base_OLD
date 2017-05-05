@@ -68,6 +68,12 @@ class LT_Defense_Module: Module_F
 			typeName = "STRING";
 			defaultValue = 60;
 		};
+		class Defense_UnitCap {
+			displayName = "Unitcap";
+			description = "Unit maximum amount on any given time. Units will not spawn unless the total units are below this number";
+			typeName = "NUMBER";
+			defaultvalue = 120;
+		};
 		class EmptyLine2 {
 			displayName = "Spawn amounts and groupsize";
 			description = "";
@@ -116,12 +122,6 @@ class LT_Defense_Module: Module_F
 			description = "Amount of helicopters per wave. If you set it to -1 it will be randomized";
 			typeName = "STRING";
 			defaultValue = 0;
-		};
-		class Defense_ArtyRounds {
-			displayName = "Amount of rounds per barrage";
-			description = "Amount of rounds per barrage. If waveamount is -1 then you need to enter artillery rounds per wave";
-			typeName = "STRING";
-			defaultValue = "3";
 		};
 		class Defense_AirHeight {
 			displayName = "Fly height of helicopter";
@@ -209,6 +209,19 @@ class LT_Defense_Module: Module_F
         			class Full		{name = "Full" ; value="FULL" ;};
 			};
 		};
+		class Defense_Formation {
+			displayName = "Formation";
+			description = "Formation";
+			typeName = "STRING";
+			class values {
+				class empty 	{name = "None"; value="NONE"; default = 1;};
+				class Line 		{name = "Line"; value="LINE";};
+				class StagColumn {name = "Staggered column"; value="STAG COLUMN";};
+				class Column 	{name = "Column"; value="COLUMN";};
+				class Vee 		{name = "Vee"; value="VEE";};
+				class Wedge 	{name = "Wedge"; value="WEDGE";};
+			};
+		};
 		class EmptyLine5 {
 			displayName = "Artillery settings";
 			description = "";
@@ -237,6 +250,12 @@ class LT_Defense_Module: Module_F
 				class ModuleOrdnanceRocket_F_subammo {name = "MLRS Rockets (single)"; value = "ModuleOrdnanceRocket_F_subammo";};
 			};
 		};
+		class Defense_ArtyRounds {
+			displayName = "Amount of rounds per barrage";
+			description = "Amount of rounds per barrage. If waveamount is -1 then you need to enter artillery rounds per wave";
+			typeName = "STRING";
+			defaultValue = "3";
+		};
 		class Defense_ArtyDelay {
 			displayName = "Delay between rounds";
 			description = "Delay between rounds";
@@ -244,8 +263,8 @@ class LT_Defense_Module: Module_F
 			defaultValue = 7;
 		};
 		class Defense_ArtyDamagePlayers {
-			displayName = "Player Safety";
-			description = "Artillery does not damage to players";
+			displayName = "Playerdamage";
+			description = "Artillery does damage to players";
 			typeName = "BOOL";
 			class values {
 				class True 	{name = "Yes"; value = true;};
