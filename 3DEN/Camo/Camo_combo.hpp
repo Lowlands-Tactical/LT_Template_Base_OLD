@@ -258,7 +258,7 @@ class LT_Camo_combo: Title
 				class LT_RACS_Desert
 				{
 					text = "[RACS] Desert";
-					data = [["CUP_U_I_RACS_Desert_1","CUP_U_I_RACS_Desert_2"],["CUP_V_I_RACS_Carrier_Vest_2","CUP_V_I_RACS_Carrier_Vest","CUP_V_I_RACS_Carrier_Vest_3"],"CUP_B_USArmy_MG",["CUP_H_RACS_Helmet_DES","CUP_H_RACS_Helmet_Goggles_DES"],"tf_rt1523g_sage"] LT_RACS_Jungle;
+					data = [["CUP_U_I_RACS_Desert_1","CUP_U_I_RACS_Desert_2"],["CUP_V_I_RACS_Carrier_Vest_2","CUP_V_I_RACS_Carrier_Vest","CUP_V_I_RACS_Carrier_Vest_3"],"CUP_B_USArmy_MG",["CUP_H_RACS_Helmet_DES","CUP_H_RACS_Helmet_Goggles_DES"],"tf_rt1523g_sage"];
 				};
 				class LT_RACS_Jungle
 				{
