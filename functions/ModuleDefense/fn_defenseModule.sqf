@@ -35,10 +35,10 @@ if (_activated) then {
 			systemchat format ["-=Defense Module=- Min dist is higher than or equal to Max dist: %1", _maxdist - _mindist];
 			// diag_log format ["LT template DEBUG: -=Defense Module=- Min dist is higher than or equal to Max dist: %1", _maxdist - _mindist];
 		};
-		if (_height < 100) then {systemchat format ["-=Defense Module=- Fly height of helicopters is %1. Changed it to minimum (100)", _height];};
+		if (_height < 1) then {systemchat format ["-=Defense Module=- Fly height of helicopters is %1. Changed it to minimum (1)", _height];};
 
-		_flyheight = if (_height < 100) then {
-			100
+		_flyheight = if (_height < 1) then {
+			1
 		} else {
 				_height
 		};
