@@ -129,7 +129,7 @@ if (_waves == -1 && _artyEnabled) then {
 		_wavesAmnt = if (_waves == -1) then {
 
 			_my = _outputArray select 0;
-			(selectMax [count (_outputArray select 0), count (_outputArray select 1), count (_outputArray select 2), count (_outputArray select 3), count (_outputArray select 4)], count (_outputarray select 5)) - 1
+			(selectMax [count (_outputArray select 0), count (_outputArray select 1), count (_outputArray select 2), count (_outputArray select 3), count (_outputArray select 4), count (_outputarray select 5)]) - 1
 		} else {
 			_waves - 1
 		};
@@ -251,8 +251,8 @@ if (_waves == -1 && _artyEnabled) then {
 
 								case "Mortar": {
 									_rounds = parsenumber (_roundsArray select _i);
-									// [_searchArea,_artyAmmoType,_rounds,_artyDelay,_artyDamage] call LT_fnc_doMortar;
 									diag_log format["LT template DEBUG: Defense Module::%1 Arty Rounds: %2",_logic, _rounds];
+									[_searchArea,_artyAmmoType,_rounds,_artyDelay,_artyDamage] call LT_fnc_doMortar;
 								};
 
 								default {
