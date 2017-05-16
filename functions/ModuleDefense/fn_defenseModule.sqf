@@ -25,7 +25,7 @@ if (_activated) then {
 		_behaviour	= _logic getVariable "Defense_Behaviour";
 		_speed 		= _logic getVariable "Defense_Speed";
 		_formation = _logic getVariable "Defense_Formation";
-		_artyEnabled = _logic getVariable "Defense_EnableArty";
+//		_artyEnabled = _logic getVariable "Defense_EnableArty";
 		_artyAmmoType = _logic getVariable "Defense_ArtyAmmoType";
 		_artyRounds 	= _logic getVariable "Defense_ArtyRounds";
 		_artyDelay = _logic getVariable "Defense_ArtyDelay";
@@ -38,12 +38,7 @@ if (_activated) then {
 			// diag_log format ["LT template DEBUG: -=Defense Module=- Min dist is higher than or equal to Max dist: %1", _maxdist - _mindist];
 		};
 		if (_height < 1) then {systemchat format ["-=Defense Module=- Fly height of helicopters is %1. Changed it to minimum (1)", _height];};
-
-		_flyheight = if (_height < 1) then {
-			1
-		} else {
-				_height
-		};
+		_flyheight = if (_height < 1) then { 1 } else {	_height };
 
 		// Define defenseposition
 		_defensepos = if (_mrkDefPos == "") then {getpos _logic} else {getMarkerpos _mrkDefPos};
@@ -95,11 +90,25 @@ if (_activated) then {
 		};
 
 		// Define spawned quantities of units
-		_inputArray = [_infy , _veh , _mech , _armor, _air];
-		_outputArray = [[],[],[],[],[]];
+		_inputArray = [_infy , _veh , _mech , _armor, _air, _artyRounds];
+		_outputArray = [[],[],[],[],[],[]];
 		_tempArray = [];
 
-		for "_i" from 0 to 4 do {
+		diag_log format["LT template DEBUG: Defense Module::%1 inputArray: %2",_logic, _inputArray];
+
+/*
+// Define amount of artyrounds per wave
+_roundsArray = [];
+if (_waves == -1 && _artyEnabled) then {
+	_roundsArray = _artyRounds splitstring ",";
+} else {
+	for "_r" from 0 to _wavesAmnt do {
+		_roundsArray append [_artyRounds];
+	};
+};
+*/
+
+		for "_i" from 0 to 5 do {
 			if (_waves == -1) then {
 				_tempArray 	= _inputArray select _i splitstring ",";
 				{
@@ -125,20 +134,11 @@ if (_activated) then {
 			_waves - 1
 		};
 
-		// Define amount of artyrounds per wave
-		_roundsArray = [];
-		if (_waves == -1 && _artyEnabled) then {
-			_roundsArray = _artyRounds splitstring ",";
-		} else {
-			for "_r" from 0 to _wavesAmnt do {
-				_roundsArray append [_artyRounds];
-			};
-		};
-
+/*
 		if ((count _roundsArray) != (_wavesAmnt + 1)) then {
 			systemchat format ["-=Defense Module=- You did not enter rounds per barrage in module: %1", _roundsArray];
 		};
-
+*/
 
 		// Initialise waves
 		for "_i" from 0 to _wavesAmnt do {
@@ -154,7 +154,7 @@ if (_activated) then {
 			hint format ["Wave %1 started", _i + 1];
 
 			// Array of spawnamounts
-			_SpawnAmountArray = [[0, "Infantry"], [0, "Motorized"], [0, "Mechanized"], [0, "Armor"], [0,"Air"]];
+			_SpawnAmountArray = [[0, "Infantry"], [0, "Motorized"], [0, "Mechanized"], [0, "Armor"], [0,"Air"], [0,"Mortar"]];
 
 			_weights = [4,2,2,1, 0.5];
 			_factors = [0.75, 0.3, 0.3, 0.2, 0.1];
@@ -249,6 +249,12 @@ if (_activated) then {
 									[_grp, _searchArea, _SearchAreaSize] call CBA_fnc_taskAttack;
 								};
 
+								case "Mortar": {
+									_rounds = parsenumber (_roundsArray select _i);
+									// [_searchArea,_artyAmmoType,_rounds,_artyDelay,_artyDamage] call LT_fnc_doMortar;
+									diag_log format["LT template DEBUG: Defense Module::%1 Arty Rounds: %2",_logic, _rounds];
+								};
+
 								default {
 
 									// Define spawn position
@@ -279,12 +285,6 @@ if (_activated) then {
 					};
 				};
 			} forEach _SpawnAmountArray;
-
-			// Artillery startup
-			if (_artyEnabled) then {
-				_rounds = parsenumber (_roundsArray select _i);
-				[_searchArea,_artyAmmoType,_rounds,_artyDelay,_artyDamage] call LT_fnc_doMortar;
-			};
 
 			// Sleep
 			if (_wavetime find "," >= 0 && _wavetime != "-1") then {
