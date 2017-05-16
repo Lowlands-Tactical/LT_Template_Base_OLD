@@ -129,7 +129,7 @@ if (_waves == -1 && _artyEnabled) then {
 		_wavesAmnt = if (_waves == -1) then {
 
 			_my = _outputArray select 0;
-			(selectMax [count (_outputArray select 0), count (_outputArray select 1), count (_outputArray select 2), count (_outputArray select 3), count (_outputArray select 4)]) - 1
+			(selectMax [count (_outputArray select 0), count (_outputArray select 1), count (_outputArray select 2), count (_outputArray select 3), count (_outputArray select 4)], count (_outputarray select 5)) - 1
 		} else {
 			_waves - 1
 		};
@@ -156,8 +156,8 @@ if (_waves == -1 && _artyEnabled) then {
 			// Array of spawnamounts
 			_SpawnAmountArray = [[0, "Infantry"], [0, "Motorized"], [0, "Mechanized"], [0, "Armor"], [0,"Air"], [0,"Mortar"]];
 
-			_weights = [4,2,2,1, 0.5];
-			_factors = [0.75, 0.3, 0.3, 0.2, 0.1];
+			_weights = [4,2,2,1, 0.5,0.3];
+			_factors = [0.75, 0.3, 0.3, 0.2, 0.1, 0.1];
 			// Define spawnamounts
 			{
 				if (_outputarray select _forEachIndex select _i == -1) then {
