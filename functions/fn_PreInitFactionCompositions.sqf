@@ -225,7 +225,7 @@ LT_cup_i_napa = [LT_cup_i_napa_units,LT_cup_i_napa_car,LT_cup_i_napa_ifv,LT_cup_
 LT_cup_i_napa_Weights = [LT_cup_i_napa_units_weightArray,LT_cup_i_napa_car_weightArray,LT_cup_i_napa_ifv_weightArray,LT_cup_i_napa_tank_weightArray,LT_cup_i_napa_heli_weightArray];
 
 // RACS
-LT_cup_i_racs_units = ["CUP_I_RACS_Soldier","CUP_I_RACS_Officer","CUP_I_RACS_Medic","CUP_I_RACS_SL","CUP_I_RACS_GL","CUP_I_RACS_MMG","CUP_I_RACS_Soldier_AA","CUP_I_RACS_Soldier_MAT","CUP_I_RACS_Soldier_HAT","CUP_I_RACS_Sniper","CUP_I_RACS_Engineer","CUP_I_RACS_RoyalCommando","CUP_I_RACS_RoyalGuard","CUP_I_RACS_RoyalMarksman","CUP_I_RACS_Urban_Soldier","CUP_I_RACS_wdl_Soldier","CUP_I_RACS_Mech_Soldier"];
+LT_cup_i_racs_units = ["CUP_I_RACS_Soldier","CUP_I_RACS_Officer","CUP_I_RACS_Medic","CUP_I_RACS_SL","CUP_I_RACS_GL","CUP_I_RACS_MMG","CUP_I_RACS_Soldier_AA","CUP_I_RACS_Soldier_MAT","CUP_I_RACS_Soldier_HAT","CUP_I_RACS_Sniper","CUP_I_RACS_Engineer","CUP_I_RACS_RoyalCommando","CUP_I_RACS_RoyalGuard","CUP_I_RACS_RoyalMarksman","CUP_I_RACS_Urban_Soldier"];
 LT_cup_i_racs_units_weightArray = [];
 LT_cup_i_racs_car = ["CUP_I_LR_Transport_RACS","CUP_I_LR_MG_RACS"];
 LT_cup_i_racs_car_weightArray = [];
