@@ -96,18 +96,6 @@ if (_activated) then {
 
 		diag_log format["LT template DEBUG: Defense Module::%1 inputArray: %2",_logic, _inputArray];
 
-/*
-// Define amount of artyrounds per wave
-_roundsArray = [];
-if (_waves == -1 && _artyEnabled) then {
-	_roundsArray = _artyRounds splitstring ",";
-} else {
-	for "_r" from 0 to _wavesAmnt do {
-		_roundsArray append [_artyRounds];
-	};
-};
-*/
-
 		for "_i" from 0 to 5 do {
 			if (_waves == -1) then {
 				_tempArray 	= _inputArray select _i splitstring ",";
@@ -133,12 +121,6 @@ if (_waves == -1 && _artyEnabled) then {
 		} else {
 			_waves - 1
 		};
-
-/*
-		if ((count _roundsArray) != (_wavesAmnt + 1)) then {
-			systemchat format ["-=Defense Module=- You did not enter rounds per barrage in module: %1", _roundsArray];
-		};
-*/
 
 		// Initialise waves
 		for "_i" from 0 to _wavesAmnt do {
@@ -183,13 +165,15 @@ if (_waves == -1 && _artyEnabled) then {
 
 						// Get array of units of type _x from the selected faction
 						_groupArray = _factionUnitArray select (_forEachIndex);
+						if (_forEachIndex == 5) then { _groupArray = []; };
+						diag_log format ["LT template DEBUG: -=Defense Module:%1 _groupArray:%2 _forEachIndex:%3",_logic,_groupArray,_forEachIndex];
 
 						// Wait until under unitcap.
 						diag_log format ["LT template DEBUG: -=Defense Module= Unitcap waituntil: %1",(_unitcap < (count allUnits))];
 						waitUntil {(_unitcap > (count allUnits))};
 
 						if (count _groupArray == 0) then {
-
+							// No Magic happens here
 						} else {
 							// If infantry then spawn and give taskSearch area. If Vehicle spawn and give taskAttack.
 							switch (_unitType) do {
@@ -249,12 +233,6 @@ if (_waves == -1 && _artyEnabled) then {
 									[_grp, _searchArea, _SearchAreaSize] call CBA_fnc_taskAttack;
 								};
 
-								case "Mortar": {
-									_rounds = parsenumber (_roundsArray select _i);
-									diag_log format["LT template DEBUG: Defense Module::%1 Arty Rounds: %2",_logic, _rounds];
-									[_searchArea,_artyAmmoType,_rounds,_artyDelay,_artyDamage] call LT_fnc_doMortar;
-								};
-
 								default {
 
 									// Define spawn position
@@ -281,9 +259,14 @@ if (_waves == -1 && _artyEnabled) then {
 								};
 							};
 						};
-
 					};
 				};
+
+				if (_unitType == "Mortar" and _amnt >= 1) then {
+					diag_log format["LT template DEBUG: Defense Module::%1 Arty Rounds: %2",_logic, _amnt];
+					[_searchArea,_artyAmmoType,_amnt,_artyDelay,_artyDamage] call LT_fnc_doMortar;
+				};
+
 			} forEach _SpawnAmountArray;
 
 			// Sleep
