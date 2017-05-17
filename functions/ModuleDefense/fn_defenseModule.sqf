@@ -65,9 +65,9 @@ if (_activated) then {
 		// diag_log format ["LT template DEBUG: -=Defense Module=- Marker info Searcharea. Pos: %1, Shape %2, Size %3", getmarkerpos _searchArea, MarkerShape _searchArea, getMarkerSize _searchArea];
 
 		// Define Spawnmarkerarrays
-		_InfSpawnArray = _mrkInfSpawn splitstring ",";
-		_VehSpawnArray = _mrkVehSpawn splitstring ",";
-		_AirSpawnArray = _mrkAirSpawn splitstring ",";
+		_InfSpawnArray = _mrkInfSpawn splitstring " " joinstring "" splitstring ",";
+		_VehSpawnArray = _mrkVehSpawn splitstring " " joinstring "" splitstring ",";
+		_AirSpawnArray = _mrkAirSpawn splitstring " " joinstring "" splitstring ",";
 		_SpawnMarkerArray = [_InfSpawnArray, _VehSpawnArray, _VehSpawnArray,_VehSpawnArray,_AirSpawnArray];
 
 		// Define side
@@ -112,6 +112,7 @@ if (_activated) then {
 				};
 			};
 		};
+		diag_log format["LT template DEBUG: outputArray before: %1", _outputArray];
 
 		// Define amount of waves
 		_wavesAmnt = if (_waves == -1) then {
@@ -121,6 +122,11 @@ if (_activated) then {
 		} else {
 			_waves - 1
 		};
+
+		{
+			[_x, (_wavesAmnt + 1)] call LT_fnc_EqualArrayLengths;
+		} forEach _outputArray;
+		diag_log format["LT template DEBUG: outputArray after: %1", _outputArray];
 
 		// Initialise waves
 		for "_i" from 0 to _wavesAmnt do {

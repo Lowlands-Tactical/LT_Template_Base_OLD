@@ -23,6 +23,7 @@ class cfgFunctions
       class NVGParameters {};
       class teleportGroup {};
       class PreInitFactionCompositions {preInit = 1;};
+      class EqualArrayLengths {};
     };
     class UPSMON
     {
