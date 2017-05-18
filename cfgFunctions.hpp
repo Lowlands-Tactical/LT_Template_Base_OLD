@@ -48,6 +48,11 @@ class cfgFunctions
       class defenseModule {};
       class doMortar {};
     };
+    class ModuleCleanUp
+    {
+      file = "\lt_template_base\functions\CleanUp";
+      class cleanUp {};
+    };
   };
   // Functions of F3 template - Thank you Ferstabinde!
   class F
