@@ -251,3 +251,16 @@ LT_cup_i_tk_gue_heli = ["CUP_I_UH1H_TK_GUE"];
 LT_cup_i_tk_gue_heli_weightArray = [];
 LT_cup_i_tk_gue = [LT_cup_i_tk_gue_units,LT_cup_i_tk_gue_car,LT_cup_i_tk_gue_ifv,LT_cup_i_tk_gue_tank,LT_cup_i_tk_gue_heli];
 LT_cup_i_tk_gue_Weights = [LT_cup_i_tk_gue_units_weightArray,LT_cup_i_tk_gue_car_weightArray,LT_cup_i_tk_gue_ifv_weightArray,LT_cup_i_tk_gue_tank_weightArray,LT_cup_i_tk_gue_heli_weightArray];
+
+LT_cup_i_pmc_units = ["CUP_I_PMC_Bodyguard_AA12","CUP_I_PMC_Bodyguard_M4","CUP_I_PMC_Contractor1","CUP_I_PMC_Contractor2","CUP_I_PMC_Medic","CUP_I_PMC_Sniper","CUP_I_PMC_Soldier","CUP_I_PMC_Soldier_AA","CUP_I_PMC_Soldier_AT","CUP_I_PMC_Soldier_GL","CUP_I_PMC_Soldier_GL_M16A2","CUP_I_PMC_Soldier_M4A3","CUP_I_PMC_Soldier_MG","CUP_I_PMC_Soldier_MG_PKM","CUP_I_PMC_Soldier_TL"];
+LT_cup_i_pmc_units_weightArray = [];
+LT_cup_i_pmc_car = ["CUP_I_SUV_Armored_ION"];
+LT_cup_i_pmc_car_weightArray = [];
+LT_cup_i_pmc_ifv = [];
+LT_cup_i_pmc_ifv_weightArray = [];
+LT_cup_i_pmc_tank = [];
+LT_cup_i_pmc_tank_weightArray = [];
+LT_cup_i_pmc_heli = ["CUP_I_Ka60_GL_Blk_ION","CUP_I_MH6M_ION","CUP_I_MH6M_ION_OBS","CUP_I_Mi24_D_ION","CUP_I_Mi24_Mk3_AT_ION","CUP_I_Mi24_Mk3_Empty_ION","CUP_I_Mi24_Mk4_AT_ION","CUP_I_Mi24_Mk4_Empty_ION","CUP_I_Mi24_Mk4_FAB_ION","CUP_I_Mi24_Mk4_ION","CUP_I_Mi24_Mk4_S8_GSh_ION"];
+LT_cup_i_pmc_heli_weightArray = [];
+LT_cup_i_pmc = [LT_cup_i_pmc_units, LT_cup_i_pmc_car, LT_cup_i_pmc_ifv, LT_cup_i_pmc_tank, LT_cup_i_pmc_heli];
+LT_cup_i_pmc_Weights = [LT_cup_i_pmc_units_weightArray, LT_cup_i_pmc_car_weightArray, LT_cup_i_pmc_ifv_weightArray, LT_cup_i_pmc_tank_weightArray, LT_cup_i_pmc_heli_weightArray];
