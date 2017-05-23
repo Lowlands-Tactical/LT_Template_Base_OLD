@@ -252,6 +252,7 @@ LT_cup_i_tk_gue_heli_weightArray = [];
 LT_cup_i_tk_gue = [LT_cup_i_tk_gue_units,LT_cup_i_tk_gue_car,LT_cup_i_tk_gue_ifv,LT_cup_i_tk_gue_tank,LT_cup_i_tk_gue_heli];
 LT_cup_i_tk_gue_Weights = [LT_cup_i_tk_gue_units_weightArray,LT_cup_i_tk_gue_car_weightArray,LT_cup_i_tk_gue_ifv_weightArray,LT_cup_i_tk_gue_tank_weightArray,LT_cup_i_tk_gue_heli_weightArray];
 
+// PMC units
 LT_cup_i_pmc_units = ["CUP_I_PMC_Bodyguard_AA12","CUP_I_PMC_Bodyguard_M4","CUP_I_PMC_Contractor1","CUP_I_PMC_Contractor2","CUP_I_PMC_Medic","CUP_I_PMC_Sniper","CUP_I_PMC_Soldier","CUP_I_PMC_Soldier_AA","CUP_I_PMC_Soldier_AT","CUP_I_PMC_Soldier_GL","CUP_I_PMC_Soldier_GL_M16A2","CUP_I_PMC_Soldier_M4A3","CUP_I_PMC_Soldier_MG","CUP_I_PMC_Soldier_MG_PKM","CUP_I_PMC_Soldier_TL"];
 LT_cup_i_pmc_units_weightArray = [];
 LT_cup_i_pmc_car = ["CUP_I_SUV_Armored_ION"];
@@ -264,3 +265,18 @@ LT_cup_i_pmc_heli = ["CUP_I_Ka60_GL_Blk_ION","CUP_I_MH6M_ION","CUP_I_MH6M_ION_OB
 LT_cup_i_pmc_heli_weightArray = [];
 LT_cup_i_pmc = [LT_cup_i_pmc_units, LT_cup_i_pmc_car, LT_cup_i_pmc_ifv, LT_cup_i_pmc_tank, LT_cup_i_pmc_heli];
 LT_cup_i_pmc_Weights = [LT_cup_i_pmc_units_weightArray, LT_cup_i_pmc_car_weightArray, LT_cup_i_pmc_ifv_weightArray, LT_cup_i_pmc_tank_weightArray, LT_cup_i_pmc_heli_weightArray];
+
+
+// African Rebels
+LT_CUP_AFR_REB_units = ["O_CUPAFRReb_Autorifleman_01","O_CUPAFRReb_Autorifleman_2_01","O_CUPAFRReb_Bonesetter_01","O_CUPAFRReb_Bonesetter_2_01","O_CUPAFRReb_Grenadier_01","O_CUPAFRReb_Grenadier_2_01","O_CUPAFRReb_Marksman_01","O_CUPAFRReb_Rifleman_01","O_CUPAFRReb_Rifleman_2_01","O_CUPAFRReb_Rifleman_3_01","O_CUPAFRReb_Rifleman_AA_01","O_CUPAFRReb_Rifleman_AA_2_01","O_CUPAFRReb_Rifleman_AT_01","O_CUPAFRReb_Rifleman_AT_2_01","O_CUPAFRReb_Rifleman_Light_01","O_CUPAFRReb_Sharpshooter_01","O_CUPAFRReb_Warlord_01","O_CUPAFRReb_Warlord_2_01"];
+LT_CUP_AFR_REB_units_weightArray = [];
+LT_CUP_AFR_REB_car = ["O_CUPAFRReb_Technical_DSHkM_01","O_CUPAFRReb_Technical_PK_01","O_CUPAFRReb_Technical_SPG_01"];
+LT_CUP_AFR_REB_car_weightArray = [];
+LT_CUP_AFR_REB_ifv = [];
+LT_CUP_AFR_REB_ifv_weightArray = [];
+LT_CUP_AFR_REB_tank = [];
+LT_CUP_AFR_REB_tank_weightArray = [];
+LT_CUP_AFR_REB_heli = [];
+LT_CUP_AFR_REB_heli_weightArray = [];
+LT_CUP_AFR_REB = [LT_CUP_AFR_REB_units, LT_CUP_AFR_REB_car, LT_CUP_AFR_REB_ifv, LT_CUP_AFR_REB_tank, LT_CUP_AFR_REB_heli];
+LT_CUP_AFR_REB_Weights = [];

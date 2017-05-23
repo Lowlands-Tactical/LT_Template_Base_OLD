@@ -17,6 +17,7 @@ case "LT_CUP_I_NAPA": {LT_CUP_I_NAPA};
 case "LT_CUP_I_RACS": {LT_CUP_I_RACS};
 case "LT_CUP_I_TK_GUE": {LT_CUP_I_TK_GUE};
 case "LT_CUP_I_PMC": {LT_CUP_I_PMC};
+case "LT_CUP_AFR_REB": {LT_CUP_AFR_REB};
 
 // Backwards compatability
 case "OPF_F": {LT_OPF_F};
