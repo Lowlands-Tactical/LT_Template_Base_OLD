@@ -295,3 +295,18 @@ CUP_AFR_ARMY_heli = ["I_CUPAFRArmy_Mi_8MTV3_01","I_CUPAFRArmy_UH_1H_Slick_01","I
 CUP_AFR_ARMY_heli_weightArray = [];
 CUP_AFR_ARMY = [CUP_AFR_ARMY_units,CUP_AFR_ARMY_car,CUP_AFR_ARMY_ifv,CUP_AFR_ARMY_tank,CUP_AFR_ARMY_heli];
 CUP_AFR_ARMY_Weights = [CUP_AFR_ARMY_units_weightArray,CUP_AFR_ARMY_car_weightArray,CUP_AFR_ARMY_ifv_weightArray,CUP_AFR_ARMY_tank_weightArray,CUP_AFR_ARMY_heli_weightArray];
+
+
+// African Muslim Insurgents
+CUP_AFR_M_REB_units = ["O_CUPAFRMReb_Rifleman_AT_AK74_01","O_CUPAFRMReb_Rifleman_FAL_01","O_CUPAFRMReb_Grenadier_AK_01","O_CUPAFRMReb_Grenadier_M16_01","O_CUPAFRMReb_Autorifleman_PKM_01","O_CUPAFRMReb_Autorifleman_RPK_01","O_CUPAFRMReb_Rifleman_AKM_01","O_CUPAFRMReb_Rifleman_AT_FAL_01","O_CUPAFRMReb_Team_Leader_AKM_01","O_CUPAFRMReb_Team_Leader_AK74_01","O_CUPAFRMReb_Marksman_01","O_CUPAFRMReb_Sharpshooter_01","O_CUPAFRMReb_Bonesetter_01","O_CUPAFRMReb_Bombmaker_01","O_CUPAFRMReb_Rifleman_AA_FAL_01","O_CUPAFRMReb_Rifleman_AA_AK74_01"];
+CUP_AFR_M_REB_units_weightArray = [];
+CUP_AFR_M_REB_car = ["O_CUPAFRMReb_DShKM_01","O_CUPAFRMReb_Technical_PK_01","O_CUPAFRMReb_UAZ_DShKM_01","O_CUPAFRMReb_UAZ_SPG_01"];
+CUP_AFR_M_REB_car_weightArray = [];
+CUP_AFR_M_REB_ifv = [];
+CUP_AFR_M_REB_ifv_weightArray = [];
+CUP_AFR_M_REB_tank = [];
+CUP_AFR_M_REB_tank_weightArray = [];
+CUP_AFR_M_REB_heli = [];
+CUP_AFR_M_REB_heli_weightArray = [];
+CUP_AFR_M_REB = [CUP_AFR_M_REB_units, CUP_AFR_M_REB_car, CUP_AFR_M_REB_ifv, CUP_AFR_M_REB_tank, CUP_AFR_M_REB_heli];
+CUP_AFR_M_REB_Weights = [CUP_AFR_M_REB_units_weightArray,CUP_AFR_M_REB_car_weightArray,CUP_AFR_M_REB_ifv_weightArray,CUP_AFR_M_REB_tank_weightArray,CUP_AFR_M_REB_heli_weightArray];
