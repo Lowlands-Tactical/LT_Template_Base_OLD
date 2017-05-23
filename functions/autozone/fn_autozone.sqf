@@ -62,6 +62,7 @@ if (_az_cars > 0) then {
     _tmp_pos = [getMarkerPos _az_zone,random 50,random 360] call BIS_fnc_relPos;
     _veh = [_tmp_pos,random 360, (_faction_car call BIS_fnc_selectRandom), _faction_side] call BIS_fnc_spawnVehicle;
     nul = [leader (_veh select 2), _az_zone, "SAFE", "LIMITED","NOSMOKE","RADIORANGE:",(_az_range * 2)] execVM "\lt_template_base\AI\UPSMON\UPSMON.sqf";
+		(_veh select 0) allowCrewInImmobile true;
     sleep 10;
   };
 };
@@ -72,6 +73,7 @@ if (_az_ifvs > 0) then {
     _tmp_pos = [getMarkerPos _az_zone,random 100,random 360] call BIS_fnc_relPos;
     _veh = [_tmp_pos,random 360, (_faction_ifv call BIS_fnc_selectRandom), _faction_side] call BIS_fnc_spawnVehicle;
     nul = [leader (_veh select 2), _az_zone, "SAFE", "LIMITED","NOFOLLOW","NOSMOKE","RADIORANGE:",(_az_range * 2)] execVM "\lt_template_base\AI\UPSMON\UPSMON.sqf";
+		(_veh select 0) allowCrewInImmobile true;
     sleep 10;
   };
 };
@@ -82,6 +84,7 @@ if ( count _faction_tank > 0 AND _az_tanks > 0) then {
     _tmp_pos = [getMarkerPos _az_zone,random 150,random 360] call BIS_fnc_relPos;
     _veh = [_tmp_pos,random 360, (_faction_tank call BIS_fnc_selectRandom), _faction_side] call BIS_fnc_spawnVehicle;
     nul = [leader (_veh select 2), _az_zone, "SAFE", "LIMITED","NOFOLLOW","NOSMOKE","RADIORANGE:",(_az_range * 3)] execVM "\lt_template_base\AI\UPSMON\UPSMON.sqf";
+		(_veh select 0) allowCrewInImmobile true;
     sleep 10;
   };
 };
