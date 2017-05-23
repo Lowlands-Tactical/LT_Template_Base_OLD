@@ -21,5 +21,6 @@ class LT_CUP_AFR_REB { name = "African Rebels", value="LT_CUP_AFR_REB"; };
 class CUP_AFR_ARMY { name = "African Army", value="CUP_AFR_ARMY"; };
 class CUP_AFR_M_REB { name = "African Muslim Insurgents", value="CUP_AFR_M_REB"; };
 class CUP_AFR_UN { name = "African UN Peacekeepers", value="CUP_AFR_UN"; };
-class CUP_ARMY_ASIA { name="Azian Army", value="CUP_ARMY_ASIA"; };
+class CUP_ARMY_ASIA { name="Asian Army", value="CUP_ARMY_ASIA"; };
+class CUP_INS_ASIA { name="Asian Insurgents", value="CUP_INS_ASIA"; };
 class CUSTOM {name="Custom faction";value="LT_CUSTOM";};

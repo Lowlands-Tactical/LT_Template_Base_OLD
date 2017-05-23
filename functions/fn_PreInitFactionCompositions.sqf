@@ -340,3 +340,18 @@ CUP_ARMY_ASIA_heli = ["I_CUPARMYASIA_UH_1H_01","I_CUPARMYASIA_Mi_8MTV3_01"];
 CUP_ARMY_ASIA_heli_weightArray = [];
 CUP_ARMY_ASIA = [CUP_ARMY_ASIA_units, CUP_ARMY_ASIA_car, CUP_ARMY_ASIA_ifv, CUP_ARMY_ASIA_tank, CUP_ARMY_ASIA_heli];
 CUP_ARMY_ASIA_Weights = [CUP_ARMY_ASIA_units_weightArray,CUP_ARMY_ASIA_car_weightArray,CUP_ARMY_ASIA_ifv_weightArray,CUP_ARMY_ASIA_tank_weightArray,CUP_ARMY_ASIA_heli_weightArray];
+
+
+// Asian Insurgents
+CUP_INS_ASIA_units = ["O_CUPINSASIA_Rifleman_M16_01","O_CUPINSASIA_Rifleman_AK_47_01","O_CUPINSASIA_Rifleman_FAL_01","O_CUPINSASIA_Rifleman_AK_74_01","O_CUPINSASIA_Grenadier_AK_74_01","O_CUPINSASIA_Grenadier_M16_01","O_CUPINSASIA_Machine_Gunner_PKM_01","O_CUPINSASIA_Machine_Gunner_M249_01","O_CUPINSASIA_Rifleman_AT_AK_47_01","O_CUPINSASIA_Rifleman_AT_M16_01","O_CUPINSASIA_Warlord_AKS74_01","O_CUPINSASIA_Warlord_AK74GL_01","O_CUPINSASIA_Marksman_Enfield_01","O_CUPINSASIA_Marksman_SVD_01"];
+CUP_INS_ASIA_units_weightArray = [];
+CUP_INS_ASIA_car = ["O_CUPINSASIA_UAZ_DShKM_01","O_CUPINSASIA_UAZ_SPG_9_01"];
+CUP_INS_ASIA_car_weightArray = [];
+CUP_INS_ASIA_ifv = [];
+CUP_INS_ASIA_ifv_weightArray = [];
+CUP_INS_ASIA_tank = [];
+CUP_INS_ASIA_tank_weightArray = [];
+CUP_INS_ASIA_heli = [];
+CUP_INS_ASIA_heli_weightArray = [];
+CUP_INS_ASIA = [CUP_INS_ASIA_units, CUP_INS_ASIA_car, CUP_INS_ASIA_ifv, CUP_INS_ASIA_tank, CUP_INS_ASIA_heli];
+CUP_INS_ASIA_Weights = [CUP_INS_ASIA_units_weightArray,CUP_INS_ASIA_car_weightArray,CUP_INS_ASIA_ifv_weightArray,CUP_INS_ASIA_tank_weightArray,CUP_INS_ASIA_heli_weightArray];
