@@ -300,7 +300,7 @@ LT_CUP_AFR_ARMY_Weights = [LT_CUP_AFR_ARMY_units_weightArray,LT_CUP_AFR_ARMY_car
 // African Muslim Insurgents
 LT_CUP_AFR_M_REB_units = ["O_CUPAFRMReb_Rifleman_AT_AK74_01","O_CUPAFRMReb_Rifleman_FAL_01","O_CUPAFRMReb_Grenadier_AK_01","O_CUPAFRMReb_Grenadier_M16_01","O_CUPAFRMReb_Autorifleman_PKM_01","O_CUPAFRMReb_Autorifleman_RPK_01","O_CUPAFRMReb_Rifleman_AKM_01","O_CUPAFRMReb_Rifleman_AT_FAL_01","O_CUPAFRMReb_Team_Leader_AKM_01","O_CUPAFRMReb_Team_Leader_AK74_01","O_CUPAFRMReb_Marksman_01","O_CUPAFRMReb_Sharpshooter_01","O_CUPAFRMReb_Bonesetter_01","O_CUPAFRMReb_Bombmaker_01","O_CUPAFRMReb_Rifleman_AA_FAL_01","O_CUPAFRMReb_Rifleman_AA_AK74_01"];
 LT_CUP_AFR_M_REB_units_weightArray = [];
-LT_CUP_AFR_M_REB_car = ["O_CUPAFRMReb_DShKM_01","O_CUPAFRMReb_Technical_PK_01","O_CUPAFRMReb_UAZ_DShKM_01","O_CUPAFRMReb_UAZ_SPG_01"];
+LT_CUP_AFR_M_REB_car = ["O_CUPAFRMReb_Technical_PK_01","O_CUPAFRMReb_UAZ_DShKM_01","O_CUPAFRMReb_UAZ_SPG_01"];
 LT_CUP_AFR_M_REB_car_weightArray = [];
 LT_CUP_AFR_M_REB_ifv = [];
 LT_CUP_AFR_M_REB_ifv_weightArray = [];
@@ -330,7 +330,7 @@ LT_CUP_AFR_UN_Weights = [LT_CUP_AFR_UN_units_weightArray,LT_CUP_AFR_UN_car_weigh
 // Asian Army
 LT_CUP_ARMY_ASIA_units = ["I_CUPARMYASIA_Rifleman_01","I_CUPARMYASIA_Grenadier_01","I_CUPARMYASIA_Marksman_01","I_CUPARMYASIA_Sniper_01","I_CUPARMYASIA_Machine_Gunner_01","I_CUPARMYASIA_Rifleman_AT_01","I_CUPARMYASIA_Medic_01","I_CUPARMYASIA_Engineer_01","I_CUPARMYASIA_Squad_Leader_01","I_CUPARMYASIA_Rifleman_AA_01","I_CUPARMYASIA_Rifleman_Recon_01","I_CUPARMYASIA_Rifleman_AT_Recon_01","I_CUPARMYASIA_Demo_Specialist_Recon_01","I_CUPARMYASIA_Medic_Recon_01","I_CUPARMYASIA_Team_Leader_Recon_01"];
 LT_CUP_ARMY_ASIA_units_weightArray = [];
-LT_CUP_ARMY_ASIA_car = ["I_CUPARMYASIA_HMMWV_01","I_CUPARMYASIA_MTVR_01"];
+LT_CUP_ARMY_ASIA_car = ["I_CUPARMYASIA_HMMWV_01"];
 LT_CUP_ARMY_ASIA_car_weightArray = [];
 LT_CUP_ARMY_ASIA_ifv = ["I_CUPARMYASIA_BMP_2_01","I_CUPARMYASIA_BTR_60PB_01","I_CUPARMYASIA_Ural_ZU_23_01","I_CUPARMYASIA_M113A3_01"];
 LT_CUP_ARMY_ASIA_ifv_weightArray = [];
