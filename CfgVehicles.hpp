@@ -10,5 +10,6 @@ class CfgVehicles {
 	#include "AI\GARRISON\MissionModules\Garrison_Module.hpp" 	// periority 4
 	#include "AI\AutoZone\AutoZone.hpp" 	// priority 5
 	#include "AI\ModuleDefense\moduleDefense.hpp" // priority 6
-	#include "Modules\AddActionModule.hpp" // priority 7
+	#include "AI\CleanUp\moduleCleanUp.hpp" // Prio #7
+	#include "Modules\AddActionModule.hpp" // priority 8
 };

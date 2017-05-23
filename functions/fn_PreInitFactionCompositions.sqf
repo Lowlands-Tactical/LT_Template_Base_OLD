@@ -127,18 +127,18 @@ LT_nldo_ua_uaf_95 = [LT_nldo_ua_uaf_95_units,LT_nldo_ua_uaf_95_car,LT_nldo_ua_ua
 LT_nldo_ua_uaf_95_Weights = [LT_nldo_ua_uaf_95_units_weightArray,LT_nldo_ua_uaf_95_car_weightArray,LT_nldo_ua_uaf_95_ifv_weightArray,LT_nldo_ua_uaf_95_tank_weightArray,LT_nldo_ua_uaf_95_heli_weightArray];
 
 // Takistani Militia
-LT_cup_o_tk_militia_units = ["CUP_O_TK_INS_Soldier","CUP_O_TK_INS_Soldier_AAT","CUP_O_TK_INS_Soldier_GL","CUP_O_TK_INS_Soldier_Enfield","CUP_O_TK_INS_Soldier_FNFAL","CUP_O_TK_INS_Soldier_AA","CUP_O_TK_INS_Soldier_AT","CUP_O_TK_INS_Soldier_TL","CUP_O_TK_INS_Sniper","CUP_O_TK_INS_Soldier_AR","CUP_O_TK_INS_Soldier_MG","CUP_O_TK_INS_Guerilla_Medic","CUP_O_TK_INS_Commander","CUP_O_TK_INS_Mechanic","CUP_O_TK_INS_Bomber"];
-LT_cup_o_tk_militia_units_weightArray = [];
-LT_cup_o_tk_militia_car = ["CUP_O_LR_Transport_TKM","CUP_O_LR_MG_TKM","CUP_O_LR_SPG9_TKM"];
-LT_cup_o_tk_militia_car_weightArray = [];
-LT_cup_o_tk_militia_ifv = ["CUP_O_BTR40_MG_TKM","CUP_O_BTR40_TKM"];
-LT_cup_o_tk_militia_ifv_weightArray = [];
-LT_cup_o_tk_militia_tank = [];
-LT_cup_o_tk_militia_tank_weightArray = [];
-LT_cup_o_tk_militia_heli = [];
-LT_cup_o_tk_militia_heli_weightArray = [];
-LT_cup_o_tk_militia = [LT_cup_o_tk_militia_units,LT_cup_o_tk_militia_car,LT_cup_o_tk_militia_ifv,LT_cup_o_tk_militia_tank,LT_cup_o_tk_militia_heli];
-LT_cup_o_tk_militia_Weights = [LT_cup_o_tk_militia_units_weightArray,LT_cup_o_tk_militia_car_weightArray,LT_cup_o_tk_militia_ifv_weightArray,LT_cup_o_tk_militia_tank_weightArray,LT_cup_o_tk_militia_heli_weightArray];
+LT_cup_o_tk_ins_units = ["CUP_O_TK_INS_Soldier","CUP_O_TK_INS_Soldier_AAT","CUP_O_TK_INS_Soldier_GL","CUP_O_TK_INS_Soldier_Enfield","CUP_O_TK_INS_Soldier_FNFAL","CUP_O_TK_INS_Soldier_AA","CUP_O_TK_INS_Soldier_AT","CUP_O_TK_INS_Soldier_TL","CUP_O_TK_INS_Sniper","CUP_O_TK_INS_Soldier_AR","CUP_O_TK_INS_Soldier_MG","CUP_O_TK_INS_Guerilla_Medic","CUP_O_TK_INS_Commander","CUP_O_TK_INS_Mechanic","CUP_O_TK_INS_Bomber"];
+LT_cup_o_tk_ins_units_weightArray = [];
+LT_cup_o_tk_ins_car = ["CUP_O_LR_Transport_TKM","CUP_O_LR_MG_TKM","CUP_O_LR_SPG9_TKM"];
+LT_cup_o_tk_ins_car_weightArray = [];
+LT_cup_o_tk_ins_ifv = ["CUP_O_BTR40_MG_TKM","CUP_O_BTR40_TKM"];
+LT_cup_o_tk_ins_ifv_weightArray = [];
+LT_cup_o_tk_ins_tank = [];
+LT_cup_o_tk_ins_tank_weightArray = [];
+LT_cup_o_tk_ins_heli = [];
+LT_cup_o_tk_ins_heli_weightArray = [];
+LT_cup_o_tk_ins = [LT_cup_o_tk_ins_units,LT_cup_o_tk_ins_car,LT_cup_o_tk_ins_ifv,LT_cup_o_tk_ins_tank,LT_cup_o_tk_ins_heli];
+LT_cup_o_tk_ins_Weights = [LT_cup_o_tk_ins_units_weightArray,LT_cup_o_tk_ins_car_weightArray,LT_cup_o_tk_ins_ifv_weightArray,LT_cup_o_tk_ins_tank_weightArray,LT_cup_o_tk_ins_heli_weightArray];
 
 // Takistan Army
 LT_cup_o_tk_units = ["CUP_O_TK_Soldier","CUP_O_TK_Soldier_GL","CUP_O_TK_Soldier_Backpack","CUP_O_TK_Soldier_AAT","CUP_O_TK_Soldier_AMG","CUP_O_TK_Soldier_LAT","CUP_O_TK_Soldier_AT","CUP_O_TK_Soldier_HAT","CUP_O_TK_Soldier_AA","CUP_O_TK_Engineer","CUP_O_TK_Soldier_MG","CUP_O_TK_Soldier_AR","CUP_O_TK_Medic","CUP_O_TK_Soldier_SL","CUP_O_TK_Officer","CUP_O_TK_Spotter","CUP_O_TK_Sniper","CUP_O_TK_Sniper_KSVK","CUP_O_TK_Sniper_SVD_Night","CUP_O_TK_Soldier_AKS_Night","CUP_O_TK_Soldier_FNFAL_Night","CUP_O_TK_Soldier_AKS_74_GOSHAWK"];
