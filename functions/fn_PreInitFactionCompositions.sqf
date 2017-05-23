@@ -325,3 +325,18 @@ CUP_AFR_UN_heli = ["B_CUPAFRUN_Mi_24D_01","B_CUPAFRUN_Mi_17_01"];
 CUP_AFR_UN_heli_weightArray = [];
 CUP_AFR_UN = [CUP_AFR_UN_units, CUP_AFR_UN_car, CUP_AFR_UN_ifv, CUP_AFR_UN_tank, CUP_AFR_UN_heli];
 CUP_AFR_UN_Weights = [CUP_AFR_UN_units_weightArray,CUP_AFR_UN_car_weightArray,CUP_AFR_UN_ifv_weightArray,CUP_AFR_UN_tank_weightArray,CUP_AFR_UN_heli_weightArray];
+
+
+// Asian Army
+CUP_ARMY_ASIA_units = ["I_CUPARMYASIA_Rifleman_01","I_CUPARMYASIA_Grenadier_01","I_CUPARMYASIA_Marksman_01","I_CUPARMYASIA_Sniper_01","I_CUPARMYASIA_Machine_Gunner_01","I_CUPARMYASIA_Rifleman_AT_01","I_CUPARMYASIA_Medic_01","I_CUPARMYASIA_Engineer_01","I_CUPARMYASIA_Squad_Leader_01","I_CUPARMYASIA_Rifleman_AA_01","I_CUPARMYASIA_Rifleman_Recon_01","I_CUPARMYASIA_Rifleman_AT_Recon_01","I_CUPARMYASIA_Demo_Specialist_Recon_01","I_CUPARMYASIA_Medic_Recon_01","I_CUPARMYASIA_Team_Leader_Recon_01"];
+CUP_ARMY_ASIA_units_weightArray = [];
+CUP_ARMY_ASIA_car = ["I_CUPARMYASIA_HMMWV_01","I_CUPARMYASIA_MTVR_01"];
+CUP_ARMY_ASIA_car_weightArray = [];
+CUP_ARMY_ASIA_ifv = ["I_CUPARMYASIA_BMP_2_01","I_CUPARMYASIA_BTR_60PB_01","I_CUPARMYASIA_Ural_ZU_23_01","I_CUPARMYASIA_M113A3_01"];
+CUP_ARMY_ASIA_ifv_weightArray = [];
+CUP_ARMY_ASIA_tank = ["I_CUPARMYASIA_T72_01"];
+CUP_ARMY_ASIA_tank_weightArray = [];
+CUP_ARMY_ASIA_heli = ["I_CUPARMYASIA_UH_1H_01","I_CUPARMYASIA_Mi_8MTV3_01"];
+CUP_ARMY_ASIA_heli_weightArray = [];
+CUP_ARMY_ASIA = [CUP_ARMY_ASIA_units, CUP_ARMY_ASIA_car, CUP_ARMY_ASIA_ifv, CUP_ARMY_ASIA_tank, CUP_ARMY_ASIA_heli];
+CUP_ARMY_ASIA_Weights = [CUP_ARMY_ASIA_units_weightArray,CUP_ARMY_ASIA_car_weightArray,CUP_ARMY_ASIA_ifv_weightArray,CUP_ARMY_ASIA_tank_weightArray,CUP_ARMY_ASIA_heli_weightArray];
