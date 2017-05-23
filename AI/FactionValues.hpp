@@ -20,4 +20,5 @@ class LT_CUP_I_PMC { name = "PMC"; value="LT_CUP_I_PMC"; };
 class LT_CUP_AFR_REB { name = "African Rebels", value="LT_CUP_AFR_REB"; };
 class CUP_AFR_ARMY { name = "African Army", value="CUP_AFR_ARMY"; };
 class CUP_AFR_M_REB { name = "African Muslim Insurgents", value="CUP_AFR_M_REB"; };
+class CUP_AFR_UN { name = "African UN Peacekeepers", value="CUP_AFR_UN"; }
 class CUSTOM {name="Custom faction";value="LT_CUSTOM";};

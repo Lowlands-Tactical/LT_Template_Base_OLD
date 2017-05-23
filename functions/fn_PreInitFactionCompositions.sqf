@@ -310,3 +310,18 @@ CUP_AFR_M_REB_heli = [];
 CUP_AFR_M_REB_heli_weightArray = [];
 CUP_AFR_M_REB = [CUP_AFR_M_REB_units, CUP_AFR_M_REB_car, CUP_AFR_M_REB_ifv, CUP_AFR_M_REB_tank, CUP_AFR_M_REB_heli];
 CUP_AFR_M_REB_Weights = [CUP_AFR_M_REB_units_weightArray,CUP_AFR_M_REB_car_weightArray,CUP_AFR_M_REB_ifv_weightArray,CUP_AFR_M_REB_tank_weightArray,CUP_AFR_M_REB_heli_weightArray];
+
+
+// African UN Peacekeepers
+CUP_AFR_UN_units = ["B_CUPAFRUN_Rifleman_01","B_CUPAFRUN_Rifleman_AT_01","B_CUPAFRUN_Grenadier_01","B_CUPAFRUN_Officer_01","B_CUPAFRUN_Autorifleman_01","B_CUPAFRUN_Squad_Leader_01","B_CUPAFRUN_Medic_01","B_CUPAFRUN_Engineer_01","B_CUPAFRUN_Rifleman_AA_01"];
+CUP_AFR_UN_units_weightArray = [];
+CUP_AFR_UN_car = ["B_CUPAFRUN_UAZ_DShKM_01"];
+CUP_AFR_UN_car_weightArray = [];
+CUP_AFR_UN_ifv = ["B_CUPAFRUN_M113A3_01","B_CUPAFRUN_BRDM_2_01","B_CUPAFRUN_BTR_60PB_01","B_CUPAFRUN_BMP_2_01"];
+CUP_AFR_UN_ifv_weightArray = [];
+CUP_AFR_UN_tank = [];
+CUP_AFR_UN_tank_weightArray = [];
+CUP_AFR_UN_heli = ["B_CUPAFRUN_Mi_24D_01","B_CUPAFRUN_Mi_17_01"];
+CUP_AFR_UN_heli_weightArray = [];
+CUP_AFR_UN = [CUP_AFR_UN_units, CUP_AFR_UN_car, CUP_AFR_UN_ifv, CUP_AFR_UN_tank, CUP_AFR_UN_heli];
+CUP_AFR_UN_Weights = [CUP_AFR_UN_units_weightArray,CUP_AFR_UN_car_weightArray,CUP_AFR_UN_ifv_weightArray,CUP_AFR_UN_tank_weightArray,CUP_AFR_UN_heli_weightArray];
