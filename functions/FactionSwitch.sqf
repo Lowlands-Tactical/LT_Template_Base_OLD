@@ -18,11 +18,11 @@ case "LT_CUP_I_RACS": {LT_CUP_I_RACS};
 case "LT_CUP_I_TK_GUE": {LT_CUP_I_TK_GUE};
 case "LT_CUP_I_PMC": {LT_CUP_I_PMC};
 case "LT_CUP_AFR_REB": {LT_CUP_AFR_REB};
-case "CUP_AFR_ARMY": {CUP_AFR_ARMY};
-case "CUP_AFR_M_REB": {CUP_AFR_M_REB};
-case "CUP_AFR_UN": {CUP_AFR_UN};
-case "CUP_ARMY_ASIA": {CUP_ARMY_ASIA};
-case "CUP_INS_ASIA": {CUP_INS_ASIA};
+case "LT_CUP_AFR_ARMY": {LT_CUP_AFR_ARMY};
+case "LT_CUP_AFR_M_REB": {LT_CUP_AFR_M_REB};
+case "LT_CUP_AFR_UN": {LT_CUP_AFR_UN};
+case "LT_CUP_ARMY_ASIA": {LT_CUP_ARMY_ASIA};
+case "LT_CUP_INS_ASIA": {LT_CUP_INS_ASIA};
 
 // Backwards compatability
 case "OPF_F": {LT_OPF_F};
