@@ -48,6 +48,12 @@ class cfgFunctions
       class defenseModule {};
       class doMortar {};
     };
+    class AddActionModule
+    {
+      file = "\lt_template_base\functions\AddActionModule";
+      class AddActionModuleInit {};
+      class HandleAction {};
+    };
   };
   // Functions of F3 template - Thank you Ferstabinde!
   class F
