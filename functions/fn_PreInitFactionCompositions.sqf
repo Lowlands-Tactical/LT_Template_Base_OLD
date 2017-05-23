@@ -280,3 +280,18 @@ LT_CUP_AFR_REB_heli = [];
 LT_CUP_AFR_REB_heli_weightArray = [];
 LT_CUP_AFR_REB = [LT_CUP_AFR_REB_units, LT_CUP_AFR_REB_car, LT_CUP_AFR_REB_ifv, LT_CUP_AFR_REB_tank, LT_CUP_AFR_REB_heli];
 LT_CUP_AFR_REB_Weights = [];
+
+
+// African Army
+CUP_AFR_ARMY_units = ["I_CUPAFRArmy_Asst_Autorifleman_01","I_CUPAFRArmy_Autorifleman_01","I_CUPAFRArmy_Combat_Life_Saver_01","I_CUPAFRArmy_Explosive_Specialist_01","I_CUPAFRArmy_Grenadier_01","I_CUPAFRArmy_Marksman_01","I_CUPAFRArmy_Missile_Specialist_AA_01","I_CUPAFRArmy_MIssile_Specialist_AT_01","I_CUPAFRArmy_Officer_01","I_CUPAFRArmy_Recon_Autorifleman_01","I_CUPAFRArmy_Recon_Demo_Specialist_01","I_CUPAFRArmy_Recon_JTAC_01","I_CUPAFRArmy_Recon_Marksman_01","I_CUPAFRArmy_Recon_Paramedic_01","I_CUPAFRArmy_Recon_Scout_01","I_CUPAFRArmy_Recon_Scout_AT_01","I_CUPAFRArmy_Recon_Team_Leader_01","I_CUPAFRArmy_Repair_Specialist_01","I_CUPAFRArmy_Rifleman_01","I_CUPAFRArmy_Rifleman_AT_01","I_CUPAFRArmy_Sharpshooter_01","I_CUPAFRArmy_Squad_Leader_01","I_CUPAFRArmy_Team_Leader_01"];
+CUP_AFR_ARMY_units_weightArray = [];
+CUP_AFR_ARMY_car = ["I_CUPAFRArmy_UAZ_DShKM_01"];
+CUP_AFR_ARMY_car_weightArray = [];
+CUP_AFR_ARMY_ifv = ["I_CUPAFRArmy_BMP_2_01","I_CUPAFRArmy_BRDM_2_01","I_CUPAFRArmy_BTR_60PB_01","I_CUPAFRArmy_Ural_ZU_23_01"];
+CUP_AFR_ARMY_ifv_weightArray = [];
+CUP_AFR_ARMY_tank = ["I_CUPAFRArmy_T55_01","I_CUPAFRArmy_T72_01"];
+CUP_AFR_ARMY_tank_weightArray = [];
+CUP_AFR_ARMY_heli = ["I_CUPAFRArmy_Mi_8MTV3_01","I_CUPAFRArmy_UH_1H_Slick_01","I_CUPAFRArmy_Mi_24D_01","I_CUPAFRArmy_Mi_8MT_01"];
+CUP_AFR_ARMY_heli_weightArray = [];
+CUP_AFR_ARMY = [CUP_AFR_ARMY_units,CUP_AFR_ARMY_car,CUP_AFR_ARMY_ifv,CUP_AFR_ARMY_tank,CUP_AFR_ARMY_heli];
+CUP_AFR_ARMY_Weights = [CUP_AFR_ARMY_units_weightArray,CUP_AFR_ARMY_car_weightArray,CUP_AFR_ARMY_ifv_weightArray,CUP_AFR_ARMY_tank_weightArray,CUP_AFR_ARMY_heli_weightArray];

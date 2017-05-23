@@ -18,4 +18,5 @@ class CUP_I_RACS { name = "Royal Army Corp of Sahrani"; value="LT_CUP_I_RACS"; }
 class CUP_I_TK_GUE { name = "Takistani Locals"; value="LT_CUP_I_TK_GUE"; };
 class LT_CUP_I_PMC { name = "PMC"; value="LT_CUP_I_PMC"; };
 class LT_CUP_AFR_REB { name = "African Rebels", value="LT_CUP_AFR_REB"; };
+class CUP_AFR_ARMY { name = "African Army", value="CUP_AFR_ARMY"; };
 class CUSTOM {name="Custom faction";value="LT_CUSTOM";};
