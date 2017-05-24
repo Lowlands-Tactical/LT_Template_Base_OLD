@@ -24,6 +24,7 @@ class cfgFunctions
       class teleportGroup {};
       class PreInitFactionCompositions {preInit = 1;};
       class EqualArrayLengths {};
+      class isLauncherDisposable {};
     };
     class UPSMON
     {
