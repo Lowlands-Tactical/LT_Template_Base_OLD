@@ -68,16 +68,17 @@ class LT_AddActionModule: Module_F
 			};
 		};
 		class LT_AddActionAddTo {
-			displayName = "Who can see Addaction";
-			description = "Who can see Addaction";
+			displayName = "Visible for";
+			description = "The addaction will be visible/added for only the selected. Player is a special attribute as it will add the addaction to the object player.";
 			typeName = "STRING";
 			defaultValue = "0";
 			class values {
-				class LT_Global {name = "Global"; value="0";};
+				class LT_Global {name = "Everyone"; value="0";};
 				class LT_WEST {name = "BLUFOR"; value="WEST";};
 				class LT_EAST {name = "OPFOR"; value="EAST";};
 				class LT_GUER {name = "GUERILLA"; value="RESISTANCE";};
 				class LT_CIV {name = "Civilian"; value="CIVILIAN";};
+				class LT_Player {name = "Player"; value = "player";};
 			};
 		};
 		class LT_AddActionRemove

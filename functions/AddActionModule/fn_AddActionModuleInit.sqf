@@ -26,17 +26,23 @@ if (_activated) then {
 	_selection = _logic getVariable "LT_AddActionSelection";
 
 	diag_log format ["-=AddAction Name player %1", name player];
-	_selSide = if (_side != "0") then {call compile _side};
 
-	if (_side == "0") then {
-		{
-			_action = _x addAction [_title, {_this call LT_fnc_HandleAction}, ["Init", _script, _locality, _remove, _args, _handle], _priority,_showWindow,_hideOnUse,_shortCut,_condition,_radius,_unconscious,_selection];
-		} forEach _units;
-	} else {
-		if (side player == _selSide) then {
+	switch (_side) do {
+		case "0": {
 			{
 				_action = _x addAction [_title, {_this call LT_fnc_HandleAction}, ["Init", _script, _locality, _remove, _args, _handle], _priority,_showWindow,_hideOnUse,_shortCut,_condition,_radius,_unconscious,_selection];
 			} forEach _units;
+		};
+		case "player": {
+			_action = player addAction [_title, {_this call LT_fnc_HandleAction}, ["Init", _script, _locality, _remove, _args, _handle], _priority,_showWindow,_hideOnUse,_shortCut,_condition,_radius,_unconscious,_selection];
+		};
+		default {
+			_selSide = if (_side != "0") then {call compile _side};
+			if (side player == _selSide) then {
+				{
+					_action = _x addAction [_title, {_this call LT_fnc_HandleAction}, ["Init", _script, _locality, _remove, _args, _handle], _priority,_showWindow,_hideOnUse,_shortCut,_condition,_radius,_unconscious,_selection];
+				} forEach _units;
+			};
 		};
 	};
 };
