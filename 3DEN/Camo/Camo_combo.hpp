@@ -285,6 +285,16 @@ class LT_Camo_combo: Title
 					text = "[TKI] Desert";
 					data = [["CUP_O_TKI_Khet_Partug_02", "CUP_O_TKI_Khet_Partug_03", "CUP_O_TKI_Khet_Partug_05", "CUP_O_TKI_Khet_Partug_06", "CUP_O_TKI_Khet_Partug_08", "CUP_O_TKI_Khet_Partug_07"],["CUP_V_OI_TKI_Jacket4_02", "CUP_V_OI_TKI_Jacket2_03", "CUP_V_OI_TKI_Jacket4_03", "CUP_V_OI_TKI_Jacket4_06"],["B_Kitbag_sgg", "CUP_B_AlicePack_Bedroll"],["CUP_H_TKI_Lungee_01", "CUP_H_TKI_Lungee_02", "CUP_H_TKI_Lungee_03","CUP_H_TKI_Lungee_04", "CUP_H_TKI_Lungee_05", "CUP_H_TKI_Pakol_1_01", "CUP_H_TKI_Pakol_2_04", "CUP_H_TKI_Pakol_2_05", "CUP_H_TKI_Pakol_2_06", "CUP_H_TKI_Pakol_1_04"],["tf_rt1523g_sage", "tf_rt1523g_big_rhs"]];
 				};
+				class LT_PMC
+				{
+					text = "[PMC] ION Security";
+					data = [["CUP_I_B_PMC_UNIT_1","CUP_I_B_PMC_UNIT_2","CUP_I_B_PMC_UNIT_3","CUP_I_B_PMC_UNIT_4","CUP_I_B_PMC_UNIT_5","CUP_I_B_PMC_UNIT_6","CUP_I_B_PMC_UNIT_7","CUP_I_B_PMC_UNIT_8","CUP_I_B_PMC_UNIT_9","CUP_I_B_PMC_UNIT_10","CUP_I_B_PMC_UNIT_11","CUP_I_B_PMC_UNIT_12","CUP_I_B_PMC_UNIT_13","CUP_I_B_PMC_UNIT_14","CUP_I_B_PMC_UNIT_15","CUP_I_B_PMC_UNIT_16","CUP_I_B_PMC_UNIT_17","CUP_I_B_PMC_UNIT_19","CUP_I_B_PMC_UNIT_20","CUP_I_B_PMC_UNIT_21","CUP_I_B_PMC_UNIT_22","CUP_I_B_PMC_UNIT_23","CUP_I_B_PMC_UNIT_24"],["CUP_V_PMC_CIRAS_Black_Empty","CUP_V_PMC_CIRAS_Coyote_Empty","CUP_V_PMC_IOTV_Black_Empty","CUP_V_PMC_IOTV_Coyote_Empty","V_TacVest_blk"],["CUP_B_PMC_AlicePack_Exp","CUP_B_PMC_Backpack_GL"],["CUP_H_PMC_Cap_Back_Burberry","CUP_H_PMC_Cap_Back_EP_Burberry","CUP_H_PMC_Cap_Back_EP_Grey","CUP_H_PMC_Cap_Back_EP_Tan","CUP_H_PMC_Cap_Back_Grey","CUP_H_PMC_Cap_Back_PRR_Burberry","CUP_H_PMC_Cap_Back_PRR_Grey","CUP_H_PMC_Cap_Back_PRR_Tan","CUP_H_PMC_Cap_Back_Tan","CUP_H_PMC_Cap_Burberry","CUP_H_PMC_Cap_EP_Burberry","CUP_H_PMC_Cap_EP_Grey","CUP_H_PMC_Cap_EP_Tan","CUP_H_PMC_Cap_Grey","CUP_H_PMC_Cap_PRR_Burberry","CUP_H_PMC_Cap_PRR_Grey","CUP_H_PMC_Cap_PRR_Tan","CUP_H_PMC_Cap_Tan","CUP_H_PMC_EP_Headset","CUP_H_PMC_PRR_Headset"],"tf_rt1523g_black"];
+				};
+				class LT_PMC_WTR
+				{
+					text = "[PMC] ION Security (Winter)";
+					data = [["CUP_I_B_PMC_UNIT_18","CUP_I_B_PMC_UNIT_25","CUP_I_B_PMC_UNIT_26","CUP_I_B_PMC_UNIT_27","CUP_I_B_PMC_UNIT_28"],["CUP_V_PMC_CIRAS_Black_Empty","CUP_V_PMC_CIRAS_Coyote_Empty","CUP_V_PMC_IOTV_Black_Empty","CUP_V_PMC_IOTV_Coyote_Empty","V_TacVest_blk"],["CUP_B_PMC_AlicePack_Exp","CUP_B_PMC_Backpack_GL"],["CUP_H_PMC_Cap_Back_Burberry","CUP_H_PMC_Cap_Back_EP_Burberry","CUP_H_PMC_Cap_Back_EP_Grey","CUP_H_PMC_Cap_Back_EP_Tan","CUP_H_PMC_Cap_Back_Grey","CUP_H_PMC_Cap_Back_PRR_Burberry","CUP_H_PMC_Cap_Back_PRR_Grey","CUP_H_PMC_Cap_Back_PRR_Tan","CUP_H_PMC_Cap_Back_Tan","CUP_H_PMC_Cap_Burberry","CUP_H_PMC_Cap_EP_Burberry","CUP_H_PMC_Cap_EP_Grey","CUP_H_PMC_Cap_EP_Tan","CUP_H_PMC_Cap_Grey","CUP_H_PMC_Cap_PRR_Burberry","CUP_H_PMC_Cap_PRR_Grey","CUP_H_PMC_Cap_PRR_Tan","CUP_H_PMC_Cap_Tan","CUP_H_PMC_EP_Headset","CUP_H_PMC_PRR_Headset"],"tf_rt1523g_big"];
+				};
 				class LT_CIV_Fireman
 				{
 					text = "[CIV] Fireman";
