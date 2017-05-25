@@ -260,6 +260,9 @@ if (_activated) then {
 									// Spawn unit(s)
 									_grp = [_spawnpos, _spawnpos getdir _defensepos, selectRandom _groupArray, _factionSide] call BIS_fnc_spawnVehicle;
 
+									// Prevent guys from getting out of an otherwise perfect deadly vehicle.
+									(_grp select 0) allowCrewInImmobile true;
+
 									// Give units task
 									[_grp, _searchArea, _SearchAreaSize] call CBA_fnc_taskAttack;
 								};
