@@ -7,7 +7,7 @@ player setVariable ["ACE_GForceCoef", 0];
 murshun_easywayout_canSuicide = true;
 
 // Because we want to start with the weapon lowered
-player switchMove "AmovPercMstpSrasWrflDnon_AmovPercMstpSlowWrflDnon";
+if (vehicle player == player) then {player switchMove "AmovPercMstpSrasWrflDnon_AmovPercMstpSlowWrflDnon";};
 
 // Start with Earbuds in
 player setVariable ["ACE_hasEarPlugsIn", true, true];
@@ -22,7 +22,7 @@ enableSentences false;
 if ("lt_fatigue_onoff" call BIS_fnc_getParamValue == 0) then {player enableFatigue false};
 
 // Disable STHUD Occlusion
-STUI_Occlusion = false;  
+STUI_Occlusion = false;
 
 // Disable infested rabbits and birds, allow sounds.
 enableEnvironment [false, true];
