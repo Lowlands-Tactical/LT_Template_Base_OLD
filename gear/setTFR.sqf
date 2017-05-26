@@ -1,4 +1,9 @@
-_lt_camo_var_array = call compile lt_camo_var;
+_lt_camo_var_array = switch (side player) do {
+    case WEST: {call compile lt_camo_var};
+    case EAST: {if (isNil "LT_Camo_var_OPF") then {call compile lt_camo_var} else {call compile LT_Camo_var_OPF};};
+    case resistance: {if (isNil "LT_Camo_var_GUER") then {call compile lt_camo_var} else {call compile LT_Camo_var_GUER};};
+    case civilian: {};
+};
 
 _constraint 	= if (typename (_lt_camo_var_array select 0) == "ARRAY") then {selectRandom (_lt_camo_var_array select 0)} else {_lt_camo_var_array select 0};
 // _pack	= _lt_camo_var_array select 2;

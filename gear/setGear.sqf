@@ -10,7 +10,35 @@ diag_log format ["LT Template DEBUG: setGear.sqf Role in RolesArray: %1", _role 
 
 if (_role != "custom" && _role IN _RolesArray) then {
 
+	if !(isNil "LT_wpn_var_BLUFOR" || isNil "LT_wpn_var_OPFOR"|| isNil "LT_wpn_var_GUER") then {
+
+		switch (side player) do {
+			case WEST: {
+				if !(LT_wpn_var_BLUFOR == "None") then {
+					_handle = execVM LT_wpn_var_BLUFOR;
+					waitUntil {scriptDone _handle};
+				};
+			};
+			case EAST: {
+				if !(LT_wpn_var_OPFOR == "None") then {
+					_handle = execVM LT_wpn_var_OPFOR;
+					waitUntil {scriptDone _handle};
+				};
+			};
+			case independent: {
+				if !(LT_wpn_var_GUER == "None") then {
+					_handle = execVM LT_wpn_var_GUER;
+					waitUntil {scriptDone _handle};
+				};
+			};
+		};
+		
+};
+
 	#include "setItems.sqf"
+
+	_disposableLaunchers = [] call LT_fnc_isLauncherDisposable;
+
 
 	// ADD UNIVERSAL ITEMS
 	// Add items universal to all units of this faction
@@ -205,6 +233,10 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
 			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
 			_unit addweapon _RAT;
+			if !(_RAT in _disposableLaunchers) then {
+				(unitBackpack _unit) addMagazineCargoGlobal [_ratmag1, 2];
+				(unitBackpack _unit) addMagazineCargoGlobal [_ratmag2, 1];
+			};
 
 		};
 
@@ -314,12 +346,16 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
 			(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 1];
 			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
-			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 1];
-			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
+			if !(_MAT in _disposableLaunchers) then {
+				(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 1];
+				(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
+			};
 			_unit addmagazines [_carbinemag,7];
 			_unit addmagazines [_carbinemag_tr,2];
 			_unit addmagazines [_smokegrenade,2];
-			_Unit addMagazines [_MATmag1, 1];
+			if !(_MAT in _disposableLaunchers) then {
+				_Unit addMagazines [_MATmag1, 1];
+			};
 			_unit addweapon _carbine;
 			_unit addweapon _MAT;
 
@@ -341,9 +377,10 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 			(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
 			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
-
+			if !(_MAT in _disposableLaunchers) then {
+				(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
+				(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
+			};
 		};
 
 	// LOADOUT: HEAVY AT GUNNER
@@ -352,7 +389,10 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			_unit addmagazines [_carbinemag,7];
 			_unit addweapon _carbine;
 			if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-			(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 2];
+			if !(_HAT in _disposableLaunchers) then {
+				(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 2];
+				(unitBackpack _unit) addMagazineCargoGlobal [_HATmag2, 1];
+			};
 			_unit addWeapon _HAT;
 		};
 
@@ -367,7 +407,10 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			_unit addmagazines [_mgrenade,1];
 			_unit addmagazines [_smokegrenade,1];
 			if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-			(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 2];
+			if !(_HAT in _disposableLaunchers) then {
+				(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 2];
+				(unitBackpack _unit) addMagazineCargoGlobal [_HATmag2, 1];
+			};
 		};
 
 	// LOADOUT: MORTAR GUNNER

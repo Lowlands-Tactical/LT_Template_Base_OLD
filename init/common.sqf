@@ -33,8 +33,10 @@ if (isServer) then {
 
 	{
 	  _vehRole = _x getVariable ["LT_vehicle_role",nil];
+		_vehSide = _x getVariable ["LT_vehicle_side", "WEST"];
 	  if !(isNil "_vehRole") then {
-		[_x, _vehRole] call LT_fnc_setVehicleGear;
+			LT_vehGear = [_x, _vehRole, _vehSide] call LT_fnc_setVehicleGear;
+			waitUntil {LT_vehGear};
 	  };
 	} foreach _vehicleArray;
 

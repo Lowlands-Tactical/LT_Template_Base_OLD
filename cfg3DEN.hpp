@@ -21,7 +21,8 @@ class Cfg3DEN
 		#include "3DEN\TFR\TFR_combo.hpp"
 		#include "3DEN\Roles\Role_combo.hpp"
 		#include "3DEN\Roles\Role_veh_combo.hpp"
-
+		#include "3DEN\Roles\Side_veh_combo.hpp"
+		#include "3DEN\Camo\Gear_combo.hpp"
 	};
 	class Mission
 	{
@@ -30,13 +31,21 @@ class Cfg3DEN
 			class AttributeCategories
 			{
 
-				class LT_Category
+				class LT_Category_Camo
+				{
+					displayname = "Lowlands Tactical: Camo and Weaponset Settings";
+					collapsed 	= 0;
+					class Attributes
+					{
+						#include "3DEN\Camo\Camo.hpp"
+					};
+				};
+				class LT_Category_Other
 				{
 					displayname = "Lowlands Tactical: Scenario Settings";
 					collapsed 	= 0;
 					class Attributes
 					{
-						#include "3DEN\Camo\Camo.hpp"
 						#include "3DEN\TFR\TFR.hpp"
 						#include "3DEN\PD\PermaDeath.hpp"
 					};
@@ -56,6 +65,7 @@ class Cfg3DEN
 				{
 					#include "3DEN\Roles\Role_selector.hpp"
 					#include "3DEN\Roles\Role_veh_selector.hpp"
+					#include "3DEN\Roles\Side_veh_selector.hpp"
 					#include "3DEN\Camo\Camo_exclude_unit.hpp"
 					#include "3DEN\StaticUnit\setUnitStatic.hpp"
 				};

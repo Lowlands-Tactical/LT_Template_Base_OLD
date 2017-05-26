@@ -174,6 +174,8 @@ _DMriflemag = if (isNil "lt_template_DMriflemag") then {"CUP_5Rnd_86x70_L115A1"}
 
 // Rifleman AT
 _RAT = if (isNil "lt_template_RAT") then {"NLD_AT4"} else {lt_template_RAT};
+_RATmag1 = if (isNil "lt_template_RATmag1") then {""} else {lt_template_RATmag1};
+_RATmag2 = if (isNil "lt_template_RATmag2") then {""} else {lt_template_RATmag2};
 
 // Medium AT
 _MAT = if (isNil "lt_template_MAT") then {"launch_NLAW_F"} else {lt_template_MAT};

@@ -1,9 +1,138 @@
 _vehicle 	= _this select 0;
 _role 		= _this select 1;
+_side			= _this select 2;
 
-diag_log format ["Template Base Vehicle: %1",_vehicle];
-diag_log format ["Template Base Vehicle: %1",_role];
+if !(isNil "LT_wpn_var_BLUFOR" || isNil "LT_wpn_var_OPFOR"|| isNil "LT_wpn_var_GUER") then {
 
+	lt_template_attach1        	=	nil	;
+	lt_template_attach2        	=	nil	;
+	lt_template_silencer1      	=	nil	;
+	lt_template_silencer2      	=	nil	;
+	lt_template_scope1         	=	nil	;
+	lt_template_scope2         	=	nil	;
+	lt_template_scope3         	=	nil	;
+	lt_template_bipod1         	=	nil	;
+	lt_template_bipod2         	=	nil	;
+	lt_template_attachments    	=	nil	;
+	lt_template_hg_silencer1    =	nil	;
+	lt_template_hg_scope1      	=	nil	;
+	lt_template_hg_attachments  =	nil	;
+	lt_template_rifle          	=	nil	;
+	lt_template_riflemag       	=	nil	;
+	lt_template_riflemag_t     	=	nil	;
+	lt_template_carbine        	=	nil	;
+	lt_template_carbinemag     	=	nil	;
+	lt_template_carbinemag_tr   =	nil	;
+	lt_template_smg    					=	nil	;
+	lt_template_smgmag         	=	nil	;
+	lt_template_smgmag_tr      	=	nil	;
+	lt_template_diverWep       	=	nil	;
+	lt_template_diverMag1      	=	nil	;
+	lt_template_diverMag2      	=	nil	;
+	lt_template_glrifle        	=	nil	;
+	lt_template_glriflemag     	=	nil	;
+	lt_template_glriflemag_tr   =	nil	;
+	lt_template_glmag          	=	nil	;
+	lt_template_glsmokewhite    =	nil	;
+	lt_template_glsmokegreen   	=	nil	;
+	lt_template_glsmokered     	=	nil	;
+	lt_template_glflarewhite    =	nil	;
+	lt_template_glflarered     	=	nil	;
+	lt_template_glflareyellow   =	nil	;
+	lt_template_glflaregreen    =	nil	;
+	lt_template_pistol         	=	nil	;
+	lt_template_pistolmag      	=	nil	;
+	lt_template_AR     					=	nil	;
+	lt_template_ARmag          	=	nil	;
+	lt_template_ARmag_tr       	=	nil	;
+	lt_template_MMG    					=	nil	;
+	lt_template_MMGmag         	=	nil	;
+	lt_template_MMGmag_tr      	=	nil	;
+	lt_template_DMrifle        	=	nil	;
+	lt_template_DMriflemag     	=	nil	;
+	lt_template_RAT    					=	nil	;
+	lt_template_RATmag1 				=	nil	;
+	lt_template_RATmag2 				=	nil	;
+	lt_template_MAT    					=	nil	;
+	lt_template_MATmag1        	=	nil	;
+	lt_template_MATmag2        	=	nil	;
+	lt_template_SAM    					=	nil	;
+	lt_template_SAMmag         	=	nil	;
+	lt_template_HAT    					=	nil	;
+	lt_template_HATmag1        	=	nil	;
+	lt_template_HATmag2        	=	nil	;
+	lt_template_SNrifle        	=	nil	;
+	lt_template_SNrifleMag     	=	nil	;
+	lt_template_grenade        	=	nil	;
+	lt_template_Mgrenade       	=	nil	;
+	lt_template_smokegrenade    	=	nil	;
+	lt_template_smokegrenadegreen =	nil	;
+	lt_template_firstaid       	=	nil	;
+	lt_template_medkit         	=	nil	;
+	lt_template_bandages       	=	nil	;
+	lt_template_morphine       	=	nil	;
+	lt_template_epinephrine    	=	nil	;
+	lt_template_bloodbags      	=	nil	;
+	lt_template_nvg    					=	nil	;
+	lt_template_uavterminal    	=	nil	;
+	lt_template_chemgreen      	=	nil	;
+	lt_template_chemred        	=	nil	;
+	lt_template_chemyellow     	=	nil	;
+	lt_template_chemblue       	=	nil	;
+	lt_templatecigarette       	=	nil	;
+	lt_template_advancedbinoculars     	=	nil	;
+	lt_template_simplebinoculars       	=	nil	;
+	lt_template_atragmx        	=	nil	;
+	lt_templatedagr    					=	nil	;
+	lt_template_spotting_scope  =	nil	;
+	lt_template_rangecard      	=	nil	;
+	lt_template_kestrel        	=	nil	;
+	lt_template_gps    					=	nil	;
+	lt_template_telephone      	=	nil	;
+	lt_template_maptools       	=	nil	;
+	lt_template_mapflashlight  	=	nil	;
+	lt_template_map    					=	nil	;
+	lt_template_compass        	=	nil	;
+	lt_template_radio          	=	nil	;
+	lt_template_watch          	=	nil	;
+	lt_template_ATmine         	=	nil	;
+	lt_template_satchel        	=	nil	;
+	lt_template_APmine1        	=	nil	;
+	lt_template_APmine2        	=	nil	;
+	lt_template_toolkit        	=	nil	;
+	lt_template_clacker        	=	nil	;
+	lt_template_minedetector    =	nil	;
+	lt_template_bagmediumdiver  =	nil	;
+	lt_template_baghmgg        	=	nil	;
+	lt_template_baghmgag       	=	nil	;
+	lt_template_baghatg        	=	nil	;
+	lt_template_baghatag       	=	nil	;
+	lt_template_bagmtrg        	=	nil	;
+	lt_template_bagmtrag       	=	nil	;
+	lt_template_baghsamg       	=	nil	;
+	lt_template_baghsamag      	=	nil	;
+
+	switch (_side) do {
+		case "WEST": {
+			if !(LT_wpn_var_BLUFOR == "None") then {
+				_handle = execVM LT_wpn_var_BLUFOR;
+				waitUntil {scriptDone _handle};
+			};
+		};
+		case "EAST": {
+			if !(LT_wpn_var_OPFOR == "None") then {
+				_handle = execVM LT_wpn_var_OPFOR;
+				waitUntil {scriptDone _handle};
+			};
+		};
+		case "independent": {
+			if !(LT_wpn_var_GUER == "None") then {
+				_handle = execVM LT_wpn_var_GUER;
+				waitUntil {scriptDone _handle};
+			};
+		};
+	};
+};
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
@@ -118,6 +247,8 @@ _DMriflemag = if (isNil "lt_template_DMriflemag") then {"CUP_5Rnd_86x70_L115A1"}
 
 // Rifleman AT
 _RAT = if (isNil "lt_template_RAT") then {"NLD_AT4"} else {lt_template_RAT};
+_RATmag1 = if (isNil "lt_template_RATmag1") then {""} else {lt_template_RATmag1};
+_RATmag2 = if (isNil "lt_template_RATmag2") then {""} else {lt_template_RATmag2};
 
 // Medium AT
 _MAT = if (isNil "lt_template_MAT") then {"launch_NLAW_F"} else {lt_template_MAT};
@@ -143,6 +274,8 @@ _satchel = if (isNil "lt_template_satchel") then {"DemoCharge_Remote_Mag"} else 
 _APmine1 = if (isNil "lt_template_APmine1") then { "APERSBoundingMine_Range_Mag"} else {lt_template_APmine1};
 _APmine2 = if (isNil "lt_template_APmine2") then {"APERSMine_Range_Mag"} else {lt_template_APmine2};
 
+_disposableLaunchers = [] call LT_fnc_isLauncherDisposable;
+
 switch (_role) do {
 // CARGO: CAR - room for 10 weapons and 50 cargo items
 	case "v_car":
@@ -158,6 +291,10 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_armag, 5];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 3];
 		_vehicle addWeaponCargoGlobal [_rat, 2];
+		if !(_rat in _disposableLaunchers) then {
+			_vehicle addMagazineCargoGlobal [_ratmag1, 6];
+			_vehicle addMagazineCargoGlobal [_ratmag2, 6];
+		};
 		_vehicle addMagazineCargoGlobal [_grenade, 4];
 		_vehicle addMagazineCargoGlobal [_smokegrenade, 4];
 		_vehicle addMagazineCargoGlobal [_smokegrenadegreen, 2];
@@ -183,6 +320,10 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_armag, 22];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 20];
 		_vehicle addWeaponCargoGlobal [_rat, 6];
+		if !(_rat in _disposableLaunchers) then {
+			_vehicle addMagazineCargoGlobal [_ratmag1, 18];
+			_vehicle addMagazineCargoGlobal [_ratmag2, 18];
+		};
 		_vehicle addMagazineCargoGlobal [_grenade, 12];
 		_vehicle addmagazineCargoGlobal [_mgrenade,12];
 		_vehicle addMagazineCargoGlobal [_smokegrenade, 12];
@@ -208,7 +349,11 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_carbinemag, 20];
 		_vehicle addMagazineCargoGlobal [_armag, 8];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 10];
-		_vehicle addWeaponCargoGlobal [_rat, 2];
+		_vehicle addWeaponCargoGlobal [_rat, 4];
+		if !(_rat in _disposableLaunchers) then {
+			_vehicle addMagazineCargoGlobal [_ratmag1, 12];
+			_vehicle addMagazineCargoGlobal [_ratmag2, 12];
+		};
 		_vehicle addMagazineCargoGlobal [_grenade, 8];
 		_vehicle addmagazineCargoGlobal [_mgrenade,8];
 		_vehicle addMagazineCargoGlobal [_smokegrenade, 8];
@@ -236,6 +381,10 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_glmag, 5];
 		_vehicle addMagazineCargoGlobal [_glsmokewhite, 4];
 		_vehicle addWeaponCargoGlobal [_rat, 2];
+		if !(_rat in _disposableLaunchers) then {
+			_vehicle addMagazineCargoGlobal [_ratmag1, 6];
+			_vehicle addMagazineCargoGlobal [_ratmag2, 6];
+		};
 		_vehicle addMagazineCargoGlobal [_grenade, 8];
 		_vehicle addMagazineCargoGlobal [_mgrenade, 8];
 		_vehicle addMagazineCargoGlobal [_smokegrenade, 8];
@@ -261,6 +410,10 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_glsmokewhite,16];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 12];
 		_vehicle addWeaponCargoGlobal [_rat, 6];
+		if !(_rat in _disposableLaunchers) then {
+			_vehicle addMagazineCargoGlobal [_ratmag1, 12];
+			_vehicle addMagazineCargoGlobal [_ratmag2, 12];
+		};
 		_vehicle addMagazineCargoGlobal [_grenade, 25];
 		_vehicle addMagazineCargoGlobal [_mgrenade, 25];
 		_vehicle addMagazineCargoGlobal [_smokegrenade, 25];
@@ -286,6 +439,10 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_glmag, 60];
 		_vehicle addMagazineCargoGlobal [_glsmokewhite,50];
 		_vehicle addWeaponCargoGlobal [_rat, 20];
+		if !(_rat in _disposableLaunchers) then {
+			_vehicle addMagazineCargoGlobal [_ratmag1, 18];
+			_vehicle addMagazineCargoGlobal [_ratmag2, 18];
+		};
 		_vehicle addMagazineCargoGlobal [_grenade, 75];
 		_vehicle addMagazineCargoGlobal [_mgrenade, 75];
 		_vehicle addMagazineCargoGlobal [_smokegrenade, 75];
@@ -303,3 +460,5 @@ switch (_role) do {
 		clearBackpackCargoGlobal _vehicle;
 	};
 };
+
+true

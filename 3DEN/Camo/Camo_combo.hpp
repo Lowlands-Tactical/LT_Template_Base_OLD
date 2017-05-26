@@ -77,7 +77,7 @@ class LT_Camo_combo: Title
 				};
 				class LT_Camo_KM
 				{
-					text = "Koninklijke Marine";
+					text = "Koninklijke Mariniers";
 					data = ["NLD_KM_Camo","V_I_G_resistanceLeader_F","NLD_KM_Carryall_Empty","NLD_KM_Helmet","NLD_rt1523g_KM"];
 				};
 				class LT_CDF_Desert

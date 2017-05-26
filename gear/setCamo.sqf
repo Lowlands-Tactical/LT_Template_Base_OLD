@@ -1,7 +1,12 @@
 waituntil {!isNil 'lt_camo_var'};
 diag_log format ["LT template DEBUG: lt_camo_var: %1", lt_camo_var];
 
-_lt_camo_var_array = call compile lt_camo_var;
+_lt_camo_var_array = switch (side player) do {
+    case WEST: {call compile lt_camo_var};
+    case EAST: {if (isNil "LT_Camo_var_OPF") then {call compile lt_camo_var} else {call compile LT_Camo_var_OPF};};
+    case resistance: {if (isNil "LT_Camo_var_GUER") then {call compile lt_camo_var} else {call compile LT_Camo_var_GUER};};
+    case civilian: {};
+};
 _exclude = player getVariable ["LT_camo_exclude", 0];
 
 diag_log format ["LT template DEBUG: lt_camo_var compiled: %1", _lt_camo_var_array];
@@ -19,7 +24,7 @@ diag_log format ["LT Template DEBUG: Exclude: %1", _exclude];
 if (_exclude == 0) then {
 diag_log format ["LT Template DEBUG: Camo: %1 *-* Vest: %2 *-* Pack: %3 *-* Helm: %4", _camo, _vest, _pack, _helm];
 	if (typename _camo == "ARRAY") then {
-	
+
 		diag_log format ["LT Template DEBUG: _camo: %1 *-* _exclude: %2", _camo, _exclude];
 		_CamoUniform 	= if (typename _camo == "ARRAY") then {[player, selectRandom _camo] call lt_fnc_changeUniform;} else {[player, _camo] call lt_fnc_changeUniform;};
 		_CamoVest 	= if (typename _vest == "ARRAY") then {[player, selectRandom _vest] call lt_fnc_changeVest;} else {[player, _vest] call lt_fnc_changeVest;};
