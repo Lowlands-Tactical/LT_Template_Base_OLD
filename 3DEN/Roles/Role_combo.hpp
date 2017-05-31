@@ -63,6 +63,14 @@ class LT_role_combo: Title
 					data = "mmgag";
 					text = "Medium mg assistant";
 				};
+				class LT_Role_HMGG {
+					data = "hmgg";
+					text = "Heavy MG gunner (Static)";
+				};
+				class LT_Role_HMGAG {
+					data = "hmgag";
+					text = "Heavy MG assistant gunner (Static)";
+				};
 				class LT_Role_MATG {
 					data = "matg";
 					text = "Medium AT gunner";
@@ -70,6 +78,22 @@ class LT_role_combo: Title
 				class LT_Role_MATAG {
 					data = "matag";
 					text = "Medium AT assistant";
+				};
+				class LT_ROLE_HATG {
+					data = "hatg";
+					text = "Heavy AT gunner";
+				};
+				class LT_Role_HATAG {
+					data = "hatag";
+					text = "Heavy AT assistant gunner";
+				};
+				class LT_ROLE_MTRG {
+					data = "mtrg";
+					text = "Mortar gunner (Static)";
+				};
+				class LT_Role_MTRAG {
+					data = "mtrag";
+					text = "Mortar assistant gunner (Static)";
 				};
 				class LT_Role_SN {
 					data = "sn";
@@ -114,10 +138,6 @@ class LT_role_combo: Title
 				class LT_Role_UAV {
 					data = "uav";
 					text = "UAV operator";
-				};
-				class LT_Role_DIV {
-					data = "div";
-					text = "Divers";
 				};
 				class LT_Role_R {
 					data = "r";
