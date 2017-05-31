@@ -18,77 +18,137 @@ class LT_Gear_combo: Title
 
 			class Items
 			{
-				class LT_Gear_None
+				class LT_Gear_NLDLowtac
 				{
-					text = "NLD Units (LowTac)";
+					text = "Default NLD Units (LowTac)";
 					data = "None";
 					default = 1;
 				};
-				class LT_Gear_US80s
+				class LT_Gear_NLD1980
 				{
-					text = "US80s";
-					data = "\lt_template_base\gear\Loadouts\us80.sqf";
+					text = "NLD 1980";
+					data = "\lt_template_base\gear\Loadouts\NLD_80.sqf";
 				};
-				class LT_Gear_US90
+				class LT_Gear_NLD2020
 				{
-					text = "US90/00s";
-					data = "\lt_template_base\gear\Loadouts\us90.sqf";
+					text = "NLD 2020";
+					data = "\lt_template_base\gear\Loadouts\NLD_2020.sqf";
 				};
-				class LT_Gear_US2010
+				class LT_Gear_USM16A2
 				{
-					text = "US2010s";
-					data = "\lt_template_base\gear\Loadouts\US2010.sqf";
+					text = "US M16A2";
+					data = "\lt_template_base\gear\Loadouts\US_M16A2.sqf";
 				};
-				class LT_Gear_RU70
+				class LT_Gear_USM16A4
 				{
-					text = "RU70s";
-					data = "\lt_template_base\gear\Loadouts\RU70.sqf";
+					text = "US M16A4";
+					data = "\lt_template_base\gear\Loadouts\US_M16A4.sqf";
 				};
-				class LT_Gear_RU90
+				class LT_Gear_USM4A1
 				{
-					text = "RU90s";
-					data = "\lt_template_base\gear\Loadouts\RU90.sqf";
+					text = "US M4A1";
+					data = "\lt_template_base\gear\Loadouts\US_M4A1.sqf";
 				};
-				class LT_Gear_RU2010
+				class LT_Gear_USM4A1WDL
 				{
-					text = "RU2010s";
-					data = "\lt_template_base\gear\Loadouts\RU2010.sqf";
+					text = "US M4A1 Woodland";
+					data = "\lt_template_base\gear\Loadouts\US_M4A1_WDL.sqf";
 				};
-				class LT_Gear_RUFLORA
+				class LT_Gear_USM4A1DES
 				{
-					text = "RU (Flora)";
-					data = "\lt_template_base\gear\Loadouts\RU (Flora).sqf";
+					text = "US M4A1 Desert";
+					data = "\lt_template_base\gear\Loadouts\US_M4A1_DES.sqf";
 				};
-				class LT_Gear_Politie
+				class LT_Gear_RACS
 				{
-					text = "Politie";
-					data = "\lt_template_base\gear\Loadouts\Politie.sqf";
+					text = "Royal Army Corps of Sahrani";
+					data = "\lt_template_base\gear\Loadouts\RACS.sqf";
 				};
-				class LT_Gear_Rebellen
+				class LT_Gear_RU_1980
 				{
-					text = "Rebellen";
-					data = "\lt_template_base\gear\Loadouts\Rebellen.sqf";
+					text = "Russian 1980";
+					data = "\lt_template_base\gear\Loadouts\RU_1980.sqf";
 				};
-				class LT_Gear_Brits
+				class LT_Gear_RU_1990
 				{
-					text = "Brits";
-					data = "\lt_template_base\gear\Loadouts\Brits.sqf";
+					text = "Russian 1990";
+					data = "\lt_template_base\gear\Loadouts\RU_1990.sqf";
 				};
-				class LT_Gear_BritsXM8
+				class LT_Gear_RU_2010
 				{
-					text = "Brits (XM-8 serie)";
-					data = "\lt_template_base\gear\Loadouts\Brits (XM-8 serie).sqf";
+					text = "Russian 2010";
+					data = "\lt_template_base\gear\Loadouts\RU_2010.sqf";
 				};
-				class LT_Gear_PMC
+				class LT_Gear_TKA
 				{
-					text = "PMC (Black SCAR)";
-					data = "\lt_template_base\gear\Loadouts\PMC (Black SCAR).sqf";
+					text = "Takistani Army";
+					data = "\lt_template_base\gear\Loadouts\TKA.sqf";
 				};
-				class LT_Gear_Interventie
+				class LT_Gear_UK_L85A2
 				{
-					text = "Interventie";
-					data = "\lt_template_base\gear\Loadouts\Interventie.sqf";
+					text = "British";
+					data = "\lt_template_base\gear\Loadouts\UL_L85A2.sqf";
 				};
+				class LT_Gear_DE_G36
+				{
+					text = "German G36";
+					data = "\lt_template_base\gear\Loadouts\DE_G36.sqf";
+				};
+				class LT_Gear_DE_G36_WDL
+				{
+					text = "German G36 (Camo)";
+					data = "\lt_template_base\gear\Loadouts\DE_G36_WDL.sqf";
+				};
+				class LT_Gear_Czech
+				{
+					text = "Army of the Czech Republic";
+					data = "\lt_template_base\gear\Loadouts\CZ_BREN.sqf";
+				};
+				class LT_Gear_PMC_MK16_Des
+				{
+					text = "PMC Mk16 (Desert)";
+					data = "\lt_template_base\gear\Loadouts\PMC_MK16_Des.sqf";
+				};
+				class LT_Gear_PMC_Mk16_Black
+				{
+					text = "PMC Mk16 (Black)";
+					data = "\lt_template_base\gear\Loadouts\PMC_Mk16_Black.sqf";
+				};
+				class LT_Gear_PMC_Mk17_Des
+				{
+					text = "PMC Mk17 (Desert)";
+					data = "\lt_template_base\gear\Loadouts\PMC_Mk17_Des.sqf";
+				};
+				class LT_Gear_PMC_Mk17_Black
+				{
+					text = "PMC Mk17 (Black)";
+					data = "\lt_template_base\gear\Loadouts\PMC_Mk17_Black.sqf";
+				};
+				class LT_Gear_PMC_XM8
+				{
+					text = "PMC XM8";
+					data = "\lt_template_base\gear\Loadouts\PMC_XM8.sqf";
+				};
+				class LT_Gear_NATO_2035
+				{
+					text = "NATO 2013";
+					data = "\lt_template_base\gear\Loadouts\NATO_2035.sqf";
+				};
+				class LT_Gear_CSAT_2035
+				{
+					text = "CSAT 2035";
+					data = "\lt_template_base\gear\Loadouts\CSAT_2035.sqf";
+				};				
+				class LT_Gear_AAF_2035
+				{
+					text = "AAF 2035";
+					data = "\lt_template_base\gear\Loadouts\AAF_2035.sqf";
+				};				
+				class LT_Gear_Guerilla_2035	
+				{
+					text = "Guerilla 2035";
+					data = "\lt_template_base\gear\Loadouts\FIA_2035.sqf";
+				};							
 			};
 		};
 	};
