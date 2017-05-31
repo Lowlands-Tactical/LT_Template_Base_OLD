@@ -35,6 +35,9 @@ if (_role != "custom" && _role IN _RolesArray) then {
 		
 };
 
+	_handleCustomGear = execVM "customGear.sqf";
+	waitUntil {scriptDone _handleCustomGear};
+	
 	#include "setItems.sqf"
 
 	_disposableLaunchers = [] call LT_fnc_isLauncherDisposable;
