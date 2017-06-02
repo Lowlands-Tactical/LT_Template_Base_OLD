@@ -29,7 +29,7 @@ class LT_veh_SIDE_combo: Title
 				};
 				class LT_Veh_Side_GUER {
 					data = "Independent";
-					text = "independent";
+					text = "Independent";
 				};
 			};
 		};
