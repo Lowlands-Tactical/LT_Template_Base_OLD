@@ -95,6 +95,14 @@ class LT_role_combo: Title
 					data = "mtrag";
 					text = "Mortar assistant gunner (Static)";
 				};
+				class LT_Role_MSAMG {
+					data = "msamg";
+					text = "Medium SAM gunner";
+				};
+				class LT_Role_MSAMAG {
+					data = "msamag";
+					text = "Medium SAM assistant gunner";
+				};
 				class LT_Role_SN {
 					data = "sn";
 					text = "Sniper";

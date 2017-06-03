@@ -132,7 +132,13 @@ if !(isNil "LT_wpn_var_BLUFOR" || isNil "LT_wpn_var_OPFOR"|| isNil "LT_wpn_var_G
 			};
 		};
 	};
+
+	_handleCustomGear = execVM "customGear.sqf";
+	waitUntil {scriptDone _handleCustomGear};
+
 };
+
+
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
