@@ -87,6 +87,14 @@ class LT_role_combo: Title
 					data = "hatag";
 					text = "Heavy AT assistant gunner";
 				};
+				class LT_Role_STATG {
+					data = "STATG";
+					text = "Static AT gunner";
+				};
+				class LT_Role_STATAG {
+					data = "STATAG";
+					text = "Static AT assistant gunner";
+				};
 				class LT_ROLE_MTRG {
 					data = "mtrg";
 					text = "Mortar gunner (Static)";

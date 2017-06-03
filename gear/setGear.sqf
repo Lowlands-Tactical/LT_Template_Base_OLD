@@ -415,6 +415,30 @@ if (_role != "custom" && _role IN _RolesArray) then {
 				(unitBackpack _unit) addMagazineCargoGlobal [_HATmag2, 1];
 			};
 		};
+		// LOADOUT: Static AT Gunner
+		case "statg":
+		{
+			_unit addmagazines [_carbinemag,7];
+			_unit addmagazines [_carbinemag_tr,2];
+			_unit addweapon _carbine;
+			_unit addmagazines [_grenade,1];
+			_unit addmagazines [_mgrenade,1];
+			_unit addmagazines [_smokegrenade,1];
+			_unit addBackpack _baghatg;
+		};
+
+		// LOADOUT: Static AT assistant Gunner
+		case "statag":
+		{
+			_unit addmagazines [_carbinemag,7];
+			_unit addmagazines [_carbinemag_tr,2];
+			_unit addweapon _carbine;
+			_unit addmagazines [_grenade,1];
+			_unit addmagazines [_mgrenade,1];
+			_unit addmagazines [_smokegrenade,1];
+			_unit addWeapon _rangefinder;
+			_unit addBackpack _baghatag;
+		};
 
 	// LOADOUT: MORTAR GUNNER
 		case "mtrg":
