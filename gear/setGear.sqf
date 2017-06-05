@@ -32,12 +32,12 @@ if (_role != "custom" && _role IN _RolesArray) then {
 				};
 			};
 		};
-		
+
 };
 
 	_handleCustomGear = execVM "customGear.sqf";
 	waitUntil {scriptDone _handleCustomGear};
-	
+
 	#include "setItems.sqf"
 
 	_disposableLaunchers = [] call LT_fnc_isLauncherDisposable;
@@ -393,8 +393,7 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			_unit addweapon _carbine;
 			if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 			if !(_HAT in _disposableLaunchers) then {
-				(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 2];
-				(unitBackpack _unit) addMagazineCargoGlobal [_HATmag2, 1];
+				(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 1];
 			};
 			_unit addWeapon _HAT;
 		};
@@ -411,7 +410,6 @@ if (_role != "custom" && _role IN _RolesArray) then {
 			_unit addmagazines [_smokegrenade,1];
 			if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 			if !(_HAT in _disposableLaunchers) then {
-				(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 2];
 				(unitBackpack _unit) addMagazineCargoGlobal [_HATmag2, 1];
 			};
 		};
