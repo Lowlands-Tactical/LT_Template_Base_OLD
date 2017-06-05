@@ -131,7 +131,7 @@ class LT_Gear_combo: Title
 				};
 				class LT_Gear_NATO_2035
 				{
-					text = "NATO 2013";
+					text = "NATO 2035";
 					data = "\lt_template_base\gear\Loadouts\NATO_2035.sqf";
 				};
 				class LT_Gear_CSAT_2035
