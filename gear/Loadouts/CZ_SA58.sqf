@@ -2,11 +2,11 @@
 // Loadout name "Army of the Czech Republic"
 
 // Placeholder while the format is being debated
-lt_template_attach1	   =   	"acc_pointer_IR";
-lt_template_attach2	   =   	"acc_flashlight" ;
-lt_template_silencer1	   =   	"muzzle_snds_M" ;
-lt_template_silencer2	   =   	"muzzle_snds_H" ;
-lt_template_scope1	   =   	"CUP_optic_HoloBlack";
+lt_template_attach1	   =   	"";
+lt_template_attach2	   =   	"acc_flashlight";
+lt_template_silencer1	   =   	"CUP_muzzle_Bizon" ;
+lt_template_silencer2	   =   	"" ;
+lt_template_scope1	   =   	"";
 lt_template_scope2	   =   	"optic_DMS";
 lt_template_scope3	   =   	"optic_SOS" ;
 lt_template_bipod1	   =   	"bipod_01_F_snd" ;
@@ -18,32 +18,32 @@ lt_template_hg_scope1	   =   	"CUP_optic_HoloBlack"  ;
 lt_template_hg_attachments	 =   [lt_template_hg_scope1];
 
 // Assistant Automatic Rifleman, Medium MG assistant, UAV Operator, Rifleman
-lt_template_rifle	   		=   	"CUP_arifle_CZ805_A1"  ;
-lt_template_riflemag	   	=   	"CUP_30Rnd_556x45_G36" ;
-lt_template_riflemag_t	   	=   	"CUP_30Rnd_TE1_Red_Tracer_556x45_G36"  ;
+lt_template_rifle	   		=   	"CUP_arifle_Sa58RIS1"  ;
+lt_template_riflemag	   	=   	"CUP_30Rnd_Sa58_M" ;
+lt_template_riflemag_t	   	=   	"CUP_30Rnd_Sa58_M_TracerG"  ;
 
 //Medic, Rifleman At
-lt_template_carbine	   	=   	"CUP_arifle_CZ805_A2"  ;
-lt_template_carbinemag	   	=   	"CUP_30Rnd_556x45_G36";
-lt_template_carbinemag_tr	=   	"CUP_30Rnd_TE1_Red_Tracer_556x45_G36" ;
+lt_template_carbine	   	=   	"CUP_arifle_Sa58RIS1"  ;
+lt_template_carbinemag	   	=   	"CUP_30Rnd_Sa58_M";
+lt_template_carbinemag_tr	=   	"CUP_30Rnd_Sa58_M_TracerG" ;
 
 // Pilots, Vehicle crew, Submachinegunner
-lt_template_smg    	 = 	 "CUP_smg_EVO";
-lt_template_smgmag         	 = 	 "CUP_30Rnd_9x19_EVO";
-lt_template_smgmag_tr      	 = 	 "CUP_30Rnd_9x19_EVO";
+lt_template_smg    	 = 	 "CUP_smg_bizon";
+lt_template_smgmag         	 = 	 "CUP_64Rnd_9x19_Bizon_M";
+lt_template_smgmag_tr      	 = 	 "CUP_64Rnd_Green_Tracer_9x19_Bizon_M";
 
 // Commander, Squadleader, Fireteam leader, Spotter, Grenadier
-lt_template_glrifle	   =   	 "CUP_arifle_CZ805_GL";
-lt_template_glriflemag	   =   	"CUP_30Rnd_556x45_G36";
-lt_template_glriflemag_tr	   =   	"CUP_30Rnd_TE1_Red_Tracer_556x45_G36"  ;
+lt_template_glrifle	   =   	 "CUP_arifle_Sa58RIS2_gl";
+lt_template_glriflemag	   =   	"CUP_30Rnd_Sa58_M";
+lt_template_glriflemag_tr	   =   	"CUP_30Rnd_Sa58_M_TracerG"  ;
 lt_template_glmag	   =   	"CUP_1Rnd_HE_M203" ;
-lt_template_glsmokewhite	   =   	"CUP_1Rnd_Smoke_M203" ;
-lt_template_glsmokegreen	   =   	"CUP_1Rnd_SmokeGreen_M203"  ;
-lt_template_glsmokered	   =   	"CUP_1Rnd_SmokeRed_M203"  ;
-lt_template_glflarewhite	   =   	"CUP_FlareWhite_M203" ;
-lt_template_glflarered	   =   	"CUP_FlareRed_M203"  ;
-lt_template_glflareyellow	   =   	"CUP_FlareYellow_M203" ;
-lt_template_glflaregreen	   =   	"CUP_FlareGreen_M203"  ;
+lt_template_glsmokewhite	   =   	"1Rnd_Smoke_Grenade_shell" ;
+lt_template_glsmokegreen	   =   	"1Rnd_SmokeGreen_Grenade_shell"  ;
+lt_template_glsmokered	   =   	"1Rnd_SmokeRed_Grenade_shell"  ;
+lt_template_glflarewhite	   =   	"UGL_FlareWhite_F" ;
+lt_template_glflarered	   =   	"UGL_FlareRed_F"  ;
+lt_template_glflareyellow	   =   	"UGL_FlareYellow_F" ;
+lt_template_glflaregreen	   =   	"UGL_FlareGreen_F"  ;
 
 // Commander, Squadleader, Automatic Rifleman, Medium Machinegunner, Designated Marksman, Sniper
 lt_template_pistol	   =   	"CUP_hgun_Phantom" ;

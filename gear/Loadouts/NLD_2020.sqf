@@ -6,6 +6,7 @@ lt_template_silencer1      	 = 	 "muzzle_snds_M";
 lt_template_silencer2      	 = 	 "";
 lt_template_scope1         	 = 	 "optic_Holosight_blk_F";
 lt_template_bipod2         	 = 	 "bipod_01_F_blk";
+lt_template_attachments    	 = 	 [lt_template_scope1,lt_template_silencer1];
 
 // Assistant Automatic Rifleman, Medium MG assistant, UAV Operator, Rifleman
 lt_template_rifle = "arifle_SPAR_01_blk_F";

@@ -19,22 +19,22 @@ lt_template_hg_scope1      	 = 	 "";
 lt_template_hg_attachments         	 = 	 [lt_template_hg_silencer1];
 
 // Assistant Automatic Rifleman, Medium MG assistant, UAV Operator, Rifleman
-lt_template_rifle          	 = 	 "CUP_arifle_Mk16_black";
+lt_template_rifle          	 = 	 "CUP_arifle_Mk16_STD_black";
 lt_template_riflemag       	 = 	 "CUP_30Rnd_556x45_Stanag";
 lt_template_riflemag_t     	 = 	 "30Rnd_556x45_Stanag_Tracer_Red";
 
 //Medic, Rifleman At
-lt_template_carbine        	 = 	 "CUP_arifle_Mk16_black";
+lt_template_carbine        	 = 	 "CUP_arifle_Mk16_STD_black";
 lt_template_carbinemag     	 = 	 "CUP_30Rnd_556x45_Stanag";
 lt_template_carbinemag_tr          	 = 	 "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Pilots, Vehicle crew, Submachinegunner
-lt_template_smg    	 = 	 "CUP_arifle_Mk16_black";
+lt_template_smg    	 = 	 "CUP_arifle_Mk16_STD_black";
 lt_template_smgmag         	 = 	 "CUP_30Rnd_556x45_Stanag";
 lt_template_smgmag_tr      	 = 	 "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Commander, Squadleader, Fireteam leader, Spotter, Grenadier
-lt_template_glrifle        	 = 	 "CUP_arifle_Mk16_black_EGLM";
+lt_template_glrifle        	 = 	 "CUP_arifle_Mk16_STD_EGLM_black";
 lt_template_glriflemag     	 = 	 "CUP_30Rnd_556x45_Stanag";
 lt_template_glriflemag_tr          	 = 	 "30Rnd_556x45_Stanag_Tracer_Red";
 lt_template_glmag          	 = 	 "1Rnd_HE_Grenade_shell";

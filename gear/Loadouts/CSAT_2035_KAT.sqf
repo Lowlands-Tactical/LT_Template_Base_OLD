@@ -11,7 +11,7 @@ lt_template_scope2         	 = 	 "optic_KHS_hex"; // scope sniper
 lt_template_scope3         	 = 	 "";
 lt_template_bipod1         	 = 	 ""; // MG
 lt_template_bipod2         	 = 	 "";
-lt_template_attachments    	 = 	 [acc_pointer_IR, optic_ACO_grn];
+lt_template_attachments    	 = 	 [lt_template_attach1, lt_template_scope1];
 
 // Handgun attachements
 lt_template_hg_silencer1         	 = 	 "";

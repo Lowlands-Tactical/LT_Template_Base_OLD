@@ -1,5 +1,4 @@
 waituntil {!isNil 'lt_camo_var'};
-diag_log format ["LT template DEBUG: lt_camo_var: %1", lt_camo_var];
 
 _lt_camo_var_array = switch (side player) do {
     case WEST: {call compile lt_camo_var};

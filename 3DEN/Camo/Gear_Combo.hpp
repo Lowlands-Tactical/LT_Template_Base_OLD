@@ -87,7 +87,7 @@ class LT_Gear_combo: Title
 				class LT_Gear_UK_L85A2
 				{
 					text = "British";
-					data = "\lt_template_base\gear\Loadouts\UL_L85A2.sqf";
+					data = "\lt_template_base\gear\Loadouts\UK_L85A2.sqf";
 				};
 				class LT_Gear_DE_G36
 				{
@@ -99,10 +99,19 @@ class LT_Gear_combo: Title
 					text = "German G36 (Camo)";
 					data = "\lt_template_base\gear\Loadouts\DE_G36_WDL.sqf";
 				};
-				class LT_Gear_Czech
+				class LT_Gear_Czech_BREN
 				{
-					text = "Army of the Czech Republic";
+					text = "Army of the Czech Republic 2010";
 					data = "\lt_template_base\gear\Loadouts\CZ_BREN.sqf";
+				};
+				class LT_Gear_Czech_SA58
+				{
+					text = "Army of the Czech Republic 1980";
+					data = "\lt_template_base\gear\Loadouts\CZ_SA58.sqf";
+				};
+				class LT_Gear_FR_ADR {
+					text = "GIGN";
+					data = "\lt_template_base\gear\Loadouts\FR_GIGN.sqf";
 				};
 				class LT_Gear_PMC_MK16_Des
 				{
@@ -129,26 +138,36 @@ class LT_Gear_combo: Title
 					text = "PMC XM8";
 					data = "\lt_template_base\gear\Loadouts\PMC_XM8.sqf";
 				};
-				class LT_Gear_NATO_2035
+				class LT_Gear_NATO_2035_MX
 				{
-					text = "NATO 2035";
-					data = "\lt_template_base\gear\Loadouts\NATO_2035.sqf";
+					text = "NATO 2035 (MX)";
+					data = "\lt_template_base\gear\Loadouts\NATO_2035_MX.sqf";
 				};
-				class LT_Gear_CSAT_2035
+				class LT_Gear_NATO_2035_SIG
 				{
-					text = "CSAT 2035";
-					data = "\lt_template_base\gear\Loadouts\CSAT_2035.sqf";
-				};				
+					text = "NATO 2035 (SIG)";
+					data = "\lt_template_base\gear\Loadouts\NATO_2035_SIG.sqf";
+				};
+				class LT_Gear_CSAT_2035_KAT
+				{
+					text = "CSAT 2035 (Katiba)";
+					data = "\lt_template_base\gear\Loadouts\CSAT_2035_KAT.sqf";
+				};
+				class LT_Gear_CSAT_2035_QBZ
+				{
+					text = "CSAT 2035 (QBZ)";
+					data = "\lt_template_base\gear\Loadouts\CSAT_2035_QBZ.sqf";
+				};
 				class LT_Gear_AAF_2035
 				{
 					text = "AAF 2035";
 					data = "\lt_template_base\gear\Loadouts\AAF_2035.sqf";
-				};				
-				class LT_Gear_Guerilla_2035	
+				};
+				class LT_Gear_Guerilla_2035
 				{
 					text = "Guerilla 2035";
 					data = "\lt_template_base\gear\Loadouts\FIA_2035.sqf";
-				};							
+				};
 			};
 		};
 	};

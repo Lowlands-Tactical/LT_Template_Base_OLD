@@ -19,24 +19,24 @@ lt_template_hg_scope1      	 = 	 "";
 lt_template_hg_attachments         	 = 	 [lt_template_hg_silencer1];
 
 // Assistant Automatic Rifleman, Medium MG assistant, UAV Operator, Rifleman
-lt_template_rifle          	 = 	 "CUP_arifle_Mk17_black";
-lt_template_riflemag       	 = 	 "CUP_30Rnd_556x45_Stanag";
-lt_template_riflemag_t     	 = 	 "30Rnd_556x45_Stanag_Tracer_Red";
+lt_template_rifle          	 = 	 "CUP_arifle_Mk17_STD_black";
+lt_template_riflemag       	 = 	 "CUP_20Rnd_762x51_B_SCAR";
+lt_template_riflemag_t     	 = 	 "CUP_20Rnd_TE1_Green_Tracer_762x51_SCAR";
 
 //Medic, Rifleman At
-lt_template_carbine        	 = 	 "CUP_arifle_Mk17_black";
-lt_template_carbinemag     	 = 	 "CUP_30Rnd_556x45_Stanag";
-lt_template_carbinemag_tr          	 = 	 "30Rnd_556x45_Stanag_Tracer_Red";
+lt_template_carbine        	 = 	 "CUP_arifle_Mk17_STD_black";
+lt_template_carbinemag     	 = 	 "CUP_20Rnd_762x51_B_SCAR";
+lt_template_carbinemag_tr          	 = 	 "CUP_20Rnd_TE1_Green_Tracer_762x51_SCAR";
 
 // Pilots, Vehicle crew, Submachinegunner
-lt_template_smg    	 = 	 "CUP_arifle_Mk17_black";
-lt_template_smgmag         	 = 	 "CUP_30Rnd_556x45_Stanag";
-lt_template_smgmag_tr      	 = 	 "30Rnd_556x45_Stanag_Tracer_Red";
+lt_template_smg    	 = 	 "CUP_arifle_Mk17_STD_black";
+lt_template_smgmag         	 = 	 "CUP_20Rnd_762x51_B_SCAR";
+lt_template_smgmag_tr      	 = 	 "CUP_20Rnd_TE1_Green_Tracer_762x51_SCAR";
 
 // Commander, Squadleader, Fireteam leader, Spotter, Grenadier
-lt_template_glrifle        	 = 	 "CUP_arifle_Mk17_black_EGLM";
-lt_template_glriflemag     	 = 	 "CUP_30Rnd_556x45_Stanag";
-lt_template_glriflemag_tr          	 = 	 "30Rnd_556x45_Stanag_Tracer_Red";
+lt_template_glrifle        	 = 	 "CUP_arifle_Mk17_STD_EGLM";
+lt_template_glriflemag     	 = 	 "CUP_20Rnd_762x51_B_SCAR";
+lt_template_glriflemag_tr          	 = 	 "CUP_20Rnd_TE1_Green_Tracer_762x51_SCAR";
 lt_template_glmag          	 = 	 "1Rnd_HE_Grenade_shell";
 lt_template_glsmokewhite           	 = 	 "1Rnd_Smoke_Grenade_shell";
 lt_template_glsmokegreen           	 = 	 "1Rnd_SmokeGreen_Grenade_shell";

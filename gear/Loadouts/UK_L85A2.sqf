@@ -65,7 +65,7 @@ lt_template_DMrifle        	 = 	 "CUP_arifle_L86A2";
 lt_template_DMriflemag     	 = 	 "CUP_30Rnd_556x45_Stanag";
 
 // Rifleman AT
-lt_template_RAT    	 = 	 "CUP_NLAW_M";
+lt_template_RAT    	 = 	 "CUP_launch_NLAW";
 lt_template_RATmag1    	 = 	 "";
 lt_template_RATmag2    	 = 	 "";
 

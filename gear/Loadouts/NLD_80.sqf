@@ -9,7 +9,7 @@ lt_template_silencer2      	 = 	 "";
 lt_template_scope1         	 = 	 "CUP_optic_SUSAT";
 lt_template_bipod1         	 = 	 "";
 lt_template_bipod2         	 = 	 "";
-// lt_template_attachments    	 = 	 [];
+lt_template_attachments    	 = 	 [];
 
 // Handgun attachements
 lt_template_hg_silencer1 = "";
