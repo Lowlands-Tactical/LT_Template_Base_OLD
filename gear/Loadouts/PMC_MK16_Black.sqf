@@ -6,9 +6,9 @@ lt_template_attach1        	 = 	 "CUP_acc_ANPEQ_2"; // ir laser
 lt_template_attach2        	 = 	 ""; // flashlight
 lt_template_silencer1      	 = 	 ""; // rifles
 lt_template_silencer2      	 = 	 ""; // MG
-lt_template_scope1         	 = 	 "CUP_optic_Elcan"; // normal scope
-lt_template_scope2         	 = 	 "CUP_optic_SB_3_12x50_PMII"; // scope sniper
-lt_template_scope3         	 = 	 "";
+lt_template_scope1         	 = 	 "CUP_optic_CompM2_Black"; // normal scope
+lt_template_scope2         	 = 	 "optic_DMS"; // scope sniper
+lt_template_scope3         	 = 	 "CUP_optic_SB_3_12x50_PMII";
 lt_template_bipod1         	 = 	 "bipod_01_F_blk"; // MG
 lt_template_bipod2         	 = 	 "";
 lt_template_attachments    	 = 	 [lt_template_attach1, lt_template_scope1];
@@ -61,7 +61,7 @@ lt_template_MMGmag         	 = 	 "130Rnd_338_Mag";
 lt_template_MMGmag_tr      	 = 	 "130Rnd_338_Mag";
 
 // Designated Marksman
-lt_template_DMrifle        	 = 	 "CUP_arifle_Mk16_SV";
+lt_template_DMrifle        	 = 	 "CUP_arifle_Mk16_SV_black";
 lt_template_DMriflemag     	 = 	 "CUP_20Rnd_556x45_Stanag";
 
 // Rifleman AT
