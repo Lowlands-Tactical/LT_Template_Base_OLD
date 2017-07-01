@@ -20,9 +20,16 @@ if (lt_tfr_var == "1") then {
 TF_terrain_interception_coefficient = 0;
 
 // Sync op radio frequencies
-tf_same_sw_frequencies_for_side = true;
-tf_same_lr_frequencies_for_side = true;
+TF_same_sw_frequencies_for_side = true;
+TF_same_lr_frequencies_for_side = true;
+TF_same_dd_frequencies_for_side = true;
 
+tf_freq_west  =   [0 ,7, ["31","32","33","34","35","36","37","38","39"],0, nil, -1, 0, getPlayerUID player, false];
+tf_freq_west_lr = [0 ,7, ["51","52","53","54","55","56","57","58","59"],0, nil, -1, 0, false];
+tf_freq_east  =   [0 ,7, ["31","32","33","34","35","36","37","38","39"],0, nil, -1, 0, getPlayerUID player, false];
+tf_freq_east_lr = [0 ,7, ["51","52","53","54","55","56","57","58","59"],0, nil, -1, 0, false];
+tf_freq_guer  =   [0 ,7, ["31","32","33","34","35","36","37","38","39"],0, nil, -1, 0, getPlayerUID player, false];
+tf_freq_guer_lr = [0 ,7, ["51","52","53","54","55","56","57","58","59"],0, nil, -1, 0, false];
 
 // Enables distribution of commander radios to squadmates.
 // TF_give_personal_radio_to_regular_soldier = true;
