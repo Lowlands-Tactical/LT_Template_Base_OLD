@@ -32,11 +32,6 @@ waitUntil {((_h select 2) < 0.5) || isNull _para};
 detach _crate;
 _crate setPos [position _crate select 0, position _crate select 1, 0];
 
-// Add smoke
-_smokeColor = "Orange";
-_smoke = createVehicle ["SmokeShell"+_smokeColor, [0,0,0], [], 0 , ""];
-_smoke attachTo [_crate, [0,0,0]];
-
 // start function to fill crate
 _gear = [_crate,  "crate_large", _side] call lt_fnc_setVehicleGear;
 
