@@ -383,6 +383,7 @@ switch (_role) do {
 		clearMagazineCargoGlobal _vehicle;
 		clearItemCargoGlobal _vehicle;
 		clearBackpackCargoGlobal _vehicle;
+		_vehicle addWeaponCargoGlobal [_carbine, 4];
 		_vehicle addMagazineCargoGlobal [_riflemag, 5];
 		_vehicle addMagazineCargoGlobal [_glriflemag, 5];
 		_vehicle addMagazineCargoGlobal [_armag, 5];
@@ -412,6 +413,7 @@ switch (_role) do {
 		clearMagazineCargoGlobal _vehicle;
 		clearItemCargoGlobal _vehicle;
 		clearBackpackCargoGlobal _vehicle;
+		_vehicle addWeaponCargoGlobal [_carbine, 10];
 		_vehicle addMagazineCargoGlobal [_riflemag, 15];
 		_vehicle addMagazineCargoGlobal [_glriflemag, 20];
 		_vehicle addMagazineCargoGlobal [_armag, 15];
@@ -441,6 +443,7 @@ switch (_role) do {
 		clearMagazineCargoGlobal _vehicle;
 		clearItemCargoGlobal _vehicle;
 		clearBackpackCargoGlobal _vehicle;
+		_vehicle addWeaponCargoGlobal [_carbine, 20];
 		_vehicle addMagazineCargoGlobal [_riflemag, 45];
 		_vehicle addMagazineCargoGlobal [_glriflemag, 60];
 		_vehicle addMagazineCargoGlobal [_armag, 45];
