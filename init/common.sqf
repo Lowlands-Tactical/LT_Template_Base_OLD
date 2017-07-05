@@ -27,19 +27,4 @@ STUI_Occlusion = false;
 // Disable infested rabbits and birds, allow sounds.
 enableEnvironment [false, true];
 
-if (isServer) then {
-
-	_vehicleArray = vehicles;
-
-	{
-	  _vehRole = _x getVariable ["LT_vehicle_role",nil];
-		_vehSide = _x getVariable ["LT_vehicle_side", "WEST"];
-	  if !(isNil "_vehRole") then {
-			LT_vehGear = [_x, _vehRole, _vehSide] call LT_fnc_setVehicleGear;
-			waitUntil {LT_vehGear};
-	  };
-	} foreach _vehicleArray;
-
-};
-
 lt_safe_starten = [] execVM "\lt_template_base\functions\f\safeStart\f_safeStart.sqf";

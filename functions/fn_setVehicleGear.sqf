@@ -2,6 +2,10 @@ _vehicle 	= _this select 0;
 _role 		= _this select 1;
 _side			= _this select 2;
 
+diag_log format ["Template BASE: fn SetVehicleGear vehicle: %1", _vehicle];
+diag_log format ["Template BASE: fn SetVehicleGear role: %1", _role];
+diag_log format ["Template BASE: fn SetVehicleGear side: %1", _side];
+
 if !(isNil "LT_wpn_var_BLUFOR" || isNil "LT_wpn_var_OPFOR"|| isNil "LT_wpn_var_GUER") then {
 
 	lt_template_attach1        	=	nil	;

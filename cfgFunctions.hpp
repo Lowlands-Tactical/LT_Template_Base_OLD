@@ -25,6 +25,7 @@ class cfgFunctions
       class PreInitFactionCompositions {preInit = 1;};
       class EqualArrayLengths {};
       class isLauncherDisposable {};
+      class SupplyDrop {};
     };
     class UPSMON
     {
