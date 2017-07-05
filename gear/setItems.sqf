@@ -9,7 +9,7 @@ _attach2 = if (isNil "lt_template_attach2") then {"acc_flashlight"} else {lt_tem
 _silencer1 = if (isNil "lt_template_silencer1") then {"muzzle_snds_M"} else {lt_template_silencer1};	// 5.56 suppressor
 _silencer2 = if (isNil "lt_template_silencer2") then {"muzzle_snds_H"} else {lt_template_silencer2}; 	// 6.5 suppressor
 
-_scope1 = if (isNil "lt_template_scope1") then {"CUP_optic_CompM2_Black"} else {lt_template_scope1};  	// Fuck you Willem
+_scope1 = if (isNil "lt_template_scope1") then {"CUP_optic_CompM4"} else {lt_template_scope1};  	// Fuck you Willem
 _scope2 = if (isNil "lt_template_scope2") then {"optic_DMS"} else {lt_template_scope2};				// De optic ding
 _scope3 = if (isNil "lt_template_scope3") then {"optic_SOS"} else {lt_template_scope3}; 			// SOS Scope - 18x - 75x
 
