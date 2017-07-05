@@ -9,7 +9,7 @@ _attach2 = if (isNil "lt_template_attach2") then {"acc_flashlight"} else {lt_tem
 _silencer1 = if (isNil "lt_template_silencer1") then {"muzzle_snds_M"} else {lt_template_silencer1};	// 5.56 suppressor
 _silencer2 = if (isNil "lt_template_silencer2") then {"muzzle_snds_H"} else {lt_template_silencer2}; 	// 6.5 suppressor
 
-_scope1 = if (isNil "lt_template_scope1") then {"CUP_optic_CompM4"} else {lt_template_scope1};  	// Fuck you Willem
+_scope1 = if (isNil "lt_template_scope1") then {"CUP_optic_CompM2_Black"} else {lt_template_scope1};  	// Fuck you Willem
 _scope2 = if (isNil "lt_template_scope2") then {"optic_DMS"} else {lt_template_scope2};				// De optic ding
 _scope3 = if (isNil "lt_template_scope3") then {"optic_SOS"} else {lt_template_scope3}; 			// SOS Scope - 18x - 75x
 
@@ -159,7 +159,7 @@ _baghsamag 		= if (isNil "lt_template_baghsamag") then {"B_HMG_01_support_F"} el
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = if (isNil "lt_template_AR") then {"NLD_Minimi"} else {lt_template_AR};
+_AR = if (isNil "lt_template_AR") then {"CUP_lmg_m249_SQuantoon"} else {lt_template_AR};
 _ARmag = if (isNil "lt_template_ARmag") then {"CUP_100Rnd_TE4_Red_Tracer_556x45_M249"} else {lt_template_ARmag};
 _ARmag_tr = if (isNil "lt_template_ARmag_tr") then {"CUP_100Rnd_TE4_Red_Tracer_556x45_M249"} else {lt_template_ARmag_tr};
 
