@@ -17,11 +17,11 @@ if ( missionNamespace getVariable ["ace_common", false]) then {
 	// _action = ["lt_main_markActiveUnits", "Mark Active Units", "", {[] call ALIVE_fnc_markUnits}, {getPlayerUID player in staff}] call ace_interact_menu_fnc_createAction;
 	// [player, 1, ["ACE_SelfActions", "lt_main"], _action] call ace_interact_menu_fnc_addActionToObject;
 
-	// _action = ["lt_main_ghost", "Hide player", "", {[player,true] call ALIVE_fnc_adminGhost}, { !isObjectHidden player and getPlayerUID player in staff }] call ace_interact_menu_fnc_createAction;
-	// [player, 1, ["ACE_SelfActions", "lt_main"], _action] call ace_interact_menu_fnc_addActionToObject;
+	_action = ["lt_main_ghost", "Hide player", "", {[player,true] call ALIVE_fnc_adminGhost}, {!isObjectHidden player and getPlayerUID player in staff}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions", "lt_main"], _action] call ace_interact_menu_fnc_addActionToObject;
 
-	// _action = ["lt_main_unghost", "Unhide player", "", {[player,false] call ALIVE_fnc_adminGhost}, { isObjectHidden player and getPlayerUID player in staff }] call ace_interact_menu_fnc_createAction;
-	// [player, 1, ["ACE_SelfActions", "lt_main"], _action] call ace_interact_menu_fnc_addActionToObject;
+	_action = ["lt_main_unghost", "Unhide player", "", {[player,false] call ALIVE_fnc_adminGhost}, {isObjectHidden player and getPlayerUID player in staff}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions", "lt_main"], _action] call ace_interact_menu_fnc_addActionToObject;
 
 	// _action = ["lt_main_disableFatigue", "Disable Fatigue", "", {player enableFatigue false}, { serverCommandAvailable "#kick" or getPlayerUID player in staff }] call ace_interact_menu_fnc_createAction;
 	// [player, 1, ["ACE_SelfActions", "lt_main"], _action] call ace_interact_menu_fnc_addActionToObject;
@@ -47,7 +47,7 @@ if ( missionNamespace getVariable ["ace_common", false]) then {
 	_action = [ "lt_main_doGroupTP", "Teleport Group", "", { openMap[true,true]; onMapSingleClick "[_pos] call LT_fnc_teleportGroup; openMap[false,false]; onMapSingleClick ''; "; lt_group_teleport = 0; }, { lt_group_teleport == 1 and player == leader player } ] call ace_interact_menu_fnc_createAction;
 	[player, 1, ["ACE_SelfActions", "lt_main"], _action] call ace_interact_menu_fnc_addActionToObject;
 
-	_SupplyDropAction = ["lt_main_SupplyDrop", "Call supply drop", "", { openMap[true,false]; player onMapSingleClick '[_this,_pos] remoteExec ["LT_fnc_SupplyDrop", 2, false]; openMap[false,false]; player onMapSingleClick "";'; lt_group_teleport = 0; }, { lt_group_teleport == 0 and serverCommandAvailable "#kick" }] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions", "lt_main"], _SupplyDropAction] call ace_interact_menu_fnc_addActionToObject;
+	_action = ["lt_main_SupplyDrop", "Call supply drop", "", { openMap[true,false]; player onMapSingleClick '[_this,_pos] remoteExec ["LT_fnc_SupplyDrop", 2, false]; openMap[false,false]; player onMapSingleClick "";'; lt_group_teleport = 0; }, {serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions", "lt_main"], _action] call ace_interact_menu_fnc_addActionToObject;
 
 };
