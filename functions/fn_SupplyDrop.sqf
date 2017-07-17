@@ -18,10 +18,9 @@ _h = position _crate;
 
 // Add (Chem)Light
 _cratelight = "#lightpoint" createVehicle (position _crate);
-_cratelight lightattachobject [_crate,[0,1,0.5]];
-_cratelight setLightColor [0,250,0];
-_cratelight setLightAttenuation [0.3,0,0,500];
-_cratelight setLightIntensity 5;
+_cratelight setLightColor [0,25,0];
+_cratelight setLightIntensity 2;
+_cratelight lightattachobject [_crate,[0,0,0.5]];
 
 // Add smoke while ammocrate drops
 _smokeColor = "Orange";
