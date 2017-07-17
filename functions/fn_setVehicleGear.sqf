@@ -1,8 +1,13 @@
 _vehicle 	= _this select 0;
 _role 		= _this select 1;
-// _side			= _this select 2;
-// What the config says should be the default
-_side			= param [2, "WEST"];
+_cfg 			= getNumber (configFile >> "CfgVehicles" >> (typeof _vehicle) >> "Side");
+_sideParam = switch (_cfg) do {
+	case 0: {"EAST"};
+	case 1: {"WEST"};
+	case 2: {"independent"};
+	default {"WEST"};
+};
+_side			= param [2, _sideParam];
 
 diag_log format ["Template BASE: fn SetVehicleGear vehicle: %1", _vehicle];
 diag_log format ["Template BASE: fn SetVehicleGear role: %1", _role];
