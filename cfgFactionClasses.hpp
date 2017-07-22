@@ -5,4 +5,12 @@ class CfgFactionClasses
 	{
 		displayName = "Lowlands Tactical Modules";
 	};
+	
+	class LT_ZeusModules: NO_CATEGORY
+
+	{
+
+		displayName = "Lowlands Tactical Zeus Modules";
+
+	};
 };

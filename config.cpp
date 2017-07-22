@@ -22,3 +22,4 @@ class CfgPatches {
 #include "cfgVehicles.hpp"
 #include "cfgMissions.hpp"
 #include "cfgNonAIVehicles.hpp"
+#include "UI\dialogs.hpp"

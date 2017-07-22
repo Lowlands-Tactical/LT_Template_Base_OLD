@@ -12,4 +12,6 @@ class CfgVehicles {
 	#include "AI\ModuleDefense\moduleDefense.hpp" // priority 6
 	#include "AI\CleanUp\moduleCleanUp.hpp" // Prio #7
 	#include "Modules\AddActionModule.hpp" // priority 8
+	#include "Modules\Zeus\SetVehicleGearZeus.hpp"
+	#include "Modules\Zeus\SupplyDropModuleZeus.hpp"
 };

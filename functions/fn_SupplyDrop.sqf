@@ -2,8 +2,11 @@ _p = _this select 0;
 _pos = _this select 1;
 
 // check side
-_side = if ((str (side _p)) == "GUER") then {"independent"} else {str (side _p)};
-diag_log format ["Template BASE: fn Supplydrop by:  %1 on %2 side", _p, _side];
+_side = if (typename _p == "STRING") then {
+  _p;
+  } else {
+  if ((str (side _p)) == "GUER") then {"independent"} else {str (side _p)};
+};
 
 // create parachute
 // https://forums.bistudio.com/forums/topic/154858-drop-an-object-from-the-air-with-a-parachute/?do=findComment&comment=2660752

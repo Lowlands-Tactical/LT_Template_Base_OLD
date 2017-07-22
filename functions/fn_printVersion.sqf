@@ -1,3 +1,5 @@
 // Display the current version of this mod.
 // Author: Sacha Ligthert
-player sideChat "v2016.10.05";
+_version = "v2017.07.21";
+player sideChat format ["%1",_version];
+LT_Template_Base_Version = _version;
