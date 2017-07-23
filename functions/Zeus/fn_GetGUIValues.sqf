@@ -35,7 +35,7 @@ switch _display do {
     _mo = _display getVariable "LT_GUI_MouseOver";
     if (_mo select 0 == "OBJECT") then {
       _veh = _mo select 1;
-      _vehGear = [_veh, _role, _side] spawn LT_fnc_SetVehicleGear;
+      [_veh, _role, _side] remoteExec ['LT_fnc_SetVehicleGear', 2, false];
     } else {
             systemChat "Drag the module over an object that is editable and has inventory.";
     };
@@ -52,7 +52,7 @@ switch _display do {
     _logic = _display getVariable "LT_GUI_ObjectPlaced";
     _pos = getpos _logic;
 
-    [_side,_pos] spawn LT_fnc_SupplyDrop;
+    [_side,_pos] remoteExec ['LT_fnc_SupplyDrop',2,false];
 
     deleteVehicle _logic;
     closeDialog 19997;
