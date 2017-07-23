@@ -3,7 +3,8 @@ class RscZeusModuleSetVehicleGear
 	idd=19998;
 	movingEnable = true;
 	enableSimulation = true;
-	onLoad = "_this spawn LT_fnc_FillCombo";
+	onLoad = "(_this select 0) setVariable ['LT_GUI_MouseOver', curatorMouseOver]; _this spawn LT_fnc_FillCombo";
+
 
   class controls
   {

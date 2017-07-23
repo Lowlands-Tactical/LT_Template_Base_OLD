@@ -61,6 +61,15 @@ class cfgFunctions
       file = "\lt_template_base\functions\CleanUp";
       class cleanUp {};
     };
+  	class Zeus
+  	{
+  		file = "\lt_template_base\functions\zeus";
+  		class FillCombo {};
+  		class HandleZeusEH {};
+      class InitZeusEH {postInit = 1;};
+  		class EmptyFunction {};
+      class GetGUIValues {};
+  	};
   };
   // Functions of F3 template - Thank you Ferstabinde!
   class F

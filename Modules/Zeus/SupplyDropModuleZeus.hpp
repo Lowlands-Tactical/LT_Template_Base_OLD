@@ -8,9 +8,9 @@ class LT_SupplyDropZeus: Module_F
 	category = "LT_ZeusModules";
 	curatorCanAttach = 1;
 
-	function = "LT_fnc_StartGUI";
+	function = "LT_fnc_EmptyFunction";
 	functionPriority = 1;
 	isGlobal = 0;
 
-	curatorInfoType = "";
+	curatorInfoType = "RscZeusModuleSupplyDrop";
 };

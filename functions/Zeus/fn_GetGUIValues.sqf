@@ -1,5 +1,4 @@
 disableSerialization;
-systemChat format ["GetGUIValues Display: %1", _this];
 _display = findDisplay (_this select 0);
 
 switch _display do {
@@ -20,11 +19,7 @@ switch _display do {
     _speed = lbCurSel 2102;
     _formation = lbCurSel 2103;
 
-    _arr = [_logic,_veh,_areaSize, _faction, _waves, _infyAmnt, _lightVehAmnt, _mechAmnt, _armorAmnt, _heliAmnt, _wavetime, _behaviour, _speed, _formation];
-    WIS_DialogValues = _arr;
-    {
-    	systemChat format ["Value: %1", _x];
-    } forEach _arr;
+    // todo: setvariables to _logic object and then start function defense module.
 
     closeDialog 19999;
   };
@@ -38,9 +33,13 @@ switch _display do {
 
     _logic = _display getVariable "LT_GUI_ObjectPlaced";
     _mo = _display getVariable "LT_GUI_MouseOver";
-    _veh = _mo select 1;
+    if (_mo select 0 == "OBJECT") then {
+      _veh = _mo select 1;
+      _vehGear = [_veh, _role, _side] spawn LT_fnc_SetVehicleGear;
+    } else {
+            systemChat "Drag the module over an object that is editable and has inventory.";
+    };
 
-    _vehGear = [_veh, _role, _side] spawn LT_fnc_SetVehicleGear;
     deleteVehicle _logic;
     closeDialog 19998;
   };

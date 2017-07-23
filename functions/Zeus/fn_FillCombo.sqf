@@ -1,16 +1,8 @@
-/*
-  Function:  LT_fnc_FillCombo
-  Written by: Whistle
-  Description: Whenever a GUI loads this function will fill the comboxes.
-*/
-
 disableSerialization;
-systemChat "Filling Combo";
 _display = _this select 0;
 
 switch _display do {
   case (findDisplay 19999): {
-    systemchat "FillCombo GUI no. 19999";
     _dialogFillArray = [2100,2101,2102,2103];
     {
     	WIS_classes = [["Defense_Faction", [], []], ["Defense_Behaviour",[], []], ["Defense_Speed",[], []], ["Defense_Formation",[], []]];
