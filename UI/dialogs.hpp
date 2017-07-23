@@ -12,6 +12,6 @@ class IGUIBack;
 class RscFrame;
 class RscButton;
 
-#include "DefenseModuleZeus\RscZeusModuleDefense.hpp"
+//#include "DefenseModuleZeus\RscZeusModuleDefense.hpp"
 #include "SetVehicleGearModuleZeus\RscZeusModuleSetVehicleGear.hpp"
 #include "SupplyDropModuleZeus\RscZeusModuleSupplyDrop.hpp"
