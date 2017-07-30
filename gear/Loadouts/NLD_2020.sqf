@@ -25,6 +25,16 @@ lt_template_smgmag_tr = "30Rnd_9x21_Red_Mag";
 
 // Commander, Squadleader, Fireteam leader, Spotter, Grenadier
 lt_template_glrifle = "arifle_SPAR_01_GL_blk_F";
+lt_template_glriflemag = "30Rnd_556x45_Stanag";
+lt_template_glriflemag_tr = "30Rnd_556x45_Stanag_red";
+lt_template_glmag = "1Rnd_HE_Grenade_shell";
+lt_template_glsmokewhite = "1Rnd_Smoke_Grenade_shell";
+lt_template_glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
+lt_template_glsmokered = "1Rnd_SmokeRed_Grenade_shell";
+lt_template_glflarewhite = "UGL_FlareWhite_F";
+lt_template_glflarered = "UGL_FlareRed_F";
+lt_template_glflareyellow = "UGL_FlareYellow_F";
+lt_template_glflaregreen = "UGL_FlareGreen_F";
 
 // Automatic Rifleman
 lt_template_AR = "arifle_SPAR_02_blk_F";
