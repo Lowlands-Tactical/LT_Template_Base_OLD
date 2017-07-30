@@ -143,7 +143,7 @@ class LT_Camo_combo: Title
 				class LT_USA_Army
 				{
 					text = "[USA] Army";
-					data = [["CUP_U_B_USArmy_Base","CUP_U_B_USArmy_TwoKnee","CUP_U_B_USArmy_UBACS","CUP_U_B_USArmy_Soft"],["CUP_V_B_IOTV_MG", "CUP_V_B_IOTV_saw","CUP_V_B_IOTV_SL","CUP_V_B_IOTV_tl"],["CUP_B_MedicPack_ACU","CUP_B_AssaultPack_ACU","B_AssaultPack_mcamo","B_Carryall_oucamo"],["tf_rt1523g_big"]];
+					data = [["CUP_U_B_USArmy_Base","CUP_U_B_USArmy_TwoKnee","CUP_U_B_USArmy_UBACS","CUP_U_B_USArmy_Soft"],["CUP_V_B_IOTV_MG", "CUP_V_B_IOTV_saw","CUP_V_B_IOTV_SL","CUP_V_B_IOTV_tl"],["CUP_B_MedicPack_ACU","CUP_B_AssaultPack_ACU","B_AssaultPack_mcamo","B_Carryall_oucamo"],["CUP_H_USArmy_HelmetMICH_earpro_ess","CUP_H_USArmy_HelmetMICH_earpro","CUP_H_USArmy_HelmetMICH_ESS","CUP_H_USArmy_HelmetMICH_headset_ess","CUP_H_USArmy_HelmetMICH_headset","CUP_H_USArmy_HelmetMICH"],["tf_rt1523g_big"]];
 				};
 				class LT_USMC_Desert
 				{
