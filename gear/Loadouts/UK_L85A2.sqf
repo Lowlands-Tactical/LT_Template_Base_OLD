@@ -14,9 +14,9 @@ lt_template_bipod2         	 = 	 "CUP_bipod_Harris_1A2_L";
 lt_template_attachments    	 = 	 [lt_template_attach1, lt_template_scope1];
 
 // Handgun attachements
-lt_template_hg_silencer1         	 = 	 "muzzle_snds_L";
-lt_template_hg_scope1      	 = 	 "optic_MRD";
-lt_template_hg_attachments         	 = 	 [lt_template_hg_silencer1, lt_template_hg_scope1];
+lt_template_hg_silencer1     = 	 "";
+lt_template_hg_scope1      	 = 	 "";
+lt_template_hg_attachments   = 	 [];
 
 // Assistant Automatic Rifleman, Medium MG assistant, UAV Operator, Rifleman
 lt_template_rifle          	 = 	 "CUP_arifle_L85A2_G";
