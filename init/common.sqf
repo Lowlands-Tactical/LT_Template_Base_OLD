@@ -9,6 +9,10 @@ enableSaving [false, false];
 // Fuck you
 enableSentences false;
 
+// Give pretty colour, or white when non-exist
+// this setVariable ["lt_unit_color", "RED", true];
+player assignTeam (player getVariable ["lt_unit_color","MAIN"]);
+
 // Player fatigue (set via params)
 if ("lt_fatigue_onoff" call BIS_fnc_getParamValue == 0) then {player enableFatigue false};
 
