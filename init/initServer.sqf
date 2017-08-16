@@ -14,3 +14,5 @@ _vehicleArray = vehicles;
 		waitUntil {LT_vehGear};
   };
 } foreach _vehicleArray;
+
+lt_safe_starten = [] execVM "\lt_template_base\functions\f\safeStart\f_safeStart.sqf";
