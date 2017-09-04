@@ -85,7 +85,7 @@ lt_template_HATmag2        	 = 	 "CUP_Javelin_M";
 
 // Sniper
 lt_template_SNrifle             =      "CUP_srifle_M107_Base";
-lt_template_SNrifleMag          =      "CUP_10Rnd_127x99_M107"
+lt_template_SNrifleMag          =      "CUP_10Rnd_127x99_M107";
 
 // Grenades
 lt_template_grenade        	 = 	 "CUP_HandGrenade_M67";
