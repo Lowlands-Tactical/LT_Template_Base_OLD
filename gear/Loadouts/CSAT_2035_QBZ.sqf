@@ -65,9 +65,7 @@ lt_template_DMrifle        	 = 	 "srifle_DMR_07_blk_F";
 lt_template_DMriflemag     	 = 	 "20Rnd_650x39_Cased_Mag_F";
 
 // Rifleman AT
-lt_template_RAT    	 = 	 "launch_O_Titan_short_F";
-lt_template_RATmag1    	 = 	 "Titan_AT";
-lt_template_RATmag2    	 = 	 "Titan_AT";
+lt_template_RAT = "launch_NLAW_F";
 
 // Medium AT Gunner, Medium AT Gunner Assistant (alleen magazijnen)
 lt_template_MAT    	 = 	 "launch_O_Titan_short_F";
