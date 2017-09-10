@@ -1,12 +1,12 @@
-class LT_AutoZone_Module: Module_F {
-	scope = 1;
+class LT_AutoZone_Module_v1_5: Module_F {
+	scope = 2;
 	displayName = "Automatic Zones";
 	icon = "\lt_template_base\logos\lowtac-texture-128px.paa";
 	category = "LT_missionModules";
-	function = "lt_fnc_autozoneWrapper";
+	function = "lt_fnc_autozoneWrapper_v1_5";
 	functionPriority = 4;
 	isGlobal = 0;
-	isTriggerActivated = 0;
+	isTriggerActivated = 1;
 	isDisposable = 0;
 
 

@@ -43,6 +43,7 @@ class cfgFunctions
       file = "\lt_template_base\functions\autozone";
       class autozone {};
       class autozoneWrapper {};
+	  class autozoneWrapper_v1_5 {};
     };
     class ModuleDefense
     {
