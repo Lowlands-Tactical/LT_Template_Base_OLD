@@ -800,17 +800,18 @@ if (hasInterface) then {
 				_unit addHandgunItem _x;
 			} foreach _hg_attachments;
 		};
+		
+		// NVG
+		_nvg = if (isNil "lt_template_nvg") then {"ACE_NVG_Wide"} else {lt_template_nvg};
+		_nvgLinked = hmd _unit;
+		_nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
+		[_unit, _nvgLinked, _nvg_enabled, _nvg] call LT_fnc_NVGParameters;
+
+	diag_log format ["LT Template DEBUG: setGear.sqf finished"];
 
 		diag_log format ["LT Template DEBUG: setGear.sqf attachments attached to weapons"];
 
 		[_unit] call LT_fnc_checkUnitWeight;
 	};
 
-	// NVG
-	_nvg = if (isNil "lt_template_nvg") then {"ACE_NVG_Wide"} else {lt_template_nvg};
-	_nvgLinked = hmd _unit;
-	_nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
-	[_unit, _nvgLinked, _nvg_enabled, _nvg] call LT_fnc_NVGParameters;
-
-	diag_log format ["LT Template DEBUG: setGear.sqf finished"];
 };
