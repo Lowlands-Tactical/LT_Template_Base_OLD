@@ -355,3 +355,140 @@ LT_CUP_INS_ASIA_heli = [];
 LT_CUP_INS_ASIA_heli_weightArray = [];
 LT_CUP_INS_ASIA = [LT_CUP_INS_ASIA_units, LT_CUP_INS_ASIA_car, LT_CUP_INS_ASIA_ifv, LT_CUP_INS_ASIA_tank, LT_CUP_INS_ASIA_heli];
 LT_CUP_INS_ASIA_Weights = [LT_CUP_INS_ASIA_units_weightArray,LT_CUP_INS_ASIA_car_weightArray,LT_CUP_INS_ASIA_ifv_weightArray,LT_CUP_INS_ASIA_tank_weightArray,LT_CUP_INS_ASIA_heli_weightArray];
+
+// British MTP,DES,WDL
+LT_CUP_BAF_MTP_units = ["CUP_B_BAF_Soldier_SL_MTP","CUP_B_BAF_Soldier_TL_MTP","CUP_B_BAF_Soldier_GL_MTP","CUP_B_BAF_Soldier_AR_MTP","CUP_B_BAF_Soldier_Marksman_MTP","CUP_B_BAF_Soldier_GL_MTP","CUP_B_BAF_Soldier_AR_MTP","CUP_B_BAF_Soldier_AAR_MTP","CUP_B_BAF_Soldier_TL_MTP","CUP_B_BAF_Soldier_GL_MTP","CUP_B_BAF_Soldier_AT_MTP","CUP_B_BAF_Soldier_AAT_MTP","CUP_B_BAF_Soldier_TL_MTP","CUP_B_BAF_Soldier_GL_MTP","CUP_B_BAF_Soldier_MG_MTP","CUP_B_BAF_Soldier_AMG_MTP","CUP_B_BAF_Soldier_TL_MTP","CUP_B_BAF_Soldier_JTAC_MTP","CUP_B_BAF_Medic_MTP","CUP_B_BAF_Engineer_MTP"];
+LT_CUP_BAF_MTP_units_weightArray = [];
+LT_CUP_BAF_MTP_car = ["CUP_B_BAF_Coyote_GMG_W","CUP_B_BAF_Coyote_L2A1_W","CUP_B_Jackal2_GMG_GB_W","CUP_B_Jackal2_L2A1_GB_W","CUP_B_LR_Ambulance_GB_W","CUP_B_LR_MG_GB_W","CUP_B_LR_Transport_GB_W","CUP_B_LR_Special_M2_GB_W","CUP_B_LR_Special_GMG_GB_W","CUP_B_Mastiff_GMG_GB_W","CUP_B_Mastiff_HMG_GB_W","CUP_B_Mastiff_LMG_GB_W","CUP_B_Ridgback_GMG_GB_W","CUP_B_Ridgback_HMG_GB_W","CUP_B_Ridgback_LMG_GB_W","CUP_B_Wolfhound_GMG_GB_W","CUP_B_Wolfhound_HMG_GB_W","CUP_B_Wolfhound_LMG_GB_W"];
+LT_CUP_BAF_MTP_car_weightArray = [];
+LT_CUP_BAF_MTP_ifv = ["CUP_B_MCV80_GB_W","CUP_B_MCV80_GB_W_SLAT","CUP_B_FV510_GB_W","CUP_B_FV510_GB_W_SLAT","CUP_B_FV432_Bulldog_GB_W","CUP_B_FV432_Bulldog_GB_W_RWS"];
+LT_CUP_BAF_MTP_ifv_weightArray = [];
+LT_CUP_BAF_MTP_tank = ["CUP_B_Challenger2_Woodland_BAF","CUP_B_Challenger2_2CW_BAF"];
+LT_CUP_BAF_MTP_tank_weightArray = [];
+LT_CUP_BAF_MTP_heli = ["CUP_B_AW159_GB","CUP_B_AH1_DL_BAF","CUP_B_AW159_RN_Blackcat"];
+LT_CUP_BAF_MTP_heli_weightArray = [];
+LT_CUP_BAF_MTP = [LT_CUP_BAF_MTP_units,LT_CUP_BAF_MTP_car,LT_CUP_BAF_MTP_ifv,LT_CUP_BAF_MTP_tank,LT_CUP_BAF_MTP_heli];
+LT_CUP_BAF_MTP_Weights = [LT_CUP_BAF_MTP_units_weightArray,LT_CUP_BAF_MTP_car_weightArray,LT_CUP_BAF_MTP_ifv_weightArray,LT_CUP_BAF_MTP_tank_weightArray,LT_CUP_BAF_MTP_heli_weightArray];
+
+LT_CUP_BAF_DDPM_units = ["CUP_B_BAF_Soldier_TL_DDPM","CUP_B_BAF_Soldier_GL_DDPM","CUP_B_BAF_Soldier_AR_DDPM","CUP_B_BAF_Soldier_Marksman_DDPM","CUP_B_BAF_Soldier_TL_DDPM","CUP_B_BAF_Soldier_GL_DDPM","CUP_B_BAF_Soldier_AT_DDPM","CUP_B_BAF_Soldier_AAT_DDPM","CUP_B_BAF_Soldier_TL_DDPM","CUP_B_BAF_Soldier_GL_DDPM","CUP_B_BAF_Soldier_MG_DDPM","CUP_B_BAF_Soldier_AMG_DDPM","CUP_B_BAF_Soldier_TL_DDPM","CUP_B_BAF_Soldier_JTAC_DDPM","CUP_B_BAF_Medic_DDPM","CUP_B_BAF_Engineer_DDPM","CUP_B_BAF_Soldier_SL_DDPM","CUP_B_BAF_Soldier_TL_DDPM","CUP_B_BAF_Soldier_GL_DDPM","CUP_B_BAF_Soldier_AR_DDPM","CUP_B_BAF_Soldier_Marksman_DDPM","CUP_B_BAF_Soldier_GL_DDPM","CUP_B_BAF_Soldier_AR_DDPM","CUP_B_BAF_Soldier_AAR_DDPM","CUP_B_BAF_Soldier_AT_DDPM","CUP_B_BAF_Soldier_HAT_DDPM","CUP_B_BAF_Soldier_AHAT_DDPM","CUP_B_BAF_Soldier_AAT_DDPM"
+];
+LT_CUP_BAF_DDPM_units_weightArray = [];
+LT_CUP_BAF_DDPM_car = ["CUP_B_BAF_Coyote_GMG_D","CUP_B_BAF_Coyote_L2A1_D","CUP_B_Jackal2_GMG_GB_D","CUP_B_Jackal2_L2A1_GB_D","CUP_B_LR_Ambulance_GB_D","CUP_B_LR_MG_GB_D","CUP_B_LR_Transport_GB_D","CUP_B_LR_Special_GMG_GB_D","CUP_B_LR_Special_M2_GB_D","CUP_B_Mastiff_GMG_GB_D","CUP_B_Mastiff_HMG_GB_D","CUP_B_Mastiff_LMG_GB_D","CUP_B_Ridgback_GMG_GB_D","CUP_B_Ridgback_HMG_GB_D","CUP_B_Ridgback_LMG_GB_D","CUP_B_Wolfhound_GMG_GB_D","CUP_B_Wolfhound_HMG_GB_D","CUP_B_Wolfhound_HMG_GB_D","CUP_B_Wolfhound_LMG_GB_D"];
+LT_CUP_BAF_DDPM_car_weightArray = [];
+LT_CUP_BAF_DDPM_ifv = ["CUP_B_FV432_Bulldog_GB_D_RWS","CUP_B_FV432_Bulldog_GB_D","CUP_B_FV510_GB_D","CUP_B_FV510_GB_D_SLAT","CUP_B_MCV80_GB_D","CUP_B_MCV80_GB_D_SLAT"];
+LT_CUP_BAF_DDPM_ifv_weightArray = [];
+LT_CUP_BAF_DDPM_tank = ["CUP_B_Challenger2_Desert_BAF"];
+LT_CUP_BAF_DDPM_tank_weightArray = [];
+LT_CUP_BAF_DDPM_heli = ["CUP_B_AW159_RN_Grey","CUP_B_AW159_RN_Blackcat"];
+LT_CUP_BAF_DDPM_heli_weightArray = [];
+LT_CUP_BAF_DDPM = [LT_CUP_BAF_DDPM_units,LT_CUP_BAF_DDPM_car,LT_CUP_BAF_DDPM_ifv,LT_CUP_BAF_DDPM_tank,LT_CUP_BAF_DDPM_heli];
+LT_CUP_BAF_DDPM_Weights = [];
+
+LT_CUP_BAF_WDL_units =  ["CUP_B_BAF_Soldier_TL_WDL","CUP_B_BAF_Soldier_GL_WDL","CUP_B_BAF_Soldier_AR_WDL","CUP_B_BAF_Soldier_Marksman_WDL","CUP_B_BAF_Soldier_TL_WDL","CUP_B_BAF_Soldier_GL_WDL","CUP_B_BAF_Soldier_AT_WDL","CUP_B_BAF_Soldier_AAT_WDL","CUP_B_BAF_Soldier_TL_WDL","CUP_B_BAF_Soldier_GL_WDL","CUP_B_BAF_Soldier_MG_WDL","CUP_B_BAF_Soldier_AMG_WDL","CUP_B_BAF_Soldier_TL_WDL","CUP_B_BAF_Soldier_JTAC_WDL","CUP_B_BAF_Medic_WDL","CUP_B_BAF_Engineer_WDL","CUP_B_BAF_Soldier_SL_WDL","CUP_B_BAF_Soldier_TL_WDL"
+,"CUP_B_BAF_Soldier_GL_WDL","CUP_B_BAF_Soldier_AR_WDL","CUP_B_BAF_Soldier_Marksman_WDL","CUP_B_BAF_Soldier_GL_WDL","CUP_B_BAF_Soldier_AR_WDL","CUP_B_BAF_Soldier_AAR_WDL","CUP_B_BAF_Soldier_AT_WDL","CUP_B_BAF_Soldier_HAT_WDL","CUP_B_BAF_Soldier_AHAT_WDL","CUP_B_BAF_Soldier_AAT_WDL"];
+LT_CUP_BAF_WDL_units_weightArray = [];
+LT_CUP_BAF_WDL_car = ["CUP_B_BAF_Coyote_GMG_W","CUP_B_BAF_Coyote_L2A1_W","CUP_B_Jackal2_GMG_GB_W","CUP_B_Jackal2_L2A1_GB_W","CUP_B_LR_Ambulance_GB_W","CUP_B_LR_MG_GB_W","CUP_B_LR_Transport_GB_W","CUP_B_LR_Special_M2_GB_W","CUP_B_LR_Special_GMG_GB_W","CUP_B_Mastiff_GMG_GB_W","CUP_B_Mastiff_HMG_GB_W","CUP_B_Mastiff_LMG_GB_W","CUP_B_Ridgback_GMG_GB_W","CUP_B_Ridgback_HMG_GB_W","CUP_B_Ridgback_LMG_GB_W","CUP_B_Wolfhound_GMG_GB_W","CUP_B_Wolfhound_HMG_GB_W","CUP_B_Wolfhound_LMG_GB_W"];
+LT_CUP_BAF_WDL_car_weightArray = [];
+LT_CUP_BAF_WDL_ifv = ["CUP_B_MCV80_GB_W","CUP_B_MCV80_GB_W_SLAT","CUP_B_FV510_GB_W","CUP_B_FV510_GB_W_SLAT","CUP_B_FV432_Bulldog_GB_W","CUP_B_FV432_Bulldog_GB_W_RWS"];
+LT_CUP_BAF_WDL_ifv_weightArray = [];
+LT_CUP_BAF_WDL_tank = ["CUP_B_Challenger2_Woodland_BAF","CUP_B_Challenger2_2CW_BAF"];
+LT_CUP_BAF_WDL_tank_weightArray = [];
+LT_CUP_BAF_WDL_heli = ["CUP_B_AW159_GB","CUP_B_AH1_DL_BAF","CUP_B_AW159_RN_Blackcat"];
+LT_CUP_BAF_WDL_heli_weightArray = [];
+LT_CUP_BAF_WDL = [LT_CUP_BAF_WDL_units,LT_CUP_BAF_WDL_car,LT_CUP_BAF_WDL_ifv,LT_CUP_BAF_WDL_tank,LT_CUP_BAF_WDL_heli];
+LT_CUP_BAF_WDL_Weights = [];
+
+//NLD Units DES,WDL,NFP Green, NFP tan
+LT_NLD_DST_units = ["NLD_DST_rifleman","NLD_DST_Ammo","NLD_DST_AA","NLD_DST_AAA","NLD_DST_AAR","NLD_DST_AMAT","NLD_DST_AMMG","NLD_DST_AR","NLD_DST_CLS","NLD_DST_SLA","NLD_DST_ENGI","NLD_DST_EXPL","NLD_DST_GL","NLD_DST_JTAC","NLD_DST_MAT","NLD_DST_MMG","NLD_DST_OFF","NLD_DST_LAT","NLD_DST_SL","NLD_DST_TL","NLD_DST_UAV"];
+LT_NLD_DST_units_weightArray = [];
+LT_NLD_DST_car = ["NLD_DST_Fennek","NLD_DST_Fennek_GMG","NLD_DST_Fennek_HMG"];
+LT_NLD_DST_car_weightArray = [];
+LT_NLD_DST_ifv = ["NLD_DST_CV9035NL"];
+LT_NLD_DST_ifv_weightArray = [];
+LT_NLD_DST_tank = ["NLD_DST_Leo2"];
+LT_NLD_DST_tank_weightArray = [];
+LT_NLD_DST_heli = [];
+LT_NLD_DST_heli_weightArray = [];
+LT_NLD_DST = [LT_NLD_DST_units,LT_NLD_DST_car,LT_NLD_DST_ifv,LT_NLD_DST_tank,LT_NLD_DST_heli];
+LT_NLD_DST_weights = [];
+
+LT_NLD_WDL_units = ["NLD_WLD_Ammo","NLD_WLD_AA","NLD_WLD_AAA","NLD_WLD_AAR","NLD_WLD_AMAT","NLD_WLD_AMMG","NLD_WLD_AR","NLD_WLD_CLS","NLD_WLD_SLA","NLD_WLD_ENGI","NLD_WLD_EXPL","NLD_WLD_GL","NLD_WLD_JTAC","NLD_WLD_MAT","NLD_WLD_MMG","NLD_WLD_OFF","NLD_WLD_rifleman","NLD_WLD_LAT","NLD_WLD_SL","NLD_WLD_TL","NLD_WLD_UAV"];
+LT_NLD_WDL_units_weightArray = [];
+LT_NLD_WDL_car = ["NLD_WLD_Fennek","NLD_WLD_Fennek_GMG","NLD_WLD_Fennek_HMG"];
+LT_NLD_WDL_car_weightArray = [];
+LT_NLD_WDL_ifv = ["NLD_WLD_CV9035NL","NLD_WLD_Buffel","NLD_WLD_YPR","NLD_WLD_PRTL"];
+LT_NLD_WDL_ifv_weightArray = [];
+LT_NLD_WDL_tank = ["NLD_WLD_Leo2"];
+LT_NLD_WDL_tank_weightArray = [];
+LT_NLD_WDL_heli = [];
+LT_NLD_WDL_heli_weightArray = [];
+LT_NLD_WDL = [LT_NLD_WDL_units,LT_NLD_WDL_car,LT_NLD_WDL_ifv,LT_NLD_WDL_tank,LT_NLD_WDL_heli];
+LT_NLD_WDL_weights = [];
+
+LT_NLD_NFPG_units = ["NLD_NFPG_rifleman","NLD_NFPG_Ammo","NLD_NFPG_AA","NLD_NFPG_AAA","NLD_NFPG_AAR","NLD_NFPG_AMAT","NLD_NFPG_AMMG","NLD_NFPG_AR","NLD_NFPG_CLS","NLD_NFPG_SLA","NLD_NFPG_ENGI","NLD_NFPG_EXPL","NLD_NFPG_GL","NLD_NFPG_JTAC","NLD_NFPG_MAT","NLD_NFPG_MMG","NLD_NFPG_OFF","NLD_NFPG_LAT","NLD_NFPG_SL","NLD_NFPG_TL","NLD_NFPG_UAV"];
+LT_NLD_NFPG_units_weightArray = [];
+LT_NLD_NFPG_car = ["NLD_WLD_Fennek","NLD_WLD_Fennek_GMG","NLD_WLD_Fennek_HMG"];
+LT_NLD_NFPG_car_weightArray = [];
+LT_NLD_NFPG_ifv = ["NLD_WLD_CV9035NL","NLD_WLD_Buffel","NLD_WLD_YPR","NLD_WLD_PRTL"];
+LT_NLD_NFPG_ifv_weightArray = [];
+LT_NLD_NFPG_tank = ["NLD_WLD_Leo2"];
+LT_NLD_NFPG_tank_weightArray = [];
+LT_NLD_NFPG_heli = [];
+LT_NLD_NFPG_heli_weightArray = [];
+LT_NLD_NFPG = [LT_NLD_NFPG_units,LT_NLD_NFPG_car,LT_NLD_NFPG_ifv,LT_NLD_NFPG_tank,LT_NLD_NFPG_heli];
+LT_NLD_NFPG_weights = [];
+
+LT_NLD_WTR_units = ["NLD_WTR_rifleman","NLD_WTR_Ammo","NLD_WTR_AA","NLD_WTR_AAA","NLD_WTR_AAR","NLD_WTR_AMAT","NLD_WTR_AMMG","NLD_WTR_AR","NLD_WTR_CLS","NLD_WTR_SLA","NLD_WTR_ENGI","NLD_WTR_EXPL","NLD_WTR_GL","NLD_WTR_JTAC","NLD_WTR_MAT","NLD_WTR_MMG","NLD_WTR_OFF","NLD_WTR_LAT","NLD_WTR_SL","NLD_WTR_TL","NLD_WTR_UAV"];
+LT_NLD_WTR_units_weightArray = [];
+LT_NLD_WTR_car = ["NLD_WTR_Fennek","NLD_WTR_Fennek_GMG","NLD_WTR_Fennek_HMG"];
+LT_NLD_WTR_car_weightArray = [];
+LT_NLD_WTR_ifv = [];
+LT_NLD_WTR_ifv_weightArray = [];
+LT_NLD_WTR_tank = [];
+LT_NLD_WTR_tank_weightArray = [];
+LT_NLD_WTR_heli = [];
+LT_NLD_WTR_heli_weightArray = [];
+LT_NLD_WTR = [LT_NLD_WTR_units,LT_NLD_WTR_car,LT_NLD_WTR_ifv,LT_NLD_WTR_tank,LT_NLD_WTR_heli];
+LT_NLD_WTR_weights = [];
+
+LT_NLD_NFPT_units = ["NLD_NFPT_rifleman","NLD_NFPT_Ammo","NLD_NFPT_AA","NLD_NFPT_AAA","NLD_NFPT_AAR","NLD_NFPT_AMAT","NLD_NFPT_AMMG","NLD_NFPT_AR","NLD_NFPT_CLS","NLD_NFPT_SLA","NLD_NFPT_ENGI","NLD_NFPT_EXPL","NLD_NFPT_GL","NLD_NFPT_JTAC","NLD_NFPT_MAT","NLD_NFPT_MMG","NLD_NFPT_OFF","NLD_NFPT_LAT","NLD_NFPT_SL","NLD_NFPT_TL","NLD_NFPT_UAV"];
+LT_NLD_NFPT_units_weightArray = [];
+LT_NLD_NFPT_car = ["NLD_DST_Fennek","NLD_DST_Fennek_GMG","NLD_DST_Fennek_HMG"];
+LT_NLD_NFPT_car_weightArray = [];
+LT_NLD_NFPT_ifv = ["NLD_DST_CV9035NL"];
+LT_NLD_NFPT_ifv_weightArray = [];
+LT_NLD_NFPT_tank = ["NLD_DST_Leo2"];
+LT_NLD_NFPT_tank_weightArray = [];
+LT_NLD_NFPT_heli = [];
+LT_NLD_NFPT_heli_weightArray = [];
+LT_NLD_NFPT = [LT_NLD_NFPT_units,LT_NLD_NFPT_car,LT_NLD_NFPT_ifv,LT_NLD_NFPT_tank,LT_NLD_NFPT_heli];
+LT_NLD_NFPT_weights = [];
+
+// NATO MTP, NATO Pacific
+LT_NATO_MTP_units = ["B_Soldier_A_F","B_soldier_AR_F","B_medic_F","B_engineer_F","B_soldier_exp_F","B_Soldier_GL_F","B_HeavyGunner_F","B_soldier_M_F","B_soldier_AA_F","B_soldier_AT_F","B_officer_F","B_soldier_repair_F","B_Soldier_F","B_soldier_LAT_F","B_Sharpshooter_F","B_Soldier_SL_F","B_Soldier_TL_F"];
+LT_NATO_MTP_units_weightArray = [];
+LT_NATO_MTP_car = ["B_MRAP_01_F","B_MRAP_01_gmg_F","B_MRAP_01_hmg_F","B_LSV_01_armed_F","B_LSV_01_unarmed_F","B_Quadbike_01_F","B_Truck_01_transport_F","B_Truck_01_transport_F","B_Truck_01_Repair_F","B_Truck_01_box_F","B_Truck_01_ammo_F","B_Truck_01_mover_F"];
+LT_NATO_MTP_car_weightArray = [];
+LT_NATO_MTP_ifv = ["B_APC_Wheeled_01_cannon_F","B_APC_Tracked_01_rcws_F","B_APC_Tracked_01_CRV_F","B_APC_Tracked_01_AA_F"];
+LT_NATO_MTP_ifv_weightArray = [];
+LT_NATO_MTP_tank = ["CUP_B_Challenger2_NATO","B_MBT_01_cannon_F","B_MBT_01_TUSK_F"];
+LT_NATO_MTP_tank_weightArray = [];
+LT_NATO_MTP_heli = ["B_Heli_Light_01_dynamicLoadout_F","DEGA_Apache_AH1_Block_II_BAF","B_Heli_Light_01_F","B_Heli_Attack_01_dynamicLoadout_F","B_Heli_Transport_01_F"];
+LT_NATO_MTP_heli_weightArray = [];
+LT_NATO_MTP = [LT_NATO_MTP_units,LT_NATO_MTP_car,LT_NATO_MTP_ifv,LT_NATO_MTP_tank,LT_NATO_MTP_heli];
+LT_NATO_MTP_weights = [];
+
+LT_NATO_PAC_units = ["B_T_Soldier_A_F","B_T_Soldier_AAR_F","B_T_Soldier_AR_F","B_T_Medic_F","B_T_Engineer_F","B_T_Soldier_AAT_F","B_T_Soldier_AAA_F","B_T_Soldier_Exp_F","B_T_Soldier_GL_F","B_T_soldier_M_F","B_T_Soldier_AA_F","B_T_Soldier_AT_F","B_T_Officer_F","B_T_Soldier_Repair_F","B_T_Soldier_F","B_T_Soldier_LAT_F","B_T_Soldier_SL_F","B_T_Soldier_TL_F","B_T_Soldier_UAV_F"];
+LT_NATO_PAC_units_weightArray = [];
+LT_NATO_PAC_car = ["B_T_Truck_01_mover_F","B_T_Truck_01_box_F","B_T_Truck_01_Repair_F","B_T_Truck_01_transport_F","CUP_B_HMMWV_Unarmed_NATO_T","CUP_B_HMMWV_Ambulance_NATO_T","CUP_B_HMMWV_Crows_M2_NATO_T","CUP_B_HMMWV_Crows_MK19_NATO_T","CUP_B_HMMWV_M2_GPK_NATO_T","CUP_B_HMMWV_M2_NATO_T","CUP_B_HMMWV_MK19_NATO_T","CUP_B_HMMWV_SOV_M2_NATO_T","CUP_B_HMMWV_SOV_NATO_T","CUP_B_HMMWV_TOW_NATO_T","CUP_B_HMMWV_Transport_NATO_T","CUP_B_HMMWV_Transport_NATO_T","B_T_MRAP_01_F","B_T_MRAP_01_hmg_F","B_T_LSV_01_armed_F","B_T_LSV_01_unarmed_F","B_T_Quadbike_01_F"];
+LT_NATO_PAC_car_weightArray = [];
+LT_NATO_PAC_ifv = ["B_T_APC_Wheeled_01_cannon_F","CUP_B_M2Bradley_NATO_T","CUP_B_M2A3Bradley_NATO_T","B_T_APC_Tracked_01_rcws_F","B_T_APC_Tracked_01_CRV_F","B_T_APC_Tracked_01_AA_F","CUP_B_HMMWV_Avenger_NATO_T","CUP_B_M6LineBacker_NATO_T"];
+LT_NATO_PAC_ifv_weightArray = [];
+LT_NATO_PAC_tank = ["CUP_B_M1A1_NATO_T","B_T_MBT_01_TUSK_F","B_T_MBT_01_cannon_F"];
+LT_NATO_PAC_tank_weightArray = [];
+LT_NATO_PAC_heli = ["B_Heli_Light_01_dynamicLoadout_F","DEGA_Apache_AH1_Block_II_BAF","B_Heli_Light_01_F","B_Heli_Attack_01_dynamicLoadout_F","B_Heli_Transport_01_F"];
+LT_NATO_PAC_heli_weightArray = [];
+LT_NATO_PAC = [LT_NATO_PAC_units,LT_NATO_PAC_car,LT_NATO_PAC_ifv,LT_NATO_PAC_tank,LT_NATO_PAC_heli];
+LT_NATO_PAC_weights = [];
+
+// USA
