@@ -283,7 +283,7 @@ if (_activated) then {
 				_timeArray = _wavetime splitstring ",";
 				_timeMin = parsenumber (_timeArray select 0);
 				_timeMax = parsenumber (_timeArray select 1);
-				_wavetimernd = random [_timeMin, _timeMax - _timeMin, _timeMax];
+				_wavetimernd = random [_timeMin, (_timeMax + _timeMin) / 2, _timeMax];
 				sleep _wavetimernd;
 			} else {
 				if (_wavetime == "-1") then {
