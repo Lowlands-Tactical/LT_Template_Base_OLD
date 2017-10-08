@@ -5,7 +5,7 @@ _pos = _this select 1;
 _side = if (typename _p == "STRING") then {
   _p;
   } else {
-  if ((str (side _p)) == "GUER") then {"independent"} else {str (side _p)};
+  if ((str (side _p)) == "GUER") then {"Independent"} else {str (side _p)};
 };
 
 // create parachute

@@ -4,7 +4,7 @@ _cfg 			= getNumber (configFile >> "CfgVehicles" >> (typeof _vehicle) >> "Side")
 _sideParam = switch (_cfg) do {
 	case 0: {"EAST"};
 	case 1: {"WEST"};
-	case 2: {"independent"};
+	case 2: {"Independent"};
 	default {"WEST"};
 };
 _side			= param [2, _sideParam];
@@ -136,7 +136,7 @@ if !(isNil "LT_wpn_var_BLUFOR" || isNil "LT_wpn_var_OPFOR"|| isNil "LT_wpn_var_G
 				waitUntil {scriptDone _handle};
 			};
 		};
-		case "independent": {
+		case "Independent": {
 			if !(LT_wpn_var_GUER == "None") then {
 				_handle = execVM LT_wpn_var_GUER;
 				waitUntil {scriptDone _handle};
