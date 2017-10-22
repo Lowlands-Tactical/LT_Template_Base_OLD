@@ -325,6 +325,7 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_morphine,4];
 		_vehicle addItemCargoGlobal [_epinephrine,4];
 		_vehicle addItemCargoGlobal [_gps, 1];
+		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
 // CARGO: TRUCK - room for 50 weapons and 200 cargo items
@@ -419,6 +420,7 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,4];
 		_vehicle addItemCargoGlobal [_morphine,8];
 		_vehicle addItemCargoGlobal [_epinephrine,8];
+		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
 // CRATE: Medium, ammo for 1 squad
@@ -449,6 +451,7 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,8];
 		_vehicle addItemCargoGlobal [_morphine,12];
 		_vehicle addItemCargoGlobal [_epinephrine,12];
+		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
 // CRATE: Large, ammo for 1 platoon
@@ -479,6 +482,7 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,20];
 		_vehicle addItemCargoGlobal [_morphine,35];
 		_vehicle addItemCargoGlobal [_epinephrine,35];
+		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 	case "empty":
 	{
