@@ -122,6 +122,7 @@ if !(isNil "LT_wpn_var_BLUFOR" || isNil "LT_wpn_var_OPFOR"|| isNil "LT_wpn_var_G
 	lt_template_bagmtrag       	=	nil	;
 	lt_template_baghsamg       	=	nil	;
 	lt_template_baghsamag      	=	nil	;
+	lt_template_respawn         = nil;
 
 	switch (_side) do {
 		case "WEST": {
@@ -293,6 +294,7 @@ _APmine2 = if (isNil "lt_template_APmine2") then {"APERSMine_Range_Mag"} else {l
 
 _disposableLaunchers = [] call LT_fnc_isLauncherDisposable;
 
+
 switch (_role) do {
 // CARGO: CAR - room for 10 weapons and 50 cargo items
 	case "v_car":
@@ -321,6 +323,7 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,2];
 		_vehicle addItemCargoGlobal [_morphine,4];
 		_vehicle addItemCargoGlobal [_epinephrine,4];
+		_vehicle addItemCargoGlobal [_gps, 1];
 	};
 
 // CARGO: TRUCK - room for 50 weapons and 200 cargo items
@@ -351,6 +354,8 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,4];
 		_vehicle addItemCargoGlobal [_morphine,8];
 		_vehicle addItemCargoGlobal [_epinephrine,8];
+		_vehicle addItemCargoGlobal [_gps, 1];
+		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
 // CARGO: IFV - room for 10 weapons and 100 cargo items
@@ -381,6 +386,8 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,3];
 		_vehicle addItemCargoGlobal [_morphine,6];
 		_vehicle addItemCargoGlobal [_epinephrine,6];
+		_vehicle addItemCargoGlobal [_gps, 1];
+		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
 // CRATE: Small, ammo for 1 fireteam
