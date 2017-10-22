@@ -294,6 +294,7 @@ _APmine2 = if (isNil "lt_template_APmine2") then {"APERSMine_Range_Mag"} else {l
 
 _disposableLaunchers = [] call LT_fnc_isLauncherDisposable;
 
+_respawn = if (isNil "lt_template_respawn") then {"B_Patrol_Respawn_bag_F"} else {lt_template_respawn};
 
 switch (_role) do {
 // CARGO: CAR - room for 10 weapons and 50 cargo items
