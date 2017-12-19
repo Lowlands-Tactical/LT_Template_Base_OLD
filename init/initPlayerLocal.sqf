@@ -14,5 +14,5 @@ if (LT_PermaDeath == 1) then {
   // ["west", "east", "resistance", "civ"] call acre_api_fnc_babelSetSpokenLanguages;
   // [true] call acre_api_fnc_setSpectator;
   [player, true] call TFAR_fnc_forceSpectator;
-
+  ["Initialize", [player, [], true, true, true, true, true, true, true, true]] call BIS_fnc_EGSpectator;
 };
