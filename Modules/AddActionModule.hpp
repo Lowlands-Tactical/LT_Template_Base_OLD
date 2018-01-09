@@ -133,7 +133,7 @@ class LT_AddActionModule: Module_F
 		class LT_AddActionShortCut
 		{
 			displayName = "Key binding";
-			description = "One of the key names defined in bin.pbo (e.g. 'moveForward'). Adding available shortcut will bind corresponding keyboard key to this action. Shortcut availability can be tested with inputAction command. Default value: """;
+			description = "One of the key names defined in bin.pbo (e.g. 'moveForward'). Adding available shortcut will bind corresponding keyboard key to this action. Shortcut availability can be tested with inputAction command.";
 			typeName = "STRING";
 			defaultValue = "";
 		};
