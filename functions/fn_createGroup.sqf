@@ -9,6 +9,7 @@ _grp = createGroup _side;
 
 for "_i" from 1 to _amount do {
   ( _units call BIS_fnc_selectRandom ) createUnit [_pos,_grp];
+  sleep 0.3;
 };
 
 _grp
