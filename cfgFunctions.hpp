@@ -15,6 +15,7 @@ class cfgFunctions
       class changeVest {};
       class changeUniform {};
       class checkClassExist {};
+      class deleteUnits {};
       class setItems {};
       class setVehicleGear {};
       class createGroup {};
@@ -43,7 +44,7 @@ class cfgFunctions
       file = "\lt_template_base\functions\autozone";
       class autozone {};
       class autozoneWrapper {};
-	  class autozoneWrapper_v1_5 {};
+	    class autozoneWrapper_v1_5 {};
     };
     class ModuleDefense
     {
@@ -61,6 +62,12 @@ class cfgFunctions
     {
       file = "\lt_template_base\functions\CleanUp";
       class cleanUp {};
+    };
+    class UnitSpawner
+    {
+      file = "\lt_template_base\functions\UnitSpawner";
+      class UnitSpawnerModuleWrapper;
+      class UnitSpawner;
     };
   	class Zeus
   	{
