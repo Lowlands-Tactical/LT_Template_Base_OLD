@@ -46,7 +46,7 @@ _onActVeh = format [
 ];
 
 // Initialise waves
-for "_i" from 0 to _wavesAmnt do {
+for "_i" from 0 to _waves do {
 
 	// Send wave id
 	_logic setVariable ["LT_UnitSpawnerWave", [(_i + 1), _logic], true];
