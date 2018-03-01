@@ -63,6 +63,16 @@ class cfgFunctions
       file = "\lt_template_base\functions\CleanUp";
       class cleanUp {};
     };
+    class TownSweep
+    {
+      file = "\lt_template_base\functions\TownSweep";
+      class town_init {};
+      class town_select {};
+      class town_decrease {};
+      class town_increase {};
+      class town_populate {};
+      class town_populateCity {};
+    };
     class UnitSpawner
     {
       file = "\lt_template_base\functions\UnitSpawner";
