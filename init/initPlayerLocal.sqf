@@ -4,6 +4,8 @@ waitUntil {!isNil "LT_PermaDeath"};
 
 diag_log format ["Template Base Permadeath = %2 is pubvarred at %1", time, LT_PermaDeath];
 
+if ("lt_markers" call BIS_fnc_getParamValue == 1) then { execVM "\lt_template_base\scripts\QS_icons.sqf"; };
+
 waitUntil {!isNull player};
 uiSleep 5;
 
