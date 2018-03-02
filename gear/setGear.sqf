@@ -43,7 +43,6 @@ if (hasInterface) then {
 
 		_disposableLaunchers = [] call LT_fnc_isLauncherDisposable;
 
-
 		// ADD UNIVERSAL ITEMS
 		// Add items universal to all units of this faction
 
@@ -98,8 +97,10 @@ if (hasInterface) then {
 				_unit addmagazines [_smokegrenade,2];
 				_unit addmagazines [_smokegrenadegreen,2];
 				_unit addWeapon _rangefinder;
-				_unit addItem _gps;
-				_unit assignItem _gps;
+				//_unit addItem _gps;
+				//_unit assignItem _gps;
+        _unit addItem _uavterminal;
+        _unit assignItem _uavterminal;
 
 				if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 				(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
@@ -125,8 +126,10 @@ if (hasInterface) then {
 				_unit addmagazines [_smokegrenade,2];
 				_unit addmagazines [_smokegrenadegreen,2];
 				_unit addWeapon _rangefinder;
-				_unit addItem _gps;
-				_unit assignItem _gps;
+//				_unit addItem _gps;
+//				_unit assignItem _gps;
+        _unit addItem _uavterminal;
+        _unit assignItem _uavterminal;
 
 				if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 				(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
@@ -800,7 +803,7 @@ if (hasInterface) then {
 				_unit addHandgunItem _x;
 			} foreach _hg_attachments;
 		};
-		
+
 		// NVG
 		_nvg = if (isNil "lt_template_nvg") then {"ACE_NVG_Wide"} else {lt_template_nvg};
 		_nvgLinked = hmd _unit;

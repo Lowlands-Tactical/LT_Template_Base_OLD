@@ -92,7 +92,14 @@ _bloodbags = if (isNil "lt_template_bloodbags" ) then {"ACE_bloodIV"} else {lt_t
 _nvg = if (isNil "lt_template_nvg") then {"ACE_NVG_Wide"} else {lt_template_nvg};
 
 // UAV Terminal
-_uavterminal = if (isNil "lt_template_uavterminal") then {"B_UavTerminal"} else {lt_template_uavterminal};	  // BLUFOR - FIA
+// _uavterminal = if (isNil "lt_template_uavterminal") then {"B_UavTerminal"} else {lt_template_uavterminal};
+diag_log format["Player Side: %1", side player];
+_uavterminal = switch (side player) do {
+  case west: {"B_UavTerminal";};
+  case east: {"O_UavTerminal";};
+  case independent: {"I_UavTerminal";};
+};
+diag_log format["UAV Terminal: %1", _uavterminal];
 
 // Chemlights
 _chemgreen =  if (isNil "lt_template_chemgreen") then {"Chemlight_green"} else {lt_template_chemgreen};
