@@ -7,7 +7,7 @@ if (hasInterface) then {
 	};
 
 	_constraint 	= if (typename (_lt_camo_var_array select 0) == "ARRAY") then {selectRandom (_lt_camo_var_array select 0)} else {_lt_camo_var_array select 0};
-	// _pack	= _lt_camo_var_array select 2;
+	_pack	= _lt_camo_var_array select 2;
 	_tfrpack 	= _lt_camo_var_array select 4;
 
 	// Only execute this when we want it to run.
@@ -19,11 +19,15 @@ if (hasInterface) then {
 
 	diag_log format["TFR is on with the role: %1",_role];
 
+  // FUCKN WAIT OR ELSE NO WORKY
+  waitUntil { ([] call acre_api_fnc_isInitialized) };
+  sleep 10;
+
 	switch (lt_tfr_var) do {
 
 		case "0": {
 		 	if ( _role in _roles ) then {
-				null = [player,"tf_rt1523g_green"] call lt_fnc_changeBackpack;
+				null = [player,_pack] call lt_fnc_changeBackpack;
 			};
 		};
 
@@ -32,53 +36,45 @@ if (hasInterface) then {
 		  publicVariable "tf_no_auto_long_range_radio";
 
 		  if (_constraint != "None" and _role in _roles) then {
-			  null = if (typename _tfrpack == "ARRAY")then {[player, selectRandom _tfrpack] call lt_fnc_changeBackpack} else {[player, _tfrpack] call lt_fnc_changeBackpack;};
-			  // player addItemToVest "ACRE_PRC152";
+			  player addItemToVest "ACRE_PRC152";
 			};
 		};
 
 		// No Radio
 		case "2": {
-			tf_no_auto_long_range_radio = true;
-			TF_give_personal_radio_to_regular_soldier = false;
-			TF_give_microdagr_to_soldier = false;
-			// player setVariable ["tf_unable_to_use_radio", true];
-			// _radio = call TFAR_fnc_activeLRRadio;
-			waitUntil { count (player call TFAR_fnc_radiosList) >= 1 };
-			_radio = call TFAR_fnc_activeSwRadio;
-			diag_log format["Radio: %1",_radio];
-			player unassignItem _radio;
-			player removeItem _radio;
+			waitUntil { count ([] call acre_api_fnc_getCurrentRadioList) >= 1 };
+      {
+        _radio = _x;
+        diag_log format["Deleting Radio: %1",_radio];
+  			player removeItem _radio;
+      } forEach ([] call acre_api_fnc_getCurrentRadioList);
 		};
 
 		// Leaders LR Only
 		case "3": {
-			tf_no_auto_long_range_radio = true;
-			TF_give_personal_radio_to_regular_soldier = false;
-			TF_give_microdagr_to_soldier = false;
-			waitUntil { count (player call TFAR_fnc_radiosList) >= 1 };
-			_radio = call TFAR_fnc_activeSwRadio;
-			diag_log format["Radio: %1",_radio];
-			player unassignItem _radio;
-			player removeItem _radio;
+      waitUntil { count ([] call acre_api_fnc_getCurrentRadioList) >= 1 };
+      {
+        _radio = _x;
+        diag_log format["Deleting Radio: %1",_radio];
+  			player removeItem _radio;
+      } forEach ([] call acre_api_fnc_getCurrentRadioList);
 
 			if (_constraint != "None" and _role in _roles) then {
-			  null = if (typename _tfrpack == "ARRAY")then {[player, selectRandom _tfrpack] call lt_fnc_changeBackpack} else {[player, _tfrpack] call lt_fnc_changeBackpack;};
+			  player addItemToVest "ACRE_PRC152";
 			};
 		};
 
 		// Leaders SR Only
 		case "4": {
-			tf_no_auto_long_range_radio = true;
-			TF_give_personal_radio_to_regular_soldier = false;
-			TF_give_microdagr_to_soldier = false;
-			waitUntil { count (player call TFAR_fnc_radiosList) >= 1 };
-			_radio = call TFAR_fnc_activeSwRadio;
-			diag_log format["Radio: %1",_radio];
+      waitUntil { count ([] call acre_api_fnc_getCurrentRadioList) >= 1 };
+      {
+        _radio = _x;
+        diag_log format["Deleting Radio: %1",_radio];
+  			player removeItem _radio;
+      } forEach ([] call acre_api_fnc_getCurrentRadioList);
 
-			if !(_role in _roles) then {
-				player unassignItem _radio;
-				player removeItem _radio;
+			if (_role in _roles) then {
+				player addItemToVest "ACRE_PRC343";
 			};
 		};
 
@@ -86,17 +82,15 @@ if (hasInterface) then {
 		case "5": {
 			_roles = ["co","dc"];
 
-			tf_no_auto_long_range_radio = true;
-			TF_give_personal_radio_to_regular_soldier = false;
-			TF_give_microdagr_to_soldier = false;
-			waitUntil { count (player call TFAR_fnc_radiosList) >= 1 };
-			_radio = call TFAR_fnc_activeSwRadio;
-			diag_log format["Radio: %1",_radio];
-			player unassignItem _radio;
-			player removeItem _radio;
+      waitUntil { count ([] call acre_api_fnc_getCurrentRadioList) >= 1 };
+      {
+        _radio = _x;
+        diag_log format["Deleting Radio: %1",_radio];
+  			player removeItem _radio;
+      } forEach ([] call acre_api_fnc_getCurrentRadioList);
 
 			if (_constraint != "None" and _role in _roles) then {
-			  null = if (typename _tfrpack == "ARRAY")then {[player, selectRandom _tfrpack] call lt_fnc_changeBackpack} else {[player, _tfrpack] call lt_fnc_changeBackpack;};
+			  player addItemToVest "ACRE_PRC152";
 			};
 		};
 
@@ -104,18 +98,15 @@ if (hasInterface) then {
 		case "6": {
 			_roles = ["co","dc"];
 
-			tf_no_auto_long_range_radio = true;
-			TF_give_personal_radio_to_regular_soldier = false;
-			TF_give_microdagr_to_soldier = false;
-			waitUntil { count (player call TFAR_fnc_radiosList) >= 1 };
-			_radio = call TFAR_fnc_activeSwRadio;
-			diag_log format["Radio: %1",_radio];
-			player unassignItem _radio;
-			player removeItem _radio;
+      waitUntil { count ([] call acre_api_fnc_getCurrentRadioList) >= 1 };
+      {
+        _radio = _x;
+        diag_log format["Deleting Radio: %1",_radio];
+  			player removeItem _radio;
+      } forEach ([] call acre_api_fnc_getCurrentRadioList);
 
 			if (_role in _roles) then {
-				player addItem _radio;
-				player assignItem _radio;
+				player addItemToVest "ACRE_PRC343";
 			};
 		};
 
