@@ -36,6 +36,7 @@ if (hasInterface) then {
 		  publicVariable "tf_no_auto_long_range_radio";
 
 		  if (_constraint != "None" and _role in _roles) then {
+        null = if (typename _tfrpack == "ARRAY")then {[player, selectRandom _tfrpack] call lt_fnc_changeBackpack} else {[player, _tfrpack] call lt_fnc_changeBackpack;};
 			  player addItemToVest "ACRE_PRC152";
 			};
 		};
@@ -60,6 +61,7 @@ if (hasInterface) then {
       } forEach ([] call acre_api_fnc_getCurrentRadioList);
 
 			if (_constraint != "None" and _role in _roles) then {
+        null = if (typename _tfrpack == "ARRAY")then {[player, selectRandom _tfrpack] call lt_fnc_changeBackpack} else {[player, _tfrpack] call lt_fnc_changeBackpack;};
 			  player addItemToVest "ACRE_PRC152";
 			};
 		};
@@ -90,6 +92,7 @@ if (hasInterface) then {
       } forEach ([] call acre_api_fnc_getCurrentRadioList);
 
 			if (_constraint != "None" and _role in _roles) then {
+        null = if (typename _tfrpack == "ARRAY")then {[player, selectRandom _tfrpack] call lt_fnc_changeBackpack} else {[player, _tfrpack] call lt_fnc_changeBackpack;};
 			  player addItemToVest "ACRE_PRC152";
 			};
 		};
