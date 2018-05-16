@@ -14,7 +14,7 @@ if (hasInterface) then {
 
 	diag_log format["LT template DEBUG: lt_tfr_var == %1",lt_tfr_var];
 
-	_roles = ["co","dc","ftl"];
+	_roles = ["co","dc","ftl","sn","sp","vc","vd","vg","pp","pcc","pc"];
 	_role = player getVariable ["lt_unit_role","none"];
 
 	diag_log format["TFR is on with the role: %1",_role];
@@ -80,7 +80,7 @@ if (hasInterface) then {
 
 		// Leader LR Only
 		case "5": {
-			_roles = ["co","dc"];
+			_roles = ["co","dc","sn","sp","vc","vd","vg","pp","pcc","pc"];
 
       waitUntil { count ([] call acre_api_fnc_getCurrentRadioList) >= 1 };
       {
@@ -96,7 +96,7 @@ if (hasInterface) then {
 
 		// Leader SR Only
 		case "6": {
-			_roles = ["co","dc"];
+			_roles = ["co","dc","sn","sp","vc","vd","vg","pp","pcc","pc"];
 
       waitUntil { count ([] call acre_api_fnc_getCurrentRadioList) >= 1 };
       {
