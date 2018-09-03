@@ -141,7 +141,7 @@ LT_cup_o_tk_ins = [LT_cup_o_tk_ins_units,LT_cup_o_tk_ins_car,LT_cup_o_tk_ins_ifv
 LT_cup_o_tk_ins_Weights = [LT_cup_o_tk_ins_units_weightArray,LT_cup_o_tk_ins_car_weightArray,LT_cup_o_tk_ins_ifv_weightArray,LT_cup_o_tk_ins_tank_weightArray,LT_cup_o_tk_ins_heli_weightArray];
 
 // Takistan Army
-LT_cup_o_tk_units = ["CUP_O_TK_Soldier","CUP_O_TK_Soldier_GL","CUP_O_TK_Soldier_Backpack","CUP_O_TK_Soldier_AAT","CUP_O_TK_Soldier_AMG","CUP_O_TK_Soldier_LAT","CUP_O_TK_Soldier_AT","CUP_O_TK_Soldier_HAT","CUP_O_TK_Engineer","CUP_O_TK_Soldier_MG","CUP_O_TK_Soldier_AR","CUP_O_TK_Medic","CUP_O_TK_Soldier_SL","CUP_O_TK_Officer","CUP_O_TK_Spotter","CUP_O_TK_Sniper","CUP_O_TK_Sniper_KSVK","CUP_O_TK_Sniper_SVD_Night","CUP_O_TK_Soldier_AKS_Night","CUP_O_TK_Soldier_FNFAL_Night","CUP_O_TK_Soldier_AKS_74_GOSHAWK"];
+LT_cup_o_tk_units = ["CUP_O_TK_Soldier","CUP_O_TK_Soldier_GL","CUP_O_TK_Soldier_Backpack","CUP_O_TK_Soldier_AAT","CUP_O_TK_Soldier_AMG","CUP_O_TK_Soldier_LAT","CUP_O_TK_Soldier_AT","CUP_O_TK_Soldier_HAT","CUP_O_TK_Engineer","CUP_O_TK_Soldier_MG","CUP_O_TK_Soldier_AR","CUP_O_TK_Medic","CUP_O_TK_Soldier_SL","CUP_O_TK_Officer","CUP_O_TK_Spotter","CUP_O_TK_Sniper","CUP_O_TK_Sniper_KSVK"];
 LT_cup_o_tk_units_weightArray = [];
 LT_cup_o_tk_car = ["CUP_O_LR_Transport_TKA","CUP_O_LR_Transport_TKA","CUP_O_LR_SPG9_TKA","CUP_O_UAZ_MG_TKA","CUP_O_UAZ_AGS30_TKA","CUP_O_UAZ_SPG9_TKA","CUP_O_UAZ_METIS_TKA","CUP_O_SUV_TKA"];
 LT_cup_o_tk_car_weightArray = [];
@@ -169,7 +169,7 @@ LT_cup_o_chdkz = [LT_cup_o_chdkz_units,LT_cup_o_chdkz_car,LT_cup_o_chdkz_ifv,LT_
 LT_cup_o_chdkz_Weights = [LT_cup_o_chdkz_units_weightArray,LT_cup_o_chdkz_car_weightArray,LT_cup_o_chdkz_ifv_weightArray,LT_cup_o_chdkz_tank_weightArray,LT_cup_o_chdkz_heli_weightArray];
 
 // Geen Schutter Lange Afstand
-LT_cup_o_sla_units = ["CUP_O_sla_Soldier","CUP_O_sla_Soldier_GL","CUP_O_SLA_Soldier_Backpack","CUP_O_sla_Soldier_AAT","CUP_O_sla_Soldier_AMG","CUP_O_sla_Soldier_LAT","CUP_O_sla_Soldier_AT","CUP_O_sla_Soldier_HAT","CUP_O_sla_Engineer","CUP_O_sla_Soldier_MG","CUP_O_sla_Soldier_AR","CUP_O_sla_Medic","CUP_O_sla_Soldier_SL","CUP_O_sla_Officer","CUP_O_SLA_Spotter","CUP_O_sla_Sniper","CUP_O_sla_Sniper_KSVK","CUP_O_SLA_Sniper_SVD_Night","CUP_O_sla_Soldier_AKS_Night","CUP_O_sla_Soldier_AKS_74_GOSHAWK"];
+LT_cup_o_sla_units = ["CUP_O_sla_Soldier","CUP_O_sla_Soldier_GL","CUP_O_SLA_Soldier_Backpack","CUP_O_sla_Soldier_AAT","CUP_O_sla_Soldier_AMG","CUP_O_sla_Soldier_LAT","CUP_O_sla_Soldier_AT","CUP_O_sla_Soldier_HAT","CUP_O_sla_Engineer","CUP_O_sla_Soldier_MG","CUP_O_sla_Soldier_AR","CUP_O_sla_Medic","CUP_O_sla_Soldier_SL","CUP_O_sla_Officer","CUP_O_SLA_Spotter","CUP_O_sla_Sniper","CUP_O_sla_Sniper_KSVK"];
 LT_cup_o_sla_units_weightArray = [];
 LT_cup_o_sla_car = ["CUP_O_UAZ_Militia_SLA","CUP_O_UAZ_MG_SLA","CUP_O_UAZ_AGS30_SLA","CUP_O_UAZ_SPG9_SLA","CUP_O_UAZ_METIS_SLA"];
 LT_cup_o_sla_car_weightArray = [];
