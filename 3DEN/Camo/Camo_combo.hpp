@@ -128,12 +128,12 @@ class LT_Camo_combo: Title
 				class LT_UK_Forest
 				{
 					text = "[UK] Woodland";
-					data = [["CUP_U_B_BAF_DPM_S1_RolledUp","CUP_U_B_BAF_DPM_S2_UnRolled"],["CUP_V_BAF_Osprey_Mk2_DPM_Soldier1","CUP_V_BAF_Osprey_Mk2_DPM_Soldier2","CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"],"CUP_B_Bergen_BAF",["CUP_H_BAF_Helmet_1_DPM","CUP_H_BAF_Helmet_4_DDPM"],"tf_rt1523g_bwmod"];
+					data = [["CUP_U_B_BAF_DPM_S1_RolledUp","CUP_U_B_BAF_DPM_S2_UnRolled"],["CUP_V_BAF_Osprey_Mk2_DPM_Soldier1","CUP_V_BAF_Osprey_Mk2_DPM_Soldier2","CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"],"CUP_B_Bergen_BAF","CUP_H_BAF_Helmet_1_DPM","tf_rt1523g_bwmod"];
 				};
 				class LT_UK_Desert
 				{
 					text = "[UK] Desert";
-					data = [["CUP_U_B_BAF_DDPM_S1_RolledUp","CUP_U_B_BAF_DDPM_S2_UnRolled"],["CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1","CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2"],"CUP_B_Bergen_BAF",["CUP_H_BAF_Helmet_1_DDPM","CUP_H_BAF_Helmet_4_DDPM"],"tf_rt1523g_sage"];
+					data = [["CUP_U_B_BAF_DDPM_S1_RolledUp","CUP_U_B_BAF_DDPM_S2_UnRolled"],["CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1","CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2"],"CUP_B_Bergen_BAF","CUP_H_BAF_Helmet_4_DDPM","tf_rt1523g_sage"];
 				};
 				class LT_UK_Mountain
 				{
