@@ -1,6 +1,6 @@
 // Faction definitions
 // OPFOR
-LT_opf_f_units = ["O_Soldier_F","O_Soldier_lite_F","O_Soldier_GL_F","O_Soldier_AR_F","O_Soldier_SL_F","O_Soldier_TL_F","O_Soldier_M_F","O_Soldier_LAT_F","O_medic_F","O_Soldier_repair_F","O_Soldier_exp_F","O_Soldier_A_F","O_Soldier_AA_F","O_engineer_F"];
+LT_opf_f_units = ["O_Soldier_F","O_Soldier_lite_F","O_Soldier_GL_F","O_Soldier_AR_F","O_Soldier_SL_F","O_Soldier_TL_F","O_Soldier_M_F","O_Soldier_LAT_F","O_medic_F","O_Soldier_repair_F","O_Soldier_exp_F","O_Soldier_A_F","O_engineer_F"];
 LT_opf_f_units_weightArray = [];
 LT_opf_f_car = ["O_MRAP_02_hmg_F","O_MRAP_02_gmg_F","CUP_O_UAZ_Militia_CSAT","CUP_O_UAZ_MG_CSAT","CUP_O_UAZ_AGS30_CSAT","CUP_O_UAZ_SPG9_CSAT","CUP_O_UAZ_METIS_CSAT"];
 LT_opf_f_car_weightArray = [];
@@ -57,7 +57,7 @@ LT_ind_g_f = [LT_ind_g_f_units,LT_ind_g_f_car,LT_ind_g_f_ifv,LT_ind_g_f_tank,LT_
 LT_ind_g_f_Weights = [LT_ind_g_f_units_weightArray,LT_ind_g_f_car_weightArray,LT_ind_g_f_ifv_weightArray,LT_ind_g_f_tank_weightArray,LT_ind_g_f_heli_weightArray];
 
 // Chinese
-LT_opf_t_f_units = ["O_T_Soldier_A_F","O_T_Medic_F","O_T_Soldier_AR_F","O_T_Engineer_F","O_T_Soldier_Exp_F","O_T_Soldier_GL_F","O_T_Support_GMG_F","O_T_Soldier_UAV_F","O_T_Soldier_universal_F","O_T_Soldier_TL_F","O_T_Soldier_SL_F","O_T_Soldier_LAT_F","O_T_Soldier_F","O_T_Soldier_Repair_F","O_T_Soldier_PG_F","O_T_Officer_F","O_T_Soldier_AT_F","O_T_Soldier_AA_F","O_T_Soldier_M_F"];
+LT_opf_t_f_units = ["O_T_Soldier_A_F","O_T_Medic_F","O_T_Soldier_AR_F","O_T_Engineer_F","O_T_Soldier_Exp_F","O_T_Soldier_GL_F","O_T_Support_GMG_F","O_T_Soldier_UAV_F","O_T_Soldier_universal_F","O_T_Soldier_TL_F","O_T_Soldier_SL_F","O_T_Soldier_LAT_F","O_T_Soldier_F","O_T_Soldier_Repair_F","O_T_Soldier_PG_F","O_T_Officer_F","O_T_Soldier_AT_F","O_T_Soldier_M_F"];
 LT_opf_t_f_units_weightArray = [];
 LT_opf_t_f_car = ["O_T_LSV_02_armed_F","O_T_LSV_02_armed_viper_F","O_T_LSV_02_armed_black_F","O_T_LSV_02_armed_ghex_F","O_T_LSV_02_armed_arid_F","O_T_MRAP_02_hmg_ghex_F","O_T_MRAP_02_gmg_ghex_F"];
 LT_opf_t_f_car_weightArray = [];
@@ -127,7 +127,7 @@ LT_nldo_ua_uaf_95 = [LT_nldo_ua_uaf_95_units,LT_nldo_ua_uaf_95_car,LT_nldo_ua_ua
 LT_nldo_ua_uaf_95_Weights = [LT_nldo_ua_uaf_95_units_weightArray,LT_nldo_ua_uaf_95_car_weightArray,LT_nldo_ua_uaf_95_ifv_weightArray,LT_nldo_ua_uaf_95_tank_weightArray,LT_nldo_ua_uaf_95_heli_weightArray];
 
 // Takistani Militia
-LT_cup_o_tk_ins_units = ["CUP_O_TK_INS_Soldier","CUP_O_TK_INS_Soldier_AAT","CUP_O_TK_INS_Soldier_GL","CUP_O_TK_INS_Soldier_Enfield","CUP_O_TK_INS_Soldier_FNFAL","CUP_O_TK_INS_Soldier_AA","CUP_O_TK_INS_Soldier_AT","CUP_O_TK_INS_Soldier_TL","CUP_O_TK_INS_Sniper","CUP_O_TK_INS_Soldier_AR","CUP_O_TK_INS_Soldier_MG","CUP_O_TK_INS_Guerilla_Medic","CUP_O_TK_INS_Commander","CUP_O_TK_INS_Mechanic","CUP_O_TK_INS_Bomber"];
+LT_cup_o_tk_ins_units = ["CUP_O_TK_INS_Soldier","CUP_O_TK_INS_Soldier_AAT","CUP_O_TK_INS_Soldier_GL","CUP_O_TK_INS_Soldier_Enfield","CUP_O_TK_INS_Soldier_FNFAL","CUP_O_TK_INS_Soldier_AT","CUP_O_TK_INS_Soldier_TL","CUP_O_TK_INS_Sniper","CUP_O_TK_INS_Soldier_AR","CUP_O_TK_INS_Soldier_MG","CUP_O_TK_INS_Guerilla_Medic","CUP_O_TK_INS_Commander","CUP_O_TK_INS_Mechanic","CUP_O_TK_INS_Bomber"];
 LT_cup_o_tk_ins_units_weightArray = [];
 LT_cup_o_tk_ins_car = ["CUP_O_LR_Transport_TKM","CUP_O_LR_MG_TKM","CUP_O_LR_SPG9_TKM"];
 LT_cup_o_tk_ins_car_weightArray = [];
@@ -141,7 +141,7 @@ LT_cup_o_tk_ins = [LT_cup_o_tk_ins_units,LT_cup_o_tk_ins_car,LT_cup_o_tk_ins_ifv
 LT_cup_o_tk_ins_Weights = [LT_cup_o_tk_ins_units_weightArray,LT_cup_o_tk_ins_car_weightArray,LT_cup_o_tk_ins_ifv_weightArray,LT_cup_o_tk_ins_tank_weightArray,LT_cup_o_tk_ins_heli_weightArray];
 
 // Takistan Army
-LT_cup_o_tk_units = ["CUP_O_TK_Soldier","CUP_O_TK_Soldier_GL","CUP_O_TK_Soldier_Backpack","CUP_O_TK_Soldier_AAT","CUP_O_TK_Soldier_AMG","CUP_O_TK_Soldier_LAT","CUP_O_TK_Soldier_AT","CUP_O_TK_Soldier_HAT","CUP_O_TK_Soldier_AA","CUP_O_TK_Engineer","CUP_O_TK_Soldier_MG","CUP_O_TK_Soldier_AR","CUP_O_TK_Medic","CUP_O_TK_Soldier_SL","CUP_O_TK_Officer","CUP_O_TK_Spotter","CUP_O_TK_Sniper","CUP_O_TK_Sniper_KSVK","CUP_O_TK_Sniper_SVD_Night","CUP_O_TK_Soldier_AKS_Night","CUP_O_TK_Soldier_FNFAL_Night","CUP_O_TK_Soldier_AKS_74_GOSHAWK"];
+LT_cup_o_tk_units = ["CUP_O_TK_Soldier","CUP_O_TK_Soldier_GL","CUP_O_TK_Soldier_Backpack","CUP_O_TK_Soldier_AAT","CUP_O_TK_Soldier_AMG","CUP_O_TK_Soldier_LAT","CUP_O_TK_Soldier_AT","CUP_O_TK_Soldier_HAT","CUP_O_TK_Engineer","CUP_O_TK_Soldier_MG","CUP_O_TK_Soldier_AR","CUP_O_TK_Medic","CUP_O_TK_Soldier_SL","CUP_O_TK_Officer","CUP_O_TK_Spotter","CUP_O_TK_Sniper","CUP_O_TK_Sniper_KSVK","CUP_O_TK_Sniper_SVD_Night","CUP_O_TK_Soldier_AKS_Night","CUP_O_TK_Soldier_FNFAL_Night","CUP_O_TK_Soldier_AKS_74_GOSHAWK"];
 LT_cup_o_tk_units_weightArray = [];
 LT_cup_o_tk_car = ["CUP_O_LR_Transport_TKA","CUP_O_LR_Transport_TKA","CUP_O_LR_SPG9_TKA","CUP_O_UAZ_MG_TKA","CUP_O_UAZ_AGS30_TKA","CUP_O_UAZ_SPG9_TKA","CUP_O_UAZ_METIS_TKA","CUP_O_SUV_TKA"];
 LT_cup_o_tk_car_weightArray = [];
@@ -155,7 +155,7 @@ LT_cup_o_tk = [LT_cup_o_tk_units,LT_cup_o_tk_car,LT_cup_o_tk_ifv,LT_cup_o_tk_tan
 LT_cup_o_tk_Weights = [LT_cup_o_tk_units_weightArray,LT_cup_o_tk_car_weightArray,LT_cup_o_tk_ifv_weightArray,LT_cup_o_tk_tank_weightArray,LT_cup_o_tk_heli_weightArray];
 
 // Stje-Daki
-LT_cup_o_chdkz_units = ["CUP_O_INS_Soldier_AK74","CUP_O_INS_Soldier_Engineer","CUP_O_INS_Soldier","CUP_O_INS_Soldier_Ammo","CUP_O_INS_Soldier_GL","CUP_O_INS_Officer","CUP_O_INS_Medic","CUP_O_INS_Commander","CUP_O_INS_Soldier_AR","CUP_O_INS_Soldier_MG","CUP_O_INS_Soldier_AT","CUP_O_INS_Soldier_AA","CUP_O_INS_Sniper","CUP_O_INS_Soldier_Exp","CUP_O_INS_Saboteur","CUP_O_INS_Worker2","CUP_O_INS_Woodlander1","CUP_O_INS_Woodlander2","CUP_O_INS_Woodlander3","CUP_O_INS_Villager3","CUP_O_INS_Villager4"];
+LT_cup_o_chdkz_units = ["CUP_O_INS_Soldier_AK74","CUP_O_INS_Soldier_Engineer","CUP_O_INS_Soldier","CUP_O_INS_Soldier_Ammo","CUP_O_INS_Soldier_GL","CUP_O_INS_Officer","CUP_O_INS_Medic","CUP_O_INS_Commander","CUP_O_INS_Soldier_AR","CUP_O_INS_Soldier_MG","CUP_O_INS_Soldier_AT","CUP_O_INS_Sniper","CUP_O_INS_Soldier_Exp","CUP_O_INS_Saboteur","CUP_O_INS_Worker2","CUP_O_INS_Woodlander1","CUP_O_INS_Woodlander2","CUP_O_INS_Woodlander3","CUP_O_INS_Villager3","CUP_O_INS_Villager4"];
 LT_cup_o_chdkz_units_weightArray = [];
 LT_cup_o_chdkz_car = ["CUP_O_UAZ_MG_CHDKZ","CUP_O_UAZ_AGS30_CHDKZ","CUP_O_UAZ_SPG9_CHDKZ","CUP_O_UAZ_METIS_CHDKZ","CUP_O_Datsun_PK_Random"];
 LT_cup_o_chdkz_car_weightArray = [];
@@ -169,7 +169,7 @@ LT_cup_o_chdkz = [LT_cup_o_chdkz_units,LT_cup_o_chdkz_car,LT_cup_o_chdkz_ifv,LT_
 LT_cup_o_chdkz_Weights = [LT_cup_o_chdkz_units_weightArray,LT_cup_o_chdkz_car_weightArray,LT_cup_o_chdkz_ifv_weightArray,LT_cup_o_chdkz_tank_weightArray,LT_cup_o_chdkz_heli_weightArray];
 
 // Geen Schutter Lange Afstand
-LT_cup_o_sla_units = ["CUP_O_sla_Soldier","CUP_O_sla_Soldier_GL","CUP_O_SLA_Soldier_Backpack","CUP_O_sla_Soldier_AAT","CUP_O_sla_Soldier_AMG","CUP_O_sla_Soldier_LAT","CUP_O_sla_Soldier_AT","CUP_O_sla_Soldier_HAT","CUP_O_sla_Soldier_AA","CUP_O_sla_Engineer","CUP_O_sla_Soldier_MG","CUP_O_sla_Soldier_AR","CUP_O_sla_Medic","CUP_O_sla_Soldier_SL","CUP_O_sla_Officer","CUP_O_SLA_Spotter","CUP_O_sla_Sniper","CUP_O_sla_Sniper_KSVK","CUP_O_SLA_Sniper_SVD_Night","CUP_O_sla_Soldier_AKS_Night","CUP_O_sla_Soldier_AKS_74_GOSHAWK"];
+LT_cup_o_sla_units = ["CUP_O_sla_Soldier","CUP_O_sla_Soldier_GL","CUP_O_SLA_Soldier_Backpack","CUP_O_sla_Soldier_AAT","CUP_O_sla_Soldier_AMG","CUP_O_sla_Soldier_LAT","CUP_O_sla_Soldier_AT","CUP_O_sla_Soldier_HAT","CUP_O_sla_Engineer","CUP_O_sla_Soldier_MG","CUP_O_sla_Soldier_AR","CUP_O_sla_Medic","CUP_O_sla_Soldier_SL","CUP_O_sla_Officer","CUP_O_SLA_Spotter","CUP_O_sla_Sniper","CUP_O_sla_Sniper_KSVK","CUP_O_SLA_Sniper_SVD_Night","CUP_O_sla_Soldier_AKS_Night","CUP_O_sla_Soldier_AKS_74_GOSHAWK"];
 LT_cup_o_sla_units_weightArray = [];
 LT_cup_o_sla_car = ["CUP_O_UAZ_Militia_SLA","CUP_O_UAZ_MG_SLA","CUP_O_UAZ_AGS30_SLA","CUP_O_UAZ_SPG9_SLA","CUP_O_UAZ_METIS_SLA"];
 LT_cup_o_sla_car_weightArray = [];
@@ -183,7 +183,7 @@ LT_cup_o_sla = [LT_cup_o_sla_units,LT_cup_o_sla_car,LT_cup_o_sla_ifv,LT_cup_o_sl
 LT_cup_o_sla_Weights = [LT_cup_o_sla_units_weightArray,LT_cup_o_sla_car_weightArray,LT_cup_o_sla_ifv_weightArray,LT_cup_o_sla_tank_weightArray,LT_cup_o_sla_heli_weightArray];
 
 // Ruskies EMR
-LT_cup_o_ru_emr_units = ["CUP_O_RU_Soldier_EMR","CUP_O_RU_Soldier_Saiga_EMR","CUP_O_RU_Soldier_GL_EMR","CUP_O_RU_Soldier_SL_EMR","CUP_O_RU_Soldier_TL_EMR","CUP_O_RU_Soldier_MG_EMR","CUP_O_RU_Soldier_AR_EMR","CUP_O_RU_Soldier_LAT_EMR","CUP_O_RU_Soldier_AT_EMR","CUP_O_RU_Soldier_HAT_EMR","CUP_O_RU_Soldier_AA_EMR","CUP_O_RU_Sniper_EMR","CUP_O_RU_Sniper_KSVK_EMR","CUP_O_RU_Spotter_EMR","CUP_O_RU_Soldier_Marksman_EMR","CUP_O_RU_Medic_EMR","CUP_O_RU_Engineer_EMR","CUP_O_RU_Explosive_Specialist_EMR","CUP_O_RU_Soldier_Light_EMR","CUP_O_RU_Officer_EMR"];
+LT_cup_o_ru_emr_units = ["CUP_O_RU_Soldier_EMR","CUP_O_RU_Soldier_Saiga_EMR","CUP_O_RU_Soldier_GL_EMR","CUP_O_RU_Soldier_SL_EMR","CUP_O_RU_Soldier_TL_EMR","CUP_O_RU_Soldier_MG_EMR","CUP_O_RU_Soldier_AR_EMR","CUP_O_RU_Soldier_LAT_EMR","CUP_O_RU_Soldier_AT_EMR","CUP_O_RU_Soldier_HAT_EMR","CUP_O_RU_Sniper_EMR","CUP_O_RU_Sniper_KSVK_EMR","CUP_O_RU_Spotter_EMR","CUP_O_RU_Soldier_Marksman_EMR","CUP_O_RU_Medic_EMR","CUP_O_RU_Engineer_EMR","CUP_O_RU_Explosive_Specialist_EMR","CUP_O_RU_Soldier_Light_EMR","CUP_O_RU_Officer_EMR"];
 LT_cup_o_ru_emr_units_weightArray = [];
 LT_cup_o_ru_emr_car = ["CUP_O_UAZ_MG_RU","CUP_O_UAZ_AGS30_RU","CUP_O_UAZ_SPG9_RU","CUP_O_UAZ_METIS_RU"];
 LT_cup_o_ru_emr_car_weightArray = [];
@@ -197,7 +197,7 @@ LT_cup_o_ru_emr = [LT_cup_o_ru_emr_units,LT_cup_o_ru_emr_car,LT_cup_o_ru_emr_ifv
 LT_cup_o_ru_emr_Weights = [LT_cup_o_ru_emr_units_weightArray,LT_cup_o_ru_emr_car_weightArray,LT_cup_o_ru_emr_ifv_weightArray,LT_cup_o_ru_emr_tank_weightArray,LT_cup_o_ru_emr_heli_weightArray];
 
 // Ruskies FLORA
-LT_cup_o_ru_flora_units = ["CUP_O_RU_Soldier_VDV","CUP_O_RU_Soldier_Saiga_VDV","CUP_O_RU_Soldier_GL_VDV","CUP_O_RU_Soldier_SL_VDV","CUP_O_RU_Soldier_TL_VDV","CUP_O_RU_Soldier_MG_VDV","CUP_O_RU_Soldier_AR_VDV","CUP_O_RU_Soldier_LAT_VDV","CUP_O_RU_Soldier_AT_VDV","CUP_O_RU_Soldier_HAT_VDV","CUP_O_RU_Soldier_AA_VDV","CUP_O_RU_Sniper_VDV","CUP_O_RU_Sniper_KSVK_VDV","CUP_O_RU_Spotter_VDV","CUP_O_RU_Soldier_Marksman_VDV","CUP_O_RU_Medic_VDV","CUP_O_RU_Engineer_VDV","CUP_O_RU_Explosive_Specialist_VDV","CUP_O_RU_Soldier_Light_VDV","CUP_O_RU_Officer_VDV","CUP_O_RU_Commander_VDV"];
+LT_cup_o_ru_flora_units = ["CUP_O_RU_Soldier_VDV","CUP_O_RU_Soldier_Saiga_VDV","CUP_O_RU_Soldier_GL_VDV","CUP_O_RU_Soldier_SL_VDV","CUP_O_RU_Soldier_TL_VDV","CUP_O_RU_Soldier_MG_VDV","CUP_O_RU_Soldier_AR_VDV","CUP_O_RU_Soldier_LAT_VDV","CUP_O_RU_Soldier_AT_VDV","CUP_O_RU_Soldier_HAT_VDV","CUP_O_RU_Sniper_VDV","CUP_O_RU_Sniper_KSVK_VDV","CUP_O_RU_Spotter_VDV","CUP_O_RU_Soldier_Marksman_VDV","CUP_O_RU_Medic_VDV","CUP_O_RU_Engineer_VDV","CUP_O_RU_Explosive_Specialist_VDV","CUP_O_RU_Soldier_Light_VDV","CUP_O_RU_Officer_VDV","CUP_O_RU_Commander_VDV"];
 LT_cup_o_ru_flora_units_weightArray = [];
 LT_cup_o_ru_flora_car = ["CUP_O_UAZ_MG_RU","CUP_O_UAZ_AGS30_RU","CUP_O_UAZ_SPG9_RU","CUP_O_UAZ_METIS_RU"];
 LT_cup_o_ru_flora_car_weightArray = [];
@@ -211,7 +211,7 @@ LT_cup_o_ru_flora = [LT_cup_o_ru_flora_units,LT_cup_o_ru_flora_car,LT_cup_o_ru_f
 LT_cup_o_ru_flora_Weights = [LT_cup_o_ru_flora_units_weightArray,LT_cup_o_ru_flora_car_weightArray,LT_cup_o_ru_flora_ifv_weightArray,LT_cup_o_ru_flora_tank_weightArray,LT_cup_o_ru_flora_heli_weightArray];
 
 // NAPA
-LT_cup_i_napa_units = ["CUP_I_GUE_Soldier_AKSU","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AKS74","CUP_I_GUE_Soldier_GL","CUP_I_GUE_Officer","CUP_I_GUE_Soldier_AT","CUP_I_GUE_Soldier_AA","CUP_I_GUE_Soldier_AR","CUP_I_GUE_Soldier_MG","CUP_I_GUE_Saboteur","CUP_I_GUE_Medic","CUP_I_GUE_Engineer","CUP_I_GUE_Ammobearer","CUP_I_GUE_Soldier_AA2","CUP_I_GUE_Sniper","CUP_I_GUE_Soldier_Scout","CUP_I_GUE_Commander","CUP_I_GUE_Local","CUP_I_GUE_Woodman","CUP_I_GUE_Gamekeeper","CUP_I_GUE_Forester","CUP_I_GUE_Farmer","CUP_I_GUE_Villager"];
+LT_cup_i_napa_units = ["CUP_I_GUE_Soldier_AKSU","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AKS74","CUP_I_GUE_Soldier_GL","CUP_I_GUE_Officer","CUP_I_GUE_Soldier_AT","CUP_I_GUE_Soldier_AR","CUP_I_GUE_Soldier_MG","CUP_I_GUE_Saboteur","CUP_I_GUE_Medic","CUP_I_GUE_Engineer","CUP_I_GUE_Ammobearer","CUP_I_GUE_Sniper","CUP_I_GUE_Soldier_Scout","CUP_I_GUE_Commander","CUP_I_GUE_Local","CUP_I_GUE_Woodman","CUP_I_GUE_Gamekeeper","CUP_I_GUE_Forester","CUP_I_GUE_Farmer","CUP_I_GUE_Villager"];
 LT_cup_i_napa_units_weightArray = [];
 LT_cup_i_napa_car = ["CUP_I_Datsun_PK","CUP_I_Datsun_PK_Random"];
 LT_cup_i_napa_car_weightArray = [];
@@ -225,7 +225,7 @@ LT_cup_i_napa = [LT_cup_i_napa_units,LT_cup_i_napa_car,LT_cup_i_napa_ifv,LT_cup_
 LT_cup_i_napa_Weights = [LT_cup_i_napa_units_weightArray,LT_cup_i_napa_car_weightArray,LT_cup_i_napa_ifv_weightArray,LT_cup_i_napa_tank_weightArray,LT_cup_i_napa_heli_weightArray];
 
 // RACS
-LT_cup_i_racs_units = ["CUP_I_RACS_Soldier","CUP_I_RACS_Officer","CUP_I_RACS_Medic","CUP_I_RACS_SL","CUP_I_RACS_GL","CUP_I_RACS_MMG","CUP_I_RACS_Soldier_AA","CUP_I_RACS_Soldier_MAT","CUP_I_RACS_Soldier_HAT","CUP_I_RACS_Sniper","CUP_I_RACS_Engineer","CUP_I_RACS_RoyalCommando","CUP_I_RACS_RoyalGuard","CUP_I_RACS_RoyalMarksman","CUP_I_RACS_Urban_Soldier"];
+LT_cup_i_racs_units = ["CUP_I_RACS_Soldier","CUP_I_RACS_Officer","CUP_I_RACS_Medic","CUP_I_RACS_SL","CUP_I_RACS_GL","CUP_I_RACS_MMG","CUP_I_RACS_Soldier_MAT","CUP_I_RACS_Soldier_HAT","CUP_I_RACS_Sniper","CUP_I_RACS_Engineer","CUP_I_RACS_RoyalCommando","CUP_I_RACS_RoyalGuard","CUP_I_RACS_RoyalMarksman","CUP_I_RACS_Urban_Soldier"];
 LT_cup_i_racs_units_weightArray = [];
 LT_cup_i_racs_car = ["CUP_I_LR_Transport_RACS","CUP_I_LR_MG_RACS"];
 LT_cup_i_racs_car_weightArray = [];
@@ -239,7 +239,7 @@ LT_cup_i_racs = [LT_cup_i_racs_units,LT_cup_i_racs_car,LT_cup_i_racs_ifv,LT_cup_
 LT_cup_i_racs_Weights = [LT_cup_i_racs_units_weightArray,LT_cup_i_racs_car_weightArray,LT_cup_i_racs_ifv_weightArray,LT_cup_i_racs_tank_weightArray,LT_cup_i_racs_heli_weightArray];
 
 // Takistani Locals
-LT_cup_i_tk_gue_units = ["CUP_I_TK_GUE_Soldier","CUP_I_TK_GUE_Soldier_AAT","CUP_I_TK_GUE_Soldier_AK_47S","CUP_I_TK_GUE_Soldier_M16A2","CUP_I_TK_GUE_Soldier_GL","CUP_I_TK_GUE_Guerilla_Enfield","CUP_I_TK_GUE_Soldier_AA","CUP_I_TK_GUE_Soldier_AT","CUP_I_TK_GUE_Soldier_HAT","CUP_I_TK_GUE_Soldier_TL","CUP_I_TK_GUE_Sniper","CUP_I_TK_GUE_Soldier_AR","CUP_I_TK_GUE_Soldier_MG","CUP_I_TK_GUE_Guerilla_Medic","CUP_I_TK_GUE_Commander","CUP_I_TK_GUE_Mechanic","CUP_I_TK_GUE_Demo"];
+LT_cup_i_tk_gue_units = ["CUP_I_TK_GUE_Soldier","CUP_I_TK_GUE_Soldier_AAT","CUP_I_TK_GUE_Soldier_AK_47S","CUP_I_TK_GUE_Soldier_M16A2","CUP_I_TK_GUE_Soldier_GL","CUP_I_TK_GUE_Guerilla_Enfield","CUP_I_TK_GUE_Soldier_AT","CUP_I_TK_GUE_Soldier_HAT","CUP_I_TK_GUE_Soldier_TL","CUP_I_TK_GUE_Sniper","CUP_I_TK_GUE_Soldier_AR","CUP_I_TK_GUE_Soldier_MG","CUP_I_TK_GUE_Guerilla_Medic","CUP_I_TK_GUE_Commander","CUP_I_TK_GUE_Mechanic","CUP_I_TK_GUE_Demo"];
 LT_cup_i_tk_gue_units_weightArray = [];
 LT_cup_i_tk_gue_car = ["CUP_I_Datsun_PK_TK","CUP_I_Datsun_PK_TK_Random"];
 LT_cup_i_tk_gue_car_weightArray = [];
@@ -253,7 +253,7 @@ LT_cup_i_tk_gue = [LT_cup_i_tk_gue_units,LT_cup_i_tk_gue_car,LT_cup_i_tk_gue_ifv
 LT_cup_i_tk_gue_Weights = [LT_cup_i_tk_gue_units_weightArray,LT_cup_i_tk_gue_car_weightArray,LT_cup_i_tk_gue_ifv_weightArray,LT_cup_i_tk_gue_tank_weightArray,LT_cup_i_tk_gue_heli_weightArray];
 
 // PMC units
-LT_cup_i_pmc_units = ["CUP_I_PMC_Bodyguard_AA12","CUP_I_PMC_Bodyguard_M4","CUP_I_PMC_Contractor1","CUP_I_PMC_Contractor2","CUP_I_PMC_Medic","CUP_I_PMC_Sniper","CUP_I_PMC_Soldier","CUP_I_PMC_Soldier_AA","CUP_I_PMC_Soldier_AT","CUP_I_PMC_Soldier_GL","CUP_I_PMC_Soldier_GL_M16A2","CUP_I_PMC_Soldier_M4A3","CUP_I_PMC_Soldier_MG","CUP_I_PMC_Soldier_MG_PKM","CUP_I_PMC_Soldier_TL"];
+LT_cup_i_pmc_units = ["CUP_I_PMC_Bodyguard_AA12","CUP_I_PMC_Bodyguard_M4","CUP_I_PMC_Contractor1","CUP_I_PMC_Contractor2","CUP_I_PMC_Medic","CUP_I_PMC_Sniper","CUP_I_PMC_Soldier","CUP_I_PMC_Soldier_AT","CUP_I_PMC_Soldier_GL","CUP_I_PMC_Soldier_GL_M16A2","CUP_I_PMC_Soldier_M4A3","CUP_I_PMC_Soldier_MG","CUP_I_PMC_Soldier_MG_PKM","CUP_I_PMC_Soldier_TL"];
 LT_cup_i_pmc_units_weightArray = [];
 LT_cup_i_pmc_car = ["CUP_I_SUV_Armored_ION"];
 LT_cup_i_pmc_car_weightArray = [];
@@ -268,7 +268,7 @@ LT_cup_i_pmc_Weights = [LT_cup_i_pmc_units_weightArray, LT_cup_i_pmc_car_weightA
 
 
 // African Rebels
-LT_CUP_AFR_REB_units = ["O_CUPAFRReb_Autorifleman_01","O_CUPAFRReb_Autorifleman_2_01","O_CUPAFRReb_Bonesetter_01","O_CUPAFRReb_Bonesetter_2_01","O_CUPAFRReb_Grenadier_01","O_CUPAFRReb_Grenadier_2_01","O_CUPAFRReb_Marksman_01","O_CUPAFRReb_Rifleman_01","O_CUPAFRReb_Rifleman_2_01","O_CUPAFRReb_Rifleman_3_01","O_CUPAFRReb_Rifleman_AA_01","O_CUPAFRReb_Rifleman_AA_2_01","O_CUPAFRReb_Rifleman_AT_01","O_CUPAFRReb_Rifleman_AT_2_01","O_CUPAFRReb_Rifleman_Light_01","O_CUPAFRReb_Sharpshooter_01","O_CUPAFRReb_Warlord_01","O_CUPAFRReb_Warlord_2_01"];
+LT_CUP_AFR_REB_units = ["O_CUPAFRReb_Autorifleman_01","O_CUPAFRReb_Autorifleman_2_01","O_CUPAFRReb_Bonesetter_01","O_CUPAFRReb_Bonesetter_2_01","O_CUPAFRReb_Grenadier_01","O_CUPAFRReb_Grenadier_2_01","O_CUPAFRReb_Marksman_01","O_CUPAFRReb_Rifleman_01","O_CUPAFRReb_Rifleman_2_01","O_CUPAFRReb_Rifleman_3_01","O_CUPAFRReb_Rifleman_AT_01","O_CUPAFRReb_Rifleman_AT_2_01","O_CUPAFRReb_Rifleman_Light_01","O_CUPAFRReb_Sharpshooter_01","O_CUPAFRReb_Warlord_01","O_CUPAFRReb_Warlord_2_01"];
 LT_CUP_AFR_REB_units_weightArray = [];
 LT_CUP_AFR_REB_car = ["O_CUPAFRReb_Technical_DSHkM_01","O_CUPAFRReb_Technical_PK_01","O_CUPAFRReb_Technical_SPG_01"];
 LT_CUP_AFR_REB_car_weightArray = [];
@@ -283,7 +283,7 @@ LT_CUP_AFR_REB_Weights = [];
 
 
 // African Army
-LT_CUP_AFR_ARMY_units = ["I_CUPAFRArmy_Asst_Autorifleman_01","I_CUPAFRArmy_Autorifleman_01","I_CUPAFRArmy_Combat_Life_Saver_01","I_CUPAFRArmy_Explosive_Specialist_01","I_CUPAFRArmy_Grenadier_01","I_CUPAFRArmy_Marksman_01","I_CUPAFRArmy_Missile_Specialist_AA_01","I_CUPAFRArmy_MIssile_Specialist_AT_01","I_CUPAFRArmy_Officer_01","I_CUPAFRArmy_Recon_Autorifleman_01","I_CUPAFRArmy_Recon_Demo_Specialist_01","I_CUPAFRArmy_Recon_JTAC_01","I_CUPAFRArmy_Recon_Marksman_01","I_CUPAFRArmy_Recon_Paramedic_01","I_CUPAFRArmy_Recon_Scout_01","I_CUPAFRArmy_Recon_Scout_AT_01","I_CUPAFRArmy_Recon_Team_Leader_01","I_CUPAFRArmy_Repair_Specialist_01","I_CUPAFRArmy_Rifleman_01","I_CUPAFRArmy_Rifleman_AT_01","I_CUPAFRArmy_Sharpshooter_01","I_CUPAFRArmy_Squad_Leader_01","I_CUPAFRArmy_Team_Leader_01"];
+LT_CUP_AFR_ARMY_units = ["I_CUPAFRArmy_Asst_Autorifleman_01","I_CUPAFRArmy_Autorifleman_01","I_CUPAFRArmy_Combat_Life_Saver_01","I_CUPAFRArmy_Explosive_Specialist_01","I_CUPAFRArmy_Grenadier_01","I_CUPAFRArmy_Marksman_01","I_CUPAFRArmy_MIssile_Specialist_AT_01","I_CUPAFRArmy_Officer_01","I_CUPAFRArmy_Recon_Autorifleman_01","I_CUPAFRArmy_Recon_Demo_Specialist_01","I_CUPAFRArmy_Recon_JTAC_01","I_CUPAFRArmy_Recon_Marksman_01","I_CUPAFRArmy_Recon_Paramedic_01","I_CUPAFRArmy_Recon_Scout_01","I_CUPAFRArmy_Recon_Scout_AT_01","I_CUPAFRArmy_Recon_Team_Leader_01","I_CUPAFRArmy_Repair_Specialist_01","I_CUPAFRArmy_Rifleman_01","I_CUPAFRArmy_Rifleman_AT_01","I_CUPAFRArmy_Sharpshooter_01","I_CUPAFRArmy_Squad_Leader_01","I_CUPAFRArmy_Team_Leader_01"];
 LT_CUP_AFR_ARMY_units_weightArray = [];
 LT_CUP_AFR_ARMY_car = ["I_CUPAFRArmy_UAZ_DShKM_01"];
 LT_CUP_AFR_ARMY_car_weightArray = [];
@@ -298,7 +298,7 @@ LT_CUP_AFR_ARMY_Weights = [LT_CUP_AFR_ARMY_units_weightArray,LT_CUP_AFR_ARMY_car
 
 
 // African Muslim Insurgents
-LT_CUP_AFR_M_REB_units = ["O_CUPAFRMReb_Rifleman_AT_AK74_01","O_CUPAFRMReb_Rifleman_FAL_01","O_CUPAFRMReb_Grenadier_AK_01","O_CUPAFRMReb_Grenadier_M16_01","O_CUPAFRMReb_Autorifleman_PKM_01","O_CUPAFRMReb_Autorifleman_RPK_01","O_CUPAFRMReb_Rifleman_AKM_01","O_CUPAFRMReb_Rifleman_AT_FAL_01","O_CUPAFRMReb_Team_Leader_AKM_01","O_CUPAFRMReb_Team_Leader_AK74_01","O_CUPAFRMReb_Marksman_01","O_CUPAFRMReb_Sharpshooter_01","O_CUPAFRMReb_Bonesetter_01","O_CUPAFRMReb_Bombmaker_01","O_CUPAFRMReb_Rifleman_AA_FAL_01","O_CUPAFRMReb_Rifleman_AA_AK74_01"];
+LT_CUP_AFR_M_REB_units = ["O_CUPAFRMReb_Rifleman_AT_AK74_01","O_CUPAFRMReb_Rifleman_FAL_01","O_CUPAFRMReb_Grenadier_AK_01","O_CUPAFRMReb_Grenadier_M16_01","O_CUPAFRMReb_Autorifleman_PKM_01","O_CUPAFRMReb_Autorifleman_RPK_01","O_CUPAFRMReb_Rifleman_AKM_01","O_CUPAFRMReb_Rifleman_AT_FAL_01","O_CUPAFRMReb_Team_Leader_AKM_01","O_CUPAFRMReb_Team_Leader_AK74_01","O_CUPAFRMReb_Marksman_01","O_CUPAFRMReb_Sharpshooter_01","O_CUPAFRMReb_Bonesetter_01","O_CUPAFRMReb_Bombmaker_01"];
 LT_CUP_AFR_M_REB_units_weightArray = [];
 LT_CUP_AFR_M_REB_car = ["O_CUPAFRMReb_Technical_PK_01","O_CUPAFRMReb_UAZ_DShKM_01","O_CUPAFRMReb_UAZ_SPG_01"];
 LT_CUP_AFR_M_REB_car_weightArray = [];
@@ -313,7 +313,7 @@ LT_CUP_AFR_M_REB_Weights = [LT_CUP_AFR_M_REB_units_weightArray,LT_CUP_AFR_M_REB_
 
 
 // African UN Peacekeepers
-LT_CUP_AFR_UN_units = ["B_CUPAFRUN_Rifleman_01","B_CUPAFRUN_Rifleman_AT_01","B_CUPAFRUN_Grenadier_01","B_CUPAFRUN_Officer_01","B_CUPAFRUN_Autorifleman_01","B_CUPAFRUN_Squad_Leader_01","B_CUPAFRUN_Medic_01","B_CUPAFRUN_Engineer_01","B_CUPAFRUN_Rifleman_AA_01"];
+LT_CUP_AFR_UN_units = ["B_CUPAFRUN_Rifleman_01","B_CUPAFRUN_Rifleman_AT_01","B_CUPAFRUN_Grenadier_01","B_CUPAFRUN_Officer_01","B_CUPAFRUN_Autorifleman_01","B_CUPAFRUN_Squad_Leader_01","B_CUPAFRUN_Medic_01","B_CUPAFRUN_Engineer_01"];
 LT_CUP_AFR_UN_units_weightArray = [];
 LT_CUP_AFR_UN_car = ["B_CUPAFRUN_UAZ_DShKM_01"];
 LT_CUP_AFR_UN_car_weightArray = [];
@@ -328,7 +328,7 @@ LT_CUP_AFR_UN_Weights = [LT_CUP_AFR_UN_units_weightArray,LT_CUP_AFR_UN_car_weigh
 
 
 // Asian Army
-LT_CUP_ARMY_ASIA_units = ["I_CUPARMYASIA_Rifleman_01","I_CUPARMYASIA_Grenadier_01","I_CUPARMYASIA_Marksman_01","I_CUPARMYASIA_Sniper_01","I_CUPARMYASIA_Machine_Gunner_01","I_CUPARMYASIA_Rifleman_AT_01","I_CUPARMYASIA_Medic_01","I_CUPARMYASIA_Engineer_01","I_CUPARMYASIA_Squad_Leader_01","I_CUPARMYASIA_Rifleman_AA_01","I_CUPARMYASIA_Rifleman_Recon_01","I_CUPARMYASIA_Rifleman_AT_Recon_01","I_CUPARMYASIA_Demo_Specialist_Recon_01","I_CUPARMYASIA_Medic_Recon_01","I_CUPARMYASIA_Team_Leader_Recon_01"];
+LT_CUP_ARMY_ASIA_units = ["I_CUPARMYASIA_Rifleman_01","I_CUPARMYASIA_Grenadier_01","I_CUPARMYASIA_Marksman_01","I_CUPARMYASIA_Sniper_01","I_CUPARMYASIA_Machine_Gunner_01","I_CUPARMYASIA_Rifleman_AT_01","I_CUPARMYASIA_Medic_01","I_CUPARMYASIA_Engineer_01","I_CUPARMYASIA_Squad_Leader_01","I_CUPARMYASIA_Rifleman_Recon_01","I_CUPARMYASIA_Rifleman_AT_Recon_01","I_CUPARMYASIA_Demo_Specialist_Recon_01","I_CUPARMYASIA_Medic_Recon_01","I_CUPARMYASIA_Team_Leader_Recon_01"];
 LT_CUP_ARMY_ASIA_units_weightArray = [];
 LT_CUP_ARMY_ASIA_car = ["I_CUPARMYASIA_HMMWV_01"];
 LT_CUP_ARMY_ASIA_car_weightArray = [];
@@ -399,7 +399,7 @@ LT_CUP_BAF_WDL = [LT_CUP_BAF_WDL_units,LT_CUP_BAF_WDL_car,LT_CUP_BAF_WDL_ifv,LT_
 LT_CUP_BAF_WDL_Weights = [];
 
 //NLD Units DES,WDL,NFP Green, NFP tan
-LT_NLD_DST_units = ["NLD_DST_rifleman","NLD_DST_Ammo","NLD_DST_AA","NLD_DST_AAA","NLD_DST_AAR","NLD_DST_AMAT","NLD_DST_AMMG","NLD_DST_AR","NLD_DST_CLS","NLD_DST_SLA","NLD_DST_ENGI","NLD_DST_EXPL","NLD_DST_GL","NLD_DST_JTAC","NLD_DST_MAT","NLD_DST_MMG","NLD_DST_OFF","NLD_DST_LAT","NLD_DST_SL","NLD_DST_TL","NLD_DST_UAV"];
+LT_NLD_DST_units = ["NLD_DST_rifleman","NLD_DST_Ammo","NLD_DST_AAR","NLD_DST_AMAT","NLD_DST_AMMG","NLD_DST_AR","NLD_DST_CLS","NLD_DST_SLA","NLD_DST_ENGI","NLD_DST_EXPL","NLD_DST_GL","NLD_DST_JTAC","NLD_DST_MAT","NLD_DST_MMG","NLD_DST_OFF","NLD_DST_LAT","NLD_DST_SL","NLD_DST_TL","NLD_DST_UAV"];
 LT_NLD_DST_units_weightArray = [];
 LT_NLD_DST_car = ["NLD_DST_Fennek","NLD_DST_Fennek_GMG","NLD_DST_Fennek_HMG"];
 LT_NLD_DST_car_weightArray = [];
@@ -412,7 +412,7 @@ LT_NLD_DST_heli_weightArray = [];
 LT_NLD_DST = [LT_NLD_DST_units,LT_NLD_DST_car,LT_NLD_DST_ifv,LT_NLD_DST_tank,LT_NLD_DST_heli];
 LT_NLD_DST_weights = [];
 
-LT_NLD_WDL_units = ["NLD_WLD_Ammo","NLD_WLD_AA","NLD_WLD_AAA","NLD_WLD_AAR","NLD_WLD_AMAT","NLD_WLD_AMMG","NLD_WLD_AR","NLD_WLD_CLS","NLD_WLD_SLA","NLD_WLD_ENGI","NLD_WLD_EXPL","NLD_WLD_GL","NLD_WLD_JTAC","NLD_WLD_MAT","NLD_WLD_MMG","NLD_WLD_OFF","NLD_WLD_rifleman","NLD_WLD_LAT","NLD_WLD_SL","NLD_WLD_TL","NLD_WLD_UAV"];
+LT_NLD_WDL_units = ["NLD_WLD_Ammo","NLD_WLD_AAR","NLD_WLD_AMAT","NLD_WLD_AMMG","NLD_WLD_AR","NLD_WLD_CLS","NLD_WLD_SLA","NLD_WLD_ENGI","NLD_WLD_EXPL","NLD_WLD_GL","NLD_WLD_JTAC","NLD_WLD_MAT","NLD_WLD_MMG","NLD_WLD_OFF","NLD_WLD_rifleman","NLD_WLD_LAT","NLD_WLD_SL","NLD_WLD_TL","NLD_WLD_UAV"];
 LT_NLD_WDL_units_weightArray = [];
 LT_NLD_WDL_car = ["NLD_WLD_Fennek","NLD_WLD_Fennek_GMG","NLD_WLD_Fennek_HMG"];
 LT_NLD_WDL_car_weightArray = [];
@@ -425,7 +425,7 @@ LT_NLD_WDL_heli_weightArray = [];
 LT_NLD_WDL = [LT_NLD_WDL_units,LT_NLD_WDL_car,LT_NLD_WDL_ifv,LT_NLD_WDL_tank,LT_NLD_WDL_heli];
 LT_NLD_WDL_weights = [];
 
-LT_NLD_NFPG_units = ["NLD_NFPG_rifleman","NLD_NFPG_Ammo","NLD_NFPG_AA","NLD_NFPG_AAA","NLD_NFPG_AAR","NLD_NFPG_AMAT","NLD_NFPG_AMMG","NLD_NFPG_AR","NLD_NFPG_CLS","NLD_NFPG_SLA","NLD_NFPG_ENGI","NLD_NFPG_EXPL","NLD_NFPG_GL","NLD_NFPG_JTAC","NLD_NFPG_MAT","NLD_NFPG_MMG","NLD_NFPG_OFF","NLD_NFPG_LAT","NLD_NFPG_SL","NLD_NFPG_TL","NLD_NFPG_UAV"];
+LT_NLD_NFPG_units = ["NLD_NFPG_rifleman","NLD_NFPG_Ammo","NLD_NFPG_AAR","NLD_NFPG_AMAT","NLD_NFPG_AMMG","NLD_NFPG_AR","NLD_NFPG_CLS","NLD_NFPG_SLA","NLD_NFPG_ENGI","NLD_NFPG_EXPL","NLD_NFPG_GL","NLD_NFPG_JTAC","NLD_NFPG_MAT","NLD_NFPG_MMG","NLD_NFPG_OFF","NLD_NFPG_LAT","NLD_NFPG_SL","NLD_NFPG_TL","NLD_NFPG_UAV"];
 LT_NLD_NFPG_units_weightArray = [];
 LT_NLD_NFPG_car = ["NLD_WLD_Fennek","NLD_WLD_Fennek_GMG","NLD_WLD_Fennek_HMG"];
 LT_NLD_NFPG_car_weightArray = [];
@@ -438,7 +438,7 @@ LT_NLD_NFPG_heli_weightArray = [];
 LT_NLD_NFPG = [LT_NLD_NFPG_units,LT_NLD_NFPG_car,LT_NLD_NFPG_ifv,LT_NLD_NFPG_tank,LT_NLD_NFPG_heli];
 LT_NLD_NFPG_weights = [];
 
-LT_NLD_WTR_units = ["NLD_WTR_rifleman","NLD_WTR_Ammo","NLD_WTR_AA","NLD_WTR_AAA","NLD_WTR_AAR","NLD_WTR_AMAT","NLD_WTR_AMMG","NLD_WTR_AR","NLD_WTR_CLS","NLD_WTR_SLA","NLD_WTR_ENGI","NLD_WTR_EXPL","NLD_WTR_GL","NLD_WTR_JTAC","NLD_WTR_MAT","NLD_WTR_MMG","NLD_WTR_OFF","NLD_WTR_LAT","NLD_WTR_SL","NLD_WTR_TL","NLD_WTR_UAV"];
+LT_NLD_WTR_units = ["NLD_WTR_rifleman","NLD_WTR_Ammo","NLD_WTR_AAR","NLD_WTR_AMAT","NLD_WTR_AMMG","NLD_WTR_AR","NLD_WTR_CLS","NLD_WTR_SLA","NLD_WTR_ENGI","NLD_WTR_EXPL","NLD_WTR_GL","NLD_WTR_JTAC","NLD_WTR_MAT","NLD_WTR_MMG","NLD_WTR_OFF","NLD_WTR_LAT","NLD_WTR_SL","NLD_WTR_TL","NLD_WTR_UAV"];
 LT_NLD_WTR_units_weightArray = [];
 LT_NLD_WTR_car = ["NLD_WTR_Fennek","NLD_WTR_Fennek_GMG","NLD_WTR_Fennek_HMG"];
 LT_NLD_WTR_car_weightArray = [];
@@ -451,7 +451,7 @@ LT_NLD_WTR_heli_weightArray = [];
 LT_NLD_WTR = [LT_NLD_WTR_units,LT_NLD_WTR_car,LT_NLD_WTR_ifv,LT_NLD_WTR_tank,LT_NLD_WTR_heli];
 LT_NLD_WTR_weights = [];
 
-LT_NLD_NFPT_units = ["NLD_NFPT_rifleman","NLD_NFPT_Ammo","NLD_NFPT_AA","NLD_NFPT_AAA","NLD_NFPT_AAR","NLD_NFPT_AMAT","NLD_NFPT_AMMG","NLD_NFPT_AR","NLD_NFPT_CLS","NLD_NFPT_SLA","NLD_NFPT_ENGI","NLD_NFPT_EXPL","NLD_NFPT_GL","NLD_NFPT_JTAC","NLD_NFPT_MAT","NLD_NFPT_MMG","NLD_NFPT_OFF","NLD_NFPT_LAT","NLD_NFPT_SL","NLD_NFPT_TL","NLD_NFPT_UAV"];
+LT_NLD_NFPT_units = ["NLD_NFPT_rifleman","NLD_NFPT_Ammo","NLD_NFPT_AAR","NLD_NFPT_AMAT","NLD_NFPT_AMMG","NLD_NFPT_AR","NLD_NFPT_CLS","NLD_NFPT_SLA","NLD_NFPT_ENGI","NLD_NFPT_EXPL","NLD_NFPT_GL","NLD_NFPT_JTAC","NLD_NFPT_MAT","NLD_NFPT_MMG","NLD_NFPT_OFF","NLD_NFPT_LAT","NLD_NFPT_SL","NLD_NFPT_TL","NLD_NFPT_UAV"];
 LT_NLD_NFPT_units_weightArray = [];
 LT_NLD_NFPT_car = ["NLD_DST_Fennek","NLD_DST_Fennek_GMG","NLD_DST_Fennek_HMG"];
 LT_NLD_NFPT_car_weightArray = [];
@@ -465,7 +465,7 @@ LT_NLD_NFPT = [LT_NLD_NFPT_units,LT_NLD_NFPT_car,LT_NLD_NFPT_ifv,LT_NLD_NFPT_tan
 LT_NLD_NFPT_weights = [];
 
 // NATO MTP, NATO Pacific
-LT_NATO_MTP_units = ["B_Soldier_A_F","B_soldier_AR_F","B_medic_F","B_engineer_F","B_soldier_exp_F","B_Soldier_GL_F","B_HeavyGunner_F","B_soldier_M_F","B_soldier_AA_F","B_soldier_AT_F","B_officer_F","B_soldier_repair_F","B_Soldier_F","B_soldier_LAT_F","B_Sharpshooter_F","B_Soldier_SL_F","B_Soldier_TL_F"];
+LT_NATO_MTP_units = ["B_Soldier_A_F","B_soldier_AR_F","B_medic_F","B_engineer_F","B_soldier_exp_F","B_Soldier_GL_F","B_HeavyGunner_F","B_soldier_M_F","B_soldier_AT_F","B_officer_F","B_soldier_repair_F","B_Soldier_F","B_soldier_LAT_F","B_Sharpshooter_F","B_Soldier_SL_F","B_Soldier_TL_F"];
 LT_NATO_MTP_units_weightArray = [];
 LT_NATO_MTP_car = ["B_MRAP_01_F","B_MRAP_01_gmg_F","B_MRAP_01_hmg_F","B_LSV_01_armed_F","B_LSV_01_unarmed_F","B_Quadbike_01_F","B_Truck_01_transport_F","B_Truck_01_transport_F","B_Truck_01_Repair_F","B_Truck_01_box_F","B_Truck_01_ammo_F","B_Truck_01_mover_F"];
 LT_NATO_MTP_car_weightArray = [];
@@ -478,7 +478,7 @@ LT_NATO_MTP_heli_weightArray = [];
 LT_NATO_MTP = [LT_NATO_MTP_units,LT_NATO_MTP_car,LT_NATO_MTP_ifv,LT_NATO_MTP_tank,LT_NATO_MTP_heli];
 LT_NATO_MTP_weights = [];
 
-LT_NATO_PAC_units = ["B_T_Soldier_A_F","B_T_Soldier_AAR_F","B_T_Soldier_AR_F","B_T_Medic_F","B_T_Engineer_F","B_T_Soldier_AAT_F","B_T_Soldier_AAA_F","B_T_Soldier_Exp_F","B_T_Soldier_GL_F","B_T_soldier_M_F","B_T_Soldier_AA_F","B_T_Soldier_AT_F","B_T_Officer_F","B_T_Soldier_Repair_F","B_T_Soldier_F","B_T_Soldier_LAT_F","B_T_Soldier_SL_F","B_T_Soldier_TL_F","B_T_Soldier_UAV_F"];
+LT_NATO_PAC_units = ["B_T_Soldier_A_F","B_T_Soldier_AAR_F","B_T_Soldier_AR_F","B_T_Medic_F","B_T_Engineer_F","B_T_Soldier_AAT_F","B_T_Soldier_Exp_F","B_T_Soldier_GL_F","B_T_soldier_M_F","B_T_Soldier_AT_F","B_T_Officer_F","B_T_Soldier_Repair_F","B_T_Soldier_F","B_T_Soldier_LAT_F","B_T_Soldier_SL_F","B_T_Soldier_TL_F","B_T_Soldier_UAV_F"];
 LT_NATO_PAC_units_weightArray = [];
 LT_NATO_PAC_car = ["B_T_Truck_01_mover_F","B_T_Truck_01_box_F","B_T_Truck_01_Repair_F","B_T_Truck_01_transport_F","CUP_B_HMMWV_Unarmed_NATO_T","CUP_B_HMMWV_Ambulance_NATO_T","CUP_B_HMMWV_Crows_M2_NATO_T","CUP_B_HMMWV_Crows_MK19_NATO_T","CUP_B_HMMWV_M2_GPK_NATO_T","CUP_B_HMMWV_M2_NATO_T","CUP_B_HMMWV_MK19_NATO_T","CUP_B_HMMWV_SOV_M2_NATO_T","CUP_B_HMMWV_SOV_NATO_T","CUP_B_HMMWV_TOW_NATO_T","CUP_B_HMMWV_Transport_NATO_T","CUP_B_HMMWV_Transport_NATO_T","B_T_MRAP_01_F","B_T_MRAP_01_hmg_F","B_T_LSV_01_armed_F","B_T_LSV_01_unarmed_F","B_T_Quadbike_01_F"];
 LT_NATO_PAC_car_weightArray = [];
