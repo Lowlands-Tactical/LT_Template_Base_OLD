@@ -23,8 +23,10 @@ _marker setMarkerAlpha 0;
 _marker setMarkerShape "ELLIPSE";
 _marker setMarkerSize [(_marker_size select 0),(_marker_size select 1)];
 
+_multiplierArray = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,2,3,4];
+_multiplier = _multiplierArray select ("ts_patrols_multipl" call BIS_fnc_getParamValue);
 
-null = [_marker, _faction, 250, ((count allPlayers) * ("ts_patrols_multipl" call BIS_fnc_getParamValue) ),6,2,2,0,0,0,20,20] call lt_fnc_autozone;
+null = [_marker, _faction, 250, ((count allPlayers) * _multiplier ),6,2,2,0,0,0,20,20] call lt_fnc_autozone;
 
 // sleep 60;
 // "ao" setMarkerAlpha 0.5;
