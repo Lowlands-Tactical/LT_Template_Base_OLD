@@ -33,8 +33,7 @@ if (hasInterface) then {
 					};
 				};
 			};
-
-	};
+	  };
 
 		_handleCustomGear = execVM "customGear.sqf";
 		waitUntil {scriptDone _handleCustomGear};
