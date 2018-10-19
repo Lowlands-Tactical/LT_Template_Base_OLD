@@ -130,6 +130,8 @@ if (hasInterface) then {
 			case "m":
 			{
 				_unit addweapon _carbine;
+        _unit addItem _gps;
+				_unit assignItem _gps;
 
 				if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
 				(unitBackpack _unit) addItemCargoGlobal [_bandages,30];
