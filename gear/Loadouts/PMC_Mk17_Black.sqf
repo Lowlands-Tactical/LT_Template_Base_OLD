@@ -3,7 +3,7 @@
 
 // Attachments Primary weapon
 lt_template_attach1        	 = 	 "CUP_acc_ANPEQ_2"; // ir laser
-lt_template_attach2        	 = 	 ""; // flashlight
+lt_template_attach2        	 = 	 "acc_flashlight"; // flashlight
 lt_template_silencer1      	 = 	 ""; // rifles
 lt_template_silencer2      	 = 	 ""; // MG
 lt_template_scope1         	 = 	 "CUP_optic_Elcan"; // normal scope
