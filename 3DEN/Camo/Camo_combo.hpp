@@ -80,6 +80,71 @@ class LT_Camo_combo: Title
 					text = "Koninklijke Mariniers";
 					data = ["NLD_KM_Camo","V_I_G_resistanceLeader_F","NLD_KM_Carryall_Empty","NLD_KM_Helmet","NLD_rt1523g_KM"];
 				};
+        class LT_NATO
+        {
+          text = "NATO";
+          data = [["U_B_CombatUniform_mcam_tshirt","U_B_CombatUniform_mcam"],["V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"],"B_Carryall_oli","H_HelmetB_grass","tf_rt1523g_big"];
+        };
+        class LT_NATO_RECON
+        {
+          text = "NATO (Recon)";
+          data = [["U_B_CombatUniform_mcam_vest","U_B_CombatUniform_mcam_tshirt"],"V_Chestrig_rgr","B_Carryall_oli","H_HelmetB_plain_mcamo","tf_rt1523g_big"];
+        };
+        class LT_NATO_CTRG
+        {
+          text = "NATO (CTRG)";
+          data = [["U_B_CTRG_1","U_B_CTRG_2"],["V_PlateCarrierH_CTRG","V_PlateCarrierL_CTRG"],"B_Carryall_oli","H_HelmetB_light_snakeskin","tf_rt1523g_big"];
+        };
+        class LT_NATO_TANOA
+        {
+          text = "NATO (TANOA)";
+          data = [["U_B_T_Soldier_F","U_B_T_Soldier_AR_F"],"V_PlateCarrier1_tna_F","B_Carryall_oli","H_HelmetB_Enh_tna_F","tf_rt1523g_big_rhs"];
+        };
+        class LT_NATO_TANOA_CTRG
+        {
+          text = "NATO (TANOA-CTRG)";
+          data = [["U_B_CTRG_Soldier_F","U_B_CTRG_Soldier_3_F"],["V_PlateCarrierL_CTRG","V_PlateCarrierH_CTRG"],"B_Carryall_oli","H_HelmetB_Enh_tna_F","tf_rt1523g_big_bwmod"];
+        };
+        class LT_NATO_TANOA_CTRG_URBAN
+        {
+          text = "NATO (TANOA-CTRG-URBAN)";
+          data = [["U_B_CTRG_Soldier_urb_1_F","U_B_CTRG_Soldier_urb_3_F"],"V_TacVest_oli","B_Carryall_oucamo","H_HelmetB_Enh_tna_F","tf_rt1523g_black"];
+        };
+        class LT_CSAT
+        {
+          text = "CSAT";
+          data = ["U_O_CombatUniform_ocamo","V_HarnessO_brn","B_AssaultPack_ocamo","H_HelmetO_ocamo","tf_rt1523g_bwmod"];
+        };
+        class LT_CSAT_URBAN
+        {
+          text = "CSAT (Urban)";
+          data = ["U_O_CombatUniform_oucamo","V_HarnessO_gry","B_Carryall_oucamo","H_HelmetO_oucamo","tf_rt1523g_green"];
+        };
+        class LT_CSAT_RECON
+        {
+          text = "CSAT (Recon)";
+          data = ["U_O_SpecopsUniform_ocamo","V_HarnessOGL_brn","B_AssaultPack_ocamo","H_HelmetLeaderO_ocamo","tf_rt1523g_big_bwmod"];
+        };
+        class LT_CSAT_VIPER
+        {
+          text = "CSAT (VIPER)";
+          data = ["U_O_V_Soldier_Viper_F","CUP_V_PMC_IOTV_Coyote_Patrol","B_ViperHarness_ghex_JTAC_F","H_HelmetO_ViperSP_ghex_F","tf_rt1523g_big_bwmod"];
+        };
+        class LT_CSAT_TANOA
+        {
+          text = "CSAT (Tanoa)";
+          data = ["U_O_T_Soldier_F","V_HarnessO_ghex_F","B_AssaultPack_dgtl","H_HelmetO_ghex_F","tf_rt1523g_bwmod"];
+        };
+        class LT_CSAT_TANOA_VIPER
+        {
+          text = "CSAT (Tanoa - Viper)";
+          data = ["U_O_V_Soldier_Viper_hex_F","CUP_V_PMC_IOTV_Coyote_Patrol","B_ViperHarness_ghex_M_F","H_HelmetO_ViperSP_hex_F","tf_rt1523g_big_bwmod"];
+        };
+        class LT_AAF
+        {
+          text = "AAF";
+          data = [["U_I_CombatUniform","U_I_OfficerUniform","U_I_CombatUniform_shortsleeve"],"V_PlateCarrierIA2_dgtl","B_Carryall_oli",["H_HelmetIA_camo","H_HelmetIA"],"tf_rt1523g_big"];
+        };
 				class LT_CDF_Desert
 				{
 					text = "[CDF] Desert";
