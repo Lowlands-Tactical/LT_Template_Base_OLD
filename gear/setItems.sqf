@@ -133,6 +133,7 @@ _compass = if (isNil "lt_template_compass") then {"ItemCompass"} else {lt_templa
 _radio = if (isNil "lt_template_radio") then {"ItemRadio"} else {lt_template_radio};
 _watch = if (isNil "lt_template_watch") then {"ItemWatch"} else {lt_template_watch};
 
+_spade = if (isNil "lt_template_spade") then {"ACE_EntrenchingTool"} else {lt_template_spade};
 
 // Backpacks
 _TypeName = typename (_lt_camo_var_array select 2);

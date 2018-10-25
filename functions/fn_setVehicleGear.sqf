@@ -106,6 +106,7 @@ if !(isNil "LT_wpn_var_BLUFOR" || isNil "LT_wpn_var_OPFOR"|| isNil "LT_wpn_var_G
 	lt_template_compass        	=	nil	;
 	lt_template_radio          	=	nil	;
 	lt_template_watch          	=	nil	;
+  lt_template_spade           = nil ;
 	lt_template_ATmine         	=	nil	;
 	lt_template_satchel        	=	nil	;
 	lt_template_APmine1        	=	nil	;

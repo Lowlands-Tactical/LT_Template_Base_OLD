@@ -184,6 +184,7 @@ if (hasInterface) then {
         _unit addweapon _rifle;
         _unit addmagazines [_riflemag_tr,2];
         _unit addWeapon _simplebinoculars;
+        _unit addItem _spade;
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 11];

@@ -96,6 +96,7 @@ if (_activated) then {
 		lt_template_compass = _logic getVariable ["lt_template_compass", "ItemCompass"  ];
 		lt_template_radio = _logic getVariable ["lt_template_radio", "ItemRadio"  ];
 		lt_template_watch = _logic getVariable ["lt_template_watch", "ItemWatch"  ];
+    lt_template_spade = _logic getVariable ["lt_template_spade", "ACE_EntrenchingTool" ];
 		lt_template_ATmine = _logic getVariable ["lt_template_ATmine", "ATMine_Range_Mag"  ];
 		lt_template_satchel = _logic getVariable ["lt_template_satchel", "DemoCharge_Remote_Mag"  ];
 		lt_template_APmine1 = _logic getVariable ["lt_template_APmine1", "APERSBoundingMine_Range_Mag"  ];
