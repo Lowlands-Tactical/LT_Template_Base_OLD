@@ -131,13 +131,14 @@ if (hasInterface) then {
         _unit addweapon _carbine;
         _unit addItem _gps;
         _unit assignItem _gps;
+        _unit addmagazines [_smokegrenade,1];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addItemCargoGlobal [_bandages,30];
         (unitBackpack _unit) addItemCargoGlobal [_morphine,15];
         (unitBackpack _unit) addItemCargoGlobal [_epinephrine,10];
         (unitBackpack _unit) addItemCargoGlobal [_bloodbags,5];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 8];
+        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 7];
         (unitBackpack _unit) addItemCargoGlobal [_firstaid, 4];
         (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag,7];
       };
@@ -150,12 +151,13 @@ if (hasInterface) then {
         _unit addItem _gps;
         _unit assignItem _gps;
         _unit addmagazines [_glriflemag_tr,2];
+        _unit addmagazines [_grenade,1];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 11];
         (unitBackpack _unit) addMagazineCargoGlobal [_glmag, 7];
         (unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 6];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 3];
+        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
         (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 3];
         (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
         (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadegreen,2];
@@ -168,11 +170,12 @@ if (hasInterface) then {
         _unit addweapon _AR;
         _unit addweapon _pistol;
         _unit addmagazines [_pistolmag,4];
+        _unit addmagazines [_grenade,1];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addMagazineCargoGlobal [_ARmag, 6];
         (unitBackpack _unit) addMagazineCargoGlobal [_ARmag_Tr, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
+        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
         (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
         (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
         _attachments pushback (_bipod1);
@@ -185,10 +188,11 @@ if (hasInterface) then {
         _unit addmagazines [_riflemag_tr,2];
         _unit addWeapon _simplebinoculars;
         _unit addItem _spade;
+        _unit addmagazines [_grenade,2];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 11];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 4];
+        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
         (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 4];
         (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
         (unitBackpack _unit) addMagazineCargoGlobal [_ARmag, 4];
@@ -199,10 +203,11 @@ if (hasInterface) then {
       {
         _unit addweapon _carbine;
         _unit addmagazines [_carbinemag_tr,2];
+        _unit addmagazines [_grenade,2];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 11];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 3];
+        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
         (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 3];
         (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
         _unit addweapon _RAT;
