@@ -252,7 +252,7 @@ if (hasInterface) then {
         (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
         (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 1];
         (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
-        _attachments pushback (_bipod1);
+        _attachments = [_attach1,_bipod2];
       };
 
     // LOADOUT: MEDIUM MG ASSISTANT GUNNER
