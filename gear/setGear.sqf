@@ -140,7 +140,8 @@ if (hasInterface) then {
         (unitBackpack _unit) addItemCargoGlobal [_bloodbags,5];
         (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 7];
         (unitBackpack _unit) addItemCargoGlobal [_firstaid, 4];
-        (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag,7];
+
+        _unit addmagazines [_carbinemag,7];
       };
 
     // LOADOUT: FIRE TEAM LEADER
