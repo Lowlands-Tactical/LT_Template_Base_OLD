@@ -1,6 +1,6 @@
 // https://configs.arma3.ru/162.137494/configFile/CfgWeapons/arifle_Katiba_Base_F.html
 // https://configs.arma3.ru/162.137494/configFile/CfgMagazines.html
-// NLD_blk_C8
+// arifle_MX_F
 
 PRIVATE ["_weapon", "_magazines","_normalMags","_tracerMags","_tracersEvery","_amntNormalMags","_amnttracerMags","_tracer","_normal","_array"];
 

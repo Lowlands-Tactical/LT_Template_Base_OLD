@@ -1,5 +1,5 @@
 // Your attribute class
-class LT_Gear_combo: Title
+class LT_Camo_combo: Title
 {
 	//Thanks to R3vo (https://github.com/RevoArma3/3denEnhanced/blob/master/3denEnhanced/controls/garrisonCoverageCombo.hpp)
 	attributeLoad = "diag_log format ['LT Template DEBUG: load %1*-*' ,_config]; _ctrl = _this controlsGroupCtrl 100;_attCtrl = getText( _config >> 'control' );_staticItemsCfg = configFile >> 'Cfg3DEN' >> 'Attributes' >> _attCtrl >> 'Controls' >> 'Value' >> 'items';_fnc_setValues = {private [ '_index' ];params[ '_path', [ '_apply', true ] ];{_cfg = _x; if ( _apply ) then {	_index = _ctrl lbAdd getText( _cfg >> 'text' ); _ctrl lbSetData [ _index, getText( _cfg >> 'data' ) ];} else {_index = _foreachindex;}; if ( !( _value isEqualType '' ) ) then {if ( _index isEqualTo _value ) then {_ctrl lbSetCurSel _index;} ;} else {if ( _value == getText( _cfg >> 'data' ) ) then {_ctrl lbSetCurSel _index;};}; } forEach configProperties [_path,'isclass _x'];}; if ( isClass _staticItemsCfg ) then {[ _staticItemsCfg, false ] call _fnc_setValues;}; _dynamicItemsCfg = configFile >> 'Cfg3DEN' >> 'Attributes' >> _attCtrl >> 'Controls' >> 'Value' >> 'ItemsConfig'; if ( isNumber( _dynamicItemsCfg >> 'localConfig' ) && { getNumber( _dynamicItemsCfg >> 'localConfig' ) > 0 } ) then { _class = getArray( _dynamicItemsCfg >> 'path' ) select 0; _path = missionConfigFile >> _class; if ( isClass _path ) then { _path call _fnc_setValues;};};";
@@ -16,158 +16,73 @@ class LT_Gear_combo: Title
 			w = ATTRIBUTE_CONTENT_W * GRID_W;
 			h = SIZE_M * GRID_H;
 
+
 			class Items
 			{
-				class LT_Gear_NLDLowtac
+				class US_Airborn
 				{
-					text = "Default NLD Units (LowTac)";
-					data = "None";
+					text = "US Airborn";
+					data = [["U_LIB_US_AB_Uniform_M43","U_LIB_US_AB_Uniform_M43_Medic"],["V_LIB_US_AB_Vest_Asst_MG","V_LIB_US_AB_Vest_BAR","V_LIB_US_AB_Vest_Carbine","V_LIB_US_AB_Vest_Garand","V_LIB_US_AB_Vest_Grenadier","V_LIB_US_AB_Vest_Thompson"],["B_LIB_US_M36","B_LIB_US_M36_Bandoleer","B_LIB_US_M36_rocketbag_empty","B_LIB_US_M36_Rope"],["H_LIB_US_AB_Helmet_Clear_1","H_LIB_US_AB_Helmet","H_LIB_US_AB_Helmet_Jump_1",,"H_LIB_US_AB_Helmet_Medic_1","H_LIB_US_AB_Helmet_Plain_1"],"B_LIB_US_Radio_ACRE2"];
 					default = 1;
-				};
-				class LT_Gear_NLD1980
+					};
+				class US_Airborn_Winter
 				{
-					text = "NLD 1980";
-					data = "\lt_template_base\gear\Loadouts\NLD_80.sqf";
-				};
-				class LT_Gear_NLD2020
+					text = "US Airborn (Winter)";
+					data = ["U_LIB_US_AB_Uniform_M42_W",["V_LIB_US_AB_Vest_Asst_MG","V_LIB_US_AB_Vest_BAR","V_LIB_US_AB_Vest_Carbine","V_LIB_US_AB_Vest_Garand","V_LIB_US_AB_Vest_Grenadier","V_LIB_US_AB_Vest_Thompson"],["B_LIB_US_Backpack_Bandoleer","B_LIB_US_Backpack_Rocketbag_Empty","B_LIB_US_Backpack_Mk2"],["H_LIB_US_Helmet_w","H_LIB_US_Helmet_Net_w","H_LIB_US_Helmet_Med_w"],"B_LIB_US_Radio_ACRE2"];
+					};
+				class US_Army_Europe
 				{
-					text = "NLD 2020";
-					data = "\lt_template_base\gear\Loadouts\NLD_2020.sqf";
-				};
-				class LT_Gear_USM16A2
+					text = "US Army (Europe)";
+					data = ["fow_u_us_m41_01_private",["fow_v_us_garand_bandoleer","fow_v_us_medic""fow_v_us_thompson"],"fow_b_us_m1928",["fow_h_us_m1","fow_h_us_m1_medic","fow_h_us_m1_net"],"B_LIB_US_Radio_ACRE2"];
+					};
+				class US_Army_Pacific
 				{
-					text = "US M16A2";
-					data = "\lt_template_base\gear\Loadouts\US_M16A2.sqf";
-				};
-				class LT_Gear_USM16A4
+					text = "US Army (Pacific)";
+					data = ["fow_u_us_hbt_01_private",["fow_v_us_garand_bandoleer","fow_v_us_medic""fow_v_us_thompson"],"fow_b_us_m1928_02",["fow_h_us_m1","fow_h_us_m1_medic","fow_h_us_m1_net"],"B_LIB_US_Radio_ACRE2"];
+					};
+				class USMC_Pacific
 				{
-					text = "US M16A4";
-					data = "\lt_template_base\gear\Loadouts\US_M16A4.sqf";
-				};
-				class LT_Gear_USM4A1
+					text = "USMC (Pacific)";
+					data = ["fow_u_usmc_p41_01_private",["fow_v_us_garand_bandoleer","fow_v_us_medic""fow_v_us_thompson"],"fow_b_usmc_m1928_02",["fow_h_us_m1","fow_h_us_m1_medic","fow_h_us_m1_net"],"B_LIB_US_Radio_ACRE2"];
+					};
+				class UK_Airborn
 				{
-					text = "US M4A1";
-					data = "\lt_template_base\gear\Loadouts\US_M4A1.sqf";
-				};
-				class LT_Gear_USM4A1WDL
+					text = "UK Airborn";
+					data = ["fow_u_uk_parasmock",["fow_v_uk_para_base_green","fow_v_uk_para_bren_green","fow_v_uk_para_sten_green"],["fow_b_uk_p37_blanco","fow_b_uk_p37_blanco_shovel"],["fow_h_uk_mk2_para","fow_h_uk_mk2_para_camo"],"fow_b_uk_p37_radio_blanco"];
+					};
+				class UK_Army
 				{
-					text = "US M4A1 Woodland";
-					data = "\lt_template_base\gear\Loadouts\US_M4A1_WDL.sqf";
-				};
-				class LT_Gear_USM4A1DES
+					text = "UK Army";
+					data = ["fow_u_uk_bd40_01_private",["fow_v_uk_base_green","fow_v_uk_bren_green","fow_v_uk_officer_green"],["fow_b_uk_p37_blanco","fow_b_uk_p37_blanco_shovel"],["fow_h_uk_mk2","fow_h_uk_mk2_net","fow_h_uk_mk2_net_camo"],"fow_b_uk_p37_radio_blanco"];
+					};
+				class Prinses_Irene
+					{
+					text = "Prinses Irene";
+					data = ["fow_u_uk_bd40_pib_01_private",["fow_v_uk_base_green","fow_v_uk_bren_green","fow_v_uk_officer_green"],["fow_b_uk_p37_blanco","fow_b_uk_p37_blanco_shovel"],["fow_h_uk_mk2","fow_h_uk_mk2_net","fow_h_uk_mk2_net_camo"],"fow_b_uk_p37_radio_blanco"];
+					};
+				class Polish_Commandos
 				{
-					text = "US M4A1 Desert";
-					data = "\lt_template_base\gear\Loadouts\US_M4A1_DES.sqf";
-				};
-				class LT_Gear_RACS
+					text = "Polish Commandos";
+					data = ["fow_u_uk_bd40_pol_01_commando_private",["fow_v_uk_para_base","fow_v_uk_para_bren","fow_v_uk_para_sten"],"fow_b_uk_bergenpack","fow_h_uk_beret_commando_pol","fow_b_uk_p37_radio"];
+					};
+				class Red_Army_Winter
 				{
-					text = "Royal Army Corps of Sahrani";
-					data = "\lt_template_base\gear\Loadouts\RACS.sqf";
-				};
-				class LT_Gear_RU_1980
+					text = "Red Army (Winter)";
+					data = [  "U_LIB_SOV_Strelok_2_w",["V_LIB_SOV_RA_MosinBelt","V_LIB_SOV_RAZV_PPShBelt"],["B_LIB_SOV_RA_Rucksack2_Green","B_LIB_SOV_RA_Medicalbag_empty"],["H_LIB_SOV_RA_Helmet","H_LIB_SOV_Ushanka"],"B_LIB_SOV_RA_Radio_ACRE2"];
+					};
+				class Red_Army_Summer
 				{
-					text = "Russian 1980";
-					data = "\lt_template_base\gear\Loadouts\RU_1980.sqf";
-				};
-				class LT_Gear_RU_1990
-				{
-					text = "Russian 1990";
-					data = "\lt_template_base\gear\Loadouts\RU_1990.sqf";
-				};
-				class LT_Gear_RU_2010
-				{
-					text = "Russian 2010";
-					data = "\lt_template_base\gear\Loadouts\RU_2010.sqf";
-				};
-				class LT_Gear_TKA
-				{
-					text = "Takistani Army";
-					data = "\lt_template_base\gear\Loadouts\TKA.sqf";
-				};
-				class LT_Gear_UK_L85A2
-				{
-					text = "British";
-					data = "\lt_template_base\gear\Loadouts\UK_L85A2.sqf";
-				};
-				class LT_Gear_DE_G36
-				{
-					text = "German G36";
-					data = "\lt_template_base\gear\Loadouts\DE_G36.sqf";
-				};
-				class LT_Gear_DE_G36_WDL
-				{
-					text = "German G36 (Camo)";
-					data = "\lt_template_base\gear\Loadouts\DE_G36_WDL.sqf";
-				};
-				class LT_Gear_Czech_BREN
-				{
-					text = "Army of the Czech Republic 2010";
-					data = "\lt_template_base\gear\Loadouts\CZ_BREN.sqf";
-				};
-				class LT_Gear_Czech_SA58
-				{
-					text = "Army of the Czech Republic 1980";
-					data = "\lt_template_base\gear\Loadouts\CZ_SA58.sqf";
-				};
-				class LT_Gear_FR_ADR {
-					text = "GIGN";
-					data = "\lt_template_base\gear\Loadouts\FR_GIGN.sqf";
-				};
-				class LT_Gear_PMC_MK16_Des
-				{
-					text = "PMC Mk16 (Desert)";
-					data = "\lt_template_base\gear\Loadouts\PMC_MK16_Des.sqf";
-				};
-				class LT_Gear_PMC_Mk16_Black
-				{
-					text = "PMC Mk16 (Black)";
-					data = "\lt_template_base\gear\Loadouts\PMC_Mk16_Black.sqf";
-				};
-				class LT_Gear_PMC_Mk17_Des
-				{
-					text = "PMC Mk17 (Desert)";
-					data = "\lt_template_base\gear\Loadouts\PMC_Mk17_Des.sqf";
-				};
-				class LT_Gear_PMC_Mk17_Black
-				{
-					text = "PMC Mk17 (Black)";
-					data = "\lt_template_base\gear\Loadouts\PMC_Mk17_Black.sqf";
-				};
-				class LT_Gear_PMC_XM8
-				{
-					text = "PMC XM8";
-					data = "\lt_template_base\gear\Loadouts\PMC_XM8.sqf";
-				};
-				class LT_Gear_NATO_2035_MX
-				{
-					text = "NATO 2035 (MX)";
-					data = "\lt_template_base\gear\Loadouts\NATO_2035_MX.sqf";
-				};
-				class LT_Gear_NATO_2035_SIG
-				{
-					text = "NATO 2035 (SIG)";
-					data = "\lt_template_base\gear\Loadouts\NATO_2035_SIG.sqf";
-				};
-				class LT_Gear_CSAT_2035_KAT
-				{
-					text = "CSAT 2035 (Katiba)";
-					data = "\lt_template_base\gear\Loadouts\CSAT_2035_KAT.sqf";
-				};
-				class LT_Gear_CSAT_2035_QBZ
-				{
-					text = "CSAT 2035 (QBZ)";
-					data = "\lt_template_base\gear\Loadouts\CSAT_2035_QBZ.sqf";
-				};
-				class LT_Gear_AAF_2035
-				{
-					text = "AAF 2035";
-					data = "\lt_template_base\gear\Loadouts\AAF_2035.sqf";
-				};
-				class LT_Gear_Guerilla_2035
-				{
-					text = "Guerilla 2035";
-					data = "\lt_template_base\gear\Loadouts\FIA_2035.sqf";
-				};
+					text = "Red Army (Summer)";
+					data = ["U_LIB_SOV_Strelok_summer",["V_LIB_SOV_RA_MosinBelt","V_LIB_SOV_RAZV_PPShBelt"],["B_LIB_SOV_RA_Rucksack2_Green","B_LIB_SOV_RA_Medicalbag_empty"],["H_LIB_SOV_RA_Helmet","H_LIB_SOV_Ushanka"],"B_LIB_SOV_RA_Radio_ACRE2"];
+					};
+			};
+
+			class ItemsConfig
+			{
+				path[] = {"CfgCamouflage"};
+				localConfig = 1;
+				propertyText = "text";
+				propertyData = "data";
 			};
 		};
 	};
