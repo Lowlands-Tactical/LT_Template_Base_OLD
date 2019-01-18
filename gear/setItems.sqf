@@ -43,34 +43,29 @@ _carbine = if (isNil "lt_template_carbine" ) then {"arifle_MXC_F"} else {lt_temp
 _carbinemag = if (isNil "lt_template_carbinemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_carbinemag};
 _carbinemag_tr = if (isNil "lt_template_carbinemag_tr") then {"30Rnd_65x39_caseless_mag_Tracer"} else {lt_template_carbinemag_tr};
 
-// Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
+// Standard Submachine ( Commander, Squad Leader)
 _smg = if (isNil "lt_template_smg") then {"SMG_01_F"} else {lt_template_smg};
 _smgmag = if (isNil "lt_template_smgmag") then {"30Rnd_45ACP_Mag_SMG_01"} else {lt_template_smgmag};
 _smgmag_tr = if (isNil "lt_template_smgmag_tr") then {"30Rnd_45ACP_Mag_SMG_01_tracer_green"} else {lt_template_smgmag_tr};
 
-// Diver
-_diverWep = if (isNil "lt_template_diverWep") then {"arifle_SDAR_F"} else {lt_template_diverWep};
-_diverMag1 = if (isNil "lt_template_diverMag1") then {"30Rnd_65x39_caseless_mag"} else {lt_template_diverMag1};
-_diverMag2 = if (isNil "lt_template_diverMag2") then {"20Rnd_556x45_UW_mag"} else {lt_template_diverMag2};
-
-// Rifle with GL and HE grenades (CO, DC, FTLs)
+// GL and HE grenades (Grenadier)
 _glrifle = if (isNil "lt_template_glrifle") then {"arifle_MX_GL_F"} else {lt_template_glrifle};
 _glriflemag = if (isNil "lt_template_glriflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_glriflemag};
 _glriflemag_tr = if (isNil "lt_template_glriflemag_tr") then {"30Rnd_65x39_caseless_mag_Tracer"} else {lt_template_glriflemag_tr};
 _glmag = if (isNil "lt_template_glmag") then {"1Rnd_HE_Grenade_shell"} else {lt_template_glmag};
 
-// Smoke for FTLs, Squad Leaders, etc
+// Smoke for Grenadiers
 _glsmokewhite = if (isNil "lt_template_glsmokewhite") then {"1Rnd_Smoke_Grenade_shell"} else {lt_template_glsmokewhite};
 _glsmokegreen = if (isNil "lt_template_glsmokegreen") then {"1Rnd_SmokeGreen_Grenade_shell"} else {lt_template_glsmokegreen};
 _glsmokered = if (isNil "lt_template_glsmokered") then {"1Rnd_SmokeRed_Grenade_shell"} else {lt_template_glsmokered};
 
-// Flares for FTLs, Squad Leaders, etc
+// Flares for Grenadiers
 _glflarewhite = if (isNil "lt_template_glflarewhite") then {"UGL_FlareWhite_F"} else {lt_template_glflarewhite};
 _glflarered = if (isNil "lt_template_glflarered") then {"UGL_FlareRed_F"} else {lt_template_glflarered};
 _glflareyellow = if (isNil "lt_template_glflareyellow") then {"UGL_FlareYellow_F"} else {lt_template_glflareyellow};
 _glflaregreen = if (isNil "lt_template_glflaregreen") then {"UGL_FlareGreen_F"} else {};
 
-// Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
+// Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner, Grenadier)
 _pistol = if (isNil "lt_template_pistol") then {"hgun_P07_F"} else {lt_template_pistol};
 _pistolmag = if (isNil "lt_template_pistolmag") then {"16Rnd_9x21_Mag"} else {lt_template_pistolmag};
 
@@ -87,19 +82,6 @@ _bandages = if (isNil "lt_template_bandages" ) then {"ACE_fieldDressing"} else {
 _morphine = if (isNil "lt_template_morphine" ) then {"ACE_morphine"} else {lt_template_morphine};
 _epinephrine = if (isNil "lt_template_epinephrine" ) then {"ACE_epinephrine"} else {lt_template_epinephrine};
 _bloodbags = if (isNil "lt_template_bloodbags" ) then {"ACE_bloodIV"} else {lt_template_bloodbags};
-
-// Night Vision Goggles (NVGoggles)
-_nvg = if (isNil "lt_template_nvg") then {"ACE_NVG_Wide"} else {lt_template_nvg};
-
-// UAV Terminal
-// _uavterminal = if (isNil "lt_template_uavterminal") then {"B_UavTerminal"} else {lt_template_uavterminal};
-diag_log format["Player Side: %1", side player];
-_uavterminal = switch (side player) do {
-  case west: {"B_UavTerminal";};
-  case east: {"O_UavTerminal";};
-  case independent: {"I_UavTerminal";};
-};
-diag_log format["UAV Terminal: %1", _uavterminal];
 
 // Chemlights
 _chemgreen =  if (isNil "lt_template_chemgreen") then {"Chemlight_green"} else {lt_template_chemgreen};
@@ -145,21 +127,18 @@ _baguav 		= IF (_TypeName == "ARRAY") then {
 			_lt_camo_var_array select 2;
 		} else {
 			if (_lt_camo_var_array select 0 == "None") then {
-				"NLD_WLD_Carryall_Empty"
+				"B_Carryall_khk"
 			} else {
 				_lt_camo_var_array select 2;
 			};
 		};
 	};
-_bagmediumdiver = if (isNil "lt_template_bagmediumdiver") then {"B_AssaultPack_blk"} else {lt_template_bagmediumdiver};			// used by divers
 _baghmgg 		= if (isNil "lt_template_baghmgg") then {"B_HMG_01_weapon_F"} else {lt_template_baghmgg};			// used by Heavy MG gunner
 _baghmgag 		= if (isNil "lt_template_baghmgag") then {"B_HMG_01_support_F"} else {lt_template_baghmgag};			// used by Heavy MG assistant gunner
 _baghatg 		= if (isNil "lt_template_baghatg") then {"B_AT_01_weapon_F"} else {lt_template_baghatg};			// used by Heavy AT gunner
 _baghatag 		= if (isNil "lt_template_baghatag") then {"B_HMG_01_support_F"} else {lt_template_baghatag};			// used by Heavy AT assistant gunner
 _bagmtrg 		= if (isNil "lt_template_bagmtrg") then {"B_Mortar_01_weapon_F"} else {lt_template_bagmtrg};		// used by Mortar gunner
 _bagmtrag 		= if (isNil "lt_template_bagmtrag") then {"B_Mortar_01_support_F"} else {lt_template_bagmtrag};		// used by Mortar assistant gunner
-_baghsamg 		= if (isNil "lt_template_baghsamg") then {"B_AA_01_weapon_F"} else {lt_template_baghsamg};			// used by Heavy SAM gunner
-_baghsamag 		= if (isNil "lt_template_baghsamag") then {"B_HMG_01_support_F"} else {lt_template_baghsamag};			// used by Heavy SAM assistant gunner
 
 // ====================================================================================
 
@@ -189,10 +168,6 @@ _RATmag2 = if (isNil "lt_template_RATmag2") then {""} else {lt_template_RATmag2}
 _MAT = if (isNil "lt_template_MAT") then {"launch_MRAWS_olive_F"} else {lt_template_MAT};
 _MATmag1 = if (isNil "lt_template_MATmag1") then {"MRAWS_HEAT_F"} else {lt_template_MATmag1};
 _MATmag2 = if (isNil "lt_template_MATmag2") then {"MRAWS_HE_F"} else {lt_template_MATmag2};
-
-// Surface Air
-_SAM = if (isNil "lt_template_SAM") then {"launch_B_Titan_F"} else {lt_template_SAM};
-_SAMmag = if (isNil "lt_template_SAMmag") then {"Titan_AA"} else {lt_template_SAMmag};
 
 // Heavy AT
 _HAT = if (isNil "lt_template_HAT") then {"launch_B_Titan_short_F"} else {lt_template_HAT};
