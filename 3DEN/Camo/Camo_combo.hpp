@@ -35,6 +35,11 @@ class LT_Camo_combo: Title
 					text = "US Army (Europe)";
 					data = ["fow_u_us_m41_01_private",["fow_v_us_garand_bandoleer","fow_v_us_medic""fow_v_us_thompson"],"fow_b_us_m1928",["fow_h_us_m1","fow_h_us_m1_medic","fow_h_us_m1_net"],"B_LIB_US_Radio_ACRE2"];
 					};
+				class US_Army_Desert
+					{
+					 text = "US Army (Desert)";
+					 data = ["fow_u_us_m37_02_private",["fow_v_us_garand_bandoleer","fow_v_us_medic""fow_v_us_thompson"],["fow_b_us_m1944","fow_b_us_m1944_ropes"],["fow_h_us_m1","fow_h_us_m1_Medic"],"B_LIB_US_Radio_ACRE2"];
+					 };
 				class US_Army_Pacific
 				{
 					text = "US Army (Pacific)";
@@ -50,11 +55,16 @@ class LT_Camo_combo: Title
 					text = "UK Airborn";
 					data = ["fow_u_uk_parasmock",["fow_v_uk_para_base_green","fow_v_uk_para_bren_green","fow_v_uk_para_sten_green"],["fow_b_uk_p37_blanco","fow_b_uk_p37_blanco_shovel"],["fow_h_uk_mk2_para","fow_h_uk_mk2_para_camo"],"fow_b_uk_p37_radio_blanco"];
 					};
-				class UK_Army
+				class UK_Army_Europe
 				{
-					text = "UK Army";
+					text = "UK Army (Europe)";
 					data = ["fow_u_uk_bd40_01_private",["fow_v_uk_base_green","fow_v_uk_bren_green","fow_v_uk_officer_green"],["fow_b_uk_p37_blanco","fow_b_uk_p37_blanco_shovel"],["fow_h_uk_mk2","fow_h_uk_mk2_net","fow_h_uk_mk2_net_camo"],"fow_b_uk_p37_radio_blanco"];
 					};
+				class UK_Army_Desert
+				{
+				  text = "UK Army (Desert)";
+				  data = ["fow_u_uk_bd40_seac_02_private",["fow_v_uk_base","fow_v_uk_bren","fow_v_uk_sten"],["fow_b_uk_p37","fow_b_uk_p37_radio","fow_b_uk_p37","fow_b_uk_p37_shovel"],["fow_h_uk_mk2","fow_h_uk_mk2_net"],"fow_b_uk_p37_radio"];
+				  };
 				class Prinses_Irene
 					{
 					text = "Prinses Irene";
@@ -68,12 +78,22 @@ class LT_Camo_combo: Title
 				class Red_Army_Winter
 				{
 					text = "Red Army (Winter)";
-					data = [  "U_LIB_SOV_Strelok_2_w",["V_LIB_SOV_RA_MosinBelt","V_LIB_SOV_RAZV_PPShBelt"],["B_LIB_SOV_RA_Rucksack2_Green","B_LIB_SOV_RA_Medicalbag_empty"],["H_LIB_SOV_RA_Helmet","H_LIB_SOV_Ushanka","H_LIB-NKVD_OfficerCap"],"B_LIB_SOV_RA_Radio_ACRE2"];
+					data = [  "U_LIB_SOV_Strelok_2_w",["V_LIB_SOV_RA_MosinBelt","V_LIB_SOV_RAZV_PPShBelt"],["B_LIB_SOV_RA_Rucksack2_Green","B_LIB_SOV_RA_Medicalbag_empty"],["H_LIB_SOV_RA_Helmet","H_LIB_SOV_Ushanka"],"B_LIB_SOV_RA_Radio_ACRE2"];
 					};
 				class Red_Army_Summer
 				{
 					text = "Red Army (Summer)";
-					data = ["U_LIB_SOV_Strelok_summer",["V_LIB_SOV_RA_MosinBelt","V_LIB_SOV_RAZV_PPShBelt"],["B_LIB_SOV_RA_Rucksack2_Green","B_LIB_SOV_RA_Medicalbag_empty"],["H_LIB_SOV_RA_Helmet","H_LIB_SOV_Ushanka","H_LIB-NKVD_OfficerCap"],"B_LIB_SOV_RA_Radio_ACRE2"];
+					data = ["U_LIB_SOV_Strelok_summer",["V_LIB_SOV_RA_MosinBelt","V_LIB_SOV_RAZV_PPShBelt"],["B_LIB_SOV_RA_Rucksack2_Green","B_LIB_SOV_RA_Medicalbag_empty"],["H_LIB_SOV_RA_Helmet","H_LIB_SOV_Ushanka"],"B_LIB_SOV_RA_Radio_ACRE2"];
+					};
+				class Germany_Heer
+				{
+					text = "Germany (Heer)";
+				  data = ["fow_u_ger_m43_01_private",["fow_v_heer_k98","fow_v_heer_mg","fow_v_heer_mp40"],"B_LIB_GER_Tonister34_cowhide","B_LIB_GER_MedicBackPack_Empty","B_LIB_GER_Backpack"],["fow_h_ger_m40_heer_01","fow_h_ger_m40_heer_01_net"],"B-LIB_GER_Radio_ACRE2"];
+					};
+				class Germany_Arikakorps
+				{
+					text = "Germany (Afrikakorps)";
+					data = ["U_LIB_DAK_Soldier",["V_LIB_DAK_VestKar98","V_LIB_DAK_VestMP40","V-LIB_DAK_VestMG","V-LIB_DAK_PioneerVest"],["B_LIB_DAK_A_frame","B_LIB_GER_BackPack"],["H_LIB_DAK_Helmet","H_LIB_DAK_Helmet_Glasses","H_LIB_DAK_Helmet_Net"],"B_LIB_GER_Radio_ACRE2"];
 					};
 			};
 
