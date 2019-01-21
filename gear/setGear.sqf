@@ -275,27 +275,32 @@ if (hasInterface) then {
     // LOADOUT: HEAVY MG GUNNER
       case "hmgg":
       {
-        _unit addweapon _carbine;
-        _unit addmagazines [_carbinemag,7];
-        _unit addmagazines [_carbinemag_tr,2];
-        _unit addmagazines [_grenade,1];
-        _unit addmagazines [_mgrenade,1];
-        _unit addmagazines [_smokegrenade,1];
-        _unit addBackpack _baghmgg;
+        _unit addweapon _HMG;
+        _unit addweapon _pistol;
+        _unit addmagazines [_pistolmag,4];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+        (unitBackpack _unit) addMagazineCargoGlobal [_HMGmag, 5];
+        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
+        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 1];
+        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
+        _attachments = [_attach1,_bipod2];
       };
 
     // LOADOUT: HEAVY MG ASSISTANT GUNNER
       case "hmgag":
       {
-        _unit addweapon _carbine;
-        _unit addmagazines [_carbinemag,7];
-        _unit addmagazines [_carbinemag_tr,2];
-        _unit addmagazines [_grenade,1];
-        _unit addmagazines [_mgrenade,1];
-        _unit addmagazines [_smokegrenade,1];
-        //["hmgag"] call _backpack;
+        _unit addweapon _rifle;
         _unit addWeapon _simplebinoculars;
-        _unit addBackpack _baghmgag;
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+        (unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 11];
+        (unitBackpack _unit) addMagazineCargoGlobal [_riflemag_tr, 3];
+        (unitBackpack _unit) addMagazineCargoGlobal [_HMGmag, 2];
+        (unitBackpack _unit) addMagazineCargoGlobal [_HMGmag_tr, 1];
+        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 3];
+        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 3];
+        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
       };
 
     // LOADOUT: MEDIUM AT GUNNER
