@@ -64,7 +64,7 @@ lt_template_RATmag2        	 = 	 "";
 // Medium AT Gunner, Medium AT Gunner Assistant (alleen magazijnen)
 lt_template_MAT    			 = 	 "LIB_PTRD";
 lt_template_MATmag1        	 = 	 "LIB_1Rnd_145x114";
-lt_template_MATmag2        	 = 	 "";
+lt_template_MATmag2        	 = 	 "LIB_1Rnd_145x114";
 
 // Sniper
 lt_template_SNrifle             =      "LIB_M9130PU";
