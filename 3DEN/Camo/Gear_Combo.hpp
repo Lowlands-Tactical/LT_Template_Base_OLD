@@ -45,6 +45,7 @@ class LT_Gear_combo: Title
 					text = "GER Army";
 					data = "\lt_template_base\gear\Loadouts\GER_Army.sqf";
 				};
+			};
 		};
 	};
 };
