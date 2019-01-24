@@ -86,7 +86,7 @@ if (hasInterface) then {
       {
         _unit addweapon _smg;
         _unit addweapon _pistol;
-        _unit addWeapon ;
+        _unit addWeapon _simplebinoculars;
         _unit addmagazines [_smgmag_tr,2];
         _unit addmagazines [_pistolmag,2];
         _unit addmagazines [_grenade,1];
