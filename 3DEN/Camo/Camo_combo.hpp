@@ -33,22 +33,22 @@ class LT_Camo_combo: Title
 				class US_Army_Europe
 				{
 					text = "US Army (Europe)";
-					data = ["fow_u_us_m41_01_private",["fow_v_us_garand_bandoleer","fow_v_us_medic""fow_v_us_thompson"],"fow_b_us_m1928",["fow_h_us_m1","fow_h_us_m1_medic","fow_h_us_m1_net"],"B_LIB_US_Radio_ACRE2"];
+					data = ["fow_u_us_m41_01_private",["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],"fow_b_us_m1928",["fow_h_us_m1","fow_h_us_m1_medic","fow_h_us_m1_net"],"B_LIB_US_Radio_ACRE2"];
 					};
 				class US_Army_Desert
 					{
 					 text = "US Army (Desert)";
-					 data = ["fow_u_us_m37_02_private",["fow_v_us_garand_bandoleer","fow_v_us_medic""fow_v_us_thompson"],["fow_b_us_m1944","fow_b_us_m1944_ropes"],["fow_h_us_m1","fow_h_us_m1_Medic"],"B_LIB_US_Radio_ACRE2"];
+					 data = ["fow_u_us_m37_02_private",["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],["fow_b_us_m1944","fow_b_us_m1944_ropes"],["fow_h_us_m1","fow_h_us_m1_Medic"],"B_LIB_US_Radio_ACRE2"];
 					 };
 				class US_Army_Pacific
 				{
 					text = "US Army (Pacific)";
-					data = ["fow_u_us_hbt_01_private",["fow_v_us_garand_bandoleer","fow_v_us_medic""fow_v_us_thompson"],"fow_b_us_m1928_02",["fow_h_us_m1","fow_h_us_m1_medic","fow_h_us_m1_net"],"B_LIB_US_Radio_ACRE2"];
+					data = ["fow_u_us_hbt_01_private",["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],"fow_b_us_m1928_02",["fow_h_us_m1","fow_h_us_m1_medic","fow_h_us_m1_net"],"B_LIB_US_Radio_ACRE2"];
 					};
 				class USMC_Pacific
 				{
 					text = "USMC (Pacific)";
-					data = ["fow_u_usmc_p41_01_private",["fow_v_us_garand_bandoleer","fow_v_us_medic""fow_v_us_thompson"],"fow_b_usmc_m1928_02",["fow_h_us_m1","fow_h_us_m1_medic","fow_h_us_m1_net"],"B_LIB_US_Radio_ACRE2"];
+					data = ["fow_u_usmc_p41_01_private",["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],"fow_b_usmc_m1928_02",["fow_h_us_m1","fow_h_us_m1_medic","fow_h_us_m1_net"],"B_LIB_US_Radio_ACRE2"];
 					};
 				class UK_Airborn
 				{
