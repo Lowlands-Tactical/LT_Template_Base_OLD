@@ -111,6 +111,14 @@ class LT_role_combo: Title
 					data = "vd";
 					text = "Vehicle driver (repair)";
 				};
+				class LT_Role_VL {
+					data = "vl";
+					text = "Vehicle Loader";
+				};
+				class LT_Role_VR {
+					data = "vr";
+					text = "Vehicle Radioman";
+				};
 				class LT_Role_PP {
 					data = "pp";
 					text = "Air vehicle pilot / co-pilot";
