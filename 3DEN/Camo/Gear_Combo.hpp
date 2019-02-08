@@ -19,11 +19,16 @@ class LT_Gear_combo: Title
 
 			class Items
 			{
+				class LT_Gear_Empty
+				{
+					text = "Empty";
+					data = "\lt_template_base\gear\Loadouts\Empty.sqf";
+					default = 1;
+				};
 				class LT_Gear_US_Army
 				{
 					text = "US Army";
 					data = "\lt_template_base\gear\Loadouts\US_army.sqf";
-					default = 1;
 				};
 				class LT_Gear_US_airborne
 				{
