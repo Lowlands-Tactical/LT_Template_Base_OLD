@@ -22,23 +22,23 @@ class LT_Camo_combo: Title
 				class US_Airborn
 				{
 					text = "US Airborn";
-					data = [["U_LIB_US_AB_Uniform_M43","U_LIB_US_AB_Uniform_M43_Medic"],["V_LIB_US_AB_Vest_Asst_MG","V_LIB_US_AB_Vest_BAR","V_LIB_US_AB_Vest_Carbine","V_LIB_US_AB_Vest_Garand","V_LIB_US_AB_Vest_Grenadier","V_LIB_US_AB_Vest_Thompson"],["B_LIB_US_M36","B_LIB_US_M36_Bandoleer","B_LIB_US_M36_rocketbag_empty","B_LIB_US_M36_Rope"],["H_LIB_US_AB_Helmet_Clear_1","H_LIB_US_AB_Helmet","H_LIB_US_AB_Helmet_Jump_1","H_LIB_US_AB_Helmet_Medic_1","H_LIB_US_AB_Helmet_Plain_1"],"B_LIB_US_Radio_ACRE2"];
+					data = ["U_LIB_US_AB_Uniform_M43",["V_LIB_US_AB_Vest_Asst_MG","V_LIB_US_AB_Vest_BAR","V_LIB_US_AB_Vest_Carbine","V_LIB_US_AB_Vest_Garand","V_LIB_US_AB_Vest_Grenadier","V_LIB_US_AB_Vest_Thompson"],["B_LIB_US_M36","B_LIB_US_M36_Bandoleer","B_LIB_US_M36_rocketbag_empty","B_LIB_US_M36_Rope"],["H_LIB_US_AB_Helmet_Clear_1","H_LIB_US_AB_Helmet","H_LIB_US_AB_Helmet_Jump_1","H_LIB_US_AB_Helmet_Plain_1"],"B_LIB_US_Radio_ACRE2"];
 					default = 1;
 					};
 				class US_Airborn_Winter
 				{
 					text = "US Airborn (Winter)";
-					data = ["U_LIB_US_AB_Uniform_M42_W",["V_LIB_US_AB_Vest_Asst_MG","V_LIB_US_AB_Vest_BAR","V_LIB_US_AB_Vest_Carbine","V_LIB_US_AB_Vest_Garand","V_LIB_US_AB_Vest_Grenadier","V_LIB_US_AB_Vest_Thompson"],["B_LIB_US_Backpack_Bandoleer","B_LIB_US_Backpack_Rocketbag_Empty","B_LIB_US_Backpack_Mk2"],["H_LIB_US_Helmet_w","H_LIB_US_Helmet_Net_w","H_LIB_US_Helmet_Med_w"],"B_LIB_US_Radio_ACRE2"];
+					data = ["U_LIB_US_AB_Uniform_M42_W",["V_LIB_US_AB_Vest_Asst_MG","V_LIB_US_AB_Vest_BAR","V_LIB_US_AB_Vest_Carbine","V_LIB_US_AB_Vest_Garand","V_LIB_US_AB_Vest_Grenadier","V_LIB_US_AB_Vest_Thompson"],["B_LIB_US_Backpack_Bandoleer","B_LIB_US_Backpack_Rocketbag_Empty","B_LIB_US_Backpack_Mk2"],["H_LIB_US_Helmet_w","H_LIB_US_Helmet_Net_w"],"B_LIB_US_Radio_ACRE2"];
 					};
 				class US_Army_Europe
 				{
 					text = "US Army (Europe)";
-					data = ["fow_u_us_m41_01_private",["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],"fow_b_us_m1928",["fow_h_us_m1","fow_h_us_m1_medic","fow_h_us_m1_net"],"B_LIB_US_Radio_ACRE2"];
+					data = ["fow_u_us_m41_01_private",["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],"fow_b_us_m1928",["fow_h_us_m1","fow_h_us_m1_net"],"B_LIB_US_Radio_ACRE2"];
 					};
 				class US_Army_Desert
-					{
+				{
 					 text = "US Army (Desert)";
-					 data = ["fow_u_us_m37_02_private",["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],["fow_b_us_m1944","fow_b_us_m1944_ropes"],["fow_h_us_m1","fow_h_us_m1_Medic"],"B_LIB_US_Radio_ACRE2"];
+					 data = ["fow_u_us_m37_02_private",["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],["fow_b_us_m1944","fow_b_us_m1944_ropes"],"fow_h_us_m1","B_LIB_US_Radio_ACRE2"];
 					 };
 				class US_Army_Pacific
 				{
@@ -54,8 +54,6 @@ class LT_Camo_combo: Title
 				{
 					text = "UK Airborn";
 					data = ["fow_u_uk_parasmock",["fow_v_uk_para_base_green","fow_v_uk_para_bren_green","fow_v_uk_para_sten_green"],["fow_b_uk_p37_blanco","fow_b_uk_p37_blanco_shovel"],["fow_h_uk_mk2_para","fow_h_uk_mk2_para_camo"],"fow_b_uk_p37_radio_blanco"];
-					w
-					
 					};
 				class UK_Army_Europe
 				{
@@ -63,14 +61,12 @@ class LT_Camo_combo: Title
 					data = ["fow_u_uk_bd40_01_private",["fow_v_uk_base_green","fow_v_uk_bren_green","fow_v_uk_officer_green"],["fow_b_uk_p37_blanco","fow_b_uk_p37_blanco_shovel"],["fow_h_uk_mk2","fow_h_uk_mk2_net","fow_h_uk_mk2_net_camo"],"fow_b_uk_p37_radio_blanco"];
 					};
 				class UK_Army_Desert
-				w
-				
 				{
 				  text = "UK Army (Desert)";
 				  data = ["fow_u_uk_bd40_seac_02_private",["fow_v_uk_base","fow_v_uk_bren","fow_v_uk_sten"],["fow_b_uk_p37","fow_b_uk_p37_radio","fow_b_uk_p37","fow_b_uk_p37_shovel"],["fow_h_uk_mk2","fow_h_uk_mk2_net"],"fow_b_uk_p37_radio"];
 				  };
 				class Prinses_Irene
-					{
+				{
 					text = "Prinses Irene";
 					data = ["fow_u_uk_bd40_pib_01_private",["fow_v_uk_base_green","fow_v_uk_bren_green","fow_v_uk_officer_green"],["fow_b_uk_p37_blanco","fow_b_uk_p37_blanco_shovel"],["fow_h_uk_mk2","fow_h_uk_mk2_net","fow_h_uk_mk2_net_camo"],"fow_b_uk_p37_radio_blanco"];
 					};
@@ -78,9 +74,7 @@ class LT_Camo_combo: Title
 				{
 					text = "Polish Commandos";
 					data = ["fow_u_uk_bd40_pol_01_commando_private",["fow_v_uk_para_base","fow_v_uk_para_bren","fow_v_uk_para_sten"],"fow_b_uk_bergenpack","fow_h_uk_beret_commando_pol","fow_b_uk_p37_radio"];
-				};w
-				w
-				
+				};
 				class Red_Army_Winter
 				{
 					text = "Red Army (Winter)";
@@ -94,7 +88,7 @@ class LT_Camo_combo: Title
 				class Germany_Heer
 				{
 					text = "Germany (Heer)";
-				  data = ["fow_u_ger_m43_01_private",["fow_v_heer_k98","fow_v_heer_mg","fow_v_heer_mp40"],"B_LIB_GER_Tonister34_cowhide","B_LIB_GER_MedicBackPack_Empty","B_LIB_GER_Backpack"],["fow_h_ger_m40_heer_01","fow_h_ger_m40_heer_01_net"],"B-LIB_GER_Radio_ACRE2"];
+				  data = ["fow_u_ger_m43_01_private",["fow_v_heer_k98","fow_v_heer_mg","fow_v_heer_mp40"],["B_LIB_GER_Tonister34_cowhide","B_LIB_GER_MedicBackPack_Empty","B_LIB_GER_Backpack"],["fow_h_ger_m40_heer_01","fow_h_ger_m40_heer_01_net"],"B-LIB_GER_Radio_ACRE2"];
 					};
 				class Germany_Arikakorps
 				{
