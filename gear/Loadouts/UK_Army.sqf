@@ -1,5 +1,5 @@
-// filename 	"AAF2035.sqf"
-// loadout name "AAF 2035"
+// filename 	"UK_Army.sqf"
+// loadout name "UK Army"
 
 // Attachments Primary weapon
 lt_template_attach1        	 = 	 ""; // grenadelauncher M1 Garand
