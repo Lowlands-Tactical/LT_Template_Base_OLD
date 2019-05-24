@@ -98,3 +98,16 @@ LT_NATO_PAC = [LT_NATO_PAC_units,LT_NATO_PAC_car,LT_NATO_PAC_ifv,LT_NATO_PAC_tan
 LT_NATO_PAC_weights = [];
 
 // USA
+// Infantry Division
+LT_USA_INF_units = ["uns_US_1ID_COM","uns_US_1ID_PL","uns_US_1ID_SL","uns_US_1ID_ENG","uns_US_1ID_DEM","uns_US_1ID_SAP","uns_US_1ID_MED","uns_US_1ID_HMG","uns_US_1ID_AHMG","uns_US_1ID_MGSG","uns_US_1ID_MGSG2","uns_US_1ID_MGSG3","uns_US_1ID_TRI","uns_US_1ID_MGAASG","uns_US_1ID_MTSG","uns_US_1ID_GL","uns_US_1ID_RTO","uns_US_1ID_AT","uns_US_1ID_SCT","uns_US_1ID_MRK","uns_US_1ID_RF1","uns_US_1ID_RF2","uns_US_1ID_RF3","uns_US_1ID_RF4","uns_US_1ID_RF5","uns_US_1ID_RF6","uns_US_1ID_STY","uns_US_1ID_STY2","uns_US_1ID_STY3","uns_US_1ID_SLSG","uns_US_1ID_SLSA","uns_US_1ID_CAS"];
+LT_USA_INF_units_weightArray = [];
+LT_USA_INF_car = ["uns_willys","uns_willysmg50","uns_willysmg","uns_willysm40","uns_truck_base","uns_xm706e1","uns_xm706e2"];
+LT_USA_INF_car_weightArray = [];
+LT_USA_INF_ifv = ["uns_m163","uns_M577_amb","uns_M113_M2","uns_M113_M60","uns_M113_XM182","uns_M113_M134","uns_M113_30cal","uns_M132"];
+LT_USA_INF_ifv_weightArray = [];
+LT_USA_INF_tank = [];
+LT_USA_INF_tank_weightArray = [];
+LT_USA_INF_heli = ["uns_UH1C_M21_M158","uns_UH1C_M21_M200","uns_UH1C_M6_M158","uns_UH1C_M6_M200","uns_UH1C_M21_M158_M134","uns_UH1C_M6_M200_M134","UNS_UH1B_TOW"];
+LT_USA_INF_heli_weightArray = [];
+LT_USA_INF = LT_USA_INF_units,LT_USA_INF_car,LT_NATO_PAC_ifv,LT_NATO_PAC_tank,LT_NATO_PAC_heli];
+LT_USA_INF_weights = [];
