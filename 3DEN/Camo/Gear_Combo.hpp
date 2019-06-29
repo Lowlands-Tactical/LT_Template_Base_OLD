@@ -52,7 +52,7 @@ class LT_Gear_combo: Title
 				class LT_VC_REGIONAL
 				{
 					text = "VC Regional";
-					data = [["UNS_VC_K","UNS_VC_B"],["UNS_VC_S2","UNS_VC_A1","UNS_VC_A2","UNS_VC_A3","UNS_VC_SP"],["uns_men_NVA_65_AS2_Bag","uns_men_NVA_65_AS3_Bag","uns_men_NVA_65_AS5_Bag","uns_men_VC_regional_HMG_Bag","UNS_NVA_MED","uns_men_NVA_daccong_AT3_Bag","uns_men_NVA_recon_65_RF2_Bag","uns_men_NVA_daccong_SAP1_Bag"],["UNS_Boonie_VC","UNS_Conehat_VC"],"uns_US_1ID_RTO_Bag"];
+					data = [["UNS_VC_K","UNS_VC_B"],["UNS_VC_S2","UNS_VC_A1","UNS_VC_A2","UNS_VC_A3","UNS_VC_SP"],["uns_men_NVA_65_AS2_Bag","uns_men_NVA_65_AS3_Bag","uns_men_NVA_65_AS5_Bag","uns_men_VC_regional_HMG_Bag","UNS_NVA_MED","uns_men_NVA_daccong_AT3_Bag","uns_men_NVA_recon_65_RF2_Bag","uns_men_NVA_daccong_SAP1_Bag"],["UNS_Boonie_VC","UNS_Conehat_VC"],"uns_men_NVA_65_RTO_Bag"];
 				};
 				class LT_VC_MAIN
 				{
@@ -62,22 +62,22 @@ class LT_Gear_combo: Title
 				class LT_VC_GUERILLA
 				{
 					text = "VC Guerilla";
-					data = [["UNS_VC_S","UNS_VC_U"],["UNS_VC_S2","UNS_VC_A1","UNS_VC_A2","UNS_VC_A3","UNS_VC_B1"],["uns_men_VC_type99_Bag","uns_men_VC_mas36_Bag","uns_men_VC_type99_Bag","uns_men_NVA_65_AS2_Bag","UNS_NVA_MED","uns_men_VC_dp28_Bag","uns_men_VC_m3a1_Bag"],["UNS_Boonie_VC","UNS_Conehat_VC","UNS_Headband_VC"],"uns_US_1ID_RTO_Bag"];
+					data = [["UNS_VC_S","UNS_VC_U"],["UNS_VC_S2","UNS_VC_A1","UNS_VC_A2","UNS_VC_A3","UNS_VC_B1"],["uns_men_VC_type99_Bag","uns_men_VC_mas36_Bag","uns_men_VC_type99_Bag","uns_men_NVA_65_AS2_Bag","UNS_NVA_MED","uns_men_VC_dp28_Bag","uns_men_VC_m3a1_Bag"],["UNS_Boonie_VC","UNS_Conehat_VC","UNS_Headband_VC"],"uns_men_NVA_65_RTO_Bag"];
 				};
 				class LT_NVA_Main_1
 				{
 					text = "NVA Main (Woodland)";
-					data = ["UNIFROM",["VEST","VEST","VEST","VEST","VEST"],["BACKPACK","BACKPACK","BACKPACK","BACKPACK"],["HELM","HELM","HELM"],"uns_US_1ID_RTO_Bag"];
+					data = [["UNS_NVA_G","UNS_NVA_GS"],["UNS_NVA_A1","UNS_NVA_A2","UNS_NVA_S2","UNS_NVA_MG","UNS_NVA_SP"],["uns_men_NVA_68_MRK_Bag","uns_men_NVA_68_off_Bag","uns_men_NVA_68_MED_Bag","uns_men_NVA_68_HMG_Bag","uns_men_NVA_68_SAP_Bag","uns_men_NVA_68_AT2_Bag","uns_men_NVA_68_AS3_Bag","uns_men_NVA_68_AS4_Bag","uns_men_NVA_68_AS6_Bag"],["UNS_NVA_HG","UNS_Boonie_VC","UNS_NVA_HGG"],"uns_men_NVA_68_RTO_Bag"];
 				};
 				class LT_NVA_Main_2
 				{
 					text = "NVA Main (Arid)";
-					data = ["UNIFROM",["VEST","VEST","VEST","VEST","VEST"],["BACKPACK","BACKPACK","BACKPACK","BACKPACK"],["HELM","HELM","HELM"],"uns_US_1ID_RTO_Bag"];
+					data = [["UNS_NVA_K","UNS_NVA_KS"],["UNS_NVA_B1","UNS_NVA_A2","UNS_NVA_S2","UNS_NVA_SP","UNS_NVA_MG"],["uns_men_NVA_65_off_Bag","uns_men_NVA_65_MED_Bag","uns_men_NVA_65_HMG_Bag","uns_men_NVA_65_SAP_Bag","uns_men_NVA_65_AT2_Bag","uns_men_NVA_65_MRK_Bag","uns_men_NVA_65_AS3_Bag","uns_men_NVA_65_AS6_Bag"],["UNS_NVA_HK","UNS_Boonie_VC","UNS_NVA_HKG"],"uns_men_NVA_65_RTO_Bag"];
 				};
 				class LT_NVA_COMMANDOS
 				{
 					text = "NVA Commandos";
-					data = ["UNIFROM",["VEST","VEST","VEST","VEST","VEST"],["BACKPACK","BACKPACK","BACKPACK","BACKPACK"],["HELM","HELM","HELM"],"uns_US_1ID_RTO_Bag"];
+					data = [["UNS_DCCR_B","UNS_DCCR_G","UNS_DCCR_TGS","UNS_DCCR_BBS","UNS_DCCR_GTS"],["UNS_NVA_S2","UNS_NVA_A2","UNS_NVA_MG"],["uns_men_NVA_daccong_off_Bag","uns_men_NVA_daccong_SAP1_Bag","uns_men_NVA_daccong_HMG_Bag","uns_men_NVA_daccong_MRK_Bag","uns_men_NVA_daccong_AT_Bag","UNS_NVA_R1","uns_men_NVA_daccong_AS6_Bag"],["UNS_PAVN_HG","UNS_PAVN_HC","UNS_Boonie_VC"],"uns_men_NVA_daccong_RTO_Bag"];
 				};
 			};
 		};
