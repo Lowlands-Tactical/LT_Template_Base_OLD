@@ -4,7 +4,7 @@ if (hasInterface) then {
   _exclude = _unit getVariable ["LT_camo_exclude", 0];
   _nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
 
-  _RolesArray = ["custom","co","dc","m","ftl","ar","aar","rat","dm","mmgg","mmgag","hmgg","hmgag","matg","matag","hatg","hatag","mtrg","mtrag","msamg","msamag","hsamg","hsamag","sn","sp","vc","vd","vg","pp","pcc","pc","eng","engm","uav","div","r","car","smg","gren"];
+  _RolesArray = ["custom","co","pl","m","tl","mg","amg","rat","dm","mmgg","mmgag","hmgg","hmgag","matg","matag","hatg","hatag","mtrg","mtrag","sn","sp","vc","vd","vg","pp","pcc","pc","eng","engm","div","r","car","smg","gren"];
 
   diag_log format ["LT Template DEBUG: role is %1 and exclude is %2",_role, _exclude];
   diag_log format ["LT Template DEBUG: setGear.sqf Role in RolesArray: %1", _role IN _RolesArray];

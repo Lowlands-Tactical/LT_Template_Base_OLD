@@ -24,6 +24,11 @@ class LT_Gear_combo: Title
 					data = "None";
 					default = 1;
 				};
+				class LT_TEMPLATE
+				{
+					text = "Desert";
+					data =  [["UNFORM","UNFORM","UNFORM"],"NLD_DST_Vest",["BACKPACK","BACKPACK","BACKPACK"],"HELM","RADIOBAG"];
+				};
 			};
 		};
 	};

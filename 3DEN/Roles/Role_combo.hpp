@@ -24,28 +24,28 @@ class LT_role_combo: Title
 					default = 1;
 				};
 				class LT_Role_CO {
-					text = "Commander";
 					data = "co";
+					text = "Commander";
 				};
 				class LT_Role_DC {
-					data = "dc";
-					text = "Squad leader";
+					data = "pl";
+					text = "Platoon leader";
 				};
 				class LT_Role_M {
 					data = "m";
 					text = "Medic";
 				};
 				class LT_Role_FTL {
-					data = "ftl";
-					text = "Fire team leader";
+					data = "tl";
+					text = "Team leader";
 				};
 				class LT_Role_AR {
-					data = "ar";
-					text = "Automatic rifleman";
+					data = "mg";
+					text = "Machinegunner";
 				};
 				class LT_Role_AAR {
-					data = "aar";
-					text = "Assistant automatic rifleman";
+					data = "amg";
+					text = "Assistant machinegunner";
 				};
 				class LT_Role_RAT {
 					data = "rat";
@@ -103,14 +103,6 @@ class LT_role_combo: Title
 					data = "mtrag";
 					text = "Mortar assistant gunner (Static)";
 				};
-				class LT_Role_MSAMG {
-					data = "msamg";
-					text = "Medium SAM gunner";
-				};
-				class LT_Role_MSAMAG {
-					data = "msamag";
-					text = "Medium SAM assistant gunner";
-				};
 				class LT_Role_SN {
 					data = "sn";
 					text = "Sniper";
@@ -150,10 +142,6 @@ class LT_role_combo: Title
 				class LT_Role_ENGM {
 					data = "engm";
 					text = "Engineer (mines)";
-				};
-				class LT_Role_UAV {
-					data = "uav";
-					text = "UAV operator";
 				};
 				class LT_Role_R {
 					data = "r";
