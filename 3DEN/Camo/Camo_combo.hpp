@@ -25,6 +25,31 @@ class LT_Camo_combo: Title
 					data = ["None","None","None","None","None"];
 					default = 1;
 				};
+				class LT_USA_INF
+				{
+					text = "USA Infrantry";
+					data =  ["UNS_ARMY_BDU_65",["UNS_M1956_A3","UNS_M1956_A6","UNS_M1956_A7","UNS_M1956_A10","UNS_M1956_A4","UNS_M1956_A12"],["uns_US_1ID_PL_Bag","uns_US_1ID_SL_Bag","uns_US_1ID_MED_Bag","uns_US_1ID_GL_Bag","uns_US_1ID_RF3_Bag","uns_US_1ID_DEM_Bag"],["UNS_M1_1A","UNS_M1_2A","UNS_M1_3A","UNS_M1_4A","UNS_M1_6A","UNS_M1_7A","UNS_M1_8A","UNS_Bandana_OD"],"uns_US_1ID_RTO_Bag"];
+				};
+				class LT_USA_MARINE
+				{
+					text = "USA Marine";
+					data = [["UNS_USMC_Flak_E","UNS_USMC_Flak_ES"],["UNS_M1956_M7","UNS_M1956_M8","UNS_M1956_M10","UNS_M1956_M13","UNS_M1956_M14"],["uns_men_USMC_68_SL_Bag","uns_men_USMC_68_PL_Bag","uns_men_USMC_68_MED_Bag","uns_men_USMC_68_ENG_Bag","uns_men_USMC_68_MRK_Bag","uns_men_USMC_68_AT_Bag"],["UNS_M1_1","UNS_M1_2","UNS_M1_3","UNS_M1_4","UNS_M1_8","UNS_M1_12"],"uns_men_USMC_68_RTO_Bag"];
+				};
+				class LT_USA_AIRBORNE
+				{
+					text = "USA Airborne";
+					data = ["UNS_TIGER3_BDU",["UNS_M1956_A2","UNS_M1956_A3","UNS_M1956_A4","UNS_M1956_A6","UNS_M1956_A7","UNS_M1956_A10","UNS_M1956_A11","UNS_M1956_A12","UNS_M1956_LRRP1","uns_men_US_1AC_MRK_Bag","uns_men_US_1AC_MRK2_Bag","uns_men_US_1AC_SAP_Bag","uns_men_US_1AC_DEM_Bag"],["uns_men_US_1AC_SL_Bag","uns_men_US_1AC_PL_Bag","uns_men_US_1AC_MED_Bag","uns_men_US_1AC_HMG_Bag","uns_men_US_1AC_AHMG_Bag","uns_men_US_1AC_GL_Bag","uns_men_US_1AC_GL2_Bag","uns_men_US_1AC_AT_Bag","uns_men_US_1AC_SCT_Bag","uns_men_US_1AC_COM_Bag","uns_men_US_1AC_TPR1_Bag"],["UNS_Bandana_OD2","UNS_Boonie_TIG1","UNS_Headband_OD2"],"uns_men_US_1AC_RTO_Bag"];
+				};
+				class LT_USA_SPEC
+				{
+					text = "USA Special Forces";
+					data = ["UNS_TIGER_BDU",["UNS_M1956_A2","UNS_M1956_A3","UNS_M1956_A4","UNS_M1956_A6","UNS_M1956_A7","UNS_M1956_A8","UNS_M1956_A10"],["uns_men_US_5SFG_COM_Bag","uns_men_US_5SFG_ENG_Bag","uns_men_US_5SFG_HMG2_Bag","uns_men_US_5SFG_MED_Bag","uns_men_US_5SFG_MRK2_Bag","uns_men_US_5SFG_MRK4_Bag","uns_men_US_5SFG_SAP_Bag","uns_men_US_5SFG_AT_Bag","uns_men_US_5SFG_GL4_Bag","uns_men_US_5SFG_SP1_Bag","uns_men_US_5SFG_SP4_Bag","uns_men_US_5SFG_SP7_Bag"],["UNS_Headband_OD2","UNS_Bandana_OD","UNS_Bandana_OD2","UNS_Boonie_TIG","UNS_Boonie_TIGF2","UNS_Boonie_TIGF"],"uns_men_US_5SFG_RTO_Bag"];
+				};
+				class LT_USA_SEALS
+				{
+					text = "USA Seals";
+					data = [["UNS_SEAL_BDU_TD","UNS_SEAL_BDU_TS","UNS_SEAL_BDU_ED","UNS_SEAL_BDU_ET"],["UNS_M1956_N1","UNS_M1956_N2","UNS_M1956_N3","UNS_M1956_N4","VEST"],["UNS_USMC_MED","uns_men_US_SEAL_DEM_Bag"],["UNS_Bandana_OD3","UNS_Headband_ED","UNS_Headband_OD2","UNS_Boonie_TIG2"],"UNS_SF_RTO"];
+				};
 			};
 
 			class ItemsConfig
