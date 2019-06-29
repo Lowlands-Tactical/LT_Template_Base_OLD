@@ -50,6 +50,21 @@ class LT_Camo_combo: Title
 					text = "USA Seals";
 					data = [["UNS_SEAL_BDU_TD","UNS_SEAL_BDU_TS","UNS_SEAL_BDU_ED","UNS_SEAL_BDU_ET"],["UNS_M1956_N1","UNS_M1956_N2","UNS_M1956_N3","UNS_M1956_N4","VEST"],["UNS_USMC_MED","uns_men_US_SEAL_DEM_Bag"],["UNS_Bandana_OD3","UNS_Headband_ED","UNS_Headband_OD2","UNS_Boonie_TIG2"],"UNS_SF_RTO"];
 				};
+				class LT_VC_REGIONAL
+				{
+					text = "VC Regional";
+					data = [["UNS_VC_K","UNS_VC_B"],["UNS_VC_S2","UNS_VC_A1","UNS_VC_A2","UNS_VC_A3","UNS_VC_SP"],["uns_men_NVA_65_AS2_Bag","uns_men_NVA_65_AS3_Bag","uns_men_NVA_65_AS5_Bag","uns_men_VC_regional_HMG_Bag","UNS_NVA_MED","uns_men_NVA_daccong_AT3_Bag","uns_men_NVA_recon_65_RF2_Bag","uns_men_NVA_daccong_SAP1_Bag"],["UNS_Boonie_VC","UNS_Conehat_VC"],"uns_US_1ID_RTO_Bag"];
+				};
+				class LT_VC_MAIN
+				{
+					text = "VC Main Force";
+					data = [["UNS_VC_G","UNIFROM"],["UNS_VC_A1","VEST","UNS_VC_A3","UNS_VC_S1","UNS_VC_S2","UNS_VC_MG","UNS_VC_SP"],["uns_men_NVA_65_AS2_Bag","uns_men_NVA_daccong_AS2_Bag","uns_men_NVA_recon_65_AS1_Bag","uns_men_NVA_daccong_AS2_Bag","UNS_NVA_MED","UNS_NVA_RPG","uns_men_NVA_recon_65_RF2_Bag","uns_men_NVA_68_RF1_Bag"],["UNS_Boonie_VC","UNS_Boonie4_VC","HELM"],"uns_men_NVA_65_RTO_Bag"];
+				};
+				class LT_VC_GUERILLA
+				{
+					text = "VC Guerilla";
+					data = [["UNS_VC_S","UNS_VC_U"],["UNS_VC_S2","UNS_VC_A1","UNS_VC_A2","UNS_VC_A3","UNS_VC_B1"],["uns_men_VC_type99_Bag","uns_men_VC_mas36_Bag","uns_men_VC_type99_Bag","uns_men_NVA_65_AS2_Bag","UNS_NVA_MED","uns_men_VC_dp28_Bag","uns_men_VC_m3a1_Bag"],["UNS_Boonie_VC","UNS_Conehat_VC","UNS_Headband_VC"],"uns_US_1ID_RTO_Bag"];
+				};
 			};
 
 			class ItemsConfig
