@@ -237,7 +237,7 @@ if (hasInterface) then {
         (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
         (unitBackpack _unit) addItemCargoGlobal [_spotting_scope,1];
         (unitBackpack _unit) addItemCargoGlobal [_rangecard,1];
-        _attachments = [_attach1,_scope2];
+        _attachments = [_attachDM,_scopeDM];
         if ( _nvg_enabled == 1 ) then {(unitBackpack _unit) addItemCargoGlobal [ "optic_NVS", 1]};
       };
 
@@ -482,7 +482,7 @@ if (hasInterface) then {
         _unit addItem _kestrel;
         _unit addItem _gps;
         _unit assignItem _gps;
-        _attachments = [_attach1,_scope2];
+        _attachments = [_attachSNP,_scopeSNP];
         if ( _nvg_enabled == 1 ) then {(unitBackpack _unit) addItemCargoGlobal [ "optic_NVS", 1]};
       };
 
