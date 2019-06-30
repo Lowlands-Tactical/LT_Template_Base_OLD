@@ -64,6 +64,17 @@ if (_activated) then {
 		lt_template_HATmag2 = _logic getVariable ["lt_template_HATmag2", "Titan_AP"  ];
 		lt_template_SNrifle = _logic getVariable ["lt_template_SNrifle", "srifle_LRR_F"  ];
 		lt_template_SNrifleMag = _logic getVariable ["lt_template_SNrifleMag", "7Rnd_408_Mag"  ];
+		lt_template_GRENrifle = _logic getVariable ["lt_template_GRENrifle", ""  ];
+		lt_template_GRENrifleMag = _logic getVariable ["lt_template_GRENrifleMag", "1Rnd_HE_Grenade_shell" ];
+		lt_template_GRENsmokewhite = _logic getVariable ["lt_template_GRENsmokewhite", "1Rnd_Smoke_Grenade_shell"  ];
+		lt_template_GRENsmokegreen = _logic getVariable ["lt_template_GRENsmokegreen", "1Rnd_SmokeGreen_Grenade_shell"  ];
+		lt_template_GRENsmokered = _logic getVariable ["lt_template_GRENsmokered", "1Rnd_SmokeRed_Grenade_shell"  ];
+		lt_template_GRENflarewhite = _logic getVariable ["lt_template_GRENflarewhite", "UGL_FlareWhite_F"  ];
+		lt_template_GRENflarered = _logic getVariable ["lt_template_GRENflarered", "UGL_FlareRed_F"  ];
+		lt_template_GRENflareyellow = _logic getVariable ["lt_template_GRENflareyellow", "UGL_FlareYellow_F" ];
+		lt_template_GRENflaregreen = _logic getVariable ["lt_template_GRENflaregreen", "UGL_FlareGreen_F"  ];
+		lt_template_SHOTrifle = _logic getVariable ["lt_template_SHOTrifle", ""  ];
+		lt_template_SHOTrifleMag = _logic getVariable ["lt_template_SHOTrifleMag", "" ];
 		lt_template_grenade = _logic getVariable ["lt_template_grenade", "HandGrenade"  ];
 		lt_template_Mgrenade = _logic getVariable ["lt_template_Mgrenade", "MiniGrenade"  ];
 		lt_template_smokegrenade = _logic getVariable ["lt_template_smokegrenade", "SmokeShell" ];

@@ -176,6 +176,11 @@ _MMG = if (isNil "lt_template_MMG") then {"NLD_MAG"} else {lt_template_MMG};
 _MMGmag = if (isNil "lt_template_MMGmag") then {"200Rnd_65x39_cased_Box"} else {lt_template_MMGmag};
 _MMGmag_tr = if (isNil "lt_template_MMGmag_tr") then {"200Rnd_65x39_cased_Box_Tracer"} else {lt_template_MMGmag_tr};
 
+// Heavy MG
+_HMG = if (isNil "lt_template_HMG") then {"LMG_Mk200_LP_BI_F"} else {lt_template_HMG};
+_HMGmag = if (isNil "lt_template_HMGmag") then {"200Rnd_65x39_cased_Box"} else {lt_template_HMGmag};
+_HMGmag_tr = if (isNil "lt_template_HMGmag_trlt_template_HMGmag_tr") then {"200Rnd_65x39_cased_Box_Tracer"} else {lt_template_HMGmag_tr};
+
 // Marksman rifle
 _DMrifle = if (isNil "lt_template_DMrifle") then {"arifle_MXM_F"} else {lt_template_DMrifle};
 _DMriflemag = if (isNil "lt_template_DMriflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_DMriflemag};
@@ -190,18 +195,24 @@ _MAT = if (isNil "lt_template_MAT") then {"launch_MRAWS_olive_F"} else {lt_templ
 _MATmag1 = if (isNil "lt_template_MATmag1") then {"MRAWS_HEAT_F"} else {lt_template_MATmag1};
 _MATmag2 = if (isNil "lt_template_MATmag2") then {"MRAWS_HE_F"} else {lt_template_MATmag2};
 
-// Surface Air
-_SAM = if (isNil "lt_template_SAM") then {"launch_B_Titan_F"} else {lt_template_SAM};
-_SAMmag = if (isNil "lt_template_SAMmag") then {"Titan_AA"} else {lt_template_SAMmag};
-
-// Heavy AT
-_HAT = if (isNil "lt_template_HAT") then {"launch_B_Titan_short_F"} else {lt_template_HAT};
-_HATmag1 = if (isNil "lt_template_HATmag1") then {"Titan_AT"} else {lt_template_HATmag1};
-_HATmag2 = if (isNil "lt_template_HATmag2") then {"Titan_AP"} else {lt_template_HATmag2};
-
 // Sniper
 _SNrifle = if (isNil "lt_template_SNrifle") then {"srifle_LRR_F"} else {lt_template_SNrifle};
 _SNrifleMag = if (isNil "lt_template_SNrifleMag") then {"7Rnd_408_Mag"} else {lt_template_SNrifleMag};
+
+// Grenadier
+_GRENrifle = if (isNil "lt_template_GRENrifle") then {""} else {lt_template_GRENrifle};
+_GRENrifleMag = if (isNil "lt_template_GRENmag") then {"1Rnd_HE_Grenade_shell"} else {lt_template_GRENmag};
+_GRENsmokewhite = if (isNil "lt_template_GRENsmokewhite") then {"1Rnd_Smoke_Grenade_shell"} else {lt_template_GRENsmokewhite};
+_GRENsmokegreen = if (isNil "lt_template_GRENsmokegreen") then {"1Rnd_SmokeGreen_Grenade_shell"} else {lt_template_GRENsmokegreen};
+_GRENsmokered = if (isNil "lt_template_GRENsmokered") then {"1Rnd_SmokeRed_Grenade_shell"} else {lt_template_GRENsmokered};
+_GRENflarewhite = if (isNil "lt_template_GRENflarewhite") then {"UGL_FlareWhite_F"} else {lt_template_GRENflarewhite};
+_GRENflarered = if (isNil "lt_template_GRENflarered") then {"UGL_FlareRed_F"} else {lt_template_GRENflarered};
+_GRENflareyellow = if (isNil "lt_template_GRENflareyellow") then {"UGL_FlareYellow_F"} else {lt_template_GRENflareyellow};
+_GRENflaregreen = if (isNil "lt_template_GRENflaregreen") then {"UGL_FlareGreen_F"} else {};
+
+// Shotgunner
+_SHOTrifle = if (isNil "lt_template_SHOTrifle") then {""} else {lt_template_SHOTrifle};
+_SHOTrifleMag = if (isNil "lt_template_SHOTrifleMag") then {""} else {lt_template_SHOTrifleMag};
 
 // Engineer items
 _ATmine = if (isNil "lt_template_ATmine") then {"ATMine_Range_Mag"} else {lt_template_ATmine};

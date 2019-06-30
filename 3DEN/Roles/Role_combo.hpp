@@ -35,7 +35,7 @@ class LT_role_combo: Title
 					data = "m";
 					text = "Medic";
 				};
-				class LT_Role_FTL {
+				class LT_Role_TL {
 					data = "tl";
 					text = "Team leader";
 				};
@@ -65,11 +65,11 @@ class LT_role_combo: Title
 				};
 				class LT_Role_HMGG {
 					data = "hmgg";
-					text = "Heavy MG gunner (Static)";
+					text = "Heavy MG gunner";
 				};
 				class LT_Role_HMGAG {
 					data = "hmgag";
-					text = "Heavy MG assistant gunner (Static)";
+					text = "Heavy MG assistant gunner";
 				};
 				class LT_Role_MATG {
 					data = "matg";
@@ -78,14 +78,6 @@ class LT_role_combo: Title
 				class LT_Role_MATAG {
 					data = "matag";
 					text = "Medium AT assistant";
-				};
-				class LT_ROLE_HATG {
-					data = "hatg";
-					text = "Heavy AT gunner";
-				};
-				class LT_Role_HATAG {
-					data = "hatag";
-					text = "Heavy AT assistant gunner";
 				};
 				class LT_Role_STATG {
 					data = "STATG";
@@ -110,6 +102,14 @@ class LT_role_combo: Title
 				class LT_Role_SP {
 					data = "sp";
 					text = "Spotter";
+				};
+				class LT_Role_GREN {
+					data = "gren";
+					text = "Grenadier";
+				};
+				class LT_Role_SHOT {
+					data = "shot";
+					text = "Shotgunner";
 				};
 				class LT_Role_VC {
 					data = "vc";
@@ -154,10 +154,6 @@ class LT_role_combo: Title
 				class LT_Role_SMG {
 					data = "smg";
 					text = "Submachinegunner";
-				};
-				class LT_Role_GREN {
-					data = "gren";
-					text = "Grenadier";
 				};
 			};
 		};
