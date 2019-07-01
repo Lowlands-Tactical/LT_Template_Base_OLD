@@ -110,7 +110,7 @@ LT_USA_tank = [];
 LT_USA_tank_weightArray = [];
 LT_USA_heli = ["uns_UH1C_M21_M158","uns_UH1C_M21_M200","uns_UH1C_M6_M158","uns_UH1C_M6_M200","uns_UH1C_M21_M158_M134","uns_UH1C_M6_M200_M134","UNS_UH1B_TOW"];
 LT_USA_heli_weightArray = [];
-LT_USA = LT_USA_INF_units,LT_USA_INF_car,LT_USA_ifv,LT_USA_tank,LT_USA_heli];
+LT_USA = [LT_USA_INF_units,LT_USA_INF_car,LT_USA_ifv,LT_USA_tank,LT_USA_heli];
 LT_USA_weights = [];
 
 
@@ -126,5 +126,5 @@ LT_VC_REG_tank = [];
 LT_VC_REG_tank_weightArray = [];
 LT_VC_REG_heli = [];
 LT_VC_REG_heli_weightArray = [];
-LT_VC_REG = LT_VC_REG_INF_units,LT_VC_REG_INF_car,LT_NATO_PAC_ifv,LT_NATO_PAC_tank,LT_NATO_PAC_heli];
+LT_VC_REG = [LT_VC_REG_INF_units,LT_VC_REG_INF_car,LT_NATO_PAC_ifv,LT_NATO_PAC_tank,LT_NATO_PAC_heli];
 LT_VC_REG_weights = [];

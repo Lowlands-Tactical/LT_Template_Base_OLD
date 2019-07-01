@@ -1,5 +1,5 @@
-// filename 	"<FACTIE>.sqf"
-// loadout name "<FACTIE>"
+// filename 	"USA_Infrantry.sqf"
+// loadout name "USA Infrantry"
 
 // Attachments Primary weapon
 lt_template_attach1        	 = 	 ""; // ir laser

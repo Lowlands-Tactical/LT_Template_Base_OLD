@@ -24,60 +24,40 @@ class LT_Gear_combo: Title
 					data = "None";
 					default = 1;
 				};
-				class LT_USA_INF
-				{
-					text = "USA Infrantry";
-					data =  ["UNS_ARMY_BDU_65",["UNS_M1956_A3","UNS_M1956_A6","UNS_M1956_A7","UNS_M1956_A10","UNS_M1956_A4","UNS_M1956_A12"],["uns_US_1ID_PL_Bag","uns_US_1ID_SL_Bag","uns_US_1ID_MED_Bag","uns_US_1ID_GL_Bag","uns_US_1ID_RF3_Bag","uns_US_1ID_DEM_Bag"],["UNS_M1_1A","UNS_M1_2A","UNS_M1_3A","UNS_M1_4A","UNS_M1_6A","UNS_M1_7A","UNS_M1_8A","UNS_Bandana_OD"],"uns_US_1ID_RTO_Bag"];
-				};
-				class LT_USA_MARINE
-				{
-					text = "USA Marine";
-					data = [["UNS_USMC_Flak_E","UNS_USMC_Flak_ES"],["UNS_M1956_M7","UNS_M1956_M8","UNS_M1956_M10","UNS_M1956_M13","UNS_M1956_M14"],["uns_men_USMC_68_SL_Bag","uns_men_USMC_68_PL_Bag","uns_men_USMC_68_MED_Bag","uns_men_USMC_68_ENG_Bag","uns_men_USMC_68_MRK_Bag","uns_men_USMC_68_AT_Bag"],["UNS_M1_1","UNS_M1_2","UNS_M1_3","UNS_M1_4","UNS_M1_8","UNS_M1_12"],"uns_men_USMC_68_RTO_Bag"];
-				};
-				class LT_USA_AIRBORNE
-				{
-					text = "USA Airborne";
-					data = ["UNS_TIGER3_BDU",["UNS_M1956_A2","UNS_M1956_A3","UNS_M1956_A4","UNS_M1956_A6","UNS_M1956_A7","UNS_M1956_A10","UNS_M1956_A11","UNS_M1956_A12","UNS_M1956_LRRP1","uns_men_US_1AC_MRK_Bag","uns_men_US_1AC_MRK2_Bag","uns_men_US_1AC_SAP_Bag","uns_men_US_1AC_DEM_Bag"],["uns_men_US_1AC_SL_Bag","uns_men_US_1AC_PL_Bag","uns_men_US_1AC_MED_Bag","uns_men_US_1AC_HMG_Bag","uns_men_US_1AC_AHMG_Bag","uns_men_US_1AC_GL_Bag","uns_men_US_1AC_GL2_Bag","uns_men_US_1AC_AT_Bag","uns_men_US_1AC_SCT_Bag","uns_men_US_1AC_COM_Bag","uns_men_US_1AC_TPR1_Bag"],["UNS_Bandana_OD2","UNS_Boonie_TIG1","UNS_Headband_OD2"],"uns_men_US_1AC_RTO_Bag"];
-				};
-				class LT_USA_SPEC
-				{
-					text = "USA Special Forces";
-					data = ["UNS_TIGER_BDU",["UNS_M1956_A2","UNS_M1956_A3","UNS_M1956_A4","UNS_M1956_A6","UNS_M1956_A7","UNS_M1956_A8","UNS_M1956_A10"],["uns_men_US_5SFG_COM_Bag","uns_men_US_5SFG_ENG_Bag","uns_men_US_5SFG_HMG2_Bag","uns_men_US_5SFG_MED_Bag","uns_men_US_5SFG_MRK2_Bag","uns_men_US_5SFG_MRK4_Bag","uns_men_US_5SFG_SAP_Bag","uns_men_US_5SFG_AT_Bag","uns_men_US_5SFG_GL4_Bag","uns_men_US_5SFG_SP1_Bag","uns_men_US_5SFG_SP4_Bag","uns_men_US_5SFG_SP7_Bag"],["UNS_Headband_OD2","UNS_Bandana_OD","UNS_Bandana_OD2","UNS_Boonie_TIG","UNS_Boonie_TIGF2","UNS_Boonie_TIGF"],"uns_men_US_5SFG_RTO_Bag"];
-				};
-				class LT_USA_SEALS
-				{
-					text = "USA Seals";
-					data = [["UNS_SEAL_BDU_TD","UNS_SEAL_BDU_TS","UNS_SEAL_BDU_ED","UNS_SEAL_BDU_ET"],["UNS_M1956_N1","UNS_M1956_N2","UNS_M1956_N3","UNS_M1956_N4"],["UNS_USMC_MED","uns_men_US_SEAL_DEM_Bag"],["UNS_Bandana_OD3","UNS_Headband_ED","UNS_Headband_OD2","UNS_Boonie_TIG2"],"uns_men_NVA_daccong_cov6_Bag"];
-				};
-				class LT_VC_REGIONAL
-				{
-					text = "VC Regional";
-					data = [["UNS_VC_K","UNS_VC_B"],["UNS_VC_S2","UNS_VC_A1","UNS_VC_A2","UNS_VC_A3","UNS_VC_SP"],["uns_men_NVA_65_AS2_Bag","uns_men_NVA_65_AS3_Bag","uns_men_NVA_65_AS5_Bag","uns_men_VC_regional_HMG_Bag","UNS_NVA_MED","uns_men_NVA_daccong_AT3_Bag","uns_men_NVA_recon_65_RF2_Bag","uns_men_NVA_daccong_SAP1_Bag"],["UNS_Boonie_VC","UNS_Conehat_VC"],"uns_men_NVA_65_RTO_Bag"];
-				};
-				class LT_VC_MAIN
-				{
-					text = "VC Main Force";
-					data = [["UNS_VC_G","UNIFROM"],["UNS_VC_A1","VEST","UNS_VC_A3","UNS_VC_S1","UNS_VC_S2","UNS_VC_MG","UNS_VC_SP"],["uns_men_NVA_65_AS2_Bag","uns_men_NVA_daccong_AS2_Bag","uns_men_NVA_recon_65_AS1_Bag","uns_men_NVA_daccong_AS2_Bag","UNS_NVA_MED","UNS_NVA_RPG","uns_men_NVA_recon_65_RF2_Bag","uns_men_NVA_68_RF1_Bag"],["UNS_Boonie_VC","UNS_Boonie4_VC","HELM"],"uns_men_NVA_65_RTO_Bag"];
-				};
-				class LT_VC_GUERILLA
-				{
-					text = "VC Guerilla";
-					data = [["UNS_VC_S","UNS_VC_U"],["UNS_VC_S2","UNS_VC_A1","UNS_VC_A2","UNS_VC_A3","UNS_VC_B1"],["uns_men_VC_type99_Bag","uns_men_VC_mas36_Bag","uns_men_VC_type99_Bag","uns_men_NVA_65_AS2_Bag","UNS_NVA_MED","uns_men_VC_dp28_Bag","uns_men_VC_m3a1_Bag"],["UNS_Boonie_VC","UNS_Conehat_VC","UNS_Headband_VC"],"uns_men_NVA_65_RTO_Bag"];
-				};
-				class LT_NVA_Main_1
-				{
-					text = "NVA Main (Woodland)";
-					data = [["UNS_NVA_G","UNS_NVA_GS"],["UNS_NVA_A1","UNS_NVA_A2","UNS_NVA_S2","UNS_NVA_MG","UNS_NVA_SP"],["uns_men_NVA_68_MRK_Bag","uns_men_NVA_68_off_Bag","uns_men_NVA_68_MED_Bag","uns_men_NVA_68_HMG_Bag","uns_men_NVA_68_SAP_Bag","uns_men_NVA_68_AT2_Bag","uns_men_NVA_68_AS3_Bag","uns_men_NVA_68_AS4_Bag","uns_men_NVA_68_AS6_Bag"],["UNS_NVA_HG","UNS_Boonie_VC","UNS_NVA_HGG"],"uns_men_NVA_68_RTO_Bag"];
-				};
-				class LT_NVA_Main_2
-				{
-					text = "NVA Main (Arid)";
-					data = [["UNS_NVA_K","UNS_NVA_KS"],["UNS_NVA_B1","UNS_NVA_A2","UNS_NVA_S2","UNS_NVA_SP","UNS_NVA_MG"],["uns_men_NVA_65_off_Bag","uns_men_NVA_65_MED_Bag","uns_men_NVA_65_HMG_Bag","uns_men_NVA_65_SAP_Bag","uns_men_NVA_65_AT2_Bag","uns_men_NVA_65_MRK_Bag","uns_men_NVA_65_AS3_Bag","uns_men_NVA_65_AS6_Bag"],["UNS_NVA_HK","UNS_Boonie_VC","UNS_NVA_HKG"],"uns_men_NVA_65_RTO_Bag"];
-				};
-				class LT_NVA_COMMANDOS
+				class LT_Gear_NVA_Commandos
 				{
 					text = "NVA Commandos";
-					data = [["UNS_DCCR_B","UNS_DCCR_G","UNS_DCCR_TGS","UNS_DCCR_BBS","UNS_DCCR_GTS"],["UNS_NVA_S2","UNS_NVA_A2","UNS_NVA_MG"],["uns_men_NVA_daccong_off_Bag","uns_men_NVA_daccong_SAP1_Bag","uns_men_NVA_daccong_HMG_Bag","uns_men_NVA_daccong_MRK_Bag","uns_men_NVA_daccong_AT_Bag","UNS_NVA_R1","uns_men_NVA_daccong_AS6_Bag"],["UNS_PAVN_HG","UNS_PAVN_HC","UNS_Boonie_VC"],"uns_men_NVA_daccong_RTO_Bag"];
+					data = "\lt_template_base\gear\Loadouts\NVA_Commandos.sqf";
+				};
+				class LT_Gear_NVA_Main
+				{
+					text = "NVA Main Forces";
+					data = "\lt_template_base\gear\Loadouts\NVA_Main.sqf";
+				};
+				class LT_Gear_VC_Guerilla
+				{
+					text = "VC Guerilla";
+					data = "\lt_template_base\gear\Loadouts\VC_Guerilla.sqf";
+				};
+				class LT_Gear_VC_Regional
+				{
+					text = "VC Regional";
+					data = "\lt_template_base\gear\Loadouts\VC_Regional.sqf";
+				};
+				class LT_Gear_US_Marines
+				{
+					text = "US Marines";
+					data = "\lt_template_base\gear\Loadouts\US_Marines.sqf";
+				};
+				class LT_Gear_USA_Infrantry
+				{
+					text = "USA Infrantry";
+					data = "\lt_template_base\gear\Loadouts\USA_Infrantry.sqf";
+				};
+				class LT_Gear_RAR
+				{
+					text = "Royal Australian Regiment";
+					data = "\lt_template_base\gear\Loadouts\RAR.sqf";
 				};
 			};
 		};

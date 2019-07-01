@@ -1,5 +1,6 @@
 // filename 	"RAR.sqf"
 // loadout name "Royal Australian Regiment"
+// Author : Pek
 
 // Attachments Primary weapon
 lt_template_attach1        	 = 	 ""; // ir laser
