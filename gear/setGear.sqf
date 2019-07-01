@@ -159,12 +159,14 @@ if (hasInterface) then {
         _unit addmagazines [_smgmag,2];
         _unit addmagazines [_grenade,1];
 
-        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 11];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 3];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadegreen,2];
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _tfrpack};
+
+        addmagazines [_smgmag, 11];
+        addmagazines [_grenade, 2];
+        addmagazines [_mgrenade, 3];
+        addmagazines [_smokegrenade, 4];
+        addmagazines [_smokegrenadegreen,2];
+        
       };
 
 

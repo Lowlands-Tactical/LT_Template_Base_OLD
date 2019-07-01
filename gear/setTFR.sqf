@@ -14,7 +14,7 @@ if (hasInterface) then {
 
 	diag_log format["LT template DEBUG: lt_tfr_var == %1",lt_tfr_var];
 
-	_roles = ["co","pl","tl","sn","sp","vc","vd","vg","pp","pcc","pc","m"];
+	_roles = ["rto"];
 	_role = player getVariable ["lt_unit_role","none"];
 
 	diag_log format["TFR is on with the role: %1",_role];
