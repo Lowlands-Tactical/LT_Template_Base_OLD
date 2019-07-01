@@ -28,8 +28,8 @@ lt_template_riflemag_t     	 = 	 "uns_20Rnd_556x45_Stanag_T";
 
 //Medic, Rifleman At
 lt_template_carbine        	 = 	 "uns_m1carbine_pouch";
-lt_template_carbinemag     	 = 	 "uns_m2carbinemag__NT";
-lt_template_carbinemag_tr          	 = 	 "uns_m2carbinemag_T";
+lt_template_carbinemag     	 = 	 "uns_m1carbinemag__NT";
+lt_template_carbinemag_tr          	 = 	 "uns_m1carbinemag_T";
 
 // Pilots, Vehicle crew, Submachinegunner
 lt_template_smg    	 = 	 "uns_thompson";

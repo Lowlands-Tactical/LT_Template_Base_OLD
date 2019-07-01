@@ -274,7 +274,7 @@ _MMGmag_tr = if (isNil "lt_template_MMGmag_tr") then {"200Rnd_65x39_cased_Box_Tr
 // Heavy MG
 _HMG = if (isNil "lt_template_HMG") then {"LMG_Mk200_LP_BI_F"} else {lt_template_HMG};
 _HMGmag = if (isNil "lt_template_HMGmag") then {"200Rnd_65x39_cased_Box"} else {lt_template_HMGmag};
-_HMGmag_tr = if (isNil "lt_template_HMGmag_trlt_template_HMGmag_tr") then {"200Rnd_65x39_cased_Box_Tracer"} else {lt_template_HMGmag_tr};
+_HMGmag_tr = if (isNil "lt_template_HMGmag_tr") then {"200Rnd_65x39_cased_Box_Tracer"} else {lt_template_HMGmag_tr};
 
 // Marksman rifle
 _DMrifle = if (isNil "lt_template_DMrifle") then {"arifle_MXM_F"} else {lt_template_DMrifle};
@@ -303,7 +303,7 @@ _GRENsmokered = if (isNil "lt_template_GRENsmokered") then {"1Rnd_SmokeRed_Grena
 _GRENflarewhite = if (isNil "lt_template_GRENflarewhite") then {"UGL_FlareWhite_F"} else {lt_template_GRENflarewhite};
 _GRENflarered = if (isNil "lt_template_GRENflarered") then {"UGL_FlareRed_F"} else {lt_template_GRENflarered};
 _GRENflareyellow = if (isNil "lt_template_GRENflareyellow") then {"UGL_FlareYellow_F"} else {lt_template_GRENflareyellow};
-_GRENflaregreen = if (isNil "lt_template_GRENflaregreen") then {"UGL_FlareGreen_F"} else {};
+_GRENflaregreen = if (isNil "lt_template_GRENflaregreen") then {"UGL_FlareGreen_F"} else {lt_template_GRENflaregreen};
 
 // Shotgunner
 _SHOTrifle = if (isNil "lt_template_SHOTrifle") then {""} else {lt_template_SHOTrifle};
@@ -333,6 +333,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_carbinemag, 10];
 		_vehicle addMagazineCargoGlobal [_armag, 5];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 3];
+    _vehicle addMagazineCargoGlobal [_smgmag,5];
 		_vehicle addWeaponCargoGlobal [_rat, 2];
 		if !(_rat in _disposableLaunchers) then {
 			_vehicle addMagazineCargoGlobal [_ratmag1, 6];
@@ -365,7 +366,6 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,2];
 		_vehicle addItemCargoGlobal [_morphine,4];
 		_vehicle addItemCargoGlobal [_epinephrine,4];
-		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
@@ -382,6 +382,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_carbinemag, 40];
 		_vehicle addMagazineCargoGlobal [_armag, 22];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 20];
+    _vehicle addMagazineCargoGlobal [_smgmag,20];
 		_vehicle addWeaponCargoGlobal [_rat, 6];
 		if !(_rat in _disposableLaunchers) then {
 			_vehicle addMagazineCargoGlobal [_ratmag1, 18];
@@ -415,7 +416,6 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,4];
 		_vehicle addItemCargoGlobal [_morphine,8];
 		_vehicle addItemCargoGlobal [_epinephrine,8];
-		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
@@ -432,6 +432,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_carbinemag, 20];
 		_vehicle addMagazineCargoGlobal [_armag, 8];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 10];
+    _vehicle addMagazineCargoGlobal [_smgmag,10];
 		_vehicle addWeaponCargoGlobal [_rat, 4];
 		if !(_rat in _disposableLaunchers) then {
 			_vehicle addMagazineCargoGlobal [_ratmag1, 12];
@@ -465,7 +466,6 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,3];
 		_vehicle addItemCargoGlobal [_morphine,6];
 		_vehicle addItemCargoGlobal [_epinephrine,6];
-		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
@@ -482,6 +482,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_armag, 5];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 5];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 5];
+    _vehicle addMagazineCargoGlobal [_smgmag,5];
 		_vehicle addMagazineCargoGlobal [_glmag, 5];
 		_vehicle addMagazineCargoGlobal [_glsmokewhite, 4];
 		_vehicle addWeaponCargoGlobal [_rat, 2];
@@ -533,6 +534,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_glmag, 20];
 		_vehicle addMagazineCargoGlobal [_glsmokewhite,16];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 12];
+    _vehicle addMagazineCargoGlobal [_smgmag,20];
 		_vehicle addWeaponCargoGlobal [_rat, 6];
 		if !(_rat in _disposableLaunchers) then {
 			_vehicle addMagazineCargoGlobal [_ratmag1, 12];
@@ -580,6 +582,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_armag, 45];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 60];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 45];
+    _vehicle addMagazineCargoGlobal [_smgmag,40];
 		_vehicle addMagazineCargoGlobal [_glmag, 60];
 		_vehicle addMagazineCargoGlobal [_glsmokewhite,50];
 		_vehicle addWeaponCargoGlobal [_rat, 20];

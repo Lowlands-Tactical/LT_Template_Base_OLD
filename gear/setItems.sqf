@@ -208,7 +208,7 @@ _GRENsmokered = if (isNil "lt_template_GRENsmokered") then {"1Rnd_SmokeRed_Grena
 _GRENflarewhite = if (isNil "lt_template_GRENflarewhite") then {"UGL_FlareWhite_F"} else {lt_template_GRENflarewhite};
 _GRENflarered = if (isNil "lt_template_GRENflarered") then {"UGL_FlareRed_F"} else {lt_template_GRENflarered};
 _GRENflareyellow = if (isNil "lt_template_GRENflareyellow") then {"UGL_FlareYellow_F"} else {lt_template_GRENflareyellow};
-_GRENflaregreen = if (isNil "lt_template_GRENflaregreen") then {"UGL_FlareGreen_F"} else {};
+_GRENflaregreen = if (isNil "lt_template_GRENflaregreen") then {"UGL_FlareGreen_F"} else {lt_template_GRENflaregreen};
 
 // Shotgunner
 _SHOTrifle = if (isNil "lt_template_SHOTrifle") then {""} else {lt_template_SHOTrifle};
