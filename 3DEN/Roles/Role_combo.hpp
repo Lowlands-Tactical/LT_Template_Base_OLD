@@ -27,7 +27,7 @@ class LT_role_combo: Title
 					data = "co";
 					text = "Commander";
 				};
-				class LT_Role_DC {
+				class LT_Role_PL {
 					data = "pl";
 					text = "Platoon leader";
 				};
@@ -38,6 +38,10 @@ class LT_role_combo: Title
 				class LT_Role_TL {
 					data = "tl";
 					text = "Team leader";
+				};
+				class LT_Role_RTO {
+					data = "rto";
+					text = "RTO";
 				};
 				class LT_Role_AR {
 					data = "mg";

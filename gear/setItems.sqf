@@ -145,7 +145,7 @@ _baguav 		= IF (_TypeName == "ARRAY") then {
 			_lt_camo_var_array select 2;
 		} else {
 			if (_lt_camo_var_array select 0 == "None") then {
-				"NLD_WLD_Carryall_Empty"
+				"B_Carryall_khk"
 			} else {
 				_lt_camo_var_array select 2;
 			};
