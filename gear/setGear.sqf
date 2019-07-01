@@ -4,7 +4,7 @@ if (hasInterface) then {
   _exclude = _unit getVariable ["LT_camo_exclude", 0];
   _nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
 
-  _RolesArray = ["custom","co","pl","m","tl","mg","amg","rat","dm","mmgg","mmgag","hmgg","hmgag","matg","matag","hatg","hatag","mtrg","mtrag","sn","sp","vc","vd","vg","pp","pcc","pc","eng","engm","div","r","car","smg","gren"];
+  _RolesArray = ["custom","co","pl","m","tl","rto","mg","amg","rat","dm","mmgg","mmgag","hmgg","hmgag","matg","matag","hatg","hatag","mtrg","mtrag","sn","sp","gren","shot","vc","vd","vg","pp","pcc","pc","eng","engm","div","r","car","smg"];
 
   diag_log format ["LT Template DEBUG: role is %1 and exclude is %2",_role, _exclude];
   diag_log format ["LT Template DEBUG: setGear.sqf Role in RolesArray: %1", _role IN _RolesArray];
@@ -161,12 +161,12 @@ if (hasInterface) then {
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _tfrpack};
 
-        addmagazines [_smgmag, 11];
-        addmagazines [_grenade, 2];
-        addmagazines [_mgrenade, 3];
-        addmagazines [_smokegrenade, 4];
-        addmagazines [_smokegrenadegreen,2];
-        
+        _unit addmagazines [_smgmag, 11];
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 3];
+        _unit addmagazines [_smokegrenade, 4];
+        _unit addmagazines [_smokegrenadegreen,2];
+
       };
 
 
