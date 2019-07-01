@@ -67,7 +67,7 @@ if (hasInterface) then {
     _unit addItem _morphine;
     _unit linkItem _map;        // Add and equip the map
     _unit linkItem _compass;      // Add and equip a compass
-    _unit linkItem _radio;        // Add and equip A3's default radio
+    /* _unit linkItem _radio;        // Add and equip A3's default radio */
     _unit linkItem _watch;        // Add and equip a watch
     _unit addItem _mapflashlight;  // Add Flashlight XL50
 
@@ -134,8 +134,8 @@ if (hasInterface) then {
         _unit addmagazines [_smgmag,7];
       };
 
-    // LOADOUT: FIRE TEAM LEADER
-      case "ftl":
+    // LOADOUT: TEAM LEADER
+      case "tl":
       {
         _unit addweapon _glrifle;
         _unit addWeapon _simplebinoculars;
@@ -146,6 +146,21 @@ if (hasInterface) then {
         (unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 11];
         (unitBackpack _unit) addMagazineCargoGlobal [_glmag, 7];
         (unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 6];
+        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
+        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 3];
+        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
+        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadegreen,2];
+      };
+
+    // LOADOUT: RTO
+      case "rto":
+      {
+        _unit addweapon _smg;
+        _unit addmagazines [_smgmag,2];
+        _unit addmagazines [_grenade,1];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+        (unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 11];
         (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
         (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 3];
         (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];

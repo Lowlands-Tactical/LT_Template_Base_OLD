@@ -1,15 +1,15 @@
-// filename 	"NVA_Commandos.sqf"
-// loadout name "NVA Commandos"
+// filename 	"NVA_Main.sqf"
+// loadout name "NVA Main Forces"
 
 // Attachments Primary weapon
-lt_template_attach1        	 = 	 "uns_b_6H3"; // ir laser
+lt_template_attach1        	 = 	 ""; // ir laser
 lt_template_attach2        	 = 	 ""; // flashlight
-lt_template_attachDM         = 	 "uns_b_svd_camo"; // Marksman
-lt_template_attachSNP        = 	 "uns_b_svd_camo"; // Sniper
+lt_template_attachDM         = 	 ""; // Marksman
+lt_template_attachSNP        = 	 ""; // Sniper
 lt_template_silencer1      	 = 	 ""; // rifles
 lt_template_silencer2      	 = 	 ""; // MG
 lt_template_scope1         	 = 	 ""; // normal scope
-lt_template_scopeDM          = 	 "uns_o_PSO1_camo"; // Marksman Scope
+lt_template_scopeDM          = 	 "uns_o_PSO1"; // Marksman Scope
 lt_template_scopeSNP         = 	 "uns_o_PU"; // Sniper Scope
 lt_template_scope3         	 = 	 "";
 lt_template_bipod1         	 = 	 ""; // MG
@@ -22,14 +22,14 @@ lt_template_hg_scope1      	 = 	 "";
 lt_template_hg_attachments         	 = 	 [];
 
 // Assistant Automatic Rifleman, Medium MG assistant, Rifleman
-lt_template_rifle       = 	 "uns_aks47f";
-lt_template_riflemag       	 = 	 "uns_ak47mag";
-lt_template_riflemag_t     	 = 	 "uns_ak47mag";
+lt_template_rifle       = 	 "";
+lt_template_riflemag       	 = 	 "";
+lt_template_riflemag_t     	 = 	 "";
 
 // Commander, PlattonLeader, Medic, Rifleman At
-lt_template_carbine     = 	 "uns_sa58p";
-lt_template_carbinemag     	  = 	 "uns_sa58mag";
-lt_template_carbinemag_tr     = 	 "uns_sa58mag";
+lt_template_carbine     = 	 "uns_type100";
+lt_template_carbinemag     	  = 	 "uns_type100mag";
+lt_template_carbinemag_tr     = 	 "uns_type100_T";
 
 // RTO, Pilots, Vehicle crew, Submachinegunner
 lt_template_smg    	    = 	 "uns_PPS52";
@@ -69,7 +69,7 @@ lt_template_HMGmag         	  = 	 "uns_100Rnd_762x54_ukvz59";
 lt_template_HMGmag_tr      	  = 	 "uns_100Rnd_762x54_ukvz59";
 
 // Designated Marksman
-lt_template_DMrifle        	  = 	 "uns_SVD_CAMO_base";
+lt_template_DMrifle     = 	 "uns_svd_base";
 lt_template_DMriflemag     	  = 	 "uns_svdmag";
 
 // Rifleman AT
