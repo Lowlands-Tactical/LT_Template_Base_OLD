@@ -26,7 +26,7 @@ lt_template_rifle       = 	 "uns_xm177e2_short";
 lt_template_riflemag       	 = 	 "uns_30Rnd_556x45_Stanag_xm177";
 lt_template_riflemag_t     	 = 	 "uns_30Rnd_556x45_Stanag_xm177";
 
-// Commander, PlattonLeader, Medic, Rifleman At
+// Commander, PlatoonLeader, Medic, Rifleman At
 lt_template_carbine     = 	 "uns_uzi";
 lt_template_carbinemag     	  = 	 "uns_32Rnd_uzi";
 lt_template_carbinemag_tr     = 	 "uns_32Rnd_uzi";

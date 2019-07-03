@@ -26,7 +26,7 @@ lt_template_rifle       = 	 "uns_ak47";
 lt_template_riflemag       	 = 	 "uns_ak47mag";
 lt_template_riflemag_t     	 = 	 "uns_ak47mag";
 
-// Commander, PlattonLeader, Medic, Rifleman At
+// Commander, PlatoonLeader, Medic, Rifleman At
 lt_template_carbine     = 	 "uns_aks47";
 lt_template_carbinemag     	  = 	 "uns_ak47mag";
 lt_template_carbinemag_tr     = 	 "uns_ak47mag";

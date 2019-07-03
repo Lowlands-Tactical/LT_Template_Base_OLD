@@ -60,17 +60,17 @@ class LT_Camo_combo: Title
 					text = "New Sealand";
 					data = ["UNS_NZ_ARMY_BDU",["UNS_M1956_M7","UNS_M1956_M8","UNS_M1956_M9","UNS_M1956_M18"],["UNS_USMC_E1","UNS_USMC_E2","uns_men_NZ_65_MED_Bag","uns_men_NZ_65_ENG_Bag"],["UNS_Boonie_OD","UNS_Boonie_OD2","UNS_Boonie_ODF","UNS_Bandana_OD3"],"UNS_USMC_RTO"];
 				};
-				class LT_ROK
+				class LT_ROK_Marine
 				{
 					text = "ROK Blue Dragons (Marine)";
 					data = ["UNS_ARMY_ROKMC65Camo_ipatch",["UNS_M1956_M2","UNS_M1956_M8","UNS_M1956_M13","UNS_M1956_M25","UNS_M1956_A7","UNS_M1956_A12"],["uns_men_ROK_68_PL_Bag","uns_men_ROK_68_MRK_Bag","uns_men_ROK_68_AT_Bag","uns_men_ROK_68_GL_Bag","uns_men_ROK_68_RF1_Bag","uns_men_ROK_68_RF5_Bag","uns_men_ROK_68_AHMG_Bag","uns_men_ROK_68_ENG_Bag"],["UNS_Field_Cap","UNS_M1_1RM","UNS_M1_1RM","UNS_M1_1RM","UNS_M1_1RM","UNS_Bandana_OD"],"uns_men_ROK_68_RTO_Bag"];
 				};
-				class LT_ROK
+				class LT_ROK_Mech_Inf
 				{
 					text = "ROK Mechanized Infrantry";
 					data = ["UNS_ARMY_BDU_ROKArmyCMIDipatch",["UNS_M1956_M2","UNS_M1956_M8","UNS_M1956_M12","UNS_M1956_M13","UNS_M1956_M25","UNS_M1956_A12"],["uns_men_ROK_65_AR_Bag","uns_men_ROK_65_AT_Bag","uns_men_ROK_65_SL_Bag","uns_men_ROK_65_DEM_Bag","uns_men_ROK_65_MED_Bag","uns_men_ROK_65_GL_Bag","uns_men_ROK_65_RF4_Bag"],["UNS_M1_1","UNS_M1_1","UNS_M1_1","UNS_M1_2","UNS_M1_4","UNS_M1_12","UNS_Bandana_OD","HELM","HELM"],"uns_men_ROK_65_RTO_Bag"];
 				};
-				class LT_ROK
+				class LT_ROK_Infrantry
 				{
 					text = "ROK White Horse (Infrantry)";
 					data = ["UNS_ARMY_BDU_ROKArmy9thIDipatch",["UNS_M1956_M2","UNS_M1956_M8","UNS_M1956_M12","UNS_M1956_M13","VEST","UNS_M1956_A12"],["uns_men_ROK_68_GL_Bag","uns_men_ROK_68_SL_Bag","uns_men_ROK_68_AT_Bag","uns_men_ROK_68_RF4_Bag","uns_men_ROK_68_DEM_Bag","uns_men_ROK_68_MED_Bag","uns_men_ROK_68_PL_Bag","uns_men_ROK_68_MRK_Bag"],["UNS_M1_1","UNS_M1_1","UNS_M1_1","UNS_M1_2","UNS_M1_4","UNS_M1_9","UNS_M1_12","UNS_Bandana_OD"],"UNS_SF_RTO"];

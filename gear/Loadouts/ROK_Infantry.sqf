@@ -1,5 +1,5 @@
-// filename 	"US_Marines.sqf"
-// loadout name "US Marines"
+// filename 	"USA_Infrantry.sqf"
+// loadout name "USA Infrantry"
 
 // Attachments Primary weapon
 lt_template_attach1        	 = 	 ""; // ir laser
@@ -26,7 +26,7 @@ lt_template_rifle       = 	 "uns_m16";
 lt_template_riflemag       	 = 	 "uns_20Rnd_556x45_Stanag_NT";
 lt_template_riflemag_t     	 = 	 "uns_20Rnd_556x45_Stanag_T";
 
-// Commander, PlattonLeader, Medic, Rifleman At
+// Commander, PlatoonLeader, Medic, Rifleman At
 lt_template_carbine     = 	 "uns_m1carbine_pouch";
 lt_template_carbinemag     	  = 	 "uns_m2carbinemag_NT";
 lt_template_carbinemag_tr     = 	 "uns_m2carbinemag_T";
@@ -74,8 +74,8 @@ lt_template_DMriflemag     	  = 	 "uns_m14mag";
 
 // Rifleman AT
 lt_template_RAT         = "uns_m72";
-lt_template_RATmag1        	  = 	 "uns_rpg2grenade";
-lt_template_RATmag2        	  = 	 "uns_rpg2grenade";
+lt_template_RATmag1        	  = 	 "";
+lt_template_RATmag2        	  = 	 "";
 
 // Medium AT Gunner, Medium AT Gunner Assistant (alleen magazijnen)
 lt_template_MAT    	    = 	 "uns_m20_bazooka";

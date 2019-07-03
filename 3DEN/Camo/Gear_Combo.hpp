@@ -24,40 +24,85 @@ class LT_Gear_combo: Title
 					data = "None";
 					default = 1;
 				};
+				class LT_Gear_USA_Infrantry
+				{
+					text = "USA Infrantry (M16 / M1 Garand)";
+					data = "\lt_template_base\gear\Loadouts\USA_Infrantry.sqf";
+				};
+				class LT_Gear_US_Marines
+				{
+					text = "US Marines (M16 / M1 Carbine)";
+					data = "\lt_template_base\gear\Loadouts\US_Marines.sqf";
+				};
+				class LT_Gear_USA_Airborne
+				{
+					text = "USA Airborne (M16 / XM177E2)";
+					data = "\lt_template_base\gear\Loadouts\USA_Airborne.sqf";
+				};
+				class LT_Gear_USA_Seals
+				{
+					text = "USA Seals (XM177E2 / UZI)";
+					data = "\lt_template_base\gear\Loadouts\USA_Seals.sqf";
+				};
+				class LT_Gear_USA_Speshual
+				{
+					text = "USA Special Forces (XM177E1)";
+					data = "\lt_template_base\gear\Loadouts\USA_Speshual.sqf";
+				};
+				class LT_Gear_USA_Speshual_2
+				{
+					text = "USA Special Forces (M16 Camo's)";
+					data = "\lt_template_base\gear\Loadouts\USA_Speshual_2.sqf";
+				};
+				class LT_Gear_USA_WW2
+				{
+					text = "USA WW2";
+					data = "\lt_template_base\gear\Loadouts\USA_WW2.sqf";
+				};
+				class LT_Gear_RAR
+				{
+					text = "Royal Australian Regiment (L1A1)";
+					data = "\lt_template_base\gear\Loadouts\RAR.sqf";
+				};
+				class LT_Gear_NZ_Infrantry
+				{
+					text = "New Sealand (L1A1)";
+					data = "\lt_template_base\gear\Loadouts\NZ_Infrantry.sqf";
+				};
+				class LT_Gear_ROK_Infrantry
+				{
+					text = "ROK Infrantry (M16 / M1 Carbine)";
+					data = "\lt_template_base\gear\Loadouts\ROK_Infrantry.sqf";
+				};
+				class LT_Gear_ROK_Infrantry_2
+				{
+					text = "ROK Infrantry (M16 / M1 Garand)";
+					data = "\lt_template_base\gear\Loadouts\ROK_Infrantry_2.sqf";
+				};
 				class LT_Gear_NVA_Commandos
 				{
-					text = "NVA Commandos";
+					text = "NVA Commandos (AKS / SA58)";
 					data = "\lt_template_base\gear\Loadouts\NVA_Commandos.sqf";
 				};
 				class LT_Gear_NVA_Main
 				{
-					text = "NVA Main Forces";
+					text = "NVA Main Forces (AKS)";
 					data = "\lt_template_base\gear\Loadouts\NVA_Main.sqf";
 				};
 				class LT_Gear_VC_Guerilla
 				{
-					text = "VC Guerilla";
+					text = "VC Guerilla (MAS / STG)";
 					data = "\lt_template_base\gear\Loadouts\VC_Guerilla.sqf";
 				};
 				class LT_Gear_VC_Regional
 				{
-					text = "VC Regional";
+					text = "VC Regional (SKS / Type56)";
 					data = "\lt_template_base\gear\Loadouts\VC_Regional.sqf";
 				};
-				class LT_Gear_US_Marines
+				class LT_Gear_VC_WW2
 				{
-					text = "US Marines";
-					data = "\lt_template_base\gear\Loadouts\US_Marines.sqf";
-				};
-				class LT_Gear_USA_Infrantry
-				{
-					text = "USA Infrantry";
-					data = "\lt_template_base\gear\Loadouts\USA_Infrantry.sqf";
-				};
-				class LT_Gear_RAR
-				{
-					text = "Royal Australian Regiment";
-					data = "\lt_template_base\gear\Loadouts\RAR.sqf";
+					text = "VC WW2";
+					data = "\lt_template_base\gear\Loadouts\VC_WW2.sqf";
 				};
 			};
 		};

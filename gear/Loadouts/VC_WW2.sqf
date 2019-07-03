@@ -1,9 +1,9 @@
-// filename 	"VC_Guerilla.sqf"
-// loadout name "VC Guerilla"
+// filename 	"VC_WW2.sqf"
+// loadout name "VC WW2"
 
 // Attachments Primary weapon
-lt_template_attach1        	 = 	 ""; // ir laser
-lt_template_attach2        	 = 	 ""; // flashlight
+lt_template_attach1        	 = 	 "uns_b_type30"; // ir laser
+lt_template_attach2        	 = 	 "uns_b_type30"; // flashlight
 lt_template_attachDM         = 	 ""; // Marksman
 lt_template_attachSNP        = 	 ""; // Sniper
 lt_template_silencer1      	 = 	 ""; // rifles
@@ -22,9 +22,9 @@ lt_template_hg_scope1      	 = 	 "";
 lt_template_hg_attachments         	 = 	 [];
 
 // Assistant Automatic Rifleman, Medium MG assistant, Rifleman
-lt_template_rifle       = 	 "uns_mas36";
-lt_template_riflemag       	 = 	 "uns_mas36mag";
-lt_template_riflemag_t     	 = 	 "uns_mas36mag_T";
+lt_template_rifle       = 	 "uns_type99";
+lt_template_riflemag       	 = 	 "uns_type99mag";
+lt_template_riflemag_t     	 = 	 "uns_type99mag_T";
 
 // Commander, PlatoonLeader, Medic, Rifleman At
 lt_template_carbine     = 	 "uns_STG_44";
@@ -32,9 +32,9 @@ lt_template_carbinemag     	  = 	 "uns_30Rnd_kurtz_stg";
 lt_template_carbinemag_tr     = 	 "uns_30Rnd_kurtz_stg";
 
 // RTO, Pilots, Vehicle crew, Submachinegunner
-lt_template_smg    	    = 	 "uns_m3a1";
-lt_template_smgmag         	  = 	 "uns_m3a1mag";
-lt_template_smgmag_tr      	  = 	 "uns_m3a1mag_T";
+lt_template_smg    	    = 	 "uns_ppsh41";
+lt_template_smgmag         	  = 	 "uns_ppshmag";
+lt_template_smgmag_tr      	  = 	 "uns_ppshmag";
 
 // Teamleader, Spotter
 lt_template_glrifle        	 = 	 "uns_type99_gl";
@@ -59,14 +59,14 @@ lt_template_ARmag          	  = 	 "uns_47Rnd_DP28";
 lt_template_ARmag_tr       	  = 	 "uns_47Rnd_DP28";
 
 // Medium MG Gunner
-lt_template_MMG    	    = 	 "uns_RPK_40";
-lt_template_MMGmag         	  = 	 "uns_rpkmag";
-lt_template_MMGmag_tr      	  = 	 "uns_rpkmag";
+lt_template_MMG    	    = 	 "uns_50Rnd_792x57_Mg42";
+lt_template_MMGmag         	  = 	 "uns_50Rnd_792x57_Mg42";
+lt_template_MMGmag_tr      	  = 	 "uns_50Rnd_792x57_Mg42";
 
 // Heavy MG Gunner
-lt_template_HMG    	    = 	 "uns_ukvz59";
-lt_template_HMGmag         	  = 	 "uns_100Rnd_762x54_ukvz59";
-lt_template_HMGmag_tr      	  = 	 "uns_100Rnd_762x54_ukvz59";
+lt_template_HMG    	    = 	 "uns_50Rnd_792x57_Mg42";
+lt_template_HMGmag         	  = 	 "uns_250Rnd_792x57_Mg42";
+lt_template_HMGmag_tr      	  = 	 "uns_250Rnd_792x57_Mg42";
 
 // Designated Marksman
 lt_template_DMrifle     = 	 "uns_svt";

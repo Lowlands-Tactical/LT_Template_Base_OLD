@@ -9,7 +9,7 @@ lt_template_attachSNP        = 	 "uns_b_m40_camo"; // Sniper
 lt_template_silencer1      	 = 	 ""; // rifles
 lt_template_silencer2      	 = 	 ""; // MG
 lt_template_scope1         	 = 	 ""; // normal scope
-lt_template_scopeDM          = 	 "uns_o_LeatherwoodART_m14_custom"; // Marksman Scope
+lt_template_scopeDM          = 	 "uns_o_colt4x"; // Marksman Scope
 lt_template_scopeSNP         = 	 "uns_o_RedfieldART"; // Sniper Scope
 lt_template_scope3         	 = 	 "";
 lt_template_bipod1         	 = 	 ""; // MG
@@ -22,11 +22,11 @@ lt_template_hg_scope1      	 = 	 "";
 lt_template_hg_attachments         	 = 	 [];
 
 // Assistant Automatic Rifleman, Medium MG assistant, Rifleman
-lt_template_rifle       = 	 "uns_xm177e2";
-lt_template_riflemag       	 = 	 "uns_30Rnd_556x45_Stanag_NT";
-lt_template_riflemag_t     	 = 	 "uns_30Rnd_556x45_Stanag_T";
+lt_template_rifle       = 	 "uns_xm177e1_dm";
+lt_template_riflemag       	 = 	 "uns_40Rnd_556x45_Stanag_NT";
+lt_template_riflemag_t     	 = 	 "uns_40Rnd_556x45_Stanag_T";
 
-// Commander, PlattonLeader, Medic, Rifleman At
+// Commander, PlatoonLeader, Medic, Rifleman At
 lt_template_carbine     = 	 "uns_xm177e2";
 lt_template_carbinemag     	  = 	 "uns_30Rnd_556x45_Stanag_NT";
 lt_template_carbinemag_tr     = 	 "uns_30Rnd_556x45_Stanag_T";
@@ -50,8 +50,8 @@ lt_template_glflareyellow          	= 	 "UGL_FlareYellow_F";
 lt_template_glflaregreen           	= 	 "UGL_FlareGreen_F";
 
 // Commander, Squadleader, Automatic Rifleman, Medium Machinegunner, Designated Marksman, Sniper, Shotgunner
-lt_template_pistol      = 	 "uns_coltcmdr";
-lt_template_pistolmag      	  = 	 "uns_coltcmdrmag";
+lt_template_pistol      = 	 "uns_357m";
+lt_template_pistolmag      	  = 	 "uns_357mag";
 
 // Automatic Rifleman
 lt_template_AR     	    = 	 "uns_M16A1_HBAR";
@@ -64,12 +64,12 @@ lt_template_MMGmag         	  = 	 "uns_m60mag";
 lt_template_MMGmag_tr      	  = 	 "uns_m60mag";
 
 // Heavy MG Gunner
-lt_template_HMG    	    = 	 "uns_M63a_LMG";
-lt_template_HMGmag         	  = 	 "uns_m63abox";
-lt_template_HMGmag_tr      	  = 	 "uns_m63abox";
+lt_template_HMG    	    = 	 "uns_M63a_drum";
+lt_template_HMGmag         	  = 	 "uns_m63amag";
+lt_template_HMGmag_tr      	  = 	 "uns_m63amag";
 
 // Designated Marksman
-lt_template_DMrifle     = 	 "uns_o_colt4x";
+lt_template_DMrifle     = 	 "uns_m16";
 lt_template_DMriflemag     	  = 	 "uns_20Rnd_556x45_Stanag_NT";
 
 // Rifleman AT

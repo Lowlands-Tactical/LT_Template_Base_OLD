@@ -1,5 +1,5 @@
-// filename 	"NZ_infantry.sqf"
-// loadout name "NZ Infantry"
+// filename 	"ROK_Infrantry_2.sqf"
+// loadout name "ROK Infrantry"
 
 // Attachments Primary weapon
 lt_template_attach1        	 = 	 ""; // ir laser
@@ -22,24 +22,24 @@ lt_template_hg_scope1      	 = 	 "";
 lt_template_hg_attachments         	 = 	 [];
 
 // Assistant Automatic Rifleman, Medium MG assistant, Rifleman
-lt_template_rifle       = 	 "uns_l1a1_blk";
-lt_template_riflemag       	 = 	 "uns_l1a1mag_NT";
-lt_template_riflemag_t     	 = 	 "uns_l1a1mag_T";
+lt_template_rifle       = 	 "uns_m16";
+lt_template_riflemag       	 = 	 "uns_20Rnd_556x45_Stanag_NT";
+lt_template_riflemag_t     	 = 	 "uns_20Rnd_556x45_Stanag_T";
 
 // Commander, PlatoonLeader, Medic, Rifleman At
-lt_template_carbine     = 	 "uns_l1a1_blk";
-lt_template_carbinemag     	  = 	 "uns_l1a1mag_NT";
-lt_template_carbinemag_tr     = 	 "uns_l1a1mag_T";
+lt_template_carbine     = 	 "uns_m1garand";
+lt_template_carbinemag     	  = 	 "uns_m1garandmag";
+lt_template_carbinemag_tr     = 	 "uns_m1garandmag_T";
 
 // RTO, Pilots, Vehicle crew, Submachinegunner
-lt_template_smg    	    = 	 "uns_m50";
-lt_template_smgmag         	  = 	 "uns_m50mag";
-lt_template_smgmag_tr      	  = 	 "uns_m50mag";
+lt_template_smg    	    = 	 "uns_thompson";
+lt_template_smgmag         	  = 	 "uns_thompsonmag_30_NT";
+lt_template_smgmag_tr      	  = 	 "uns_thompsonmag_30_T";
 
 // Teamleader, Spotter
-lt_template_glrifle        	 = 	 "uns_l1a1gl";
-lt_template_glriflemag     	    = 	 "uns_l1a1mag_NT";
-lt_template_glriflemag_tr       = 	 "uns_l1a1mag_T";
+lt_template_glrifle        	 = 	 "uns_m16_m203";
+lt_template_glriflemag     	    = 	 "uns_20Rnd_556x45_Stanag_NT";
+lt_template_glriflemag_tr       = 	 "uns_20Rnd_556x45_Stanag_T";
 lt_template_glmag          	        = 	 "1Rnd_HE_Grenade_shell";
 lt_template_glsmokewhite           	= 	 "1Rnd_Smoke_Grenade_shell";
 lt_template_glsmokegreen           	= 	 "1Rnd_SmokeRed_Grenade_shell";
@@ -50,18 +50,18 @@ lt_template_glflareyellow          	= 	 "UGL_FlareYellow_F";
 lt_template_glflaregreen           	= 	 "UGL_FlareGreen_F";
 
 // Commander, Squadleader, Automatic Rifleman, Medium Machinegunner, Designated Marksman, Sniper, Shotgunner
-lt_template_pistol      = 	 "uns_bhp";
-lt_template_pistolmag      	  = 	 "uns_13Rnd_hp";
+lt_template_pistol      = 	 "uns_m1911";
+lt_template_pistolmag      	  = 	 "uns_m1911mag";
 
 // Automatic Rifleman
-lt_template_AR     	    = 	 "uns_ukvz59";
-lt_template_ARmag          	  = 	 "uns_100Rnd_762x54_ukvz59";
-lt_template_ARmag_tr       	  = 	 "uns_100Rnd_762x54_ukvz59";
+lt_template_AR     	    = 	 "uns_M16A1_HBAR";
+lt_template_ARmag          	  = 	 "uns_40Rnd_556x45_Stanag_NT";
+lt_template_ARmag_tr       	  = 	 "uns_40Rnd_556x45_Stanag_T";
 
 // Medium MG Gunner
-lt_template_MMG    	    = 	 "uns_m1919a6";
-lt_template_MMGmag         	  = 	 "uns_250Rnd_m1919";
-lt_template_MMGmag_tr      	  = 	 "uns_250Rnd_m1919";
+lt_template_MMG    	    = 	 "uns_m60";
+lt_template_MMGmag         	  = 	 "uns_m60mag";
+lt_template_MMGmag_tr      	  = 	 "uns_m60mag";
 
 // Heavy MG Gunner
 lt_template_HMG    	    = 	 "uns_M63a_LMG";
@@ -69,8 +69,8 @@ lt_template_HMGmag         	  = 	 "uns_m63abox";
 lt_template_HMGmag_tr      	  = 	 "uns_m63abox";
 
 // Designated Marksman
-lt_template_DMrifle     = 	 "uns_smle_sniper";
-lt_template_DMriflemag     	  = 	 "uns_smlemag";
+lt_template_DMrifle     = 	 "uns_m14";
+lt_template_DMriflemag     	  = 	 "uns_m14mag";
 
 // Rifleman AT
 lt_template_RAT         = "uns_m72";

@@ -26,7 +26,7 @@ lt_template_rifle       = 	 "uns_m16";
 lt_template_riflemag       	 = 	 "uns_20Rnd_556x45_Stanag_NT";
 lt_template_riflemag_t     	 = 	 "uns_20Rnd_556x45_Stanag_T";
 
-// Commander, PlattonLeader, Medic, Rifleman At
+// Commander, PlatoonLeader, Medic, Rifleman At
 lt_template_carbine     = 	 "uns_xm177e2";
 lt_template_carbinemag     	  = 	 "uns_30Rnd_556x45_Stanag_NT";
 lt_template_carbinemag_tr     = 	 "uns_30Rnd_556x45_Stanag_T";

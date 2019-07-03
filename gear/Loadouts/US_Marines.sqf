@@ -2,8 +2,8 @@
 // loadout name "US Marines"
 
 // Attachments Primary weapon
-lt_template_attach1        	 = 	 ""; // ir laser
-lt_template_attach2        	 = 	 ""; // flashlight
+lt_template_attach1        	 = 	 "uns_b_m7"; // ir laser
+lt_template_attach2        	 = 	 "uns_b_m7"; // flashlight
 lt_template_attachDM         = 	 "uns_b_m6"; // Marksman
 lt_template_attachSNP        = 	 "uns_b_m40_camo"; // Sniper
 lt_template_silencer1      	 = 	 ""; // rifles
@@ -74,8 +74,8 @@ lt_template_DMriflemag     	  = 	 "uns_m14mag";
 
 // Rifleman AT
 lt_template_RAT         = "uns_m72";
-lt_template_RATmag1        	  = 	 "uns_rpg2grenade";
-lt_template_RATmag2        	  = 	 "uns_rpg2grenade";
+lt_template_RATmag1        	  = 	 "";
+lt_template_RATmag2        	  = 	 "";
 
 // Medium AT Gunner, Medium AT Gunner Assistant (alleen magazijnen)
 lt_template_MAT    	    = 	 "uns_m20_bazooka";
