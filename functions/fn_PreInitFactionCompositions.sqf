@@ -100,31 +100,47 @@ LT_NATO_PAC_weights = [];
 
 // USA
 // Infantry Division
-LT_USA_units = ["uns_US_1ID_COM","uns_US_1ID_PL","uns_US_1ID_SL","uns_US_1ID_ENG","uns_US_1ID_DEM","uns_US_1ID_SAP","uns_US_1ID_MED","uns_US_1ID_HMG","uns_US_1ID_AHMG","uns_US_1ID_MGSG","uns_US_1ID_MGSG2","uns_US_1ID_MGSG3","uns_US_1ID_TRI","uns_US_1ID_MGAASG","uns_US_1ID_MTSG","uns_US_1ID_GL","uns_US_1ID_RTO","uns_US_1ID_AT","uns_US_1ID_SCT","uns_US_1ID_MRK","uns_US_1ID_RF1","uns_US_1ID_RF2","uns_US_1ID_RF3","uns_US_1ID_RF4","uns_US_1ID_RF5","uns_US_1ID_RF6","uns_US_1ID_STY","uns_US_1ID_STY2","uns_US_1ID_STY3","uns_US_1ID_SLSG","uns_US_1ID_SLSA","uns_US_1ID_CAS"];
-LT_USA_units_weightArray = [];
-LT_USA_car = ["uns_willys","uns_willysmg50","uns_willysmg","uns_willysm40","uns_truck_base","uns_xm706e1","uns_xm706e2"];
-LT_USA_car_weightArray = [];
-LT_USA_ifv = ["uns_m163","uns_M577_amb","uns_M113_M2","uns_M113_M60","uns_M113_XM182","uns_M113_M134","uns_M113_30cal","uns_M132"];
-LT_USA_ifv_weightArray = [];
-LT_USA_tank = [];
-LT_USA_tank_weightArray = [];
-LT_USA_heli = ["uns_UH1C_M21_M158","uns_UH1C_M21_M200","uns_UH1C_M6_M158","uns_UH1C_M6_M200","uns_UH1C_M21_M158_M134","uns_UH1C_M6_M200_M134","UNS_UH1B_TOW"];
-LT_USA_heli_weightArray = [];
-LT_USA = [LT_USA_INF_units,LT_USA_INF_car,LT_USA_ifv,LT_USA_tank,LT_USA_heli];
-LT_USA_weights = [];
+LT_USA_INF_units = ["uns_US_1ID_COM","uns_US_1ID_PL","uns_US_1ID_SL","uns_US_1ID_ENG","uns_US_1ID_DEM","uns_US_1ID_SAP","uns_US_1ID_MED","uns_US_1ID_HMG","uns_US_1ID_AHMG","uns_US_1ID_AT","uns_US_1ID_SCT","uns_US_1ID_MRK","uns_US_1ID_RF1","uns_US_1ID_RF2","uns_US_1ID_RF3","uns_US_1ID_RF4","uns_US_1ID_RF5","uns_US_1ID_RF6","uns_US_1ID_STY","uns_US_1ID_STY2","uns_US_1ID_STY3"];
+LT_USA_INF_units_weightArray = [];
+LT_USA_INF_car = ["uns_willys","uns_willysmg50","uns_willysmg","uns_willysm40","uns_truck_base","uns_xm706e1","uns_xm706e2"];
+LT_USA_INF_car_weightArray = [];
+LT_USA_INF_ifv = ["uns_m163","uns_M577_amb","uns_M113_M2","uns_M113_M60","uns_M113_XM182","uns_M113_M134","uns_M113_30cal","uns_M132"];
+LT_USA_INF_ifv_weightArray = [];
+LT_USA_INF_tank = ["uns_m48a3","uns_m551"];
+LT_USA_INF_tank_weightArray = [];
+LT_USA_INF_heli = ["uns_UH1C_M21_M158","uns_UH1C_M21_M200","uns_UH1C_M6_M158","uns_UH1C_M6_M200","uns_UH1C_M21_M158_M134","uns_UH1C_M6_M200_M134","UNS_UH1B_TOW"];
+LT_USA_INF_heli_weightArray = [];
+LT_USA_INF = [LT_USA_INF_units,LT_USA_INF_car,LT_USA_INF_ifv,LT_USA_INF_tank,LT_USA_INF_heli];
+LT_USA_INF_weights = [];
 
 
 // VC
 // VC Regional Forces
-LT_VC_REG_units = ["uns_men_vc_regional_COM","uns_men_vc_regional_MED","uns_men_vc_regional_off","uns_men_vc_regional_nco","uns_men_vc_regional_RF1","uns_men_vc_regional_RF2","uns_men_vc_regional_RF3","uns_men_vc_regional_RF4","uns_men_vc_regional_RF5","uns_men_vc_regional_AS1","uns_men_vc_regional_AS2","uns_men_vc_regional_AS3","uns_men_vc_regional_AS4","uns_men_vc_regional_MRK","uns_men_vc_regional_LMG","uns_men_vc_regional_HMG","uns_men_vc_regional_RTO","uns_men_vc_regional_SAP","uns_men_vc_regional_TRI","uns_men_vc_regional_MGS","uns_men_vc_regional_MTS","uns_men_vc_regional_AT","uns_men_vc_regional_AT2","uns_men_vc_regional_Roff","uns_men_vc_regional_Rmed","uns_men_vc_regional_Ra1","uns_men_vc_regional_Ra2","uns_men_vc_regional_Rmrk","uns_men_vc_regional_Rmg"];
+LT_VC_REG_units = ["uns_men_vc_regional_COM","uns_men_vc_regional_MED","uns_men_vc_regional_off","uns_men_vc_regional_RF1","uns_men_vc_regional_RF2","uns_men_vc_regional_RF3","uns_men_vc_regional_RF4","uns_men_vc_regional_RF5","uns_men_vc_regional_AS1","uns_men_vc_regional_AS2","uns_men_vc_regional_AS3","uns_men_vc_regional_AS4","uns_men_vc_regional_MRK","uns_men_vc_regional_LMG","uns_men_vc_regional_HMG","uns_men_vc_regional_RTO","uns_men_vc_regional_AT","uns_men_vc_regional_AT2"];
 LT_VC_REG_units_weightArray = [];
-LT_VC_REG_car = ["unst_Type55_patrol","unst_Type55_M40","unst_Type55_twinMG"];
+LT_VC_REG_car = ["uns_Type55_patrol","uns_Type55_M40","uns_Type55_RR73","uns_Type55_twinMG"];
 LT_VC_REG_car_weightArray = [];
 LT_VC_REG_ifv = [];
 LT_VC_REG_ifv_weightArray = [];
-LT_VC_REG_tank = [];
+LT_VC_REG_tank = ["uns_t34_76_vc"];
 LT_VC_REG_tank_weightArray = [];
 LT_VC_REG_heli = [];
 LT_VC_REG_heli_weightArray = [];
-LT_VC_REG = [LT_VC_REG_INF_units,LT_VC_REG_INF_car,LT_NATO_PAC_ifv,LT_NATO_PAC_tank,LT_NATO_PAC_heli];
+LT_VC_REG = [LT_VC_REG_units,LT_VC_REG_car,LT_VC_REG_ifv,LT_VC_REG_tank,LT_VC_REG_heli];
 LT_VC_REG_weights = [];
+
+
+// NVA
+// NVA Infantry
+LT_NVA_INF_units = ["uns_men_NVA_65_MED","uns_men_NVA_65_COM","uns_men_NVA_65_off","uns_men_NVA_65_nco","uns_men_NVA_65_RF1","uns_men_NVA_65_RF2","uns_men_NVA_65_RF3","uns_men_NVA_65_AS1","uns_men_NVA_65_AS2","uns_men_NVA_65_AS3","uns_men_NVA_65_AS4","uns_men_NVA_65_AS5","uns_men_NVA_65_AS6","uns_men_NVA_65_AS7","uns_men_NVA_65_MRK","uns_men_NVA_65_LMG","uns_men_NVA_65_HMG","uns_men_NVA_65_RTO","uns_men_NVA_65_SAP","uns_men_NVA_65_AT","uns_men_NVA_65_AT2","uns_men_NVA_65_AA"];
+LT_NVA_INF_units_weightArray = [];
+LT_NVA_INF_car = ["uns_BTR152_DSHK","uns_Type55_MG","uns_Type55_RR57","uns_Type55_RR73","uns_Type55_M40","uns_Type55_patrol","uns_Type55_LMG","uns_Type55_twinMG","uns_Type55_ZPU","uns_Type55_ZU","uns_nvatruck_s60"];
+LT_NVA_INF_car_weightArray = [];
+LT_NVA_INF_ifv = ["uns_Type63_mg"];
+LT_NVA_INF_ifv_weightArray = [];
+LT_NVA_INF_tank = ["uns_ot34_85_nva","uns_t34_85_nva","uns_t54_nva","uns_t55_nva","uns_to55_nva"];
+LT_NVA_INF_tank_weightArray = [];
+LT_NVA_INF_heli = ["uns_Mi8T_VPAF"];
+LT_NVA_INF_heli_weightArray = [];
+LT_NVA_INF = [LT_NVA_INF_units,LT_NVA_INF_car,LT_NVA_INF_ifv,LT_NVA_INF_tank,LT_NVA_INF_heli];
+LT_NVA_INF_weights = [];
