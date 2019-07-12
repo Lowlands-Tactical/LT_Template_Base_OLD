@@ -170,8 +170,8 @@ if (hasInterface) then {
       };
 
 
-    // LOADOUT: AUTOMATIC RIFLEMAN
-      case "ar":
+    // LOADOUT: AUTOMATIC Machinegunner
+      case "mg":
       {
         _unit addweapon _AR;
         _unit addweapon _pistol;
@@ -187,8 +187,8 @@ if (hasInterface) then {
         _attachments pushback (_bipod1);
       };
 
-    // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
-      case "aar":
+    // LOADOUT: ASSISTANT Machinegunner
+      case "amg":
       {
         _unit addweapon _rifle;
         _unit addmagazines [_riflemag_tr,2];
