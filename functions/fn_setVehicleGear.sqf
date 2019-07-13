@@ -390,7 +390,7 @@ switch (_role) do {
 			_vehicle addMagazineCargoGlobal [_RATmag1,18];
 			_vehicle addMagazineCargoGlobal [_RATmag2,18];
 		};
-    if !(_mat in _disposableLaunchers) then {
+    if !(_MAT in _disposableLaunchers) then {
       _vehicle addMagazineCargoGlobal [_MATmag1,5];
       _vehicle addMagazineCargoGlobal [_MATmag2,5];
     };
