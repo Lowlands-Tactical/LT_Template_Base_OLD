@@ -34,6 +34,11 @@ class LT_Gear_combo: Title
 					text = "NLD 2020";
 					data = "\lt_template_base\gear\Loadouts\NLD_2020.sqf";
 				};
+				class LT_Gear_NLD_C7
+				{
+					text = "NLD C7";
+					data = "\lt_template_base\gear\Loadouts\NLD_C7.sqf";
+				};
 				class LT_Gear_USM16A2
 				{
 					text = "US M16A2";
