@@ -145,7 +145,7 @@ _baguav 		= IF (_TypeName == "ARRAY") then {
 			_lt_camo_var_array select 2;
 		} else {
 			if (_lt_camo_var_array select 0 == "None") then {
-				"NLD_WLD_Carryall_Empty"
+				"B_Carryall_khk"
 			} else {
 				_lt_camo_var_array select 2;
 			};
@@ -172,7 +172,7 @@ _ARmag = if (isNil "lt_template_ARmag") then {"100Rnd_65x39_caseless_mag"} else 
 _ARmag_tr = if (isNil "lt_template_ARmag_tr") then {"100Rnd_65x39_caseless_mag_Tracer"} else {lt_template_ARmag_tr};
 
 // Medium MG
-_MMG = if (isNil "lt_template_MMG") then {"NLD_MAG"} else {lt_template_MMG};
+_MMG = if (isNil "lt_template_MMG") then {"LMG_Mk200_F"} else {lt_template_MMG};
 _MMGmag = if (isNil "lt_template_MMGmag") then {"200Rnd_65x39_cased_Box"} else {lt_template_MMGmag};
 _MMGmag_tr = if (isNil "lt_template_MMGmag_tr") then {"200Rnd_65x39_cased_Box_Tracer"} else {lt_template_MMGmag_tr};
 
