@@ -60,10 +60,10 @@ class LT_Camo_combo: Title
 					text = "Winter";
 					data = ["NLD_WTR_Camo","NLD_WTR_Vest","NLD_WTR_Carryall_Empty","NLD_WTR_Helmet","NLD_rt1523g_Woodland"];
 				};
-				class LT_Camo_JUNGLE
+				class LT_Camo_DSI
 				{
-					text = "Jungle";
-					data = ["NLD_JGL_Camo","NLD_JGL_Vest","NLD_JGL_Carryall_Empty","NLD_JGL_Helmet","NLD_rt1523g_Woodland"];
+					text = "DSI";
+					data = ["NLD_DSI_Camo","NLD_DSI_PlateCarrier","NLD_SF_Carryall_Empty","NLD_JGL_Helmet","NLD_rt1523g_Woodland"];
 				};
 				class LT_Camo_SF
 				{
