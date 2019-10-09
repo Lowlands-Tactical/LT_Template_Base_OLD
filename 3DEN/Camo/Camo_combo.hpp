@@ -63,7 +63,7 @@ class LT_Camo_combo: Title
 				class LT_Camo_DSI
 				{
 					text = "DSI";
-					data = ["NLD_DSI_Camo","NLD_DSI_PlateCarrier","NLD_SF_Carryall_Empty","NLD_JGL_Helmet","NLD_rt1523g_Woodland"];
+					data = ["NLD_DSI_Camo","NLD_DSI_PlateCarrier","NLD_SF_Carryall_Empty","NLD_DSI_Helmet","NLD_rt1523g_Woodland"];
 				};
 				class LT_Camo_SF
 				{
