@@ -39,6 +39,11 @@ class LT_Gear_combo: Title
 					text = "NLD C7";
 					data = "\lt_template_base\gear\Loadouts\NLD_C7.sqf";
 				};
+				class LT_Gear_NLD_DSI
+				{
+					text = "NLD DSI";
+					data = "\lt_template_base\gear\Loadouts\NLD_DSI.sqf";
+				};
 				class LT_Gear_USM16A2
 				{
 					text = "US M16A2";
