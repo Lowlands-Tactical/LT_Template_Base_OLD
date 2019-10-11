@@ -63,12 +63,12 @@ class LT_Camo_combo: Title
 				class LT_Camo_DSI
 				{
 					text = "DSI";
-					data = ["NLD_DSI_Camo","NLD_DSI_PlateCarrier","NLD_SF_Carryall_Empty","NLD_DSI_Helmet","NLD_rt1523g_Woodland"];
+					data = ["NLD_DSI_Camo","NLD_DSI_PlateCarrier","NLD_SF_Carryall_Empty","NLD_DSI_Helmet","NLD_rt1523g_BLACK"];
 				};
 				class LT_Camo_SF
 				{
 					text = "Special Forces Black";
-					data = ["NLD_SF_Camo","NLD_SF_Vest","NLD_SF_Carryall_Empty","NLD_SF_ECH","NLD_rt1523g_KM"];
+					data = ["NLD_SF_Camo","NLD_SF_Vest","NLD_SF_Carryall_Empty","NLD_SF_ECH","NLD_rt1523g_BLACK"];
 				};
 				class LT_Camo_SFMTP
 				{
