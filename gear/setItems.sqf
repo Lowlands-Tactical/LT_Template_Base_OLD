@@ -160,6 +160,7 @@ _bagmtrg 		= if (isNil "lt_template_bagmtrg") then {"B_Mortar_01_weapon_F"} else
 _bagmtrag 		= if (isNil "lt_template_bagmtrag") then {"B_Mortar_01_support_F"} else {lt_template_bagmtrag};		// used by Mortar assistant gunner
 _baghsamg 		= if (isNil "lt_template_baghsamg") then {"B_AA_01_weapon_F"} else {lt_template_baghsamg};			// used by Heavy SAM gunner
 _baghsamag 		= if (isNil "lt_template_baghsamag") then {"B_HMG_01_support_F"} else {lt_template_baghsamag};			// used by Heavy SAM assistant gunner
+_baghlvdw 		= if (isNil "lt_template_baglvdw") then {"B_HMG_01_support_F"} else {lt_template_baglvdw};			// used by LUL VAN DE WEEK
 
 // ====================================================================================
 
