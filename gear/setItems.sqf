@@ -3,17 +3,17 @@
 _lt_camo_var_array = call compile lt_camo_var;
 
 // ATTACHMENTS - PRIMARY
-_attach1 = if (isNil "lt_template_attach1") then {"acc_pointer_IR"} else {lt_template_attach1};		// IR Laser
-_attach2 = if (isNil "lt_template_attach2") then {"acc_flashlight"} else {lt_template_attach2};		// Flashlight
+_attach1 = if (isNil "lt_template_attach1") then {"colt_laser_pointer_tan"} else {lt_template_attach1};		// IR Laser
+_attach2 = if (isNil "lt_template_attach2") then {"colt_flashlight_tan"} else {lt_template_attach2};		// Flashlight
 
-_silencer1 = if (isNil "lt_template_silencer1") then {"muzzle_snds_M"} else {lt_template_silencer1};	// 5.56 suppressor
+_silencer1 = if (isNil "lt_template_silencer1") then {"colt_suppressor_black"} else {lt_template_silencer1};	// 5.56 suppressor
 _silencer2 = if (isNil "lt_template_silencer2") then {"muzzle_snds_H"} else {lt_template_silencer2}; 	// 6.5 suppressor
 
-_scope1 = if (isNil "lt_template_scope1") then {"CUP_optic_CompM4"} else {lt_template_scope1};  	// Fuck you Willem
+_scope1 = if (isNil "lt_template_scope1") then {"Colt_scope_down"} else {lt_template_scope1};  	// Fuck you Willem
 _scope2 = if (isNil "lt_template_scope2") then {"optic_DMS"} else {lt_template_scope2};				// De optic ding
 _scope3 = if (isNil "lt_template_scope3") then {"optic_SOS"} else {lt_template_scope3}; 			// SOS Scope - 18x - 75x
 
-_bipod1 = if (isNil "lt_template_bipod1") then {"bipod_01_F_snd"} else {lt_template_bipod1};		// Default bipod
+_bipod1 = if (isNil "lt_template_bipod1") then {"colt_GRIP"} else {lt_template_bipod1};		// Default bipod
 _bipod2 = if (isNil "lt_template_bipod2") then {"bipod_02_F_blk"} else {lt_template_bipod2};		// Black bipod
 
 // Default setup
@@ -39,7 +39,7 @@ _riflemag = if (isNil "lt_template_riflemag") then {"30Rnd_556x45_Stanag"} else 
 _riflemag_tr = if (isNil "lt_template_riflemag_t") then {"30Rnd_556x45_Stanag_Tracer_Red"} else {lt_template_riflemag_t};
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = if (isNil "lt_template_carbine" ) then {"NLD_blk_C8"} else {lt_template_carbine};
+_carbine = if (isNil "lt_template_carbine" ) then {"Weapoon_C8NLD_NoGrip"} else {lt_template_carbine};
 _carbinemag = if (isNil "lt_template_carbinemag") then {"30Rnd_556x45_Stanag"} else {lt_template_carbinemag};
 _carbinemag_tr = if (isNil "lt_template_carbinemag_tr") then {"30Rnd_556x45_Stanag_Tracer_Red"} else {lt_template_carbinemag_tr};
 
@@ -54,7 +54,7 @@ _diverMag1 = if (isNil "lt_template_diverMag1") then {"30Rnd_556x45_Stanag"} els
 _diverMag2 = if (isNil "lt_template_diverMag2") then {"20Rnd_556x45_UW_mag"} else {lt_template_diverMag2};
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = if (isNil "lt_template_glrifle") then {"NLD_blk_C8GL"} else {lt_template_glrifle};
+_glrifle = if (isNil "lt_template_glrifle") then {"Weapoon_C8NLD_BaseGLD"} else {lt_template_glrifle};
 _glriflemag = if (isNil "lt_template_glriflemag") then {"30Rnd_556x45_Stanag"} else {lt_template_glriflemag};
 _glriflemag_tr = if (isNil "lt_template_glriflemag_tr") then {"30Rnd_556x45_Stanag_Tracer_Red"} else {lt_template_glriflemag_tr};
 _glmag = if (isNil "lt_template_glmag") then {"CUP_1Rnd_HE_M203"} else {lt_template_glmag};
