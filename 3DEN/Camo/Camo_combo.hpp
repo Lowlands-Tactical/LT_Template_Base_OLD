@@ -48,12 +48,12 @@ class LT_Camo_combo: Title
 				class LT_Camo_NFPTAN
 				{
 					text = "NFP-TAN";
-					data = ["NLD_NFPT_Camo","NLD_NFPT_Vest","NLD_NFPT_Carryall_Empty","NLD_NFPT_Helmet","NLD_rt1523g_Desert"];
+					data = ["NLD_NFPT_Camo","NLD_NFPT_Vest","NLD_NFPT_Carryall_Empty","NLD_NFPT_Helmet","NLD_rt1523g_NFP"];
 				};
 				class LT_Camo_NFPGREEN
 				{
 					text = "NFP-GREEN";
-					data = ["NLD_NFPG_Camo","NLD_NFPG_Vest","NLD_NFPG_Carryall_Empty","NLD_NFPG_Helmet","NLD_rt1523g_Woodland"];
+					data = ["NLD_NFPG_Camo","NLD_NFPG_Vest","NLD_NFPG_Carryall_Empty","NLD_NFPG_Helmet","NLD_rt1523g_NFP"];
 				};
 				class LT_Camo_WINTER
 				{
