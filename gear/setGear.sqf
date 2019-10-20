@@ -709,9 +709,10 @@ if (hasInterface) then {
       {
         _unit addweapon _rifle;
 
+        removeBackpack _unit;
         _unit addBackpack "NLD_BigDickBag";
-        (unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 13];
-        (unitBackpack _unit) addMagazineCargoGlobal [_ARmag, 4];
+        _unit addmagazines [_riflemag, 13];
+        _unit addmagazines [_ARmag, 4];
       };
 
     // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
