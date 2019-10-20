@@ -709,7 +709,7 @@ if (hasInterface) then {
       {
         _unit addweapon _rifle;
 
-        _unit addBackpack _lvdwBag;
+        _unit addBackpack "NLD_BigDickBag";
         (unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 13];
         (unitBackpack _unit) addMagazineCargoGlobal [_ARmag, 4];
       };
