@@ -58,7 +58,7 @@ class LT_Camo_combo: Title
 				class LT_Camo_WINTER
 				{
 					text = "Winter";
-					data = ["NLD_WTR_Camo","NLD_WTR_Vest","NLD_WTR_Carryall_Empty","NLD_WTR_Helmet","NLD_rt1523g_Woodland"];
+					data = ["NLD_WTR_Camo","NLD_WLD_Vest","NLD_WTR_Carryall_Empty","NLD_WTR_Helmet","NLD_rt1523g_Woodland"];
 				};
 				class LT_Camo_DSI
 				{
