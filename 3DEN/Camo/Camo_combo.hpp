@@ -173,7 +173,7 @@ class LT_Camo_combo: Title
 				class LT_GUR_Desert
 				{
 					text = "[GUR] Desert";
-					data = [["CUP_O_TKI_Khet_Partug_02", "CUP_O_TKI_Khet_Partug_03", "CUP_O_TKI_Khet_Partug_05", "CUP_O_TKI_Khet_Partug_06", "CUP_O_TKI_Khet_Partug_08", "CUP_O_TKI_Khet_Partug_07"],["CUP_V_OI_TKI_Jacket4_02", "CUP_V_OI_TKI_Jacket2_03", "CUP_V_OI_TKI_Jacket4_03", "CUP_V_OI_TKI_Jacket4_06"],["B_Kitbag_sgg", "CUP_B_AlicePack_Bedroll"],["CUP_H_TKI_Lungee_01", "CUP_H_TKI_Lungee_02", "CUP_H_TKI_Lungee_03","CUP_H_TKI_Lungee_04", "CUP_H_TKI_Lungee_05", "CUP_H_TKI_Pakol_1_01", "CUP_H_TKI_Pakol_2_04", "CUP_H_TKI_Pakol_2_05", "CUP_H_TKI_Pakol_2_06", "CUP_H_TKI_Pakol_1_04"],["tf_rt1523g_sage", "tf_rt1523g_big_rhs"]];
+					data = [["CUP_O_TKI_Khet_Partug_02", "CUP_O_TKI_Khet_Partug_03", "CUP_O_TKI_Khet_Partug_05", "CUP_O_TKI_Khet_Partug_06", "CUP_O_TKI_Khet_Partug_08", "CUP_O_TKI_Khet_Partug_07"],["CUP_V_OI_TKI_Jacket4_02", "CUP_V_OI_TKI_Jacket2_03", "CUP_V_OI_TKI_Jacket4_03", "CUP_V_OI_TKI_Jacket4_06"],["B_Kitbag_sgg", "CUP_B_AlicePack_Bedroll"],["CUP_H_TKI_Lungee_01", "CUP_H_TKI_Lungee_02", "CUP_H_TKI_Lungee_03","CUP_H_TKI_Lungee_04", "CUP_H_TKI_Lungee_05", "B_Messenger_Coyote_F", "CUP_B_CivPack_WDL", "B_Respawn_Sleeping_bag_brown_F", "CUP_B_AlicePack_khaki", "CUP_B_AlicePack_Bedroll"],["tf_rt1523g_RHS", "tf_rt1523g"]];
 				};
 				class LT_GUR_Jungle
 				{
@@ -293,7 +293,7 @@ class LT_Camo_combo: Title
 				class LT_TKI_OPF_Desert
 				{
 					text = "[TKI] Desert";
-					data = [["CUP_O_TKI_Khet_Partug_02", "CUP_O_TKI_Khet_Partug_03", "CUP_O_TKI_Khet_Partug_05", "CUP_O_TKI_Khet_Partug_06", "CUP_O_TKI_Khet_Partug_08", "CUP_O_TKI_Khet_Partug_07"],["CUP_V_OI_TKI_Jacket4_02", "CUP_V_OI_TKI_Jacket2_03", "CUP_V_OI_TKI_Jacket4_03", "CUP_V_OI_TKI_Jacket4_06"],["B_Kitbag_sgg", "CUP_B_AlicePack_Bedroll"],["CUP_H_TKI_Lungee_01", "CUP_H_TKI_Lungee_02", "CUP_H_TKI_Lungee_03","CUP_H_TKI_Lungee_04", "CUP_H_TKI_Lungee_05", "CUP_H_TKI_Pakol_1_01", "CUP_H_TKI_Pakol_2_04", "CUP_H_TKI_Pakol_2_05", "CUP_H_TKI_Pakol_2_06", "CUP_H_TKI_Pakol_1_04"],["tf_rt1523g_sage", "tf_rt1523g_big_rhs"]];
+					data = [["CUP_O_TKI_Khet_Partug_02", "CUP_O_TKI_Khet_Partug_03", "CUP_O_TKI_Khet_Partug_05", "CUP_O_TKI_Khet_Partug_06", "CUP_O_TKI_Khet_Partug_08", "CUP_O_TKI_Khet_Partug_07"],["CUP_V_OI_TKI_Jacket4_02", "CUP_V_OI_TKI_Jacket2_03", "CUP_V_OI_TKI_Jacket4_03", "CUP_V_OI_TKI_Jacket4_06"],["B_Kitbag_sgg", "CUP_B_AlicePack_Bedroll"],["CUP_H_TKI_Lungee_01", "CUP_H_TKI_Lungee_02", "CUP_H_TKI_Lungee_03","CUP_H_TKI_Lungee_04", "CUP_H_TKI_Lungee_05", "B_Messenger_Coyote_F", "CUP_B_CivPack_WDL", "B_Respawn_Sleeping_bag_brown_F", "CUP_B_AlicePack_khaki", "CUP_B_AlicePack_Bedroll"],["tf_rt1523g_RHS", "tf_rt1523g"]];
 				};
 				class LT_95TH_Airmobile_Brigade
 				{
