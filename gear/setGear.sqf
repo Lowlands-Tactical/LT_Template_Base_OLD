@@ -238,7 +238,6 @@ if (hasInterface) then {
         (unitBackpack _unit) addItemCargoGlobal [_spotting_scope,1];
         (unitBackpack _unit) addItemCargoGlobal [_rangecard,1];
         _attachments = [_attach1,_scope2];
-        if ( _nvg_enabled == 1 ) then {(unitBackpack _unit) addItemCargoGlobal [ "optic_NVS", 1]};
       };
 
     // LOADOUT: MEDIUM MG GUNNER
@@ -482,8 +481,7 @@ if (hasInterface) then {
         _unit addItem _kestrel;
         _unit addItem _gps;
         _unit assignItem _gps;
-        _attachments = [_attach1,_scope2];
-        if ( _nvg_enabled == 1 ) then {(unitBackpack _unit) addItemCargoGlobal [ "optic_NVS", 1]};
+        _attachments = [_attach1,_scope3];
       };
 
     // LOADOUT: SPOTTER
@@ -504,7 +502,6 @@ if (hasInterface) then {
         _unit addItem _gps;
         _unit assignItem _gps;
         _attachments = [_attach1,_scope2];
-        if ( _nvg_enabled == 1 ) then {(unitBackpack _unit) addItemCargoGlobal [ "optic_NVS", 1]};
       };
 
     // LOADOUT: VEHICLE COMMANDER

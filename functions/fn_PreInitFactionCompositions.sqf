@@ -97,4 +97,45 @@ LT_NATO_PAC_heli_weightArray = [];
 LT_NATO_PAC = [LT_NATO_PAC_units,LT_NATO_PAC_car,LT_NATO_PAC_ifv,LT_NATO_PAC_tank,LT_NATO_PAC_heli];
 LT_NATO_PAC_weights = [];
 
-// USA
+// Operation Trebuchet
+// Insurgents ER
+LT_OPRTE_Ins_ER_units = ["OPRTE_Ins_ER_Assisin","OPRTE_Ins_ER_Deserter_GL","OPRTE_Ins_ER_Farmer","OPRTE_Ins_ER_Guerilla_AR","OPRTE_Ins_ER_Hacker","OPRTE_Ins_ER_Insurgent_BR","OPRTE_Ins_ER_Militia_MG","OPRTE_Ins_ER_Rebel_AT","OPRTE_Ins_ER_Surgeon","OPRTE_Ins_ER_Terrorist","OPRTE_Ins_ER_Warlord"];
+LT_OPRTE_Ins_ER_units_weightArray = [];
+LT_OPRTE_Ins_ER_car = ["OPTRE_M12_LRV_ins","OPTRE_M12A1_LRV_ins","OPTRE_M12_FAV_ins"];
+LT_OPRTE_Ins_ER_car_weightArray = [];
+LT_OPRTE_Ins_ER_ifv = [];
+LT_OPRTE_Ins_ER_ifv_weightArray = [];
+LT_OPRTE_Ins_ER_tank = [];
+LT_OPRTE_Ins_ER_tank_weightArray = [];
+LT_OPRTE_Ins_ER_heli = ["OPTRE_UNSC_hornet_ins"];
+LT_OPRTE_Ins_ER_heli_weightArray = [];
+LT_OPRTE_Ins_ER = [LT_OPRTE_Ins_ER_units,LT_OPRTE_Ins_ER_car,LT_OPRTE_Ins_ER_ifv,LT_OPRTE_Ins_ER_tank,LT_OPRTE_Ins_ER_heli];
+LT_OPRTE_Ins_ER_weights = [];
+
+// Insurgents URF
+LT_OPRTE_Ins_URF_units_weightArray = [];
+LT_OPRTE_Ins_URF_units = ["OPRTE_Ins_URF_SquadLead","OPRTE_Ins_URF_TeamLead","OPRTE_Ins_URF_Marksman","OPRTE_Ins_URF_Autorifleman","OPRTE_Ins_URF_Grenadier","OPRTE_Ins_URF_Rifleman_AR","OPRTE_Ins_URF_Rifleman_AT","OPRTE_Ins_URF_Assist_Autorifleman","OPRTE_Ins_URF_Breacher","OPRTE_Ins_URF_AA_Specialist","OPRTE_Ins_URF_Medic","OPRTE_Ins_URF_Officer","OPRTE_Ins_URF_Radioman","OPRTE_Ins_URF_Rifleman_BR","OPRTE_Ins_URF_Rifleman_Light","OPRTE_Ins_URF_Sniper","OPRTE_Ins_URF_UAV_Op"];
+LT_OPRTE_Ins_URF_car = ["OPTRE_M12_LRV_ins","OPTRE_M12A1_LRV_ins","OPTRE_M12_FAV_ins"];
+LT_OPRTE_Ins_URF_car_weightArray = [];
+LT_OPRTE_Ins_URF_ifv = [];
+LT_OPRTE_Ins_URF_ifv_weightArray = [];
+LT_OPRTE_Ins_URF_tank = [];
+LT_OPRTE_Ins_URF_tank_weightArray = [];
+LT_OPRTE_Ins_URF_heli = ["OPTRE_UNSC_hornet_ins"];
+LT_OPRTE_Ins_URF_heli_weightArray = [];
+LT_OPRTE_Ins_URF = [LT_OPRTE_Ins_URF_units,LT_OPRTE_Ins_URF_car,LT_OPRTE_Ins_URF_ifv,LT_OPRTE_Ins_URF_tank,LT_OPRTE_Ins_URF_heli];
+LT_OPRTE_Ins_URF_weights = [];
+
+// Covenant
+LT_OPRTE_FC_units_weightArray = [];
+LT_OPRTE_FC_units = ["OPTRE_FC_Elite_Zealot","OPTRE_FC_Elite_Ultra","OPTRE_FC_Elite_SpecOps","OPTRE_FC_Elite_Major","OPTRE_FC_Elite_Minor","OPTRE_FC_Elite_Minor","OPTRE_FC_Elite_Minor","OPTRE_FC_Elite_Minor","OPTRE_FC_Elite_Minor","OPTRE_FC_Elite_Minor"];
+LT_OPRTE_FC_car = [];
+LT_OPRTE_FC_car_weightArray = [];
+LT_OPRTE_FC_ifv = [];
+LT_OPRTE_FC_ifv_weightArray = [];
+LT_OPRTE_FC_tank = [];
+LT_OPRTE_FC_tank_weightArray = [];
+LT_OPRTE_FC_heli = [];
+LT_OPRTE_FC_heli_weightArray = [];
+LT_OPRTE_FC = [LT_OPRTE_FC_units,LT_OPRTE_FC_car,LT_OPRTE_FC_ifv,LT_OPRTE_FC_tank,LT_OPRTE_FC_heli];
+LT_OPRTE_FC_weights = [];
