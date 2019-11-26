@@ -75,10 +75,10 @@ _pistol = if (isNil "lt_template_pistol") then {"hgun_P07_F"} else {lt_template_
 _pistolmag = if (isNil "lt_template_pistolmag") then {"16Rnd_9x21_Mag"} else {lt_template_pistolmag};
 
 // Grenades
-_grenade = if (isNil "lt_template_grenade") then {"HandGrenade"} else {lt_template_grenade};
+_grenade = if (isNil "lt_template_grenade") then {"OPTRE_M9_Frag"} else {lt_template_grenade};
 _Mgrenade = if (isNil "lt_template_Mgrenade") then {"MiniGrenade"} else {lt_template_Mgrenade};
-_smokegrenade = if (isNil "lt_template_smokegrenade") then {"SmokeShell"} else {lt_template_smokegrenade};
-_smokegrenadegreen = if (isNil "lt_template_smokegrenadegreen") then {"SmokeShellGreen"} else {lt_template_smokegrenadegreen};
+_smokegrenade = if (isNil "lt_template_smokegrenade") then {"OPTRE_M2_Smoke"} else {lt_template_smokegrenade};
+_smokegrenadegreen = if (isNil "lt_template_smokegrenadegreen") then {"OPTRE_M2_Smoke_Green"} else {lt_template_smokegrenadegreen};
 
 // misc medical items.
 _firstaid = if (isNil "lt_template_firstaid") then {"FirstAidKit"} else {lt_template_firstaid};
@@ -89,7 +89,7 @@ _epinephrine = if (isNil "lt_template_epinephrine" ) then {"ACE_epinephrine"} el
 _bloodbags = if (isNil "lt_template_bloodbags" ) then {"ACE_bloodIV"} else {lt_template_bloodbags};
 
 // Night Vision Goggles (NVGoggles)
-_nvg = if (isNil "lt_template_nvg") then {"ACE_NVG_Wide"} else {lt_template_nvg};
+_nvg = if (isNil "lt_template_nvg") then {"OPTRE_NVG"} else {lt_template_nvg};
 
 // UAV Terminal
 // _uavterminal = if (isNil "lt_template_uavterminal") then {"B_UavTerminal"} else {lt_template_uavterminal};
