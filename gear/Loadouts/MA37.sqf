@@ -1,15 +1,15 @@
-// filename 	"MA5C.sqf"
-// loadout name "MA5C"
+// filename 	"MA37.sqf"
+// loadout name "MA37"
 
 // Attachments Primary weapon
 lt_template_attach1        	 = 	 "acc_pointer_IR"; // ir laser
 lt_template_attach2        	 = 	 "acc_flashlight"; // flashlight
 lt_template_silencer1      	 = 	 ""; // rifles
 lt_template_silencer2      	 = 	 ""; // MG
-lt_template_scope1         	 = 	 ""; // normal scope
+lt_template_scope1         	 = 	 "OPTRE_M73_SmartLink"; // normal scope
 lt_template_scope2         	 = 	 "OPTRE_BR55HB_Scope"; // DM Scope
 lt_template_scope3         	 = 	 "OPTRE_SRS99C_Scope"; // Sniper Scope
-lt_template_bipod1         	 = 	 ""; // MG
+lt_template_bipod1         	 = 	 "bipod_01_F_blk"; // MG
 lt_template_bipod2         	 = 	 "";
 lt_template_attachments    	 = 	 [lt_template_attach1, lt_template_scope1];
 
@@ -19,22 +19,22 @@ lt_template_hg_scope1      	 = 	 "";
 lt_template_hg_attachments   = 	 [];
 
 // Assistant Automatic Rifleman, Medium MG assistant, UAV Operator, Rifleman
-lt_template_rifle          	 = 	 "OPTRE_MA5C";
+lt_template_rifle          	 = 	 "OPTRE_MA37";
 lt_template_riflemag       	 = 	 "OPTRE_32Rnd_762x51_Mag";
 lt_template_riflemag_t     	 = 	 "OPTRE_32Rnd_762x51_Mag_Tracer";
 
 //Medic, Rifleman At
-lt_template_carbine        	 = 	 "OPTRE_MA5C";
+lt_template_carbine        	 = 	 "OPTRE_MA37";
 lt_template_carbinemag     	 = 	 "OPTRE_32Rnd_762x51_Mag";
 lt_template_carbinemag_tr    = 	 "OPTRE_32Rnd_762x51_Mag_Tracer";
 
 // Pilots, Vehicle crew, Submachinegunner
-lt_template_smg    	         = 	 "OPTRE_MA5K";
-lt_template_smgmag         	 = 	 "OPTRE_32Rnd_762x51_Mag";
-lt_template_smgmag_tr      	 = 	 "OPTRE_32Rnd_762x51_Mag_Tracer";
+lt_template_smg    	         = 	 "OPTRE_M45A";
+lt_template_smgmag         	 = 	 "OPTRE_12Rnd_8Gauge_Pellets";
+lt_template_smgmag_tr      	 = 	 "OPTRE_12Rnd_8Gauge_Slugs";
 
 // Commander, Squadleader, Fireteam leader, Spotter, Grenadier
-lt_template_glrifle        	 = 	 "OPTRE_MA5CGL";
+lt_template_glrifle        	 = 	 "OPTRE_MA37GL";
 lt_template_glriflemag     	 = 	 "OPTRE_32Rnd_762x51_Mag";
 lt_template_glriflemag_tr    = 	 "OPTRE_32Rnd_762x51_Mag_Tracer";
 lt_template_glmag          	 = 	 "1Rnd_HE_Grenade_shell";
