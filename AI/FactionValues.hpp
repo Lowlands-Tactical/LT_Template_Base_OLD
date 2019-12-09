@@ -24,6 +24,7 @@ class LT_CUP_AFR_M_REB { name = "African Muslim Insurgents"; value="LT_CUP_AFR_M
 class LT_CUP_AFR_UN { name = "African UN Peacekeepers"; value="LT_CUP_AFR_UN"; };
 class LT_CUP_ARMY_ASIA { name="Asian Army"; value="LT_CUP_ARMY_ASIA"; };
 class LT_CUP_INS_ASIA { name="Asian Insurgents"; value="LT_CUP_INS_ASIA"; };
+class LT_GREENFOR_LDF { name="Linovia Defence Force"; value="LT_GREENFOR_LDF"; };
 
 // BLUFOR
 class LT_CUP_BAF_MTP {name="UK MTP"; value="LT_CUP_BAF_MTP";};
