@@ -4,6 +4,7 @@ case "LT_IND_F": {LT_IND_F};
 case "LT_IND_G_F": {LT_IND_G_F};
 case "LT_OPF_T_F": {LT_OPF_T_F};
 case "LT_IND_C_F": {LT_IND_C_F};
+case "LT_IND_E_F": {LT_IND_E_F};
 case "LT_NLDO_RU_VDV_76": {LT_NLDO_RU_VDV_76};
 case "LT_NLDO_RU_VDV_31": {LT_NLDO_RU_VDV_31};
 case "LT_NLDO_UA_UAF_95": {LT_NLDO_UA_UAF_95};
