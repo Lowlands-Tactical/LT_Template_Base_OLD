@@ -5,6 +5,7 @@ class IND_F {name = "A.A.F."; value="LT_IND_F"; };
 class IND_G_F {name = "GREENFOR Guerilla"; value="LT_IND_G_F"; };
 class OPF_T_F {name = "C.S.A.T. (Tanoa)"; value="LT_OPF_T_F"; };
 class IND_C_F {name = "Syndikat"; value="LT_IND_C_F"; };
+class IND_E_F { name="Linovia Defence Force"; value="LT_IND_E_F"; };
 class NLDO_RU_VDV_76 {name = "Russian VDV 76"; value="LT_NLDO_RU_VDV_76"; };
 class NLDO_RU_VDV_31 {name = "Russian VDV 31"; value="LT_NLDO_RU_VDV_31"; };
 class NLDO_UA_UAF_95 {name = "Ukraine 95th inf bat"; value="LT_NLDO_UA_UAF_95"; };
@@ -24,7 +25,7 @@ class LT_CUP_AFR_M_REB { name = "African Muslim Insurgents"; value="LT_CUP_AFR_M
 class LT_CUP_AFR_UN { name = "African UN Peacekeepers"; value="LT_CUP_AFR_UN"; };
 class LT_CUP_ARMY_ASIA { name="Asian Army"; value="LT_CUP_ARMY_ASIA"; };
 class LT_CUP_INS_ASIA { name="Asian Insurgents"; value="LT_CUP_INS_ASIA"; };
-class LT_GREENFOR_LDF { name="Linovia Defence Force"; value="LT_GREENFOR_LDF"; };
+
 
 // BLUFOR
 class LT_CUP_BAF_MTP {name="UK MTP"; value="LT_CUP_BAF_MTP";};
