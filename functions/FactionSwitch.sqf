@@ -33,6 +33,7 @@ case "LT_NLD_WTR": {LT_NLD_WTR};
 case "LT_NLD_NFPT": {LT_NLD_NFPT};
 case "LT_NATO_MTP": {LT_NATO_MTP};
 case "LT_NATO_PAC": {LT_NATO_PAC};
+case "IND_E_F": {LT_GREENFOR_LDF};
 
 // Backwards compatability
 case "OPF_F": {LT_OPF_F};
