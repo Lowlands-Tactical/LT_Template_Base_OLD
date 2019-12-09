@@ -33,7 +33,7 @@ case "LT_NLD_WTR": {LT_NLD_WTR};
 case "LT_NLD_NFPT": {LT_NLD_NFPT};
 case "LT_NATO_MTP": {LT_NATO_MTP};
 case "LT_NATO_PAC": {LT_NATO_PAC};
-case "IND_E_F": {LT_GREENFOR_LDF};
+
 
 // Backwards compatability
 case "OPF_F": {LT_OPF_F};
@@ -42,6 +42,7 @@ case "IND_F": {LT_IND_F};
 case "IND_G_F": {LT_IND_G_F};
 case "OPF_T_F": {LT_OPF_T_F};
 case "IND_C_F": {LT_IND_C_F};
+case "IND_E_F": {LT_IND_E_F};
 case "NLDO_RU_VDV_76": {LT_NLDO_RU_VDV_76};
 case "NLDO_RU_VDV_31": {LT_NLDO_RU_VDV_31};
 case "NLDO_UA_UAF_95": {LT_NLDO_UA_UAF_95};
