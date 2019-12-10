@@ -43,18 +43,18 @@ LT_ind_f = [LT_ind_f_units,LT_ind_f_car,LT_ind_f_ifv,LT_ind_f_tank,LT_ind_f_heli
 LT_ind_f_Weights = [LT_ind_f_units_weightArray,LT_ind_f_car_weightArray,LT_ind_f_ifv_weightArray,LT_ind_f_tank_weightArray,LT_ind_f_heli_weightArray];
 
 // LDF
-LT_ind_E_units = ["I_E_Soldier_F","I_E_soldier_AR_F","I_E_medic_F","I_E_engineer_F","I_E_soldier_exp_F","I_E_Soldier_GL_F","I_E_soldier_M_F","I_E_soldier_AAA_F","I_E_soldier_AAT_F","I_E_officer_F","I_E_soldier_repair_F","I_E_Soldier_F","I_E_soldier_LAT_F","I_E_Soldier_lite_F","I_E_Soldier_SL_F","I_E_Soldier_TL_F"];
-LT_ind_E_units_weightArray = [];
-LT_ind_E_car = ["I_MRAP_03_hmg_F", "I_MRAP_03_gmg_F","CUP_I_LR_MG_AAF"];
-LT_ind_E_car_weightArray = [];
-LT_ind_E_ifv = ["I_E_APC_tracked_03_cannon_F","I_APC_Wheeled_03_cannon_F","CUP_I_M113_AAF","CUP_I_M163_AAF","CUP_I_ZSU23_AAF"];
-LT_ind_E_ifv_weightArray = [];
-LT_ind_E_tank = ["I_MBT_03_cannon_F"];
-LT_ind_E_tank_weightArray = [];
-LT_ind_E_heli = ["I_Heli_Transport_02_F","CUP_B_Wildcat_Hellfire_Armed_Green_AAF","CUP_B_Wildcat_Cannon_Armed_Green_AAF","CUP_B_Wildcat_Hellfire_Armed_Digital_AAF","CUP_B_Wildcat_Cannon_Armed_Digital_AAF","CUP_I_Ka60_GL_Digi_AAF","CUP_I_Ka60_Digi_AAF"];
-LT_ind_E_heli_weightArray = [];
-LT_ind_E = [LT_ind_E_units,LT_ind_E_car,LT_ind_E_ifv,LT_ind_E_tank,LT_ind_E_heli];
-LT_ind_E_Weights = [LT_ind_E_units_weightArray,LT_ind_E_car_weightArray,LT_ind_E_ifv_weightArray,LT_ind_E_tank_weightArray,LT_ind_E_heli_weightArray];
+LT_ind_E_F_units = ["I_E_Soldier_F","I_E_soldier_AR_F","I_E_medic_F","I_E_engineer_F","I_E_soldier_exp_F","I_E_Soldier_GL_F","I_E_soldier_M_F","I_E_soldier_AAA_F","I_E_soldier_AAT_F","I_E_officer_F","I_E_soldier_repair_F","I_E_Soldier_F","I_E_soldier_LAT_F","I_E_Soldier_lite_F","I_E_Soldier_SL_F","I_E_Soldier_TL_F"];
+LT_ind_E_F_units_weightArray = [];
+LT_ind_E_F_car = ["I_MRAP_03_hmg_F", "I_MRAP_03_gmg_F","CUP_I_LR_MG_AAF"];
+LT_ind_E_F_car_weightArray = [];
+LT_ind_E_F_ifv = ["I_E_APC_tracked_03_cannon_F","I_APC_Wheeled_03_cannon_F","CUP_I_M113_AAF","CUP_I_M163_AAF","CUP_I_ZSU23_AAF"];
+LT_ind_E_F_ifv_weightArray = [];
+LT_ind_E_F_tank = ["I_MBT_03_cannon_F"];
+LT_ind_E_F_tank_weightArray = [];
+LT_ind_E_F_heli = ["I_Heli_Transport_02_F","CUP_B_Wildcat_Hellfire_Armed_Green_AAF","CUP_B_Wildcat_Cannon_Armed_Green_AAF","CUP_B_Wildcat_Hellfire_Armed_Digital_AAF","CUP_B_Wildcat_Cannon_Armed_Digital_AAF","CUP_I_Ka60_GL_Digi_AAF","CUP_I_Ka60_Digi_AAF"];
+LT_ind_E_F_heli_weightArray = [];
+LT_ind_E_F = [LT_ind_E_F_units,LT_ind_E_F_car,LT_ind_E_F_ifv,LT_ind_E_F_tank,LT_ind_E_F_heli];
+LT_ind_E_F_Weights = [LT_ind_E_F_units_weightArray,LT_ind_E_F_car_weightArray,LT_ind_E_F_ifv_weightArray,LT_ind_E_F_tank_weightArray,LT_ind_E_F_heli_weightArray];
 
 // Altis Guerilla
 LT_ind_g_f_units = ["I_G_Soldier_F","I_G_Soldier_lite_F","I_G_Soldier_SL_F","I_G_Soldier_TL_F","I_G_Soldier_AR_F","I_G_medic_F","I_G_engineer_F","I_G_Soldier_exp_F","I_G_Soldier_GL_F","I_G_Soldier_M_F","I_G_Soldier_LAT_F","I_G_Soldier_A_F"];
