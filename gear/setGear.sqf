@@ -135,6 +135,11 @@ if (hasInterface) then {
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addItemCargoGlobal [_bandages,30];
+        (unitBackpack _unit) addItemCargoGlobal [_ACE_elasticBandage,30];
+        (unitBackpack _unit) addItemCargoGlobal [_ACE_quikclot,30];
+        (unitBackpack _unit) addItemCargoGlobal [_ACE_fieldDressing,30];
+        (unitBackpack _unit) addItemCargoGlobal [_ACE_tourniquets,30];
+        (unitBackpack _unit) addItemCargoGlobal [_ACE_plasmaIV_500,5];       
         (unitBackpack _unit) addItemCargoGlobal [_morphine,15];
         (unitBackpack _unit) addItemCargoGlobal [_epinephrine,10];
         (unitBackpack _unit) addItemCargoGlobal [_bloodbags,5];
