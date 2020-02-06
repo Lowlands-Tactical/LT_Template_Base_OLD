@@ -60,11 +60,15 @@ if (hasInterface) then {
     _unit addItem _bandages;
     _unit addItem _bandages;
     _unit addItem _bandages;
-    _unit addItem _bandages;
-    _unit addItem _bandages;
-    _unit addItem _bandages;
     _unit addItem _morphine;
     _unit addItem _morphine;
+    _unit addItem _quikclot;
+    _unit addItem _quikclot;
+    _unit addItem _quikclot;
+    _unit addItem _tourniquet;
+    _unit addItem _tourniquet;
+    _unit addItem _tourniquet;
+    _unit addItem _tourniquet;
     _unit linkItem _map;        // Add and equip the map
     _unit linkItem _compass;      // Add and equip a compass
     _unit linkItem _radio;        // Add and equip A3's default radio
@@ -135,16 +139,15 @@ if (hasInterface) then {
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addItemCargoGlobal [_bandages,30];
-        (unitBackpack _unit) addItemCargoGlobal [_ACE_elasticBandage,30];
-        (unitBackpack _unit) addItemCargoGlobal [_ACE_quikclot,30];
-        (unitBackpack _unit) addItemCargoGlobal [_ACE_fieldDressing,30];
-        (unitBackpack _unit) addItemCargoGlobal [_ACE_tourniquets,30];
-        (unitBackpack _unit) addItemCargoGlobal [_ACE_plasmaIV_500,5];       
+        (unitBackpack _unit) addItemCargoGlobal [_elacsticbandages,30];
+        (unitBackpack _unit) addItemCargoGlobal [_quikclot,30];
+        (unitBackpack _unit) addItemCargoGlobal [_tourniquet,30];
         (unitBackpack _unit) addItemCargoGlobal [_morphine,15];
         (unitBackpack _unit) addItemCargoGlobal [_epinephrine,10];
         (unitBackpack _unit) addItemCargoGlobal [_bloodbags,5];
+        (unitBackpack _unit) addItemCargoGlobal [_plasmaIV,5];
+        (unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
         (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 7];
-        (unitBackpack _unit) addItemCargoGlobal [_firstaid, 4];
 
         _unit addmagazines [_carbinemag,7];
       };
