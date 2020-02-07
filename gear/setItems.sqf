@@ -87,6 +87,7 @@ _bandages = if (isNil "lt_template_bandages" ) then {"ACE_fieldDressing"} else {
 _elacsticbandages = if (isNil "lt_template_elacsticbandages" ) then {"ACE_elasticBandage"} else {lt_template_elacsticbandages};
 _quikclot = if (isNil "lt_template_quikclot" ) then {"ACE_quikclot"} else {lt_template_quikclot};
 _tourniquet = if (isNil "lt_template_tourniquet" ) then {"ACE_tourniquet"} else {lt_template_tourniquet};
+_splint = if (isNil "lt_template_splint" ) then {"ACE_splint"} else {lt_template_splint};
 _morphine = if (isNil "lt_template_morphine" ) then {"ACE_morphine"} else {lt_template_morphine};
 _epinephrine = if (isNil "lt_template_epinephrine" ) then {"ACE_epinephrine"} else {lt_template_epinephrine};
 _bloodbags = if (isNil "lt_template_bloodbags" ) then {"ACE_bloodIV"} else {lt_template_bloodbags};
