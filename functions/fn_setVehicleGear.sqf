@@ -336,6 +336,11 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,2];
 		_vehicle addItemCargoGlobal [_morphine,4];
 		_vehicle addItemCargoGlobal [_epinephrine,4];
+		_vehicle addItemCargoGlobal [_elacsticbandages,4];
+		_vehicle addItemCargoGlobal [_quikclot,10];
+		_vehicle addItemCargoGlobal [_tourniquet,12];
+		_vehicle addItemCargoGlobal [_splint,3];
+		_vehicle addItemCargoGlobal [_plasmaIV,2];
 		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
@@ -379,6 +384,11 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,4];
 		_vehicle addItemCargoGlobal [_morphine,8];
 		_vehicle addItemCargoGlobal [_epinephrine,8];
+		_vehicle addItemCargoGlobal [_elacsticbandages,8];
+		_vehicle addItemCargoGlobal [_quikclot,20];
+		_vehicle addItemCargoGlobal [_tourniquet,24];
+		_vehicle addItemCargoGlobal [_splint,6];
+		_vehicle addItemCargoGlobal [_plasmaIV,4];
 		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
@@ -465,6 +475,11 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,4];
 		_vehicle addItemCargoGlobal [_morphine,8];
 		_vehicle addItemCargoGlobal [_epinephrine,8];
+		_vehicle addItemCargoGlobal [_elacsticbandages,6];
+		_vehicle addItemCargoGlobal [_quikclot,14];
+		_vehicle addItemCargoGlobal [_tourniquet,16];
+		_vehicle addItemCargoGlobal [_splint,5];
+		_vehicle addItemCargoGlobal [_plasmaIV,4];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
@@ -503,10 +518,15 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_mgrenade, 25];
 		_vehicle addMagazineCargoGlobal [_smokegrenade, 25];
 		_vehicle addMagazineCargoGlobal [_smokegrenadegreen, 6];
-		_vehicle addItemCargoGlobal [_bandages, 25];
+		_vehicle addItemCargoGlobal [_bandages, 15];
 		_vehicle addItemCargoGlobal [_bloodbags,8];
 		_vehicle addItemCargoGlobal [_morphine,12];
 		_vehicle addItemCargoGlobal [_epinephrine,12];
+		_vehicle addItemCargoGlobal [_elacsticbandages,10];
+		_vehicle addItemCargoGlobal [_quikclot,18];
+		_vehicle addItemCargoGlobal [_tourniquet,14];
+		_vehicle addItemCargoGlobal [_splint,10];
+		_vehicle addItemCargoGlobal [_plasmaIV,8];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
@@ -545,10 +565,15 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_mgrenade, 75];
 		_vehicle addMagazineCargoGlobal [_smokegrenade, 75];
 		_vehicle addMagazineCargoGlobal [_smokegrenadegreen, 20];
-		_vehicle addItemCargoGlobal [_bandages, 75];
+		_vehicle addItemCargoGlobal [_bandages, 45];
 		_vehicle addItemCargoGlobal [_bloodbags,20];
 		_vehicle addItemCargoGlobal [_morphine,35];
 		_vehicle addItemCargoGlobal [_epinephrine,35];
+		_vehicle addItemCargoGlobal [_elacsticbandages,40];
+		_vehicle addItemCargoGlobal [_quikclot,30];
+		_vehicle addItemCargoGlobal [_tourniquet,24];
+		_vehicle addItemCargoGlobal [_splint,30];
+		_vehicle addItemCargoGlobal [_plasmaIV,24];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 	case "empty":
