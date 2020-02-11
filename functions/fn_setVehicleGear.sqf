@@ -432,6 +432,11 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,3];
 		_vehicle addItemCargoGlobal [_morphine,6];
 		_vehicle addItemCargoGlobal [_epinephrine,6];
+		_vehicle addItemCargoGlobal [_elacsticbandages,4];
+		_vehicle addItemCargoGlobal [_quikclot,8];
+		_vehicle addItemCargoGlobal [_tourniquet,10];
+		_vehicle addItemCargoGlobal [_splint,3];
+		_vehicle addItemCargoGlobal [_plasmaIV,3];
 		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
