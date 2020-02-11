@@ -24,6 +24,26 @@ class LT_Gear_combo: Title
 					data = "None";
 					default = 1;
 				};
+				class LT_OPTRE_BR55
+				{
+					text = "BR55";
+					data = "\lt_template_base\gear\Loadouts\BR55.sqf";
+				};
+				class LT_OPTRE_MA5C
+				{
+					text = "MA5C";
+					data = "\lt_template_base\gear\Loadouts\MA5C.sqf";
+				};
+				class LT_OPTRE_MA37
+				{
+					text = "MA37";
+					data = "\lt_template_base\gear\Loadouts\MA37.sqf";
+				};
+				class LT_OPTRE_COVENANT
+				{
+					text = "Covenant (Plasma)";
+					data = "\lt_template_base\gear\Loadouts\Covenant.sqf";
+				};
 			};
 		};
 	};
