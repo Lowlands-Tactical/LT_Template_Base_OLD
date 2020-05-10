@@ -18,15 +18,15 @@ class LT_TFR_combo: Title
 
 			class Items
 			{
+				// class LT_TFR_unmanaged
+				// {
+				// 	text = "Use TFR settings";
+				// 	data = "0";
+				// };
 				class LT_TFR_managed
 				{
 					text = "Use Template presets";
 					data = "1";
-				};
-				class LT_TFR_unmanaged
-				{
-					text = "Use TFR settings";
-					data = "0";
 					default = 1;
 				};
 				class LT_TFR_NoRadio

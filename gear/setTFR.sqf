@@ -8,7 +8,7 @@ if (hasInterface) then {
 
 	_constraint 	= if (typename (_lt_camo_var_array select 0) == "ARRAY") then {selectRandom (_lt_camo_var_array select 0)} else {_lt_camo_var_array select 0};
 	_pack	= _lt_camo_var_array select 2;
-	_tfrpack 	= _lt_camo_var_array select 4;
+	_radioBag 	= _lt_camo_var_array select 4;
 
 	// Only execute this when we want it to run.
 
@@ -18,6 +18,8 @@ if (hasInterface) then {
 	_role = player getVariable ["lt_unit_role","none"];
 
 	diag_log format["TFR is on with the role: %1",_role];
+	diag_log format["TFR is on with the camo_array: %1",_lt_camo_var_array];
+	diag_log format["TFR is on with the tfrpack: %1",_radioBag];
 
   // FUCKN WAIT OR ELSE NO WORKY
   waitUntil { ([] call acre_api_fnc_isInitialized) };
@@ -25,18 +27,18 @@ if (hasInterface) then {
 
 	switch (lt_tfr_var) do {
 
-		case "0": {
+		/* case "0": {
 		 	if ( _role in _roles ) then {
 				null = [player,_pack] call lt_fnc_changeBackpack;
 			};
-		};
+		}; */
 
 		case "1": {
 		  tf_no_auto_long_range_radio = true;
 		  publicVariable "tf_no_auto_long_range_radio";
 
 		  if (_constraint != "None" and _role in _roles) then {
-        null = if (typename _tfrpack == "ARRAY")then {[player, selectRandom _tfrpack] call lt_fnc_changeBackpack} else {[player, _tfrpack] call lt_fnc_changeBackpack;};
+        null = if (typename _radioBag == "ARRAY")then {[player, selectRandom _radioBag] call lt_fnc_changeBackpack} else {[player, _radioBag] call lt_fnc_changeBackpack;};
 			  player addItem "ACRE_PRC152";
 			};
 		};
@@ -61,7 +63,7 @@ if (hasInterface) then {
       } forEach ([] call acre_api_fnc_getCurrentRadioList);
 
 			if (_constraint != "None" and _role in _roles) then {
-        null = if (typename _tfrpack == "ARRAY")then {[player, selectRandom _tfrpack] call lt_fnc_changeBackpack} else {[player, _tfrpack] call lt_fnc_changeBackpack;};
+        null = if (typename _radioBag == "ARRAY")then {[player, selectRandom _radioBag] call lt_fnc_changeBackpack} else {[player, _radioBag] call lt_fnc_changeBackpack;};
 			  player addItem "ACRE_PRC152";
 			};
 		};
@@ -92,7 +94,7 @@ if (hasInterface) then {
       } forEach ([] call acre_api_fnc_getCurrentRadioList);
 
 			if (_constraint != "None" and _role in _roles) then {
-        null = if (typename _tfrpack == "ARRAY")then {[player, selectRandom _tfrpack] call lt_fnc_changeBackpack} else {[player, _tfrpack] call lt_fnc_changeBackpack;};
+        null = if (typename _radioBag == "ARRAY")then {[player, selectRandom _radioBag] call lt_fnc_changeBackpack} else {[player, _radioBag] call lt_fnc_changeBackpack;};
 			  player addItem "ACRE_PRC152";
 			};
 		};
