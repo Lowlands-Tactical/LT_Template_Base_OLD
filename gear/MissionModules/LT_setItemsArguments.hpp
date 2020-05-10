@@ -298,13 +298,13 @@ class lt_template_MMGmag {
 	displayName = "Magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "NLD_200Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
+	defaultValue = "150Rnd_762x51_Box";
 };
 class lt_template_MMGmag_tr	{
 	displayName = "Tracer magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
+	defaultValue = "150Rnd_762x51_Box_Tracer";
 };
 
 // Marksman rifle

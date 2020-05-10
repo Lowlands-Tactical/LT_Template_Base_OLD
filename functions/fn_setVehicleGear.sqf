@@ -205,9 +205,16 @@ _smokegrenadegreen = if (isNil "lt_template_smokegrenadegreen") then {"SmokeShel
 _firstaid = if (isNil "lt_template_firstaid") then {"FirstAidKit"} else {lt_template_firstaid};
 _medkit = if (isNil "lt_template_medkit") then {"Medikit"} else {lt_template_medkit};
 _bandages = if (isNil "lt_template_bandages" ) then {"ACE_fieldDressing"} else {lt_template_bandages};
+_elasticbandages = if (isNil "lt_template_elasticbandages" ) then {"ACE_elasticBandage"} else {lt_template_elasticbandages};
+_quikclot = if (isNil "lt_template_quikclot" ) then {"ACE_quikclot"} else {lt_template_quikclot};
+_tourniquet = if (isNil "lt_template_tourniquet" ) then {"ACE_tourniquet"} else {lt_template_tourniquet};
+_splint = if (isNil "lt_template_splint" ) then {"ACE_splint"} else {lt_template_splint};
 _morphine = if (isNil "lt_template_morphine" ) then {"ACE_morphine"} else {lt_template_morphine};
 _epinephrine = if (isNil "lt_template_epinephrine" ) then {"ACE_epinephrine"} else {lt_template_epinephrine};
 _bloodbags = if (isNil "lt_template_bloodbags" ) then {"ACE_bloodIV"} else {lt_template_bloodbags};
+_plasmaIV = if (isNil "lt_template_plasmaIV" ) then {"ACE_plasmaIV_500"} else {lt_template_plasmaIV};
+_saline = if (isNil "lt_template_saline" ) then {"ACE_salineIV_500"} else {lt_template_saline};
+_surgicalKit = if (isNil "lt_template_surgicalKit" ) then {"ACE_surgicalKit"} else {lt_template_surgicalKit};
 
 // Night Vision Goggles (NVGoggles)
 _nvg = if (isNil "lt_template_nvg") then {"ACE_NVG_Wide"} else {lt_template_nvg};
@@ -257,7 +264,7 @@ _ARmag_tr = if (isNil "lt_template_ARmag_tr") then {"CUP_100Rnd_TE4_Red_Tracer_5
 
 // Medium MG
 _MMG = if (isNil "lt_template_MMG") then {"NLD_MAG"} else {lt_template_MMG};
-_MMGmag = if (isNil "lt_template_MMGmag") then {"NLD_200Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"} else {lt_template_MMGmag};
+_MMGmag = if (isNil "lt_template_MMGmag") then {"150Rnd_762x51_Box"} else {lt_template_MMGmag};
 _MMGmag_tr = if (isNil "lt_template_MMGmag_tr") then {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"} else {lt_template_MMGmag_tr};
 
 // Marksman rifle
@@ -336,11 +343,12 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,2];
 		_vehicle addItemCargoGlobal [_morphine,4];
 		_vehicle addItemCargoGlobal [_epinephrine,4];
-		_vehicle addItemCargoGlobal [_elacsticbandages,4];
+		_vehicle addItemCargoGlobal [_elasticbandages,4];
 		_vehicle addItemCargoGlobal [_quikclot,10];
 		_vehicle addItemCargoGlobal [_tourniquet,12];
 		_vehicle addItemCargoGlobal [_splint,3];
 		_vehicle addItemCargoGlobal [_plasmaIV,2];
+		_vehicle addItemCargoGlobal [_saline,2];
 		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
@@ -384,11 +392,12 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,4];
 		_vehicle addItemCargoGlobal [_morphine,8];
 		_vehicle addItemCargoGlobal [_epinephrine,8];
-		_vehicle addItemCargoGlobal [_elacsticbandages,8];
+		_vehicle addItemCargoGlobal [_elasticbandages,8];
 		_vehicle addItemCargoGlobal [_quikclot,20];
 		_vehicle addItemCargoGlobal [_tourniquet,24];
 		_vehicle addItemCargoGlobal [_splint,6];
 		_vehicle addItemCargoGlobal [_plasmaIV,4];
+		_vehicle addItemCargoGlobal [_saline,4];
 		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
@@ -432,11 +441,12 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,3];
 		_vehicle addItemCargoGlobal [_morphine,6];
 		_vehicle addItemCargoGlobal [_epinephrine,6];
-		_vehicle addItemCargoGlobal [_elacsticbandages,4];
+		_vehicle addItemCargoGlobal [_elasticbandages,4];
     _vehicle addItemCargoGlobal [_quikclot,8];
     _vehicle addItemCargoGlobal [_tourniquet,10];
     _vehicle addItemCargoGlobal [_splint,3];
     _vehicle addItemCargoGlobal [_plasmaIV,3];
+		_vehicle addItemCargoGlobal [_saline,3];
 		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
@@ -480,11 +490,12 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,4];
 		_vehicle addItemCargoGlobal [_morphine,8];
 		_vehicle addItemCargoGlobal [_epinephrine,8];
-		_vehicle addItemCargoGlobal [_elacsticbandages,6];
+		_vehicle addItemCargoGlobal [_elasticbandages,6];
 		_vehicle addItemCargoGlobal [_quikclot,14];
 		_vehicle addItemCargoGlobal [_tourniquet,16];
 		_vehicle addItemCargoGlobal [_splint,5];
 		_vehicle addItemCargoGlobal [_plasmaIV,4];
+		_vehicle addItemCargoGlobal [_saline,4];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
@@ -527,11 +538,12 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,8];
 		_vehicle addItemCargoGlobal [_morphine,12];
 		_vehicle addItemCargoGlobal [_epinephrine,12];
-		_vehicle addItemCargoGlobal [_elacsticbandages,10];
+		_vehicle addItemCargoGlobal [_elasticbandages,10];
 		_vehicle addItemCargoGlobal [_quikclot,18];
 		_vehicle addItemCargoGlobal [_tourniquet,14];
 		_vehicle addItemCargoGlobal [_splint,10];
 		_vehicle addItemCargoGlobal [_plasmaIV,8];
+		_vehicle addItemCargoGlobal [_saline,8];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
@@ -574,11 +586,12 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_bloodbags,20];
 		_vehicle addItemCargoGlobal [_morphine,35];
 		_vehicle addItemCargoGlobal [_epinephrine,35];
-		_vehicle addItemCargoGlobal [_elacsticbandages,40];
+		_vehicle addItemCargoGlobal [_elasticbandages,40];
 		_vehicle addItemCargoGlobal [_quikclot,30];
 		_vehicle addItemCargoGlobal [_tourniquet,24];
 		_vehicle addItemCargoGlobal [_splint,30];
 		_vehicle addItemCargoGlobal [_plasmaIV,24];
+		_vehicle addItemCargoGlobal [_saline,24];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 	case "empty":

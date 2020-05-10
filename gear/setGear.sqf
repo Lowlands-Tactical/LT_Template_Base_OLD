@@ -139,7 +139,7 @@ if (hasInterface) then {
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addItemCargoGlobal [_bandages,30];
-        (unitBackpack _unit) addItemCargoGlobal [_elacsticbandages,30];
+        (unitBackpack _unit) addItemCargoGlobal [_elasticbandages,30];
         (unitBackpack _unit) addItemCargoGlobal [_quikclot,30];
         (unitBackpack _unit) addItemCargoGlobal [_tourniquet,30];
         (unitBackpack _unit) addItemCargoGlobal [_splint,15];
