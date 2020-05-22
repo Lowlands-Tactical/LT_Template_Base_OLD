@@ -73,7 +73,7 @@ class LT_Camo_combo: Title
 				class LT_Camo_SFMTP
 				{
 					text = "Special forces MTP";
-					data = ["NLD_MTP_Camo","NLD_MTP_PlateCarrier","NLD_MTP_Carryall_Empty","NLD_MTP_ECH","NLD_Radiobag_NFPMT"];
+					data = ["NLD_MTP_Camo","NLD_MTP_PlateCarrier","NLD_MTP_Carryall_Empty","NLD_MTP_ECH","NLD_Radiobag_MCAM"];
 				};
 				class LT_Camo_KM
 				{
