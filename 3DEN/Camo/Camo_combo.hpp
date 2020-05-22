@@ -28,57 +28,57 @@ class LT_Camo_combo: Title
 				class LT_Camo_Desert
 				{
 					text = "Desert";
-					data =  ["NLD_DST_Camo","NLD_DST_Vest","NLD_DST_Carryall_Empty","NLD_DST_Helmet","NLD_rt1523g_Desert"];
+					data =  ["NLD_DST_Camo","NLD_DST_Vest","NLD_DST_Carryall_Empty","NLD_DST_Helmet","NLD_Radiobag_NFPMT"];
 				};
 				class LT_Camo_Woodland
 				{
 					text = "Woodland";
-					data = ["NLD_WLD_Camo","NLD_WLD_Vest","NLD_WLD_Carryall_Empty","NLD_WLD_Helmet","NLD_rt1523g_Woodland"];
+					data = ["NLD_WLD_Camo","NLD_WLD_Vest","NLD_WLD_Carryall_Empty","NLD_WLD_Helmet","NLD_Radiobag_WDL"];
 				};
 				class LT_Camo_UN_Woodland
 				{
 					text = "UN (Woodland)";
-					data = ["NLD_WLD_Camo","NLD_UN_Vest","NLD_WLD_Carryall_B","NLD_UN_Helmet","NLD_rt1523g_Woodland"];
+					data = ["NLD_WLD_Camo","NLD_UN_Vest","NLD_WLD_Carryall_B","NLD_UN_Helmet","NLD_Radiobag_WDL"];
 				};
 				class LT_Camo_UN_Desert
 				{
 					text = "UN (Desert)";
-					data = ["NLD_DST_Camo","NLD_UN_Vest","NLD_DST_Carryall_Empty","NLD_UN_Helmet","NLD_rt1523g_Desert"];
+					data = ["NLD_DST_Camo","NLD_UN_Vest","NLD_DST_Carryall_Empty","NLD_UN_Helmet","NLD_Radiobag_NFPMT"];
 				};
 				class LT_Camo_NFPTAN
 				{
 					text = "NFP-TAN";
-					data = ["NLD_NFPT_Camo","NLD_NFPT_Vest","NLD_NFPT_Carryall_Empty","NLD_NFPT_Helmet","NLD_rt1523g_NFP"];
+					data = ["NLD_NFPT_Camo","NLD_NFPT_Vest","NLD_NFPT_Carryall_Empty","NLD_NFPT_Helmet","NLD_Radiobag_NFPMT"];
 				};
 				class LT_Camo_NFPGREEN
 				{
 					text = "NFP-GREEN";
-					data = ["NLD_NFPG_Camo","NLD_NFPG_Vest","NLD_NFPG_Carryall_Empty","NLD_NFPG_Helmet","NLD_rt1523g_NFP"];
+					data = ["NLD_NFPG_Camo","NLD_NFPG_Vest","NLD_NFPG_Carryall_Empty","NLD_NFPG_Helmet","NLD_Radiobag_NFPMT"];
 				};
 				class LT_Camo_WINTER
 				{
 					text = "Winter";
-					data = ["NLD_WTR_Camo","NLD_WLD_Vest","NLD_WTR_Carryall_Empty","NLD_WTR_Helmet","NLD_rt1523g_Woodland"];
+					data = ["NLD_WTR_Camo","NLD_WLD_Vest","NLD_WTR_Carryall_Empty","NLD_WTR_Helmet","NLD_Radiobag_Arctic"];
 				};
 				class LT_Camo_DSI
 				{
 					text = "DSI";
-					data = ["NLD_DSI_Camo","NLD_DSI_PlateCarrier","NLD_SF_Carryall_Empty","NLD_DSI_Helmet","NLD_rt1523g_BLACK"];
+					data = ["NLD_DSI_Camo","NLD_DSI_PlateCarrier","NLD_SF_Carryall_Empty","NLD_DSI_Helmet","b_radiobag_01_black_F"];
 				};
 				class LT_Camo_SF
 				{
 					text = "Special Forces Black";
-					data = ["NLD_SF_Camo","NLD_SF_Vest","NLD_SF_Carryall_Empty","NLD_SF_ECH","NLD_rt1523g_BLACK"];
+					data = ["NLD_SF_Camo","NLD_SF_Vest","NLD_SF_Carryall_Empty","NLD_SF_ECH","b_radiobag_01_black_F"];
 				};
 				class LT_Camo_SFMTP
 				{
 					text = "Special forces MTP";
-					data = ["NLD_MTP_Camo","NLD_MTP_PlateCarrier","NLD_MTP_Carryall_Empty","NLD_MTP_ECH","NLD_rt1523g_MTP"];
+					data = ["NLD_MTP_Camo","NLD_MTP_PlateCarrier","NLD_MTP_Carryall_Empty","NLD_MTP_ECH","NLD_Radiobag_NFPMT"];
 				};
 				class LT_Camo_KM
 				{
 					text = "Koninklijke Mariniers";
-					data = ["NLD_KM_Camo","V_I_G_resistanceLeader_F","NLD_KM_Carryall_Empty","NLD_KM_Helmet","NLD_rt1523g_KM"];
+					data = ["NLD_KM_Camo","V_I_G_resistanceLeader_F","NLD_KM_Carryall_Empty","NLD_KM_Helmet","NLD_Radiobag_M81"];
 				};
         class LT_NATO
         {
