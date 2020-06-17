@@ -145,9 +145,9 @@ if (hasInterface) then {
         (unitBackpack _unit) addItemCargoGlobal [_splint,15];
         (unitBackpack _unit) addItemCargoGlobal [_morphine,15];
         (unitBackpack _unit) addItemCargoGlobal [_epinephrine,10];
-        (unitBackpack _unit) addItemCargoGlobal [_bloodbags,5];
+        (unitBackpack _unit) addItemCargoGlobal [_bloodbags,4];
         (unitBackpack _unit) addItemCargoGlobal [_plasmaIV,5];
-        (unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
+        (unitBackpack _unit) addItemCargoGlobal [_saline,8];
         (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 7];
 
         _unit addmagazines [_carbinemag,7];
