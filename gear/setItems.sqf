@@ -79,9 +79,16 @@ _smokegrenadegreen = if (isNil "lt_template_smokegrenadegreen") then {"SmokeShel
 _firstaid = if (isNil "lt_template_firstaid") then {"FirstAidKit"} else {lt_template_firstaid};
 _medkit = if (isNil "lt_template_medkit") then {"Medikit"} else {lt_template_medkit};
 _bandages = if (isNil "lt_template_bandages" ) then {"ACE_fieldDressing"} else {lt_template_bandages};
+_elasticbandages = if (isNil "lt_template_elasticbandages" ) then {"ACE_elasticBandage"} else {lt_template_elasticbandages};
+_quikclot = if (isNil "lt_template_quikclot" ) then {"ACE_quikclot"} else {lt_template_quikclot};
+_tourniquet = if (isNil "lt_template_tourniquet" ) then {"ACE_tourniquet"} else {lt_template_tourniquet};
+_splint = if (isNil "lt_template_splint" ) then {"ACE_splint"} else {lt_template_splint};
 _morphine = if (isNil "lt_template_morphine" ) then {"ACE_morphine"} else {lt_template_morphine};
 _epinephrine = if (isNil "lt_template_epinephrine" ) then {"ACE_epinephrine"} else {lt_template_epinephrine};
 _bloodbags = if (isNil "lt_template_bloodbags" ) then {"ACE_bloodIV"} else {lt_template_bloodbags};
+_plasmaIV = if (isNil "lt_template_plasmaIV" ) then {"ACE_plasmaIV_500"} else {lt_template_plasmaIV};
+_saline = if (isNil "lt_template_saline" ) then {"ACE_salineIV_500"} else {lt_template_saline};
+_surgicalKit = if (isNil "lt_template_surgicalKit" ) then {"ACE_surgicalKit"} else {lt_template_surgicalKit};
 
 // Chemlights
 _chemgreen =  if (isNil "lt_template_chemgreen") then {"Chemlight_green"} else {lt_template_chemgreen};
@@ -152,8 +159,8 @@ _ARmag_tr = if (isNil "lt_template_ARmag_tr") then {"100Rnd_65x39_caseless_mag_T
 
 // Medium MG
 _MMG = if (isNil "lt_template_MMG") then {"NLD_MAG"} else {lt_template_MMG};
-_MMGmag = if (isNil "lt_template_MMGmag") then {"200Rnd_65x39_cased_Box"} else {lt_template_MMGmag};
-_MMGmag_tr = if (isNil "lt_template_MMGmag_tr") then {"200Rnd_65x39_cased_Box_Tracer"} else {lt_template_MMGmag_tr};
+_MMGmag = if (isNil "lt_template_MMGmag") then {"150Rnd_762x51_Box"} else {lt_template_MMGmag};
+_MMGmag_tr = if (isNil "lt_template_MMGmag_tr") then {"150Rnd_762x51_Box_Tracer"} else {lt_template_MMGmag_tr};
 
 // Marksman rifle
 _DMrifle = if (isNil "lt_template_DMrifle") then {"arifle_MXM_F"} else {lt_template_DMrifle};

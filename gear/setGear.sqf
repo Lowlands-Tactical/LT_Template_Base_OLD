@@ -60,11 +60,15 @@ if (hasInterface) then {
     _unit addItem _bandages;
     _unit addItem _bandages;
     _unit addItem _bandages;
-    _unit addItem _bandages;
-    _unit addItem _bandages;
-    _unit addItem _bandages;
     _unit addItem _morphine;
     _unit addItem _morphine;
+    _unit addItem _quikclot;
+    _unit addItem _quikclot;
+    _unit addItem _quikclot;
+    _unit addItem _tourniquet;
+    _unit addItem _tourniquet;
+    _unit addItem _tourniquet;
+    _unit addItem _tourniquet;
     _unit linkItem _map;        // Add and equip the map
     _unit linkItem _compass;      // Add and equip a compass
     _unit linkItem _radio;        // Add and equip A3's default radio
@@ -125,12 +129,18 @@ if (hasInterface) then {
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addItemCargoGlobal [_bandages,30];
+        (unitBackpack _unit) addItemCargoGlobal [_elasticbandages,30];
+        (unitBackpack _unit) addItemCargoGlobal [_quikclot,30];
+        (unitBackpack _unit) addItemCargoGlobal [_tourniquet,30];
+        (unitBackpack _unit) addItemCargoGlobal [_splint,15];
         (unitBackpack _unit) addItemCargoGlobal [_morphine,15];
         (unitBackpack _unit) addItemCargoGlobal [_epinephrine,10];
-        (unitBackpack _unit) addItemCargoGlobal [_bloodbags,5];
+        (unitBackpack _unit) addItemCargoGlobal [_bloodbags,4];
+        (unitBackpack _unit) addItemCargoGlobal [_plasmaIV,5];
+        (unitBackpack _unit) addItemCargoGlobal [_saline,8];
         (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 7];
-        (unitBackpack _unit) addItemCargoGlobal [_firstaid, 4];
-        (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag,7];
+
+        _unit addmagazines [_carbinemag,7];
       };
 
 
@@ -545,6 +555,17 @@ if (hasInterface) then {
         _unit addmagazines [_1grenade,5];
         _unit addmagazines [_2grenade,5];
         _unit addmagazines [_3grenade,5];
+      };
+
+    // LOADOUT: Lul van de week
+      case "lvdw":
+      {
+        _unit addweapon _rifle;
+
+        removeBackpack _unit;
+        _unit addBackpack "NLD_BigDickBag";
+        _unit addmagazines [_riflemag, 13];
+        _unit addmagazines [_ARmag, 4];
       };
 
     // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)

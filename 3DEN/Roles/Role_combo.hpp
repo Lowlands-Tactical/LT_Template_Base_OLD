@@ -159,6 +159,10 @@ class LT_role_combo: Title
 					data = "gren";
 					text = "Grenadier";
 				};
+				class LT_Role_LVDW {
+					data = "lvdw";
+					text = "Lul van de week";
+				};
 			};
 		};
 	};

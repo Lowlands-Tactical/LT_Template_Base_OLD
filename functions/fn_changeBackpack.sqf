@@ -27,7 +27,7 @@ _newPack = backpack _unit;
 
 diag_log format ["LT template DEBUG: fnc_changeBackpack new backpack: %1", (BACKPACK _unit)];
 
-{_unit addItemToBackpack _x;} forEach _backpackItems;
+{(unitBackpack _unit) addItemCargoGlobal [_x,1];} forEach _backpackItems;
 
 if (_oldPack != _newPack) exitwith {true};
 if (_oldPack == _newPack) exitwith {false};

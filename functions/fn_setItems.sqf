@@ -71,9 +71,15 @@ if (_activated) then {
 		lt_template_firstaid = _logic getVariable ["lt_template_firstaid", "FirstAidKit" ];
 		lt_template_medkit = _logic getVariable ["lt_template_medkit", "Medikit" ];
 		lt_template_bandages = _logic getVariable ["lt_template_bandages", "ACE_fieldDressing" ];
+		lt_template_elasticbandages = _logic getVariable ["lt_template_elasticbandages", "ACE_elasticBandage" ];
+		lt_template_tourniquet = _logic getVariable ["lt_template_tourniquet", "ACE_tourniquet" ];
+		lt_template_splint = _logic getVariable ["lt_template_splint", "ACE_splint" ];
 		lt_template_morphine = _logic getVariable ["lt_template_morphine", "ACE_morphine" ];
 		lt_template_epinephrine = _logic getVariable ["lt_template_epinephrine", "ACE_epinephrine"  ];
 		lt_template_bloodbags = _logic getVariable ["lt_template_bloodbags", "ACE_bloodIV"  ];
+		lt_template_plasmaIV = _logic getVariable ["lt_template_plasmaIV", "ACE_plasmaIV_500"  ];
+		lt_template_saline = _logic getVariable ["lt_template_saline", "ACE_salineIV_500"  ];
+		lt_template_surgicalKit = _logic getVariable ["lt_template_surgicalKit", "ACE_surgicalKit"  ];
 		lt_template_nvg = _logic getVariable ["lt_template_nvg", "ACE_NVG_Wide"  ];
 		lt_template_uavterminal = _logic getVariable ["lt_template_uavterminal", "B_UavTerminal"];
 		lt_template_chemgreen = _logic getVariable ["lt_template_chemgreen", "Chemlight_green"  ];
