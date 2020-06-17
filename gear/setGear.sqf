@@ -71,7 +71,7 @@ if (hasInterface) then {
     _unit addItem _tourniquet;
     _unit linkItem _map;        // Add and equip the map
     _unit linkItem _compass;      // Add and equip a compass
-    _unit linkItem _radio;        // Add and equip A3's default radio
+    /* _unit linkItem _radio;        // Add and equip A3's default radio */
     _unit linkItem _watch;        // Add and equip a watch
     _unit addItem _mapflashlight;  // Add Flashlight XL50
 
@@ -500,13 +500,13 @@ if (hasInterface) then {
     // LOADOUT: Radioman
       case "radio":
       {
+        _unit addweapon _rifle;
         _unit addmagazines [_riflemag,7];
         _unit addmagazines [_riflemag_tr,2];
-        _unit addweapon _rifle;
         _unit addmagazines [_smokegrenade,2];
         _unit addmagazines [_grenade,1];
         _unit addmagazines [_mgrenade,1];
-        if (isNull (unitBackpack _unit)) then {_unit addBackpack _tfrpack};
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
       };
 
     // LOADOUT: RIFLEMAN
@@ -557,7 +557,7 @@ if (hasInterface) then {
         _unit addmagazines [_3grenade,5];
       };
 
-    // LOADOUT: Lul van de week
+    /* // LOADOUT: Lul van de week
       case "lvdw":
       {
         _unit addweapon _rifle;
@@ -566,7 +566,7 @@ if (hasInterface) then {
         _unit addBackpack "NLD_BigDickBag";
         _unit addmagazines [_riflemag, 13];
         _unit addmagazines [_ARmag, 4];
-      };
+      }; */
 
     // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
        default
