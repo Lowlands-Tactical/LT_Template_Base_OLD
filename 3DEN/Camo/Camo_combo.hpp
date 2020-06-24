@@ -21,7 +21,7 @@ class LT_Camo_combo: Title
 			{
 				class US_Airborn
 				{
-					text = "US - Airborn";
+					text = "USA - Airborn";
 					data = [
 					"U_LIB_US_AB_Uniform_M43",
 					["V_LIB_US_AB_Vest_Asst_MG","V_LIB_US_AB_Vest_BAR","V_LIB_US_AB_Vest_Carbine","V_LIB_US_AB_Vest_Garand","V_LIB_US_AB_Vest_Grenadier","V_LIB_US_AB_Vest_Thompson"],
@@ -34,7 +34,7 @@ class LT_Camo_combo: Title
 				};
 				class US_Airborn_Winter
 				{
-					text = "US - Airborn (Winter)";
+					text = "USA - Airborn (Winter)";
 					data = [
 					"U_LIB_US_AB_Uniform_M42_W",
 					["V_LIB_US_AB_Vest_Asst_MG","V_LIB_US_AB_Vest_BAR","V_LIB_US_AB_Vest_Carbine","V_LIB_US_AB_Vest_Garand","V_LIB_US_AB_Vest_Grenadier","V_LIB_US_AB_Vest_Thompson"],
@@ -46,7 +46,7 @@ class LT_Camo_combo: Title
 				};
 				class US_Army_Europe
 				{
-					text = "US - Army (Europe)";
+					text = "USA - Army (Europe)";
 					data = [
 					"fow_u_us_m41_01_private",
 					["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],
@@ -58,7 +58,7 @@ class LT_Camo_combo: Title
 					};
 				class US_Army_Desert
 				{
-					 text = "US - Army Desert";
+					 text = "USA - Army Desert";
 					 data = [
 					 "U_LIB_US_NAC_Uniform",
 					 ["V_LIB_US_Vest_Carbine_nco","V_LIB_US_Vest_Garand","V_LIB_US_Vest_Bar"],
@@ -70,7 +70,7 @@ class LT_Camo_combo: Title
 				 };
  				class US_Army_Europe_W
  				{
- 					text = "US - Army Winter (Europe)";
+ 					text = "USA - Army Winter (Europe)";
  					data = [
  					"fow_u_us_m41_01_private",
  					["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],
@@ -82,7 +82,7 @@ class LT_Camo_combo: Title
  					};
  				class US_Army_Desert_W
  				{
- 					 text = "US - Army Winter (Desert)";
+ 					 text = "USA - Army Winter (Desert)";
  					 data = [
  					 "fow_u_us_m37_02_private",
  					 ["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],
@@ -94,7 +94,7 @@ class LT_Camo_combo: Title
  				 };
 				class US_Army_Pacific
 				{
-					text = "US - Army (Pacific)";
+					text = "USA - Army (Pacific)";
 					data = [
 					"fow_u_us_hbt_01_private",
 					["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],
@@ -106,7 +106,7 @@ class LT_Camo_combo: Title
 				};
 				class USMC_Pacific
 				{
-					text = "USMC (Pacific)";
+					text = "USA - USMC (Pacific)";
 					data = [
 					"fow_u_usmc_p41_01_private",
 					["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],
