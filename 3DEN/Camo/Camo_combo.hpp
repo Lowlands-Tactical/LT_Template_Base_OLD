@@ -128,7 +128,7 @@ class LT_Camo_combo: Title
 					["fow_u_uk_parasmock","fow_v_uk_para_base_green","fow_b_uk_bergenpack_medic","fow_h_uk_mk2_para_camo"]
 								];
 				};
-				class UK_Airborn
+				class UK_Airborn_w
 				{
 					text = "UK - Airborn (Winter)";
 					data = [
