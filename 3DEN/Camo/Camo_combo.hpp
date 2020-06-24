@@ -56,6 +56,18 @@ class LT_Camo_combo: Title
 					["fow_u_us_m37_01_private","fow_v_us_medic","fow_b_us_m1928_medic","fow_h_us_m1_medic"]
 								];
 					};
+  				class US_Army_Europe_W
+  				{
+  					text = "USA - Army Winter (Europe)";
+  					data = [
+  					"fow_u_us_m41_01_private",
+  					["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],
+  					"fow_b_us_m1928",
+  					["fow_h_us_m1","fow_h_us_m1_net"],
+  					"B_LIB_US_Radio_ACRE2",
+  					["U_LIB_US_Private_w","fow_v_us_medic","fow_b_us_m1928_medic","fow_h_us_m1_medic"]
+  								];
+  					};
 				class US_Army_Desert
 				{
 					 text = "USA - Army Desert";
@@ -68,18 +80,6 @@ class LT_Camo_combo: Title
  					 ["U_LIB_US_NAC_Med","V_LIB_US_Vest_Medic","B_LIB_US_MedicBackpack","H_LIB_US_Helmet_Med"]
 					 				];
 				 };
- 				class US_Army_Europe_W
- 				{
- 					text = "USA - Army Winter (Europe)";
- 					data = [
- 					"fow_u_us_m41_01_private",
- 					["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],
- 					"fow_b_us_m1928",
- 					["fow_h_us_m1","fow_h_us_m1_net"],
- 					"B_LIB_US_Radio_ACRE2",
- 					["U_LIB_US_Private_w","fow_v_us_medic","fow_b_us_m1928_medic","fow_h_us_m1_medic"]
- 								];
- 					};
  				class US_Army_Desert_W
  				{
  					 text = "USA - Army Winter (Desert)";
@@ -152,7 +152,7 @@ class LT_Camo_combo: Title
 					["fow_u_uk_bd40_01_private","fow_v_uk_base_green","fow_b_uk_p37_medic","fow_h_us_m1_medic"]
 								];
 				};
-				class UK_Army_Europe
+				class UK_Army_Europe_w
 				{
 					text = "UK - Army Winter (Europe)";
 					data = [
