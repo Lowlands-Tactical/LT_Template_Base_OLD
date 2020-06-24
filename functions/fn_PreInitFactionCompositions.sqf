@@ -269,6 +269,34 @@ LT_UK_armyW_heli_weightArray = [];
 LT_UK_armyW = [LT_UK_armyW_units,LT_UK_armyW_car,LT_UK_armyW_ifv,LT_UK_armyW_tank,LT_UK_armyW_heli];
 LT_UK_armyW_weights = [];
 
+// Polish Army
+LT_POL_army_units = ["LIB_WP_Strzelec","LIB_WP_AT_grenadier","LIB_WP_Mgunner","LIB_WP_Medic","LIB_WP_Radioman","LIB_WP_Starszy_strzelec","LIB_WP_Strzelec","LIB_WP_Sapper","LIB_WP_Starszy_sapper","LIB_WP_Porucznic","LIB_WP_Sierzant","LIB_WP_Sniper","LIB_WP_Stggunner"];
+LT_POL_army_units_weightArray = [];
+LT_POL_army_car = [];
+LT_POL_army_car_weightArray = [];
+LT_POL_army_ifv = [];
+LT_POL_army_ifv_weightArray = [];
+LT_POL_army_tank = [];
+LT_POL_army_tank_weightArray = [];
+LT_POL_army_heli = [];
+LT_POL_army_heli_weightArray = [];
+LT_POL_army = [LT_POL_army_units,LT_POL_army_car,LT_POL_army_ifv,LT_POL_army_tank,LT_POL_army_heli];
+LT_POL_army_weights = [];
+
+// France Resistance
+LT_FFI_units = ["LIB_FFI_Soldier_1","LIB_FFI_Soldier_2","LIB_FFI_Soldier_3","LIB_FFI_Soldier_4","LIB_FFI_LAT_Soldier","LIB_FFI_Soldier_6","LIB_FFI_Soldier_5"];
+LT_FFI_units_weightArray = [];
+LT_FFI_car = ["LIB_GazM1_FFI_camo","LIB_GazM1_FFI","LIB_CIV_FFI_CitC4_5","LIB_CIV_FFI_CitC4_4"];
+LT_FFI_car_weightArray = [];
+LT_FFI_ifv = [];
+LT_FFI_ifv_weightArray = [];
+LT_FFI_tank = [];
+LT_FFI_tank_weightArray = [];
+LT_FFI_heli = [];
+LT_FFI_heli_weightArray = [];
+LT_FFI = [LT_FFI_units,LT_FFI_car,LT_FFI_ifv,LT_FFI_tank,LT_FFI_heli];
+LT_FFI_weights = [];
+
 
 // ## USSR ##
 // Red Army
