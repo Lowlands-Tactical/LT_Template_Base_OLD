@@ -58,7 +58,7 @@ class LT_Camo_combo: Title
 					};
 				class US_Army_Desert
 				{
-					 text = "US - Army Winter (Desert)";
+					 text = "US - Army Desert";
 					 data = [
 					 "U_LIB_US_NAC_Uniform",
 					 ["V_LIB_US_Vest_Carbine_nco","V_LIB_US_Vest_Garand","V_LIB_US_Vest_Bar"],
@@ -128,6 +128,18 @@ class LT_Camo_combo: Title
 					["fow_u_uk_parasmock","fow_v_uk_para_base_green","fow_b_uk_bergenpack_medic","fow_h_uk_mk2_para_camo"]
 								];
 				};
+				class UK_Airborn
+				{
+					text = "UK - Airborn (Winter)";
+					data = [
+					"U_LIB_UK_DenisonSmock_w",
+					["V_LIB_UK_P37_Rifleman_Blanco","V_LIB_UK_P37_Heavy_Blanco","V_LIB_UK_P37_Gasmask_Blanco","V_LIB_UK_P37_Sten_Blanco","V_LIB_UK_P37_Rifleman"],
+					["B_LIB_UK_HSack_Blanco_AT","B_LIB_UK_HSack_Blanco","B_LIB_UK_HSack_Blanco_Tea"],
+					"H_LIB_UK_Para_Helmet_Mk2_Net_w",
+					"fow_b_uk_p37_radio_blanco",
+					["U_LIB_UK_DenisonSmock_w","V_LIB_UK_P37_Rifleman_Blanco","B_LIB_UK_HSack_Blanco_Medic","H_LIB_UK_Para_Helmet_Mk2_Net_w","V_LIB_UK_P37_Officer_Blanco"]
+								];
+				};
 				class UK_Army_Europe
 				{
 					text = "UK - Army (Europe)";
@@ -138,6 +150,18 @@ class LT_Camo_combo: Title
 					["fow_h_uk_mk2","fow_h_uk_mk2_net","fow_h_uk_mk2_net_camo"],
 					"fow_b_uk_p37_radio_blanco",
 					["fow_u_uk_bd40_01_private","fow_v_uk_base_green","fow_b_uk_p37_medic","fow_h_us_m1_medic"]
+								];
+				};
+				class UK_Army_Europe
+				{
+					text = "UK - Army Winter (Europe)";
+					data = [
+					"U_LIB_UK_P37_w",
+					["V_LIB_UK_P37_Rifleman_Blanco","V_LIB_UK_P37_Heavy_Blanco","V_LIB_UK_P37_Gasmask_Blanco","V_LIB_UK_P37_Sten_Blanco","V_LIB_UK_P37_Rifleman"],
+					["B_LIB_UK_HSack_Blanco_AT","B_LIB_UK_HSack_Blanco","B_LIB_UK_HSack_Blanco_Tea"],
+					["H_LIB_UK_Helmet_Mk2_w","H_LIB_UK_Helmet_Mk2_Cover_w"],
+					"fow_b_uk_p37_radio_blanco",
+					["U_LIB_UK_P37_w","V_LIB_UK_P37_Rifleman_Blanco","B_LIB_UK_HSack_Blanco","H_LIB_UK_Helmet_Mk2_w"]
 								];
 				};
 				class UK_Army_Dessert
