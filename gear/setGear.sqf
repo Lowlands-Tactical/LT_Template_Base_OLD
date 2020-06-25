@@ -4,7 +4,7 @@ if (hasInterface) then {
   _exclude = _unit getVariable ["LT_camo_exclude", 0];
   _nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
 
-  _RolesArray = ["custom","co","sql","m","ar","aar","rat","dm","mmgg","mmgag","hmgg","hmgag","matg","matag","mtrg","mtrag","sn","sp","vc","vd","vg","vl","vr","pp","pcc","eng","engm","radio","r","car","smg","gren"];
+  _RolesArray = ["custom","co","sql","m","ar","aar","rat","dm","mmgg","mmgag","hmgg","hmgag","matg","matag","mtrg","mtrag","sn","sp","vc","vd","vg","vl","vr","pp","pcc","eng","engm","radio","r","car","smg","gren","flameth"];
 
   diag_log format ["LT Template DEBUG: role is %1 and exclude is %2",_role, _exclude];
   diag_log format ["LT Template DEBUG: setGear.sqf Role in RolesArray: %1", _role IN _RolesArray];
@@ -555,6 +555,18 @@ if (hasInterface) then {
         _unit addmagazines [_1grenade,5];
         _unit addmagazines [_2grenade,5];
         _unit addmagazines [_3grenade,5];
+      };
+
+    // LOADOUT: Flamethrower
+      case "flameth":
+      {
+        _unit addweapon "LIB_M2_Flamethrower";
+        _unit addPrimaryWeaponItem "LIB_M2_Flamethrower_Mag";
+        _unit addmagazines [_grenade,3];
+        _unit addmagazines [_smokegrenade,2];
+
+        _unit addBackpack "B_LIB_US_M2Flamethrower";
+        _unit addItemToBackpack "LIB_M2_Flamethrower_Mag";
       };
 
     /* // LOADOUT: Lul van de week
