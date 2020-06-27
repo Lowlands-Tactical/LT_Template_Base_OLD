@@ -176,9 +176,11 @@ _diverMag2 = if (isNil "lt_template_diverMag2") then {"20Rnd_556x45_UW_mag"} els
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
 _glrifle = if (isNil "lt_template_glrifle") then {"arifle_MX_GL_F"} else {lt_template_glrifle};
+_glrifleattach = if (isNil "lt_template_glrifle_attach") then {""} else {lt_template_glrifle_attach};
 _glriflemag = if (isNil "lt_template_glriflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_glriflemag};
 _glriflemag_tr = if (isNil "lt_template_glriflemag_tr") then {"30Rnd_65x39_caseless_mag_Tracer"} else {lt_template_glriflemag_tr};
 _glmag = if (isNil "lt_template_glmag") then {"1Rnd_HE_Grenade_shell"} else {lt_template_glmag};
+_glmag_at = if (isNil "lt_template_glmag_at") then {"1Rnd_HE_Grenade_shell"} else {lt_template_glmag_at};
 
 // Smoke for FTLs, Squad Leaders, etc
 _glsmokewhite = if (isNil "lt_template_glsmokewhite") then {"1Rnd_Smoke_Grenade_shell"} else {lt_template_glsmokewhite};

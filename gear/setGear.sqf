@@ -4,7 +4,7 @@ if (hasInterface) then {
   _exclude = _unit getVariable ["LT_camo_exclude", 0];
   _nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
 
-  _RolesArray = ["custom","co","sql","m","ar","aar","rat","dm","mmgg","mmgag","hmgg","hmgag","matg","matag","mtrg","mtrag","sn","sp","vc","vd","vg","vl","vr","pp","pcc","eng","engm","radio","r","car","smg","gren","flameth"];
+  _RolesArray = ["custom","co","sql","m","ar","aar","rat","dm","mmgg","mmgag","hmgg","hmgag","matg","matag","mtrg","mtrag","sn","sp","vc","vd","vg","vl","vr","pp","pcc","eng","engm","radio","r","car","smg","rg","gren","flameth"];
 
   diag_log format ["LT Template DEBUG: role is %1 and exclude is %2",_role, _exclude];
   diag_log format ["LT Template DEBUG: setGear.sqf Role in RolesArray: %1", _role IN _RolesArray];
@@ -533,6 +533,20 @@ if (hasInterface) then {
         _unit addmagazines [_mgrenade,3];
         _unit addmagazines [_smokegrenade,3];
         ["car"] call _backpack;
+      };
+
+    // LOADOUT: RIFLEMAN GRENADIER
+      case "rg":
+      {
+        _unit addweapon _glrifle;
+        _unit addPrimaryWeaponItem _glrifleattach;
+        _unit addmagazines [_glriflemag,7];
+        _unit addmagazines [_glriflemag_tr,2];
+        _unit addmagazines [_smokegrenade,2];
+        _unit addmagazines [_grenade,1];
+        _unit addmagazines [_mgrenade,1];
+        _unit addmagazines [_glmag,6];
+        _unit addmagazines [_glmag_at,3];
       };
 
     // LOADOUT: GRENADIER

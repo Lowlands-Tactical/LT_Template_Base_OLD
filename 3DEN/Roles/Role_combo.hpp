@@ -147,6 +147,10 @@ class LT_role_combo: Title
 					data = "r";
 					text = "Rifleman";
 				};
+				class LT_Role_RG {
+					data = "rg";
+					text = "Rifleman Grenadier";
+				};
 				class LT_Role_CAR {
 					data = "car";
 					text = "Carabineer";

@@ -23,6 +23,14 @@ lt_template_rifle          	 = 	 "fow_w_k98";
 lt_template_riflemag       	 = 	 "LIB_5Rnd_792x57";
 lt_template_riflemag_t     	 = 	 "LIB_5Rnd_792x57_t";
 
+// Rifle grenadier
+lt_template_glrifle        	 = 	 "LIB_K98_GW";
+lt_template_glrifle_attach	 = 	 "LIB_ACC_GW_SB_Empty";
+lt_template_glriflemag     	 = 	 "LIB_5Rnd_792x57";
+lt_template_glriflemag_tr    = 	 "LIB_5Rnd_792x57_t";
+lt_template_glmag          	 = 	 "LIB_1Rnd_G_SPRGR_30";
+lt_template_glmag_at       	 = 	 "LIB_1Rnd_G_PZGR_40";
+
 // Rifleman At, Radioman
 lt_template_carbine        	 = 	 "fow_w_g43";
 lt_template_carbinemag     	 = 	 "LIB_10Rnd_792x57";
