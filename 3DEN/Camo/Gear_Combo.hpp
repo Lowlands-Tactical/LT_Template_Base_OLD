@@ -25,30 +25,85 @@ class LT_Gear_combo: Title
 					data = "\lt_template_base\gear\Loadouts\Empty.sqf";
 					default = 1;
 				};
-				class LT_Gear_US_Army
+				class LT_Gear_USA_
 				{
-					text = "US Army";
-					data = "\lt_template_base\gear\Loadouts\US_army.sqf";
+					text = "USA - M1 Garand /w M1 Carbine";
+					data = "\lt_template_base\gear\Loadouts\USA_M1GwM1.sqf";
 				};
-				class LT_Gear_US_airborne
+				class LT_Gear_USA_
 				{
-					text = "US Airborne";
-					data = "\lt_template_base\gear\Loadouts\US_airborne.sqf";
+					text = "USA - M1 Garand /w M1A1 Carbine";
+					data = "\lt_template_base\gear\Loadouts\USA_M1GwM1A1.sqf";
 				};
-				class LT_Gear_UK_Army
+				class LT_Gear_USA_Spring
 				{
-					text = "UK Army";
-					data = "\lt_template_base\gear\Loadouts\UK_Army.sqf";
+					text = "USA - Springfield";
+					data = "\lt_template_base\gear\Loadouts\USA_Spring.sqf";
 				};
-				class LT_Gear_USSR_Army
+				class LT_Gear_USA_
 				{
-					text = "USSR Army";
-					data = "\lt_template_base\gear\Loadouts\USSR_Army.sqf";
+					text = "USA - Thompson";
+					data = "\lt_template_base\gear\Loadouts\USA_Thompson.sqf";
 				};
-				class LT_Gear_GER_Army
+				class LT_Gear_UK_EnfieldMk4
 				{
-					text = "GER Army";
-					data = "\lt_template_base\gear\Loadouts\GER_Army.sqf";
+					text = "UK  - Lee Enfield mk.4";
+					data = "\lt_template_base\gear\Loadouts\UK_EnfieldMk4.sqf";
+				};
+				class LT_Gear_UK_EnfieldMk5
+				{
+					text = "UK  - Lee Enfield mk.5 (Jungle)";
+					data = "\lt_template_base\gear\Loadouts\UK_EnfieldMk5.sqf";
+				};
+				class LT_Gear_UK_Sten
+				{
+					text = "UK  - Sten";
+					data = "\lt_template_base\gear\Loadouts\UK_Sten.sqf";
+				};
+				class LT_Gear_USSR_Mosin
+				{
+					text = "USSR - Mosin";
+					data = "\lt_template_base\gear\Loadouts\USSR_Mosin.sqf";
+				};
+				class LT_Gear_USSR_SVT
+				{
+					text = "USSR - SVT-40";
+					data = "\lt_template_base\gear\Loadouts\USSR_SVT.sqf";
+				};
+				class LT_Gear_USSR_PPsh
+				{
+					text = "USSR - PPsh";
+					data = "\lt_template_base\gear\Loadouts\USSR_PPsh.sqf";
+				};
+				class LT_Gear_GER_G41
+				{
+					text = "GER - G41";
+					data = "\lt_template_base\gear\Loadouts\GER_G41.sqf";
+				};
+				class LT_Gear_GER_G43
+				{
+					text = "GER - G43";
+					data = "\lt_template_base\gear\Loadouts\GER_G43.sqf";
+				};
+				class LT_Gear_GER_K98
+				{
+					text = "GER - Kar98";
+					data = "\lt_template_base\gear\Loadouts\GER_K98.sqf";
+				};
+				class LT_Gear_GER_FG42
+				{
+					text = "GER - FG42-G";
+					data = "\lt_template_base\gear\Loadouts\GER_FG42.sqf";
+				};
+				class LT_Gear_GER_MP40
+				{
+					text = "GER - MP40";
+					data = "\lt_template_base\gear\Loadouts\GER_MP40STG44.sqf";
+				};
+				class LT_Gear_IJA_Type99
+				{
+					text = "IJA - Type99";
+					data = "\lt_template_base\gear\Loadouts\IJA_Type99.sqf";
 				};
 			};
 		};
