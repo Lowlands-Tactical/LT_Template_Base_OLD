@@ -25,12 +25,12 @@ class LT_Gear_combo: Title
 					data = "\lt_template_base\gear\Loadouts\Empty.sqf";
 					default = 1;
 				};
-				class LT_Gear_USA_
+				class LT_Gear_USA_M1GwM1
 				{
 					text = "USA - M1 Garand /w M1 Carbine";
 					data = "\lt_template_base\gear\Loadouts\USA_M1GwM1.sqf";
 				};
-				class LT_Gear_USA_
+				class LT_Gear_USA_M1GwM1A1
 				{
 					text = "USA - M1 Garand /w M1A1 Carbine";
 					data = "\lt_template_base\gear\Loadouts\USA_M1GwM1A1.sqf";
@@ -40,7 +40,7 @@ class LT_Gear_combo: Title
 					text = "USA - Springfield";
 					data = "\lt_template_base\gear\Loadouts\USA_Spring.sqf";
 				};
-				class LT_Gear_USA_
+				class LT_Gear_USA_Thompson
 				{
 					text = "USA - Thompson";
 					data = "\lt_template_base\gear\Loadouts\USA_Thompson.sqf";
