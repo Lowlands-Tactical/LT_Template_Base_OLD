@@ -37,7 +37,7 @@ if (hasInterface) then {
 				_CamoUniform 	= [player, _medicGear_array select 0] call lt_fnc_changeUniform;
 				_CamoVest 	  = [player, _medicGear_array select 1] call lt_fnc_changeVest;
 				_CamoBackpack = [player, _medicGear_array select 2] call lt_fnc_changeBackpack;
-				player addHeadGear _medicGear_array select 3;
+				if (typename (_medicGear_array select 3) == "ARRAY") then {player addHeadgear selectRandom (_medicGear_array select 3);} else {player addHeadGear _medicGear_array select 3};
 			} else {
 				_CamoUniform 	= if (typename _camo == "ARRAY") then {[player, selectRandom _camo] call lt_fnc_changeUniform;} else {[player, _camo] call lt_fnc_changeUniform;};
 				_CamoVest 	  = if (typename _vest == "ARRAY") then {[player, selectRandom _vest] call lt_fnc_changeVest;} else {[player, _vest] call lt_fnc_changeVest;};
@@ -56,7 +56,7 @@ if (hasInterface) then {
 					_CamoUniform 	= [player, _medicGear_array select 0] call lt_fnc_changeUniform;
 					_CamoVest 	  = [player, _medicGear_array select 1] call lt_fnc_changeVest;
 					_CamoBackpack = [player, _medicGear_array select 2] call lt_fnc_changeBackpack;
-					player addHeadGear _medicGear_array select 3;
+					if (typename (_medicGear_array select 3) == "ARRAY") then {player addHeadgear selectRandom (_medicGear_array select 3);} else {player addHeadGear _medicGear_array select 3};
 				} else {
 					_CamoUniform 	= if (typename _camo == "ARRAY") then {[player, selectRandom _camo] call lt_fnc_changeUniform;} else {[player, _camo] call lt_fnc_changeUniform;};
 					_CamoVest 	  = if (typename _vest == "ARRAY") then {[player, selectRandom _vest] call lt_fnc_changeVest;} else {[player, _vest] call lt_fnc_changeVest;};
