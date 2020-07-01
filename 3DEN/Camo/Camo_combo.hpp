@@ -49,7 +49,7 @@ class LT_Camo_combo: Title
 					text = "USA - Army (Europe)";
 					data = [
 					"fow_u_us_m41_01_private",
-					["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],
+					["fow_v_us_garand_bandoleer","fow_v_us_thompson"],
 					"fow_b_us_m1928",
 					["fow_h_us_m1","fow_h_us_m1_net"],
 					"B_LIB_US_Radio_ACRE2",
@@ -61,7 +61,7 @@ class LT_Camo_combo: Title
   					text = "USA - Army Winter (Europe)";
   					data = [
   					"fow_u_us_m41_01_private",
-  					["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],
+  					["fow_v_us_garand_bandoleer","fow_v_us_thompson"],
   					"fow_b_us_m1928",
   					["fow_h_us_m1","fow_h_us_m1_net"],
   					"B_LIB_US_Radio_ACRE2",
@@ -85,7 +85,7 @@ class LT_Camo_combo: Title
  					 text = "USA - Army Winter (Desert)";
  					 data = [
  					 "fow_u_us_m37_02_private",
- 					 ["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],
+ 					 ["fow_v_us_garand_bandoleer",,"fow_v_us_thompson"],
  					 ["fow_b_us_m1944","fow_b_us_m1944_ropes"],
  					 "fow_h_us_m1",
  					 "B_LIB_US_Radio_ACRE2",
@@ -97,9 +97,9 @@ class LT_Camo_combo: Title
 					text = "USA - Army (Pacific)";
 					data = [
 					"fow_u_us_hbt_01_private",
-					["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],
+					["fow_v_us_garand_bandoleer","fow_v_us_thompson"],
 					"fow_b_us_m1928_02",
-					["fow_h_us_m1","fow_h_us_m1_medic","fow_h_us_m1_net"],
+					["fow_h_us_m1","fow_h_us_m1_net"],
 					"B_LIB_US_Radio_ACRE2",
 					["fow_u_us_m37_02_private","fow_v_us_medic","fow_b_us_m1928_medic","fow_h_us_m1_medic"]
 								];
@@ -109,9 +109,9 @@ class LT_Camo_combo: Title
 					text = "USA - USMC (Pacific)";
 					data = [
 					"fow_u_usmc_p41_01_private",
-					["fow_v_us_garand_bandoleer","fow_v_us_medic","fow_v_us_thompson"],
+					["fow_v_us_garand_bandoleer","fow_v_us_thompson"],
 					"fow_b_usmc_m1928_02",
-					["fow_h_us_m1","fow_h_us_m1_medic","fow_h_us_m1_net"],
+					["fow_h_us_m1","fow_h_us_m1_net"],
 					"B_LIB_US_Radio_ACRE2",
 					["fow_u_usmc_p41_02_private","fow_v_usmc_garand","fow_b_usmc_m1928_medic","fow_h_us_m1_medic"]
 								];
@@ -210,7 +210,7 @@ class LT_Camo_combo: Title
 					["fow_h_uk_mk2","fow_h_uk_mk2_net",
 					"fow_h_uk_mk2_net_camo"],
 					"fow_b_uk_p37_radio_blanco",
-					["MEDIC_UNI","MEDIC_VEST","MEDIC_BACKPACK","MEDIC_HEMLET"]
+					["fow_u_uk_bd40_pib_01_private","fow_v_uk_base_green","fow_b_uk_p37_medic","fow_h_uk_mk2_net"]
 								];
 				};
 				class CAN_Armay
@@ -306,7 +306,7 @@ class LT_Camo_combo: Title
 					["B_LIB_SOV_RA_Rucksack2","B_LIB_SOV_RA_RucksackMines2","B_LIB_SOV_RA_GasBag","B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel"],
 					["H_LIB_SOV_RA_Helmet_w","H_LIB_SOV_Ushanka"],
 					"B_LIB_SOV_RA_Radio_ACRE2",
-					["MEDIC_UNI","MEDIC_VEST","B_LIB_SOV_RA_MedicalBag","MEDIC_HEMLET"]
+					["U_LIB_SOV_Strelok_w","V_LIB_SOV_RA_MosinBelt","B_LIB_SOV_RA_MedicalBag","H_LIB_SOV_Ushanka"]
 								];
 				};
 				class Red_Army_Summer
