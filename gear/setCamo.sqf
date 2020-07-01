@@ -18,6 +18,7 @@ if (hasInterface) then {
 	_pack	= _lt_camo_var_array select 2;
 	_helm	= _lt_camo_var_array select 3;
 	_medicGear_array	= _lt_camo_var_array select 5;
+	_medicHelm	= _medicGear_array select 3;
 
 	_role = player getVariable ["lt_unit_role","none"];
 
@@ -37,15 +38,15 @@ if (hasInterface) then {
 				_CamoUniform 	= [player, _medicGear_array select 0] call lt_fnc_changeUniform;
 				_CamoVest 	  = [player, _medicGear_array select 1] call lt_fnc_changeVest;
 				_CamoBackpack = [player, _medicGear_array select 2] call lt_fnc_changeBackpack;
-				if (typename (_medicGear_array select 3) == "ARRAY") then {player addHeadgear selectRandom (_medicGear_array select 3);} else {player addHeadGear _medicGear_array select 3};
+				player addHeadgear _medicHelm;
+				diag_log format ["LT Template DEBUG: Camo functions have been finished. Uniform: %1 *-* Vest: %2 *-* Backpack: %3", _CamoUniform,_CamoVest,_CamoBackpack];
 			} else {
 				_CamoUniform 	= if (typename _camo == "ARRAY") then {[player, selectRandom _camo] call lt_fnc_changeUniform;} else {[player, _camo] call lt_fnc_changeUniform;};
 				_CamoVest 	  = if (typename _vest == "ARRAY") then {[player, selectRandom _vest] call lt_fnc_changeVest;} else {[player, _vest] call lt_fnc_changeVest;};
 				_CamoBackpack = if (typename _pack == "ARRAY") then {[player, selectRandom _pack] call lt_fnc_changeBackpack;} else {[player, _pack] call lt_fnc_changeBackpack;};
 				if (typename _helm == "ARRAY") then {player addHeadgear selectRandom _helm;} else {player addHeadGear _helm};
+				diag_log format ["LT Template DEBUG: Camo functions have been finished. Uniform: %1 *-* Vest: %2 *-* Backpack: %3", _CamoUniform,_CamoVest,_CamoBackpack];
 			};
-
-			diag_log format ["LT Template DEBUG: Camo functions have been finished. Uniform: %1 *-* Vest: %2 *-* Backpack: %3", _CamoUniform,_CamoVest,_CamoBackpack];
 		} else {
 			if (_camo != "None") then {
 
@@ -56,15 +57,15 @@ if (hasInterface) then {
 					_CamoUniform 	= [player, _medicGear_array select 0] call lt_fnc_changeUniform;
 					_CamoVest 	  = [player, _medicGear_array select 1] call lt_fnc_changeVest;
 					_CamoBackpack = [player, _medicGear_array select 2] call lt_fnc_changeBackpack;
-					if (typename (_medicGear_array select 3) == "ARRAY") then {player addHeadgear selectRandom (_medicGear_array select 3);} else {player addHeadGear _medicGear_array select 3};
+					player addHeadgear _medicHelm;
+					diag_log format ["LT Template DEBUG: Camo functions have been finished. Uniform: %1 *-* Vest: %2 *-* Backpack: %3", _CamoUniform,_CamoVest,_CamoBackpack];
 				} else {
 					_CamoUniform 	= if (typename _camo == "ARRAY") then {[player, selectRandom _camo] call lt_fnc_changeUniform;} else {[player, _camo] call lt_fnc_changeUniform;};
 					_CamoVest 	  = if (typename _vest == "ARRAY") then {[player, selectRandom _vest] call lt_fnc_changeVest;} else {[player, _vest] call lt_fnc_changeVest;};
 					_CamoBackpack = if (typename _pack == "ARRAY") then {[player, selectRandom _pack] call lt_fnc_changeBackpack;} else {[player, _pack] call lt_fnc_changeBackpack;};
 					if (typename _helm == "ARRAY") then {player addHeadgear selectRandom _helm;} else {player addHeadGear _helm};
+					diag_log format ["LT Template DEBUG: Camo functions have been finished. Uniform: %1 *-* Vest: %2 *-* Backpack: %3", _CamoUniform,_CamoVest,_CamoBackpack];
 				};
-
-				diag_log format ["LT Template DEBUG: Camo functions have been finished. Uniform: %1 *-* Vest: %2 *-* Backpack: %3", _CamoUniform,_CamoVest,_CamoBackpack];
 			};
 		};
 	};
