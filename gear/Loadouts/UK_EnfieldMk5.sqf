@@ -86,7 +86,7 @@ lt_template_ATgrenade        = 	 "fow_e_tnt_halfpound";  // Anti-Tank Grenades
 lt_template_1grenade       	 = 	 "fow_e_no69";  // Voor eventueele andere nades
 lt_template_2grenade       	 = 	 "fow_e_mk2";  // Voor eventueele andere nades
 lt_template_3grenade       	 = 	 "fow_e_mk2";  // Voor eventueele andere nades
-lt_template_smokegrenade     =   "LIB_US_M18"
+lt_template_smokegrenade     =   "LIB_US_M18";
 
 // Static weapons
 lt_template_bagmtrg        	 = 	 "fow_b_us_m2_mortar_weapon";
