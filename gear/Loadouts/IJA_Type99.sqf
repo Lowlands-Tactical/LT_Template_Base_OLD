@@ -85,7 +85,7 @@ lt_template_ATgrenade        = 	 "fow_e_m24_at";  // Anti-Tank Grenades
 lt_template_1grenade       	 = 	 "fow_e_m24";  // Voor eventueele andere nades
 lt_template_2grenade       	 = 	 "fow_e_m24k";  // Voor eventueele andere nades
 lt_template_3grenade       	 = 	 "fow_e_nb39b";  // Voor eventueele andere nades
-lt_template_smokegrenade  	 =   "fow_e_nb39b" //smoke
+lt_template_smokegrenade  	 =   "fow_e_nb39b"; //smoke
 
 lt_template_bagmtrg        	 = 	 "LIB_GrWr34_Barrel";
 lt_template_bagmtrag       	 = 	 "LIB_GrWr34_Tripod";
