@@ -318,6 +318,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_riflemag, 8];
 		_vehicle addMagazineCargoGlobal [_glriflemag, 8];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 10];
+		_vehicle addMagazineCargoGlobal [_smgmag, 20];
 		_vehicle addMagazineCargoGlobal [_armag, 5];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 3];
 		_vehicle addWeaponCargoGlobal [_rat, 2];
@@ -366,6 +367,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_riflemag, 40];
 		_vehicle addMagazineCargoGlobal [_glriflemag, 40];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 40];
+		_vehicle addMagazineCargoGlobal [_smgmag, 40];
 		_vehicle addMagazineCargoGlobal [_armag, 22];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 20];
 		_vehicle addWeaponCargoGlobal [_rat, 6];
@@ -415,6 +417,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_riflemag, 20];
 		_vehicle addMagazineCargoGlobal [_glriflemag, 20];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 20];
+		_vehicle addMagazineCargoGlobal [_smgmag, 40];
 		_vehicle addMagazineCargoGlobal [_armag, 8];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 10];
 		_vehicle addWeaponCargoGlobal [_rat, 4];
@@ -465,6 +468,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_glriflemag, 5];
 		_vehicle addMagazineCargoGlobal [_armag, 5];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 5];
+		_vehicle addMagazineCargoGlobal [_smgmag, 5];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 5];
 		_vehicle addMagazineCargoGlobal [_glmag, 5];
 		_vehicle addMagazineCargoGlobal [_glsmokewhite, 4];
@@ -514,6 +518,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_armag, 15];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 20];
 		_vehicle addMagazineCargoGlobal [_glmag, 20];
+		_vehicle addMagazineCargoGlobal [_smgmag, 20];
 		_vehicle addMagazineCargoGlobal [_glsmokewhite,16];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 12];
 		_vehicle addWeaponCargoGlobal [_rat, 6];
@@ -560,6 +565,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_riflemag, 45];
 		_vehicle addMagazineCargoGlobal [_glriflemag, 60];
 		_vehicle addMagazineCargoGlobal [_armag, 45];
+		_vehicle addMagazineCargoGlobal [_smgmag, 40];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 60];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 45];
 		_vehicle addMagazineCargoGlobal [_glmag, 60];
