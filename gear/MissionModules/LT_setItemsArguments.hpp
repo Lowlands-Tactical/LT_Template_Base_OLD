@@ -33,7 +33,7 @@ class lt_template_scope1 {
 	displayName = "Scope 1";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "CUP_optic_CompM4";
+	defaultValue = "optic_Holosight";
 };
 class lt_template_scope2 {
 	displayName = "Scope 2";
@@ -66,7 +66,7 @@ class lt_template_attachments {
 	displayName = "Rifle attachments";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "acc_pointer_IR , CUP_optic_CompM4";
+	defaultValue = "acc_pointer_IR , optic_Holosight";
 };
 
 class lt_template_hg_silencer1 {
@@ -106,19 +106,19 @@ class lt_template_rifle	{
 	displayName = "Rifle";
 	description = "MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman";
 	typeName = "STRING";
-	defaultValue = "NLD_blk_C8";
+	defaultValue = "arifle_MX_F";
 };
 class lt_template_riflemag {
 	displayName = "Magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "30Rnd_556x45_Stanag";
+	defaultValue = "30Rnd_65x39_caseless_mag";
 };
 class lt_template_riflemag_t	{
 	displayName = "Tracer magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "30Rnd_556x45_Stanag_Tracer_Red";
+	defaultValue = "30Rnd_65x39_caseless_mag_Tracer";
 };
 
 // Carbine
@@ -126,19 +126,19 @@ class lt_template_carbine {
 	displayName = "Carbine";
 	description = "Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer";
 	typeName = "STRING";
-	defaultValue = "NLD_blk_C8";
+	defaultValue = "arifle_MXC_F";
 };
 class lt_template_carbinemag {
 	displayName = "Magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "30Rnd_556x45_Stanag";
+	defaultValue = "30Rnd_65x39_caseless_mag";
 };
 class lt_template_carbinemag_tr	{
 	displayName = "Tracer magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "30Rnd_556x45_Stanag_Tracer_Red";
+	defaultValue = "30Rnd_65x39_caseless_mag_Tracer";
 };
 
 // SMG
@@ -146,19 +146,19 @@ class lt_template_smg	{
 	displayName = "Sub machine gun";
 	description = "Aircraft Pilot, Submachinegunner";
 	typeName = "STRING";
-	defaultValue = "CUP_smg_MP5A5";
+	defaultValue = "SMG_01_F";
 };
 class lt_template_smgmag {
 	displayName = "Magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "CUP_30Rnd_9x19_MP5";
+	defaultValue = "30Rnd_45ACP_Mag_SMG_01";
 };
 class lt_template_smgmag_tr	{
 	displayName = "Tracer magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "CUP_30Rnd_9x19_MP5";
+	defaultValue = "30Rnd_45ACP_Mag_SMG_01_tracer_green";
 };
 
 // Diver
@@ -172,7 +172,7 @@ class lt_template_diverMag1 {
 	displayName = "Magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "30Rnd_556x45_Stanag";
+	defaultValue = "30Rnd_65x39_caseless_mag";
 };
 class lt_template_diverMag2	{
 	displayName = "Tracer magazine";
@@ -186,25 +186,25 @@ class lt_template_glrifle {
 	displayName = "GL Rifle";
 	description = "CO, DC, FTLs";
 	typeName = "STRING";
-	defaultValue = "NLD_blk_C8GL";
+	defaultValue = "arifle_MX_GL_F";
 };
 class lt_template_glriflemag {
 	displayName = "Magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "30Rnd_556x45_Stanag";
+	defaultValue = "30Rnd_65x39_caseless_mag";
 };
 class lt_template_glriflemag_tr	{
 	displayName = "Tracer magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "30Rnd_556x45_Stanag_Tracer_Red";
+	defaultValue = "30Rnd_65x39_caseless_mag_Tracer";
 };
 class lt_template_glmag {
 	displayName = "GL magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "CUP_1Rnd_HE_M203";
+	defaultValue = "1Rnd_HE_Grenade_shell";
 };
 
 // Smokes
@@ -212,19 +212,19 @@ class lt_template_glsmokewhite {
 	displayName = "Smoke white (GL)";
 	description = "FTLs, Squad Leaders, etc	";
 	typeName = "STRING";
-	defaultValue = "CUP_1Rnd_Smoke_M203";
+	defaultValue = "1Rnd_Smoke_Grenade_shell";
 };
 class lt_template_glsmokegreen	{
 	displayName = "Smoke green (GL)";
 	description = "FTLs, Squad Leaders, etc	";
 	typeName = "STRING";
-	defaultValue = "CUP_1Rnd_SmokeGreen_M203";
+	defaultValue = "1Rnd_SmokeGreen_Grenade_shell";
 };
 class lt_template_glsmokered {
 	displayName = "Smoke red (GL)";
 	description = "FTLs, Squad Leaders, etc	";
 	typeName = "STRING";
-	defaultValue = "CUP_1Rnd_SmokeRed_M203";
+	defaultValue = "1Rnd_SmokeRed_Grenade_shell";
 };
 
 // Flares
@@ -232,25 +232,25 @@ class lt_template_glflarewhite	{
 	displayName = "Flare white (GL)";
 	description = "Flares for FTLs, Squad Leaders, etc	";
 	typeName = "STRING";
-	defaultValue = "CUP_FlareWhite_M203";
+	defaultValue = "UGL_FlareWhite_F";
 };
 class lt_template_glflarered	{
 	displayName = "Flare red (GL)";
 	description = "Flares for FTLs, Squad Leaders, etc	";
 	typeName = "STRING";
-	defaultValue = "CUP_FlareRed_M203";
+	defaultValue = "UGL_FlareRed_F";
 };
 class lt_template_glflareyellow {
 	displayName = "Flare yellow (GL)";
 	description = "Flares for FTLs, Squad Leaders, etc	";
 	typeName = "STRING";
-	defaultValue = "CUP_FlareYellow_M203";
+	defaultValue = "UGL_FlareYellow_F";
 };
 class lt_template_glflaregreen {
 	displayName = "Flare green (GL)";
 	description = "Flares for FTLs, Squad Leaders, etc	";
 	typeName = "STRING";
-	defaultValue = "CUP_FlareGreen_M203";
+	defaultValue = "UGL_FlareGreen_F";
 };
 
 // Pistol
@@ -258,13 +258,13 @@ class lt_template_pistol {
 	displayName = "Pistol";
 	description = "CO, DC, Automatic Rifleman, Medium MG Gunne";
 	typeName = "STRING";
-	defaultValue = "CUP_hgun_Glock17";
+	defaultValue = "hgun_P07_F";
 };
 class lt_template_pistolmag	{
 	displayName = "Magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "CUP_17Rnd_9x19_glock17";
+	defaultValue = "16Rnd_9x21_Mag";
 };
 
 // Automatic Rifle
@@ -272,19 +272,19 @@ class lt_template_AR {
 	displayName = "Automatic rifle";
 	description = "Automatic Rifleman";
 	typeName = "STRING";
-	defaultValue = "NLD_Minimi";
+	defaultValue = "arifle_MX_SW_F";
 };
 class lt_template_ARmag {
 	displayName = "Magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "CUP_100Rnd_TE4_Red_Tracer_556x45_M249";
+	defaultValue = "100Rnd_65x39_caseless_mag";
 };
 class lt_template_ARmag_tr {
 	displayName = "Tracer magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "CUP_100Rnd_TE4_Red_Tracer_556x45_M249";
+	defaultValue = "100Rnd_65x39_caseless_mag_Tracer";
 };
 
 // Medium machine gun
@@ -292,19 +292,19 @@ class lt_template_MMG {
 	displayName = "Medium machine gun";
 	description = "Medium MMG";
 	typeName = "STRING";
-	defaultValue = "NLD_MAG";
+	defaultValue = "LMG_Mk200_LP_BI_F";
 };
 class lt_template_MMGmag {
 	displayName = "Magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "150Rnd_762x51_Box";
+	defaultValue = "200Rnd_65x39_cased_Box";
 };
 class lt_template_MMGmag_tr	{
 	displayName = "Tracer magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "150Rnd_762x51_Box_Tracer";
+	defaultValue = "200Rnd_65x39_cased_Box_Tracer";
 };
 
 // Marksman rifle
@@ -312,13 +312,13 @@ class lt_template_DMrifle {
 	displayName = "Marksman rifle";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "NLD_AWM";
+	defaultValue = "arifle_MXM_F";
 };
 class lt_template_DMriflemag {
 	displayName = "Magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "CUP_5Rnd_86x70_L115A1";
+	defaultValue = "30Rnd_65x39_caseless_mag";
 };
 
 // Rifleman AT
@@ -326,7 +326,7 @@ class lt_template_RAT {
 	displayName = "Light AT gun";
 	description = "Rifleman AT	";
 	typeName = "STRING";
-	defaultValue = "NLD_AT4";
+	defaultValue = "launch_NLAW_F";
 };
 
 // Medium AT
@@ -334,19 +334,19 @@ class lt_template_MAT {
 	displayName = "Medium AT gun";
 	description = "Medium AT";
 	typeName = "STRING";
-	defaultValue = "launch_NLAW_F";
+	defaultValue = "launch_MRAWS_olive_F";
 };
 class lt_template_MATmag1 {
 	displayName = "Magazine 1";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "NLAW_F";
+	defaultValue = "MRAWS_HEAT_F";
 };
 class lt_template_MATmag2 {
 	displayName = "Magazine 2";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "NLAW_F";
+	defaultValue = "MRAWS_HE_F";
 };
 
 // Surface to Air
@@ -354,13 +354,13 @@ class lt_template_SAM {
 	displayName = "Surface to air";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "CUP_launch_FIM92Stinger";
+	defaultValue = "launch_B_Titan_F";
 };
 class lt_template_SAMmag {
 	displayName = "Magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "CUP_Stinger_M";
+	defaultValue = "Titan_AA";
 };
 
 // Heavy AT
@@ -388,13 +388,13 @@ class lt_template_SNrifle {
 	displayName = "Sniperrifle";
 	description = "Sniper";
 	typeName = "STRING";
-	defaultValue = "NLD_AWM";
+	defaultValue = "srifle_LRR_F";
 };
 class lt_template_SNrifleMag {
 	displayName = "Magazine";
 	description = "";
 	typeName = "STRING";
-	defaultValue = "CUP_5Rnd_86x70_L115A1";
+	defaultValue = "7Rnd_408_Mag";
 };
 
 

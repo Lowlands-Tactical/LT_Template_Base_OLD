@@ -155,45 +155,47 @@ if !(isNil "LT_wpn_var_BLUFOR" || isNil "LT_wpn_var_OPFOR"|| isNil "LT_wpn_var_G
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = if (isNil "lt_template_rifle" ) then {"NLD_blk_C8"} else {lt_template_rifle};
-_riflemag = if (isNil "lt_template_riflemag") then {"30Rnd_556x45_Stanag"} else {lt_template_riflemag};
-_riflemag_tr = if (isNil "lt_template_riflemag_t") then {"30Rnd_556x45_Stanag_Tracer_Red"} else {lt_template_riflemag_t};
+_rifle = if (isNil "lt_template_rifle" ) then {"arifle_MX_F"} else {lt_template_rifle};
+_riflemag = if (isNil "lt_template_riflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_riflemag};
+_riflemag_tr = if (isNil "lt_template_riflemag_t") then {"30Rnd_65x39_caseless_mag_Tracer"} else {lt_template_riflemag_t};
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = if (isNil "lt_template_carbine" ) then {"NLD_blk_C8"} else {lt_template_carbine};
-_carbinemag = if (isNil "lt_template_carbinemag") then {"30Rnd_556x45_Stanag"} else {lt_template_carbinemag};
-_carbinemag_tr = if (isNil "lt_template_carbinemag_tr") then {"30Rnd_556x45_Stanag_Tracer_Red"} else {lt_template_carbinemag_tr};
+_carbine = if (isNil "lt_template_carbine" ) then {"arifle_MXC_F"} else {lt_template_carbine};
+_carbinemag = if (isNil "lt_template_carbinemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_carbinemag};
+_carbinemag_tr = if (isNil "lt_template_carbinemag_tr") then {"30Rnd_65x39_caseless_mag_Tracer"} else {lt_template_carbinemag_tr};
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
-_smg = if (isNil "lt_template_smg") then {"CUP_smg_MP5A5"} else {lt_template_smg};
-_smgmag = if (isNil "lt_template_smgmag") then {"CUP_30Rnd_9x19_MP5"} else {lt_template_smgmag};
-_smgmag_tr = if (isNil "lt_template_smgmag_tr") then {"CUP_30Rnd_9x19_MP5"} else {lt_template_smgmag_tr};
+_smg = if (isNil "lt_template_smg") then {"SMG_01_F"} else {lt_template_smg};
+_smgmag = if (isNil "lt_template_smgmag") then {"30Rnd_45ACP_Mag_SMG_01"} else {lt_template_smgmag};
+_smgmag_tr = if (isNil "lt_template_smgmag_tr") then {"30Rnd_45ACP_Mag_SMG_01_tracer_green"} else {lt_template_smgmag_tr};
 
 // Diver
 _diverWep = if (isNil "lt_template_diverWep") then {"arifle_SDAR_F"} else {lt_template_diverWep};
-_diverMag1 = if (isNil "lt_template_diverMag1") then {"30Rnd_556x45_Stanag"} else {lt_template_diverMag1};
+_diverMag1 = if (isNil "lt_template_diverMag1") then {"30Rnd_65x39_caseless_mag"} else {lt_template_diverMag1};
 _diverMag2 = if (isNil "lt_template_diverMag2") then {"20Rnd_556x45_UW_mag"} else {lt_template_diverMag2};
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = if (isNil "lt_template_glrifle") then {"NLD_blk_C8GL"} else {lt_template_glrifle};
-_glriflemag = if (isNil "lt_template_glriflemag") then {"30Rnd_556x45_Stanag"} else {lt_template_glriflemag};
-_glriflemag_tr = if (isNil "lt_template_glriflemag_tr") then {"30Rnd_556x45_Stanag_Tracer_Red"} else {lt_template_glriflemag_tr};
-_glmag = if (isNil "lt_template_glmag") then {"CUP_1Rnd_HE_M203"} else {lt_template_glmag};
+_glrifle = if (isNil "lt_template_glrifle") then {"arifle_MX_GL_F"} else {lt_template_glrifle};
+_glrifleattach = if (isNil "lt_template_glrifle_attach") then {""} else {lt_template_glrifle_attach};
+_glriflemag = if (isNil "lt_template_glriflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_glriflemag};
+_glriflemag_tr = if (isNil "lt_template_glriflemag_tr") then {"30Rnd_65x39_caseless_mag_Tracer"} else {lt_template_glriflemag_tr};
+_glmag = if (isNil "lt_template_glmag") then {"1Rnd_HE_Grenade_shell"} else {lt_template_glmag};
+_glmag_at = if (isNil "lt_template_glmag_at") then {"1Rnd_HE_Grenade_shell"} else {lt_template_glmag_at};
 
 // Smoke for FTLs, Squad Leaders, etc
-_glsmokewhite = if (isNil "lt_template_glsmokewhite") then {"CUP_1Rnd_Smoke_M203"} else {lt_template_glsmokewhite};
-_glsmokegreen = if (isNil "lt_template_glsmokegreen") then {"CUP_1Rnd_SmokeGreen_M203"} else {lt_template_glsmokegreen};
-_glsmokered = if (isNil "lt_template_glsmokered") then {"CUP_1Rnd_SmokeRed_M203"} else {lt_template_glsmokered};
+_glsmokewhite = if (isNil "lt_template_glsmokewhite") then {"1Rnd_Smoke_Grenade_shell"} else {lt_template_glsmokewhite};
+_glsmokegreen = if (isNil "lt_template_glsmokegreen") then {"1Rnd_SmokeGreen_Grenade_shell"} else {lt_template_glsmokegreen};
+_glsmokered = if (isNil "lt_template_glsmokered") then {"1Rnd_SmokeRed_Grenade_shell"} else {lt_template_glsmokered};
 
 // Flares for FTLs, Squad Leaders, etc
-_glflarewhite = if (isNil "lt_template_glflarewhite") then {"CUP_FlareWhite_M203"} else {lt_template_glflarewhite};
-_glflarered = if (isNil "lt_template_glflarered") then {"CUP_FlareRed_M203"} else {lt_template_glflarered};
-_glflareyellow = if (isNil "lt_template_glflareyellow") then {"CUP_FlareYellow_M203"} else {lt_template_glflareyellow};
-_glflaregreen = if (isNil "lt_template_glflaregreen") then {"CUP_FlareGreen_M203"} else {};
+_glflarewhite = if (isNil "lt_template_glflarewhite") then {"UGL_FlareWhite_F"} else {lt_template_glflarewhite};
+_glflarered = if (isNil "lt_template_glflarered") then {"UGL_FlareRed_F"} else {lt_template_glflarered};
+_glflareyellow = if (isNil "lt_template_glflareyellow") then {"UGL_FlareYellow_F"} else {lt_template_glflareyellow};
+_glflaregreen = if (isNil "lt_template_glflaregreen") then {"UGL_FlareGreen_F"} else {};
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
-_pistol = if (isNil "lt_template_pistol") then {"CUP_hgun_Glock17"} else {lt_template_pistol};
-_pistolmag = if (isNil "lt_template_pistolmag") then {"CUP_17Rnd_9x19_glock17"} else {lt_template_pistolmag};
+_pistol = if (isNil "lt_template_pistol") then {"hgun_P07_F"} else {lt_template_pistol};
+_pistolmag = if (isNil "lt_template_pistolmag") then {"16Rnd_9x21_Mag"} else {lt_template_pistolmag};
 
 // Grenades
 _grenade = if (isNil "lt_template_grenade") then {"HandGrenade"} else {lt_template_grenade};
@@ -258,32 +260,32 @@ _watch = if (isNil "lt_template_watch") then {"ItemWatch"} else {lt_template_wat
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = if (isNil "lt_template_AR") then {"NLD_Minimi"} else {lt_template_AR};
-_ARmag = if (isNil "lt_template_ARmag") then {"CUP_100Rnd_TE4_Red_Tracer_556x45_M249"} else {lt_template_ARmag};
-_ARmag_tr = if (isNil "lt_template_ARmag_tr") then {"CUP_100Rnd_TE4_Red_Tracer_556x45_M249"} else {lt_template_ARmag_tr};
+_AR = if (isNil "lt_template_AR") then {"arifle_MX_SW_F"} else {lt_template_AR};
+_ARmag = if (isNil "lt_template_ARmag") then {"100Rnd_65x39_caseless_mag"} else {lt_template_ARmag};
+_ARmag_tr = if (isNil "lt_template_ARmag_tr") then {"100Rnd_65x39_caseless_mag_Tracer"} else {lt_template_ARmag_tr};
 
 // Medium MG
-_MMG = if (isNil "lt_template_MMG") then {"NLD_MAG"} else {lt_template_MMG};
-_MMGmag = if (isNil "lt_template_MMGmag") then {"150Rnd_762x51_Box"} else {lt_template_MMGmag};
-_MMGmag_tr = if (isNil "lt_template_MMGmag_tr") then {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"} else {lt_template_MMGmag_tr};
+_MMG = if (isNil "lt_template_MMG") then {"LMG_Mk200_LP_BI_F"} else {lt_template_MMG};
+_MMGmag = if (isNil "lt_template_MMGmag") then {"200Rnd_65x39_cased_Box"} else {lt_template_MMGmag};
+_MMGmag_tr = if (isNil "lt_template_MMGmag_tr") then {"200Rnd_65x39_cased_Box_Tracer"} else {lt_template_MMGmag_tr};
 
 // Marksman rifle
-_DMrifle = if (isNil "lt_template_DMrifle") then {"NLD_AWM"} else {lt_template_DMrifle};
-_DMriflemag = if (isNil "lt_template_DMriflemag") then {"CUP_5Rnd_86x70_L115A1"} else {lt_template_DMriflemag};
+_DMrifle = if (isNil "lt_template_DMrifle") then {"arifle_MXM_F"} else {lt_template_DMrifle};
+_DMriflemag = if (isNil "lt_template_DMriflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_DMriflemag};
 
 // Rifleman AT
-_RAT = if (isNil "lt_template_RAT") then {"NLD_AT4"} else {lt_template_RAT};
+_RAT = if (isNil "lt_template_RAT") then {"launch_NLAW_F"} else {lt_template_RAT};
 _RATmag1 = if (isNil "lt_template_RATmag1") then {""} else {lt_template_RATmag1};
 _RATmag2 = if (isNil "lt_template_RATmag2") then {""} else {lt_template_RATmag2};
 
 // Medium AT
-_MAT = if (isNil "lt_template_MAT") then {"launch_NLAW_F"} else {lt_template_MAT};
-_MATmag1 = if (isNil "lt_template_MATmag1") then {"NLAW_F"} else {lt_template_MATmag1};
-_MATmag2 = if (isNil "lt_template_MATmag2") then {"NLAW_F"} else {lt_template_MATmag2};
+_MAT = if (isNil "lt_template_MAT") then {"launch_MRAWS_olive_F"} else {lt_template_MAT};
+_MATmag1 = if (isNil "lt_template_MATmag1") then {"MRAWS_HEAT_F"} else {lt_template_MATmag1};
+_MATmag2 = if (isNil "lt_template_MATmag2") then {"MRAWS_HE_F"} else {lt_template_MATmag2};
 
 // Surface Air
-_SAM = if (isNil "lt_template_SAM") then {"CUP_launch_FIM92Stinger"} else {lt_template_SAM};
-_SAMmag = if (isNil "lt_template_SAMmag") then {"CUP_Stinger_M"} else {lt_template_SAMmag};
+_SAM = if (isNil "lt_template_SAM") then {"launch_B_Titan_F"} else {lt_template_SAM};
+_SAMmag = if (isNil "lt_template_SAMmag") then {"Titan_AA"} else {lt_template_SAMmag};
 
 // Heavy AT
 _HAT = if (isNil "lt_template_HAT") then {"launch_B_Titan_short_F"} else {lt_template_HAT};
@@ -291,8 +293,8 @@ _HATmag1 = if (isNil "lt_template_HATmag1") then {"Titan_AT"} else {lt_template_
 _HATmag2 = if (isNil "lt_template_HATmag2") then {"Titan_AP"} else {lt_template_HATmag2};
 
 // Sniper
-_SNrifle = if (isNil "lt_template_SNrifle") then {"NLD_AWM"} else {lt_template_SNrifle};
-_SNrifleMag = if (isNil "lt_template_SNrifleMag") then {"CUP_5Rnd_86x70_L115A1"} else {lt_template_SNrifleMag};
+_SNrifle = if (isNil "lt_template_SNrifle") then {"srifle_LRR_F"} else {lt_template_SNrifle};
+_SNrifleMag = if (isNil "lt_template_SNrifleMag") then {"7Rnd_408_Mag"} else {lt_template_SNrifleMag};
 
 // Engineer items
 _ATmine = if (isNil "lt_template_ATmine") then {"ATMine_Range_Mag"} else {lt_template_ATmine};
@@ -316,6 +318,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_riflemag, 8];
 		_vehicle addMagazineCargoGlobal [_glriflemag, 8];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 10];
+		_vehicle addMagazineCargoGlobal [_smgmag, 20];
 		_vehicle addMagazineCargoGlobal [_armag, 5];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 3];
 		_vehicle addWeaponCargoGlobal [_rat, 2];
@@ -326,11 +329,6 @@ switch (_role) do {
     if !(_mat in _disposableLaunchers) then {
       _vehicle addMagazineCargoGlobal [_matmag1, 1];
       _vehicle addMagazineCargoGlobal [_matmag2, 1];
-    };
-    if !(_SAM in _disposableLaunchers) then {
-      _vehicle addMagazineCargoGlobal [_SAMmag, 1];
-    } else {
-      _vehicle addWeaponCargoGlobal [_SAM, 1];
     };
     _vehicle addMagazineCargoGlobal [_MMGmag,2];
     _vehicle addMagazineCargoGlobal [_MMGmag_tr,1];
@@ -364,6 +362,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_riflemag, 40];
 		_vehicle addMagazineCargoGlobal [_glriflemag, 40];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 40];
+		_vehicle addMagazineCargoGlobal [_smgmag, 40];
 		_vehicle addMagazineCargoGlobal [_armag, 22];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 20];
 		_vehicle addWeaponCargoGlobal [_rat, 6];
@@ -374,11 +373,6 @@ switch (_role) do {
     if !(_mat in _disposableLaunchers) then {
       _vehicle addMagazineCargoGlobal [_matmag1, 5];
       _vehicle addMagazineCargoGlobal [_matmag2, 5];
-    };
-    if !(_SAM in _disposableLaunchers) then {
-      _vehicle addMagazineCargoGlobal [_SAMmag, 5];
-    } else {
-      _vehicle addWeaponCargoGlobal [_SAM, 5];
     };
     _vehicle addMagazineCargoGlobal [_MMGmag,8];
     _vehicle addMagazineCargoGlobal [_MMGmag_tr,2];
@@ -413,6 +407,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_riflemag, 20];
 		_vehicle addMagazineCargoGlobal [_glriflemag, 20];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 20];
+		_vehicle addMagazineCargoGlobal [_smgmag, 40];
 		_vehicle addMagazineCargoGlobal [_armag, 8];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 10];
 		_vehicle addWeaponCargoGlobal [_rat, 4];
@@ -423,11 +418,6 @@ switch (_role) do {
     if !(_mat in _disposableLaunchers) then {
       _vehicle addMagazineCargoGlobal [_matmag1, 4];
       _vehicle addMagazineCargoGlobal [_matmag2, 4];
-    };
-    if !(_SAM in _disposableLaunchers) then {
-      _vehicle addMagazineCargoGlobal [_SAMmag, 2];
-    } else {
-      _vehicle addWeaponCargoGlobal [_SAM, 2];
     };
     _vehicle addMagazineCargoGlobal [_MMGmag,5];
     _vehicle addMagazineCargoGlobal [_MMGmag_tr,3];
@@ -463,6 +453,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_glriflemag, 5];
 		_vehicle addMagazineCargoGlobal [_armag, 5];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 5];
+		_vehicle addMagazineCargoGlobal [_smgmag, 5];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 5];
 		_vehicle addMagazineCargoGlobal [_glmag, 5];
 		_vehicle addMagazineCargoGlobal [_glsmokewhite, 4];
@@ -475,11 +466,7 @@ switch (_role) do {
       _vehicle addMagazineCargoGlobal [_matmag1, 2];
       _vehicle addMagazineCargoGlobal [_matmag2, 2];
     };
-    if !(_SAM in _disposableLaunchers) then {
-      _vehicle addMagazineCargoGlobal [_SAMmag, 2];
-    } else {
-      _vehicle addWeaponCargoGlobal [_SAM, 2];
-    };
+
     _vehicle addMagazineCargoGlobal [_MMGmag,5];
     _vehicle addMagazineCargoGlobal [_MMGmag_tr,2];
 		_vehicle addMagazineCargoGlobal [_grenade, 8];
@@ -512,6 +499,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_armag, 15];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 20];
 		_vehicle addMagazineCargoGlobal [_glmag, 20];
+		_vehicle addMagazineCargoGlobal [_smgmag, 20];
 		_vehicle addMagazineCargoGlobal [_glsmokewhite,16];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 12];
 		_vehicle addWeaponCargoGlobal [_rat, 6];
@@ -522,11 +510,6 @@ switch (_role) do {
     if !(_mat in _disposableLaunchers) then {
       _vehicle addMagazineCargoGlobal [_matmag1, 3];
       _vehicle addMagazineCargoGlobal [_matmag2, 3];
-    };
-    if !(_SAM in _disposableLaunchers) then {
-      _vehicle addMagazineCargoGlobal [_SAMmag, 4];
-    } else {
-      _vehicle addWeaponCargoGlobal [_SAM, 4];
     };
     _vehicle addMagazineCargoGlobal [_MMGmag,10];
     _vehicle addMagazineCargoGlobal [_MMGmag_tr,3];
@@ -558,6 +541,7 @@ switch (_role) do {
 		_vehicle addMagazineCargoGlobal [_riflemag, 45];
 		_vehicle addMagazineCargoGlobal [_glriflemag, 60];
 		_vehicle addMagazineCargoGlobal [_armag, 45];
+		_vehicle addMagazineCargoGlobal [_smgmag, 40];
 		_vehicle addMagazineCargoGlobal [_carbinemag, 60];
 		_vehicle addMagazineCargoGlobal [_DMriflemag, 45];
 		_vehicle addMagazineCargoGlobal [_glmag, 60];
@@ -570,11 +554,6 @@ switch (_role) do {
     if !(_mat in _disposableLaunchers) then {
       _vehicle addMagazineCargoGlobal [_matmag1, 15];
       _vehicle addMagazineCargoGlobal [_matmag2, 15];
-    };
-    if !(_SAM in _disposableLaunchers) then {
-      _vehicle addMagazineCargoGlobal [_SAMmag, 15];
-    } else {
-      _vehicle addWeaponCargoGlobal [_SAM, 15];
     };
     _vehicle addMagazineCargoGlobal [_MMGmag,30];
     _vehicle addMagazineCargoGlobal [_MMGmag_tr,15];

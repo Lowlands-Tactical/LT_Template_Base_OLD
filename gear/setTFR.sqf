@@ -14,7 +14,7 @@ if (hasInterface) then {
 
 	diag_log format["LT template DEBUG: lt_tfr_var == %1",lt_tfr_var];
 
-	_roles = ["co","dc","ftl","sn","sp","vc","vd","vg","pp","pcc","pc","m"];
+	_roles = ["radio","vr"];
 	_role = player getVariable ["lt_unit_role","none"];
 
 	diag_log format["TFR is on with the role: %1",_role];
@@ -51,68 +51,6 @@ if (hasInterface) then {
         diag_log format["Deleting Radio: %1",_radio];
   			player removeItem _radio;
       } forEach ([] call acre_api_fnc_getCurrentRadioList);
-		};
-
-		// Leaders LR Only
-		case "3": {
-      waitUntil { count ([] call acre_api_fnc_getCurrentRadioList) >= 1 };
-      {
-        _radio = _x;
-        diag_log format["Deleting Radio: %1",_radio];
-  			player removeItem _radio;
-      } forEach ([] call acre_api_fnc_getCurrentRadioList);
-
-			if (_constraint != "None" and _role in _roles) then {
-        null = if (typename _radioBag == "ARRAY")then {[player, selectRandom _radioBag] call lt_fnc_changeBackpack} else {[player, _radioBag] call lt_fnc_changeBackpack;};
-			  player addItem "ACRE_PRC152";
-			};
-		};
-
-		// Leaders SR Only
-		case "4": {
-      waitUntil { count ([] call acre_api_fnc_getCurrentRadioList) >= 1 };
-      {
-        _radio = _x;
-        diag_log format["Deleting Radio: %1",_radio];
-  			player removeItem _radio;
-      } forEach ([] call acre_api_fnc_getCurrentRadioList);
-
-			if (_role in _roles) then {
-				player addItem "ACRE_PRC343";
-			};
-		};
-
-		// Leader LR Only
-		case "5": {
-			_roles = ["co","dc","sn","sp","vc","vd","vg","pp","pcc","pc","m"];
-
-      waitUntil { count ([] call acre_api_fnc_getCurrentRadioList) >= 1 };
-      {
-        _radio = _x;
-        diag_log format["Deleting Radio: %1",_radio];
-  			player removeItem _radio;
-      } forEach ([] call acre_api_fnc_getCurrentRadioList);
-
-			if (_constraint != "None" and _role in _roles) then {
-        null = if (typename _radioBag == "ARRAY")then {[player, selectRandom _radioBag] call lt_fnc_changeBackpack} else {[player, _radioBag] call lt_fnc_changeBackpack;};
-			  player addItem "ACRE_PRC152";
-			};
-		};
-
-		// Leader SR Only
-		case "6": {
-			_roles = ["co","dc","sn","sp","vc","vd","vg","pp","pcc","pc","m"];
-
-      waitUntil { count ([] call acre_api_fnc_getCurrentRadioList) >= 1 };
-      {
-        _radio = _x;
-        diag_log format["Deleting Radio: %1",_radio];
-  			player removeItem _radio;
-      } forEach ([] call acre_api_fnc_getCurrentRadioList);
-
-			if (_role in _roles) then {
-				player addItem "ACRE_PRC343";
-			};
 		};
 
 	}; // switch

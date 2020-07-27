@@ -16,167 +16,94 @@ class LT_Gear_combo: Title
 			w = ATTRIBUTE_CONTENT_W * GRID_W;
 			h = SIZE_M * GRID_H;
 
+
 			class Items
 			{
-				class LT_Gear_NLDLowtac
+				class LT_Gear_Empty
 				{
-					text = "Default NLD Units (LowTac)";
-					data = "None";
+					text = "Empty";
+					data = "\lt_template_base\gear\Loadouts\Empty.sqf";
 					default = 1;
 				};
-				class LT_Gear_NLD1980
+				class LT_Gear_USA_M1GwM1
 				{
-					text = "NLD 1980";
-					data = "\lt_template_base\gear\Loadouts\NLD_80.sqf";
+					text = "USA - M1 Garand /w M1 Carbine";
+					data = "\lt_template_base\gear\Loadouts\USA_M1GwM1.sqf";
 				};
-				class LT_Gear_NLD2020
+				class LT_Gear_USA_M1GwM1A1
 				{
-					text = "NLD 2020";
-					data = "\lt_template_base\gear\Loadouts\NLD_2020.sqf";
+					text = "USA - M1 Garand /w M1A1 Carbine";
+					data = "\lt_template_base\gear\Loadouts\USA_M1GwM1A1.sqf";
 				};
-				class LT_Gear_NLD_C7
+				class LT_Gear_USA_Spring
 				{
-					text = "NLD C7";
-					data = "\lt_template_base\gear\Loadouts\NLD_C7.sqf";
+					text = "USA - Springfield";
+					data = "\lt_template_base\gear\Loadouts\USA_Spring.sqf";
 				};
-				class LT_Gear_NLD_DSI
+				class LT_Gear_USA_Thompson
 				{
-					text = "NLD DSI";
-					data = "\lt_template_base\gear\Loadouts\NLD_DSI.sqf";
+					text = "USA - Thompson";
+					data = "\lt_template_base\gear\Loadouts\USA_Thompson.sqf";
 				};
-				class LT_Gear_USM16A2
+				class LT_Gear_UK_EnfieldMk4
 				{
-					text = "US M16A2";
-					data = "\lt_template_base\gear\Loadouts\US_M16A2.sqf";
+					text = "UK  - Lee Enfield mk.4";
+					data = "\lt_template_base\gear\Loadouts\UK_EnfieldMk4.sqf";
 				};
-				class LT_Gear_USM16A4
+				class LT_Gear_UK_EnfieldMk5
 				{
-					text = "US M16A4";
-					data = "\lt_template_base\gear\Loadouts\US_M16A4.sqf";
+					text = "UK  - Lee Enfield mk.5 (Jungle)";
+					data = "\lt_template_base\gear\Loadouts\UK_EnfieldMk5.sqf";
 				};
-				class LT_Gear_USM4A1
+				class LT_Gear_UK_Sten
 				{
-					text = "US M4A1";
-					data = "\lt_template_base\gear\Loadouts\US_M4A1.sqf";
+					text = "UK  - Sten";
+					data = "\lt_template_base\gear\Loadouts\UK_Sten.sqf";
 				};
-				class LT_Gear_USM4A1WDL
+				class LT_Gear_USSR_Mosin
 				{
-					text = "US M4A1 Woodland";
-					data = "\lt_template_base\gear\Loadouts\US_M4A1_WDL.sqf";
+					text = "USSR - Mosin";
+					data = "\lt_template_base\gear\Loadouts\USSR_Mosin.sqf";
 				};
-				class LT_Gear_USM4A1DES
+				class LT_Gear_USSR_SVT
 				{
-					text = "US M4A1 Desert";
-					data = "\lt_template_base\gear\Loadouts\US_M4A1_DES.sqf";
+					text = "USSR - SVT-40";
+					data = "\lt_template_base\gear\Loadouts\USSR_SVT.sqf";
 				};
-				class LT_Gear_RACS
+				class LT_Gear_USSR_PPsh
 				{
-					text = "Royal Army Corps of Sahrani";
-					data = "\lt_template_base\gear\Loadouts\RACS.sqf";
+					text = "USSR - PPsh";
+					data = "\lt_template_base\gear\Loadouts\USSR_PPsh.sqf";
 				};
-				class LT_Gear_RU_1980
+				class LT_Gear_GER_G41
 				{
-					text = "Russian 1980";
-					data = "\lt_template_base\gear\Loadouts\RU_1980.sqf";
+					text = "GER - G41";
+					data = "\lt_template_base\gear\Loadouts\GER_G41.sqf";
 				};
-				class LT_Gear_RU_1990
+				class LT_Gear_GER_G43
 				{
-					text = "Russian 1990";
-					data = "\lt_template_base\gear\Loadouts\RU_1990.sqf";
+					text = "GER - G43";
+					data = "\lt_template_base\gear\Loadouts\GER_G43.sqf";
 				};
-				class LT_Gear_RU_2010
+				class LT_Gear_GER_K98
 				{
-					text = "Russian 2010";
-					data = "\lt_template_base\gear\Loadouts\RU_2010.sqf";
+					text = "GER - Kar98";
+					data = "\lt_template_base\gear\Loadouts\GER_K98.sqf";
 				};
-				class LT_Gear_TKA
+				class LT_Gear_GER_FG42
 				{
-					text = "Takistani Army";
-					data = "\lt_template_base\gear\Loadouts\TKA.sqf";
+					text = "GER - FG42-G";
+					data = "\lt_template_base\gear\Loadouts\GER_FG42.sqf";
 				};
-				class LT_Gear_UK_L85A2
+				class LT_Gear_GER_MP40
 				{
-					text = "British";
-					data = "\lt_template_base\gear\Loadouts\UK_L85A2.sqf";
+					text = "GER - MP40";
+					data = "\lt_template_base\gear\Loadouts\GER_MP40STG44.sqf";
 				};
-				class LT_Gear_DE_G36
+				class LT_Gear_IJA_Type99
 				{
-					text = "German G36";
-					data = "\lt_template_base\gear\Loadouts\DE_G36.sqf";
-				};
-				class LT_Gear_DE_G36_WDL
-				{
-					text = "German G36 (Camo)";
-					data = "\lt_template_base\gear\Loadouts\DE_G36_WDL.sqf";
-				};
-				class LT_Gear_Czech_BREN
-				{
-					text = "Army of the Czech Republic 2010";
-					data = "\lt_template_base\gear\Loadouts\CZ_BREN.sqf";
-				};
-				class LT_Gear_Czech_SA58
-				{
-					text = "Army of the Czech Republic 1980";
-					data = "\lt_template_base\gear\Loadouts\CZ_SA58.sqf";
-				};
-				class LT_Gear_FR_ADR {
-					text = "GIGN";
-					data = "\lt_template_base\gear\Loadouts\FR_GIGN.sqf";
-				};
-				class LT_Gear_PMC_MK16_Des
-				{
-					text = "PMC Mk16 (Desert)";
-					data = "\lt_template_base\gear\Loadouts\PMC_MK16_Des.sqf";
-				};
-				class LT_Gear_PMC_Mk16_Black
-				{
-					text = "PMC Mk16 (Black)";
-					data = "\lt_template_base\gear\Loadouts\PMC_Mk16_Black.sqf";
-				};
-				class LT_Gear_PMC_Mk17_Des
-				{
-					text = "PMC Mk17 (Desert)";
-					data = "\lt_template_base\gear\Loadouts\PMC_Mk17_Des.sqf";
-				};
-				class LT_Gear_PMC_Mk17_Black
-				{
-					text = "PMC Mk17 (Black)";
-					data = "\lt_template_base\gear\Loadouts\PMC_Mk17_Black.sqf";
-				};
-				class LT_Gear_PMC_XM8
-				{
-					text = "PMC XM8";
-					data = "\lt_template_base\gear\Loadouts\PMC_XM8.sqf";
-				};
-				class LT_Gear_NATO_2035_MX
-				{
-					text = "NATO 2035 (MX)";
-					data = "\lt_template_base\gear\Loadouts\NATO_2035_MX.sqf";
-				};
-				class LT_Gear_NATO_2035_SIG
-				{
-					text = "NATO 2035 (SIG)";
-					data = "\lt_template_base\gear\Loadouts\NATO_2035_SIG.sqf";
-				};
-				class LT_Gear_CSAT_2035_KAT
-				{
-					text = "CSAT 2035 (Katiba)";
-					data = "\lt_template_base\gear\Loadouts\CSAT_2035_KAT.sqf";
-				};
-				class LT_Gear_CSAT_2035_QBZ
-				{
-					text = "CSAT 2035 (QBZ)";
-					data = "\lt_template_base\gear\Loadouts\CSAT_2035_QBZ.sqf";
-				};
-				class LT_Gear_AAF_2035
-				{
-					text = "AAF 2035";
-					data = "\lt_template_base\gear\Loadouts\AAF_2035.sqf";
-				};
-				class LT_Gear_Guerilla_2035
-				{
-					text = "Guerilla 2035";
-					data = "\lt_template_base\gear\Loadouts\FIA_2035.sqf";
+					text = "IJA - Type99";
+					data = "\lt_template_base\gear\Loadouts\IJA_Type99.sqf";
 				};
 			};
 		};

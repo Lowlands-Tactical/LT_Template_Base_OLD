@@ -34,26 +34,6 @@ class LT_TFR_combo: Title
 					text = "No radios";
 					data = "2";
 				};
-				class LT_TFR_leadersLR
-				{
-					text = "CO/SQL/FTL LR Only";
-					data = "3";
-				};
-				class LT_TFR_leadersSR
-				{
-					text = "CO/SQL/FTL SR Only";
-					data = "4";
-				};
-				class LT_TFR_leaderLR
-				{
-					text = "CO/SQL LR Only";
-					data = "5";
-				};
-				class LT_TFR_leaderSR
-				{
-					text = "CO/SQL SR Only";
-					data = "6";
-				};
 			};
 		};
 	};

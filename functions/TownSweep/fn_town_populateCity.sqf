@@ -5,7 +5,7 @@ private ["_faction","_marker_size","_marker_name","_marker","_ts_factions"];
 
 diag_log "Start populating city.";
 
-_ts_factions = ["OPF_F","OPF_G_F","IND_F","IND_G_F","OPF_T_F","IND_C_F","NLDO_RU_VDV_76","NLDO_RU_VDV_31","NLDO_UA_UAF_95","CUP_O_TK_INS","CUP_O_TK","CUP_O_CHDKZ","CUP_O_SLA","CUP_O_RU_EMR","CUP_O_RU_FLORA","CUP_I_NAPA","CUP_I_RACS","CUP_I_TK_GUE","LT_CUP_I_PMC","LT_CUP_AFR_REB","LT_CUP_AFR_ARMY","LT_CUP_AFR_M_REB","LT_CUP_AFR_UN","LT_CUP_ARMY_ASIA","LT_CUP_INS_ASIA"];
+_ts_factions = ["OPF_F","OPF_G_F","IND_F","IND_G_F","OPF_T_F","IND_C_F"];
 sleep 1;
 _faction = _ts_factions select ("ts_faction" call BIS_fnc_getParamValue);
 
