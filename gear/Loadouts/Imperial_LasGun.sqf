@@ -1,5 +1,5 @@
-// filename 	"GER_K98.sqf"
-// loadout name "GER - Kar98"
+// filename 	"Imperial_LasGun.sqf"
+// loadout name "Imperial Guard - LasGun"
 
 // Attachments Primary weapon
 lt_template_attach1        	 = 	 "";
@@ -19,9 +19,9 @@ lt_template_hg_scope1      	 = 	 "";
 lt_template_hg_attachments   = 	 [];
 
 // Assistant Automatic Rifleman, Medium MG assistant, Rifleman, Medic
-lt_template_rifle          	 = 	 "fow_w_k98";
-lt_template_riflemag       	 = 	 "fow_5Rnd_792x57";
-lt_template_riflemag_t     	 = 	 "LIB_5Rnd_792x57_t";
+lt_template_rifle          	 = 	 "LIB_FG42G";
+lt_template_riflemag       	 = 	 "LIB_20Rnd_792x57";
+lt_template_riflemag_t     	 = 	 "LIB_20Rnd_792x57";
 
 // Rifle grenadier
 lt_template_glrifle        	 = 	 "LIB_K98_GW";
@@ -32,18 +32,22 @@ lt_template_glmag          	 = 	 "LIB_1Rnd_G_SPRGR_30";
 lt_template_glmag_at       	 = 	 "LIB_1Rnd_G_PZGR_40";
 
 // Rifleman At, Radioman
-lt_template_carbine        	 = 	 "fow_w_k98";
-lt_template_carbinemag     	 = 	 "fow_5Rnd_792x57";
-lt_template_carbinemag_tr    = 	 "LIB_5Rnd_792x57_t";
+lt_template_carbine        	 = 	 "LIB_FG42G";
+lt_template_carbinemag     	 = 	 "LIB_20Rnd_792x57";
+lt_template_carbinemag_tr    = 	 "LIB_20Rnd_792x57";
 
 // Commander, Squad Leader
-lt_template_smg					= 	 "fow_w_mp40";
-lt_template_smgmag         	 	= 	 "fow_32Rnd_9x19_mp40";
-lt_template_smgmag_tr      	 	= 	 "LIB_32rnd_9x19_t";
+lt_template_smg					= 	 "LIB_FG42G";
+lt_template_smgmag         	 	= 	 "LIB_20Rnd_792x57";
+lt_template_smgmag_tr      	 	= 	 "LIB_20Rnd_792x57";
 
-// Commander, Squadleader, Automatic Rifleman, Medium Machinegunner, Designated Marksman, Sniper, AT-Rifleman
+// Automatic Rifleman, Medium Machinegunner, Designated Marksman, Sniper, AT-Rifleman
 lt_template_pistol         	 = 	 "LIB_M1908";
 lt_template_pistolmag      	 = 	 "LIB_8Rnd_9x19_P08";
+
+// Commander, Squadleader, Commisar
+lt_template_big_pistol         	 = 	 "LIB_M1908";
+lt_template_big_pistolmag      	 = 	 "LIB_8Rnd_9x19_P08";
 
 // Automatic Rifleman
 lt_template_AR     	 = 	 "fow_w_mg34";
