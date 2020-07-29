@@ -204,6 +204,160 @@ class LT_Camo_combo: Title
 /* Officer */		["Boss1Uni_OP","BossGear2","BossHelm2"],
 							];
 				};
+				class BloodPacts
+				{
+					text = "Chaos - Blood Pacts";
+					data = [
+/* Uniform */		"TIOW_U_Bloodpact_01_OP",
+/* Vest */			["TIOW_Bloodpact_vest_01","TIOW_Bloodpact_vest_02","TIOW_Bloodpact_vest_03"],
+/* Backpack */	["Ren_Backpack_02_black","BP_HS_Ammo_Backpack"],
+/* Helmet */		["Cad_Inf_Helm700th","TIOW_Bloodpact_helmet_01"],
+/* Masks */			["TIOW_Bloodpact_mask_01","TIOW_Bloodpact_mask_02","DKOKGrenMask1491st"],
+/* Radiobag */	"TIOW_Chaos_Vox_Caster",
+/* Officer */		["TIOW_U_Bloodpact_01_OP","TIOW_Bloodpact_vest_03","TIOW_Bloodpact_helmet_01","TIOW_Bloodpact_mask_01_bronze"],
+/* Commisar */	["TIOW_U_Bloodpact_01_OP","Cad_Inf_Helm700th",nil,"TIOW_Bloodpact_mask_01_silver"],
+							];
+				};
+				class ChaosCultists
+				{
+					text = "Chaos - Cultists";
+					data = [
+/* Uniform */		["U_TIOW_Cultist_O","TIOW_Cultist_Gear"],
+/* Vest */			"TIOW_Cultist_Gear2",
+/* Backpack */	"Ren_Backpack_02_black_Medic",
+/* Helmet */		["TIOW_Cultist_Hood","TIOW_Cultist_Hood_brown","TIOW_Cultist_Hood_green"],
+/* Masks */			["TIOW_Cultist_FaceCover","TIOW_Cultist_FaceCover_brown","TIOW_Cultist_FaceCover_green"],
+/* Radiobag */	"TIOW_Chaos_Vox_Caster",
+/* Officer */		["U_TIOW_Cultist_O","TIOW_Cultist_Gear","TIOW_Cultist_Hood","TIOW_Cultist_Gasmask"],
+/* Commisar */	nil,
+							];
+				};
+				class RenegadesBlack
+				{
+					text = "Chaos - Renegades (Black)";
+					data = [
+/* Uniform */		"OP_Ren_Uniform_01_black",
+/* Vest */			["Ren_ArmorSet_01_green","Ren_ArmorSet_02_black"],
+/* Backpack */	["Ren_Backpack_02_black_Ammo","Ren_Backpack_02_black_LMG","Ren_Backpack_02_black_Engineer"],
+/* Helmet */		"TIOW_RenEnforcerMask_1",
+/* Masks */			"Ren_Gasmask_02",
+/* Radiobag */	"TIOW_Chaos_Vox_Caster",
+/* Officer */		["OP_Ren_Uniform_01_black","Ren_ArmorSet_02_black",nil,"Ren_Gasmask_02"],
+/* Commisar */	["OP_Ren_Uniform_01_black","Cad_RebreatherMask700th",nil,nil,"Ren_ArmorSet_01_green"],
+							];
+				};
+				class RenegadesBrown
+				{
+					text = "Chaos - Renegades (Brown)";
+					data = [
+/* Uniform */		"OP_Ren_Uniform_01_brown",
+/* Vest */			["Ren_ArmorSet_02_brown","Ren_ArmorSet_01_brown"],
+/* Backpack */	["Ren_Backpack_02_black_Ammo","Ren_Backpack_02_black_LMG","Ren_Backpack_02_black_Engineer"],
+/* Helmet */		"TIOW_RenEnforcerMask_1",
+/* Masks */			"Ren_Gasmask_01",
+/* Radiobag */	"TIOW_Chaos_Vox_Caster",
+/* Officer */		["OP_Ren_Uniform_01_brown","Ren_ArmorSet_02_brown",nil,"Ren_Gasmask_02"],
+/* Commisar */	["OP_Ren_Uniform_01_brown","Cad_RebreatherMask700th",nil,nil,"Ren_ArmorSet_01_brown"],
+							];
+				};
+				class RenegadesGreen
+				{
+					text = "Chaos - Renegades (Green)";
+					data = [
+/* Uniform */		"OP_Ren_Uniform_01_green",
+/* Vest */			["Ren_ArmorSet_02_green","Ren_ArmorSet_01_green"],
+/* Backpack */	["Ren_Backpack_02_black_Ammo","Ren_Backpack_02_black_LMG","Ren_Backpack_02_black_Engineer"],
+/* Helmet */		"TIOW_RenEnforcerMask_1",
+/* Masks */			"Ren_Gasmask_01",
+/* Radiobag */	"TIOW_Chaos_Vox_Caster",
+/* Officer */		["OP_Ren_Uniform_01_green","Ren_ArmorSet_02_green",nil,"Ren_Gasmask_02"],
+/* Commisar */	["OP_Ren_Uniform_01_green","Cad_RebreatherMask700th",nil,nil,"Ren_ArmorSet_01_green"],
+							];
+				};
+				class RenegadesGrey
+				{
+					text = "Chaos - Renegades (Grey)";
+					data = [
+/* Uniform */		"OP_Ren_Uniform_01_grey",
+/* Vest */			["Ren_ArmorSet_02_grey","Ren_ArmorSet_01_grey"],
+/* Backpack */	["Ren_Backpack_02_black_Ammo","Ren_Backpack_02_black_LMG","Ren_Backpack_02_black_Engineer"],
+/* Helmet */		"TIOW_RenEnforcerMask_1",
+/* Masks */			"Ren_Gasmask_01",
+/* Radiobag */	"TIOW_Chaos_Vox_Caster",
+/* Officer */		["OP_Ren_Uniform_01_grey","Ren_ArmorSet_02_grey",nil,"Ren_Gasmask_02"],
+/* Commisar */	["OP_Ren_Uniform_01_grey","Cad_RebreatherMask700th",nil,nil,"Ren_ArmorSet_01_grey"],
+							];
+				};
+				class TauTau
+				{
+					text = "Tau - T'Au ";
+					data = [
+/* Uniform */		["TIOW_U_Fire_Warrior_TA_I","TIOW_U_Pathfinder_TA_I"],
+/* Vest */			["TIOW_Tau_BeltB_TA","Ren_ArmorSet_01_grey","TIOW_Tau_BeltP_Shasui_TA","TIOW_Tau_BeltP_Photon_TA"],
+/* Backpack */	["TIOW_Tau_Bck_Breacher_TA","TIOW_Tau_Bck_Strike_TA","TIOW_Tau_Bck_Phndr_Ion_TA"],
+/* Helmet */		["TIOW_Tau_HelmetB2_TA","TIOW_Tau_HelmetS_TA","TIOW_Tau_HelmetS_TA_sui"],
+/* Masks */			"Ren_Gasmask_01",
+/* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_TA",
+/* Officer */		["TIOW_U_Fire_Warrior_TA_I","TIOW_Tau_BeltB_Shasui_TA","TIOW_Tau_HelmetB2_TA_sui",nil,"TIOW_Tau_Bck_Breacher_TA"],
+/* Commisar */	["TIOW_U_Fire_Warrior_TA_I","TIOW_Tau_Belt_Shasui_TA","TIOW_Tau_Hset4_TA",nil,"TIOW_Tau_Belt_Shasui_TA"],
+							];
+				};
+				class TauGreen
+				{
+					text = "Tau - Dal'Yth (Green)";
+					data = [
+/* Uniform */		["TIOW_U_Fire_Warrior_DY_I","TIOW_U_Pathfinder_DY_I"],
+/* Vest */			["TIOW_Tau_Belt_DY","Ren_ArmorSet_01_grey","TIOW_Tau_BeltP_Shasui_DY","TIOW_Tau_BeltP_Photon_DY"],
+/* Backpack */	["TIOW_Tau_Bck_Breacher_DY","TIOW_Tau_Bck_Strike_DY","TIOW_Tau_Bck_Phndr_Ion_DY"],
+/* Helmet */		["TIOW_Tau_HelmetB2_DY","TIOW_Tau_HelmetS_DY","TIOW_Tau_HelmetS_DY_sui"],
+/* Masks */			"Ren_Gasmask_01",
+/* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_DY",
+/* Officer */		["TIOW_U_Fire_Warrior_DY_I","TIOW_Tau_BeltB_Shasui_DY","TIOW_Tau_HelmetB2_DY_sui",nil,"TIOW_Tau_Bck_Breacher_DY"],
+/* Commisar */	["TIOW_U_Fire_Warrior_DY_I","TIOW_Tau_Belt_Shasui_DY","TIOW_Tau_Hset4_DY",nil,"TIOW_Tau_Belt_Shasui_DY"],
+							];
+				};
+				class TauRed
+				{
+					text = "Tau - Farsight Enclave (Red)";
+					data = [
+/* Uniform */		["TIOW_U_Fire_Warrior_FE_I","TIOW_U_Pathfinder_FE_I"],
+/* Vest */			["TIOW_Tau_BeltB_FE","Ren_ArmorSet_01_grey","TIOW_Tau_BeltP_Shasui_FE","TIOW_Tau_BeltP_Photon_FE"],
+/* Backpack */	["TIOW_Tau_Bck_Breacher_FE","TIOW_Tau_Bck_Strike_FE","TIOW_Tau_Bck_Phndr_Ion_FE"],
+/* Helmet */		["TIOW_Tau_HelmetB2_FE","TIOW_Tau_HelmetS_FE","TIOW_Tau_HelmetS_FE_sui"],
+/* Masks */			"Ren_Gasmask_01",
+/* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_FE",
+/* Officer */		["TIOW_U_Fire_Warrior_FE_I","TIOW_Tau_BeltB_Shasui_FE","TIOW_Tau_HelmetB2_FE_sui",nil,"TIOW_Tau_Bck_Breacher_FE"],
+/* Commisar */	["TIOW_U_Fire_Warrior_FE_I","TIOW_Tau_Belt_Shasui_FE","TIOW_Tau_Hset4_FE",nil,"TIOW_Tau_Belt_Shasui_FE"],
+							];
+				};
+				class TauBlue
+				{
+					text = "Tau - Sa'Cea (Blue)";
+					data = [
+/* Uniform */		["TIOW_U_Fire_Warrior_SC_I","TIOW_U_Pathfinder_SC_I"],
+/* Vest */			["TIOW_Tau_BeltB_SC","Ren_ArmorSet_01_grey","TIOW_Tau_BeltP_Shasui_SC","TIOW_Tau_BeltP_Photon_SC"],
+/* Backpack */	["TIOW_Tau_Bck_Breacher_SC","TIOW_Tau_Bck_Strike_SC","TIOW_Tau_Bck_Phndr_Ion_SC"],
+/* Helmet */		["TIOW_Tau_HelmetB2_SC","TIOW_Tau_HelmetS_SC","TIOW_Tau_HelmetS_SC_sui"],
+/* Masks */			"Ren_Gasmask_01",
+/* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_SC",
+/* Officer */		["TIOW_U_Fire_Warrior_SC_I","TIOW_Tau_BeltB_Shasui_SC","TIOW_Tau_HelmetB2_SC_sui",nil,"TIOW_Tau_Bck_Breacher_SC"],
+/* Commisar */	["TIOW_U_Fire_Warrior_SC_I","TIOW_Tau_Belt_Shasui_SC","TIOW_Tau_Hset4_SC",nil,"TIOW_Tau_Belt_Shasui_SC"],
+							];
+				};
+				class TauWhite
+				{
+					text = "Tau - Voir'La (White)";
+					data = [
+/* Uniform */		["TIOW_U_Fire_Warrior_VL_I","TIOW_U_Pathfinder_VL_I"],
+/* Vest */			["TIOW_Tau_BeltB_VL","Ren_ArmorSet_01_grey","TIOW_Tau_BeltP_Shasui_VL","TIOW_Tau_BeltP_Photon_VL"],
+/* Backpack */	["TIOW_Tau_Bck_Breacher_VL","TIOW_Tau_Bck_Strike_VL","TIOW_Tau_Bck_Phndr_Ion_VL"],
+/* Helmet */		["TIOW_Tau_HelmetB2_VL","TIOW_Tau_HelmetS_VL","TIOW_Tau_HelmetS_VL_sui"],
+/* Masks */			"Ren_Gasmask_01",
+/* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_VL",
+/* Officer */		["TIOW_U_Fire_Warrior_VL_I","TIOW_Tau_BeltB_Shasui_VL","TIOW_Tau_HelmetB2_VL_sui",nil,"TIOW_Tau_Bck_Breacher_VL"],
+/* Commisar */	["TIOW_U_Fire_Warrior_VL_I","TIOW_Tau_Belt_Shasui_VL","TIOW_Tau_Hset4_VL",nil,"TIOW_Tau_Belt_Shasui_VL"],
+							];
+				};
 			};
 
 			class ItemsConfig
