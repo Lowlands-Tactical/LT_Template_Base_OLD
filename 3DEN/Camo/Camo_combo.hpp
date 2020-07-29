@@ -215,14 +215,27 @@ class LT_Camo_combo: Title
 /* Masks */			["TIOW_Bloodpact_mask_01","TIOW_Bloodpact_mask_02","DKOKGrenMask1491st"],
 /* Radiobag */	"TIOW_Chaos_Vox_Caster",
 /* Officer */		["TIOW_U_Bloodpact_01_OP","TIOW_Bloodpact_vest_03",nil,"TIOW_Bloodpact_helmet_01","TIOW_Bloodpact_mask_01_bronze"],
-/* Commisar */	["TIOW_U_Bloodpact_01_OP",nil,"Cad_Inf_Helm700th",nil,"TIOW_Bloodpact_mask_01_silver"],
+/* Commisar */	["TIOW_U_Bloodpact_01_OP",nil,nil,"Cad_Inf_Helm700th","TIOW_Bloodpact_mask_01_silver"],
+							];
+				};
+				class BloodPactsLight
+				{
+					text = "Chaos - Blood Pacts (Light)";
+					data = [
+/* Uniform */		"ML700_Bloodpact_Uniform1",
+/* Vest */			"ML700_BP_Armor0",
+/* Backpack */	"Ren_Backpack_02_black",
+/* Helmet */		"ML700_Bloodpact_Helmet1",
+/* Radiobag */	"TIOW_Chaos_Vox_Caster",
+/* Officer */		["ML700_Bloodpact_Uniform1","ML700_BP_Armor0",nil,"ML700_Bloodpact_Helmet_Officer_Gold",nil],
+/* Commisar */	["ML700_Bloodpact_Uniform1","ML700_BP_Armor0",nil,"ML700_Bloodpact_Helmet_Officer_Silver",nil],
 							];
 				};
 				class ChaosCultists
 				{
 					text = "Chaos - Cultists";
 					data = [
-/* Uniform */		["U_TIOW_Cultist_O","TIOW_Cultist_Gear"],
+/* Uniform */		["U_TIOW_Cultist_O","U_TIOW_Cultist_brown","U_TIOW_Cultist_green"],
 /* Vest */			"TIOW_Cultist_Gear2",
 /* Backpack */	"Ren_Backpack_02_black_Medic",
 /* Helmet */		["TIOW_Cultist_Hood","TIOW_Cultist_Hood_brown","TIOW_Cultist_Hood_green"],
