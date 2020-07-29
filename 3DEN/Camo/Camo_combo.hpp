@@ -311,8 +311,8 @@ class LT_Camo_combo: Title
 /* Helmet */		["TIOW_Tau_HelmetB2_TA","TIOW_Tau_HelmetS_TA","TIOW_Tau_HelmetS_TA_sui"],
 /* Masks */			"Ren_Gasmask_01",
 /* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_TA",
-/* Officer */		["TIOW_U_Fire_Warrior_TA_I","TIOW_Tau_BeltB_Shasui_TA","TIOW_Tau_Bck_Breacher_TA","TIOW_Tau_HelmetB2_TA_sui",nil],
-/* Commisar */	["TIOW_U_Fire_Warrior_TA_I","TIOW_Tau_Belt_Shasui_TA","TIOW_Tau_Hset4_TA",nil],
+/* Officer */		["TIOW_U_Fire_Warrior_TA_I","TIOW_Tau_Belt_Shasui_TA","TIOW_Tau_Bck_Breacher_TA","TIOW_Tau_Hset4_TA",nil],
+/* Commisar */	["TIOW_U_Fire_Warrior_TA_I","TIOW_Tau_BeltB_Shasui_TA","TIOW_Tau_Bck_Breacher_TA","TIOW_Tau_HelmetB2_TA_sui",nil],
 							];
 				};
 				class TauGreen
@@ -325,8 +325,8 @@ class LT_Camo_combo: Title
 /* Helmet */		["TIOW_Tau_HelmetB2_DY","TIOW_Tau_HelmetS_DY","TIOW_Tau_HelmetS_DY_sui"],
 /* Masks */			"Ren_Gasmask_01",
 /* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_DY",
-/* Officer */		["TIOW_U_Fire_Warrior_DY_I","TIOW_Tau_BeltB_Shasui_DY","TIOW_Tau_Bck_Breacher_DY","TIOW_Tau_HelmetB2_DY_sui",nil],
-/* Commisar */	["TIOW_U_Fire_Warrior_DY_I","TIOW_Tau_Belt_Shasui_DY","TIOW_Tau_Hset4_DY",nil],
+/* Officer */		["TIOW_U_Fire_Warrior_DY_I","TIOW_Tau_Belt_Shasui_DY","TIOW_Tau_Bck_Breacher_DY","TIOW_Tau_Hset4_DY",nil],
+/* Commisar */	["TIOW_U_Fire_Warrior_DY_I","TIOW_Tau_BeltB_Shasui_DY","TIOW_Tau_Bck_Breacher_DY","TIOW_Tau_HelmetB2_DY_sui",nil],
 							];
 				};
 				class TauRed
@@ -339,8 +339,8 @@ class LT_Camo_combo: Title
 /* Helmet */		["TIOW_Tau_HelmetB2_FE","TIOW_Tau_HelmetS_FE","TIOW_Tau_HelmetS_FE_sui"],
 /* Masks */			"Ren_Gasmask_01",
 /* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_FE",
-/* Officer */		["TIOW_U_Fire_Warrior_FE_I","TIOW_Tau_BeltB_Shasui_FE","TIOW_Tau_Bck_Breacher_FE","TIOW_Tau_HelmetB2_FE_sui",nil],
-/* Commisar */	["TIOW_U_Fire_Warrior_FE_I","TIOW_Tau_Belt_Shasui_FE","TIOW_Tau_Hset4_FE",nil],
+/* Officer */		["TIOW_U_Fire_Warrior_FE_I","TIOW_Tau_Belt_Shasui_FE","TIOW_Tau_Bck_Breacher_FE","TIOW_Tau_Hset4_FE",nil],
+/* Commisar */	["TIOW_U_Fire_Warrior_FE_I","TIOW_Tau_BeltB_Shasui_FE","TIOW_Tau_Bck_Breacher_FE","TIOW_Tau_HelmetB2_FE_sui",nil],
 							];
 				};
 				class TauBlue
@@ -353,8 +353,8 @@ class LT_Camo_combo: Title
 /* Helmet */		["TIOW_Tau_HelmetB2_SC","TIOW_Tau_HelmetS_SC","TIOW_Tau_HelmetS_SC_sui"],
 /* Masks */			"Ren_Gasmask_01",
 /* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_SC",
-/* Officer */		["TIOW_U_Fire_Warrior_SC_I","TIOW_Tau_BeltB_Shasui_SC","TIOW_Tau_Bck_Breacher_SC","TIOW_Tau_HelmetB2_SC_sui",nil],
-/* Commisar */	["TIOW_U_Fire_Warrior_SC_I","TIOW_Tau_Belt_Shasui_SC","TIOW_Tau_Hset4_SC",nil],
+/* Officer */		["TIOW_U_Fire_Warrior_SC_I","TIOW_Tau_Belt_Shasui_SC","TIOW_Tau_Bck_Breacher_SC","TIOW_Tau_Hset4_SC",nil],
+/* Commisar */	["TIOW_U_Fire_Warrior_SC_I","TIOW_Tau_BeltB_Shasui_SC","TIOW_Tau_Bck_Breacher_SC","TIOW_Tau_HelmetB2_SC_sui",nil],
 							];
 				};
 				class TauWhite
@@ -367,8 +367,8 @@ class LT_Camo_combo: Title
 /* Helmet */		["TIOW_Tau_HelmetB2_VL","TIOW_Tau_HelmetS_VL","TIOW_Tau_HelmetS_VL_sui"],
 /* Masks */			"Ren_Gasmask_01",
 /* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_VL",
-/* Officer */		["TIOW_U_Fire_Warrior_VL_I","TIOW_Tau_BeltB_Shasui_VL","TIOW_Tau_Bck_Breacher_VL","TIOW_Tau_HelmetB2_VL_sui",nil],
-/* Commisar */	["TIOW_U_Fire_Warrior_VL_I","TIOW_Tau_Belt_Shasui_VL","TIOW_Tau_Hset4_VL",nil],
+/* Officer */		["TIOW_U_Fire_Warrior_VL_I","TIOW_Tau_Belt_Shasui_VL","TIOW_Tau_Bck_Breacher_VL","TIOW_Tau_Hset4_VL",nil],
+/* Commisar */	["TIOW_U_Fire_Warrior_VL_I","TIOW_Tau_BeltB_Shasui_VL","TIOW_Tau_Bck_Breacher_VL","TIOW_Tau_HelmetB2_VL_sui",nil],
 							];
 				};
 
