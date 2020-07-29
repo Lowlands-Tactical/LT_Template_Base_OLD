@@ -356,7 +356,240 @@ class LT_Camo_combo: Title
 /* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_VL",
 /* Officer */		["TIOW_U_Fire_Warrior_VL_I","TIOW_Tau_BeltB_Shasui_VL","TIOW_Tau_Bck_Breacher_VL","TIOW_Tau_HelmetB2_VL_sui",nil],
 /* Commisar */	["TIOW_U_Fire_Warrior_VL_I","TIOW_Tau_Belt_Shasui_VL","TIOW_Tau_Hset4_VL",nil],
+							];
 				};
+
+
+
+				class SpaceMarineUltra
+				{
+					text = "Space Marines - Imperial - UltraMarines";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_UM",
+/* Vest */			"TIOW_Mk2Limbs_UM",
+/* Backpack */	"TIOW_Mk4Powerpack_Ultra",
+/* Helmet */		"TIOW_MK7Helmet_UM",
+/* Officer */		["TIOW_Mk8PowerArmor_1_UM","TIOW_Mk2Limbs_UM","TIOW_Mk4Powerpack_Ultra","TIOW_MK7Helmet_BA",nil],
+							];
+				};
+				class SpaceMarineWS
+				{
+					text = "Space Marines - Imperial - White Scars";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_WS",
+/* Vest */			"TIOW_Mk2Limbs_WS",
+/* Backpack */	"TIOW_Mk4Powerpack_WS",
+/* Helmet */		"TIOW_MK7Helmet_WS",
+/* Officer */		["TIOW_Mk8PowerArmor_1_WS","TIOW_Mk2Limbs_WS","TIOW_Mk4Powerpack_WS","TIOW_MK7Helmet_WS_Alt",nil],
+							];
+				};
+				class SpaceMarineSW
+				{
+					text = "Space Marines - Imperial - Space Wolves";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_SW",
+/* Vest */			"TIOW_Mk2Limbs_SW",
+/* Backpack */	"TIOW_Mk4Powerpack_SW",
+/* Helmet */		"TIOW_MK7Helmet_SW",
+/* Officer */		["TIOW_Mk8PowerArmor_1_SW","TIOW_Mk2Limbs_SW","TIOW_Mk4Powerpack_SW","TIOW_MK7Helmet_SW_Alt",nil],
+							];
+				};
+				class SpaceMarineSL
+				{
+					text = "Space Marines - Imperial - Salamanders";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_SL",
+/* Vest */			"TIOW_Mk2Limbs_SL",
+/* Backpack */	"TIOW_Mk4Powerpack_SL",
+/* Helmet */		"TIOW_MK7Helmet_SL",
+/* Officer */		["TIOW_Mk8PowerArmor_1_SL","TIOW_Mk2Limbs_SL","TIOW_Mk4Powerpack_SL","TIOW_MK7Helmet_SL_Alt",nil],
+							];
+				};
+				class SpaceMarineIH
+				{
+					text = "Space Marines - Imperial - Iron Hands";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_IH",
+/* Vest */			"TIOW_Mk2Limbs_IH",
+/* Backpack */	"TIOW_Mk4Powerpack_IH",
+/* Helmet */		"TIOW_MK7Helmet_IH",
+/* Officer */		["TIOW_Mk8PowerArmor_1_IH","TIOW_Mk2Limbs_IH","TIOW_Mk4Powerpack_IH","TIOW_MK7Helmet_IH_Alt",nil],
+							];
+				};
+				class SpaceMarineIF
+				{
+					text = "Space Marines - Imperial - Iron Fists";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_IF",
+/* Vest */			"TIOW_Mk2Limbs_IF",
+/* Backpack */	"TIOW_Mk4Powerpack_IF",
+/* Helmet */		"TIOW_MK7Helmet_IF",
+/* Officer */		["TIOW_Mk8PowerArmor_1_IF","TIOW_Mk2Limbs_IF","TIOW_Mk4Powerpack_IF","TIOW_MK7Helmet_IF_Alt",nil],
+							];
+				};
+				class SpaceMarineDA
+				{
+					text = "Space Marines - Imperial - Dark Angels";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_DA",
+/* Vest */			"TIOW_Mk2Limbs_DA",
+/* Backpack */	"TIOW_Mk4Powerpack_DA",
+/* Helmet */		"TIOW_MK7Helmet_DA",
+/* Officer */		["TIOW_Mk8PowerArmor_1_DA","TIOW_Mk2Limbs_DA","TIOW_Mk4Powerpack_DA","TIOW_MK7Helmet_DA_Alt",nil],
+							];
+				};
+				class SpaceMarineDAPre
+				{
+					text = "Space Marines - Imperial - Dark Angels (Pre-Heresy)";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_DA_HH",
+/* Vest */			"TIOW_Mk2Limbs_DA_HH",
+/* Backpack */	"TIOW_Mk4Powerpack_DA_HH",
+/* Helmet */		"TIOW_MK7Helmet_DA_HH",
+/* Officer */		["TIOW_Mk8PowerArmor_1_DA_HH","TIOW_Mk2Limbs_DA_HH","TIOW_Mk4Powerpack_DA_HH","TIOW_MK7Helmet_DA_HH_Alt",nil],
+							];
+				};
+				class SpaceMarineBR
+				{
+					text = "Space Marines - Imperial - Blood Ravens";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_BR",
+/* Vest */			"TIOW_Mk2Limbs_BR",
+/* Backpack */	"TIOW_Mk4Powerpack_BR",
+/* Helmet */		"TIOW_MK7Helmet_BR",
+/* Officer */		["TIOW_Mk8PowerArmor_1_BR","TIOW_Mk2Limbs_BR","TIOW_Mk4Powerpack_BR","TIOW_MK7Helmet_BR_Alt",nil],
+							];
+				};
+				class SpaceMarineBA
+				{
+					text = "Space Marines - Imperial - Blood Angels";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_BA",
+/* Vest */			"TIOW_Mk2Limbs_BA",
+/* Backpack */	"TIOW_Mk4Powerpack_BA",
+/* Helmet */		"TIOW_MK7Helmet_BA",
+/* Officer */		["TIOW_Mk8PowerArmor_1_BA","TIOW_Mk2Limbs_BA","TIOW_Mk4Powerpack_BA","TIOW_MK7Helmet_BA_Alt",nil],
+							];
+				};
+				class SpaceMarineBT
+				{
+					text = "Space Marines - Imperial - Black Templars";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_BT",
+/* Vest */			"TIOW_Mk2Limbs_BT",
+/* Backpack */	"TIOW_Mk4Powerpack_BT",
+/* Helmet */		"TIOW_MK7Helmet_BT",
+/* Officer */		["TIOW_Mk8PowerArmor_1_BT","TIOW_Mk2Limbs_BT","TIOW_Mk4Powerpack_BT","TIOW_MK7Helmet_BT_Alt",nil],
+							];
+				};
+				class SpaceMarineRG
+				{
+					text = "Space Marines - Imperial - Raven Guard";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_RG",
+/* Vest */			"TIOW_Mk2Limbs_RG",
+/* Backpack */	"TIOW_Mk4Powerpack_RG",
+/* Helmet */		"TIOW_MK7Helmet_RG",
+/* Officer */		["TIOW_Mk8PowerArmor_1_RG","TIOW_Mk2Limbs_RG","TIOW_Mk4Powerpack_RG","TIOW_MK7Helmet_RG_Alt",nil],
+							];
+				};
+				class SpaceMarineAL
+				{
+					text = "Space Marines - Chaos - Alpha Legion";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_AL",
+/* Vest */			"TIOW_Mk2Limbs_AL",
+/* Backpack */	"TIOW_Mk2Powerpack_AL",
+/* Helmet */		"TIOW_MK7Helmet_AL",
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_AL","TIOW_ChaosLimbs_AL","TIOW_Chaos3Powerpack_AL","TIOW_SkullHelmet_1_AL",nil],
+							];
+				};
+				class SpaceMarineBL
+				{
+					text = "Space Marines - Chaos - Black Legion";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_BL",
+/* Vest */			"TIOW_Mk2Limbs_BL",
+/* Backpack */	"TIOW_Mk2Powerpack_BL",
+/* Helmet */		"TIOW_MK7Helmet_BL",
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_BL","TIOW_ChaosLimbs_BL","TIOW_Chaos3Powerpack_BL","TIOW_SkullHelmet_1_BL",nil],
+							];
+				};
+				class SpaceMarineDG
+				{
+					text = "Space Marines - Chaos - Death Guard";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_DG",
+/* Vest */			"TIOW_Mk2Limbs_DG",
+/* Backpack */	"TIOW_Mk2Powerpack_DG",
+/* Helmet */		"TIOW_MK7Helmet_DG",
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_DG","TIOW_ChaosLimbs_DG","TIOW_Chaos3Powerpack_DG","TIOW_SkullHelmet_1_DG",nil],
+							];
+				};
+				class SpaceMarineWE
+				{
+					text = "Space Marines - Chaos - World Eaters";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_WE",
+/* Vest */			"TIOW_Mk2Limbs_WE",
+/* Backpack */	"TIOW_Mk2Powerpack_WE",
+/* Helmet */		"TIOW_MK7Helmet_WE",
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_WE","TIOW_ChaosLimbs_WE","TIOW_Chaos3Powerpack_WE","TIOW_SkullHelmet_1_WE",nil],
+							];
+				};
+				class SpaceMarineWB
+				{
+					text = "Space Marines - Chaos - World Bearers";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_WB",
+/* Vest */			"TIOW_Mk2Limbs_WB",
+/* Backpack */	"TIOW_Mk2Powerpack_WB",
+/* Helmet */		"TIOW_MK7Helmet_WB",
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_WB","TIOW_ChaosLimbs_WB","TIOW_Chaos3Powerpack_WB","TIOW_SkullHelmet_1_WB",nil],
+							];
+				};
+				class SpaceMarineTS
+				{
+					text = "Space Marines - Chaos - Thousand Sons";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_TS",
+/* Vest */			"TIOW_Mk2Limbs_TS",
+/* Backpack */	"TIOW_Mk2Powerpack_TS",
+/* Helmet */		"TIOW_MK7Helmet_TS",
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_TS","TIOW_ChaosLimbs_TS","TIOW_Chaos3Powerpack_TS","TIOW_SkullHelmet_1_TS",nil],
+							];
+				};
+				class SpaceMarineNL
+				{
+					text = "Space Marines - Chaos - Night Lords";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_NL",
+/* Vest */			"TIOW_Mk2Limbs_NL",
+/* Backpack */	"TIOW_Mk2Powerpack_NL",
+/* Helmet */		"TIOW_MK7Helmet_NL",
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_NL","TIOW_ChaosLimbs_NL","TIOW_Chaos3Powerpack_NL","TIOW_SkullHelmet_1_NL",nil],
+							];
+				};
+				class SpaceMarineIW
+				{
+					text = "Space Marines - Chaos - Iron Warriors";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_IW",
+/* Vest */			"TIOW_Mk2Limbs_IW",
+/* Backpack */	"TIOW_Mk2Powerpack_IW",
+/* Helmet */		"TIOW_MK7Helmet_IW",
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_IW","TIOW_ChaosLimbs_IW","TIOW_Chaos3Powerpack_IW","TIOW_SkullHelmet_1_IW",nil],
+							];
+				};
+				class SpaceMarineEC
+				{
+					text = "Space Marines - Chaos - Emperor's Children";
+					data = [
+/* Uniform */		"TIOW_Mk8PowerArmor_1_EC",
+/* Vest */			"TIOW_Mk2Limbs_EC",
+/* Backpack */	"TIOW_Mk2Powerpack_EC",
+/* Helmet */		"TIOW_MK7Helmet_EC",
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_EC","TIOW_ChaosLimbs_EC","TIOW_Chaos3Powerpack_EC","TIOW_SkullHelmet_1_EC",nil],
 							];
 				};
 			};
