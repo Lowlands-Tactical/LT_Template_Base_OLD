@@ -1,7 +1,7 @@
 private ["_staff"];
 
-// Flendurs, SvenBrandt99, Pek
-_staff = ["76561197972110272","76561198069718715","76561198047491445"];
+// Flendurs, SvenBrandt99, SkullFinger
+staff = ["76561197972110272","76561198069718715","76561197992586763"];
 
 // if (serverCommandAvailable "#kick" or getPlayerUID player == "<EEN STEAM64 ID VAN EEN STAFLID>") then
 if (serverCommandAvailable "#kick" or getPlayerUID player in _staff) then
