@@ -28,8 +28,8 @@ class LT_Camo_combo: Title
 /* Backpack */	"TIOW_CadBackpack",
 /* Helmet */		"ML700_Cadian_Helmet1",
 /* Radiobag */	"TIOW_IG_Vox_Caster",
-/* Commisar */	["U_TIOW_Comissar","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 /* Officer */		["ML700_Cadian_Uniform1","ML700_Cadian_Armor1","ML700_Cadian_OfficerCap"],
+/* Commisar */	["U_TIOW_Comissar","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 					default = 1;
 				};
@@ -42,8 +42,8 @@ class LT_Camo_combo: Title
 /* Backpack */	["TIOW_CadBackpack_Winter","TIOW_CadKasrkinBackpack_667th"],
 /* Helmet */		["Cad_InfBreather_Helm667th","Cad_Inf_Helm667th"],
 /* Radiobag */	"TIOW_Vox_Caster_White2",
-/* Commisar */	["U_TIOW_Comissar_Winter","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 /* Officer */		["U_TIOW_Captain_667_O","TIOW_IG_Officer_Armour_667","TIOW_IG_Officer_Cap1_667"],
+/* Commisar */	["U_TIOW_Comissar_Winter","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
 				class Cadian_700th
@@ -55,8 +55,8 @@ class LT_Camo_combo: Title
 /* Backpack */	["TIOW_CadBackpack","TIOW_CadKasrkinBackpack_700th"],
 /* Helmet */		["Cad_InfBreather_Helm700th","Cad_Inf_Helm700th"],
 /* Radiobag */	"TIOW_Vox_Caster_Red",
-/* Commisar */	["U_TIOW_Comissar_Brown","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 /* Officer */		["U_TIOW_Captain_700","TIOW_IG_Officer_Armour_700","TIOW_IG_Officer_Cap1_700"],
+/* Commisar */	["U_TIOW_Comissar_Brown","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
 				class Cadian_776th
@@ -68,8 +68,8 @@ class LT_Camo_combo: Title
 /* Backpack */	["TIOW_CadBackpack","TIOW_CadKasrkinBackpack_776th"],
 /* Helmet */		["Cad_InfBreather_Helm776th","Cad_Inf_Helm776th"],
 /* Radiobag */	"TIOW_Vox_Caster_Black",
-/* Commisar */	["U_TIOW_Comissar","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 /* Officer */		["U_TIOW_Captain_776_I","TIOW_IG_Officer_Armour_776","TIOW_IG_Officer_Cap1_776"],
+/* Commisar */	["U_TIOW_Comissar","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
 				class Cadian_836th
@@ -81,8 +81,8 @@ class LT_Camo_combo: Title
 /* Backpack */	["TIOW_CadBackpack","TIOW_CadKasrkinBackpack_836th"],
 /* Helmet */		["Cad_InfBreather_Helm836th","Cad_Inf_Helm836th"],
 /* Radiobag */	"TIOW_Vox_Caster_Green",
-/* Commisar */	["U_TIOW_Comissar_Desert","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 /* Officer */		["U_TIOW_Captain_836_I","TIOW_IG_Officer_Armour_836","TIOW_IG_Officer_Cap1_836"],
+/* Commisar */	["U_TIOW_Comissar_Desert","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
 				class Valhallans
@@ -94,8 +94,8 @@ class LT_Camo_combo: Title
 /* Backpack */	"TIOW_Valhallan_Bandolier",
 /* Helmet */		["TIOW_Valhallan_Cap_3","TIOW_Valhallan_Helmet","TIOW_Valhallan_Cap_2"],
 /* Radiobag */	"TIOW_IG_Vox_Caster",
-/* Commisar */	["U_TIOW_Comissar_Valhallan","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 /* Officer */		["U_TIOW_Valhallan_Blu","TIOW_Valhallan_Belt","TIOW_Valhallan_Cap"],
+/* Commisar */	["U_TIOW_Comissar_Valhallan","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
 				class Valhallans
@@ -107,8 +107,8 @@ class LT_Camo_combo: Title
 /* Backpack */	"TIOW_Valhallan_Bandolier",
 /* Helmet */		["TIOW_Valhallan_Cap_white_3","TIOW_Valhallan_Helmet","TIOW_Valhallan_Cap_white_2"],
 /* Radiobag */	"TIOW_Vox_Caster_White2",
-/* Commisar */	["U_TIOW_Comissar_Winter","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 /* Officer */		["U_TIOW_Valhallan_white_Blu","TIOW_Valhallan_Belt","TIOW_Valhallan_white_Cap"],
+/* Commisar */	["U_TIOW_Comissar_Winter","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
 				class DeathKoprsKrieg82nd
@@ -121,8 +121,8 @@ class LT_Camo_combo: Title
 /* Helmet */		"DKoK_GM_Helm_82nd",
 /* Masks */			["DKOKTroopMask","DKOKOffMask","DKOKGrenMask82nd"],
 /* Radiobag */	"TIOW_IG_Vox_Caster",
-/* Commisar */	["U_TIOW_Comissar_Krieg","TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
 /* Officer */		["DKoK_QM_Uniform_82nd",nil,"DKoK_GM_Helm_82nd","DKOKQMMask"],
+/* Commisar */	["U_TIOW_Comissar_Krieg","TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
 							];
 				};
 				class DeathKoprsKrieg1489th
@@ -135,8 +135,8 @@ class LT_Camo_combo: Title
 /* Helmet */		"DKoK_GM_Helm_1489th",
 /* Masks */			["DKOKTroopMask","DKOKOffMask","DKOKGrenMask1489th"],
 /* Radiobag */	"TIOW_Vox_Caster_White2",
-/* Commisar */	["U_TIOW_Comissar_Krieg","TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
 /* Officer */		["DKoK_QM_Uniform_1489th",nil,"DKoK_GM_Helm_1489th","DKOKQMMask"],
+/* Commisar */	["U_TIOW_Comissar_Krieg","TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
 							];
 				};
 				class DeathKoprsKrieg1490th
@@ -149,8 +149,8 @@ class LT_Camo_combo: Title
 /* Helmet */		"DKoK_GM_Helm_1490th",
 /* Masks */			["DKOKTroopMask","DKOKOffMask","DKOKGrenMask1490th"],
 /* Radiobag */	"TIOW_Vox_Caster_White2",
-/* Commisar */	["U_TIOW_Comissar_Krieg","TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
 /* Officer */		["DKoK_QM_Uniform_1490th",nil,"DKoK_GM_Helm_1490th","DKOKQMMask"],
+/* Commisar */	["U_TIOW_Comissar_Krieg","TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
 							];
 				};
 				class DeathKoprsKrieg1491st
@@ -163,8 +163,8 @@ class LT_Camo_combo: Title
 /* Helmet */		"DKoK_GM_Helm_1491st",
 /* Masks */			["DKOKTroopMask","DKOKOffMask","DKOKGrenMask1491st"],
 /* Radiobag */	"TIOW_IG_Vox_Caster",
-/* Commisar */	["U_TIOW_Comissar_Krieg","TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
 /* Officer */		["DKoK_QM_Uniform_1491st",nil,"DKoK_GM_Helm_1491st","DKOKQMMask"],
+/* Commisar */	["U_TIOW_Comissar_Krieg","TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
 							];
 				};
 				class MordianIronGuard
@@ -176,8 +176,9 @@ class LT_Camo_combo: Title
 /* Backpack */	"TIOW_CadBackpack",
 /* Helmet */		["TIOW_Mordian_Cap_2","TIOW_Valhallan_Helmet","TIOW_Mordian_Cap"],
 /* Radiobag */	"TIOW_Vox_Caster_White2",
-/* Commisar */	["U_TIOW_Comissar_Mord","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 /* Officer */		["U_TIOW_Mordian_Officer_Blu","TIOW_Mordian_Belt","TIOW_Mordian_Cap_3"],
+/* Commisar */	["U_TIOW_Comissar_Mord","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+							];
 							];
 				};
 			};
