@@ -179,6 +179,29 @@ class LT_Camo_combo: Title
 /* Officer */		["U_TIOW_Mordian_Officer_Blu","TIOW_Mordian_Belt","TIOW_Mordian_Cap_3"],
 /* Commisar */	["U_TIOW_Comissar_Mord","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
+				};
+				class NormalOrks
+				{
+					text = "Orks - Normal Boiis";
+					data = [
+/* Uniform */		["Boy1Uni_OP","TankBusta1Uni_OP","ArdBoy1Uni_OP"],
+/* Vest */			["ShootaBoyGear1","TankBustaGear1","ArdBoyGear1"],
+/* Backpack */	nil,
+/* Helmet */		["ShootaBoyHelm1","ArdBoyHelm1","TankBustaHelm1"],
+/* Radiobag */	"nil",
+/* Officer */		["Boss1Uni_OP","BossGear1","BossHelm1"],
+							];
+				};
+				class RedOrks
+				{
+					text = "Orks - Red Boiis";
+					data = [
+/* Uniform */		["Boy1Uni_OP","TankBusta1Uni_OP","ArdBoy1Uni_OP"],
+/* Vest */			["ShootaBoyGear2","TankBustaGear2","ArdBoyGear2"],
+/* Backpack */	nil,
+/* Helmet */		["ShootaBoyHelm2","ArdBoyHelm2","TankBustaHelm2"],
+/* Radiobag */	"nil",
+/* Officer */		["Boss1Uni_OP","BossGear2","BossHelm2"],
 							];
 				};
 			};
