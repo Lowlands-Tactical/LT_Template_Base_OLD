@@ -2,7 +2,8 @@
 
 private ["_lt_main","_action"];
 
-staff = ["76561197972110272","76561198069718715","76561198047491445"];
+// Flendurs, SvenBrandt99, SkullFinger
+staff = ["76561197972110272","76561198069718715","76561197992586763"];
 
 lt_group_teleport = 0;
 
