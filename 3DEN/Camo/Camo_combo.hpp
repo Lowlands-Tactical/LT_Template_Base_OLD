@@ -23,18 +23,162 @@ class LT_Camo_combo: Title
 				{
 					text = "Imperial Guard";
 					data = [
-/* Uniform */								"UNI",
-/* Vest */									["VEST","VEST","VEST","VEST","VEST","VEST"],
-/* Backpack */							["BACK","BACK","BACK","BACK"],
-/* Helmet */								["HELM","HELM","HELM","HELM"],
-/* Radiobag */							"B_LIB_US_Radio_ACRE2",
-/* Commisar */							["UNI","VEST","BACK","HELM"],
-/* Priest */								["UNI","VEST","BACK","HELM"],
-/* Ranger */								["UNI","VEST","BACK","HELM"],
-/* Space Marine Sergeant */	["UNI","VEST","BACK","HELM"],
-/* Space Marine */					["UNI","VEST","BACK","HELM"],
-								];
+/* Uniform */		"ML700_Cadian_Uniform1",
+/* Vest */			["ML700_Cadian_Armor1","ML700_Cadian_Armor2","ML700_Cadian_Armor3","ML700_Cadian_Armor4","ML700_Cadian_Armor5"],
+/* Backpack */	"TIOW_CadBackpack",
+/* Helmet */		"ML700_Cadian_Helmet1",
+/* Radiobag */	"TIOW_IG_Vox_Caster",
+/* Commisar */	["U_TIOW_Comissar","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["ML700_Cadian_Uniform1","ML700_Cadian_Armor1","ML700_Cadian_OfficerCap"],
+							];
 					default = 1;
+				};
+				class Cadian_667th
+				{
+					text = "Imperial - Cadian 667th (Winter)";
+					data = [
+/* Uniform */		"CadUni667th",
+/* Vest */			["Cad_Gear667th","Cad_KasrGear667th","TIOW_IG_Sergeant_Armour_667"],
+/* Backpack */	["TIOW_CadBackpack_Winter","TIOW_CadKasrkinBackpack_667th"],
+/* Helmet */		["Cad_InfBreather_Helm667th","Cad_Inf_Helm667th"],
+/* Radiobag */	"TIOW_Vox_Caster_White2",
+/* Commisar */	["U_TIOW_Comissar_Winter","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["U_TIOW_Captain_667_O","TIOW_IG_Officer_Armour_667","TIOW_IG_Officer_Cap1_667"],
+							];
+				};
+				class Cadian_700th
+				{
+					text = "Imperial - Cadian 700th (Urban)";
+					data = [
+/* Uniform */		"CadUni700th",
+/* Vest */			["Cad_Gear700th","Cad_KasrGear700th","TIOW_IG_Sergeant_Armour_700"],
+/* Backpack */	["TIOW_CadBackpack","TIOW_CadKasrkinBackpack_700th"],
+/* Helmet */		["Cad_InfBreather_Helm700th","Cad_Inf_Helm700th"],
+/* Radiobag */	"TIOW_Vox_Caster_Red",
+/* Commisar */	["U_TIOW_Comissar_Brown","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["U_TIOW_Captain_700","TIOW_IG_Officer_Armour_700","TIOW_IG_Officer_Cap1_700"],
+							];
+				};
+				class Cadian_776th
+				{
+					text = "Imperial - Cadian 776th (Black)";
+					data = [
+/* Uniform */		"CadUni776th",
+/* Vest */			["Cad_Gear776th","Cad_KasrGear776th","TIOW_IG_Sergeant_Armour_776"],
+/* Backpack */	["TIOW_CadBackpack","TIOW_CadKasrkinBackpack_776th"],
+/* Helmet */		["Cad_InfBreather_Helm776th","Cad_Inf_Helm776th"],
+/* Radiobag */	"TIOW_Vox_Caster_Black",
+/* Commisar */	["U_TIOW_Comissar","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["U_TIOW_Captain_776_I","TIOW_IG_Officer_Armour_776","TIOW_IG_Officer_Cap1_776"],
+							];
+				};
+				class Cadian_836th
+				{
+					text = "Imperial - Cadian 836th (Dessert)";
+					data = [
+/* Uniform */		"CadUni836th",
+/* Vest */			["Cad_Gear836th","Cad_KasrGear836th","TIOW_IG_Sergeant_Armour_836"],
+/* Backpack */	["TIOW_CadBackpack","TIOW_CadKasrkinBackpack_836th"],
+/* Helmet */		["Cad_InfBreather_Helm836th","Cad_Inf_Helm836th"],
+/* Radiobag */	"TIOW_Vox_Caster_Green",
+/* Commisar */	["U_TIOW_Comissar_Desert","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["U_TIOW_Captain_836_I","TIOW_IG_Officer_Armour_836","TIOW_IG_Officer_Cap1_836"],
+							];
+				};
+				class Valhallans
+				{
+					text = "Imperial - Valhallans";
+					data = [
+/* Uniform */		"U_TIOW_Valhallan_Blu",
+/* Vest */			"TIOW_Valhallan_Belt",
+/* Backpack */	"TIOW_Valhallan_Bandolier",
+/* Helmet */		["TIOW_Valhallan_Cap_3","TIOW_Valhallan_Helmet","TIOW_Valhallan_Cap_2"],
+/* Radiobag */	"TIOW_IG_Vox_Caster",
+/* Commisar */	["U_TIOW_Comissar_Valhallan","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["U_TIOW_Valhallan_Blu","TIOW_Valhallan_Belt","TIOW_Valhallan_Cap"],
+							];
+				};
+				class Valhallans
+				{
+					text = "Imperial - Valhallans Winter";
+					data = [
+/* Uniform */		"U_TIOW_Valhallan_white_Blu",
+/* Vest */			"TIOW_Valhallan_Belt",
+/* Backpack */	"TIOW_Valhallan_Bandolier",
+/* Helmet */		["TIOW_Valhallan_Cap_white_3","TIOW_Valhallan_Helmet","TIOW_Valhallan_Cap_white_2"],
+/* Radiobag */	"TIOW_Vox_Caster_White2",
+/* Commisar */	["U_TIOW_Comissar_Winter","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["U_TIOW_Valhallan_white_Blu","TIOW_Valhallan_Belt","TIOW_Valhallan_white_Cap"],
+							];
+				};
+				class DeathKoprsKrieg82nd
+				{
+					text = "Imperial - Death Koprs of Krieg 82nd";
+					data = [
+/* Uniform */		"OP_DKoK_GM_Uniform_82nd",
+/* Vest */			["DKoK_Eng_Armor_82nd","DKoK_Gren_Armor_82nd"],
+/* Backpack */	["DKoK_BackPack","DKoK_PlasmaBackPack"],
+/* Helmet */		"DKoK_GM_Helm_82nd",
+/* Masks */			["DKOKTroopMask","DKOKOffMask","DKOKGrenMask82nd"],
+/* Radiobag */	"TIOW_IG_Vox_Caster",
+/* Commisar */	["U_TIOW_Comissar_Krieg","TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
+/* Officer */		["DKoK_QM_Uniform_82nd",nil,"DKoK_GM_Helm_82nd","DKOKQMMask"],
+							];
+				};
+				class DeathKoprsKrieg1489th
+				{
+					text = "Imperial - Death Koprs of Krieg 1489th";
+					data = [
+/* Uniform */		"OP_DKoK_GM_Uniform_1489th",
+/* Vest */			["DKoK_Eng_Armor_1489th","DKoK_Gren_Armor_1489th"],
+/* Backpack */	["DKoK_BackPack","DKoK_PlasmaBackPack"],
+/* Helmet */		"DKoK_GM_Helm_1489th",
+/* Masks */			["DKOKTroopMask","DKOKOffMask","DKOKGrenMask1489th"],
+/* Radiobag */	"TIOW_Vox_Caster_White2",
+/* Commisar */	["U_TIOW_Comissar_Krieg","TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
+/* Officer */		["DKoK_QM_Uniform_1489th",nil,"DKoK_GM_Helm_1489th","DKOKQMMask"],
+							];
+				};
+				class DeathKoprsKrieg1490th
+				{
+					text = "Imperial - Death Koprs of Krieg 1490th";
+					data = [
+/* Uniform */		"OP_DKoK_GM_Uniform_1490th",
+/* Vest */			["DKoK_Eng_Armor_1490th","DKoK_Gren_Armor_1490th"],
+/* Backpack */	["DKoK_BackPack","DKoK_PlasmaBackPack"],
+/* Helmet */		"DKoK_GM_Helm_1490th",
+/* Masks */			["DKOKTroopMask","DKOKOffMask","DKOKGrenMask1490th"],
+/* Radiobag */	"TIOW_Vox_Caster_White2",
+/* Commisar */	["U_TIOW_Comissar_Krieg","TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
+/* Officer */		["DKoK_QM_Uniform_1490th",nil,"DKoK_GM_Helm_1490th","DKOKQMMask"],
+							];
+				};
+				class DeathKoprsKrieg1491st
+				{
+					text = "Imperial - Death Koprs of Krieg 1491st";
+					data = [
+/* Uniform */		"OP_DKoK_GM_Uniform_1491st",
+/* Vest */			["DKoK_Eng_Armor_1491st","DKoK_Gren_Armor_1491st"],
+/* Backpack */	["DKoK_BackPack","DKoK_PlasmaBackPack"],
+/* Helmet */		"DKoK_GM_Helm_1491st",
+/* Masks */			["DKOKTroopMask","DKOKOffMask","DKOKGrenMask1491st"],
+/* Radiobag */	"TIOW_IG_Vox_Caster",
+/* Commisar */	["U_TIOW_Comissar_Krieg","TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
+/* Officer */		["DKoK_QM_Uniform_1491st",nil,"DKoK_GM_Helm_1491st","DKOKQMMask"],
+							];
+				};
+				class MordianIronGuard
+				{
+					text = "Imperial - Mordian Iron Guard";
+					data = [
+/* Uniform */		"U_TIOW_Mordian_Blu",
+/* Vest */			"TIOW_Mordian_Belt",
+/* Backpack */	"TIOW_CadBackpack",
+/* Helmet */		["TIOW_Mordian_Cap_2","TIOW_Valhallan_Helmet","TIOW_Mordian_Cap"],
+/* Radiobag */	"TIOW_Vox_Caster_White2",
+/* Commisar */	["U_TIOW_Comissar_Mord","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["U_TIOW_Mordian_Officer_Blu","TIOW_Mordian_Belt","TIOW_Mordian_Cap_3"],
+							];
 				};
 			};
 

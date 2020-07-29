@@ -2,6 +2,11 @@ waituntil {!isNil 'lt_camo_var'};
 
 if (hasInterface) then {
 
+	_rangerCamoArray = ["ML700_Skitarii_Uniform","ML700_Skitarii_Ranger_Armor","ML700_Skitarii_Rucksack","ML700_Skitarii_Ranger_Helmet"];
+	_priestCamoArray = ["U_TIOW_Priest","TIOW_Priest_Gear","","TIOW_Priest_Hood"];
+	_sistersCamoArray = ["ML700_SoB_Uniform1","ML700_SoB_Armor0","ML700_SoB_Backpack","ML700_SoB_Helmet1"];
+	_sistersMedicArray = ["ML700_SoB_Uniform1","ML700_SoB_Armor2","ML700_SoB_Hospitaller_Backpack","ML700_SoB_Helmet3"];
+
 	_lt_camo_var_array = switch (side player) do {
 		case WEST: {call compile lt_camo_var};
 		case EAST: {if (isNil "LT_Camo_var_OPF") then {call compile lt_camo_var} else {call compile LT_Camo_var_OPF};};
