@@ -33,7 +33,7 @@ class LT_UK_para {name="GREENFOR - UK - Paratroopers"; value="LT_UK_para";};
 class LT_UK_paraW {name="GREENFOR - UK - Paratroopers (Winter)"; value="LT_UK_paraW";};
 class LT_UK_army {name="GREENFOR - UK - Army"; value="LT_UK_army";};
 class LT_UK_armyW {name="GREENFOR - UK - Army (Winter)"; value="LT_UK_armyW";};
-class LT_UK_armyW {name="GREENFOR - UK - Army (Dessert)"; value="LT_UK_armyD";};
+class LT_UK_armyD {name="GREENFOR - UK - Army (Dessert)"; value="LT_UK_armyD";};
 class LT_POL_army {name="GREENFOR - POL - Army"; value="LT_POL_army";};
 class LT_FFI {name="GREENFOR - FRA - Resistance (FFI)"; value="LT_FFI";};
 
