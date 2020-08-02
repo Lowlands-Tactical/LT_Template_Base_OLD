@@ -269,6 +269,20 @@ LT_UK_armyW_heli_weightArray = [];
 LT_UK_armyW = [LT_UK_armyW_units,LT_UK_armyW_car,LT_UK_armyW_ifv,LT_UK_armyW_tank,LT_UK_armyW_heli];
 LT_UK_armyW_weights = [];
 
+// UK Army (Dessert)
+LT_UK_armyD_units = ["LIB_UK_DR_AT_Soldier","LIB_UK_DR_LanceCorporal","LIB_UK_DR_Corporal","LIB_UK_DR_Engineer","LIB_UK_DR_Grenadier","LIB_UK_DR_Medic","LIB_UK_DR_Officer","LIB_UK_DR_Radioman","LIB_UK_DR_Rifleman","LIB_UK_DR_Sergeant","LIB_UK_DR_Sniper"];
+LT_UK_armyD_units_weightArray = [];
+LT_UK_armyD_car = ["LIB_UK_DR_Willys_MB_Hood","LIB_UK_DR_Willys_MB_M1919","LIB_UniversalCarrier_dessert"];
+LT_UK_armyD_car_weightArray = [];
+LT_UK_armyD_ifv = ["LIB_UK_DR_M3_Halftrack","LIB_UK_DR_M3_Halftrack","fow_v_cromwell_uk"];
+LT_UK_armyD_ifv_weightArray = [];
+LT_UK_armyD_tank = ["LIB_UK_DR_M4A3_75","LIB_Churchill_Mk7_dessert","LIB_Churchill_Mk7_Howitzer_dessert","LIB_Churchill_Mk7_AVRE_dessert"];
+LT_UK_armyD_tank_weightArray = [];
+LT_UK_armyD_heli = [];
+LT_UK_armyD_heli_weightArray = [];
+LT_UK_armyD = [LT_UK_armyD_units,LT_UK_armyD_car,LT_UK_armyD_ifv,LT_UK_armyD_tank,LT_UK_armyD_heli];
+LT_UK_armyD_weights = [];
+
 // Polish Army
 LT_POL_army_units = ["LIB_WP_Strzelec","LIB_WP_AT_grenadier","LIB_WP_Mgunner","LIB_WP_Medic","LIB_WP_Radioman","LIB_WP_Starszy_strzelec","LIB_WP_Strzelec","LIB_WP_Sapper","LIB_WP_Starszy_sapper","LIB_WP_Porucznic","LIB_WP_Sierzant","LIB_WP_Sniper","LIB_WP_Stggunner"];
 LT_POL_army_units_weightArray = [];
