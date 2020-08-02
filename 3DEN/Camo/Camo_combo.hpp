@@ -366,7 +366,7 @@ class LT_Camo_combo: Title
 					["B_LIB_DAK_A_frame","B_LIB_GER_BackPack"],
 					["H_LIB_DAK_Helmet","H_LIB_DAK_Helmet_Glasses","H_LIB_DAK_Helmet_Net"],
 					"B_LIB_GER_Radio_ACRE2",
-					["MEDIC_UNI","MEDIC_VEST","MEDIC_BACKPACK","MEDIC_HEMLET"]
+					["U_LIB_DAK_Medic","V_LIB_DAK_VestKar98","B_LIB_GER_MedicBackpack","H_LIB_DAK_Helmet"]
 								];
 				};
 				class Germany_Sturmtroopers
