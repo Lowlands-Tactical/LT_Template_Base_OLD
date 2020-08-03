@@ -1,7 +1,7 @@
 private ["_staff"];
 
 // Flendurs, SvenBrandt99, SkullFinger
-staff = ["76561197972110272","76561198069718715","76561197992586763"];
+_staff = ["76561197972110272","76561198069718715","76561197992586763"];
 
 // if (serverCommandAvailable "#kick" or getPlayerUID player == "76561197972132272" or getPlayerUID player == "76561198023151588" or getPlayerUID player == "76561197972110272") then
 if (serverCommandAvailable "#kick" or getPlayerUID player in _staff) then
