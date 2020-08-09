@@ -65,9 +65,13 @@ _glflarered = if (isNil "lt_template_glflarered") then {"UGL_FlareRed_F"} else {
 _glflareyellow = if (isNil "lt_template_glflareyellow") then {"UGL_FlareYellow_F"} else {lt_template_glflareyellow};
 _glflaregreen = if (isNil "lt_template_glflaregreen") then {"UGL_FlareGreen_F"} else {};
 
-// Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner, Grenadier)
+// Pistols (DC, Automatic Rifleman, Medium MG Gunner, Grenadier)
 _pistol = if (isNil "lt_template_pistol") then {"hgun_P07_F"} else {lt_template_pistol};
 _pistolmag = if (isNil "lt_template_pistolmag") then {"16Rnd_9x21_Mag"} else {lt_template_pistolmag};
+
+// Heavier Pistol (Commander, Commisar)
+_bigPistol = if (isNil "lt_template_big_pistol") then {"hgun_P07_F"} else {lt_template_big_pistol};
+_bigPistolmag = if (isNil "lt_template_big_pistolmag") then {"16Rnd_9x21_Mag"} else {lt_template_big_pistolmag};
 
 // Grenades
 _grenade = if (isNil "lt_template_grenade") then {"HandGrenade"} else {lt_template_grenade};
@@ -124,6 +128,9 @@ _watch = if (isNil "lt_template_watch") then {"ItemWatch"} else {lt_template_wat
 
 _spade = if (isNil "lt_template_spade") then {"ACE_EntrenchingTool"} else {lt_template_spade};
 
+_PlasmaCoolantL = if (isNil "lt_template_PlasmaCoolantL") then {"ML700_L_Plasma_Coolant"} else {lt_template_PlasmaCoolantL};
+_PlasmaCoolantS = if (isNil "lt_template_PlasmaCoolantS") then {"ML700_S_Plasma_Coolant"} else {lt_template_PlasmaCoolantS};
+
 // Backpacks
 _TypeName = typename (_lt_camo_var_array select 2);
 _CamoVarBag = _lt_camo_var_array select 2;
@@ -157,11 +164,6 @@ _AR = if (isNil "lt_template_AR") then {"arifle_MX_SW_F"} else {lt_template_AR};
 _ARmag = if (isNil "lt_template_ARmag") then {"100Rnd_65x39_caseless_mag"} else {lt_template_ARmag};
 _ARmag_tr = if (isNil "lt_template_ARmag_tr") then {"100Rnd_65x39_caseless_mag_Tracer"} else {lt_template_ARmag_tr};
 
-// Medium MG
-_MMG = if (isNil "lt_template_MMG") then {"NLD_MAG"} else {lt_template_MMG};
-_MMGmag = if (isNil "lt_template_MMGmag") then {"150Rnd_762x51_Box"} else {lt_template_MMGmag};
-_MMGmag_tr = if (isNil "lt_template_MMGmag_tr") then {"150Rnd_762x51_Box_Tracer"} else {lt_template_MMGmag_tr};
-
 // Marksman rifle
 _DMrifle = if (isNil "lt_template_DMrifle") then {"arifle_MXM_F"} else {lt_template_DMrifle};
 _DMriflemag = if (isNil "lt_template_DMriflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_DMriflemag};
@@ -171,19 +173,46 @@ _RAT = if (isNil "lt_template_RAT") then {"launch_NLAW_F"} else {lt_template_RAT
 _RATmag1 = if (isNil "lt_template_RATmag1") then {""} else {lt_template_RATmag1};
 _RATmag2 = if (isNil "lt_template_RATmag2") then {""} else {lt_template_RATmag2};
 
-// Medium AT
-_MAT = if (isNil "lt_template_MAT") then {"launch_MRAWS_olive_F"} else {lt_template_MAT};
-_MATmag1 = if (isNil "lt_template_MATmag1") then {"MRAWS_HEAT_F"} else {lt_template_MATmag1};
-_MATmag2 = if (isNil "lt_template_MATmag2") then {"MRAWS_HE_F"} else {lt_template_MATmag2};
+// Plasma rifle
+_PlasmaRifle = if (isNil "lt_template_PlasmaRifle") then {"arifle_MXM_F"} else {lt_template_PlasmaRifle};
+_PlasmaRifleMag = if (isNil "lt_template_PlasmaRifleMag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_PlasmaRifleMag};
+_PlasmaRifleMag_tr = if (isNil "lt_template_PlasmaRifleMag_tr") then {"30Rnd_65x39_caseless_mag"} else {lt_template_PlasmaRifleMag_tr};
 
-// Heavy AT
-_HAT = if (isNil "lt_template_HAT") then {"launch_B_Titan_short_F"} else {lt_template_HAT};
-_HATmag1 = if (isNil "lt_template_HATmag1") then {"Titan_AT"} else {lt_template_HATmag1};
-_HATmag2 = if (isNil "lt_template_HATmag2") then {"Titan_AP"} else {lt_template_HATmag2};
+// Plasma pistol
+_PlasmaPistol = if (isNil "lt_template_PlasmaPistol") then {"arifle_MXM_F"} else {lt_template_PlasmaPistol};
+_PlasmaPistolMag = if (isNil "lt_template_PlasmaPistolMag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_PlasmaPistolMag};
+_PlasmaPistolMag_tr = if (isNil "lt_template_PlasmaPistolMag_tr") then {"30Rnd_65x39_caseless_mag"} else {lt_template_PlasmaPistolMag_tr};
 
-// Sniper
-_SNrifle = if (isNil "lt_template_SNrifle") then {"srifle_LRR_F"} else {lt_template_SNrifle};
-_SNrifleMag = if (isNil "lt_template_SNrifleMag") then {"7Rnd_408_Mag"} else {lt_template_SNrifleMag};
+// Flamer
+_Flamer = if (isNil "lt_template_Flamer") then {"arifle_MXM_F"} else {lt_template_Flamer};
+_FlamerMag = if (isNil "lt_template_FlamerMag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_FlamerMag};
+
+// Marksman rifle
+_DMrifle = if (isNil "lt_template_DMrifle") then {"arifle_MXM_F"} else {lt_template_DMrifle};
+_DMriflemag = if (isNil "lt_template_DMriflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_DMriflemag};
+
+// Shotgun
+_Shotrifle = if (isNil "lt_template_Shotrifle") then {"arifle_MXM_F"} else {lt_template_Shotrifle};
+_ShotrifleMag = if (isNil "lt_template_ShotrifleMag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_ShotrifleMag};
+
+// Marksman rifle
+_DMrifle = if (isNil "lt_template_DMrifle") then {"arifle_MXM_F"} else {lt_template_DMrifle};
+_DMriflemag = if (isNil "lt_template_DMriflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_DMriflemag};
+
+// Grenade Launcher
+_GrenLauncher = if (isNil "lt_template_GrenLauncher") then {"lt_template_glrifle"} else {lt_template_GrenLauncher};
+_GrenLauncherMag = if (isNil "lt_template_GrenLauncherMag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_GrenLauncherMag};
+_GrenLauncherMag_AT = if (isNil "lt_template_GrenLauncherMag_AT") then {"1Rnd_HE_Grenade_shell"} else {lt_template_GrenLauncherMag_AT};
+_GrenLauncherMag_Bck = if (isNil "lt_template_GrenLauncherMag_Bck") then {"1Rnd_HE_Grenade_shell"} else {lt_template_GrenLauncherMag_Bck};
+_GrenLauncherMag_Smk = if (isNil "lt_template_GrenLauncherMag_Smk") then {"1Rnd_HE_Grenade_shell"} else {lt_template_GrenLauncherMag_Smk};
+_GrenLauncherMag_Flr = if (isNil "lt_template_GrenLauncherMag_Flr") then {"1Rnd_HE_Grenade_shell"} else {lt_template_GrenLauncherMag_Flr};
+_GrenLauncherMag_Flm = if (isNil "lt_template_GrenLauncherMag_Flm") then {"1Rnd_HE_Grenade_shell"} else {lt_template_GrenLauncherMag_Flm};
+
+// Special Guns
+_Speshalrifle = if (isNil "lt_template_Speshalrifle") then {"arifle_MXM_F"} else {lt_template_Speshalrifle};
+_Speshalriflemag = if (isNil "lt_template_SpeshalrifleMag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_SpeshalrifleMag};
+_Speshalriflemag_tr = if (isNil "lt_template_SpeshalrifleMag_tr") then {"30Rnd_65x39_caseless_mag"} else {lt_template_SpeshalrifleMag_tr};
+
 
 // Engineer items
 _ATmine = if (isNil "lt_template_ATmine") then {"ATMine_Range_Mag"} else {lt_template_ATmine};

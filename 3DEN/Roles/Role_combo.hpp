@@ -27,9 +27,29 @@ class LT_role_combo: Title
 					text = "Commander";
 					data = "co";
 				};
+				class LT_Role_COPLAS {
+					text = "Commander /w Plasma";
+					data = "coplas";
+				};
+				class LT_Role_COM {
+					text = "Commisar";
+					data = "com";
+				};
+				class LT_Role_COM {
+					text = "Commisar /w Plasma";
+					data = "complas";
+				};
+				class LT_Role_PRI {
+					text = "Tech Priest (Engineer/Repair)";
+					data = "pri";
+				};
 				class LT_Role_DC {
 					data = "sql";
 					text = "Squad Leader";
+				};
+				class LT_Role_rad {
+					data = "radio";
+					text = "Radioman";
 				};
 				class LT_Role_M {
 					data = "m";
@@ -51,14 +71,6 @@ class LT_role_combo: Title
 					data = "dm";
 					text = "Designated marksman";
 				};
-				class LT_Role_MMGG {
-					data = "mmgg";
-					text = "Medium mg gunner";
-				};
-				class LT_Role_MMGAG {
-					data = "mmgag";
-					text = "Medium mg assistant";
-				};
 				class LT_Role_HMGG {
 					data = "hmgg";
 					text = "Heavy MG gunner (Static)";
@@ -67,21 +79,21 @@ class LT_role_combo: Title
 					data = "hmgag";
 					text = "Heavy MG assistant gunner (Static)";
 				};
-				class LT_Role_MATG {
+				class LT_ROLE_MATG {
 					data = "matg";
 					text = "Medium AT gunner";
 				};
 				class LT_Role_MATAG {
 					data = "matag";
-					text = "Medium AT assistant";
+					text = "Medium AT assistant gunner";
 				};
 				class LT_ROLE_HATG {
 					data = "hatg";
-					text = "Heavy AT gunner";
+					text = "Heavy AT gunner (Static)";
 				};
 				class LT_Role_HATAG {
 					data = "hatag";
-					text = "Heavy AT assistant gunner";
+					text = "Heavy AT assistant gunner (Static)";
 				};
 				class LT_ROLE_MTRG {
 					data = "mtrg";
@@ -90,14 +102,6 @@ class LT_role_combo: Title
 				class LT_Role_MTRAG {
 					data = "mtrag";
 					text = "Mortar assistant gunner (Static)";
-				};
-				class LT_Role_SN {
-					data = "sn";
-					text = "Sniper";
-				};
-				class LT_Role_SP {
-					data = "sp";
-					text = "Spotter";
 				};
 				class LT_Role_VC {
 					data = "vc";
@@ -111,25 +115,9 @@ class LT_role_combo: Title
 					data = "vd";
 					text = "Vehicle driver (repair)";
 				};
-				class LT_Role_VL {
-					data = "vl";
-					text = "Vehicle Loader";
-				};
-				class LT_Role_VR {
-					data = "vr";
-					text = "Vehicle Radioman";
-				};
 				class LT_Role_PP {
 					data = "pp";
 					text = "Air vehicle pilot / co-pilot";
-				};
-				class LT_Role_PCC {
-					data = "pcc";
-					text = "Air vehicle co-pilot (repair) / crew chief (repair)";
-				};
-				class LT_Role_PC {
-					data = "pc";
-					text = "Air vehicle crew";
 				};
 				class LT_Role_ENG {
 					data = "eng";
@@ -140,8 +128,8 @@ class LT_role_combo: Title
 					text = "Engineer (mines)";
 				};
 				class LT_Role_UAV {
-					data = "radio";
-					text = "Radioman";
+					data = "uav";
+					text = "UAV Operator";
 				};
 				class LT_Role_R {
 					data = "r";
@@ -151,21 +139,25 @@ class LT_role_combo: Title
 					data = "rg";
 					text = "Rifleman Grenadier";
 				};
-				class LT_Role_CAR {
-					data = "car";
-					text = "Carabineer";
-				};
-				class LT_Role_SMG {
-					data = "smg";
-					text = "Submachinegunner";
-				};
 				class LT_Role_GREN {
 					data = "gren";
-					text = "Grenadier";
+					text = "Grenadier (Primary Grenadlauncher /w fun nades and sidearm)";
 				};
 				class LT_Role_FLAMETH {
 					data = "flameth";
 					text = "Flamethrower";
+				};
+				class LT_Role_SHOT {
+					data = "shot";
+					text = "Shotgunner";
+				};
+				class LT_Role_PLASMAG {
+					data = "plasmag";
+					text = "Plasma Gunner";
+				};
+				class LT_Role_PLASMAAG {
+					data = "plasmaag";
+					text = "Plasma Assistant Gunner";
 				};
 			};
 		};

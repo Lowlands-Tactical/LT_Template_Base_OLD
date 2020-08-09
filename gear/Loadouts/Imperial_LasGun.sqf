@@ -6,8 +6,8 @@ lt_template_attach1        	 = 	 "";
 lt_template_attach2        	 = 	 ""; // flashlight
 lt_template_silencer1      	 = 	 ""; // rifles
 lt_template_silencer2      	 = 	 ""; // MG
-lt_template_scope1         	 = 	 ""; // normal scope
-lt_template_scope2         	 = 	 ""; // scope sniper
+lt_template_scope1         	 = 	 "ML700_Lasgun_CarryHandle"; // normal scope
+lt_template_scope2         	 = 	 "ML700_Longlas_Scope"; // marksman scope
 lt_template_scope3         	 = 	 "";
 lt_template_bipod1         	 = 	 ""; // MG
 lt_template_bipod2         	 = 	 "";
@@ -19,77 +19,95 @@ lt_template_hg_scope1      	 = 	 "";
 lt_template_hg_attachments   = 	 [];
 
 // Assistant Automatic Rifleman, Medium MG assistant, Rifleman, Medic
-lt_template_rifle          	 = 	 "LIB_FG42G";
-lt_template_riflemag       	 = 	 "LIB_20Rnd_792x57";
-lt_template_riflemag_t     	 = 	 "LIB_20Rnd_792x57";
+lt_template_rifle        = 	 "ML700_Lasgun_Aquila_Rifle";
+lt_template_riflemag       	 = 	 "ML700_Lasgun_Rifle_B_50_Battery";
+lt_template_riflemag_t     	 = 	 "ML700_Lasgun_Rifle_B_50_Battery";
 
 // Rifle grenadier
-lt_template_glrifle        	 = 	 "LIB_K98_GW";
-lt_template_glrifle_attach	 = 	 "LIB_ACC_GW_SB_Empty";
-lt_template_glriflemag     	 = 	 "LIB_5Rnd_792x57";
-lt_template_glriflemag_tr    = 	 "LIB_5Rnd_792x57_t";
-lt_template_glmag          	 = 	 "LIB_1Rnd_G_SPRGR_30";
-lt_template_glmag_at       	 = 	 "LIB_1Rnd_G_PZGR_40";
+lt_template_glrifle      = 	 "TIOW_AgripinaaType2_UGL";
+lt_template_glriflemag     	 = 	 "30Rnd_Agrip_mag";
+lt_template_glriflemag_tr    = 	 "30Rnd_Agrip_mag_Tracer";
+lt_template_glmag          	 = 	 "TIOW_1Rnd_HE_Grenade_shell";
 
 // Rifleman At, Radioman
-lt_template_carbine        	 = 	 "LIB_FG42G";
-lt_template_carbinemag     	 = 	 "LIB_20Rnd_792x57";
-lt_template_carbinemag_tr    = 	 "LIB_20Rnd_792x57";
+lt_template_carbine      = 	 "ML700_Lasgun_Aquila_Rifle";
+lt_template_carbinemag     	 = 	 "ML700_Lasgun_Rifle_B_50_Battery";
+lt_template_carbinemag_tr    = 	 "ML700_Lasgun_Rifle_B_50_Battery";
 
-// Commander, Squad Leader
-lt_template_smg					= 	 "LIB_FG42G";
-lt_template_smgmag         	 	= 	 "LIB_20Rnd_792x57";
-lt_template_smgmag_tr      	 	= 	 "LIB_20Rnd_792x57";
+// Squad Lead, Automatic Rifleman, Medium Machinegunner, Designated Marksman, AT-Rifleman
+lt_template_pistol       = 	 "LuciusLaspistolGreen";
+lt_template_pistolmag      	 = 	 "LuciusLaspistol_mag";
 
-// Automatic Rifleman, Medium Machinegunner, Designated Marksman, Sniper, AT-Rifleman
-lt_template_pistol         	 = 	 "LIB_M1908";
-lt_template_pistolmag      	 = 	 "LIB_8Rnd_9x19_P08";
-
-// Commander, Squadleader, Commisar
-lt_template_big_pistol         	 = 	 "LIB_M1908";
-lt_template_big_pistolmag      	 = 	 "LIB_8Rnd_9x19_P08";
+// Commander, Commisar
+lt_template_big_pistol   = 	 "ML700_B_LasPistol_F";
+lt_template_big_pistolmag    = 	 "ML700_Laspistol_B_Battery";
 
 // Automatic Rifleman
-lt_template_AR     	 = 	 "fow_w_mg34";
-lt_template_ARmag          	 = 	 "fow_50Rnd_792x57";
-lt_template_ARmag_tr       	 = 	 "LIB_50Rnd_792x57_sS";
-
-// Medium MG Gunner
-lt_template_MMG    	 = 	 "fow_w_mg42";
-lt_template_MMGmag         	 = 	 "fow_50Rnd_792x57";
-lt_template_MMGmag_tr      	 = 	 "LIB_50Rnd_792x57_sS";
-
-// Heavy MG Gunner
-lt_template_HMG    	 = 	 "fow_w_mg42";
-lt_template_HMGmag         	 = 	 "fow_50Rnd_792x57";
-lt_template_HMGmag_tr      	 = 	 "LIB_50Rnd_792x57_sS";
+lt_template_AR     	     = 	 "ML700_LMG_Stubber_Green";
+lt_template_ARmag          	 = 	 "ML700_Stubber_Drum";
+lt_template_ARmag_tr       	 = 	 "ML700_Stubber_Drum_Green";
 
 // Designated Marksman
-lt_template_DMrifle        	 = 	 "fow_w_k98_scoped";
-lt_template_DMriflemag     	 = 	 "fow_5Rnd_792x57";
+lt_template_DMrifle      = 	 "ML700_Longlas_8Star_Rifle";
+lt_template_DMriflemag     	 = 	 "ML700_Lasgun_Rifle_50_Battery";
 
 // Rifleman AT
-lt_template_RAT 			= "fow_w_pzfaust_60";
-lt_template_RATmag1        	 = 	 "fow_1Rnd_pzfaust_60";
-lt_template_RATmag2        	 = 	 "fow_1Rnd_pzfaust_60";
+lt_template_RAT 			   = "ML700_Launcher_Weapon_TreadFether";
+lt_template_RATmag1        	 = 	 "ML700_40mm_Treadfether_Mag";
+lt_template_RATmag2        	 = 	 "ML700_40mm_Treadfether_Mag";
 
 // Medium AT Gunner, Medium AT Gunner Assistant (alleen magazijnen)
-lt_template_MAT    			 = 	 "LIB_RPzB";
-lt_template_MATmag1        	 = 	 "LIB_1Rnd_RPzB";
-lt_template_MATmag2        	 = 	 "LIB_1Rnd_RPzB";
+lt_template_MAT    			 = 	 "ML700_Launcher_Weapon_LockeLauncher";
+lt_template_MATmag1        	 = 	 "ML700_84mm_HEAT_Locke_Mag";
+lt_template_MATmag2        	 = 	 "ML700_84mm_HEAT_Locke_Mag";
 
-// Sniper
-lt_template_SNrifle             =      "fow_w_k98_scoped";
-lt_template_SNrifleMag          =      "fow_5Rnd_792x57";
+// Plasma Gun
+lt_template_PlasmaRifle    =      "ML700_PlasmaRifle_F";
+lt_template_PlasmaRifleMag     =      "ML700_PlasmaRifle_Battery";
+lt_template_PlasmaRifleMag_tr  =      "ML700_PlasmaRifle_Battery_Overcharged";
+
+// Plasma Pistol
+lt_template_PlasmaPistol    =      "ML700_PlasmaPistol_F";
+lt_template_PlasmaPistolMag     =      "ML700_PlasmaPistol_Battery";
+lt_template_PlasmaPistolMag_tr  =      "ML700_PlasmaPistol_Battery_Overcharged";
+
+// Flamer
+lt_template_Flamer       =      "TIOW_IG_Flamer";
+lt_template_FlamerMag        =      "TIOW_Krieg_Flamer_mag";
+
+// Shotgun
+lt_template_Shotrifle    =      "TIOW_Shotgun";
+lt_template_ShotrifleMag     =      "TIOW_Shotgun_pellets_mag";
+
+// Grenade Launcher (Not all ammo types are required but needed for ammo)
+lt_template_GrenLauncher =      "TIOW_IG_GL";
+lt_template_GrenLauncherMag     =      "TIOW_IG_GL_Frag_mag";
+lt_template_GrenLauncherMag_AT  =      "TIOW_IG_GL_Krak_mag";
+lt_template_GrenLauncherMag_Bck =      "TIOW_IG_GL_Buck_mag";
+lt_template_GrenLauncherMag_Smk =      "TIOW_IG_GL_Smoke_mag";
+lt_template_GrenLauncherMag_Flr =      "TIOW_IG_GL_Flare_mag";
+lt_template_GrenLauncherMag_Flm =      "TIOW_IG_GL_Flame_mag";
+
+// Shotgun
+lt_template_Shotrifle    =      "fow_w_k98_scoped";
+lt_template_ShotrifleMag     =      "fow_5Rnd_792x57";
+
+// Special Gun (Can be anything)
+lt_template_Speshalrifle =      "TIOW_MeltaGun_01";
+lt_template_SpeshalrifleMag  =      "TIOW_Meltagun_Mag";
+lt_template_SpeshalrifleMag_tr  =      "TIOW_Meltagun_Mag";
 
 // Grenades
-lt_template_grenade        	 = 	 "fow_e_m24K_spli";  // Small Nades
-lt_template_Mgrenade       	 = 	 "fow_e_m24_spli";  // Bigger Nades
-lt_template_ATgrenade        = 	 "fow_e_m24_at";  // Anti-Tank Grenades
-lt_template_1grenade       	 = 	 "fow_e_m24";  // Voor eventueele andere nades
-lt_template_2grenade       	 = 	 "fow_e_m24k";  // Voor eventueele andere nades
-lt_template_3grenade       	 = 	 "fow_e_nb39b";  // Voor eventueele andere nades
-lt_template_smokegrenade  	 =   "fow_e_nb39b"; //smoke
+lt_template_grenade        	 = 	 "TIOW_ig_frag_grenade_mag";  // Small Nades
+lt_template_Mgrenade       	 = 	 "ML700_krak_grenade_magazine";  // Bigger Nades, mainly AT
+lt_template_smokegrenade  	 =   "TIOW_ig_smoke_grenade_mag"; //smoke
 
-lt_template_bagmtrg        	 = 	 "LIB_GrWr34_Barrel";
-lt_template_bagmtrag       	 = 	 "LIB_GrWr34_Tripod";
+// MG Bag
+lt_template_baghmgg        	 = 	 "TIOW_IG_Autocannon_Bag1_Blu";
+lt_template_baghmgag         = 	 "TIOW_IG_Autocannon_Bag2_Blu";
+// HAT  Bag
+lt_template_baghatg        	 = 	 "TIOW_IG_Lascannon_Bag1_Blu";
+lt_template_baghatag         = 	 "TIOW_IG_Lascannon_Bag2_Blu";
+// Mortar Bag
+lt_template_bagmtrg        	 = 	 "TIOW_IG_Mortar_Bag1_Blu";
+lt_template_bagmtrag       	 = 	 "TIOW_IG_Mortar_Bag1_Blu";
