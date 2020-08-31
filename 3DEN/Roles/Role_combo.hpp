@@ -155,6 +155,10 @@ class LT_role_combo: Title
 					data = "uav";
 					text = "UAV operator";
 				};
+				class LT_Role_JTAC {
+					data = "jtac";
+					text = "JTAC operator";
+				};
 				class LT_Role_R {
 					data = "r";
 					text = "Rifleman";

@@ -4,7 +4,7 @@ if (hasInterface) then {
   _exclude = _unit getVariable ["LT_camo_exclude", 0];
   _nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
 
-  _RolesArray = ["custom","co","dc","m","ftl","ar","aar","rat","dm","mmgg","mmgag","hmgg","hmgag","matg","matag","hatg","hatag","mtrg","mtrag","msamg","msamag","hsamg","hsamag","sn","sp","vc","vd","vg","pp","pcc","pc","eng","engm","uav","div","r","car","smg","gren","lvdw"];
+  _RolesArray = ["custom","co","dc","m","ftl","ar","aar","rat","dm","mmgg","mmgag","hmgg","hmgag","matg","matag","hatg","hatag","mtrg","mtrag","msamg","msamag","hsamg","hsamag","sn","sp","vc","vd","vg","pp","pcc","pc","eng","engm","uav","jtac","div","r","car","smg","gren","lvdw"];
 
   diag_log format ["LT Template DEBUG: role is %1 and exclude is %2",_role, _exclude];
   diag_log format ["LT Template DEBUG: setGear.sqf Role in RolesArray: %1", _role IN _RolesArray];
@@ -138,14 +138,14 @@ if (hasInterface) then {
         _unit addmagazines [_smokegrenade,1];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addItemCargoGlobal [_bandages,30];
-        (unitBackpack _unit) addItemCargoGlobal [_elasticbandages,30];
-        (unitBackpack _unit) addItemCargoGlobal [_quikclot,30];
-        (unitBackpack _unit) addItemCargoGlobal [_tourniquet,30];
+        (unitBackpack _unit) addItemCargoGlobal [_bandages,40];
+        (unitBackpack _unit) addItemCargoGlobal [_elasticbandages,40];
+        (unitBackpack _unit) addItemCargoGlobal [_quikclot,40];
+        (unitBackpack _unit) addItemCargoGlobal [_tourniquet,12];
         (unitBackpack _unit) addItemCargoGlobal [_splint,15];
-        (unitBackpack _unit) addItemCargoGlobal [_morphine,15];
-        (unitBackpack _unit) addItemCargoGlobal [_epinephrine,10];
-        (unitBackpack _unit) addItemCargoGlobal [_bloodbags,4];
+        (unitBackpack _unit) addItemCargoGlobal [_morphine,30];
+        (unitBackpack _unit) addItemCargoGlobal [_epinephrine,20];
+        (unitBackpack _unit) addItemCargoGlobal [_bloodbags,5];
         (unitBackpack _unit) addItemCargoGlobal [_plasmaIV,5];
         (unitBackpack _unit) addItemCargoGlobal [_saline,8];
         (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 7];
@@ -628,6 +628,27 @@ if (hasInterface) then {
         _unit linkItem _uavterminal;
         //["uav"] call _backpack;
         _unit addBackpack _baguav;
+      };
+
+    // LOADOUT: JTAC OPERATOR
+      case "jtac":
+      {
+        _unit addweapon _glrifle;
+        _unit addmagazines [_glriflemag,7];
+        _unit addmagazines [_glriflemag_tr,2];
+        _unit addmagazines [_glsmokewhite,2];
+        _unit addmagazines [_glsmokegreen,2];
+        _unit addmagazines [_glsmokered,2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+        _unit addmagazines [_smokegrenade,2];
+        _unit addmagazines [_smokegrenadegreen,2];
+        _unit addmagazines [_grenade,1];
+        _unit addmagazines [_mgrenade,1];
+
+        _unit linkItem _uavterminal;
+        _unit addWeapon _laserdesignator;
+        _unit addmagazines _laserdesignatorBattery;
       };
 
     // LOADOUT: Diver
