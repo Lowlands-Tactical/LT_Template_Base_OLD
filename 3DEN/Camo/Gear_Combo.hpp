@@ -179,7 +179,7 @@ class LT_Gear_combo: Title
 					data = "\lt_template_base\gear\Loadouts\Spetz_2035.sqf";
 				};
 				class LT_Gear_Spetz_2035_Arid
-				{{
+				{
 					text = "Spetsnaz 2035 - AK-15 Arid";
 					data = "\lt_template_base\gear\Loadouts\Spetz_2035_Arid.sqf";
 				};
