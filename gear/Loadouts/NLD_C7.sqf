@@ -53,7 +53,7 @@ lt_template_DMrifle = "arifle_SPAR_03_blk_F";
 lt_template_DMriflemag = "20Rnd_762x51_Mag";
 
 // Rifleman AT
-lt_template_RAT = "launch_NLAW_F";
+lt_template_RAT = "CUP_launch_HCPF3";
 
 // Medium AT Gunner, Medium AT Gunner Assistant (alleen magazijnen)
 lt_template_MAT = "launch_B_Titan_short_tna_F";

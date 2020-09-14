@@ -140,10 +140,25 @@ class LT_Camo_combo: Title
           text = "CSAT (Tanoa - Viper)";
           data = ["U_O_V_Soldier_Viper_hex_F","CUP_V_PMC_IOTV_Coyote_Patrol","B_ViperHarness_ghex_M_F","H_HelmetO_ViperSP_hex_F","tf_rt1523g_big_bwmod"];
         };
+        class LT_Spetz_2035
+        {
+          text = "Spetsnaz 2035 - Lush";
+          data = ["U_O_R_Gorka_01_camo_F",["V_SmershVest_01_F","V_SmershVest_01_radio_F"],["B_FieldPack_taiga_RPG_AT_F","B_AssaultPack_wdl_F","B_Carryall_wdl_F"],["H_HelmetAggressor_cover_taiga_F","H_HelmetAggressor_F"],"B_RadioBag_01_wdl_F"];
+        };
+        class LT_Spetz_2035_Arid
+        {
+          text = "Spetsnaz 2035 - Arid";
+          data = ["U_O_R_Gorka_01_brown_F","V_HarnessOGL_gry","B_Carryall_cbr","H_HelmetAggressor_cover_F","B_RadioBag_01_eaf_F"];
+        };
         class LT_AAF
         {
           text = "AAF";
           data = [["U_I_CombatUniform","U_I_OfficerUniform","U_I_CombatUniform_shortsleeve"],"V_PlateCarrierIA2_dgtl","B_Carryall_oli",["H_HelmetIA_camo","H_HelmetIA"],"tf_rt1523g_big"];
+        };
+        class LT_LDF
+        {
+          text = "LDF";
+          data = ["U_I_E_Uniform_01_F",["V_CarrierRigKBT_01_heavy_EAF_F","V_CarrierRigKBT_01_light_EAF_F","V_CarrierRigKBT_01_EAF_F"],"B_Carryall_eaf_IEAmmo_F",["H_HelmetHBK_ear_F","H_HelmetHBK_headset_F","H_HelmetHBK_chops_F","H_HelmetHBK_F"],"B_RadioBag_01_eaf_F"];
         };
 				class LT_CDF_Desert
 				{
@@ -369,26 +384,6 @@ class LT_Camo_combo: Title
 				{
 					text = "[CIV] Police";
 					data = ["CUP_U_C_Policeman_01","V_TacVestIR_blk","CUP_B_Bergen_BAF","CUP_H_C_Policecap_01","tf_rt1523g_sage"];
-				};
-				class LT_FFA_Sacha
-				{
-					text = "[FFA] Sacha";
-					data = ["U_I_C_Soldier_Bandit_2_F","CUP_V_OI_TKI_Jacket1_03","NLD_Spongebob_Tactical","CUP_H_C_MAGA_01","tf_rt1523g_big_bwmod_tropen"];
-				};
-				class LT_FFA_PingWing
-				{
-					text = "[FFA] PingWing";
-					data = [["CUP_U_C_Suit_01", "CUP_U_C_Suit_02"],["NLD_SF_Vest"],["NLD_SF_Carryall_Empty", "B_AssaultPack_blk"],["NLD_SF_ECH", "H_HelmetB_black"],["tf_rt1523g_black"]];
-				};
-				class LT_FFA_Whistle
-				{
-					text = "[FFA] Whistle";
-					data = [["CUP_U_C_Rocker_01","CUP_U_C_Rocker_02","CUP_U_C_Rocker_03","CUP_U_C_Rocker_04"],"CUP_V_B_IOTV_Rifleman","B_Carryall_oucamo","H_HelmetSpecB_sand","tf_rt1523g_sage"];
-				};
-				class LT_FFA_SVENFIRE99
-				{
-					text = "[FFA] Svenfire99";
-					data = ["U_O_V_Soldier_Viper_F","V_PlateCarrierIAGL_dgtl","B_Bergen_dgtl_F","H_CrewHelmetHeli_I","tf_rt1523g_big_bwmod"];
 				};
 			};
 

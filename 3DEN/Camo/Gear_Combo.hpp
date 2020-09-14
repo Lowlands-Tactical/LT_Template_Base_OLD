@@ -99,15 +99,20 @@ class LT_Gear_combo: Title
 					text = "British";
 					data = "\lt_template_base\gear\Loadouts\UK_L85A2.sqf";
 				};
-				class LT_Gear_DE_G36
+				class LT_Gear_BW_G36
 				{
-					text = "German G36";
-					data = "\lt_template_base\gear\Loadouts\DE_G36.sqf";
+					text = "Bundeswher - G36";
+					data = "\lt_template_base\gear\Loadouts\BW_G36.sqf";
 				};
-				class LT_Gear_DE_G36_WDL
+				class LT_Gear_BW_G36_Fleck
 				{
-					text = "German G36 (Camo)";
-					data = "\lt_template_base\gear\Loadouts\DE_G36_WDL.sqf";
+					text = "Bundeswher - G36 Flecktarn";
+					data = "\lt_template_base\gear\Loadouts\BW_G36_Fleck.sqf";
+				};
+				class LT_Gear_BW_G36_Trop
+				{
+					text = "Bundeswher - G36 Tropentarn";
+					data = "\lt_template_base\gear\Loadouts\BW_G36_Trop.sqf";
 				};
 				class LT_Gear_Czech_BREN
 				{
@@ -168,6 +173,16 @@ class LT_Gear_combo: Title
 					text = "CSAT 2035 (QBZ)";
 					data = "\lt_template_base\gear\Loadouts\CSAT_2035_QBZ.sqf";
 				};
+				class LT_Gear_Spetz_2035
+				{
+					text = "Spetsnaz 2035 - AK-15 Lush";
+					data = "\lt_template_base\gear\Loadouts\Spetz_2035.sqf";
+				};
+				class LT_Gear_Spetz_2035_Arid
+				{{
+					text = "Spetsnaz 2035 - AK-15 Arid";
+					data = "\lt_template_base\gear\Loadouts\Spetz_2035_Arid.sqf";
+				};
 				class LT_Gear_AAF_2035
 				{
 					text = "AAF 2035";
@@ -177,6 +192,26 @@ class LT_Gear_combo: Title
 				{
 					text = "Guerilla 2035";
 					data = "\lt_template_base\gear\Loadouts\FIA_2035.sqf";
+				};
+				class LT_Gear_MSBS_Grot
+				{
+					text = "LDF 2035 MSBS Grot";
+					data = "\lt_template_base\gear\Loadouts\MSBS_Grot.sqf";
+				};
+				class LT_Gear_MSBS_Grot_Sand
+				{
+					text = "LDF 2035 MSBS Grot Sand";
+					data = "\lt_template_base\gear\Loadouts\MSBS_Grot_Sand.sqf";
+				};
+				class LT_Gear_MSBS_Grot_Camo
+				{
+					text = "LDF 2035 MSBS Grot Camo";
+					data = "\lt_template_base\gear\Loadouts\MSBS_Grot_Camo.sqf";
+				};
+				class LT_Gear_MSBS_Grot_Black
+				{
+					text = "LDF 2035 MSBS Grot Black";
+					data = "\lt_template_base\gear\Loadouts\MSBS_Grot_Black.sqf";
 				};
 			};
 		};

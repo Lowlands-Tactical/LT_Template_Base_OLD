@@ -5,13 +5,20 @@ _lt_camo_var_array = call compile lt_camo_var;
 // ATTACHMENTS - PRIMARY
 _attach1 = if (isNil "lt_template_attach1") then {"acc_pointer_IR"} else {lt_template_attach1};		// IR Laser
 _attach2 = if (isNil "lt_template_attach2") then {"acc_flashlight"} else {lt_template_attach2};		// Flashlight
+_attachDM = if (isNil "lt_template_attachDM") then {"acc_pointer_IR"} else {lt_template_attachDM};		// DM
+_attachSNP = if (isNil "lt_template_attachSNP") then {"acc_pointer_IR"} else {lt_template_attachSNP};		// Sniper
 
 _silencer1 = if (isNil "lt_template_silencer1") then {"muzzle_snds_M"} else {lt_template_silencer1};	// 5.56 suppressor
 _silencer2 = if (isNil "lt_template_silencer2") then {"muzzle_snds_H"} else {lt_template_silencer2}; 	// 6.5 suppressor
+_silencerDM = if (isNil "lt_template_silencerDM") then {""} else {lt_template_silencerDM};	// DM
+_silencerSNP = if (isNil "lt_template_silencerSNP") then {""} else {lt_template_silencerSNP}; 	// Sniper
 
-_scope1 = if (isNil "lt_template_scope1") then {"CUP_optic_CompM4"} else {lt_template_scope1};  	// Fuck you Willem
+_scope1 = if (isNil "lt_template_scope1") then {"CUP_optic_CompM4"} else {lt_template_scope1};  	// Comp M4
 _scope2 = if (isNil "lt_template_scope2") then {"optic_DMS"} else {lt_template_scope2};				// De optic ding
 _scope3 = if (isNil "lt_template_scope3") then {"optic_SOS"} else {lt_template_scope3}; 			// SOS Scope - 18x - 75x
+_scopeRAT = if (isNil "lt_template_RAT_attachment") then {""} else {lt_template_RAT_attachment};  	// Scope voor RAT
+_scopeMAT = if (isNil "lt_template_MAT_attachment") then {""} else {lt_template_MAT_attachment};  	// Scope voor MAT
+_scopeHAT = if (isNil "lt_template_MAT_attachment") then {""} else {lt_template_MAT_attachment};  	// Scope voor HAT
 
 _bipod1 = if (isNil "lt_template_bipod1") then {"bipod_01_F_snd"} else {lt_template_bipod1};		// Default bipod
 _bipod2 = if (isNil "lt_template_bipod2") then {"bipod_02_F_blk"} else {lt_template_bipod2};		// Black bipod
