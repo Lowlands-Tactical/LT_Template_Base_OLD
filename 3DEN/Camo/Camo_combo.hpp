@@ -98,7 +98,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["U_TIOW_Comissar_Valhallan",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
-				class Valhallans
+				class ValhallansWinter
 				{
 					text = "Imperial - Valhallans Winter";
 					data = [
