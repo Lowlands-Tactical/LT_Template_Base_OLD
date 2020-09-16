@@ -35,7 +35,7 @@ class LT_role_combo: Title
 					text = "Commisar";
 					data = "com";
 				};
-				class LT_Role_COM {
+				class LT_Role_COMwP {
 					text = "Commisar /w Plasma";
 					data = "complas";
 				};
