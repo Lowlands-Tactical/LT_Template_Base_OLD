@@ -4,7 +4,7 @@
 // Attachments Primary weapon
 lt_template_attach1        	 = 	 "COLT_Flashlight_Tan"; // ir laser
 lt_template_attach2        	 = 	 "Colt_laser_pointer_tan"; // flashlight
-lt_template_silencer1      	 = 	 "colt_suppressor_black";
+lt_template_silencer1      	 = 	 "";
 lt_template_silencer2      	 = 	 "";
 lt_template_scope1         	 = 	 "colt_scope_down";
 lt_template_bipod2         	 = 	 "colt_grip";
