@@ -41,17 +41,17 @@ class LT_Gear_combo: Title
 				};
 				class LT_Gear_NLD_C7s
 				{
-					text = "NLD C7";
+					text = "NLD C7 Silenced";
 					data = "\lt_template_base\gear\Loadouts\NLD_C7s.sqf";
 				};
 				class LT_Gear_NLD_C8
 				{
-					text = "NLD C7";
+					text = "NLD C8";
 					data = "\lt_template_base\gear\Loadouts\NLD_C8.sqf";
 				};
-				class LT_Gear_NLD_C8
+				class LT_Gear_NLD_C8s
 				{
-					text = "NLD C7";
+					text = "NLD C8 Silenced";
 					data = "\lt_template_base\gear\Loadouts\NLD_C8s.sqf";
 				};
 				class LT_Gear_NLD_DSI
