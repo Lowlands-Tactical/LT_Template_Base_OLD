@@ -2,12 +2,12 @@
 // loadout name "NLD C7 Silenced"
 
 // Attachments Primary weapon
-lt_template_attach1        	 = 	 "COLT_Flashlight_Tan"; // ir laser
-lt_template_attach2        	 = 	 "Colt_laser_pointer_tan"; // flashlight
+lt_template_attach1        	 = 	 "Colt_laser_pointer_tan"; // ir laser
+lt_template_attach2        	 = 	 "COLT_Flashlight_Tan"; // flashlight
 lt_template_silencer1      	 = 	 "colt_suppressor_black";
 lt_template_silencer2      	 = 	 "";
 lt_template_scope1         	 = 	 "colt_scope_down";
-lt_template_bipod2         	 = 	 "colt_grip";
+lt_template_bipod1         	 = 	 "colt_grip";
 lt_template_attachments    	 = 	 [lt_template_scope1,lt_template_silencer1];
 
 // Assistant Automatic Rifleman, Medium MG assistant, UAV Operator, Rifleman
