@@ -69,6 +69,8 @@ if (hasInterface) then {
     _unit addItem _tourniquet;
     _unit addItem _tourniquet;
     _unit addItem _tourniquet;
+    _unit addItem _cabletie;
+    _unit addItem _cabletie;
     _unit linkItem _map;        // Add and equip the map
     _unit linkItem _compass;      // Add and equip a compass
     _unit linkItem _radio;        // Add and equip A3's default radio
