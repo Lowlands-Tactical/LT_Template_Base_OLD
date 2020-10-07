@@ -5,10 +5,10 @@
 lt_template_attach1        	 = 	 "acc_pointer_IR"; // ir laser
 lt_template_attach2        	 = 	 "acc_flashlight"; // flashlight
 lt_template_silencer1      	 = 	 ""; // rifles
-lt_template_silencer2      	 = 	 ""; // AR
+lt_template_silencerSMG      	 = 	 ""; // AR
 lt_template_scope1         	 = 	 "CUP_optic_HoloWdl"; // normal scope
-lt_template_scope2         	 = 	 "CUP_optic_SB_11_4x20_PM"; // scope DM
-lt_template_scope3         	 = 	 ""; // Scope Sniper
+lt_template_scopeSNP         = 	 "CUP_optic_SB_11_4x20_PM"; // Sniper Scope
+lt_template_scopeDM          = 	 ""; // DM Scope
 lt_template_bipod1         	 = 	 "bipod_01_F_blk"; // Bipod
 lt_template_bipod2         	 = 	 ""; // Black Bipod
 lt_template_attachments    	 = 	 [lt_template_attach1, lt_template_scope1];
@@ -69,7 +69,7 @@ lt_template_RAT = "CUP_launch_HCPF3";
 
 // Medium AT Gunner, Medium AT Gunner Assistant (alleen magazijnen)
 lt_template_MAT    	 = 	 "CUP_launch_MAAWS";
-lt_template_MAT_attachment   =   "CUP_optic_MAAWS_Scope";
+lt_template_MAT_scope   =   "CUP_optic_MAAWS_Scope";
 lt_template_MATmag1        	 = 	 "CUP_MAAWS_HEAT_M";
 lt_template_MATmag2        	 = 	 "CUP_MAAWS_HEAT_M";
 

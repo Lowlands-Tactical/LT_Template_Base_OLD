@@ -5,10 +5,10 @@
 lt_template_attach1        	 = 	 "ACE_acc_pointer_green"; // ir laser
 lt_template_attach2        	 = 	 "CUP_acc_Flashlight"; // flashlight
 lt_template_silencer1      	 = 	 "muzzle_snds_570"; // rifles
-lt_template_silencer2      	 = 	 ""; // MG
+lt_template_silencerSMG      	 = 	 ""; // MG
 lt_template_scope1         	 = 	 "CUP_optic_HoloBlack"; // normal scope
-lt_template_scope2         	 = 	 ""; // scope sniper
-lt_template_scope3         	 = 	 "";
+lt_template_scopeSNP         = 	 ""; // Sniper Scope
+lt_template_scopeDM          = 	 ""; // DM Scope
 lt_template_bipod1         	 = 	 "bipod_01_F_blk"; // MG
 lt_template_bipod2         	 = 	 "";
 lt_template_attachments    	 = 	 [lt_template_attach1, lt_template_scope1];

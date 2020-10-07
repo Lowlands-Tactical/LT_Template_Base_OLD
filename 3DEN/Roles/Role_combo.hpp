@@ -65,11 +65,11 @@ class LT_role_combo: Title
 				};
 				class LT_Role_HMGG {
 					data = "hmgg";
-					text = "Heavy MG gunner (Static)";
+					text = "Heavy mg gunner";
 				};
 				class LT_Role_HMGAG {
 					data = "hmgag";
-					text = "Heavy MG assistant gunner (Static)";
+					text = "Heavy mg assistant";
 				};
 				class LT_Role_MATG {
 					data = "matg";
@@ -86,6 +86,14 @@ class LT_role_combo: Title
 				class LT_Role_HATAG {
 					data = "hatag";
 					text = "Heavy AT assistant gunner";
+				};
+				class LT_Role_HMGGS {
+					data = "hmggs";
+					text = "Heavy MG gunner (Static)";
+				};
+				class LT_Role_HMGAGS {
+					data = "hmgags";
+					text = "Heavy MG assistant gunner (Static)";
 				};
 				class LT_Role_STATG {
 					data = "STATG";

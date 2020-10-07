@@ -8,13 +8,13 @@ lt_template_attachDM         = 	 "acc_pointer_IR"; // DM
 lt_template_attachSNP        = 	 "CUP_SVD_camo_d"; // Snip
 
 lt_template_silencer1      	 = 	 "muzzle_snds_B_arid_F"; // rifles
-lt_template_silencer2      	 = 	 "muzzle_snds_B_arid_F"; // MG
+lt_template_silencerSMG      	 = 	 "muzzle_snds_B_arid_F"; // MG
 lt_template_silencerDM       = 	 ""; // DM
 lt_template_silencerSNP      = 	 "CUP_muzzle_snds_KZRZP_SVD_desert"; // Snip
 
 lt_template_scope1         	 = 	 "optic_Holosight_arid_F"; // normal scope
-lt_template_scope2         	 = 	 "optic_DMS_weathered_Kir_F"; // DM
-lt_template_scope3         	 = 	 "CUP_optic_PSO_1_1_open"; // Sniper
+lt_template_scopeSNP         = 	 "optic_DMS_weathered_Kir_F"; // Sniper
+lt_template_scopeDM          = 	 "CUP_optic_PSO_1_1_open"; // DM
 
 lt_template_bipod1         	 = 	 "bipod_01_F_blk"; // MG
 lt_template_bipod2         	 = 	 "";

@@ -9,19 +9,21 @@ _attachDM = if (isNil "lt_template_attachDM") then {"acc_pointer_IR"} else {lt_t
 _attachSNP = if (isNil "lt_template_attachSNP") then {"acc_pointer_IR"} else {lt_template_attachSNP};		// Sniper
 
 _silencer1 = if (isNil "lt_template_silencer1") then {"muzzle_snds_M"} else {lt_template_silencer1};	// 5.56 suppressor
-_silencer2 = if (isNil "lt_template_silencer2") then {"muzzle_snds_H"} else {lt_template_silencer2}; 	// 6.5 suppressor
+_silencerSMG = if (isNil "lt_template_silencerSMG") then {""} else {lt_template_silencerSMG}; 	// SMG Sup
 _silencerDM = if (isNil "lt_template_silencerDM") then {""} else {lt_template_silencerDM};	// DM
 _silencerSNP = if (isNil "lt_template_silencerSNP") then {""} else {lt_template_silencerSNP}; 	// Sniper
 
-_scope1 = if (isNil "lt_template_scope1") then {"CUP_optic_CompM4"} else {lt_template_scope1};  	// Comp M4
-_scope2 = if (isNil "lt_template_scope2") then {"optic_DMS"} else {lt_template_scope2};				// De optic ding
-_scope3 = if (isNil "lt_template_scope3") then {"optic_SOS"} else {lt_template_scope3}; 			// SOS Scope - 18x - 75x
-_scopeRAT = if (isNil "lt_template_RAT_attachment") then {""} else {lt_template_RAT_attachment};  	// Scope voor RAT
-_scopeMAT = if (isNil "lt_template_MAT_attachment") then {""} else {lt_template_MAT_attachment};  	// Scope voor MAT
-_scopeHAT = if (isNil "lt_template_MAT_attachment") then {""} else {lt_template_MAT_attachment};  	// Scope voor HAT
+_scope1 = if (isNil "lt_template_scope1") then {"CUP_optic_CompM4"} else {lt_template_scope1};  	// General Scope
+_scopeMG = if (isNil "lt_template_scopeMG") then {"CUP_optic_aimm_CompM4_blk"} else {lt_template_scopeMG};  	// General Scope
+_scopeSNP = if (isNil "lt_template_scopeSNP") then {"optic_SOS"} else {lt_template_scopeSNP};				// Sniper Scope
+_scopeDM = if (isNil "lt_template_scopeDM") then {"optic_DMS"} else {lt_template_scopeDM}; 			// Marksman
+_scopeRAT = if (isNil "lt_template_RAT_scope") then {""} else {lt_template_RAT_scope};  	// Scope voor RAT
+_scopeMAT = if (isNil "lt_template_MAT_scope") then {""} else {lt_template_MAT_scope};  	// Scope voor MAT
+_scopeHAT = if (isNil "lt_template_HAT_scope") then {""} else {lt_template_HAT_scope};  	// Scope voor HAT
 
 _bipod1 = if (isNil "lt_template_bipod1") then {"bipod_01_F_snd"} else {lt_template_bipod1};		// Default bipod
 _bipod2 = if (isNil "lt_template_bipod2") then {"bipod_02_F_blk"} else {lt_template_bipod2};		// Black bipod
+_bipodDM = if (isNil "lt_template_bipodDM") then {"bipod_02_F_blk"} else {lt_template_bipodDM};		// Black bipod
 
 // Default setup
 _attachments = if (isNil "lt_template_attachments") then {[_attach1,_scope1]} else {if (typename lt_template_attachments == "ARRAY") then {lt_template_attachments} else {lt_template_attachments splitstring " ,";};}; // The default attachment set for most units, overwritten in the individual unitType
@@ -192,6 +194,11 @@ _ARmag_tr = if (isNil "lt_template_ARmag_tr") then {"CUP_100Rnd_TE4_Red_Tracer_5
 _MMG = if (isNil "lt_template_MMG") then {"NLD_MAG"} else {lt_template_MMG};
 _MMGmag = if (isNil "lt_template_MMGmag") then {"150Rnd_762x51_Box"} else {lt_template_MMGmag};
 _MMGmag_tr = if (isNil "lt_template_MMGmag_tr") then {"150Rnd_762x51_Box_Tracer"} else {lt_template_MMGmag_tr};
+
+// Heavy MG
+_HMG = if (isNil "lt_template_HMG") then {"NLD_MAG"} else {lt_template_HMG};
+_HMGmag = if (isNil "lt_template_HMGmag") then {"150Rnd_762x51_Box_Tracer"} else {lt_template_HMGmag};
+_HMGmag_tr = if (isNil "lt_template_HMGmag_tr") then {"150Rnd_762x51_Box_Tracer"} else {lt_template_HMGmag_tr};
 
 // Marksman rifle
 _DMrifle = if (isNil "lt_template_DMrifle") then {"NLD_AWM"} else {lt_template_DMrifle};

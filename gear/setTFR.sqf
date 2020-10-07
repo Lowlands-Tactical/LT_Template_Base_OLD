@@ -7,8 +7,7 @@ if (hasInterface) then {
 	};
 
 	_constraint 	= if (typename (_lt_camo_var_array select 0) == "ARRAY") then {selectRandom (_lt_camo_var_array select 0)} else {_lt_camo_var_array select 0};
-	_pack	= _lt_camo_var_array select 2;
-	_radioBag 	= _lt_camo_var_array select 4;
+	_radioBag 	= _lt_camo_var_array select 5;
 
 	// Only execute this when we want it to run.
 

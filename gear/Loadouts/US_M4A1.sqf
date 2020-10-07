@@ -5,7 +5,7 @@
 lt_template_attach1        	 = 	 "CUP_acc_ANPEQ_2"; // ir laser
 lt_template_attach2        	 = 	 "CUP_acc_Flashlight"; // flashlight
 lt_template_silencer1      	 = 	 "CUP_muzzle_snds_M16"; // rifles
-lt_template_silencer2      	 = 	 "muzzle_snds_M"; // MG
+lt_template_silencerSMG      	 = 	 "muzzle_snds_M"; // MG
 lt_template_scope1         	 = 	 "CUP_optic_CompM2_Black"; // normal scope
 lt_template_bipod1         	 = 	 "CUP_bipod_VLTOR_Modpod"; // MG
 lt_template_bipod2         	 = 	 "CUP_bipod_VLTOR_Modpod";
