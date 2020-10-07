@@ -5,7 +5,7 @@
 lt_template_attach1        	 = 	 "Colt_laser_pointer_tan"; // ir laser
 lt_template_attach2        	 = 	 "COLT_Flashlight_Tan"; // flashlight
 lt_template_silencer1      	 = 	 "";
-lt_template_silencerSMG      	 = 	 "";
+lt_template_silencerSMG      = 	 "";
 lt_template_scope1         	 = 	 "colt_scope_down";
 lt_template_scopeMG          = 	 "cup_optic_aimm_compm4_blk";
 lt_template_scopeDM          = 	 "cup_optic_elcan_specterdr_kf_rmr_black";
@@ -32,7 +32,7 @@ lt_template_smgmag_tr = "30Rnd_9x21_Mag_SMG_02_Tracer_Green";
 // Commander, Squadleader, Fireteam leader, Spotter, Grenadier
 lt_template_glrifle    = "weapon_c7NLD_baseGL";
 lt_template_glriflemag    = "30Rnd_556x45_Stanag";
-lt_template_glriflemag_tr = "30Rnd_556x45_Stanag_red";
+lt_template_glriflemag_tr = "30Rnd_556x45_Stanag_green";
 lt_template_glmag         = "1Rnd_HE_Grenade_shell";
 lt_template_glsmokewhite  = "1Rnd_Smoke_Grenade_shell";
 lt_template_glsmokegreen  = "1Rnd_SmokeGreen_Grenade_shell";

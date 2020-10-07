@@ -294,8 +294,8 @@ if (hasInterface) then {
         _unit addmagazines [_smokegrenade,1];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_MMGmag, 3];
-        (unitBackpack _unit) addMagazineCargoGlobal [_MMGmag_tr, 2];
+        (unitBackpack _unit) addMagazineCargoGlobal [_HMGmag, 3];
+        (unitBackpack _unit) addMagazineCargoGlobal [_HMGmag_tr, 2];
         _attachments = [_attach1, _scopeMG];
       };
 
@@ -310,8 +310,8 @@ if (hasInterface) then {
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 7];
-        (unitBackpack _unit) addMagazineCargoGlobal [_MMGmag, 3];
-        (unitBackpack _unit) addMagazineCargoGlobal [_MMGmag_tr, 2];
+        (unitBackpack _unit) addMagazineCargoGlobal [_HMGmag, 3];
+        (unitBackpack _unit) addMagazineCargoGlobal [_HMGmag_tr, 2];
       };
 
     // LOADOUT: MEDIUM AT GUNNER
