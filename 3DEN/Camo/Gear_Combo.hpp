@@ -59,6 +59,11 @@ class LT_Gear_combo: Title
 					text = "NLD DSI";
 					data = "\lt_template_base\gear\Loadouts\NLD_DSI.sqf";
 				};
+				class LT_Gear_NLD_SPESHAL
+				{
+					text = "NLD Specials";
+					data = "\lt_template_base\gear\Loadouts\NLD_SPESHAL.sqf";
+				};
 				class LT_Gear_USM16A2
 				{
 					text = "US M16A2";
@@ -167,6 +172,11 @@ class LT_Gear_combo: Title
 				{
 					text = "PMC XM8";
 					data = "\lt_template_base\gear\Loadouts\PMC_XM8.sqf";
+				};
+				class LT_Gear_PMC_ACR
+				{
+					text = "PMC ACR";
+					data = "\lt_template_base\gear\Loadouts\PMC_ACR.sqf";
 				};
 				class LT_Gear_NATO_2035_MX
 				{
