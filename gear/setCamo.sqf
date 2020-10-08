@@ -37,11 +37,7 @@ if (hasInterface) then {
 			diag_log format ["LT Template DEBUG: _camo: %1 *-* _exclude: %2", _camo, _exclude];
 			_CamoUniform 	= if (typename _camo == "ARRAY") then {[player, selectRandom _camo] call lt_fnc_changeUniform;} else {[player, _camo] call lt_fnc_changeUniform;};
 			_CamoVest 	= if (typename _vest == "ARRAY") then {[player, selectRandom _vest] call lt_fnc_changeVest;} else {[player, _vest] call lt_fnc_changeVest;};
-			if (_role in _roles) then {
-			    _CamoBackpack = if (typename _bigPack == "ARRAY") then {[player, selectRandom _bigPack] call lt_fnc_changeBackpack;} else {[player, _bigPack] call lt_fnc_changeBackpack;};
-			} else {
-					_CamoBackpack = if (typename _smallPack == "ARRAY") then {[player, selectRandom _smallPack] call lt_fnc_changeBackpack;} else {[player, _smallPack] call lt_fnc_changeBackpack;};
-			};
+			_CamoBackpack = if (typename _pack == "ARRAY") then {[player, selectRandom _pack] call lt_fnc_changeBackpack;} else {[player, _pack] call lt_fnc_changeBackpack;};
 			removeHeadgear player;
 			if (typename _helm == "ARRAY") then {player addHeadgear selectRandom _helm;} else {player addHeadGear _helm};
 
@@ -52,11 +48,7 @@ if (hasInterface) then {
 				diag_log format ["LT Template DEBUG: _camo: %1 *-* _exclude: %2", _camo, _exclude];
 				_CamoUniform 	= if (typename _camo == "ARRAY") then {[player, selectRandom _camo] call lt_fnc_changeUniform;} else {[player, _camo] call lt_fnc_changeUniform;};
 				_CamoVest 	= if (typename _vest == "ARRAY") then {[player, selectRandom _vest] call lt_fnc_changeVest;} else {[player, _vest] call lt_fnc_changeVest;};
-				if (_role in _roles) then {
-				    _CamoBackpack = if (typename _bigPack == "ARRAY") then {[player, selectRandom _bigPack] call lt_fnc_changeBackpack;} else {[player, _bigPack] call lt_fnc_changeBackpack;};
-				} else {
-						_CamoBackpack = if (typename _smallPack == "ARRAY") then {[player, selectRandom _smallPack] call lt_fnc_changeBackpack;} else {[player, _smallPack] call lt_fnc_changeBackpack;};
-				};
+				_CamoBackpack = if (typename _pack == "ARRAY") then {[player, selectRandom _pack] call lt_fnc_changeBackpack;} else {[player, _pack] call lt_fnc_changeBackpack;};
 				removeHeadgear player;
 				if (typename _helm == "ARRAY") then {player addHeadgear selectRandom _helm;} else {player addHeadGear _helm};
 
