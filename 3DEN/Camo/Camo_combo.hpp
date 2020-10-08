@@ -529,60 +529,49 @@ class LT_Camo_combo: Title
 									"tf_rt1523g_green" // Radiobag
 									];
 				};
-				class LT_RUS_Mountain_Spetsnaz
+				class LT_RUS_Spetsnaz
+        {
+            text = "[RUS] Spetsnaz";
+                    data = ["U_O_R_Gorka_01_F", // Uniform
+                    ["V_SmershVest_01_F","V_SmershVest_01_radio_F"], // Vest
+                    ["CUP_O_RUS_Patrol_bag_Green","CUP_O_RUS_Patrol_bag_Green_Shovel"], // Smol Back
+                    ["CUP_O_RUS_Patrol_bag_Green","CUP_O_RUS_Patrol_bag_Green_Shovel"], // Big Back
+                    ["CUP_H_RUS_6B27_headset_goggles","CUP_H_RUS_6B27_goggles","CUP_H_RUS_6B27_headset"], // Helm
+                    "B_RadioBag_01_wdl_F" // Radiobag
+                    ];
+        };
+				class LT_RUS_Summer
+        {
+            text = "[RUS] Summer";
+            data = ["CUP_U_O_RUS_Ratnik_Summer", // Uniform
+                    "CUP_Vest_RUS_6B45_Sh117", // Vest
+                    ["CUP_O_RUS_Patrol_bag_Summer","CUP_O_RUS_Patrol_bag_Summer_Shovel"], // Smol Back
+                    ["CUP_O_RUS_Patrol_bag_Summer","CUP_O_RUS_Patrol_bag_Summer_Shovel"], // Big Back
+                    ["CUP_H_RUS_6B47_v2_Summer","CUP_H_RUS_6B47_v2_GogglesClosed_Summer","CUP_H_RUS_6B47_v2_GogglesUp_Summer"], // Helm
+                    "B_RadioBag_01_wdl_F" // Radiobag
+                    ];
+        };
+				class LT_RUS_Desert
+    		{
+        text = "[RUS] Desert";
+        data = ["CUP_U_O_RUS_Ratnik_Desert", // Uniform
+                "CUP_Vest_RUS_6B45_Sh117_Desert", // Vest
+                ["CUP_O_RUS_Patrol_bag_Desert","CUP_O_RUS_Patrol_bag_Desert_Shovel"], // Smol Back
+                ["CUP_O_RUS_Patrol_bag_Desert","CUP_O_RUS_Patrol_bag_Desert_Shovel"], // Big Back
+                ["CUP_H_RUS_6B47_v2_Desert","CUP_H_RUS_6B47_v2_GogglesClosed_Desert","CUP_H_RUS_6B47_v2_GogglesUp_Desert"], // Helm
+                "CUP_O_RUS_Patrol_bag_Desert" // Radiobag
+                ];
+        };
+				class LT_RUS_Winter
 				{
-					text = "[RUS] Mountain Spetsnaz";
-					data = ["CUP_U_O_RUS_Gorka_Partizan_A", // Uniform
-									["CUP_V_RUS_Smersh_1","CUP_V_RUS_Smersh_2","CUP_V_O_Ins_Carrier_Rig_MG","CUP_V_O_Ins_Carrier_Rig_Com"], // Vest
-									"CUP_B_RUS_Pack_Saboteur",	// Smol Back
-									"CUP_B_RUS_Pack_Saboteur",	// Big Back
-									["CUP_H_RUS_Bandana_HS","CUP_H_RUS_6B27_olive"], // Helm
-									"tf_rt1523g_sage" // Radiobag
-									];
-				};
-				class LT_RUS_Flora_Spetsnaz
-				{
-					text = "[RUS] Flora Spetsnaz";
-					data = ["CUP_U_O_RUS_Gorka_Partizan", // Uniform
-									["CUP_V_RUS_Smersh_1","CUP_V_RUS_Smersh_2","CUP_V_O_Ins_Carrier_Rig_MG","CUP_V_O_Ins_Carrier_Rig_Com"], // Vest
-									"CUP_B_RUS_Pack_Saboteur",	// Smol Back
-									"CUP_B_RUS_Pack_Saboteur",	// Big Back
-									["CUP_H_RUS_Bandana_HS","CUP_H_RUS_6B27_olive"], // Helm
-									"tf_rt1523g_sage" // Radiobag
-									];
-				};
-				class LT_RUS_Modern_Spetsnaz
-				{
-					text = "[RUS] Modern Spetsnaz";
-					data = ["CUP_U_O_RUS_Gorka_Green", // Uniform
-									["CUP_V_RUS_Smersh_1","CUP_V_RUS_Smersh_2","CUP_V_O_Ins_Carrier_Rig_MG","CUP_V_O_Ins_Carrier_Rig_Com"], // Vest
-									["CUP_B_HikingPack_Civ","CUP_B_RUS_Pack_AT"],	// Smol Back
-									["CUP_B_HikingPack_Civ","CUP_B_RUS_Pack_AT"],	// Big Back
-									["CUP_H_RUS_ZSH_1_Goggles","CUP_H_RUS_ZSH_1"], // Helm
-									"tf_rt1523g_black" // Radiobag
-									];
-				};
-				class LT_RUS_Mountain_Normal
-				{
-					text = "[RUS] Mountain Normal";
-					data = [["CUP_U_O_RUS_EMR_1","CUP_U_O_RUS_EMR_2","CUP_U_O_RUS_EMR_2_VDV"], // Uniform
-									["CUP_V_RUS_6B3_1","CUP_V_RUS_6B3_2"], // Vest
-									["CUP_B_AlicePack_Khaki","CUP_B_AlicePack_Bedroll","CUP_B_RUS_Pack_AT"],	// Smol Back
-									["CUP_B_AlicePack_Khaki","CUP_B_AlicePack_Bedroll","CUP_B_RUS_Pack_AT"],	// Big Back
-									["CUP_H_RUS_6B27","CUP_H_RUS_6B27_NVG","CUP_H_RUS_TSH_4_Brown"], // Helm
-									"tf_rt1523g_fabric" // Radiobag
-									];
-				};
-				class LT_RUS_Flora_Normal
-				{
-					text = "[RUS] Flora Normal";
-					data = [["CUP_U_O_RUS_Flora_1","CUP_U_O_RUS_EMR_2","CUP_U_O_RUS_Flora_2_VDV"], // Uniform
-									["CUP_V_RUS_6B3_1","CUP_V_RUS_6B3_2"], // Vest
-									["CUP_B_AlicePack_Khaki","CUP_B_AlicePack_Bedroll","CUP_B_RUS_Pack_AT"],	// Smol Back
-									["CUP_B_AlicePack_Khaki","CUP_B_AlicePack_Bedroll","CUP_B_RUS_Pack_AT"],	// Big Back
-									["CUP_H_RUS_6B27","CUP_H_RUS_6B27_NVG","CUP_H_RUS_TSH_4_Brown"], // Helm
-									"tf_rt1523g_fabric" // Radiobag
-									];
+				        text = "[RUS] Winter";
+				        data = ["CUP_U_O_RUS_Ratnik_Winter", // Uniform
+				                "CUP_V_PMC_CIRAS_Winter_Patrol", // Vest
+				                "CUP_O_RUS_Patrol_bag_Winter", // Smol Back
+				                "CUP_O_RUS_Patrol_bag_Winter", // Big Back
+				                ["CUP_H_RUS_6B47_v2_GogglesClosed_Winter","CUP_H_RUS_6B47_v2_GogglesUp_Winter","CUP_H_RUS_6B47_v2_Winter"], // Helm
+				                "CUP_O_RUS_Patrol_bag_Winter" // Radiobag
+				                ];
 				};
 				class LT_SLA_Desert
 				{
