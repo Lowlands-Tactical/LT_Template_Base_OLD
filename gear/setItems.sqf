@@ -157,6 +157,7 @@ _spade = if (isNil "lt_template_spade") then {"ACE_EntrenchingTool"} else {lt_te
 // Backpacks
 _TypeName = typename (_lt_camo_var_array select 2);
 _CamoVarBag = _lt_camo_var_array select 2;
+_bag = _CamoVarBag;
 _baguav 		= IF (_TypeName == "ARRAY") then {
 	selectrandom _CamoVarBag
 	} else {

@@ -18,10 +18,9 @@ if (hasInterface) then {
 
 	_camo	= _lt_camo_var_array select 0;
 	_vest	= _lt_camo_var_array select 1;
+	_pack	= _lt_camo_var_array select 2; // Smol Pack
 	if (_role in _roles) then {
 		_pack = _lt_camo_var_array select 3; // Big Pack
-	} else {
-		_pack	= _lt_camo_var_array select 2; // Smol Pack
 	};
 	_helm	= _lt_camo_var_array select 4;
 
