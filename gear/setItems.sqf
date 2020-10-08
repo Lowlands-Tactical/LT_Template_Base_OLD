@@ -125,7 +125,7 @@ _chemblue = if (isNil "lt_template_chemblue") then {"Chemlight_blue"} else {lt_t
 
 // Other items
 _minedetector = if (isNil "lt_template_minedetector") then {"MineDetector"} else {lt_template_minedetector};
-_cabletie = if (isNil "lt_template_cabletie") then {"ACE_Clacker"} else {lt_template_cabletie};
+_cabletie = if (isNil "lt_template_cabletie") then {"ACE_CableTie"} else {lt_template_cabletie};
 
 _rangefinder = if (isNil "lt_template_rangefinder") then {"ACE_Vector"} else {lt_template_rangefinder};
 _laserdesignator = if (isNil "lt_template_laserdesignator") then {"Laserbatteries"} else {lt_template_laserdesignator};
