@@ -99,14 +99,13 @@ if (hasInterface) then {
         _unit addmagazines [_pistolmag,2];
         _unit addmagazines [_grenade,1];
 
-        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 11];
-        (unitBackpack _unit) addMagazineCargoGlobal [_glmag, 5];
-        (unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 6];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 3];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadegreen,2];
+        _unit addmagazines [_glriflemag, 11];
+        _unit addmagazines [_glmag, 5];
+        _unit addmagazines [_glsmokewhite, 6];
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 3];
+        _unit addmagazines [_smokegrenade, 4];
+        _unit addmagazines [_smokegrenadegreen,2];
       };
 
     // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
@@ -121,23 +120,25 @@ if (hasInterface) then {
         _unit addmagazines [_pistolmag,2];
         _unit addmagazines [_grenade,1];
 
+        _unit addmagazines [_glriflemag, 11];
+        _unit addmagazines [_glmag, 5];
+        _unit addmagazines [_glsmokewhite, 6];
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 3];
+        _unit addmagazines [_smokegrenade, 4];
+        _unit addmagazines [_smokegrenadegreen,2];
+
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 11];
-        (unitBackpack _unit) addMagazineCargoGlobal [_glmag, 5];
-        (unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 6];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 3];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadegreen,2];
       };
 
     // LOADOUT: MEDIC
       case "m":
       {
         _unit addweapon _carbine;
+        _unit addmagazines [_carbinemag,7];
         _unit addItem _gps;
         _unit assignItem _gps;
-        _unit addmagazines [_smokegrenade,1];
+        _unit addmagazines [_smokegrenade, 8];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addItemCargoGlobal [_bandages,40];
@@ -150,9 +151,6 @@ if (hasInterface) then {
         (unitBackpack _unit) addItemCargoGlobal [_bloodbags,5];
         (unitBackpack _unit) addItemCargoGlobal [_plasmaIV,5];
         (unitBackpack _unit) addItemCargoGlobal [_saline,8];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 7];
-
-        _unit addmagazines [_carbinemag,7];
       };
 
     // LOADOUT: FIRE TEAM LEADER
@@ -164,15 +162,15 @@ if (hasInterface) then {
         _unit assignItem _gps;
         _unit addmagazines [_glriflemag_tr,2];
         _unit addmagazines [_grenade,1];
+        _unit addmagazines [_glriflemag, 11];
+        _unit addmagazines [_glmag, 7];
+        _unit addmagazines [_glsmokewhite, 6];
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 3];
+        _unit addmagazines [_smokegrenade, 4];
+        _unit addmagazines [_smokegrenadegreen,2];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 11];
-        (unitBackpack _unit) addMagazineCargoGlobal [_glmag, 7];
-        (unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 6];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 3];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenadegreen,2];
       };
 
 
@@ -183,15 +181,15 @@ if (hasInterface) then {
         _unit addweapon _pistol;
         _unit addmagazines [_pistolmag,4];
         _unit addmagazines [_grenade,1];
+        _unit addmagazines [_grenade, 1];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 3];
+        _attachments pushback (_bipod1);
+        _attachments pushback (_scopeMG);
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addMagazineCargoGlobal [_ARmag, 6];
         (unitBackpack _unit) addMagazineCargoGlobal [_ARmag_Tr, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
-        _attachments pushback (_bipod1);
-        _attachments pushback (_scopeMG);
       };
 
     // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
@@ -202,12 +200,12 @@ if (hasInterface) then {
         _unit addWeapon _simplebinoculars;
         _unit addItem _spade;
         _unit addmagazines [_grenade,2];
+        _unit addmagazines [_riflemag, 11];
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 4];
+        _unit addmagazines [_smokegrenade, 4];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 11];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 4];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
         (unitBackpack _unit) addMagazineCargoGlobal [_ARmag, 4];
       };
 
@@ -217,12 +215,12 @@ if (hasInterface) then {
         _unit addweapon _carbine;
         _unit addmagazines [_carbinemag_tr,2];
         _unit addmagazines [_grenade,2];
+        _unit addmagazines [_carbinemag, 11];
+        _unit addmagazines [_grenade, 1];
+        _unit addmagazines [_mgrenade, 3];
+        _unit addmagazines [_smokegrenade, 4];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 11];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 3];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
         _unit addweapon _RAT;
         if !(_RAT in _disposableLaunchers) then {
           (unitBackpack _unit) addMagazineCargoGlobal [_ratmag1, 2];
@@ -242,14 +240,15 @@ if (hasInterface) then {
         _unit addItem _dagr;
         _unit addItem _kestrel;
         _unit addmagazines [_pistolmag,3];
+        _unit addmagazines [_DMriflemag, 9];
+        _unit addmagazines [_grenade, 4];
+        _unit addmagazines [_mgrenade, 4];
+        _unit addmagazines [_smokegrenade, 4];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_DMriflemag, 9];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 4];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 4];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
         (unitBackpack _unit) addItemCargoGlobal [_spotting_scope,1];
         (unitBackpack _unit) addItemCargoGlobal [_rangecard,1];
+
         _attachments = [_attach1,_scopeDM,_bipodDM,_silencerDM];
         if ( _nvg_enabled == 1 ) then {(unitBackpack _unit) addItemCargoGlobal [ "optic_NVS", 1]};
       };
@@ -260,12 +259,13 @@ if (hasInterface) then {
         _unit addweapon _MMG;
         _unit addweapon _pistol;
         _unit addmagazines [_pistolmag,4];
+        _unit addmagazines [_mgrenade, 1];
+        _unit addmagazines [_smokegrenade, 3];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addMagazineCargoGlobal [_MMGmag, 5];
         (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 1];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
+
         _attachments = [_attach1,_bipod2,_scopeMG];
       };
 
@@ -274,15 +274,15 @@ if (hasInterface) then {
       {
         _unit addweapon _rifle;
         _unit addWeapon _rangefinder;
+        _unit addmagazines [_riflemag, 11];
+        _unit addmagazines [_riflemag_tr, 3];
+        _unit addmagazines [_grenade, 3];
+        _unit addmagazines [_mgrenade, 3];
+        _unit addmagazines [_smokegrenade, 3];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 11];
-        (unitBackpack _unit) addMagazineCargoGlobal [_riflemag_tr, 3];
         (unitBackpack _unit) addMagazineCargoGlobal [_MMGmag, 2];
         (unitBackpack _unit) addMagazineCargoGlobal [_MMGmag_tr, 1];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 3];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 3];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
       };
 
     // LOADOUT: HEAVY MG GUNNER
@@ -296,6 +296,7 @@ if (hasInterface) then {
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addMagazineCargoGlobal [_HMGmag, 3];
         (unitBackpack _unit) addMagazineCargoGlobal [_HMGmag_tr, 2];
+
         _attachments = [_attach1, _scopeMG];
       };
 
@@ -303,13 +304,13 @@ if (hasInterface) then {
       case "hmgag":
       {
         _unit addweapon _rifle;
+        _unit addmagazines [_riflemag, 7];
         _unit addmagazines [_grenade,1];
         _unit addmagazines [_mgrenade,1];
         _unit addmagazines [_smokegrenade,1];
         _unit addWeapon _rangefinder;
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 7];
         (unitBackpack _unit) addMagazineCargoGlobal [_HMGmag, 3];
         (unitBackpack _unit) addMagazineCargoGlobal [_HMGmag_tr, 2];
       };
@@ -317,23 +318,21 @@ if (hasInterface) then {
     // LOADOUT: MEDIUM AT GUNNER
       case "matg":
       {
-        //["matg"] call _backpack;
-        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+        _unit addweapon _carbine;
+        _unit addmagazines [_carbinemag, 2];
+        _unit addmagazines [_grenade, 1];
+        _unit addmagazines [_mgrenade, 1];
+        _unit addmagazines [_smokegrenade, 1];
+        _unit addmagazines [_carbinemag,7];
+        _unit addmagazines [_carbinemag_tr,2];
+        _unit addmagazines [_smokegrenade,2];
 
-        (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 1];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+        _unit addweapon _MAT;
         if !(_MAT in _disposableLaunchers) then {
           (unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 1];
           (unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
         };
-        _unit addmagazines [_carbinemag,7];
-        _unit addmagazines [_carbinemag_tr,2];
-        _unit addmagazines [_smokegrenade,2];
-        if !(_MAT in _disposableLaunchers) then { _Unit addMagazines [_MATmag1, 1]; };
-        _unit addweapon _carbine;
-        _unit addweapon _MAT;
         _unit addSecondaryWeaponItem _scopeMAT;
       };
 
@@ -341,14 +340,14 @@ if (hasInterface) then {
       case "matag":
       {
         _unit addweapon _carbine;
-        _unit addWeapon _rangefinder;;
+        _unit addWeapon _rangefinder;
+        _unit addmagazines [_carbinemag, 9];
+        _unit addmagazines [_carbinemag_tr, 2];
+        _unit addmagazines [_grenade, 3];
+        _unit addmagazines [_mgrenade, 3];
+        _unit addmagazines [_smokegrenade, 4];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 9];
-        (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 3];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 3];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
         if !(_MAT in _disposableLaunchers) then {
           (unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
           (unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
@@ -359,12 +358,18 @@ if (hasInterface) then {
       case "hatg":
       {
         _unit addweapon _carbine;
+        _unit addmagazines [_carbinemag, 9];
+        _unit addmagazines [_carbinemag_tr, 2];
+        _unit addmagazines [_grenade, 3];
+        _unit addmagazines [_mgrenade, 3];
+        _unit addmagazines [_smokegrenade, 4];
+
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+        _unit addWeapon _HAT;
         if !(_HAT in _disposableLaunchers) then {
           (unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 1];
           (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag,7];
         };
-        _unit addWeapon _HAT;
         _unit addSecondaryWeaponItem _scopeHAT;
       };
 
@@ -373,15 +378,15 @@ if (hasInterface) then {
       {
         _unit addweapon _carbine;
         _unit addWeapon _rangefinder;
+        _unit addmagazines [_carbinemag,7];
+        _unit addmagazines [_carbinemag_tr,2];
+        _unit addmagazines [_grenade,1];
+        _unit addmagazines [_mgrenade,1];
+        _unit addmagazines [_smokegrenade,1];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         if !(_HAT in _disposableLaunchers) then {
           (unitBackpack _unit) addMagazineCargoGlobal [_HATmag2, 1];
-          (unitBackpack _unit) addMagazineCargoGlobal [_grenade,1];
-          (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade,1];
-          (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade,1];
-          (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag,7];
-          (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr,2];
         };
       };
 
@@ -463,14 +468,15 @@ if (hasInterface) then {
     // LOADOUT: MEDIUM SAM GUNNER
       case "msamg":
       {
-        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_SAMmag, 2];
+        _unit addweapon _carbine;
         _unit addmagazines [_carbinemag,7];
         _unit addmagazines [_carbinemag_tr,2];
-        _unit addweapon _carbine;
         _unit addmagazines [_smokegrenade,1];
         _unit addmagazines [_grenade,1];
+
         _unit addweapon _SAM;
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+        (unitBackpack _unit) addMagazineCargoGlobal [_SAMmag, 2];
       };
 
     // LOADOUT: MEDIUM SAM ASSISTANT GUNNER
@@ -478,12 +484,13 @@ if (hasInterface) then {
       {
         _unit addweapon _carbine;
         _unit addWeapon _rangefinder;
+        _unit addmagazines [_carbinemag,7];
+        _unit addmagazines [_carbinemag_tr,2];
+        _unit addmagazines [_grenade,1];
+        _unit addmagazines [_smokegrenade,1];
+
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
         (unitBackpack _unit) addMagazineCargoGlobal [_SAMmag, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag,7];
-        (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag_tr,2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade,1];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade,1];
       };
 
     // LOADOUT: HEAVY SAM GUNNER
@@ -702,11 +709,11 @@ if (hasInterface) then {
         //["div"] call _backpack;
         _unit addBackpack _bagmediumdiver;
 
-        (unitBackpack _unit) addMagazineCargoGlobal [_diverMag1, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_diverMag2, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 1];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
+        _unit addmagazines [_diverMag1, 2];
+        _unit addmagazines [_diverMag2, 2];
+        _unit addmagazines [_grenade, 1];
+        _unit addmagazines [_mgrenade, 1];
+        _unit addmagazines [_smokegrenade, 1];
       };
 
     // LOADOUT: RIFLEMAN
@@ -715,12 +722,12 @@ if (hasInterface) then {
         _unit addweapon _rifle;
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 11];
-        (unitBackpack _unit) addMagazineCargoGlobal [_riflemag_tr, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 5];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 5];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 5];
-        (unitBackpack _unit) addMagazineCargoGlobal [_ARmag,1];
+        _unit addmagazines [_riflemag, 11];
+        _unit addmagazines [_riflemag_tr, 2];
+        _unit addmagazines [_grenade, 5];
+        _unit addmagazines [_mgrenade, 5];
+        _unit addmagazines [_smokegrenade, 5];
+        _unit addmagazines [_ARmag,1];
       };
 
     // LOADOUT: CARABINEER
@@ -732,7 +739,7 @@ if (hasInterface) then {
         _unit addmagazines [_grenade,3];
         _unit addmagazines [_mgrenade,3];
         _unit addmagazines [_smokegrenade,3];
-        ["car"] call _backpack;
+       ["car"] call _backpack;
       };
 
     // LOADOUT: SUBMACHINEGUNNER
@@ -743,12 +750,13 @@ if (hasInterface) then {
         _unit addmagazines [_grenade,3];
         _unit addmagazines [_mgrenade,3];
         _unit addmagazines [_smokegrenade,3];
+        _unit addmagazines [_carbinemag, 4];
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 4];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
+
         _attachments = [_attach1, _silencerSMG, _scope1]
       };
 
@@ -763,14 +771,14 @@ if (hasInterface) then {
         _unit addmagazines [_grenade,3];
         _unit addmagazines [_mgrenade,3];
         _unit addmagazines [_smokegrenade,2];
+        _unit addmagazines [_glriflemag, 4];
+        _unit addmagazines [_glmag, 2];
+        _unit addmagazines [_glsmokewhite, 2];
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
-        (unitBackpack _unit) addMagazineCargoGlobal [_glmag, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
       };
 
     // LOADOUT: Lul van de week
@@ -822,12 +830,12 @@ if (hasInterface) then {
     _nvg = if (isNil "lt_template_nvg") then {"ACE_NVG_Wide"} else {lt_template_nvg};
     _nvgLinked = hmd _unit;
     _nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
-    [_unit, _nvgLinked, _nvg_enabled, _nvg] call LT_fnc_NVGParameters;
+   [_unit, _nvgLinked, _nvg_enabled, _nvg] call LT_fnc_NVGParameters;
 
     diag_log format ["LT Template DEBUG: setGear.sqf finished"];
     diag_log format ["LT Template DEBUG: setGear.sqf attachments attached to weapons"];
 
-    [_unit] call LT_fnc_checkUnitWeight;
+   [_unit] call LT_fnc_checkUnitWeight;
   };
 
 };
