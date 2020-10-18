@@ -532,7 +532,7 @@ class LT_Camo_combo: Title
 				class LT_RUS_Spetsnaz
         {
             text = "[RUS] Spetsnaz";
-                    data = ["U_O_R_Gorka_01_F", // Uniform
+            data = ["U_O_R_Gorka_01_F", // Uniform
                     ["V_SmershVest_01_F","V_SmershVest_01_radio_F"], // Vest
                     ["CUP_O_RUS_Patrol_bag_Green","CUP_O_RUS_Patrol_bag_Green_Shovel"], // Smol Back
                     ["CUP_O_RUS_Patrol_bag_Green","CUP_O_RUS_Patrol_bag_Green_Shovel"], // Big Back
@@ -553,25 +553,25 @@ class LT_Camo_combo: Title
         };
 				class LT_RUS_Desert
     		{
-        text = "[RUS] Desert";
-        data = ["CUP_U_O_RUS_Ratnik_Desert", // Uniform
-                "CUP_Vest_RUS_6B45_Sh117_Desert", // Vest
-                ["CUP_O_RUS_Patrol_bag_Desert","CUP_O_RUS_Patrol_bag_Desert_Shovel"], // Smol Back
-                ["CUP_O_RUS_Patrol_bag_Desert","CUP_O_RUS_Patrol_bag_Desert_Shovel"], // Big Back
-                ["CUP_H_RUS_6B47_v2_Desert","CUP_H_RUS_6B47_v2_GogglesClosed_Desert","CUP_H_RUS_6B47_v2_GogglesUp_Desert"], // Helm
-                "CUP_O_RUS_Patrol_bag_Desert" // Radiobag
-                ];
+		        text = "[RUS] Desert";
+		        data = ["CUP_U_O_RUS_Ratnik_Desert", // Uniform
+		                "CUP_Vest_RUS_6B45_Sh117_Desert", // Vest
+		                ["CUP_O_RUS_Patrol_bag_Desert","CUP_O_RUS_Patrol_bag_Desert_Shovel"], // Smol Back
+		                ["CUP_O_RUS_Patrol_bag_Desert","CUP_O_RUS_Patrol_bag_Desert_Shovel"], // Big Back
+		                ["CUP_H_RUS_6B47_v2_Desert","CUP_H_RUS_6B47_v2_GogglesClosed_Desert","CUP_H_RUS_6B47_v2_GogglesUp_Desert"], // Helm
+		                "CUP_O_RUS_Patrol_bag_Desert" // Radiobag
+		                ];
         };
 				class LT_RUS_Winter
 				{
-				        text = "[RUS] Winter";
-				        data = ["CUP_U_O_RUS_Ratnik_Winter", // Uniform
-				                "CUP_V_PMC_CIRAS_Winter_Patrol", // Vest
-				                "CUP_O_RUS_Patrol_bag_Winter", // Smol Back
-				                "CUP_O_RUS_Patrol_bag_Winter", // Big Back
-				                ["CUP_H_RUS_6B47_v2_GogglesClosed_Winter","CUP_H_RUS_6B47_v2_GogglesUp_Winter","CUP_H_RUS_6B47_v2_Winter"], // Helm
-				                "CUP_O_RUS_Patrol_bag_Winter" // Radiobag
-				                ];
+		        text = "[RUS] Winter";
+		        data = ["CUP_U_O_RUS_Ratnik_Winter", // Uniform
+		                "CUP_V_PMC_CIRAS_Winter_Patrol", // Vest
+		                "CUP_O_RUS_Patrol_bag_Winter", // Smol Back
+		                "CUP_O_RUS_Patrol_bag_Winter", // Big Back
+		                ["CUP_H_RUS_6B47_v2_GogglesClosed_Winter","CUP_H_RUS_6B47_v2_GogglesUp_Winter","CUP_H_RUS_6B47_v2_Winter"], // Helm
+		                "CUP_O_RUS_Patrol_bag_Winter" // Radiobag
+		                ];
 				};
 				class LT_SLA_Desert
 				{
