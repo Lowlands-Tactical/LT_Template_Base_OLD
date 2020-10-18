@@ -2,23 +2,6 @@
 
 private ["_lt_main","_action"];
 
-// Iedereen
-
-private _actDistVis = ["lmf_visibility","Visibility","",{},{true}] call ace_interact_menu_fnc_createAction;
-private _actDistGen = ["lmf_viewDistParent","Overall","",{},{true}] call ace_interact_menu_fnc_createAction;
-private _actDistObj = ["lmf_objectDistParent","Object","",{},{true}] call ace_interact_menu_fnc_createAction;
-[player,1,["ACE_SelfActions"],_actDistVis] call ace_interact_menu_fnc_addActionToObject;
-[player,1,["ACE_SelfActions","lmf_visibility"],_actDistGen] call ace_interact_menu_fnc_addActionToObject;
-[player,1,["ACE_SelfActions","lmf_visibility"],_actDistObj] call ace_interact_menu_fnc_addActionToObject;
-
-{
-	private _currentAction = [format ["lmf_viewOverall_%1",_x],str _x,"",{setViewDistance (_this select 2)},{true},{},_x] call ace_interact_menu_fnc_createAction;
-	[player,1,["ACE_SelfActions","lmf_visibility","lmf_viewDistParent"],_currentAction] call ace_interact_menu_fnc_addActionToObject;
-
-	private _currentAction = [format ["lmf_viewObject_%1",_x],str _x,"",{setObjectViewDistance (_this select 2)},{true},{},_x] call ace_interact_menu_fnc_createAction;
-	[player,1,["ACE_SelfActions","lmf_visibility","lmf_objectDistParent"],_currentAction] call ace_interact_menu_fnc_addActionToObject;
-} forEach [500,1000,1500,2000,2500,3000,4000,5000,6000,7000,8000];
-
 // Flendurs, SvenBrandt99, SkullFinger
 staff = ["76561197972110272","76561198069718715","76561197992586763"];
 
