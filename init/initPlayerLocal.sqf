@@ -1,5 +1,7 @@
 //diag_log format ["Template Base waituntil Permadeath is pubvarred at %1", time];
 
+cutText ["","BLACK OUT",4,true];
+
 waitUntil {!isNil "LT_PermaDeath"};
 
 diag_log format ["Template Base Permadeath = %2 is pubvarred at %1", time, LT_PermaDeath];
@@ -17,3 +19,5 @@ if (LT_PermaDeath == 1) then {
   [true] call acre_api_fnc_setSpectator;
   ["Initialize", [player, [], true, true, true, true, true, true, true, true]] call BIS_fnc_EGSpectator;
 };
+
+cutText ["","BLACK IN",4,true];
