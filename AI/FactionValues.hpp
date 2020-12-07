@@ -15,6 +15,7 @@ class CUP_O_CHDKZ {name = "ChDKZ"; value="LT_CUP_O_CHDKZ"; };
 class CUP_O_SLA {name = "Sahrani Liberation Army"; value="LT_CUP_O_SLA"; };
 class CUP_O_RU_EMR {name = "Russia (EMR)"; value="LT_CUP_O_RU_EMR"; };
 class CUP_O_RU_FLORA {name = "Russia (Flora)"; value="LT_CUP_O_RU_FLORA"; };
+class CUP_O_RU_WTR {name = "Russia (Winter)"; value="LT_CUP_O_RU_WTR"; };
 class CUP_I_NAPA { name = "N.A.P.A."; value="LT_CUP_I_NAPA"; };
 class CUP_I_RACS { name = "Royal Army Corp of Sahrani"; value="LT_CUP_I_RACS"; };
 class CUP_I_TK_GUE { name = "Takistani Locals"; value="LT_CUP_I_TK_GUE"; };
