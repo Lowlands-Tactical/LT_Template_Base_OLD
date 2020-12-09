@@ -20,9 +20,9 @@ if (hasInterface) then {
 	_vest	= _lt_camo_var_array select 1;
 	_pack	= _lt_camo_var_array select 2; // Smol Pack
 	if (_role in _roles) then {
-		_pack = _lt_camo_var_array select 3; // Big Pack
+		_pack = _lt_camo_var_array select 5; // Big Pack
 	};
-	_helm	= _lt_camo_var_array select 4;
+	_helm	= _lt_camo_var_array select 3;
 
 	diag_log format ["LT template DEBUG: lt_camo_var: %1", lt_camo_var];
 
