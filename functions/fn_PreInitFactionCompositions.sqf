@@ -224,14 +224,14 @@ LT_cup_o_ru_flora_heli_weightArray = [];
 LT_cup_o_ru_flora = [LT_cup_o_ru_flora_units,LT_cup_o_ru_flora_car,LT_cup_o_ru_flora_ifv,LT_cup_o_ru_flora_tank,LT_cup_o_ru_flora_heli];
 LT_cup_o_ru_flora_Weights = [LT_cup_o_ru_flora_units_weightArray,LT_cup_o_ru_flora_car_weightArray,LT_cup_o_ru_flora_ifv_weightArray,LT_cup_o_ru_flora_tank_weightArray,LT_cup_o_ru_flora_heli_weightArray];
 
-/ Ruskies Winter
+// Ruskies Winter
 LT_cup_o_ru_WTR_units = ["CUP_O_RU_Soldier_A_Ratnik_Winter","CUP_O_RU_Soldier_AAR_Ratnik_Winter","CUP_O_RU_Soldier_AHAT_Ratnik_Winter","CUP_O_RU_Soldier_AAT_Ratnik_Winter","CUP_O_RU_Soldier_AR_Ratnik_Winter","CUP_O_RU_Soldier_Medic_Ratnik_Winter","CUP_O_RU_Soldier_Engineer_Ratnik_Winter","CUP_O_RU_Soldier_Exp_Ratnik_Winter","CUP_O_RU_Soldier_GL_Ratnik_Winter","CUP_O_RU_Soldier_MG_Ratnik_Winter","CUP_O_RU_Soldier_Marksman_Ratnik_Winter","CUP_O_RU_Soldier_AA_Ratnik_Winter","CUP_O_RU_Soldier_LAT_Ratnik_Winter","CUP_O_RU_Recon_Exp_Ratnik_Winter","CUP_O_RU_Recon_Marksman_Ratnik_Winter","CUP_O_RU_Recon_Medic_Ratnik_Winter","CUP_O_RU_Recon_Ratnik_Winter","CUP_O_RU_Recon_LAT_Ratnik_Winter","CUP_O_RU_Recon_TL_Ratnik_Winter","CUP_O_RU_Soldier_Repair_Ratnik_Winter","CUP_O_RU_Soldier_Ratnik_Winter","CUP_O_RU_Soldier_AT_Ratnik_Winter","CUP_O_RU_Soldier_HAT_Ratnik_Winter","CUP_O_RU_Soldier_Lite_Ratnik_Winter","CUP_O_RU_Soldier_SL_Ratnik_Winter","CUP_O_RU_Soldier_TL_Ratnik_Winter"];
 LT_cup_o_ru_WTR_units_weightArray = [];
 LT_cup_o_ru_WTR_car = ["CUP_O_UAZ_MG_RU","CUP_O_UAZ_AGS30_RU","CUP_O_UAZ_SPG9_RU"];
 LT_cup_o_ru_WTR_car_weightArray = [];
 LT_cup_o_ru_WTR_ifv = ["CUP_O_BMP2_RU","CUP_O_BRDM2_RUS","CUP_O_BRDM2_ATGM_RUS","CUP_O_2S6M_RU","CUP_O_BTR90_RU","CUP_O_BMP3_RU"];
 LT_cup_o_ru_WTR_ifv_weightArray = [];
-LT_cup_o_ru_WTR_tank = ["CUP_O_T72_RU"];
+LT_cup_o_ru_WTR_tank = ["CUP_O_T72_RU,CUP_O_T90_RU"];
 LT_cup_o_ru_WTR_tank_weightArray = [];
 LT_cup_o_ru_WTR_heli = ["CUP_O_Mi24_P_RU","CUP_O_Mi24_V_RU","CUP_O_MI6A_RU","CUP_O_MI6T_RU","CUP_O_Mi8_VIV_RU","CUP_O_Mi8_RU"];
 LT_cup_o_ru_WTR_heli_weightArray = [];
