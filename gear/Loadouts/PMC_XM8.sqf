@@ -20,23 +20,23 @@ lt_template_hg_attachments         	 = 	 ["muzzle_snds_L", "optic_MRD"];
 
 // Assistant Automatic Rifleman, Medium MG assistant, UAV Operator, Rifleman
 lt_template_rifle          	 = 	 "CUP_arifle_XM8_Carbine";
-lt_template_riflemag       	 = 	 "CUP_30Rnd_556x45_G36";
-lt_template_riflemag_t     	 = 	 "CUP_30Rnd_TE1_Red_Tracer_556x45_G36";
+lt_template_riflemag       	 = 	 "CUP_30Rnd_556x45_XM8";
+lt_template_riflemag_t     	 = 	 "CUP_30Rnd_TE1_Red_Tracer_556x45_XM8";
 
 //Medic, Rifleman At
 lt_template_carbine        	 = 	 "CUP_arifle_XM8_Carbine";
-lt_template_carbinemag     	 = 	 "CUP_30Rnd_556x45_G36";
-lt_template_carbinemag_tr          	 = 	 "CUP_30Rnd_TE1_Red_Tracer_556x45_G36";
+lt_template_carbinemag     	 = 	 "CUP_30Rnd_556x45_XM8";
+lt_template_carbinemag_tr          	 = 	 "CUP_30Rnd_TE1_Red_Tracer_556x45_XM8";
 
 // Pilots, Vehicle crew, Submachinegunner
 lt_template_smg    	 = 	 "CUP_arifle_XM8_Compact";
-lt_template_smgmag         	 = 	 "CUP_30Rnd_556x45_G36";
-lt_template_smgmag_tr      	 = 	 "CUP_30Rnd_TE1_Red_Tracer_556x45_G36";
+lt_template_smgmag         	 = 	 "CUP_30Rnd_556x45_XM8";
+lt_template_smgmag_tr      	 = 	 "CUP_30Rnd_TE1_Red_Tracer_556x45_XM8";
 
 // Commander, Squadleader, Fireteam leader, Spotter, Grenadier
 lt_template_glrifle        	 = 	 "CUP_arifle_XM8_Carbine_GL";
-lt_template_glriflemag     	 = 	 "CUP_30Rnd_556x45_G36";
-lt_template_glriflemag_tr          	 = 	 "CUP_30Rnd_TE1_Red_Tracer_556x45_G36";
+lt_template_glriflemag     	 = 	 "CUP_30Rnd_556x45_XM8";
+lt_template_glriflemag_tr          	 = 	 "CUP_30Rnd_TE1_Red_Tracer_556x45_XM8";
 lt_template_glmag          	 = 	 "1Rnd_HE_Grenade_shell";
 lt_template_glsmokewhite           	 = 	 "1Rnd_Smoke_Grenade_shell";
 lt_template_glsmokegreen           	 = 	 "1Rnd_SmokeGreen_Grenade_shell";
@@ -57,12 +57,12 @@ lt_template_ARmag_tr       	 = 	 "CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag";
 
 // Medium MG Gunner
 lt_template_MMG    	 = 	 "CUP_lmg_PKM";
-lt_template_MMGmag         	 = 	 "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_MCUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
+lt_template_MMGmag         	 = 	 "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
 lt_template_MMGmag_tr      	 = 	 "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
 
 // Designated Marksman
 lt_template_DMrifle        	 = 	 "CUP_arifle_xm8_sharpshooter";
-lt_template_DMriflemag     	 = 	 "CUP_30Rnd_556x45_G36";
+lt_template_DMriflemag     	 = 	 "CUP_30Rnd_556x45_XM8";
 
 // Rifleman AT
 lt_template_RAT    	 = 	 "CUP_launch_RPG18";
