@@ -56,7 +56,7 @@ lt_template_ARmag          	 = 	 "CUP_100Rnd_556x45_BetaCMag";
 lt_template_ARmag_tr       	 = 	 "CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag";
 
 // Medium MG Gunner
-lt_template_MMG    	 = 	 "CUP_lmg_PKM";
+lt_template_MMG    	 = 	 "CUP_lmg_PKM_top_rail";
 lt_template_MMGmag         	 = 	 "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
 lt_template_MMGmag_tr      	 = 	 "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
 
