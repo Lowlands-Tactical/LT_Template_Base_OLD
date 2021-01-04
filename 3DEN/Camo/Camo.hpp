@@ -1,6 +1,6 @@
 class LT_Camo_changer
 {
-	displayName = "Choose Camouflage BlUFOR";
+	displayName = "Choose Camouflage BLUFOR";
 	tooltip = "Choose the camouflage the units will have";
 	property = "LT_camo_selector_id";
 	control = "LT_Camo_combo";
@@ -10,7 +10,7 @@ class LT_Camo_changer
 };
 class LT_Gear_changer_BLUFOR
 {
-	displayName = "Choose Weaponset BlUFOR";
+	displayName = "Choose Weaponset BLUFOR";
 	tooltip = "Choose the weaponset the units will have";
 	property = "LT_Gear_selector_id_BLUFOR";
 	control = "LT_Gear_combo";
@@ -20,7 +20,7 @@ class LT_Gear_changer_BLUFOR
 };
 class LT_Camo_changer_OPFOR
 {
-	displayName = "Choose Camouflage REDFOR";
+	displayName = "Choose Camouflage OPFOR";
 	tooltip = "Choose the camouflage the units will have";
 	property = "LT_camo_selector_id_OPFOR";
 	control = "LT_Camo_combo";
@@ -30,7 +30,7 @@ class LT_Camo_changer_OPFOR
 };
 class LT_Gear_changer_OPFOR
 {
-	displayName = "Choose Weaponset REDFOR";
+	displayName = "Choose Weaponset OPFOR";
 	tooltip = "Choose the weaponset the units will have";
 	property = "LT_Gear_selector_id_OPFOR";
 	control = "LT_Gear_combo";
@@ -40,7 +40,7 @@ class LT_Gear_changer_OPFOR
 };
 class LT_Camo_changer_GUER
 {
-	displayName = "Choose Camouflage GREENFOR";
+	displayName = "Choose Camouflage Guerilla";
 	tooltip = "Choose the camouflage the units will have";
 	property = "LT_camo_selector_id_GUER";
 	control = "LT_Camo_combo";
@@ -50,7 +50,7 @@ class LT_Camo_changer_GUER
 };
 class LT_Gear_changer_GUER
 {
-	displayName = "Choose Weaponset GREENFOR";
+	displayName = "Choose Weaponset Guerilla";
 	tooltip = "Choose the weaponset the units will have";
 	property = "LT_Gear_selector_id_GUER";
 	control = "LT_Gear_combo";

@@ -19,6 +19,12 @@ class LT_Camo_combo: Title
 
 			class Items
 			{
+				class LT_Camo_None
+				{
+					text = "None";
+					data = ["None","None","None","None","None","None"];
+					default = 1;
+				};
 				class Imperial_Guard
 				{
 					text = "Imperial Guard";
@@ -31,9 +37,8 @@ class LT_Camo_combo: Title
 /* Officer */		["ML700_Cadian_Uniform1","ML700_Cadian_Armor1",nil,"ML700_Cadian_OfficerCap"],
 /* Commisar */	["U_TIOW_Comissar",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
-					default = 1;
 				};
-				class Cadian_667th
+				class Imperial_Cadian_667th
 				{
 					text = "Imperial - Cadian 667th (Winter)";
 					data = [
@@ -46,7 +51,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["U_TIOW_Comissar_Winter",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
-				class Cadian_700th
+				class Imperial_Cadian_700th
 				{
 					text = "Imperial - Cadian 700th (Urban)";
 					data = [
@@ -59,7 +64,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["U_TIOW_Comissar_Brown",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
-				class Cadian_776th
+				class Imperial_Cadian_776th
 				{
 					text = "Imperial - Cadian 776th (Black)";
 					data = [
@@ -72,7 +77,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["U_TIOW_Comissar",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
-				class Cadian_836th
+				class Imperial_Cadian_836th
 				{
 					text = "Imperial - Cadian 836th (Dessert)";
 					data = [
@@ -85,7 +90,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["U_TIOW_Comissar_Desert",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
-				class Valhallans
+				class Imperial_Valhallans
 				{
 					text = "Imperial - Valhallans";
 					data = [
@@ -98,7 +103,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["U_TIOW_Comissar_Valhallan",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
-				class ValhallansWinter
+				class Imperial_ValhallansWinter
 				{
 					text = "Imperial - Valhallans Winter";
 					data = [
@@ -111,7 +116,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["U_TIOW_Comissar_Winter",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
-				class DeathKoprsKrieg82nd
+				class Imperial_DeathKoprsKrieg82nd
 				{
 					text = "Imperial - Death Koprs of Krieg 82nd";
 					data = [
@@ -125,7 +130,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["U_TIOW_Comissar_Krieg",nil,"TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
 							];
 				};
-				class DeathKoprsKrieg1489th
+				class Imperial_DeathKoprsKrieg1489th
 				{
 					text = "Imperial - Death Koprs of Krieg 1489th";
 					data = [
@@ -139,7 +144,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["U_TIOW_Comissar_Krieg",nil,"TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
 							];
 				};
-				class DeathKoprsKrieg1490th
+				class Imperial_DeathKoprsKrieg1490th
 				{
 					text = "Imperial - Death Koprs of Krieg 1490th";
 					data = [
@@ -153,7 +158,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["U_TIOW_Comissar_Krieg",nil,"TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
 							];
 				};
-				class DeathKoprsKrieg1491st
+				class Imperial_DeathKoprsKrieg1491st
 				{
 					text = "Imperial - Death Koprs of Krieg 1491st";
 					data = [
@@ -167,7 +172,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["U_TIOW_Comissar_Krieg",nil,"TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
 							];
 				};
-				class MordianIronGuard
+				class Imperial_MordianIronGuard
 				{
 					text = "Imperial - Mordian Iron Guard";
 					data = [
@@ -180,7 +185,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["U_TIOW_Comissar_Mord",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
-				class NormalOrks
+				class Ork_NormalOrks
 				{
 					text = "Orks - Normal Boiis";
 					data = [
@@ -192,7 +197,7 @@ class LT_Camo_combo: Title
 /* Officer */		["Boss1Uni_OP","BossGear1",nil,"BossHelm1"],
 							];
 				};
-				class RedOrks
+				class Ork_RedOrks
 				{
 					text = "Orks - Red Boiis";
 					data = [
@@ -204,7 +209,7 @@ class LT_Camo_combo: Title
 /* Officer */		["Boss1Uni_OP","BossGear2",nil,"BossHelm2"],
 							];
 				};
-				class BloodPacts
+				class Chaos_BloodPacts
 				{
 					text = "Chaos - Blood Pacts";
 					data = [
@@ -218,7 +223,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["TIOW_U_Bloodpact_01_OP",nil,nil,"Cad_Inf_Helm700th","TIOW_Bloodpact_mask_01_silver"],
 							];
 				};
-				class BloodPactsLight
+				class Chaos_BloodPactsLight
 				{
 					text = "Chaos - Blood Pacts (Light)";
 					data = [
@@ -231,7 +236,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["ML700_Bloodpact_Uniform1","ML700_BP_Armor0",nil,"ML700_Bloodpact_Helmet_Officer_Silver",nil],
 							];
 				};
-				class ChaosCultists
+				class Chaos_ChaosCultists
 				{
 					text = "Chaos - Cultists";
 					data = [
@@ -245,7 +250,7 @@ class LT_Camo_combo: Title
 /* Commisar */	nil,
 							];
 				};
-				class RenegadesBlack
+				class Chaos_RenegadesBlack
 				{
 					text = "Chaos - Renegades (Black)";
 					data = [
@@ -259,7 +264,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["OP_Ren_Uniform_01_black","Ren_ArmorSet_01_green","Cad_RebreatherMask700th",nil,nil],
 							];
 				};
-				class RenegadesBrown
+				class Chaos_RenegadesBrown
 				{
 					text = "Chaos - Renegades (Brown)";
 					data = [
@@ -273,7 +278,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["OP_Ren_Uniform_01_brown","Ren_ArmorSet_01_brown","Cad_RebreatherMask700th",nil,nil],
 							];
 				};
-				class RenegadesGreen
+				class Chaos_RenegadesGreen
 				{
 					text = "Chaos - Renegades (Green)";
 					data = [
@@ -287,7 +292,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["OP_Ren_Uniform_01_green","Ren_ArmorSet_01_green","Cad_RebreatherMask700th",nil,nil],
 							];
 				};
-				class RenegadesGrey
+				class Chaos_RenegadesGrey
 				{
 					text = "Chaos - Renegades (Grey)";
 					data = [
@@ -301,7 +306,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["OP_Ren_Uniform_01_grey","Ren_ArmorSet_01_grey","Cad_RebreatherMask700th",nil,nil],
 							];
 				};
-				class TauTau
+				class Tua_Tau
 				{
 					text = "Tau - T'Au ";
 					data = [
@@ -315,7 +320,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["TIOW_U_Fire_Warrior_TA_I","TIOW_Tau_BeltB_Shasui_TA","TIOW_Tau_Bck_Breacher_TA","TIOW_Tau_HelmetB2_TA_sui",nil],
 							];
 				};
-				class TauGreen
+				class Tua_TauGreen
 				{
 					text = "Tau - Dal'Yth (Green)";
 					data = [
@@ -329,7 +334,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["TIOW_U_Fire_Warrior_DY_I","TIOW_Tau_BeltB_Shasui_DY","TIOW_Tau_Bck_Breacher_DY","TIOW_Tau_HelmetB2_DY_sui",nil],
 							];
 				};
-				class TauRed
+				class Tua_TauRed
 				{
 					text = "Tau - Farsight Enclave (Red)";
 					data = [
@@ -343,7 +348,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["TIOW_U_Fire_Warrior_FE_I","TIOW_Tau_BeltB_Shasui_FE","TIOW_Tau_Bck_Breacher_FE","TIOW_Tau_HelmetB2_FE_sui",nil],
 							];
 				};
-				class TauBlue
+				class Tua_TauBlue
 				{
 					text = "Tau - Sa'Cea (Blue)";
 					data = [
@@ -357,7 +362,7 @@ class LT_Camo_combo: Title
 /* Commisar */	["TIOW_U_Fire_Warrior_SC_I","TIOW_Tau_BeltB_Shasui_SC","TIOW_Tau_Bck_Breacher_SC","TIOW_Tau_HelmetB2_SC_sui",nil],
 							];
 				};
-				class TauWhite
+				class Tua_TauWhite
 				{
 					text = "Tau - Voir'La (White)";
 					data = [
@@ -374,7 +379,7 @@ class LT_Camo_combo: Title
 
 
 
-				class SpaceMarineUltra
+				class SpaceMarine_Imperial_Ultra
 				{
 					text = "Space Marines - Imperial - UltraMarines";
 					data = [
@@ -385,7 +390,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk8PowerArmor_1_UM","TIOW_Mk2Limbs_UM","TIOW_Mk4Powerpack_Ultra","TIOW_MK7Helmet_BA",nil],
 							];
 				};
-				class SpaceMarineWS
+				class SpaceMarine_Imperial_WS
 				{
 					text = "Space Marines - Imperial - White Scars";
 					data = [
@@ -396,7 +401,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk8PowerArmor_1_WS","TIOW_Mk2Limbs_WS","TIOW_Mk4Powerpack_WS","TIOW_MK7Helmet_WS_Alt",nil],
 							];
 				};
-				class SpaceMarineSW
+				class SpaceMarine_Imperial_SW
 				{
 					text = "Space Marines - Imperial - Space Wolves";
 					data = [
@@ -407,7 +412,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk8PowerArmor_1_SW","TIOW_Mk2Limbs_SW","TIOW_Mk4Powerpack_SW","TIOW_MK7Helmet_SW_Alt",nil],
 							];
 				};
-				class SpaceMarineSL
+				class SpaceMarine_Imperial_SL
 				{
 					text = "Space Marines - Imperial - Salamanders";
 					data = [
@@ -418,7 +423,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk8PowerArmor_1_SL","TIOW_Mk2Limbs_SL","TIOW_Mk4Powerpack_SL","TIOW_MK7Helmet_SL_Alt",nil],
 							];
 				};
-				class SpaceMarineIH
+				class SpaceMarine_Imperial_IH
 				{
 					text = "Space Marines - Imperial - Iron Hands";
 					data = [
@@ -429,7 +434,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk8PowerArmor_1_IH","TIOW_Mk2Limbs_IH","TIOW_Mk4Powerpack_IH","TIOW_MK7Helmet_IH_Alt",nil],
 							];
 				};
-				class SpaceMarineIF
+				class SpaceMarine_Imperial_IF
 				{
 					text = "Space Marines - Imperial - Iron Fists";
 					data = [
@@ -440,7 +445,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk8PowerArmor_1_IF","TIOW_Mk2Limbs_IF","TIOW_Mk4Powerpack_IF","TIOW_MK7Helmet_IF_Alt",nil],
 							];
 				};
-				class SpaceMarineDA
+				class SpaceMarine_Imperial_DA
 				{
 					text = "Space Marines - Imperial - Dark Angels";
 					data = [
@@ -451,7 +456,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk8PowerArmor_1_DA","TIOW_Mk2Limbs_DA","TIOW_Mk4Powerpack_DA","TIOW_MK7Helmet_DA_Alt",nil],
 							];
 				};
-				class SpaceMarineDAPre
+				class SpaceMarine_Imperial_DAPre
 				{
 					text = "Space Marines - Imperial - Dark Angels (Pre-Heresy)";
 					data = [
@@ -462,7 +467,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk8PowerArmor_1_DA_HH","TIOW_Mk2Limbs_DA_HH","TIOW_Mk4Powerpack_DA_HH","TIOW_MK7Helmet_DA_HH_Alt",nil],
 							];
 				};
-				class SpaceMarineBR
+				class SpaceMarine_Imperial_BR
 				{
 					text = "Space Marines - Imperial - Blood Ravens";
 					data = [
@@ -473,7 +478,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk8PowerArmor_1_BR","TIOW_Mk2Limbs_BR","TIOW_Mk4Powerpack_BR","TIOW_MK7Helmet_BR_Alt",nil],
 							];
 				};
-				class SpaceMarineBA
+				class SpaceMarine_Imperial_BA
 				{
 					text = "Space Marines - Imperial - Blood Angels";
 					data = [
@@ -484,7 +489,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk8PowerArmor_1_BA","TIOW_Mk2Limbs_BA","TIOW_Mk4Powerpack_BA","TIOW_MK7Helmet_BA_Alt",nil],
 							];
 				};
-				class SpaceMarineBT
+				class SpaceMarine_Imperial_BT
 				{
 					text = "Space Marines - Imperial - Black Templars";
 					data = [
@@ -495,7 +500,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk8PowerArmor_1_BT","TIOW_Mk2Limbs_BT","TIOW_Mk4Powerpack_BT","TIOW_MK7Helmet_BT_Alt",nil],
 							];
 				};
-				class SpaceMarineRG
+				class SpaceMarine_Imperial_RG
 				{
 					text = "Space Marines - Imperial - Raven Guard";
 					data = [
@@ -506,7 +511,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk8PowerArmor_1_RG","TIOW_Mk2Limbs_RG","TIOW_Mk4Powerpack_RG","TIOW_MK7Helmet_RG_Alt",nil],
 							];
 				};
-				class SpaceMarineAL
+				class SpaceMarine_Chaos_AL
 				{
 					text = "Space Marines - Chaos - Alpha Legion";
 					data = [
@@ -517,7 +522,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk7PowerArmorChaos_1_AL","TIOW_ChaosLimbs_AL","TIOW_Chaos3Powerpack_AL","TIOW_SkullHelmet_1_AL",nil],
 							];
 				};
-				class SpaceMarineBL
+				class SpaceMarine_Chaos_BL
 				{
 					text = "Space Marines - Chaos - Black Legion";
 					data = [
@@ -528,7 +533,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk7PowerArmorChaos_1_BL","TIOW_ChaosLimbs_BL","TIOW_Chaos3Powerpack_BL","TIOW_SkullHelmet_1_BL",nil],
 							];
 				};
-				class SpaceMarineDG
+				class SpaceMarine_Chaos_DG
 				{
 					text = "Space Marines - Chaos - Death Guard";
 					data = [
@@ -539,7 +544,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk7PowerArmorChaos_1_DG","TIOW_ChaosLimbs_DG","TIOW_Chaos3Powerpack_DG","TIOW_SkullHelmet_1_DG",nil],
 							];
 				};
-				class SpaceMarineWE
+				class SpaceMarine_Chaos_WE
 				{
 					text = "Space Marines - Chaos - World Eaters";
 					data = [
@@ -550,7 +555,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk7PowerArmorChaos_1_WE","TIOW_ChaosLimbs_WE","TIOW_Chaos3Powerpack_WE","TIOW_SkullHelmet_1_WE",nil],
 							];
 				};
-				class SpaceMarineWB
+				class SpaceMarine_Chaos_WB
 				{
 					text = "Space Marines - Chaos - World Bearers";
 					data = [
@@ -561,7 +566,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk7PowerArmorChaos_1_WB","TIOW_ChaosLimbs_WB","TIOW_Chaos3Powerpack_WB","TIOW_SkullHelmet_1_WB",nil],
 							];
 				};
-				class SpaceMarineTS
+				class SpaceMarine_Chaos_TS
 				{
 					text = "Space Marines - Chaos - Thousand Sons";
 					data = [
@@ -572,7 +577,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk7PowerArmorChaos_1_TS","TIOW_ChaosLimbs_TS","TIOW_Chaos3Powerpack_TS","TIOW_SkullHelmet_1_TS",nil],
 							];
 				};
-				class SpaceMarineNL
+				class SpaceMarine_Chaos_NL
 				{
 					text = "Space Marines - Chaos - Night Lords";
 					data = [
@@ -583,7 +588,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk7PowerArmorChaos_1_NL","TIOW_ChaosLimbs_NL","TIOW_Chaos3Powerpack_NL","TIOW_SkullHelmet_1_NL",nil],
 							];
 				};
-				class SpaceMarineIW
+				class SpaceMarine_Chaos_IW
 				{
 					text = "Space Marines - Chaos - Iron Warriors";
 					data = [
@@ -594,7 +599,7 @@ class LT_Camo_combo: Title
 /* Officer */		["TIOW_Mk7PowerArmorChaos_1_IW","TIOW_ChaosLimbs_IW","TIOW_Chaos3Powerpack_IW","TIOW_SkullHelmet_1_IW",nil],
 							];
 				};
-				class SpaceMarineEC
+				class SpaceMarine_Chaos_EC
 				{
 					text = "Space Marines - Chaos - Emperor's Children";
 					data = [

@@ -21,8 +21,8 @@ class lt_template_silencer1 {
 	typeName = "STRING";
 	defaultValue = "muzzle_snds_M";
 };
-class lt_template_silencer2 {
-	displayName = "Silencer 2";
+class lt_template_silencerSMG {
+	displayName = "Silencer SMG";
 	description = "";
 	typeName = "STRING";
 	defaultValue = "muzzle_snds_H";
@@ -35,15 +35,15 @@ class lt_template_scope1 {
 	typeName = "STRING";
 	defaultValue = "optic_Holosight";
 };
-class lt_template_scope2 {
-	displayName = "Scope 2";
-	description = "For marksmen";
+class lt_template_scopeSNP {
+	displayName = "Scope SNP";
+	description = "For snipers";
 	typeName = "STRING";
 	defaultValue = "optic_DMS";
 };
-class lt_template_scope3 {
-	displayName = "Scope 3";
-	description = "For snipers";
+class lt_template_scopeDM {
+	displayName = "Scope DM";
+	description = "For marksmen";
 	typeName = "STRING";
 	defaultValue = "optic_SOS";
 };

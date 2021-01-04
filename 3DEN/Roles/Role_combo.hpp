@@ -1,4 +1,4 @@
-// Your attribute class
+Role// Your attribute class
 class LT_role_combo: Title
 {
 	//Thanks to R3vo (https://github.com/RevoArma3/3denEnhanced/blob/master/3denEnhanced/controls/garrisonCoverageCombo.hpp)
@@ -43,10 +43,10 @@ class LT_role_combo: Title
 					text = "Tech Priest (Engineer/Repair)";
 					data = "pri";
 				};
-				class LT_Role_DC {
-					data = "sql";
-					text = "Squad Leader";
-				};
+			  class LT_Role_DC {
+			    data = "dc";
+			    text = "Squad leader";
+			  };
 				class LT_Role_rad {
 					data = "radio";
 					text = "Radioman";
@@ -55,70 +55,121 @@ class LT_role_combo: Title
 					data = "m";
 					text = "Medic";
 				};
+				class LT_Role_FTL {
+			    data = "ftl";
+			    text = "Fire team leader";
+			  };
 				class LT_Role_AR {
-					data = "ar";
-					text = "Automatic rifleman";
-				};
-				class LT_Role_AAR {
-					data = "aar";
-					text = "Assistant automatic rifleman";
-				};
-				class LT_Role_RAT {
-					data = "rat";
-					text = "Rifleman (AT)";
-				};
-				class LT_Role_DM {
-					data = "dm";
-					text = "Designated marksman";
-				};
-				class LT_Role_HMGG {
-					data = "hmgg";
-					text = "Heavy MG gunner (Static)";
-				};
-				class LT_Role_HMGAG {
-					data = "hmgag";
-					text = "Heavy MG assistant gunner (Static)";
-				};
-				class LT_ROLE_MATG {
-					data = "matg";
-					text = "Medium AT gunner";
-				};
-				class LT_Role_MATAG {
-					data = "matag";
-					text = "Medium AT assistant gunner";
-				};
-				class LT_ROLE_HATG {
-					data = "hatg";
-					text = "Heavy AT gunner (Static)";
-				};
-				class LT_Role_HATAG {
-					data = "hatag";
-					text = "Heavy AT assistant gunner (Static)";
-				};
-				class LT_ROLE_MTRG {
-					data = "mtrg";
-					text = "Mortar gunner (Static)";
-				};
-				class LT_Role_MTRAG {
-					data = "mtrag";
-					text = "Mortar assistant gunner (Static)";
-				};
+			    data = "ar";
+			    text = "Automatic rifleman";
+			  };
+			  class LT_Role_AAR {
+			    data = "aar";
+			    text = "Assistant automatic rifleman";
+			  };
+			  class LT_Role_RAT {
+			    data = "rat";
+			    text = "Rifleman (AT)";
+			  };
+			  class LT_Role_DM {
+			    data = "dm";
+			    text = "Designated marksman";
+			  };
+				class LT_Role_MMGG {
+			    data = "mmgg";
+			    text = "Medium mg gunner";
+			  };
+			  class LT_Role_MMGAG {
+			    data = "mmgag";
+			    text = "Medium mg assistant";
+			  };
+			  class LT_Role_HMGG {
+			    data = "hmgg";
+			    text = "Heavy mg gunner";
+			  };
+			  class LT_Role_HMGAG {
+			    data = "hmgag";
+			    text = "Heavy mg assistant";
+			  };
+			  class LT_Role_MATG {
+			    data = "matg";
+			    text = "Medium AT gunner";
+			  };
+			  class LT_Role_MATAG {
+			    data = "matag";
+			    text = "Medium AT assistant";
+			  };
+			  class LT_Role_HATG {
+			    data = "hatg";
+			    text = "Heavy AT gunner";
+			  };
+			  class LT_Role_HATAG {
+			    data = "hatag";
+			    text = "Heavy AT assistant gunner";
+			  };
+				class LT_Role_HMGGS {
+			    data = "hmggs";
+			    text = "Heavy MG gunner (Static)";
+			  };
+			  class LT_Role_HMGAGS {
+			    data = "hmgags";
+			    text = "Heavy MG assistant gunner (Static)";
+			  };
+			  class LT_Role_STATG {
+			    data = "STATG";
+			    text = "Static AT gunner";
+			  };
+			  class LT_Role_STATAG {
+			    data = "STATAG";
+			    text = "Static AT assistant gunner";
+			  };
+			  class LT_Role_MTRG {
+			    data = "mtrg";
+			    text = "Mortar gunner (Static)";
+			  };
+			  class LT_Role_MTRAG {
+			    data = "mtrag";
+			    text = "Mortar assistant gunner (Static)";
+			  };class LT_Role_MSAMG {
+			    data = "msamg";
+			    text = "Medium SAM gunner";
+			  };
+			  class LT_Role_MSAMAG {
+			    data = "msamag";
+			    text = "Medium SAM assistant gunner";
+			  };
+			  class LT_Role_SN {
+			    data = "sn";
+			    text = "Sniper";
+			  };
+			  class LT_Role_SP {
+			    data = "sp";
+			    text = "Spotter";
+			  };
 				class LT_Role_VC {
-					data = "vc";
-					text = "Vehicle commander";
-				};
-				class LT_Role_VG {
-					data = "vg";
-					text = "Vehicle gunner";
-				};
-				class LT_Role_VD {
-					data = "vd";
-					text = "Vehicle driver (repair)";
-				};
+			    data = "vc";
+			    text = "Vehicle commander";
+			  };
+			  class LT_Role_VG {
+			    data = "vg";
+			    text = "Vehicle gunner";
+			  };
+			  class LT_Role_VD {
+			    data = "vd";
+			    text = "Vehicle driver (repair)";
+			  };
 				class LT_Role_PP {
 					data = "pp";
 					text = "Air vehicle pilot / co-pilot";
 				};
+				class LT_Role_PCC {
+			    data = "pcc";
+			    text = "Air vehicle co-pilot (repair) / crew chief (repair)";
+			  };
+				class LT_Role_PC {
+			    data = "pc";
+			    text = "Air vehicle crew";
+			  };
 				class LT_Role_ENG {
 					data = "eng";
 					text = "Engineer (demo)";
@@ -131,14 +182,30 @@ class LT_role_combo: Title
 					data = "uav";
 					text = "UAV Operator";
 				};
+			  class LT_Role_JTAC {
+			    data = "jtac";
+			    text = "JTAC operator";
+			  };
 				class LT_Role_R {
 					data = "r";
 					text = "Rifleman";
 				};
+			  class LT_Role_CAR {
+			    data = "car";
+			    text = "Carabineer";
+			  };
+			  class LT_Role_SMG {
+			    data = "smg";
+			    text = "Submachinegunner";
+			  };
 				class LT_Role_RG {
 					data = "rg";
 					text = "Rifleman Grenadier";
 				};
+			  class LT_Role_LVDW {
+			    data = "lvdw";
+			    text = "Lul van de week";
+			  };
 				class LT_Role_GREN {
 					data = "gren";
 					text = "Grenadier (Primary Grenadlauncher /w fun nades and sidearm)";
