@@ -10,7 +10,8 @@ if (hasInterface) then {
 	_radioBag 	= _lt_camo_var_array select 4;
 
 	// Only execute this when we want it to run.
-
+	diag_log format["LT template DEBUG: lt_camo_var == %1",lt_camo_var];
+	diag_log format["LT template DEBUG: _lt_camo_var_array == %1",_lt_camo_var_array];
 	diag_log format["LT template DEBUG: lt_tfr_var == %1",lt_tfr_var];
 
 	_roles = ["radio","vr","jtac"];

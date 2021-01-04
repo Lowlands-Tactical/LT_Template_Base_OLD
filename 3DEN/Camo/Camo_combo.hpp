@@ -195,6 +195,7 @@ class LT_Camo_combo: Title
 /* Helmet */		["ShootaBoyHelm1","ArdBoyHelm1","TankBustaHelm1"],
 /* Radiobag */	"nil",
 /* Officer */		["Boss1Uni_OP","BossGear1",nil,"BossHelm1"],
+/* Commisar */	"nil",
 							];
 				};
 				class Ork_RedOrks
@@ -207,6 +208,7 @@ class LT_Camo_combo: Title
 /* Helmet */		["ShootaBoyHelm2","ArdBoyHelm2","TankBustaHelm2"],
 /* Radiobag */	"nil",
 /* Officer */		["Boss1Uni_OP","BossGear2",nil,"BossHelm2"],
+/* Commisar */	"nil",
 							];
 				};
 				class Chaos_BloodPacts
