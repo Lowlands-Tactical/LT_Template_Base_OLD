@@ -25,10 +25,9 @@ if (hasInterface) then {
 
 	_role = player getVariable ["lt_unit_role","none"];
 
-		diag_log format ["LT template DEBUG: lt_camo_var compiled: %1", _lt_camo_var_array];
-		diag_log format ["LT template DEBUG: lt_camo_var compiled: %1", _lt_camo_var_array];
-		diag_log format ["LT template DEBUG: lt_camo_var compiled: %1", _lt_camo_var_array];
-		diag_log format ["LT template DEBUG: lt_camo_var compiled: %1", _lt_camo_var_array];
+		diag_log format ["LT template DEBUG: _officerGear_array compiled: %1", _officerGear_array];
+		diag_log format ["LT template DEBUG: _commisarGear_array compiled: %1", _commisarGear_array];
+		diag_log format ["LT template DEBUG: _smarineSergeant_array compiled: %1", _smarineSergeant_array];
 
 	switch (_role) do {
     case "co";
