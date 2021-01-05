@@ -7,7 +7,7 @@ if (hasInterface) then {
 	_sistersCamoArray = ["ML700_SoB_Uniform1","ML700_SoB_Armor0","ML700_SoB_Backpack","ML700_SoB_Helmet1","None"];
 	_sistersMedicArray = ["ML700_SoB_Uniform1","ML700_SoB_Armor2","ML700_SoB_Hospitaller_Backpack","ML700_SoB_Helmet3","None"];
 
-	_lt_smarine_camo_var_array = call compile LT_Camo_var_SMARINE
+	_lt_smarine_camo_var_array = call compile LT_Camo_var_SMARINE;
 	_lt_camo_var_array = switch (side player) do {
 		case WEST: {call compile lt_camo_var};
 		case EAST: {if (isNil "LT_Camo_var_OPF") then {call compile lt_camo_var} else {call compile LT_Camo_var_OPF};};
