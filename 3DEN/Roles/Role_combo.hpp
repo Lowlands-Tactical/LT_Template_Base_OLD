@@ -1,4 +1,4 @@
-Role// Your attribute class
+// Your attribute class
 class LT_role_combo: Title
 {
 	//Thanks to R3vo (https://github.com/RevoArma3/3denEnhanced/blob/master/3denEnhanced/controls/garrisonCoverageCombo.hpp)
