@@ -2,13 +2,13 @@
 // loadout name "Imperial Guard - LasGun"
 
 // Attachments Primary weapon
-lt_template_attach1        	 = 	 "";
+lt_template_attach1        	 = 	 ""; // ir laser
 lt_template_attach2        	 = 	 ""; // flashlight
 lt_template_silencer1      	 = 	 ""; // rifles
-lt_template_silencer2      	 = 	 ""; // MG
+lt_template_silencerSMG      = 	 ""; // SMG
 lt_template_scope1         	 = 	 "ML700_Lasgun_CarryHandle"; // normal scope
-lt_template_scope2         	 = 	 "ML700_Longlas_Scope"; // marksman scope
-lt_template_scope3         	 = 	 "";
+lt_template_scopeSNP         = 	 "ML700_Longlas_Scope"; // Sniper Scope
+lt_template_scopeDM          = 	 ""; // DM Scope
 lt_template_bipod1         	 = 	 ""; // MG
 lt_template_bipod2         	 = 	 "";
 lt_template_attachments    	 = 	 [lt_template_attach1, lt_template_scope1];
@@ -111,3 +111,6 @@ lt_template_baghatag         = 	 "TIOW_IG_Lascannon_Bag2_Blu";
 // Mortar Bag
 lt_template_bagmtrg        	 = 	 "TIOW_IG_Mortar_Bag1_Blu";
 lt_template_bagmtrag       	 = 	 "TIOW_IG_Mortar_Bag1_Blu";
+
+lt_template_nvg              =   "TIOW_CadPhotovisorGoggles";
+lt_template_nvgSmarine       =   "None";

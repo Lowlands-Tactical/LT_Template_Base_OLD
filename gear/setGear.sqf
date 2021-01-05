@@ -70,6 +70,12 @@ if (hasInterface) then {
       clearItemCargoGlobal (unitBackpack _unit);
     };
 
+    // NVG INIT
+    if (_role in ["smarine","smarineSergeant","smarineHeavy","smarineMelta","smarineFlameth"]) then {
+      _nvg = _nvgSmarine;
+    } else {
+      _nvg = if (isNil "lt_template_nvg") then {"ACE_NVG_Wide"} else {lt_template_nvg};
+    };
 
     _unit addItem _bandages;
     _unit addItem _bandages;
@@ -104,23 +110,38 @@ if (hasInterface) then {
     // LOADOUT: COMMANDER
       case "co":
       {
-        _unit addweapon _glrifle;
-        _unit addweapon _pistol;
+        _unit addweapon _bigPistol;
         _unit addWeapon _rangefinder;
         _unit addItem _uavterminal;
         _unit assignItem _uavterminal;
-        _unit addmagazines [_pistolmag,2];
+        _unit addmagazines [_bigPistolmag,5];
         _unit addmagazines [_grenade,1];
 
-        _unit addmagazines [_glmag, 5];
-        _unit addmagazines [_glsmokewhite, 6];
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 3];
         _unit addmagazines [_smokegrenade, 4];
         _unit addmagazines [_smokegrenadegreen,2];
-        _unit addmagazines [_glriflemag_tr,2];
-        _unit addmagazines [_glriflemag, 11];
       };
+
+      // LOADOUT: COMMANDER /w Plasma Pistol
+        case "coplas":
+        {
+          _unit addweapon _PlasmaPistol;
+          _unit addWeapon _rangefinder;
+          _unit addItem _uavterminal;
+          _unit assignItem _uavterminal;
+          _unit addmagazines [_PlasmaPistolMag,5];
+          _unit addmagazines [_grenade,1];
+
+          _unit addmagazines [_grenade, 2];
+          _unit addmagazines [_mgrenade, 3];
+          _unit addmagazines [_smokegrenade, 4];
+          _unit addmagazines [_smokegrenadegreen,2];
+          _unit addItem _PlasmaCoolantS;
+          _unit addItem _PlasmaCoolantS;
+          _unit addItem _PlasmaCoolantS;
+          _unit addItem _PlasmaCoolantS;
+        };
 
     // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
       case "dc":
@@ -808,6 +829,12 @@ if (hasInterface) then {
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_GrenLauncherMag, 4];
+        _unit addmagazines [_GrenLauncherMag_AT, 2];
+        _unit addmagazines [_GrenLauncherMag_Bck, 1];
+        _unit addmagazines [_GrenLauncherMag_Smk, 1];
+        _unit addmagazines [_GrenLauncherMag_Flr, 1];
+        _unit addmagazines [_GrenLauncherMag_Flm, 1];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
       };
@@ -815,10 +842,11 @@ if (hasInterface) then {
     // LOADOUT: FLAMETHROWER
       case "flameth":
       {
-        _unit addweapon ;
+        _unit addweapon _Flamer;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_FlamerMag, 8];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
       };
@@ -826,10 +854,11 @@ if (hasInterface) then {
     // LOADOUT: SHOTGUNNER
       case "shot":
       {
-        _unit addweapon ;
+        _unit addweapon _Shotrifle;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_ShotrifleMag, 8];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
       };
@@ -837,10 +866,12 @@ if (hasInterface) then {
     // LOADOUT: PLASMA GUNNER
       case "plasmag":
       {
-        _unit addweapon ;
+        _unit addweapon _PlasmaRifle;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_PlasmaRifleMag, 8];
+        _unit addmagazines [_PlasmaRifleMag_tr, 3];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
       };
@@ -848,10 +879,12 @@ if (hasInterface) then {
     // LOADOUT: PLASMA ASSISTANT GUNNER
       case "plasmaag":
       {
-        _unit addweapon ;
+        _unit addweapon _rifle;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_riflemag, 8];
+        _unit addmagazines [_PlasmaRifleMag, 5];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
       };
@@ -859,10 +892,12 @@ if (hasInterface) then {
     // LOADOUT: SPECIAL GUNNER
       case "specialg":
       {
-        _unit addweapon ;
+        _unit addweapon _Speshalrifle;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_Speshalriflemag, 8];
+        _unit addmagazines [_Speshalriflemag_tr, 4];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
       };
@@ -870,58 +905,111 @@ if (hasInterface) then {
     // LOADOUT: SPECIAL ASSISTANT GUNNER
       case "specialag":
       {
-        _unit addweapon ;
+        _unit addweapon _rifle;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_riflemag, 8];
+        _unit addmagazines [_Speshalriflemag, 5];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
       };
 
     // FACTION SPECIFIC ROLES
 
+    // LOADOUT: COMMISSAR
+      case "com":
+      {
+        _unit addweapon _bigPistol;
+        _unit addWeapon _rangefinder;
+        _unit addmagazines [_bigPistolmag,5];
+        _unit addmagazines [_grenade,1];
+
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 3];
+        _unit addmagazines [_smokegrenade, 4];
+        _unit addmagazines [_smokegrenadegreen,2];
+
+        _nvg = "TIOW_Bionic_Eye"
+      };
+
+      // LOADOUT: COMMISSAR /w Plasma Pistol
+        case "complas":
+        {
+          _unit addweapon _PlasmaPistol;
+          _unit addmagazines [_PlasmaPistolMag,5];
+          _unit addmagazines [_grenade,1];
+
+          _unit addmagazines [_grenade, 2];
+          _unit addmagazines [_mgrenade, 3];
+          _unit addmagazines [_smokegrenade, 4];
+          _unit addmagazines [_smokegrenadegreen,2];
+          _unit addItem _PlasmaCoolantS;
+          _unit addItem _PlasmaCoolantS;
+          _unit addItem _PlasmaCoolantS;
+          _unit addItem _PlasmaCoolantS;
+
+          _nvg = "TIOW_Bionic_Eye"
+        };
+
     // LOADOUT: SKITARII RANGER
       case "ranger":
       {
-        _unit addweapon ;
+        _unit addweapon _Rangerrifle;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_Rangerriflemag, 8];
+
+        _attachments = [_Rangerscope];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+
+        _nvg = "ML700_Integrated_NVG_Skitarii"
       };
 
     // LOADOUT: SKITARII RANGER AT
       case "rangerAT":
       {
-        _unit addweapon ;
+        _unit addweapon _RangerATrifle;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_RangerATriflemag, 8];
+
+        _attachments = [_RangerATscope];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+
+        _nvg = "ML700_Integrated_NVG_Skitarii"
       };
 
     // LOADOUT: SISTERS
       case "sister":
       {
-        _unit addweapon ;
+        _unit addweapon _Sisterrifle;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_Sisterriflemag, 8];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+
+        _nvg = "ML700_Integrated_NVG_SoB"
       };
 
     // LOADOUT: SISTERS MEDIC
       case "sisterMedic":
       {
-        _unit addweapon ;
+        _unit addweapon _Sisterrifle;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_Sisterriflemag, 8];
 
         if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+
+        _nvg = "ML700_Integrated_NVG_SoB"
       };
 
     //  SPACE MARINES
@@ -929,56 +1017,71 @@ if (hasInterface) then {
     // LOADOUT: SPACE MARINE
       case "smarine":
       {
-        _unit addweapon ;
+        _unit addweapon _Smarinerifle;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_Sisterriflemag, 8];
 
-        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+        if (_nvgSmarine != "None") then {
+            if (typename _nvgSmarine == "ARRAY") then {_nvg = _nvgSmarine;} else {_nvg = _nvgSmarine};
+        };
       };
 
     // LOADOUT: SPACE MARINE SERGEANT
       case "smarineSergeant":
       {
-        _unit addweapon ;
+        _unit addweapon _SmarinePlasmarifle;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_SmarinePlasmariflemag, 8];
 
-        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+        if (_nvgSmarine != "None") then {
+            if (typename _nvgSmarine == "ARRAY") then {_nvg = _nvgSmarine;} else {_nvg = _nvgSmarine};
+        };
       };
 
     // LOADOUT: SPACE MARINE HEAVY BOLTER
       case "smarineHeavy":
       {
-        _unit addweapon ;
+        _unit addweapon _SmarineHeavyrifle;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_SmarineHeavyriflemag, 8];
 
-        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+        if (_nvgSmarine != "None") then {
+            if (typename _nvgSmarine == "ARRAY") then {_nvg = _nvgSmarine;} else {_nvg = _nvgSmarine};
+        };
       };
 
     // LOADOUT: SPACE MARINE METLAGUNNER
       case "smarineMelta":
       {
-        _unit addweapon ;
+        _unit addweapon _SmarineMeltarifle;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_SmarineMeltariflemag, 8];
 
-        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+        if (_nvgSmarine != "None") then {
+            if (typename _nvgSmarine == "ARRAY") then {_nvg = _nvgSmarine;} else {_nvg = _nvgSmarine};
+        };
       };
 
     // LOADOUT: SPACE MARINE FLAMETHROWER
       case "smarineFlameth":
       {
-        _unit addweapon ;
+        _unit addweapon _SmarineFlamethrifle;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
+        _unit addmagazines [_SmarineFlamethriflemag, 8];
 
-        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+        if (_nvgSmarine != "None") then {
+            if (typename _nvgSmarine == "ARRAY") then {_nvg = _nvgSmarine;} else {_nvg = _nvgSmarine};
+        };
       };
 
 
@@ -1017,10 +1120,9 @@ if (hasInterface) then {
     };
 
     // NVG
-    _nvg = if (isNil "lt_template_nvg") then {"ACE_NVG_Wide"} else {lt_template_nvg};
     _nvgLinked = hmd _unit;
-    _nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
-   [_unit, _nvgLinked, _nvg_enabled, _nvg] call LT_fnc_NVGParameters;
+    /* _nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
+    [_unit, _nvgLinked, _nvg_enabled, _nvg] call LT_fnc_NVGParameters; */
 
     diag_log format ["LT Template DEBUG: setGear.sqf finished"];
     diag_log format ["LT Template DEBUG: setGear.sqf attachments attached to weapons"];

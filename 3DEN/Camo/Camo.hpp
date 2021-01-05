@@ -63,7 +63,7 @@ class LT_Gear_changer_SMARINE
 	displayName = "Choose Camouflage Space Marines";
 	tooltip = "Choose the camouflage the units will have";
 	property = "LT_camo_selector_id_SMARINE";
-	control = "LT_Camo_combo";
+	control = "LT_Camo_combo_smarine";
 	expression = "LT_Camo_var_SMARINE = _value;";
 	defaultValue = "None";
 	typeName = "STRING";

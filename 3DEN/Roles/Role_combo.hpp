@@ -222,6 +222,8 @@ class LT_role_combo: Title
 					data = "specialag";
 					text = "Special Assistant Gunner";
 				};
+
+				// Faction Specifics
 				class LT_Role_COM {
 					data = "com";
 					text = "Imperial - Commisar";
@@ -250,7 +252,8 @@ class LT_role_combo: Title
 					data = "sisterMedic";
 					text = "Imperial - Sisters Medic";
 				};
-
+				
+				// SPACE MARINES
 				class LT_Role_SMARINE {
 					data = "smarine";
 					text = "Space Marine";
