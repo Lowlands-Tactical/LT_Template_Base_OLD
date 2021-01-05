@@ -214,11 +214,11 @@ class LT_role_combo: Title
 					data = "plasmaag";
 					text = "Plasma Assistant Gunner";
 				};
-				class LT_Role_PLASMAG {
+				class LT_Role_SPECIALG {
 					data = "specialg";
 					text = "Special Gunner";
 				};
-				class LT_Role_PLASMAAG {
+				class LT_Role_SPECIALAG {
 					data = "specialag";
 					text = "Special Assistant Gunner";
 				};
@@ -252,7 +252,7 @@ class LT_role_combo: Title
 					data = "sisterMedic";
 					text = "Imperial - Sisters Medic";
 				};
-				
+
 				// SPACE MARINES
 				class LT_Role_SMARINE {
 					data = "smarine";
