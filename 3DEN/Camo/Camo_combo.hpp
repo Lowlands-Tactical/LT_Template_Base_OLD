@@ -22,7 +22,7 @@ class LT_Camo_combo: Title
 				class LT_Camo_None
 				{
 					text = "None";
-					data = ["None","None","None","None","None","None","None","None"];
+					data = ["None","None","None","None","None","None",["None","None","None","None","None"],["None","None","None","None","None"]];
 					default = 1;
 				};
 				class Imperial_Guard

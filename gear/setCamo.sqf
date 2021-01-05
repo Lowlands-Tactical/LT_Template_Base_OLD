@@ -25,6 +25,11 @@ if (hasInterface) then {
 
 	_role = player getVariable ["lt_unit_role","none"];
 
+		diag_log format ["LT template DEBUG: lt_camo_var compiled: %1", _lt_camo_var_array];
+		diag_log format ["LT template DEBUG: lt_camo_var compiled: %1", _lt_camo_var_array];
+		diag_log format ["LT template DEBUG: lt_camo_var compiled: %1", _lt_camo_var_array];
+		diag_log format ["LT template DEBUG: lt_camo_var compiled: %1", _lt_camo_var_array];
+
 	switch (_role) do {
     case "co";
     case "coplas": {

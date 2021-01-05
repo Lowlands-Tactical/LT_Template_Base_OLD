@@ -38,7 +38,7 @@ if (hasInterface) then {
 		  publicVariable "tf_no_auto_long_range_radio";
 
 		  if (_constraint != "None" and _role in _roles) then {
-				if (_role != "smarineSergeant") {
+				if (_role != "smarineSergeant") then {
         	null = if (typename _radioBag == "ARRAY")then {[player, selectRandom _radioBag] call lt_fnc_changeBackpack} else {[player, _radioBag] call lt_fnc_changeBackpack;};
 				};
 				(unitBackpack _unit) addItemCargoGlobal ["ACRE_PRC152",1];
@@ -65,7 +65,7 @@ if (hasInterface) then {
       } forEach ([] call acre_api_fnc_getCurrentRadioList);
 
 			if (_constraint != "None" and _role in _roles) then {
-				if (_role != "smarineSergeant") {
+				if (_role != "smarineSergeant") then {
         	null = if (typename _radioBag == "ARRAY")then {[player, selectRandom _radioBag] call lt_fnc_changeBackpack} else {[player, _radioBag] call lt_fnc_changeBackpack;};
 				};
 				(unitBackpack _unit) addItemCargoGlobal ["ACRE_PRC152",1];
@@ -96,7 +96,7 @@ if (hasInterface) then {
       } forEach ([] call acre_api_fnc_getCurrentRadioList);
 
 			if (_constraint != "None" and _role in _roles) then {
-				if (_role != "smarineSergeant") {
+				if (_role != "smarineSergeant") then {
         	null = if (typename _radioBag == "ARRAY")then {[player, selectRandom _radioBag] call lt_fnc_changeBackpack} else {[player, _radioBag] call lt_fnc_changeBackpack;};
 				};
 				(unitBackpack _unit) addItemCargoGlobal ["ACRE_PRC152",1];
