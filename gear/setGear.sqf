@@ -825,7 +825,7 @@ if (hasInterface) then {
     // LOADOUT: GRENADIER
       case "gren":
       {
-        _unit addweapon ;
+        _unit addweapon _GrenLauncher;
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
