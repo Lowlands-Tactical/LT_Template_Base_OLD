@@ -4,7 +4,21 @@ if (hasInterface) then {
   _exclude = _unit getVariable ["LT_camo_exclude", 0];
   _nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
 
-  _RolesArray = ["custom","co","dc","m","ftl","ar","aar","rat","dm","mmgg","mmgag","hmgg","hmgag","matg","matag","hatg","hatag","mtrg","mtrag","msamg","msamag","hsamg","hsamag","sn","sp","vc","vd","vg","pp","pcc","pc","eng","engm","uav","jtac","div","r","car","smg","gren","lvdw"];
+  _RolesArray = [ "custom",
+      "co","coplas","dc","m","ftl", // Command Roles
+      "ar","aar","rat","dm", // General Roles
+      "mmgg","mmgag","hmgg","hmgag","matg","matag","hatg","hatag", // Support Roles
+      "mtrg","mtrag","msamg","msamag","hsamg","hsamag", // Static Roles
+      "sn","sp", // Snipers
+      "vc","vd","vg","pp","pcc","pc", // Vehicle Roles
+      "eng","engm", // Engineers
+      "uav","jtac", // UAV / Support
+      "div","r","car","smg","rg", // Remaining Weapon Roles
+      "lvdw", // LUL
+      "gren","flameth","shot","plasmag","plasmaag","specialg","specialag", // 40k Support Roles
+      "com","complas","pri","ranger","rangerAT","sister","sisterMedic", // Imperial Roles
+      "smarine","smarineSergeant","smarineHeavy","smarineMelta","smarineFlameth", // Space Marines
+      ];
 
   diag_log format ["LT Template DEBUG: role is %1 and exclude is %2",_role, _exclude];
   diag_log format ["LT Template DEBUG: setGear.sqf Role in RolesArray: %1", _role IN _RolesArray];
@@ -755,8 +769,8 @@ if (hasInterface) then {
         _attachments = [_attach1, _silencerSMG, _scope1]
       };
 
-    // LOADOUT: GRENADIER
-      case "gren":
+    // LOADOUT: RIFLEMAN GRENADIER
+      case "rg":
       {
         _unit addweapon _glrifle;
         _unit addmagazines [_grenade, 2];
@@ -786,6 +800,187 @@ if (hasInterface) then {
         _unit addmagazines [_riflemag, 13];
         _unit addmagazines [_ARmag, 4];
       };
+
+    // LOADOUT: GRENADIER
+      case "gren":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    // LOADOUT: FLAMETHROWER
+      case "flameth":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    // LOADOUT: SHOTGUNNER
+      case "shot":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    // LOADOUT: PLASMA GUNNER
+      case "plasmag":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    // LOADOUT: PLASMA ASSISTANT GUNNER
+      case "plasmaag":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    // LOADOUT: SPECIAL GUNNER
+      case "specialg":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    // LOADOUT: SPECIAL ASSISTANT GUNNER
+      case "specialag":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    // FACTION SPECIFIC ROLES
+
+    // LOADOUT: SKITARII RANGER
+      case "ranger":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    // LOADOUT: SKITARII RANGER AT
+      case "rangerAT":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    // LOADOUT: SISTERS
+      case "sister":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    // LOADOUT: SISTERS MEDIC
+      case "sisterMedic":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    //  SPACE MARINES
+
+    // LOADOUT: SPACE MARINE
+      case "smarine":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    // LOADOUT: SPACE MARINE SERGEANT
+      case "smarineSergeant":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    // LOADOUT: SPACE MARINE HEAVY BOLTER
+      case "smarineHeavy":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    // LOADOUT: SPACE MARINE METLAGUNNER
+      case "smarineMelta":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
+    // LOADOUT: SPACE MARINE FLAMETHROWER
+      case "smarineFlameth":
+      {
+        _unit addweapon ;
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+
+        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
+      };
+
 
     // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
        default

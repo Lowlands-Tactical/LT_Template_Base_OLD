@@ -31,18 +31,6 @@ class LT_role_combo: Title
 					text = "Commander /w Plasma";
 					data = "coplas";
 				};
-				class LT_Role_COM {
-					text = "Commisar";
-					data = "com";
-				};
-				class LT_Role_COMwP {
-					text = "Commisar /w Plasma";
-					data = "complas";
-				};
-				class LT_Role_PRI {
-					text = "Tech Priest (Engineer/Repair)";
-					data = "pri";
-				};
 			  class LT_Role_DC {
 			    data = "dc";
 			    text = "Squad leader";
@@ -225,6 +213,63 @@ class LT_role_combo: Title
 				class LT_Role_PLASMAAG {
 					data = "plasmaag";
 					text = "Plasma Assistant Gunner";
+				};
+				class LT_Role_PLASMAG {
+					data = "specialg";
+					text = "Special Gunner";
+				};
+				class LT_Role_PLASMAAG {
+					data = "specialag";
+					text = "Special Assistant Gunner";
+				};
+				class LT_Role_COM {
+					data = "com";
+					text = "Imperial - Commisar";
+				};
+				class LT_Role_COMwP {
+					data = "complas";
+					text = "Imperial - Commisar /w Plasma";
+				};
+				class LT_Role_PRI {
+					data = "pri";
+					text = "Imperial - Tech Priest (Engineer/Repair)";
+				};
+				class LT_Role_RANGER {
+					data = "ranger";
+					text = "Imperial - Skitarii Ranger AT";
+				};
+				class LT_Role_RANGERAT {
+					data = "rangerAT";
+					text = "Imperial - Skitarii Ranger AT";
+				};
+				class LT_Role_SISTER {
+					data = "sister";
+					text = "Imperial - Sisters";
+				};
+				class LT_Role_SISTERMEDIC {
+					data = "sisterMedic";
+					text = "Imperial - Sisters Medic";
+				};
+
+				class LT_Role_SMARINE {
+					data = "smarine";
+					text = "Space Marine";
+				};
+				class LT_Role_SMARINESERGEANT {
+					data = "smarineSergeant";
+					text = "Space Marine Sergeant";
+				};
+				class LT_Role_SMARINEHEAVY {
+					data = "smarineHeavy";
+					text = "Space Marine Heavy Bolter";
+				};
+				class LT_Role_SMARINEMELTA {
+					data = "smarineMelta";
+					text = "Space Marine Meltagunner";
+				};
+				class LT_Role_SMARINEFLAMETH {
+					data = "smarineFlameth";
+					text = "Space Marine Flamethrower";
 				};
 			};
 		};
