@@ -17,7 +17,7 @@ if (hasInterface) then {
       "lvdw", // LUL
       "gren","flameth","shot","plasmag","plasmaag","specialg","specialag", // 40k Support Roles
       "com","complas","pri","ranger","rangerAT","sister","sisterMedic", // Imperial Roles
-      "smarine","smarineSergeant","smarineHeavy","smarineMelta","smarineFlameth", // Space Marines
+      "smarine","smarineSergeant","smarineHeavy","smarineMelta","smarineFlameth" // Space Marines
       ];
 
   diag_log format ["LT Template DEBUG: role is %1 and exclude is %2",_role, _exclude];
