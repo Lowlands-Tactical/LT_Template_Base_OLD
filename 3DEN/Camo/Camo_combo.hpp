@@ -34,8 +34,8 @@ class LT_Camo_combo: Title
 /* Backpack */	"TIOW_CadBackpack",
 /* Helmet */		"ML700_Cadian_Helmet1",
 /* Radiobag */	"TIOW_IG_Vox_Caster",
-/* Officer */		["ML700_Cadian_Uniform1","ML700_Cadian_Armor1",nil,"ML700_Cadian_OfficerCap"],
-/* Commisar */	["U_TIOW_Comissar",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["ML700_Cadian_Uniform1","ML700_Cadian_Armor1","None","ML700_Cadian_OfficerCap"],
+/* Commisar */	["U_TIOW_Comissar","None","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
 				class Imperial_Cadian_667th
@@ -47,8 +47,8 @@ class LT_Camo_combo: Title
 /* Backpack */	["TIOW_CadBackpack_Winter","TIOW_CadKasrkinBackpack_667th"],
 /* Helmet */		["Cad_InfBreather_Helm667th","Cad_Inf_Helm667th"],
 /* Radiobag */	"TIOW_Vox_Caster_White2",
-/* Officer */		["U_TIOW_Captain_667_O","TIOW_IG_Officer_Armour_667",nil,"TIOW_IG_Officer_Cap1_667"],
-/* Commisar */	["U_TIOW_Comissar_Winter",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["U_TIOW_Captain_667_O","TIOW_IG_Officer_Armour_667","None","TIOW_IG_Officer_Cap1_667"],
+/* Commisar */	["U_TIOW_Comissar_Winter","None","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
 				class Imperial_Cadian_700th
@@ -60,8 +60,8 @@ class LT_Camo_combo: Title
 /* Backpack */	["TIOW_CadBackpack","TIOW_CadKasrkinBackpack_700th"],
 /* Helmet */		["Cad_InfBreather_Helm700th","Cad_Inf_Helm700th"],
 /* Radiobag */	"TIOW_Vox_Caster_Red",
-/* Officer */		["U_TIOW_Captain_700","TIOW_IG_Officer_Armour_700",nil,"TIOW_IG_Officer_Cap1_700"],
-/* Commisar */	["U_TIOW_Comissar_Brown",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["U_TIOW_Captain_700","TIOW_IG_Officer_Armour_700","None","TIOW_IG_Officer_Cap1_700"],
+/* Commisar */	["U_TIOW_Comissar_Brown","None","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
 				class Imperial_Cadian_776th
@@ -73,8 +73,8 @@ class LT_Camo_combo: Title
 /* Backpack */	["TIOW_CadBackpack","TIOW_CadKasrkinBackpack_776th"],
 /* Helmet */		["Cad_InfBreather_Helm776th","Cad_Inf_Helm776th"],
 /* Radiobag */	"TIOW_Vox_Caster_Black",
-/* Officer */		["U_TIOW_Captain_776_I","TIOW_IG_Officer_Armour_776",nil,"TIOW_IG_Officer_Cap1_776"],
-/* Commisar */	["U_TIOW_Comissar",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["U_TIOW_Captain_776_I","TIOW_IG_Officer_Armour_776","None","TIOW_IG_Officer_Cap1_776"],
+/* Commisar */	["U_TIOW_Comissar","None","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
 				class Imperial_Cadian_836th
@@ -86,8 +86,8 @@ class LT_Camo_combo: Title
 /* Backpack */	["TIOW_CadBackpack","TIOW_CadKasrkinBackpack_836th"],
 /* Helmet */		["Cad_InfBreather_Helm836th","Cad_Inf_Helm836th"],
 /* Radiobag */	"TIOW_Vox_Caster_Green",
-/* Officer */		["U_TIOW_Captain_836_I","TIOW_IG_Officer_Armour_836",nil,"TIOW_IG_Officer_Cap1_836"],
-/* Commisar */	["U_TIOW_Comissar_Desert",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["U_TIOW_Captain_836_I","TIOW_IG_Officer_Armour_836","None","TIOW_IG_Officer_Cap1_836"],
+/* Commisar */	["U_TIOW_Comissar_Desert","None","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
 				class Imperial_Valhallans
@@ -99,8 +99,8 @@ class LT_Camo_combo: Title
 /* Backpack */	"TIOW_Valhallan_Bandolier",
 /* Helmet */		["TIOW_Valhallan_Cap_3","TIOW_Valhallan_Helmet","TIOW_Valhallan_Cap_2"],
 /* Radiobag */	"TIOW_IG_Vox_Caster",
-/* Officer */		["U_TIOW_Valhallan_Blu","TIOW_Valhallan_Belt",nil,"TIOW_Valhallan_Cap"],
-/* Commisar */	["U_TIOW_Comissar_Valhallan",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["U_TIOW_Valhallan_Blu","TIOW_Valhallan_Belt","None","TIOW_Valhallan_Cap"],
+/* Commisar */	["U_TIOW_Comissar_Valhallan","None","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
 				class Imperial_ValhallansWinter
@@ -112,8 +112,8 @@ class LT_Camo_combo: Title
 /* Backpack */	"TIOW_Valhallan_Bandolier",
 /* Helmet */		["TIOW_Valhallan_Cap_white_3","TIOW_Valhallan_Helmet","TIOW_Valhallan_Cap_white_2"],
 /* Radiobag */	"TIOW_Vox_Caster_White2",
-/* Officer */		["U_TIOW_Valhallan_white_Blu","TIOW_Valhallan_Belt",nil,"TIOW_Valhallan_white_Cap"],
-/* Commisar */	["U_TIOW_Comissar_Winter",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["U_TIOW_Valhallan_white_Blu","TIOW_Valhallan_Belt","None","TIOW_Valhallan_white_Cap"],
+/* Commisar */	["U_TIOW_Comissar_Winter","None","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
 				class Imperial_DeathKoprsKrieg82nd
@@ -126,8 +126,8 @@ class LT_Camo_combo: Title
 /* Helmet */		"DKoK_GM_Helm_82nd",
 /* Masks */			["DKOKTroopMask","DKOKOffMask","DKOKGrenMask82nd"],
 /* Radiobag */	"TIOW_IG_Vox_Caster",
-/* Officer */		["DKoK_QM_Uniform_82nd",nil,nil,"DKoK_GM_Helm_82nd","DKOKQMMask"],
-/* Commisar */	["U_TIOW_Comissar_Krieg",nil,"TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
+/* Officer */		["DKoK_QM_Uniform_82nd","None","None","DKoK_GM_Helm_82nd","DKOKQMMask"],
+/* Commisar */	["U_TIOW_Comissar_Krieg","None","TIOW_Krieg_Comissar_Cap","None","DKOKCOMMask"],
 							];
 				};
 				class Imperial_DeathKoprsKrieg1489th
@@ -140,8 +140,8 @@ class LT_Camo_combo: Title
 /* Helmet */		"DKoK_GM_Helm_1489th",
 /* Masks */			["DKOKTroopMask","DKOKOffMask","DKOKGrenMask1489th"],
 /* Radiobag */	"TIOW_Vox_Caster_White2",
-/* Officer */		["DKoK_QM_Uniform_1489th",nil,nil,"DKoK_GM_Helm_1489th","DKOKQMMask"],
-/* Commisar */	["U_TIOW_Comissar_Krieg",nil,"TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
+/* Officer */		["DKoK_QM_Uniform_1489th","None","None","DKoK_GM_Helm_1489th","DKOKQMMask"],
+/* Commisar */	["U_TIOW_Comissar_Krieg","None","TIOW_Krieg_Comissar_Cap","None","DKOKCOMMask"],
 							];
 				};
 				class Imperial_DeathKoprsKrieg1490th
@@ -154,8 +154,8 @@ class LT_Camo_combo: Title
 /* Helmet */		"DKoK_GM_Helm_1490th",
 /* Masks */			["DKOKTroopMask","DKOKOffMask","DKOKGrenMask1490th"],
 /* Radiobag */	"TIOW_Vox_Caster_White2",
-/* Officer */		["DKoK_QM_Uniform_1490th",nil,nil,"DKoK_GM_Helm_1490th","DKOKQMMask"],
-/* Commisar */	["U_TIOW_Comissar_Krieg",nil,"TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
+/* Officer */		["DKoK_QM_Uniform_1490th","None","None","DKoK_GM_Helm_1490th","DKOKQMMask"],
+/* Commisar */	["U_TIOW_Comissar_Krieg","None","TIOW_Krieg_Comissar_Cap","None","DKOKCOMMask"],
 							];
 				};
 				class Imperial_DeathKoprsKrieg1491st
@@ -168,8 +168,8 @@ class LT_Camo_combo: Title
 /* Helmet */		"DKoK_GM_Helm_1491st",
 /* Masks */			["DKOKTroopMask","DKOKOffMask","DKOKGrenMask1491st"],
 /* Radiobag */	"TIOW_IG_Vox_Caster",
-/* Officer */		["DKoK_QM_Uniform_1491st",nil,nil,"DKoK_GM_Helm_1491st","DKOKQMMask"],
-/* Commisar */	["U_TIOW_Comissar_Krieg",nil,"TIOW_Krieg_Comissar_Cap",nil,"DKOKCOMMask"],
+/* Officer */		["DKoK_QM_Uniform_1491st","None","None","DKoK_GM_Helm_1491st","DKOKQMMask"],
+/* Commisar */	["U_TIOW_Comissar_Krieg","None","TIOW_Krieg_Comissar_Cap","None","DKOKCOMMask"],
 							];
 				};
 				class Imperial_MordianIronGuard
@@ -181,8 +181,8 @@ class LT_Camo_combo: Title
 /* Backpack */	"TIOW_CadBackpack",
 /* Helmet */		["TIOW_Mordian_Cap_2","TIOW_Valhallan_Helmet","TIOW_Mordian_Cap"],
 /* Radiobag */	"TIOW_Vox_Caster_White2",
-/* Officer */		["U_TIOW_Mordian_Officer_Blu","TIOW_Mordian_Belt",nil,"TIOW_Mordian_Cap_3"],
-/* Commisar */	["U_TIOW_Comissar_Mord",nil,"TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
+/* Officer */		["U_TIOW_Mordian_Officer_Blu","TIOW_Mordian_Belt","None","TIOW_Mordian_Cap_3"],
+/* Commisar */	["U_TIOW_Comissar_Mord","None","TIOW_Comissar_Cap","TIOW_Bionic_Eye"],
 							];
 				};
 				class Ork_NormalOrks
@@ -191,11 +191,11 @@ class LT_Camo_combo: Title
 					data = [
 /* Uniform */		["Boy1Uni_OP","TankBusta1Uni_OP","ArdBoy1Uni_OP"],
 /* Vest */			["ShootaBoyGear1","TankBustaGear1","ArdBoyGear1"],
-/* Backpack */	nil,
+/* Backpack */	"None",
 /* Helmet */		["ShootaBoyHelm1","ArdBoyHelm1","TankBustaHelm1"],
-/* Radiobag */	"nil",
-/* Officer */		["Boss1Uni_OP","BossGear1",nil,"BossHelm1"],
-/* Commisar */	"nil",
+/* Radiobag */	""None"",
+/* Officer */		["Boss1Uni_OP","BossGear1","None","BossHelm1"],
+/* Commisar */	""None"",
 							];
 				};
 				class Ork_RedOrks
@@ -204,11 +204,11 @@ class LT_Camo_combo: Title
 					data = [
 /* Uniform */		["Boy1Uni_OP","TankBusta1Uni_OP","ArdBoy1Uni_OP"],
 /* Vest */			["ShootaBoyGear2","TankBustaGear2","ArdBoyGear2"],
-/* Backpack */	nil,
+/* Backpack */	"None",
 /* Helmet */		["ShootaBoyHelm2","ArdBoyHelm2","TankBustaHelm2"],
-/* Radiobag */	"nil",
-/* Officer */		["Boss1Uni_OP","BossGear2",nil,"BossHelm2"],
-/* Commisar */	"nil",
+/* Radiobag */	""None"",
+/* Officer */		["Boss1Uni_OP","BossGear2","None","BossHelm2"],
+/* Commisar */	""None"",
 							];
 				};
 				class Chaos_BloodPacts
@@ -221,8 +221,8 @@ class LT_Camo_combo: Title
 /* Helmet */		["Cad_Inf_Helm700th","TIOW_Bloodpact_helmet_01"],
 /* Masks */			["TIOW_Bloodpact_mask_01","TIOW_Bloodpact_mask_02","DKOKGrenMask1491st"],
 /* Radiobag */	"TIOW_Chaos_Vox_Caster",
-/* Officer */		["TIOW_U_Bloodpact_01_OP","TIOW_Bloodpact_vest_03",nil,"TIOW_Bloodpact_helmet_01","TIOW_Bloodpact_mask_01_bronze"],
-/* Commisar */	["TIOW_U_Bloodpact_01_OP",nil,nil,"Cad_Inf_Helm700th","TIOW_Bloodpact_mask_01_silver"],
+/* Officer */		["TIOW_U_Bloodpact_01_OP","TIOW_Bloodpact_vest_03","None","TIOW_Bloodpact_helmet_01","TIOW_Bloodpact_mask_01_bronze"],
+/* Commisar */	["TIOW_U_Bloodpact_01_OP","None","None","Cad_Inf_Helm700th","TIOW_Bloodpact_mask_01_silver"],
 							];
 				};
 				class Chaos_BloodPactsLight
@@ -234,8 +234,8 @@ class LT_Camo_combo: Title
 /* Backpack */	"Ren_Backpack_02_black",
 /* Helmet */		"ML700_Bloodpact_Helmet1",
 /* Radiobag */	"TIOW_Chaos_Vox_Caster",
-/* Officer */		["ML700_Bloodpact_Uniform1","ML700_BP_Armor0",nil,"ML700_Bloodpact_Helmet_Officer_Gold",nil],
-/* Commisar */	["ML700_Bloodpact_Uniform1","ML700_BP_Armor0",nil,"ML700_Bloodpact_Helmet_Officer_Silver",nil],
+/* Officer */		["ML700_Bloodpact_Uniform1","ML700_BP_Armor0","None","ML700_Bloodpact_Helmet_Officer_Gold","None"],
+/* Commisar */	["ML700_Bloodpact_Uniform1","ML700_BP_Armor0","None","ML700_Bloodpact_Helmet_Officer_Silver","None"],
 							];
 				};
 				class Chaos_ChaosCultists
@@ -248,8 +248,8 @@ class LT_Camo_combo: Title
 /* Helmet */		["TIOW_Cultist_Hood","TIOW_Cultist_Hood_brown","TIOW_Cultist_Hood_green"],
 /* Masks */			["TIOW_Cultist_FaceCover","TIOW_Cultist_FaceCover_brown","TIOW_Cultist_FaceCover_green"],
 /* Radiobag */	"TIOW_Chaos_Vox_Caster",
-/* Officer */		["U_TIOW_Cultist_O","TIOW_Cultist_Gear",nil,"TIOW_Cultist_Hood","TIOW_Cultist_Gasmask"],
-/* Commisar */	nil,
+/* Officer */		["U_TIOW_Cultist_O","TIOW_Cultist_Gear","None","TIOW_Cultist_Hood","TIOW_Cultist_Gasmask"],
+/* Commisar */	"None",
 							];
 				};
 				class Chaos_RenegadesBlack
@@ -262,8 +262,8 @@ class LT_Camo_combo: Title
 /* Helmet */		"TIOW_RenEnforcerMask_1",
 /* Masks */			"Ren_Gasmask_02",
 /* Radiobag */	"TIOW_Chaos_Vox_Caster",
-/* Officer */		["OP_Ren_Uniform_01_black","Ren_ArmorSet_02_black",nil,nil,"Ren_Gasmask_02"],
-/* Commisar */	["OP_Ren_Uniform_01_black","Ren_ArmorSet_01_green","Cad_RebreatherMask700th",nil,nil],
+/* Officer */		["OP_Ren_Uniform_01_black","Ren_ArmorSet_02_black","None","None","Ren_Gasmask_02"],
+/* Commisar */	["OP_Ren_Uniform_01_black","Ren_ArmorSet_01_green","Cad_RebreatherMask700th","None","None"],
 							];
 				};
 				class Chaos_RenegadesBrown
@@ -276,8 +276,8 @@ class LT_Camo_combo: Title
 /* Helmet */		"TIOW_RenEnforcerMask_1",
 /* Masks */			"Ren_Gasmask_01",
 /* Radiobag */	"TIOW_Chaos_Vox_Caster",
-/* Officer */		["OP_Ren_Uniform_01_brown","Ren_ArmorSet_02_brown",nil,nil,"Ren_Gasmask_02"],
-/* Commisar */	["OP_Ren_Uniform_01_brown","Ren_ArmorSet_01_brown","Cad_RebreatherMask700th",nil,nil],
+/* Officer */		["OP_Ren_Uniform_01_brown","Ren_ArmorSet_02_brown","None","None","Ren_Gasmask_02"],
+/* Commisar */	["OP_Ren_Uniform_01_brown","Ren_ArmorSet_01_brown","Cad_RebreatherMask700th","None","None"],
 							];
 				};
 				class Chaos_RenegadesGreen
@@ -290,8 +290,8 @@ class LT_Camo_combo: Title
 /* Helmet */		"TIOW_RenEnforcerMask_1",
 /* Masks */			"Ren_Gasmask_01",
 /* Radiobag */	"TIOW_Chaos_Vox_Caster",
-/* Officer */		["OP_Ren_Uniform_01_green","Ren_ArmorSet_02_green",nil,nil,"Ren_Gasmask_02"],
-/* Commisar */	["OP_Ren_Uniform_01_green","Ren_ArmorSet_01_green","Cad_RebreatherMask700th",nil,nil],
+/* Officer */		["OP_Ren_Uniform_01_green","Ren_ArmorSet_02_green","None","None","Ren_Gasmask_02"],
+/* Commisar */	["OP_Ren_Uniform_01_green","Ren_ArmorSet_01_green","Cad_RebreatherMask700th","None","None"],
 							];
 				};
 				class Chaos_RenegadesGrey
@@ -304,8 +304,8 @@ class LT_Camo_combo: Title
 /* Helmet */		"TIOW_RenEnforcerMask_1",
 /* Masks */			"Ren_Gasmask_01",
 /* Radiobag */	"TIOW_Chaos_Vox_Caster",
-/* Officer */		["OP_Ren_Uniform_01_grey","Ren_ArmorSet_02_grey",nil,nil,"Ren_Gasmask_02"],
-/* Commisar */	["OP_Ren_Uniform_01_grey","Ren_ArmorSet_01_grey","Cad_RebreatherMask700th",nil,nil],
+/* Officer */		["OP_Ren_Uniform_01_grey","Ren_ArmorSet_02_grey","None","None","Ren_Gasmask_02"],
+/* Commisar */	["OP_Ren_Uniform_01_grey","Ren_ArmorSet_01_grey","Cad_RebreatherMask700th","None","None"],
 							];
 				};
 				class Tua_Tau
@@ -318,8 +318,8 @@ class LT_Camo_combo: Title
 /* Helmet */		["TIOW_Tau_HelmetB2_TA","TIOW_Tau_HelmetS_TA","TIOW_Tau_HelmetS_TA_sui"],
 /* Masks */			"Ren_Gasmask_01",
 /* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_TA",
-/* Officer */		["TIOW_U_Fire_Warrior_TA_I","TIOW_Tau_Belt_Shasui_TA","TIOW_Tau_Bck_Breacher_TA","TIOW_Tau_Hset4_TA",nil],
-/* Commisar */	["TIOW_U_Fire_Warrior_TA_I","TIOW_Tau_BeltB_Shasui_TA","TIOW_Tau_Bck_Breacher_TA","TIOW_Tau_HelmetB2_TA_sui",nil],
+/* Officer */		["TIOW_U_Fire_Warrior_TA_I","TIOW_Tau_Belt_Shasui_TA","TIOW_Tau_Bck_Breacher_TA","TIOW_Tau_Hset4_TA","None"],
+/* Commisar */	["TIOW_U_Fire_Warrior_TA_I","TIOW_Tau_BeltB_Shasui_TA","TIOW_Tau_Bck_Breacher_TA","TIOW_Tau_HelmetB2_TA_sui","None"],
 							];
 				};
 				class Tua_TauGreen
@@ -332,8 +332,8 @@ class LT_Camo_combo: Title
 /* Helmet */		["TIOW_Tau_HelmetB2_DY","TIOW_Tau_HelmetS_DY","TIOW_Tau_HelmetS_DY_sui"],
 /* Masks */			"Ren_Gasmask_01",
 /* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_DY",
-/* Officer */		["TIOW_U_Fire_Warrior_DY_I","TIOW_Tau_Belt_Shasui_DY","TIOW_Tau_Bck_Breacher_DY","TIOW_Tau_Hset4_DY",nil],
-/* Commisar */	["TIOW_U_Fire_Warrior_DY_I","TIOW_Tau_BeltB_Shasui_DY","TIOW_Tau_Bck_Breacher_DY","TIOW_Tau_HelmetB2_DY_sui",nil],
+/* Officer */		["TIOW_U_Fire_Warrior_DY_I","TIOW_Tau_Belt_Shasui_DY","TIOW_Tau_Bck_Breacher_DY","TIOW_Tau_Hset4_DY","None"],
+/* Commisar */	["TIOW_U_Fire_Warrior_DY_I","TIOW_Tau_BeltB_Shasui_DY","TIOW_Tau_Bck_Breacher_DY","TIOW_Tau_HelmetB2_DY_sui","None"],
 							];
 				};
 				class Tua_TauRed
@@ -346,8 +346,8 @@ class LT_Camo_combo: Title
 /* Helmet */		["TIOW_Tau_HelmetB2_FE","TIOW_Tau_HelmetS_FE","TIOW_Tau_HelmetS_FE_sui"],
 /* Masks */			"Ren_Gasmask_01",
 /* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_FE",
-/* Officer */		["TIOW_U_Fire_Warrior_FE_I","TIOW_Tau_Belt_Shasui_FE","TIOW_Tau_Bck_Breacher_FE","TIOW_Tau_Hset4_FE",nil],
-/* Commisar */	["TIOW_U_Fire_Warrior_FE_I","TIOW_Tau_BeltB_Shasui_FE","TIOW_Tau_Bck_Breacher_FE","TIOW_Tau_HelmetB2_FE_sui",nil],
+/* Officer */		["TIOW_U_Fire_Warrior_FE_I","TIOW_Tau_Belt_Shasui_FE","TIOW_Tau_Bck_Breacher_FE","TIOW_Tau_Hset4_FE","None"],
+/* Commisar */	["TIOW_U_Fire_Warrior_FE_I","TIOW_Tau_BeltB_Shasui_FE","TIOW_Tau_Bck_Breacher_FE","TIOW_Tau_HelmetB2_FE_sui","None"],
 							];
 				};
 				class Tua_TauBlue
@@ -360,8 +360,8 @@ class LT_Camo_combo: Title
 /* Helmet */		["TIOW_Tau_HelmetB2_SC","TIOW_Tau_HelmetS_SC","TIOW_Tau_HelmetS_SC_sui"],
 /* Masks */			"Ren_Gasmask_01",
 /* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_SC",
-/* Officer */		["TIOW_U_Fire_Warrior_SC_I","TIOW_Tau_Belt_Shasui_SC","TIOW_Tau_Bck_Breacher_SC","TIOW_Tau_Hset4_SC",nil],
-/* Commisar */	["TIOW_U_Fire_Warrior_SC_I","TIOW_Tau_BeltB_Shasui_SC","TIOW_Tau_Bck_Breacher_SC","TIOW_Tau_HelmetB2_SC_sui",nil],
+/* Officer */		["TIOW_U_Fire_Warrior_SC_I","TIOW_Tau_Belt_Shasui_SC","TIOW_Tau_Bck_Breacher_SC","TIOW_Tau_Hset4_SC","None"],
+/* Commisar */	["TIOW_U_Fire_Warrior_SC_I","TIOW_Tau_BeltB_Shasui_SC","TIOW_Tau_Bck_Breacher_SC","TIOW_Tau_HelmetB2_SC_sui","None"],
 							];
 				};
 				class Tua_TauWhite
@@ -374,8 +374,8 @@ class LT_Camo_combo: Title
 /* Helmet */		["TIOW_Tau_HelmetB2_VL","TIOW_Tau_HelmetS_VL","TIOW_Tau_HelmetS_VL_sui"],
 /* Masks */			"Ren_Gasmask_01",
 /* Radiobag */	"TIOW_Tau_Bck_Strike_Shasui_VL",
-/* Officer */		["TIOW_U_Fire_Warrior_VL_I","TIOW_Tau_Belt_Shasui_VL","TIOW_Tau_Bck_Breacher_VL","TIOW_Tau_Hset4_VL",nil],
-/* Commisar */	["TIOW_U_Fire_Warrior_VL_I","TIOW_Tau_BeltB_Shasui_VL","TIOW_Tau_Bck_Breacher_VL","TIOW_Tau_HelmetB2_VL_sui",nil],
+/* Officer */		["TIOW_U_Fire_Warrior_VL_I","TIOW_Tau_Belt_Shasui_VL","TIOW_Tau_Bck_Breacher_VL","TIOW_Tau_Hset4_VL","None"],
+/* Commisar */	["TIOW_U_Fire_Warrior_VL_I","TIOW_Tau_BeltB_Shasui_VL","TIOW_Tau_Bck_Breacher_VL","TIOW_Tau_HelmetB2_VL_sui","None"],
 							];
 				};
 
@@ -389,7 +389,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_UM",
 /* Backpack */	"TIOW_Mk4Powerpack_Ultra",
 /* Helmet */		"TIOW_MK7Helmet_UM",
-/* Officer */		["TIOW_Mk8PowerArmor_1_UM","TIOW_Mk2Limbs_UM","TIOW_Mk4Powerpack_Ultra","TIOW_MK7Helmet_BA",nil],
+/* Officer */		["TIOW_Mk8PowerArmor_1_UM","TIOW_Mk2Limbs_UM","TIOW_Mk4Powerpack_Ultra","TIOW_MK7Helmet_BA","None"],
 							];
 				};
 				class SpaceMarine_Imperial_WS
@@ -400,7 +400,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_WS",
 /* Backpack */	"TIOW_Mk4Powerpack_WS",
 /* Helmet */		"TIOW_MK7Helmet_WS",
-/* Officer */		["TIOW_Mk8PowerArmor_1_WS","TIOW_Mk2Limbs_WS","TIOW_Mk4Powerpack_WS","TIOW_MK7Helmet_WS_Alt",nil],
+/* Officer */		["TIOW_Mk8PowerArmor_1_WS","TIOW_Mk2Limbs_WS","TIOW_Mk4Powerpack_WS","TIOW_MK7Helmet_WS_Alt","None"],
 							];
 				};
 				class SpaceMarine_Imperial_SW
@@ -411,7 +411,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_SW",
 /* Backpack */	"TIOW_Mk4Powerpack_SW",
 /* Helmet */		"TIOW_MK7Helmet_SW",
-/* Officer */		["TIOW_Mk8PowerArmor_1_SW","TIOW_Mk2Limbs_SW","TIOW_Mk4Powerpack_SW","TIOW_MK7Helmet_SW_Alt",nil],
+/* Officer */		["TIOW_Mk8PowerArmor_1_SW","TIOW_Mk2Limbs_SW","TIOW_Mk4Powerpack_SW","TIOW_MK7Helmet_SW_Alt","None"],
 							];
 				};
 				class SpaceMarine_Imperial_SL
@@ -422,7 +422,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_SL",
 /* Backpack */	"TIOW_Mk4Powerpack_SL",
 /* Helmet */		"TIOW_MK7Helmet_SL",
-/* Officer */		["TIOW_Mk8PowerArmor_1_SL","TIOW_Mk2Limbs_SL","TIOW_Mk4Powerpack_SL","TIOW_MK7Helmet_SL_Alt",nil],
+/* Officer */		["TIOW_Mk8PowerArmor_1_SL","TIOW_Mk2Limbs_SL","TIOW_Mk4Powerpack_SL","TIOW_MK7Helmet_SL_Alt","None"],
 							];
 				};
 				class SpaceMarine_Imperial_IH
@@ -433,7 +433,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_IH",
 /* Backpack */	"TIOW_Mk4Powerpack_IH",
 /* Helmet */		"TIOW_MK7Helmet_IH",
-/* Officer */		["TIOW_Mk8PowerArmor_1_IH","TIOW_Mk2Limbs_IH","TIOW_Mk4Powerpack_IH","TIOW_MK7Helmet_IH_Alt",nil],
+/* Officer */		["TIOW_Mk8PowerArmor_1_IH","TIOW_Mk2Limbs_IH","TIOW_Mk4Powerpack_IH","TIOW_MK7Helmet_IH_Alt","None"],
 							];
 				};
 				class SpaceMarine_Imperial_IF
@@ -444,7 +444,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_IF",
 /* Backpack */	"TIOW_Mk4Powerpack_IF",
 /* Helmet */		"TIOW_MK7Helmet_IF",
-/* Officer */		["TIOW_Mk8PowerArmor_1_IF","TIOW_Mk2Limbs_IF","TIOW_Mk4Powerpack_IF","TIOW_MK7Helmet_IF_Alt",nil],
+/* Officer */		["TIOW_Mk8PowerArmor_1_IF","TIOW_Mk2Limbs_IF","TIOW_Mk4Powerpack_IF","TIOW_MK7Helmet_IF_Alt","None"],
 							];
 				};
 				class SpaceMarine_Imperial_DA
@@ -455,7 +455,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_DA",
 /* Backpack */	"TIOW_Mk4Powerpack_DA",
 /* Helmet */		"TIOW_MK7Helmet_DA",
-/* Officer */		["TIOW_Mk8PowerArmor_1_DA","TIOW_Mk2Limbs_DA","TIOW_Mk4Powerpack_DA","TIOW_MK7Helmet_DA_Alt",nil],
+/* Officer */		["TIOW_Mk8PowerArmor_1_DA","TIOW_Mk2Limbs_DA","TIOW_Mk4Powerpack_DA","TIOW_MK7Helmet_DA_Alt","None"],
 							];
 				};
 				class SpaceMarine_Imperial_DAPre
@@ -466,7 +466,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_DA_HH",
 /* Backpack */	"TIOW_Mk4Powerpack_DA_HH",
 /* Helmet */		"TIOW_MK7Helmet_DA_HH",
-/* Officer */		["TIOW_Mk8PowerArmor_1_DA_HH","TIOW_Mk2Limbs_DA_HH","TIOW_Mk4Powerpack_DA_HH","TIOW_MK7Helmet_DA_HH_Alt",nil],
+/* Officer */		["TIOW_Mk8PowerArmor_1_DA_HH","TIOW_Mk2Limbs_DA_HH","TIOW_Mk4Powerpack_DA_HH","TIOW_MK7Helmet_DA_HH_Alt","None"],
 							];
 				};
 				class SpaceMarine_Imperial_BR
@@ -477,7 +477,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_BR",
 /* Backpack */	"TIOW_Mk4Powerpack_BR",
 /* Helmet */		"TIOW_MK7Helmet_BR",
-/* Officer */		["TIOW_Mk8PowerArmor_1_BR","TIOW_Mk2Limbs_BR","TIOW_Mk4Powerpack_BR","TIOW_MK7Helmet_BR_Alt",nil],
+/* Officer */		["TIOW_Mk8PowerArmor_1_BR","TIOW_Mk2Limbs_BR","TIOW_Mk4Powerpack_BR","TIOW_MK7Helmet_BR_Alt","None"],
 							];
 				};
 				class SpaceMarine_Imperial_BA
@@ -488,7 +488,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_BA",
 /* Backpack */	"TIOW_Mk4Powerpack_BA",
 /* Helmet */		"TIOW_MK7Helmet_BA",
-/* Officer */		["TIOW_Mk8PowerArmor_1_BA","TIOW_Mk2Limbs_BA","TIOW_Mk4Powerpack_BA","TIOW_MK7Helmet_BA_Alt",nil],
+/* Officer */		["TIOW_Mk8PowerArmor_1_BA","TIOW_Mk2Limbs_BA","TIOW_Mk4Powerpack_BA","TIOW_MK7Helmet_BA_Alt","None"],
 							];
 				};
 				class SpaceMarine_Imperial_BT
@@ -499,7 +499,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_BT",
 /* Backpack */	"TIOW_Mk4Powerpack_BT",
 /* Helmet */		"TIOW_MK7Helmet_BT",
-/* Officer */		["TIOW_Mk8PowerArmor_1_BT","TIOW_Mk2Limbs_BT","TIOW_Mk4Powerpack_BT","TIOW_MK7Helmet_BT_Alt",nil],
+/* Officer */		["TIOW_Mk8PowerArmor_1_BT","TIOW_Mk2Limbs_BT","TIOW_Mk4Powerpack_BT","TIOW_MK7Helmet_BT_Alt","None"],
 							];
 				};
 				class SpaceMarine_Imperial_RG
@@ -510,7 +510,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_RG",
 /* Backpack */	"TIOW_Mk4Powerpack_RG",
 /* Helmet */		"TIOW_MK7Helmet_RG",
-/* Officer */		["TIOW_Mk8PowerArmor_1_RG","TIOW_Mk2Limbs_RG","TIOW_Mk4Powerpack_RG","TIOW_MK7Helmet_RG_Alt",nil],
+/* Officer */		["TIOW_Mk8PowerArmor_1_RG","TIOW_Mk2Limbs_RG","TIOW_Mk4Powerpack_RG","TIOW_MK7Helmet_RG_Alt","None"],
 							];
 				};
 				class SpaceMarine_Chaos_AL
@@ -521,7 +521,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_AL",
 /* Backpack */	"TIOW_Mk2Powerpack_AL",
 /* Helmet */		"TIOW_MK7Helmet_AL",
-/* Officer */		["TIOW_Mk7PowerArmorChaos_1_AL","TIOW_ChaosLimbs_AL","TIOW_Chaos3Powerpack_AL","TIOW_SkullHelmet_1_AL",nil],
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_AL","TIOW_ChaosLimbs_AL","TIOW_Chaos3Powerpack_AL","TIOW_SkullHelmet_1_AL","None"],
 							];
 				};
 				class SpaceMarine_Chaos_BL
@@ -532,7 +532,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_BL",
 /* Backpack */	"TIOW_Mk2Powerpack_BL",
 /* Helmet */		"TIOW_MK7Helmet_BL",
-/* Officer */		["TIOW_Mk7PowerArmorChaos_1_BL","TIOW_ChaosLimbs_BL","TIOW_Chaos3Powerpack_BL","TIOW_SkullHelmet_1_BL",nil],
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_BL","TIOW_ChaosLimbs_BL","TIOW_Chaos3Powerpack_BL","TIOW_SkullHelmet_1_BL","None"],
 							];
 				};
 				class SpaceMarine_Chaos_DG
@@ -543,7 +543,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_DG",
 /* Backpack */	"TIOW_Mk2Powerpack_DG",
 /* Helmet */		"TIOW_MK7Helmet_DG",
-/* Officer */		["TIOW_Mk7PowerArmorChaos_1_DG","TIOW_ChaosLimbs_DG","TIOW_Chaos3Powerpack_DG","TIOW_SkullHelmet_1_DG",nil],
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_DG","TIOW_ChaosLimbs_DG","TIOW_Chaos3Powerpack_DG","TIOW_SkullHelmet_1_DG","None"],
 							];
 				};
 				class SpaceMarine_Chaos_WE
@@ -554,7 +554,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_WE",
 /* Backpack */	"TIOW_Mk2Powerpack_WE",
 /* Helmet */		"TIOW_MK7Helmet_WE",
-/* Officer */		["TIOW_Mk7PowerArmorChaos_1_WE","TIOW_ChaosLimbs_WE","TIOW_Chaos3Powerpack_WE","TIOW_SkullHelmet_1_WE",nil],
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_WE","TIOW_ChaosLimbs_WE","TIOW_Chaos3Powerpack_WE","TIOW_SkullHelmet_1_WE","None"],
 							];
 				};
 				class SpaceMarine_Chaos_WB
@@ -565,7 +565,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_WB",
 /* Backpack */	"TIOW_Mk2Powerpack_WB",
 /* Helmet */		"TIOW_MK7Helmet_WB",
-/* Officer */		["TIOW_Mk7PowerArmorChaos_1_WB","TIOW_ChaosLimbs_WB","TIOW_Chaos3Powerpack_WB","TIOW_SkullHelmet_1_WB",nil],
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_WB","TIOW_ChaosLimbs_WB","TIOW_Chaos3Powerpack_WB","TIOW_SkullHelmet_1_WB","None"],
 							];
 				};
 				class SpaceMarine_Chaos_TS
@@ -576,7 +576,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_TS",
 /* Backpack */	"TIOW_Mk2Powerpack_TS",
 /* Helmet */		"TIOW_MK7Helmet_TS",
-/* Officer */		["TIOW_Mk7PowerArmorChaos_1_TS","TIOW_ChaosLimbs_TS","TIOW_Chaos3Powerpack_TS","TIOW_SkullHelmet_1_TS",nil],
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_TS","TIOW_ChaosLimbs_TS","TIOW_Chaos3Powerpack_TS","TIOW_SkullHelmet_1_TS","None"],
 							];
 				};
 				class SpaceMarine_Chaos_NL
@@ -587,7 +587,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_NL",
 /* Backpack */	"TIOW_Mk2Powerpack_NL",
 /* Helmet */		"TIOW_MK7Helmet_NL",
-/* Officer */		["TIOW_Mk7PowerArmorChaos_1_NL","TIOW_ChaosLimbs_NL","TIOW_Chaos3Powerpack_NL","TIOW_SkullHelmet_1_NL",nil],
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_NL","TIOW_ChaosLimbs_NL","TIOW_Chaos3Powerpack_NL","TIOW_SkullHelmet_1_NL","None"],
 							];
 				};
 				class SpaceMarine_Chaos_IW
@@ -598,7 +598,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_IW",
 /* Backpack */	"TIOW_Mk2Powerpack_IW",
 /* Helmet */		"TIOW_MK7Helmet_IW",
-/* Officer */		["TIOW_Mk7PowerArmorChaos_1_IW","TIOW_ChaosLimbs_IW","TIOW_Chaos3Powerpack_IW","TIOW_SkullHelmet_1_IW",nil],
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_IW","TIOW_ChaosLimbs_IW","TIOW_Chaos3Powerpack_IW","TIOW_SkullHelmet_1_IW","None"],
 							];
 				};
 				class SpaceMarine_Chaos_EC
@@ -609,7 +609,7 @@ class LT_Camo_combo: Title
 /* Vest */			"TIOW_Mk2Limbs_EC",
 /* Backpack */	"TIOW_Mk2Powerpack_EC",
 /* Helmet */		"TIOW_MK7Helmet_EC",
-/* Officer */		["TIOW_Mk7PowerArmorChaos_1_EC","TIOW_ChaosLimbs_EC","TIOW_Chaos3Powerpack_EC","TIOW_SkullHelmet_1_EC",nil],
+/* Officer */		["TIOW_Mk7PowerArmorChaos_1_EC","TIOW_ChaosLimbs_EC","TIOW_Chaos3Powerpack_EC","TIOW_SkullHelmet_1_EC","None"],
 							];
 				};
 			};
