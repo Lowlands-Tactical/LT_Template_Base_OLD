@@ -1028,7 +1028,7 @@ if (hasInterface) then {
         _unit addmagazines [_Sisterriflemag, 8];
 
         if (_nvgSmarine != "None") then {
-            if (typename _nvgSmarine == "ARRAY") then {_nvg = _nvgSmarine;} else {_nvg = _nvgSmarine};
+            _nvg = if (typename _nvgSmarine == "ARRAY") then { selectRandom _nvgSmarine } else { _nvgSmarine };
         };
       };
 
@@ -1042,7 +1042,7 @@ if (hasInterface) then {
         _unit addmagazines [_SmarinePlasmariflemag, 8];
 
         if (_nvgSmarine != "None") then {
-            if (typename _nvgSmarine == "ARRAY") then {_nvg = _nvgSmarine;} else {_nvg = _nvgSmarine};
+            _nvg = if (typename _nvgSmarine == "ARRAY") then { selectRandom _nvgSmarine } else { _nvgSmarine };
         };
       };
 
@@ -1056,7 +1056,7 @@ if (hasInterface) then {
         _unit addmagazines [_SmarineHeavyriflemag, 8];
 
         if (_nvgSmarine != "None") then {
-            if (typename _nvgSmarine == "ARRAY") then {_nvg = _nvgSmarine;} else {_nvg = _nvgSmarine};
+            _nvg = if (typename _nvgSmarine == "ARRAY") then { selectRandom _nvgSmarine } else { _nvgSmarine };
         };
       };
 
@@ -1070,7 +1070,7 @@ if (hasInterface) then {
         _unit addmagazines [_SmarineMeltariflemag, 8];
 
         if (_nvgSmarine != "None") then {
-            if (typename _nvgSmarine == "ARRAY") then {_nvg = _nvgSmarine;} else {_nvg = _nvgSmarine};
+            _nvg = if (typename _nvgSmarine == "ARRAY") then { selectRandom _nvgSmarine } else { _nvgSmarine };
         };
       };
 
@@ -1084,7 +1084,7 @@ if (hasInterface) then {
         _unit addmagazines [_SmarineFlamethriflemag, 8];
 
         if (_nvgSmarine != "None") then {
-            if (typename _nvgSmarine == "ARRAY") then {_nvg = _nvgSmarine;} else {_nvg = _nvgSmarine};
+            _nvg = if (typename _nvgSmarine == "ARRAY") then { selectRandom _nvgSmarine } else { _nvgSmarine };
         };
       };
 
