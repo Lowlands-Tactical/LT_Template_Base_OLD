@@ -19,8 +19,8 @@ if (hasInterface) then {
 
 	diag_log format ["LT template DEBUG: lt_camo_var compiled: %1", _lt_camo_var_array];
 
-	_officerGear_array	= _lt_camo_var_array select 5;
-	_commisarGear_array	= _lt_camo_var_array select 6;
+	_officerGear_array	= _lt_camo_var_array select 6;
+	_commisarGear_array	= _lt_camo_var_array select 7;
 	_smarineSergeant_array	= _lt_smarine_camo_var_array select 4;
 
 	_role = player getVariable ["lt_unit_role","none"];
