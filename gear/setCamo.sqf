@@ -21,13 +21,9 @@ if (hasInterface) then {
 
 	_officerGear_array	= _lt_camo_var_array select 6;
 	_commisarGear_array	= _lt_camo_var_array select 7;
-	_smarineSergeant_array	= _lt_smarine_camo_var_array select 4;
+	_smarineSergeant_array	= _lt_smarine_camo_var_array select 5;
 
 	_role = player getVariable ["lt_unit_role","none"];
-
-		diag_log format ["LT template DEBUG: _officerGear_array compiled: %1", _officerGear_array];
-		diag_log format ["LT template DEBUG: _commisarGear_array compiled: %1", _commisarGear_array];
-		diag_log format ["LT template DEBUG: _smarineSergeant_array compiled: %1", _smarineSergeant_array];
 
 		diag_log format ["LT template DEBUG: _role : %1", _role];
 
@@ -46,7 +42,6 @@ if (hasInterface) then {
 			_pack = _officerGear_array select 2;
 			_helm = _officerGear_array select 3;
 			_mask = _officerGear_array select 4;
-			diag_log format ["LT Template DEBUG: Camo IN Switch : %1", _camo];
 		};
     case "com";
     case "complas": {
@@ -56,7 +51,6 @@ if (hasInterface) then {
 			_pack = _officerGear_array select 2;
 			_helm = _officerGear_array select 3;
 			_mask = _officerGear_array select 4;
-			diag_log format ["LT Template DEBUG: Camo IN Switch : %1", _camo];
 		};
     case "pri": {
 			diag_log format ["LT template DEBUG: GEAR :: Priest selected!!"];
@@ -65,7 +59,6 @@ if (hasInterface) then {
 			_pack = _priestCamoArray select 2;
 			_helm = _priestCamoArray select 3;
 			_mask = _lt_camo_var_array select 5;
-			diag_log format ["LT Template DEBUG: Camo IN Switch : %1", _camo];
 		};
     case "ranger";
     case "rangerAT": {
@@ -75,7 +68,6 @@ if (hasInterface) then {
 			_pack = _rangerCamoArray select 2;
 			_helm = _rangerCamoArray select 3;
 			_mask = _rangerCamoArray select 4;
-			diag_log format ["LT Template DEBUG: Camo IN Switch : %1", _camo];
 		};
     case "sister": {
 			diag_log format ["LT template DEBUG: GEAR :: SISTER selected!!"];
@@ -84,7 +76,6 @@ if (hasInterface) then {
 			_pack = _sistersCamoArray select 2;
 			_helm = _sistersCamoArray select 3;
 			_mask = _sistersCamoArray select 4;
-			diag_log format ["LT Template DEBUG: Camo IN Switch : %1", _camo];
 		};
     case "sisterMedic": {
 			diag_log format ["LT template DEBUG: GEAR :: SISTER Medic selected!!"];
@@ -93,28 +84,29 @@ if (hasInterface) then {
 			_pack = _sistersMedicArray select 2;
 			_helm = _sistersMedicArray select 3;
 			_mask = _sistersMedicArray select 4;
-			diag_log format ["LT Template DEBUG: Camo IN Switch : %1", _camo];
 		};
     case "smarine";
     case "smarineHeavy";
     case "smarineMelta";
     case "smarineFlameth": {
 			diag_log format ["LT template DEBUG: GEAR :: SPACE MARINE selected!!"];
+			_face = _lt_smarine_camo_var_array select 4;
 			_camo = _lt_smarine_camo_var_array select 0;
 			_vest = _lt_smarine_camo_var_array select 1;
 			_pack = _lt_smarine_camo_var_array select 2;
 			_helm = _lt_smarine_camo_var_array select 3;
+			player setFace _face;
 			_mask = "";
-			diag_log format ["LT Template DEBUG: Camo IN Switch : %1", _camo];
 		};
     case "smarineSergeant": {
 			diag_log format ["LT template DEBUG: GEAR :: SPACE MARINES Sergeant selected!!"];
+			_face = _lt_smarine_camo_var_array select 4;
 			_camo = _smarineSergeant_array select 0;
 			_vest = _smarineSergeant_array select 1;
 			_pack = _smarineSergeant_array select 2;
 			_helm = _smarineSergeant_array select 3;
 			_mask = "None";
-			diag_log format ["LT Template DEBUG: Camo IN Switch : %1", _camo];
+			player setFace _face;
 		};
     default {
 			diag_log format ["LT template DEBUG: GEAR :: Soldier selected!!"];
@@ -123,10 +115,8 @@ if (hasInterface) then {
 			_pack	= _lt_camo_var_array select 2;
 			_helm	= _lt_camo_var_array select 3;
 			_mask = _lt_camo_var_array select 5;
-			diag_log format ["LT Template DEBUG: Camo IN Switch : %1", _camo];
 		};
 	};
-	diag_log format ["LT Template DEBUG: Camo ONDER Switch : %1", _camo];
 
 	diag_log format ["LT template DEBUG: lt_camo_var: %1", lt_camo_var];
 
@@ -140,6 +130,7 @@ if (hasInterface) then {
 			diag_log format ["LT Template DEBUG: _camo: %1 *-* _exclude: %2", _camo, _exclude];
 
 			removeHeadgear player;
+			removeGoggles player;
 			_CamoUniform 	= if (typename _camo == "ARRAY") then {[player, selectRandom _camo] call lt_fnc_changeUniform;} else {[player, _camo] call lt_fnc_changeUniform;};
 			_CamoVest 	  = if (typename _vest == "ARRAY") then {[player, selectRandom _vest] call lt_fnc_changeVest;} else {[player, _vest] call lt_fnc_changeVest;};
 			_CamoBackpack = if (typename _pack == "ARRAY") then {[player, selectRandom _pack] call lt_fnc_changeBackpack;} else {[player, _pack] call lt_fnc_changeBackpack;};
@@ -152,6 +143,7 @@ if (hasInterface) then {
 				diag_log format ["LT Template DEBUG: _camo: %1 *-* _exclude: %2", _camo, _exclude];
 
 				removeHeadgear player;
+				removeGoggles player;
 				_CamoUniform 	= if (typename _camo == "ARRAY") then {[player, selectRandom _camo] call lt_fnc_changeUniform;} else {[player, _camo] call lt_fnc_changeUniform;};
 				_CamoVest 	  = if (typename _vest == "ARRAY") then {[player, selectRandom _vest] call lt_fnc_changeVest;} else {[player, _vest] call lt_fnc_changeVest;};
 				_CamoBackpack = if (typename _pack == "ARRAY") then {[player, selectRandom _pack] call lt_fnc_changeBackpack;} else {[player, _pack] call lt_fnc_changeBackpack;};
