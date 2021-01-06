@@ -95,8 +95,8 @@ if (hasInterface) then {
 			_vest = _lt_smarine_camo_var_array select 1;
 			_pack = _lt_smarine_camo_var_array select 2;
 			_helm = _lt_smarine_camo_var_array select 3;
-			player setFace _face;
-			_mask = "";
+			if (typename _face == "ARRAY") then {player setFace selectRandom _face;} else {player setFace _face};
+			_mask = "None";
 		};
     case "smarineSergeant": {
 			diag_log format ["LT template DEBUG: GEAR :: SPACE MARINES Sergeant selected!!"];
@@ -105,8 +105,8 @@ if (hasInterface) then {
 			_vest = _smarineSergeant_array select 1;
 			_pack = _smarineSergeant_array select 2;
 			_helm = _smarineSergeant_array select 3;
+			if (typename _face == "ARRAY") then {player setFace selectRandom _face;} else {player setFace _face};
 			_mask = "None";
-			player setFace _face;
 		};
     default {
 			diag_log format ["LT template DEBUG: GEAR :: Soldier selected!!"];
