@@ -29,9 +29,12 @@ if (hasInterface) then {
 		diag_log format ["LT template DEBUG: _commisarGear_array compiled: %1", _commisarGear_array];
 		diag_log format ["LT template DEBUG: _smarineSergeant_array compiled: %1", _smarineSergeant_array];
 
+		diag_log format ["LT template DEBUG: _role : %1", _role];
+
 	switch (_role) do {
     case "co";
     case "coplas": {
+			diag_log format ["LT template DEBUG: GEAR :: Officer selected!!"];
 			_camo = _officerGear_array select 0;
 			_vest = _officerGear_array select 1;
 			_pack = _officerGear_array select 2;
@@ -40,6 +43,7 @@ if (hasInterface) then {
 		};
     case "com";
     case "complas": {
+			diag_log format ["LT template DEBUG: GEAR :: Commisar selected!!"];
 			_camo = _officerGear_array select 0;
 			_vest = _officerGear_array select 1;
 			_pack = _officerGear_array select 2;
@@ -47,6 +51,7 @@ if (hasInterface) then {
 			_mask = _officerGear_array select 4;
 		};
     case "pri": {
+			diag_log format ["LT template DEBUG: GEAR :: Priest selected!!"];
 			_camo = _priestCamoArray select 0;
 			_vest = _priestCamoArray select 1;
 			_pack = _priestCamoArray select 2;
@@ -55,6 +60,7 @@ if (hasInterface) then {
 		};
     case "ranger";
     case "rangerAT": {
+			diag_log format ["LT template DEBUG: GEAR :: Ranger selected!!"];
 			_camo = _rangerCamoArray select 0;
 			_vest = _rangerCamoArray select 1;
 			_pack = _rangerCamoArray select 2;
@@ -62,6 +68,7 @@ if (hasInterface) then {
 			_mask = _rangerCamoArray select 4;
 		};
     case "sister": {
+			diag_log format ["LT template DEBUG: GEAR :: SISTER selected!!"];
 			_camo = _sistersCamoArray select 0;
 			_vest = _sistersCamoArray select 1;
 			_pack = _sistersCamoArray select 2;
@@ -69,6 +76,7 @@ if (hasInterface) then {
 			_mask = _sistersCamoArray select 4;
 		};
     case "sisterMedic": {
+			diag_log format ["LT template DEBUG: GEAR :: SISTER Medic selected!!"];
 			_camo = _sistersMedicArray select 0;
 			_vest = _sistersMedicArray select 1;
 			_pack = _sistersMedicArray select 2;
@@ -79,6 +87,7 @@ if (hasInterface) then {
     case "smarineHeavy";
     case "smarineMelta";
     case "smarineFlameth": {
+			diag_log format ["LT template DEBUG: GEAR :: SPACE MARINE selected!!"];
 			_camo = _lt_smarine_camo_var_array select 0;
 			_vest = _lt_smarine_camo_var_array select 1;
 			_pack = _lt_smarine_camo_var_array select 2;
@@ -86,6 +95,7 @@ if (hasInterface) then {
 			_mask = "";
 		};
     case "smarineSergeant": {
+			diag_log format ["LT template DEBUG: GEAR :: SPACE MARINES Sergeant selected!!"];
 			_camo = _smarineSergeant_array select 0;
 			_vest = _smarineSergeant_array select 1;
 			_pack = _smarineSergeant_array select 2;
@@ -93,6 +103,7 @@ if (hasInterface) then {
 			_mask = "";
 		};
     default {
+			diag_log format ["LT template DEBUG: GEAR :: Soldier selected!!"];
 			_camo	= _lt_camo_var_array select 0;
 			_vest	= _lt_camo_var_array select 1;
 			_pack	= _lt_camo_var_array select 2;
