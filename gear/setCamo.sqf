@@ -31,6 +31,12 @@ if (hasInterface) then {
 
 		diag_log format ["LT template DEBUG: _role : %1", _role];
 
+	_camo = "None";
+	_vest = "None";
+	_pack = "None";
+	_helm = "None";
+	_mask = "None";
+
 	switch (_role) do {
     case "co";
     case "coplas": {
@@ -107,7 +113,7 @@ if (hasInterface) then {
 			_vest = _smarineSergeant_array select 1;
 			_pack = _smarineSergeant_array select 2;
 			_helm = _smarineSergeant_array select 3;
-			_mask = "";
+			_mask = "None";
 			diag_log format ["LT Template DEBUG: Camo IN Switch : %1", _camo];
 		};
     default {
