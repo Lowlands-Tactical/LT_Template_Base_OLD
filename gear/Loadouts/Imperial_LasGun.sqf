@@ -113,4 +113,3 @@ lt_template_bagmtrg        	 = 	 "TIOW_IG_Mortar_Bag1_Blu";
 lt_template_bagmtrag       	 = 	 "TIOW_IG_Mortar_Bag1_Blu";
 
 lt_template_nvg              =   "TIOW_CadPhotovisorGoggles";
-lt_template_nvgSmarine       =   "None";

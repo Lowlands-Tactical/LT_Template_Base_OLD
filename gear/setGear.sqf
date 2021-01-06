@@ -16,34 +16,38 @@ if (hasInterface) then {
       "div","r","car","smg","rg", // Remaining Weapon Roles
       "lvdw", // LUL
       "gren","flameth","shot","plasmag","plasmaag","specialg","specialag", // 40k Support Roles
-      "com","complas","pri","ranger","rangerAT","sister","sisterMedic", // Imperial Roles
-      "smarine","smarineSergeant","smarineHeavy","smarineMelta","smarineFlameth" // Space Marines
+      "com","complas","pri","ranger","rangerAT","sister","sisterMedic" // Imperial Roles
       ];
+  _SpaceMarineRolesArray = ["smarine","smarineSergeant","smarineHeavy","smarineMelta","smarineFlameth"];
 
   diag_log format ["LT Template DEBUG: role is %1 and exclude is %2",_role, _exclude];
   diag_log format ["LT Template DEBUG: setGear.sqf Role in RolesArray: %1", _role IN _RolesArray];
 
-  if (_role != "custom" && _role IN _RolesArray) then {
+  if (_role != "custom" && (_role IN _RolesArray || _role IN _SpaceMarineRolesArray)) then {
+    if (_role IN _SpaceMarineRolesArray) then {
+      _handle = execVM LT_wpn_var_SMARINE;
+      waitUntil {scriptDone _handle};
+    } else {
+      if !(isNil "LT_wpn_var_BLUFOR" || isNil "LT_wpn_var_OPFOR"|| isNil "LT_wpn_var_GUER") then {
 
-    if !(isNil "LT_wpn_var_BLUFOR" || isNil "LT_wpn_var_OPFOR"|| isNil "LT_wpn_var_GUER") then {
-
-      switch (side player) do {
-        case WEST: {
-          if !(LT_wpn_var_BLUFOR == "None") then {
-            _handle = execVM LT_wpn_var_BLUFOR;
-            waitUntil {scriptDone _handle};
+        switch (side player) do {
+          case WEST: {
+            if !(LT_wpn_var_BLUFOR == "None") then {
+              _handle = execVM LT_wpn_var_BLUFOR;
+              waitUntil {scriptDone _handle};
+            };
           };
-        };
-        case EAST: {
-          if !(LT_wpn_var_OPFOR == "None") then {
-            _handle = execVM LT_wpn_var_OPFOR;
-            waitUntil {scriptDone _handle};
+          case EAST: {
+            if !(LT_wpn_var_OPFOR == "None") then {
+              _handle = execVM LT_wpn_var_OPFOR;
+              waitUntil {scriptDone _handle};
+            };
           };
-        };
-        case independent: {
-          if !(LT_wpn_var_GUER == "None") then {
-            _handle = execVM LT_wpn_var_GUER;
-            waitUntil {scriptDone _handle};
+          case independent: {
+            if !(LT_wpn_var_GUER == "None") then {
+              _handle = execVM LT_wpn_var_GUER;
+              waitUntil {scriptDone _handle};
+            };
           };
         };
       };

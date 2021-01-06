@@ -110,7 +110,7 @@ _surgicalKit = if (isNil "lt_template_surgicalKit" ) then {"ACE_surgicalKit"} el
 
 // Night Vision Goggles (NVGoggles)
 _nvg = if (isNil "lt_template_nvg") then {"ACE_NVG_Wide"} else {lt_template_nvg};
-_nvgSmarine = if (isNil "lt_template_nvgSmarine") then {"None"} else {lt_template_nvg};
+_nvgSmarine = if (isNil "lt_template_nvgSmarine") then {"None"} else {lt_template_nvgSmarine};
 
 // UAV Terminal
 // _uavterminal = if (isNil "lt_template_uavterminal") then {"B_UavTerminal"} else {lt_template_uavterminal};
@@ -274,39 +274,39 @@ _Speshalriflemag_tr = if (isNil "lt_template_SpeshalrifleMag_tr") then {"30Rnd_6
 
 // Faction Sepcifics
 // Ranger
-_Rangerrifle = if (isNil "lt_template_Rangerrifle") then {"arifle_MXM_F"} else {lt_template_Rangerrifle};
-_Rangerscope = if (isNil "lt_template_Rangerscope") then {"None"} else {lt_template_Rangerscope};
-_Rangerriflemag = if (isNil "lt_template_Rangerriflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_Rangerriflemag};
+_Rangerrifle = if (isNil "lt_template_Rangerrifle") then {"ML700_Galvanic_Rifle"} else {lt_template_Rangerrifle};
+_Rangerscope = if (isNil "lt_template_Rangerscope") then {"ML700_Galvanic_scope"} else {lt_template_Rangerscope};
+_Rangerriflemag = if (isNil "lt_template_Rangerriflemag") then {"ML700_Galvanic_Rifle_Battery"} else {lt_template_Rangerriflemag};
 
 // Ranger AT
-_RangerATrifle = if (isNil "lt_template_RangerATrifle") then {"arifle_MXM_F"} else {lt_template_RangerATrifle};
-_RangerATscope = if (isNil "lt_template_RangerATscope") then {"None"} else {lt_template_RangerATscope};
-_RangerATriflemag = if (isNil "lt_template_RangerATriflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_RangerATriflemag};
+_RangerATrifle = if (isNil "lt_template_RangerATrifle") then {"ML700_Transuranic_Arquebus_Rifle"} else {lt_template_RangerATrifle};
+_RangerATscope = if (isNil "lt_template_RangerATscope") then {"ML700_Transuranic_Arquebus_scope"} else {lt_template_RangerATscope};
+_RangerATriflemag = if (isNil "lt_template_RangerATriflemag") then {"ML700_Transuranic_Arquebus_Battery"} else {lt_template_RangerATriflemag};
 
 // Sisters Rifle
-_Sisterrifle = if (isNil "lt_template_Sisterrifle") then {"arifle_MXM_F"} else {lt_template_Sisterrifle};
-_Sisterriflemag = if (isNil "lt_template_Sisterriflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_Sisterriflemag};
+_Sisterrifle = if (isNil "lt_template_Sisterrifle") then {"ML700_Bolter_F"} else {lt_template_Sisterrifle};
+_Sisterriflemag = if (isNil "lt_template_Sisterriflemag") then {"ML700_Bolter_Stanag"} else {lt_template_Sisterriflemag};
 
 // SPACE MARINES
 // Space Marine Bolter
-_Smarinerifle = if (isNil "lt_template_Smarinerifle") then {"arifle_MXM_F"} else {lt_template_Smarinerifle};
-_Smarineriflemag = if (isNil "lt_template_Smarineriflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_Smarineriflemag};
+_Smarinerifle = if (isNil "lt_template_Smarinerifle") then {"TIOW_GodwynBoltgun_2"} else {lt_template_Smarinerifle};
+_Smarineriflemag = if (isNil "lt_template_Smarineriflemag") then {"TIOW_30rnd_GodwynBoltgunMag"} else {lt_template_Smarineriflemag};
 
 // Space Marine Plasma
-_SmarinePlasmarifle = if (isNil "lt_template_SmarinePlasmarifle") then {"arifle_MXM_F"} else {lt_template_SmarinePlasmarifle};
-_SmarinePlasmariflemag = if (isNil "lt_template_SmarinePlasmariflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_SmarinePlasmariflemag};
+_SmarinePlasmarifle = if (isNil "lt_template_SmarinePlasmarifle") then {"TIOW_SM_Ragefire_PlasmaGun"} else {lt_template_SmarinePlasmarifle};
+_SmarinePlasmariflemag = if (isNil "lt_template_SmarinePlasmariflemag") then {"TIOW_SM_Plasmagun_Mag"} else {lt_template_SmarinePlasmariflemag};
 
 // Space Marine Heavy Bolter
-_SmarineHeavyrifle = if (isNil "lt_template_SmarineHeavyrifle") then {"arifle_MXM_F"} else {lt_template_SmarineHeavyrifle};
-_SmarineHeavyriflemag = if (isNil "lt_template_SmarineHeavyriflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_SmarineHeavyriflemag};
+_SmarineHeavyrifle = if (isNil "lt_template_SmarineHeavyrifle") then {"TIOW_Mars_HeavyBolter"} else {lt_template_SmarineHeavyrifle};
+_SmarineHeavyriflemag = if (isNil "lt_template_SmarineHeavyriflemag") then {"TIOW_Mars_HeavyBolterMag_85rnd"} else {lt_template_SmarineHeavyriflemag};
 
 // Space Marine Meltagun
-_SmarineMeltarifle = if (isNil "lt_template_SmarineMeltarifle") then {"arifle_MXM_F"} else {lt_template_SmarineMeltarifle};
-_SmarineMeltariflemag = if (isNil "lt_template_SmarineMeltariflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_SmarineMeltariflemag};
+_SmarineMeltarifle = if (isNil "lt_template_SmarineMeltarifle") then {"TIOW_SM_MeltaGun_01"} else {lt_template_SmarineMeltarifle};
+_SmarineMeltariflemag = if (isNil "lt_template_SmarineMeltariflemag") then {"TIOW_Meltagun_Mag"} else {lt_template_SmarineMeltariflemag};
 
 // Space Marine Flamethrower
-_SmarineFlamethrifle = if (isNil "lt_template_SmarineFlamethrifle") then {"arifle_MXM_F"} else {lt_template_SmarineFlamethrifle};
-_SmarineFlamethriflemag = if (isNil "lt_template_SmarineFlamethriflemag") then {"30Rnd_65x39_caseless_mag"} else {lt_template_SmarineFlamethriflemag};
+_SmarineFlamethrifle = if (isNil "lt_template_SmarineFlamethrifle") then {"TIOW_SM_Flamer"} else {lt_template_SmarineFlamethrifle};
+_SmarineFlamethriflemag = if (isNil "lt_template_SmarineFlamethriflemag") then {"TIOW_SM_Flamer_mag"} else {lt_template_SmarineFlamethriflemag};
 
 
 // Engineer items
