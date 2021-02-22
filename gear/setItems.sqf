@@ -5,16 +5,25 @@ _lt_camo_var_array = call compile lt_camo_var;
 // ATTACHMENTS - PRIMARY
 _attach1 = if (isNil "lt_template_attach1") then {"acc_pointer_IR"} else {lt_template_attach1};		// IR Laser
 _attach2 = if (isNil "lt_template_attach2") then {"acc_flashlight"} else {lt_template_attach2};		// Flashlight
+_attachDM = if (isNil "lt_template_attachDM") then {"acc_pointer_IR"} else {lt_template_attachDM};		// DM
+_attachSNP = if (isNil "lt_template_attachSNP") then {"acc_pointer_IR"} else {lt_template_attachSNP};		// Sniper
 
 _silencer1 = if (isNil "lt_template_silencer1") then {"muzzle_snds_M"} else {lt_template_silencer1};	// 5.56 suppressor
-_silencer2 = if (isNil "lt_template_silencer2") then {"muzzle_snds_H"} else {lt_template_silencer2}; 	// 6.5 suppressor
+_silencerSMG = if (isNil "lt_template_silencerSMG") then {""} else {lt_template_silencerSMG}; 	// SMG Sup
+_silencerDM = if (isNil "lt_template_silencerDM") then {""} else {lt_template_silencerDM};	// DM
+_silencerSNP = if (isNil "lt_template_silencerSNP") then {""} else {lt_template_silencerSNP}; 	// Sniper
 
-_scope1 = if (isNil "lt_template_scope1") then {"optic_Holosight"} else {lt_template_scope1};  	// Fuck you Willem
-_scope2 = if (isNil "lt_template_scope2") then {"optic_DMS"} else {lt_template_scope2};				// De optic ding
-_scope3 = if (isNil "lt_template_scope3") then {"optic_SOS"} else {lt_template_scope3}; 			// SOS Scope - 18x - 75x
+_scope1 = if (isNil "lt_template_scope1") then {"CUP_optic_CompM4"} else {lt_template_scope1};  	// General Scope
+_scopeMG = if (isNil "lt_template_scopeMG") then {"CUP_optic_aimm_CompM4_blk"} else {lt_template_scopeMG};  	// General Scope
+_scopeSNP = if (isNil "lt_template_scopeSNP") then {"optic_SOS"} else {lt_template_scopeSNP};				// Sniper Scope
+_scopeDM = if (isNil "lt_template_scopeDM") then {"optic_DMS"} else {lt_template_scopeDM}; 			// Marksman
+_scopeRAT = if (isNil "lt_template_RAT_scope") then {""} else {lt_template_RAT_scope};  	// Scope voor RAT
+_scopeMAT = if (isNil "lt_template_MAT_scope") then {""} else {lt_template_MAT_scope};  	// Scope voor MAT
+_scopeHAT = if (isNil "lt_template_HAT_scope") then {""} else {lt_template_HAT_scope};  	// Scope voor HAT
 
 _bipod1 = if (isNil "lt_template_bipod1") then {"bipod_01_F_snd"} else {lt_template_bipod1};		// Default bipod
 _bipod2 = if (isNil "lt_template_bipod2") then {"bipod_02_F_blk"} else {lt_template_bipod2};		// Black bipod
+_bipodDM = if (isNil "lt_template_bipodDM") then {"bipod_02_F_blk"} else {lt_template_bipodDM};		// Black bipod
 
 // Default setup
 _attachments = if (isNil "lt_template_attachments") then {[_attach1,_scope1]} else {if (typename lt_template_attachments == "ARRAY") then {lt_template_attachments} else {lt_template_attachments splitstring " ,";};}; // The default attachment set for most units, overwritten in the individual unitType
@@ -84,9 +93,16 @@ _smokegrenadegreen = if (isNil "lt_template_smokegrenadegreen") then {"SmokeShel
 _firstaid = if (isNil "lt_template_firstaid") then {"FirstAidKit"} else {lt_template_firstaid};
 _medkit = if (isNil "lt_template_medkit") then {"Medikit"} else {lt_template_medkit};
 _bandages = if (isNil "lt_template_bandages" ) then {"ACE_fieldDressing"} else {lt_template_bandages};
+_elasticbandages = if (isNil "lt_template_elasticbandages" ) then {"ACE_elasticBandage"} else {lt_template_elasticbandages};
+_quikclot = if (isNil "lt_template_quikclot" ) then {"ACE_quikclot"} else {lt_template_quikclot};
+_tourniquet = if (isNil "lt_template_tourniquet" ) then {"ACE_tourniquet"} else {lt_template_tourniquet};
+_splint = if (isNil "lt_template_splint" ) then {"ACE_splint"} else {lt_template_splint};
 _morphine = if (isNil "lt_template_morphine" ) then {"ACE_morphine"} else {lt_template_morphine};
 _epinephrine = if (isNil "lt_template_epinephrine" ) then {"ACE_epinephrine"} else {lt_template_epinephrine};
 _bloodbags = if (isNil "lt_template_bloodbags" ) then {"ACE_bloodIV"} else {lt_template_bloodbags};
+_plasmaIV = if (isNil "lt_template_plasmaIV" ) then {"ACE_plasmaIV_500"} else {lt_template_plasmaIV};
+_saline = if (isNil "lt_template_saline" ) then {"ACE_salineIV_500"} else {lt_template_saline};
+_surgicalKit = if (isNil "lt_template_surgicalKit" ) then {"ACE_surgicalKit"} else {lt_template_surgicalKit};
 
 // Night Vision Goggles (NVGoggles)
 _nvg = if (isNil "lt_template_nvg") then {"ACE_NVG_Wide"} else {lt_template_nvg};
@@ -109,8 +125,11 @@ _chemblue = if (isNil "lt_template_chemblue") then {"Chemlight_blue"} else {lt_t
 
 // Other items
 _minedetector = if (isNil "lt_template_minedetector") then {"MineDetector"} else {lt_template_minedetector};
+_cabletie = if (isNil "lt_template_cabletie") then {"ACE_CableTie"} else {lt_template_cabletie};
 
 _rangefinder = if (isNil "lt_template_rangefinder") then {"ACE_Vector"} else {lt_template_rangefinder};
+_laserdesignator = if (isNil "lt_template_laserdesignator") then {"Laserbatteries"} else {lt_template_laserdesignator};
+_laserdesignatorBattery = if (isNil "lt_template_laserdesignatorBattery") then {"Laserdesignator_03"} else {lt_template_laserdesignatorBattery};
 _advancedbinoculars = if (isNil "lt_template_advancedbinoculars") then {"ACE_Vector"} else {lt_template_advancedbinoculars};
 _simplebinoculars = if (isNil "lt_template_simplebinoculars") then {"Binocular"} else {lt_template_simplebinoculars};
 
@@ -138,6 +157,7 @@ _spade = if (isNil "lt_template_spade") then {"ACE_EntrenchingTool"} else {lt_te
 // Backpacks
 _TypeName = typename (_lt_camo_var_array select 2);
 _CamoVarBag = _lt_camo_var_array select 2;
+_bag = _CamoVarBag;
 _baguav 		= IF (_TypeName == "ARRAY") then {
 	selectrandom _CamoVarBag
 	} else {
@@ -194,6 +214,15 @@ _RATmag2 = if (isNil "lt_template_RATmag2") then {""} else {lt_template_RATmag2}
 _MAT = if (isNil "lt_template_MAT") then {"launch_MRAWS_olive_F"} else {lt_template_MAT};
 _MATmag1 = if (isNil "lt_template_MATmag1") then {"MRAWS_HEAT_F"} else {lt_template_MATmag1};
 _MATmag2 = if (isNil "lt_template_MATmag2") then {"MRAWS_HE_F"} else {lt_template_MATmag2};
+
+// Surface Air
+_SAM = if (isNil "lt_template_SAM") then {""} else {lt_template_SAM};
+_SAMmag = if (isNil "lt_template_SAMmag") then {""} else {lt_template_SAMmag};
+
+// Heavy AT
+_HAT = if (isNil "lt_template_HAT") then {"launch_B_Titan_short_F"} else {lt_template_HAT};
+_HATmag1 = if (isNil "lt_template_HATmag1") then {"Titan_AT"} else {lt_template_HATmag1};
+_HATmag2 = if (isNil "lt_template_HATmag2") then {"Titan_AP"} else {lt_template_HATmag2};
 
 // Sniper
 _SNrifle = if (isNil "lt_template_SNrifle") then {"srifle_LRR_F"} else {lt_template_SNrifle};

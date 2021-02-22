@@ -71,13 +71,13 @@ if (_activated) then {
 		_SpawnMarkerArray = [_InfSpawnArray, _VehSpawnArray, _VehSpawnArray,_VehSpawnArray,_AirSpawnArray];
 
 		// Define side
-		diag_log FORMAT ["LT template DEBUG: -=Defense Module=- Faction  %1", _faction];
+		// diag_log FORMAT ["LT template DEBUG: -=Defense Module=- Faction  %1", _faction];
 		_factionUnitArray = switch (_faction) do {
 			#include "..\FactionSwitch.sqf"
 		};
 
-		diag_log FORMAT ["LT template DEBUG: -=Defense Module=- Faction unit array %1", _factionUnitArray];
-		diag_log FORMAT ["LT template DEBUG: -=Defense Module=- Faction unit array %1", _factionUnitArray select 0 select 0];
+		// diag_log FORMAT ["LT template DEBUG: -=Defense Module=- Faction unit array %1", _factionUnitArray];
+		// diag_log FORMAT ["LT template DEBUG: -=Defense Module=- Faction unit array %1", _factionUnitArray select 0 select 0];
 
 		_factionClass = getText (configfile >> "CfgVehicles" >> (_factionUnitArray select 0 select 0) >> "faction");
 

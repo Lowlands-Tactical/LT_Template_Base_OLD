@@ -7,13 +7,16 @@ lt_template_attach2        	 = 	 "uns_b_6H3"; // flashlight
 lt_template_attachDM         = 	 "uns_b_svd_camo"; // Marksman
 lt_template_attachSNP        = 	 "uns_b_svd_camo"; // Sniper
 lt_template_silencer1      	 = 	 ""; // rifles
-lt_template_silencer2      	 = 	 ""; // MG
+lt_template_silencerSMG      = 	 "";
+lt_template_silencerDM       = 	 "";
+lt_template_silencerSNP      = 	 "";
 lt_template_scope1         	 = 	 ""; // normal scope
-lt_template_scopeDM          = 	 "uns_o_PSO1_camo"; // Marksman Scope
-lt_template_scopeSNP         = 	 "uns_o_PU"; // Sniper Scope
-lt_template_scope3         	 = 	 "";
+lt_template_scopeMG          = 	 "";
+lt_template_scopeSNP         = 	 "uns_o_PU";
+lt_template_scopeDM          = 	 "uns_o_PSO1_camo";
 lt_template_bipod1         	 = 	 ""; // MG
 lt_template_bipod2         	 = 	 "";
+lt_template_bipodDM          = 	 "";
 lt_template_attachments    	 = 	 [lt_template_attach1, lt_template_scope1];
 
 // Handgun attachements
@@ -76,11 +79,13 @@ lt_template_DMriflemag     	  = 	 "uns_svdmag";
 lt_template_RAT         = "uns_rpg2";
 lt_template_RATmag1        	  = 	 "uns_rpg2grenade";
 lt_template_RATmag2        	  = 	 "uns_rpg2grenade";
+lt_template_RAT_scope          = 	 "";
 
 // Medium AT Gunner, Medium AT Gunner Assistant (alleen magazijnen)
 lt_template_MAT    	    = 	 "uns_rpg7";
 lt_template_MATmag1        	  = 	 "uns_rpg7grenade";
 lt_template_MATmag2        	  = 	 "uns_rpg7grenade";
+lt_template_MAT_scope          = 	 "";
 
 // Sniper
 lt_template_SNrifle     =      "uns_mosin";

@@ -18,12 +18,16 @@ if !(isNil "LT_wpn_var_BLUFOR" || isNil "LT_wpn_var_OPFOR"|| isNil "LT_wpn_var_G
 	lt_template_attach1        	=	nil	;
 	lt_template_attach2        	=	nil	;
 	lt_template_silencer1      	=	nil	;
-	lt_template_silencer2      	=	nil	;
+	lt_template_silencerSMG      	=	nil	;
 	lt_template_scope1         	=	nil	;
-	lt_template_scope2         	=	nil	;
-	lt_template_scope3         	=	nil	;
+	lt_template_scopeSNP        =	nil	;
+	lt_template_scopeDM         =	nil	;
+	lt_template_RAT_scope 			=	nil	;
+	lt_template_MAT_scope  			=	nil	;
+	lt_template_HAT_scope  			=	nil	;
 	lt_template_bipod1         	=	nil	;
 	lt_template_bipod2         	=	nil	;
+	lt_template_bipodDM        	=	nil	;
 	lt_template_attachments    	=	nil	;
 	lt_template_hg_silencer1    =	nil	;
 	lt_template_hg_scope1      	=	nil	;
@@ -59,6 +63,9 @@ if !(isNil "LT_wpn_var_BLUFOR" || isNil "LT_wpn_var_OPFOR"|| isNil "LT_wpn_var_G
 	lt_template_MMG    					=	nil	;
 	lt_template_MMGmag         	=	nil	;
 	lt_template_MMGmag_tr      	=	nil	;
+	lt_template_HMG    					=	nil	;
+	lt_template_HMGmag         	=	nil	;
+	lt_template_HMGmag_tr      	=	nil	;
 	lt_template_DMrifle        	=	nil	;
 	lt_template_DMriflemag     	=	nil	;
 	lt_template_RAT    					=	nil	;
@@ -216,9 +223,16 @@ _smokegrenadegreen = if (isNil "lt_template_smokegrenadegreen") then {"SmokeShel
 _firstaid = if (isNil "lt_template_firstaid") then {"FirstAidKit"} else {lt_template_firstaid};
 _medkit = if (isNil "lt_template_medkit") then {"Medikit"} else {lt_template_medkit};
 _bandages = if (isNil "lt_template_bandages" ) then {"ACE_fieldDressing"} else {lt_template_bandages};
+_elasticbandages = if (isNil "lt_template_elasticbandages" ) then {"ACE_elasticBandage"} else {lt_template_elasticbandages};
+_quikclot = if (isNil "lt_template_quikclot" ) then {"ACE_quikclot"} else {lt_template_quikclot};
+_tourniquet = if (isNil "lt_template_tourniquet" ) then {"ACE_tourniquet"} else {lt_template_tourniquet};
+_splint = if (isNil "lt_template_splint" ) then {"ACE_splint"} else {lt_template_splint};
 _morphine = if (isNil "lt_template_morphine" ) then {"ACE_morphine"} else {lt_template_morphine};
 _epinephrine = if (isNil "lt_template_epinephrine" ) then {"ACE_epinephrine"} else {lt_template_epinephrine};
 _bloodbags = if (isNil "lt_template_bloodbags" ) then {"ACE_bloodIV"} else {lt_template_bloodbags};
+_plasmaIV = if (isNil "lt_template_plasmaIV" ) then {"ACE_plasmaIV_500"} else {lt_template_plasmaIV};
+_saline = if (isNil "lt_template_saline" ) then {"ACE_salineIV_500"} else {lt_template_saline};
+_surgicalKit = if (isNil "lt_template_surgicalKit" ) then {"ACE_surgicalKit"} else {lt_template_surgicalKit};
 
 // Night Vision Goggles (NVGoggles)
 _nvg = if (isNil "lt_template_nvg") then {"ACE_NVG_Wide"} else {lt_template_nvg};
@@ -235,6 +249,7 @@ _chemblue = if (isNil "lt_template_chemblue") then {"Chemlight_blue"} else {lt_t
 // Other items
 _cigarette = if (isNil "lt_templatecigarette") then {"murshun_cigs_lighter"} else {lt_templatecigarette};
 _minedetector = if (isNil "lt_template_minedetector") then {"MineDetector"} else {lt_template_minedetector};
+_cabletie = if (isNil "lt_template_cabletie") then {"ACE_Clacker"} else {lt_template_cabletie};
 
 _rangefinder = if (isNil "lt_template_rangefinder") then {"ACE_Vector"} else {lt_template_rangefinder};
 _advancedbinoculars = if (isNil "lt_template_advancedbinoculars") then {"ACE_Vector"} else {lt_template_advancedbinoculars};
@@ -290,9 +305,14 @@ _MAT = if (isNil "lt_template_MAT") then {"launch_MRAWS_olive_F"} else {lt_templ
 _MATmag1 = if (isNil "lt_template_MATmag1") then {"MRAWS_HEAT_F"} else {lt_template_MATmag1};
 _MATmag2 = if (isNil "lt_template_MATmag2") then {"MRAWS_HE_F"} else {lt_template_MATmag2};
 
-// Sniper
-_SNrifle = if (isNil "lt_template_SNrifle") then {"srifle_LRR_F"} else {lt_template_SNrifle};
-_SNrifleMag = if (isNil "lt_template_SNrifleMag") then {"7Rnd_408_Mag"} else {lt_template_SNrifleMag};
+// Heavy AT
+_HAT = if (isNil "lt_template_HAT") then {"launch_B_Titan_short_F"} else {lt_template_HAT};
+_HATmag1 = if (isNil "lt_template_HATmag1") then {"Titan_AT"} else {lt_template_HATmag1};
+_HATmag2 = if (isNil "lt_template_HATmag2") then {"Titan_AP"} else {lt_template_HATmag2};
+
+// Surface Air
+_SAM = if (isNil "lt_template_SAM") then {"CUP_launch_FIM92Stinger"} else {lt_template_SAM};
+_SAMmag = if (isNil "lt_template_SAMmag") then {"CUP_Stinger_M"} else {lt_template_SAMmag};
 
 // Grenadier
 _GRENrifle = if (isNil "lt_template_GRENrifle") then {""} else {lt_template_GRENrifle};
@@ -308,6 +328,10 @@ _GRENflaregreen = if (isNil "lt_template_GRENflaregreen") then {"UGL_FlareGreen_
 // Shotgunner
 _SHOTrifle = if (isNil "lt_template_SHOTrifle") then {""} else {lt_template_SHOTrifle};
 _SHOTrifleMag = if (isNil "lt_template_SHOTrifleMag") then {""} else {lt_template_SHOTrifleMag};
+
+// Sniper
+_SNrifle = if (isNil "lt_template_SNrifle") then {"NLD_AWM"} else {lt_template_SNrifle};
+_SNrifleMag = if (isNil "lt_template_SNrifleMag") then {"CUP_5Rnd_86x70_L115A1"} else {lt_template_SNrifleMag};
 
 // Engineer items
 _ATmine = if (isNil "lt_template_ATmine") then {"ATMine_Range_Mag"} else {lt_template_ATmine};
@@ -327,46 +351,56 @@ switch (_role) do {
 		clearMagazineCargoGlobal _vehicle;
 		clearItemCargoGlobal _vehicle;
 		clearBackpackCargoGlobal _vehicle;
-		_vehicle addWeaponCargoGlobal [_carbine,2];
-		_vehicle addMagazineCargoGlobal [_riflemag,8];
-		_vehicle addMagazineCargoGlobal [_glriflemag,8];
-		_vehicle addMagazineCargoGlobal [_carbinemag,10];
+		_vehicle addWeaponCargoGlobal [_carbine, 2];
+		_vehicle addMagazineCargoGlobal [_riflemag, 8];
+		_vehicle addMagazineCargoGlobal [_glriflemag, 8];
+		_vehicle addMagazineCargoGlobal [_carbinemag, 10];
 		_vehicle addMagazineCargoGlobal [_ARmag,5];
-		_vehicle addMagazineCargoGlobal [_DMriflemag,3];
-    _vehicle addMagazineCargoGlobal [_smgmag,5];
-		if (_RAT in _disposableLaunchers) then {
-			_vehicle addWeaponCargoGlobal [_RAT,2];
-		} else {
-			_vehicle addMagazineCargoGlobal [_RATmag1,6];
-			_vehicle addMagazineCargoGlobal [_RATmag2,6];
+		_vehicle addMagazineCargoGlobal [_DMriflemag, 3];
+		_vehicle addMagazineCargoGlobal [_smgmag, 5];
+		_vehicle addWeaponCargoGlobal [_RAT, 2];
+		if !(_RAT in _disposableLaunchers) then {
+			_vehicle addMagazineCargoGlobal [_RATmag1, 6];
+			_vehicle addMagazineCargoGlobal [_RATmag2, 6];
 		};
     if !(_MAT in _disposableLaunchers) then {
-      _vehicle addMagazineCargoGlobal [_MATmag1,1];
-      _vehicle addMagazineCargoGlobal [_MATmag2,1];
+      _vehicle addMagazineCargoGlobal [_MATmag1, 1];
+      _vehicle addMagazineCargoGlobal [_MATmag2, 1];
+    };
+		_vehicle addWeaponCargoGlobal [_SAM, 1];
+    if !(_SAM in _disposableLaunchers) then {
+      _vehicle addMagazineCargoGlobal [_SAMmag, 1];
     };
     _vehicle addMagazineCargoGlobal [_MMGmag,2];
     _vehicle addMagazineCargoGlobal [_MMGmag_tr,1];
     _vehicle addMagazineCargoGlobal [_HMGmag,2];
     _vehicle addMagazineCargoGlobal [_HMGmag_tr,1];
-		_vehicle addMagazineCargoGlobal [_grenade,4];
-		_vehicle addMagazineCargoGlobal [_smokegrenade,4];
-		_vehicle addMagazineCargoGlobal [_smokegrenadegreen,2];
-		_vehicle addMagazineCargoGlobal [_glmag,4];
-		_vehicle addMagazineCargoGlobal [_glsmokewhite,4];
-		_vehicle addMagazineCargoGlobal [_GRENrifleMag,4];
-		_vehicle addMagazineCargoGlobal [_GRENsmokewhite,4];
-		_vehicle addMagazineCargoGlobal [_smokegrenadegreen,2];
-		_vehicle addMagazineCargoGlobal [_GRENsmokegreen,4];
-		_vehicle addMagazineCargoGlobal [_GRENsmokered,4];
-		_vehicle addMagazineCargoGlobal [_GRENflarewhite,4];
-		_vehicle addMagazineCargoGlobal [_GRENflarered,4];
-		_vehicle addMagazineCargoGlobal [_GRENflareyellow,2];
-		_vehicle addMagazineCargoGlobal [_GRENflaregreen,4];
-		_vehicle addMagazineCargoGlobal [_SHOTrifleMag,10];
+		_vehicle addMagazineCargoGlobal [_grenade, 4];
+		_vehicle addMagazineCargoGlobal [_smokegrenade, 4];
+		_vehicle addMagazineCargoGlobal [_smokegrenadegreen, 2];
+		_vehicle addMagazineCargoGlobal [_glmag, 4];
+		_vehicle addMagazineCargoGlobal [_glsmokewhite, 4];
+		_vehicle addMagazineCargoGlobal [_glsmokegreen, 4];
+		_vehicle addMagazineCargoGlobal [_glsmokered, 4];
+		_vehicle addMagazineCargoGlobal [_GRENrifleMag, 4];
+		_vehicle addMagazineCargoGlobal [_GRENsmokegreen, 4];
+		_vehicle addMagazineCargoGlobal [_GRENsmokered, 4];
+		_vehicle addMagazineCargoGlobal [_GRENflarewhite, 4];
+		_vehicle addMagazineCargoGlobal [_GRENflarered, 4];
+		_vehicle addMagazineCargoGlobal [_GRENflareyellow, 4];
+		_vehicle addMagazineCargoGlobal [_GRENflaregreen, 4];
+		_vehicle addMagazineCargoGlobal [_SHOTrifleMag, 10];
 		_vehicle addItemCargoGlobal [_bandages,8];
 		_vehicle addItemCargoGlobal [_bloodbags,2];
 		_vehicle addItemCargoGlobal [_morphine,4];
 		_vehicle addItemCargoGlobal [_epinephrine,4];
+		_vehicle addItemCargoGlobal [_elasticbandages,4];
+		_vehicle addItemCargoGlobal [_quikclot,10];
+		_vehicle addItemCargoGlobal [_tourniquet,12];
+		_vehicle addItemCargoGlobal [_splint,3];
+		_vehicle addItemCargoGlobal [_plasmaIV,2];
+		_vehicle addItemCargoGlobal [_saline,2];
+		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
@@ -377,47 +411,56 @@ switch (_role) do {
 		clearMagazineCargoGlobal _vehicle;
 		clearItemCargoGlobal _vehicle;
 		clearBackpackCargoGlobal _vehicle;
-		_vehicle addWeaponCargoGlobal [_carbine,10];
-		_vehicle addMagazineCargoGlobal [_riflemag,40];
-		_vehicle addMagazineCargoGlobal [_glriflemag,40];
-		_vehicle addMagazineCargoGlobal [_carbinemag,40];
-		_vehicle addMagazineCargoGlobal [_ARmag,22];
-		_vehicle addMagazineCargoGlobal [_DMriflemag,20];
-    _vehicle addMagazineCargoGlobal [_smgmag,20];
-		if (_RAT in _disposableLaunchers) then {
-			_vehicle addWeaponCargoGlobal [_RAT,6];
-		} else {
-			_vehicle addMagazineCargoGlobal [_RATmag1,18];
-			_vehicle addMagazineCargoGlobal [_RATmag2,18];
+		_vehicle addWeaponCargoGlobal [_carbine, 8];
+		_vehicle addMagazineCargoGlobal [_riflemag, 20];
+		_vehicle addMagazineCargoGlobal [_glriflemag, 20];
+		_vehicle addMagazineCargoGlobal [_carbinemag, 20];
+		_vehicle addMagazineCargoGlobal [_ARmag, 10];
+		_vehicle addMagazineCargoGlobal [_DMriflemag, 10];
+		_vehicle addMagazineCargoGlobal [_smgmag, 20];
+		_vehicle addWeaponCargoGlobal [_RAT, 3];
+		if !(_RAT in _disposableLaunchers) then {
+			_vehicle addMagazineCargoGlobal [_RATmag1, 9];
+			_vehicle addMagazineCargoGlobal [_RATmag2, 9];
 		};
     if !(_MAT in _disposableLaunchers) then {
-      _vehicle addMagazineCargoGlobal [_MATmag1,5];
-      _vehicle addMagazineCargoGlobal [_MATmag2,5];
+      _vehicle addMagazineCargoGlobal [_MATmag1, 5];
+      _vehicle addMagazineCargoGlobal [_MATmag2, 5];
     };
+    _vehicle addWeaponCargoGlobal [_SAM, 5];
+    if !(_SAM in _disposableLaunchers) then {
+      _vehicle addMagazineCargoGlobal [_SAMmag, 5];
+    };
+		_vehicle addWeaponCargoGlobal [_MMG, 2];
     _vehicle addMagazineCargoGlobal [_MMGmag,8];
     _vehicle addMagazineCargoGlobal [_MMGmag_tr,2];
-    _vehicle addMagazineCargoGlobal [_HMGmag,8];
-    _vehicle addMagazineCargoGlobal [_HMGmag_tr,2];
-		_vehicle addMagazineCargoGlobal [_grenade,12];
+		_vehicle addMagazineCargoGlobal [_grenade, 12];
 		_vehicle addmagazineCargoGlobal [_mgrenade,12];
-		_vehicle addMagazineCargoGlobal [_smokegrenade,12];
-		_vehicle addMagazineCargoGlobal [_smokegrenadegreen,4];
-		_vehicle addMagazineCargoGlobal [_glmag,12];
-		_vehicle addMagazineCargoGlobal [_glsmokewhite,12];
-		_vehicle addMagazineCargoGlobal [_GRENrifleMag,12];
-		_vehicle addMagazineCargoGlobal [_GRENsmokewhite,12];
-		_vehicle addMagazineCargoGlobal [_smokegrenadegreen,12];
-		_vehicle addMagazineCargoGlobal [_GRENsmokegreen,12];
-		_vehicle addMagazineCargoGlobal [_GRENsmokered,12];
-		_vehicle addMagazineCargoGlobal [_GRENflarewhite,12];
-		_vehicle addMagazineCargoGlobal [_GRENflarered,12];
-		_vehicle addMagazineCargoGlobal [_GRENflareyellow,12];
-		_vehicle addMagazineCargoGlobal [_GRENflaregreen,12];
-		_vehicle addMagazineCargoGlobal [_SHOTrifleMag,20];
+		_vehicle addMagazineCargoGlobal [_smokegrenade, 12];
+		_vehicle addMagazineCargoGlobal [_smokegrenadegreen, 4];
+		_vehicle addMagazineCargoGlobal [_glmag, 12];
+		_vehicle addMagazineCargoGlobal [_glsmokewhite, 12];
+		_vehicle addMagazineCargoGlobal [_glsmokegreen, 12];
+		_vehicle addMagazineCargoGlobal [_glsmokered, 12];
+		_vehicle addMagazineCargoGlobal [_GRENrifleMag, 8];
+		_vehicle addMagazineCargoGlobal [_GRENsmokegreen, 8];
+		_vehicle addMagazineCargoGlobal [_GRENsmokered, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflarewhite, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflarered, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflareyellow, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflaregreen, 8];
+		_vehicle addMagazineCargoGlobal [_SHOTrifleMag, 15];
 		_vehicle addItemCargoGlobal [_bandages,16];
 		_vehicle addItemCargoGlobal [_bloodbags,4];
 		_vehicle addItemCargoGlobal [_morphine,8];
 		_vehicle addItemCargoGlobal [_epinephrine,8];
+		_vehicle addItemCargoGlobal [_elasticbandages,8];
+		_vehicle addItemCargoGlobal [_quikclot,20];
+		_vehicle addItemCargoGlobal [_tourniquet,24];
+		_vehicle addItemCargoGlobal [_splint,6];
+		_vehicle addItemCargoGlobal [_plasmaIV,4];
+		_vehicle addItemCargoGlobal [_saline,4];
+		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
@@ -428,46 +471,56 @@ switch (_role) do {
 		clearMagazineCargoGlobal _vehicle;
 		clearItemCargoGlobal _vehicle;
 		clearBackpackCargoGlobal _vehicle;
-		_vehicle addWeaponCargoGlobal [_carbine,4];
-		_vehicle addMagazineCargoGlobal [_riflemag,20];
-		_vehicle addMagazineCargoGlobal [_glriflemag,20];
-		_vehicle addMagazineCargoGlobal [_carbinemag,20];
-		_vehicle addMagazineCargoGlobal [_ARmag,8];
-		_vehicle addMagazineCargoGlobal [_DMriflemag,10];
-    _vehicle addMagazineCargoGlobal [_smgmag,10];
-		if (_RAT in _disposableLaunchers) then {
-			_vehicle addWeaponCargoGlobal [_RAT,4];
-		} else {
-			_vehicle addMagazineCargoGlobal [_RATmag1,12];
-			_vehicle addMagazineCargoGlobal [_RATmag2,12];
+		_vehicle addWeaponCargoGlobal [_carbine, 4];
+		_vehicle addMagazineCargoGlobal [_riflemag, 20];
+		_vehicle addMagazineCargoGlobal [_glriflemag, 20];
+		_vehicle addMagazineCargoGlobal [_carbinemag, 20];
+		_vehicle addMagazineCargoGlobal [_ARmag, 8];
+		_vehicle addMagazineCargoGlobal [_DMriflemag, 10];
+		_vehicle addMagazineCargoGlobal [_smgmag, 10];
+		_vehicle addWeaponCargoGlobal [_RAT, 4];
+		if !(_RAT in _disposableLaunchers) then {
+			_vehicle addMagazineCargoGlobal [_RATmag1, 12];
+			_vehicle addMagazineCargoGlobal [_RATmag2, 12];
 		};
     if !(_MAT in _disposableLaunchers) then {
-      _vehicle addMagazineCargoGlobal [_MATmag1,4];
-      _vehicle addMagazineCargoGlobal [_MATmag2,4];
+      _vehicle addMagazineCargoGlobal [_MATmag1, 4];
+      _vehicle addMagazineCargoGlobal [_MATmag2, 4];
     };
+    _vehicle addWeaponCargoGlobal [_SAM, 2];
+    if !(_SAM in _disposableLaunchers) then {
+      _vehicle addMagazineCargoGlobal [_SAMmag, 2];
+    };
+		_vehicle addWeaponCargoGlobal [_MMG, 1];
     _vehicle addMagazineCargoGlobal [_MMGmag,5];
     _vehicle addMagazineCargoGlobal [_MMGmag_tr,3];
-    _vehicle addMagazineCargoGlobal [_HMGmag,5];
-    _vehicle addMagazineCargoGlobal [_HMGmag_tr,3];
-		_vehicle addMagazineCargoGlobal [_grenade,8];
+		_vehicle addMagazineCargoGlobal [_grenade, 8];
 		_vehicle addmagazineCargoGlobal [_mgrenade,8];
-		_vehicle addMagazineCargoGlobal [_smokegrenade,8];
-		_vehicle addMagazineCargoGlobal [_smokegrenadegreen,2];
-		_vehicle addMagazineCargoGlobal [_glmag,8];
-		_vehicle addMagazineCargoGlobal [_glsmokewhite,8];
-		_vehicle addMagazineCargoGlobal [_GRENrifleMag,8];
-		_vehicle addMagazineCargoGlobal [_GRENsmokewhite,8];
-		_vehicle addMagazineCargoGlobal [_GRENsmokegreen,8];
-		_vehicle addMagazineCargoGlobal [_GRENsmokered,8];
-		_vehicle addMagazineCargoGlobal [_GRENflarewhite,8];
-		_vehicle addMagazineCargoGlobal [_GRENflarered,8];
-		_vehicle addMagazineCargoGlobal [_GRENflareyellow,8];
-		_vehicle addMagazineCargoGlobal [_GRENflaregreen,8];
-		_vehicle addMagazineCargoGlobal [_SHOTrifleMag,15];
+		_vehicle addMagazineCargoGlobal [_smokegrenade, 8];
+		_vehicle addMagazineCargoGlobal [_smokegrenadegreen, 2];
+		_vehicle addMagazineCargoGlobal [_glmag, 8];
+		_vehicle addMagazineCargoGlobal [_glsmokewhite, 4];
+		_vehicle addMagazineCargoGlobal [_glsmokegreen, 4];
+		_vehicle addMagazineCargoGlobal [_glsmokered, 4];
+		_vehicle addMagazineCargoGlobal [_GRENrifleMag, 8];
+		_vehicle addMagazineCargoGlobal [_GRENsmokegreen, 8];
+		_vehicle addMagazineCargoGlobal [_GRENsmokered, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflarewhite, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflarered, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflareyellow, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflaregreen, 8];
+		_vehicle addMagazineCargoGlobal [_SHOTrifleMag, 15];
 		_vehicle addItemCargoGlobal [_bandages,6];
 		_vehicle addItemCargoGlobal [_bloodbags,3];
 		_vehicle addItemCargoGlobal [_morphine,6];
 		_vehicle addItemCargoGlobal [_epinephrine,6];
+		_vehicle addItemCargoGlobal [_elasticbandages,4];
+    _vehicle addItemCargoGlobal [_quikclot,8];
+    _vehicle addItemCargoGlobal [_tourniquet,10];
+    _vehicle addItemCargoGlobal [_splint,3];
+    _vehicle addItemCargoGlobal [_plasmaIV,3];
+		_vehicle addItemCargoGlobal [_saline,3];
+		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
@@ -478,47 +531,57 @@ switch (_role) do {
 		clearMagazineCargoGlobal _vehicle;
 		clearItemCargoGlobal _vehicle;
 		clearBackpackCargoGlobal _vehicle;
-		_vehicle addWeaponCargoGlobal [_carbine,4];
-		_vehicle addMagazineCargoGlobal [_riflemag,5];
-		_vehicle addMagazineCargoGlobal [_glriflemag,5];
-		_vehicle addMagazineCargoGlobal [_ARmag,5];
-		_vehicle addMagazineCargoGlobal [_carbinemag,5];
-		_vehicle addMagazineCargoGlobal [_DMriflemag,5];
-    _vehicle addMagazineCargoGlobal [_smgmag,5];
-		_vehicle addMagazineCargoGlobal [_glmag,5];
-		_vehicle addMagazineCargoGlobal [_glsmokewhite,4];
-		if (_RAT in _disposableLaunchers) then {
-			_vehicle addWeaponCargoGlobal [_RAT,2];
-		} else {
-			_vehicle addMagazineCargoGlobal [_RATmag1,6];
-			_vehicle addMagazineCargoGlobal [_RATmag2,6];
+		_vehicle addWeaponCargoGlobal [_carbine, 4];
+		_vehicle addMagazineCargoGlobal [_riflemag, 5];
+		_vehicle addMagazineCargoGlobal [_glriflemag, 5];
+		_vehicle addMagazineCargoGlobal [_ARmag, 5];
+		_vehicle addMagazineCargoGlobal [_carbinemag, 5];
+		_vehicle addMagazineCargoGlobal [_DMriflemag, 5];
+		_vehicle addMagazineCargoGlobal [_smgmag, 5];
+		_vehicle addMagazineCargoGlobal [_glmag, 5];
+		_vehicle addMagazineCargoGlobal [_glsmokewhite, 4];
+		_vehicle addMagazineCargoGlobal [_glsmokegreen, 4];
+		_vehicle addMagazineCargoGlobal [_glsmokered, 4];
+		_vehicle addWeaponCargoGlobal [_RAT, 2];
+		if !(_RAT in _disposableLaunchers) then {
+			_vehicle addMagazineCargoGlobal [_RATmag1, 6];
+			_vehicle addMagazineCargoGlobal [_RATmag2, 6];
 		};
     if !(_MAT in _disposableLaunchers) then {
-      _vehicle addMagazineCargoGlobal [_MATmag1,2];
-      _vehicle addMagazineCargoGlobal [_MATmag2,2];
+      _vehicle addMagazineCargoGlobal [_MATmag1, 2];
+      _vehicle addMagazineCargoGlobal [_MATmag2, 2];
     };
+    _vehicle addWeaponCargoGlobal [_SAM, 2];
+    if !(_SAM in _disposableLaunchers) then {
+      _vehicle addMagazineCargoGlobal [_SAMmag, 2];
+    };
+		_vehicle addWeaponCargoGlobal [_MMG, 1];
     _vehicle addMagazineCargoGlobal [_MMGmag,5];
     _vehicle addMagazineCargoGlobal [_MMGmag_tr,2];
     _vehicle addMagazineCargoGlobal [_HMGmag,5];
     _vehicle addMagazineCargoGlobal [_HMGmag_tr,2];
-		_vehicle addMagazineCargoGlobal [_grenade,8];
-		_vehicle addMagazineCargoGlobal [_mgrenade,8];
-		_vehicle addMagazineCargoGlobal [_smokegrenade,8];
-		_vehicle addMagazineCargoGlobal [_smokegrenadegreen,2];
-		_vehicle addMagazineCargoGlobal [_GRENrifleMag,8];
-		_vehicle addMagazineCargoGlobal [_GRENsmokewhite,2];
-		_vehicle addMagazineCargoGlobal [_smokegrenadegreen,2];
-		_vehicle addMagazineCargoGlobal [_GRENsmokegreen,2];
-		_vehicle addMagazineCargoGlobal [_GRENsmokered,2];
-		_vehicle addMagazineCargoGlobal [_GRENflarewhite,2];
-		_vehicle addMagazineCargoGlobal [_GRENflarered,2];
-		_vehicle addMagazineCargoGlobal [_GRENflareyellow,2];
-		_vehicle addMagazineCargoGlobal [_GRENflaregreen,2];
-		_vehicle addMagazineCargoGlobal [_SHOTrifleMag,5];
+		_vehicle addMagazineCargoGlobal [_grenade, 8];
+		_vehicle addMagazineCargoGlobal [_mgrenade, 8];
+		_vehicle addMagazineCargoGlobal [_smokegrenade, 8];
+		_vehicle addMagazineCargoGlobal [_smokegrenadegreen, 2];
+		_vehicle addMagazineCargoGlobal [_GRENrifleMag, 8];
+		_vehicle addMagazineCargoGlobal [_GRENsmokegreen, 8];
+		_vehicle addMagazineCargoGlobal [_GRENsmokered, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflarewhite, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflarered, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflareyellow, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflaregreen, 8];
+		_vehicle addMagazineCargoGlobal [_SHOTrifleMag, 15];
 		_vehicle addItemCargoGlobal [_bandages,10];
 		_vehicle addItemCargoGlobal [_bloodbags,4];
 		_vehicle addItemCargoGlobal [_morphine,8];
 		_vehicle addItemCargoGlobal [_epinephrine,8];
+		_vehicle addItemCargoGlobal [_elasticbandages,6];
+		_vehicle addItemCargoGlobal [_quikclot,14];
+		_vehicle addItemCargoGlobal [_tourniquet,16];
+		_vehicle addItemCargoGlobal [_splint,5];
+		_vehicle addItemCargoGlobal [_plasmaIV,4];
+		_vehicle addItemCargoGlobal [_saline,4];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
@@ -529,47 +592,56 @@ switch (_role) do {
 		clearMagazineCargoGlobal _vehicle;
 		clearItemCargoGlobal _vehicle;
 		clearBackpackCargoGlobal _vehicle;
-		_vehicle addWeaponCargoGlobal [_carbine,10];
-		_vehicle addMagazineCargoGlobal [_riflemag,15];
-		_vehicle addMagazineCargoGlobal [_glriflemag,20];
-		_vehicle addMagazineCargoGlobal [_ARmag,15];
-		_vehicle addMagazineCargoGlobal [_carbinemag,20];
-		_vehicle addMagazineCargoGlobal [_glmag,20];
+		_vehicle addWeaponCargoGlobal [_carbine, 10];
+		_vehicle addMagazineCargoGlobal [_riflemag, 15];
+		_vehicle addMagazineCargoGlobal [_glriflemag, 20];
+		_vehicle addMagazineCargoGlobal [_ARmag, 15];
+		_vehicle addMagazineCargoGlobal [_carbinemag, 20];
+		_vehicle addMagazineCargoGlobal [_glmag, 20];
 		_vehicle addMagazineCargoGlobal [_glsmokewhite,16];
-		_vehicle addMagazineCargoGlobal [_DMriflemag,12];
-    _vehicle addMagazineCargoGlobal [_smgmag,20];
-		if (_RAT in _disposableLaunchers) then {
-			_vehicle addWeaponCargoGlobal [_RAT,6];
-		} else {
-			_vehicle addMagazineCargoGlobal [_RATmag1,12];
-			_vehicle addMagazineCargoGlobal [_RATmag2,12];
+		_vehicle addMagazineCargoGlobal [_glsmokegreen, 16];
+		_vehicle addMagazineCargoGlobal [_glsmokered, 16];
+		_vehicle addMagazineCargoGlobal [_DMriflemag, 12];
+		_vehicle addWeaponCargoGlobal [_RAT, 6];
+		if !(_RAT in _disposableLaunchers) then {
+			_vehicle addMagazineCargoGlobal [_RATmag1, 12];
+			_vehicle addMagazineCargoGlobal [_RATmag2, 12];
 		};
     if !(_MAT in _disposableLaunchers) then {
-      _vehicle addMagazineCargoGlobal [_MATmag1,3];
-      _vehicle addMagazineCargoGlobal [_MATmag2,3];
+      _vehicle addMagazineCargoGlobal [_MATmag1, 3];
+      _vehicle addMagazineCargoGlobal [_MATmag2, 3];
     };
+    _vehicle addWeaponCargoGlobal [_SAM, 4];
+    if !(_SAM in _disposableLaunchers) then {
+      _vehicle addMagazineCargoGlobal [_SAMmag, 4];
+    };
+		_vehicle addWeaponCargoGlobal [_MMG, 2];
     _vehicle addMagazineCargoGlobal [_MMGmag,10];
     _vehicle addMagazineCargoGlobal [_MMGmag_tr,3];
     _vehicle addMagazineCargoGlobal [_HMGmag,10];
     _vehicle addMagazineCargoGlobal [_HMGmag_tr,3];
-		_vehicle addMagazineCargoGlobal [_grenade,25];
-		_vehicle addMagazineCargoGlobal [_mgrenade,25];
-		_vehicle addMagazineCargoGlobal [_smokegrenade,25];
-		_vehicle addMagazineCargoGlobal [_smokegrenadegreen,6];
-		_vehicle addMagazineCargoGlobal [_GRENrifleMag,8];
-		_vehicle addMagazineCargoGlobal [_GRENsmokewhite,8];
-		_vehicle addMagazineCargoGlobal [_smokegrenadegreen,8];
-		_vehicle addMagazineCargoGlobal [_GRENsmokegreen,8];
-		_vehicle addMagazineCargoGlobal [_GRENsmokered,8];
-		_vehicle addMagazineCargoGlobal [_GRENflarewhite,8];
-		_vehicle addMagazineCargoGlobal [_GRENflarered,8];
-		_vehicle addMagazineCargoGlobal [_GRENflareyellow,8];
-		_vehicle addMagazineCargoGlobal [_GRENflaregreen,8];
-		_vehicle addMagazineCargoGlobal [_SHOTrifleMag,15];
-		_vehicle addItemCargoGlobal [_bandages,25];
+		_vehicle addMagazineCargoGlobal [_grenade, 25];
+		_vehicle addMagazineCargoGlobal [_mgrenade, 25];
+		_vehicle addMagazineCargoGlobal [_smokegrenade, 25];
+		_vehicle addMagazineCargoGlobal [_smokegrenadegreen, 6];
+		_vehicle addMagazineCargoGlobal [_GRENrifleMag, 8];
+		_vehicle addMagazineCargoGlobal [_GRENsmokegreen, 8];
+		_vehicle addMagazineCargoGlobal [_GRENsmokered, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflarewhite, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflarered, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflareyellow, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflaregreen, 8];
+		_vehicle addMagazineCargoGlobal [_SHOTrifleMag, 15];
+		_vehicle addItemCargoGlobal [_bandages, 15];
 		_vehicle addItemCargoGlobal [_bloodbags,8];
 		_vehicle addItemCargoGlobal [_morphine,12];
 		_vehicle addItemCargoGlobal [_epinephrine,12];
+		_vehicle addItemCargoGlobal [_elasticbandages,10];
+		_vehicle addItemCargoGlobal [_quikclot,18];
+		_vehicle addItemCargoGlobal [_tourniquet,14];
+		_vehicle addItemCargoGlobal [_splint,10];
+		_vehicle addItemCargoGlobal [_plasmaIV,8];
+		_vehicle addItemCargoGlobal [_saline,8];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
@@ -580,47 +652,56 @@ switch (_role) do {
 		clearMagazineCargoGlobal _vehicle;
 		clearItemCargoGlobal _vehicle;
 		clearBackpackCargoGlobal _vehicle;
-		_vehicle addWeaponCargoGlobal [_carbine,20];
-		_vehicle addMagazineCargoGlobal [_riflemag,45];
-		_vehicle addMagazineCargoGlobal [_glriflemag,60];
-		_vehicle addMagazineCargoGlobal [_ARmag,45];
-		_vehicle addMagazineCargoGlobal [_carbinemag,60];
-		_vehicle addMagazineCargoGlobal [_DMriflemag,45];
-    _vehicle addMagazineCargoGlobal [_smgmag,40];
-		_vehicle addMagazineCargoGlobal [_glmag,60];
+		_vehicle addWeaponCargoGlobal [_carbine, 20];
+		_vehicle addMagazineCargoGlobal [_riflemag, 45];
+		_vehicle addMagazineCargoGlobal [_glriflemag, 60];
+		_vehicle addMagazineCargoGlobal [_ARmag, 45];
+		_vehicle addMagazineCargoGlobal [_carbinemag, 60];
+		_vehicle addMagazineCargoGlobal [_DMriflemag, 45];
+		_vehicle addMagazineCargoGlobal [_glmag, 60];
 		_vehicle addMagazineCargoGlobal [_glsmokewhite,50];
-		if (_RAT in _disposableLaunchers) then {
-			_vehicle addWeaponCargoGlobal [_RAT,20];
-		} else {
-			_vehicle addMagazineCargoGlobal [_RATmag1,18];
-			_vehicle addMagazineCargoGlobal [_RATmag2,18];
+		_vehicle addMagazineCargoGlobal [_glsmokegreen, 50];
+		_vehicle addMagazineCargoGlobal [_glsmokered, 50];
+		_vehicle addWeaponCargoGlobal [_RAT, 20];
+		if !(_RAT in _disposableLaunchers) then {
+			_vehicle addMagazineCargoGlobal [_RATmag1, 18];
+			_vehicle addMagazineCargoGlobal [_RATmag2, 18];
 		};
     if !(_MAT in _disposableLaunchers) then {
-      _vehicle addMagazineCargoGlobal [_MATmag1,15];
-      _vehicle addMagazineCargoGlobal [_MATmag2,15];
+      _vehicle addMagazineCargoGlobal [_MATmag1, 15];
+      _vehicle addMagazineCargoGlobal [_MATmag2, 15];
     };
+    _vehicle addWeaponCargoGlobal [_SAM, 15];
+    if !(_SAM in _disposableLaunchers) then {
+      _vehicle addMagazineCargoGlobal [_SAMmag, 15];
+    };
+		_vehicle addWeaponCargoGlobal [_MMG, 3];
     _vehicle addMagazineCargoGlobal [_MMGmag,30];
     _vehicle addMagazineCargoGlobal [_MMGmag_tr,15];
     _vehicle addMagazineCargoGlobal [_HMGmag,30];
     _vehicle addMagazineCargoGlobal [_HMGmag_tr,15];
-		_vehicle addMagazineCargoGlobal [_grenade,75];
-		_vehicle addMagazineCargoGlobal [_mgrenade,75];
-		_vehicle addMagazineCargoGlobal [_smokegrenade,75];
-		_vehicle addMagazineCargoGlobal [_smokegrenadegreen,20];
-		_vehicle addMagazineCargoGlobal [_GRENrifleMag,40];
-		_vehicle addMagazineCargoGlobal [_GRENsmokewhite,40];
-		_vehicle addMagazineCargoGlobal [_smokegrenadegreen,40];
-		_vehicle addMagazineCargoGlobal [_GRENsmokegreen,40];
-		_vehicle addMagazineCargoGlobal [_GRENsmokered,40];
-		_vehicle addMagazineCargoGlobal [_GRENflarewhite,40];
-		_vehicle addMagazineCargoGlobal [_GRENflarered,40];
-		_vehicle addMagazineCargoGlobal [_GRENflareyellow,40];
-		_vehicle addMagazineCargoGlobal [_GRENflaregreen,40];
-		_vehicle addMagazineCargoGlobal [_SHOTrifleMag,65];
-		_vehicle addItemCargoGlobal [_bandages,75];
+		_vehicle addMagazineCargoGlobal [_grenade, 75];
+		_vehicle addMagazineCargoGlobal [_mgrenade, 75];
+		_vehicle addMagazineCargoGlobal [_smokegrenade, 75];
+		_vehicle addMagazineCargoGlobal [_smokegrenadegreen, 20];
+		_vehicle addMagazineCargoGlobal [_GRENrifleMag, 8];
+		_vehicle addMagazineCargoGlobal [_GRENsmokegreen, 8];
+		_vehicle addMagazineCargoGlobal [_GRENsmokered, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflarewhite, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflarered, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflareyellow, 8];
+		_vehicle addMagazineCargoGlobal [_GRENflaregreen, 8];
+		_vehicle addMagazineCargoGlobal [_SHOTrifleMag, 15];
+		_vehicle addItemCargoGlobal [_bandages, 45];
 		_vehicle addItemCargoGlobal [_bloodbags,20];
 		_vehicle addItemCargoGlobal [_morphine,35];
 		_vehicle addItemCargoGlobal [_epinephrine,35];
+		_vehicle addItemCargoGlobal [_elasticbandages,40];
+		_vehicle addItemCargoGlobal [_quikclot,30];
+		_vehicle addItemCargoGlobal [_tourniquet,24];
+		_vehicle addItemCargoGlobal [_splint,30];
+		_vehicle addItemCargoGlobal [_plasmaIV,24];
+		_vehicle addItemCargoGlobal [_saline,24];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 	case "empty":

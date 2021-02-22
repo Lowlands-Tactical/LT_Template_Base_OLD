@@ -7,13 +7,16 @@ lt_template_attach2        	 = 	 ""; // flashlightd
 lt_template_attachDM         =   "uns_b_m6"; // Marksman
 lt_template_attachSNP        =   "uns_b_m40_camo"; // Sniper
 lt_template_silencer1      	 = 	 ""; // rifles
-lt_template_silencer2      	 = 	 ""; // MG
+lt_template_silencerSMG      = 	 "";
+lt_template_silencerDM       = 	 "";
+lt_template_silencerSNP      = 	 "";
 lt_template_scope1         	 = 	 ""; // normal scope
-lt_template_scopeDM          =   "uns_o_LeatherwoodART_m14_custom"; // Marksman Scope
-lt_template_scopeSNP         =   "uns_o_RedfieldART"; // Sniper Scope
-lt_template_scope3         	 = 	 "";
+lt_template_scopeMG          = 	 "";
+lt_template_scopeSNP         =   "uns_o_RedfieldART";
+lt_template_scopeDM          =   "uns_o_LeatherwoodART_m14_custom";
 lt_template_bipod1         	 = 	 ""; // MG
 lt_template_bipod2         	 = 	 "";
+lt_template_bipodDM          = 	 "";
 lt_template_attachments    	 = 	 [lt_template_attach1, lt_template_scope1];
 
 // Handgun attachements

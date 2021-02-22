@@ -13,9 +13,15 @@ if (hasInterface) then {
 
 	diag_log format ["LT template DEBUG: lt_camo_var compiled: %1", _lt_camo_var_array];
 
+	_roles = ["aar","mmgag","hmgag","hmgag","hmgag","eng","engm"];
+	_role = player getVariable ["lt_unit_role","none"];
+
 	_camo	= _lt_camo_var_array select 0;
 	_vest	= _lt_camo_var_array select 1;
-	_pack	= _lt_camo_var_array select 2;
+	_pack	= _lt_camo_var_array select 2; // Smol Pack
+	if (_role in _roles) then {
+		_pack = _lt_camo_var_array select 5; // Big Pack
+	};
 	_helm	= _lt_camo_var_array select 3;
 
 	diag_log format ["LT template DEBUG: lt_camo_var: %1", lt_camo_var];
