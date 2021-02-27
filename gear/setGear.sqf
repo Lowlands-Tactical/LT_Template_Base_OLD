@@ -739,13 +739,6 @@ if (hasInterface) then {
         _attachments = [_attach1, _silencerSMG, _scope1]
       };
 
-        if (isNull (unitBackpack _unit)) then {_unit addBackpack _bag};
-        (unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 4];
-        (unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
-        (unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
-      };
-
     // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
        default
        {
