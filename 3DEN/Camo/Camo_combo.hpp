@@ -41,7 +41,7 @@ class LT_Camo_combo: Title
 									["UNS_M1956_M7","UNS_M1956_M8","UNS_M1956_M10","UNS_M1956_M13","UNS_M1956_M14"], // Vest
 									["uns_men_USMC_68_SL_Bag","uns_men_USMC_68_PL_Bag","uns_men_USMC_68_MED_Bag","uns_men_USMC_68_ENG_Bag","uns_men_USMC_68_MRK_Bag","uns_men_USMC_68_AT_Bag"], // Smol Back
 									["UNS_M1_1","UNS_M1_2","UNS_M1_3","UNS_M1_4","UNS_M1_8","UNS_M1_12"], // Helm
-									"uns_men_USMC_68_RTO_Bag"
+									"uns_men_USMC_68_RTO_Bag", // Radiobag
 									["uns_men_USMC_68_SL_Bag","uns_men_USMC_68_PL_Bag","uns_men_USMC_68_MED_Bag","uns_men_USMC_68_ENG_Bag","uns_men_USMC_68_MRK_Bag","uns_men_USMC_68_AT_Bag"] // Big Back
 								];
 				};
