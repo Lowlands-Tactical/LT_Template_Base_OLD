@@ -201,7 +201,11 @@ if (_activated) then {
 										case -3: {[selectRandom (_SpawnMarkerArray select (_forEachIndex))] call CBA_fnc_randPosArea;};
 									};
 
-									_spawnpos = _relpos findEmptyPosition [0, 10];
+									if (_dir == -2) then {
+								    _spawnpos = _relpos
+									} else {
+										_spawnpos = _relpos findEmptyPosition [0, 10];
+									};
 
 									// Spawn unit(s)
 									_grp = [_factionSide, _infyGroupSize, _spawnpos, _groupArray] call LT_fnc_createGroup;
@@ -227,7 +231,11 @@ if (_activated) then {
 										case -3: {[selectRandom (_SpawnMarkerArray select (_forEachIndex))] call CBA_fnc_randPosArea;};
 									};
 
-									_spawnpos = _relpos findEmptyPosition [0, 20];
+									if (_dir == -2) then {
+								    _spawnpos = _relpos
+									} else {
+										_spawnpos = _relpos findEmptyPosition [0, 20];
+									};
 
 									// Spawn unit(s)
 									_grp = [_spawnpos, _spawnpos getdir _defensepos, selectRandom _groupArray, _factionSide] call BIS_fnc_spawnVehicle;
@@ -255,7 +263,11 @@ if (_activated) then {
 										case -3: {[selectRandom (_SpawnMarkerArray select (_forEachIndex))] call CBA_fnc_randPosArea;};
 									};
 
-									_spawnpos = _relpos findEmptyPosition [0, 20];
+									if (_dir == -2) then {
+								    _spawnpos = _relpos
+									} else {
+										_spawnpos = _relpos findEmptyPosition [0, 10];
+									};
 
 									// Spawn unit(s)
 									_grp = [_spawnpos, _spawnpos getdir _defensepos, selectRandom _groupArray, _factionSide] call BIS_fnc_spawnVehicle;
