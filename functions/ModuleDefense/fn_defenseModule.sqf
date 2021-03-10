@@ -197,7 +197,7 @@ if (_activated) then {
 
 									_relpos = switch (_dir) do {
 										case -1: {[_defensepos , _spawndist, _rndDir] call BIS_fnc_relPos;};
-										case -2: {[_defensepos , _spawndist, random 360] call BIS_fnc_relPos;};
+										case -2: {[_defensepos, _mindist, _maxdist, 20, 0, 0.7, 0] call BIS_fnc_findSafePos;};
 										case -3: {[selectRandom (_SpawnMarkerArray select (_forEachIndex))] call CBA_fnc_randPosArea;};
 									};
 
@@ -223,7 +223,7 @@ if (_activated) then {
 
 									_relpos = switch (_dir) do {
 										case -1: {[_defensepos , _spawndist, _rndDir] call BIS_fnc_relPos;};
-										case -2: {[_defensepos , _spawndist, random 360] call BIS_fnc_relPos;};
+										case -2: {[_defensepos, _mindist, _maxdist, 20, 0, 0, 0] call BIS_fnc_findSafePos;};
 										case -3: {[selectRandom (_SpawnMarkerArray select (_forEachIndex))] call CBA_fnc_randPosArea;};
 									};
 
@@ -251,7 +251,7 @@ if (_activated) then {
 
 									_relpos = switch (_dir) do {
 										case -1: {[_defensepos , _spawndist, _rndDir] call BIS_fnc_relPos;};
-										case -2: {[_defensepos , _spawndist, random 360] call BIS_fnc_relPos;};
+										case -2: {[_defensepos, _mindist, _maxdist, 20, 0, 0.7, 0] call BIS_fnc_findSafePos;};
 										case -3: {[selectRandom (_SpawnMarkerArray select (_forEachIndex))] call CBA_fnc_randPosArea;};
 									};
 
