@@ -77,7 +77,7 @@ lt_template_DMriflemag     	  = 	 "uns_m1garandmag";
 // Rifleman AT
 lt_template_RAT         = "uns_m72";
 lt_template_RATmag1        	  = 	 "";
-lt_template_RATmag2        	  = 	 "";
+lt_template_RATmag2        	  = 	 "uns_m72rocket";
 
 // Medium AT Gunner, Medium AT Gunner Assistant (alleen magazijnen)
 lt_template_MAT    	    = 	 "uns_m20_bazooka";
