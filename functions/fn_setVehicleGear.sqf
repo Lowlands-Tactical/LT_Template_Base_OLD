@@ -400,7 +400,6 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_splint,3];
 		_vehicle addItemCargoGlobal [_plasmaIV,2];
 		_vehicle addItemCargoGlobal [_saline,2];
-		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
@@ -460,7 +459,6 @@ switch (_role) do {
 		_vehicle addItemCargoGlobal [_splint,6];
 		_vehicle addItemCargoGlobal [_plasmaIV,4];
 		_vehicle addItemCargoGlobal [_saline,4];
-		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
@@ -520,7 +518,6 @@ switch (_role) do {
     _vehicle addItemCargoGlobal [_splint,3];
     _vehicle addItemCargoGlobal [_plasmaIV,3];
 		_vehicle addItemCargoGlobal [_saline,3];
-		_vehicle addItemCargoGlobal [_gps, 1];
 		_vehicle addBackpackCargoGlobal [_respawn,1];
 	};
 
