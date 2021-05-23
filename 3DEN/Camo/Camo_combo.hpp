@@ -83,7 +83,7 @@ class LT_Camo_combo: Title
 				};
 				class Imperial_Cadian_836th
 				{
-					text = "Imperial - Cadian 836th (Dessert)";
+					text = "Imperial - Cadian 836th (Desert)";
 					data = [
 /* Uniform */		"CadUni836th",
 /* Vest */			["Cad_Gear836th","Cad_KasrGear836th","TIOW_IG_Sergeant_Armour_836"],
@@ -674,6 +674,30 @@ class LT_Camo_combo_smarine: Title
 /* Helmet */		"TIOW_MK7Helmet_EC",
 /* Face */			["TIOW_ChaosMarineHead_01","TIOW_ChaosMarineHead_02","TIOW_ChaosMarineHead_03","TIOW_ChaosMarineHead_04","TIOW_ChaosMarineHead_05","TIOW_ChaosMarineHead_06","TIOW_ChaosMarineHead_07","TIOW_ChaosMarineHead_08","TIOW_ChaosMarineHead_09","TIOW_ChaosMarineHead_10","TIOW_ChaosMarineHead_11","TIOW_ChaosMarineHead_12","TIOW_ChaosMarineHead_13","TIOW_ChaosMarineHead_14","TIOW_ChaosMarineHead_15","TIOW_ChaosMarineHead_16","TIOW_ChaosMarineHead_17"],
 /* Officer */		["TIOW_Mk7PowerArmorChaos_1_EC","TIOW_ChaosLimbs_EC","TIOW_Chaos3Powerpack_EC","TIOW_SkullHelmet_1_EC"]
+							];
+				};
+				class Necron_Necrons
+				{
+					text = "Necrons - Normal Necrons (Charnovokh)";
+					data = [
+/* Uniform */		"TIOW_NecronWarrior_Charnovokh_Uni",
+/* Vest */			"None",
+/* Backpack */	"None",
+/* Helmet */		"TIOW_NecronWarrior_Helm",
+/* Face */			"TIOW_NecronWarrior_Head_Charnovokh",
+/* Officer */		["TIOW_NecronLord_Charnovokh_Uni","None","None","TIOW_NecronLord_Helm","TIOW_NecronLord_Head_Charnovokh"]
+							];
+				};
+				class Necron_Necrons
+				{
+					text = "Necrons - Desert Necrons (Nephrekh)";
+					data = [
+/* Uniform */		"TIOW_NecronWarrior_Nephrekh_Uni",
+/* Vest */			"None",
+/* Backpack */	"None",
+/* Helmet */		"TIOW_NecronWarrior_Helm",
+/* Face */			"TIOW_NecronWarrior_Head_Nephrekh",
+/* Officer */		["TIOW_NecronLord_Nephrekh_Uni","None","None","TIOW_NecronLord_Helm","TIOW_NecronLord_Head_Nephrekh"]
 							];
 				};
 			};

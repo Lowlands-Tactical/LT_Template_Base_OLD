@@ -61,6 +61,21 @@ class LT_Gear_combo_smarine: Title
 					data = "\lt_template_base\gear\Loadouts\SMARINE_Default.sqf";
 					default = 1;
 				};
+				class LT_Gear_NECRON_GREEN
+				{
+					text = "Necron - Green Glow";
+					data = "\lt_template_base\gear\Loadouts\Necron_Green.sqf";
+				};
+				class LT_Gear_NECRON_RED
+				{
+					text = "Necron - Green Glow";
+					data = "\lt_template_base\gear\Loadouts\Necron_Red.sqf";
+				};
+				class LT_Gear_NECRON_BLUE
+				{
+					text = "Necron - Green Glow";
+					data = "\lt_template_base\gear\Loadouts\Necron_Blue.sqf";
+				};
 			};
 		};
 	};

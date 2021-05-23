@@ -108,6 +108,23 @@ if (hasInterface) then {
 			if (typename _face == "ARRAY") then {player setFace selectRandom _face;} else {player setFace _face};
 			_mask = "None";
 		};
+    case "necronMedic";
+    case "necronWarrior"; {
+			diag_log format ["LT template DEBUG: GEAR :: Necron Soldier selected!!"];
+			_face = _lt_smarine_camo_var_array select 4;
+			_camo = _lt_smarine_camo_var_array select 0;
+			_helm = _lt_smarine_camo_var_array select 3;
+			if (typename _face == "ARRAY") then {player setFace selectRandom _face;} else {player setFace _face};
+			_mask = "None";
+		};
+    case "necronLord": {
+			diag_log format ["LT template DEBUG: GEAR :: Necron Lord selected!!"];
+			_face = _smarineSergeant_array select 4;
+			_camo = _smarineSergeant_array select 0;
+			_helm = _smarineSergeant_array select 3;
+			if (typename _face == "ARRAY") then {player setFace selectRandom _face;} else {player setFace _face};
+			_mask = "None";
+		};
     default {
 			diag_log format ["LT template DEBUG: GEAR :: Soldier selected!!"];
 			_camo	= _lt_camo_var_array select 0;

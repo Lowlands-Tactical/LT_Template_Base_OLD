@@ -60,7 +60,7 @@ class LT_Gear_changer_GUER
 };
 class LT_Camo_changer_SMARINE
 {
-	displayName = "Choose Camouflage Space Marines";
+	displayName = "Choose Camouflage for Special Skeletons Units";
 	tooltip = "Choose the camouflage the units will have";
 	property = "LT_camo_selector_id_SMARINE";
 	control = "LT_Camo_combo_smarine";
@@ -70,7 +70,7 @@ class LT_Camo_changer_SMARINE
 };
 class LT_Gear_changer_SMARINE
 {
-	displayName = "Choose Weaponset Space Marines";
+	displayName = "Choose Weaponset Special Skeletons Units";
 	tooltip = "Choose the weaponset the units will have";
 	property = "LT_Gear_selector_id_SMARINE";
 	control = "LT_Gear_combo_smarine";

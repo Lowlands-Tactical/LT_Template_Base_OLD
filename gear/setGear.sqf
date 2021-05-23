@@ -1025,14 +1025,14 @@ if (hasInterface) then {
         _unit addmagazines [_grenade, 2];
         _unit addmagazines [_mgrenade, 2];
         _unit addmagazines [_smokegrenade, 2];
-        _unit addmagazines [_Sisterriflemag, 8];
+        _unit addmagazines [_Smarineriflemag, 8];
 
         if (_nvgSmarine != "None") then {
             _nvg = if (typename _nvgSmarine == "ARRAY") then { selectRandom _nvgSmarine } else { _nvgSmarine };
         };
       };
 
-    // LOADOUT: SPACE MARINE SERGEANT
+    // LOADOUT: SPACE MARINE - SERGEANT
       case "smarineSergeant":
       {
         _unit addweapon _SmarinePlasmarifle;
@@ -1046,7 +1046,7 @@ if (hasInterface) then {
         };
       };
 
-    // LOADOUT: SPACE MARINE HEAVY BOLTER
+    // LOADOUT: SPACE MARINE - HEAVY BOLTER
       case "smarineHeavy":
       {
         _unit addweapon _SmarineHeavyrifle;
@@ -1060,7 +1060,7 @@ if (hasInterface) then {
         };
       };
 
-    // LOADOUT: SPACE MARINE METLAGUNNER
+    // LOADOUT: SPACE MARINE - METLAGUNNER
       case "smarineMelta":
       {
         _unit addweapon _SmarineMeltarifle;
@@ -1074,7 +1074,7 @@ if (hasInterface) then {
         };
       };
 
-    // LOADOUT: SPACE MARINE FLAMETHROWER
+    // LOADOUT: SPACE MARINE - FLAMETHROWER
       case "smarineFlameth":
       {
         _unit addweapon _SmarineFlamethrifle;
@@ -1087,6 +1087,52 @@ if (hasInterface) then {
             _nvg = if (typename _nvgSmarine == "ARRAY") then { selectRandom _nvgSmarine } else { _nvgSmarine };
         };
       };
+
+
+    //  Necrons
+
+    // LOADOUT: Necron Lord
+      case "necronLord":
+      {
+        _unit addweapon _glrifle;
+        _unit addPrimaryWeaponItem [_glrifle, 1];
+        _unit addmagazines [_grenade, 2];
+        _unit addmagazines [_mgrenade, 2];
+        _unit addmagazines [_smokegrenade, 2];
+      };
+
+      // LOADOUT: Necron Medic
+        case "necronMedic":
+        {
+          _unit addweapon _rifle;
+          _unit addPrimaryWeaponItem [_riflemag,1];
+          _unit addItem _gps;
+          _unit assignItem _gps;
+          _unit addmagazines [_smokegrenade, 8];
+
+          _unit addItemToUniform [_bandages,40];
+          _unit addItemToUniform [_elasticbandages,40];
+          _unit addItemToUniform [_quikclot,40];
+          _unit addItemToUniform [_tourniquet,12];
+          _unit addItemToUniform [_splint,15];
+          _unit addItemToUniform [_morphine,30];
+          _unit addItemToUniform [_epinephrine,20];
+          _unit addItemToUniform [_bloodbags,5];
+          _unit addItemToUniform [_plasmaIV,5];
+          _unit addItemToUniform [_saline,8];
+
+        };
+
+      // LOADOUT: Necron Warrior
+        case "necronWarrior":
+        {
+          _unit addweapon _rifle;
+          _unit addPrimaryWeaponItem [_riflemag, 1];
+          _unit addPrimaryWeaponItem [_riflemag_tr, 1];
+          _unit addmagazines [_grenade, 2];
+          _unit addmagazines [_mgrenade, 2];
+          _unit addmagazines [_smokegrenade, 2];
+        };
 
 
     // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)

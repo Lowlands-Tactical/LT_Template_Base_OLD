@@ -274,6 +274,20 @@ class LT_role_combo: Title
 					data = "smarineFlameth";
 					text = "Space Marine Flamethrower";
 				};
+
+				// necrons
+				class LT_Role_NECRON {
+					data = "necronWarrior";
+					text = "Necron";
+				};
+				class LT_Role_NECRONLORD {
+					data = "necronLord";
+					text = "Necron Lord";
+				};
+				class LT_Role_NECRONMEDIC {
+					data = "necronMedic";
+					text = "Necron Medic";
+				};
 			};
 		};
 	};
