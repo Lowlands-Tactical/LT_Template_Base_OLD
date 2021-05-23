@@ -22,6 +22,7 @@ if (hasInterface) then {
 	_officerGear_array	= _lt_camo_var_array select 6;
 	_commisarGear_array	= _lt_camo_var_array select 7;
 	_smarineSergeant_array	= _lt_smarine_camo_var_array select 5;
+	_dreadArray	= _lt_smarine_camo_var_array select 6;
 
 	_role = player getVariable ["lt_unit_role","none"];
 
@@ -106,6 +107,14 @@ if (hasInterface) then {
 			_pack = _smarineSergeant_array select 2;
 			_helm = _smarineSergeant_array select 3;
 			if (typename _face == "ARRAY") then {player setFace selectRandom _face;} else {player setFace _face};
+			_mask = "None";
+		};
+    case "smarineDreadAssault":
+    case "smarineDreadDualLas":
+    case "smarineDreadMultiMelta": {
+			diag_log format ["LT template DEBUG: GEAR :: SPACE MARINES DREADNAUGHT selected!!"];
+			_camo = _dreadArray select 0;
+			_pack = _dreadArray select 2;
 			_mask = "None";
 		};
     case "necronMedic";

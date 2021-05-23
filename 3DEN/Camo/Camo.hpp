@@ -74,7 +74,7 @@ class LT_Gear_changer_SMARINE
 	tooltip = "Choose the weaponset the units will have";
 	property = "LT_Gear_selector_id_SMARINE";
 	control = "LT_Gear_combo_smarine";
-	expression = "LT_wpn_var_SMARINE = _value;";
+	expression = "LT_wpn_var_SPECIALSKELETON = _value;";
 	defaultValue = "None";
 	typeName = "STRING";
 };

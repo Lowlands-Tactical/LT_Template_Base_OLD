@@ -18,14 +18,14 @@ if (hasInterface) then {
       "gren","flameth","shot","plasmag","plasmaag","specialg","specialag", // 40k Support Roles
       "com","complas","pri","ranger","rangerAT","sister","sisterMedic" // Imperial Roles
       ];
-  _SpaceMarineRolesArray = ["smarine","smarineSergeant","smarineHeavy","smarineMelta","smarineFlameth"];
+  _SpecialSkeletonRolesArray = ["smarine","smarineSergeant","smarineHeavy","smarineMelta","smarineFlameth","smarineDreadAssault","smarineDreadDualLas","smarineDreadMultiMelta"];
 
   diag_log format ["LT Template DEBUG: role is %1 and exclude is %2",_role, _exclude];
   diag_log format ["LT Template DEBUG: setGear.sqf Role in RolesArray: %1", _role IN _RolesArray];
 
-  if (_role != "custom" && (_role IN _RolesArray || _role IN _SpaceMarineRolesArray)) then {
-    if (_role IN _SpaceMarineRolesArray) then {
-      _handle = execVM LT_wpn_var_SMARINE;
+  if (_role != "custom" && (_role IN _RolesArray || _role IN _SpecialSkeletonRolesArray)) then {
+    if (_role IN _SpecialSkeletonRolesArray) then {
+      _handle = execVM LT_wpn_var_SPECIALSKELETON;
       waitUntil {scriptDone _handle};
     } else {
       if !(isNil "LT_wpn_var_BLUFOR" || isNil "LT_wpn_var_OPFOR"|| isNil "LT_wpn_var_GUER") then {
@@ -1086,6 +1086,27 @@ if (hasInterface) then {
         if (_nvgSmarine != "None") then {
             _nvg = if (typename _nvgSmarine == "ARRAY") then { selectRandom _nvgSmarine } else { _nvgSmarine };
         };
+      };
+
+    // LOADOUT: SPACE MARINE - DREADNAUGHT - Assualt Cannon
+      case "smarineDreadAssault":
+      {
+        _unit addweapon "DT_AssaultCanon";
+        _unit addmagazines ["DT_AssaultCanon_Mag", 10];
+      };
+
+    // LOADOUT: SPACE MARINE - DREADNAUGHT - Dual Las Cannon
+      case "smarineDreadDualLas":
+      {
+        _unit addweapon "DT_LasCanon_2g";
+        _unit addmagazines ["TIOW_LemanRuss_Lascannon_Mag", 10];
+      };
+
+    // LOADOUT: SPACE MARINE - DREADNAUGHT - Multi Meltagun
+      case "smarineDreadMultiMelta":
+      {
+        _unit addweapon "DT_Primus_Metla_01";
+        _unit addmagazines ["DT_Meltagun_Mag", 10];
       };
 
 

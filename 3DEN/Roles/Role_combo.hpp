@@ -260,19 +260,31 @@ class LT_role_combo: Title
 				};
 				class LT_Role_SMARINESERGEANT {
 					data = "smarineSergeant";
-					text = "Space Marine Sergeant";
+					text = "Space Marine - Sergeant";
 				};
 				class LT_Role_SMARINEHEAVY {
 					data = "smarineHeavy";
-					text = "Space Marine Heavy Bolter";
+					text = "Space Marine - Heavy Bolter";
 				};
 				class LT_Role_SMARINEMELTA {
 					data = "smarineMelta";
-					text = "Space Marine Meltagunner";
+					text = "Space Marine - Meltagunner";
 				};
 				class LT_Role_SMARINEFLAMETH {
 					data = "smarineFlameth";
-					text = "Space Marine Flamethrower";
+					text = "Space Marine - Flamethrower";
+				};
+				class LT_Role_SMARINEDREADASSAULT {
+					data = "smarineDreadAssault";
+					text = "Space Marine - DREADNAUGHT - Assault Cannon";
+				};
+				class LT_Role_SMARINEDREADDUALLAS {
+					data = "smarineDreadDualLas";
+					text = "Space Marine - DREADNAUGHT - Dual Las Cannon";
+				};
+				class LT_Role_SMARINEDREADMULTIMELTA {
+					data = "smarineDreadMultiMelta";
+					text = "Space Marine - DREADNAUGHT - Multi Meltagun";
 				};
 
 				// necrons
