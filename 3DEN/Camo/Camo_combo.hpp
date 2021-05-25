@@ -127,12 +127,12 @@ class LT_Camo_combo: Title
 				class LT_Camo_SFMTP
 				{
 					text = "Special forces MTP";
-					data = ["NLD_SF_Camo", // Uniform
+					data = ["NLD_MTP_CAMO", // Uniform
 									"CUP_V_CPC_medicalbelt_coy",	// Vest
 									"B_AssaultPack_cbr",	// Smol Back
-									"NLD_SF_ECH", // Helm
-									"tf_rt1523g_rhs", // Radiobag
-									"NLD_MTP_Carryall_Empty" // Big Back
+									"CUP_H_OpsCore_Spray_SF", // Helm
+									"B_RadioBag_01_mtp_F", // Radiobag
+									"NLD_MTP_Carryall_Expl" // Big Back
 									];
 				};
 				class LT_Camo_KM
