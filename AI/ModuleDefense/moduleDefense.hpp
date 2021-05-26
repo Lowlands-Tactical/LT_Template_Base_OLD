@@ -200,7 +200,7 @@ class LT_Defense_Module: Module_F
 		  description = "Formation";
 		  typeName = "STRING";
 		  class values {
-		    class empty 	{name = "None"; value="NONE"; default = 1;};
+		    class empty 	{name = "None"; value="NO CHANGE"; default = 1;};
 		    class Line 		{name = "Line"; value="LINE";};
 		    class StagColumn {name = "Staggered column"; value="STAG COLUMN";};
 		    class Column 	{name = "Column"; value="COLUMN";};
