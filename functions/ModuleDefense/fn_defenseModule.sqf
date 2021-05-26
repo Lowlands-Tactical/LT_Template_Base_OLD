@@ -25,7 +25,7 @@ if (_activated) then {
 		_behaviour	= _logic getVariable "Defense_Behaviour";
 		_speed 		= _logic getVariable "Defense_Speed";
 		_formation = _logic getVariable "Defense_Formation";
-//		_artyEnabled = _logic getVariable "Defense_EnableArty";
+		_artyEnabled = _logic getVariable "Defense_EnableArty";
 		_artyAmmoType = _logic getVariable "Defense_ArtyAmmoType";
 		_artyRounds 	= _logic getVariable "Defense_ArtyRounds";
 		_artyDelay = _logic getVariable "Defense_ArtyDelay";
