@@ -25,11 +25,11 @@ if (_activated) then {
 		_behaviour	= _logic getVariable "Defense_Behaviour";
 		_speed 		= _logic getVariable "Defense_Speed";
 		_formation = _logic getVariable "Defense_Formation";
-		_artyEnabled = _logic getVariable "Defense_EnableArty";
-		_artyAmmoType = _logic getVariable "Defense_ArtyAmmoType";
-		_artyRounds 	= _logic getVariable "Defense_ArtyRounds";
-		_artyDelay = _logic getVariable "Defense_ArtyDelay";
-		_artyDamage = _logic getVariable "Defense_ArtyDamagePlayers";
+//		_artyEnabled = _logic getVariable "Defense_EnableArty";
+//		_artyAmmoType = _logic getVariable "Defense_ArtyAmmoType";
+//		_artyRounds 	= _logic getVariable "Defense_ArtyRounds";
+//		_artyDelay = _logic getVariable "Defense_ArtyDelay";
+//		_artyDamage = _logic getVariable "Defense_ArtyDamagePlayers";
 		_unitcap = _logic getVariable "Defense_UnitCap";
 
 		// Verify some things (maybe needs more work in the future?)
@@ -271,10 +271,10 @@ if (_activated) then {
 					};
 				};
 
-				if (_unitType == "Mortar" and _amnt >= 1) then {
-					diag_log format["LT template DEBUG: Defense Module::%1 Arty Rounds: %2",_logic, _amnt];
-					[_searchArea,_artyAmmoType,_amnt,_artyDelay,_artyDamage] call LT_fnc_doMortar;
-				};
+				//if (_unitType == "Mortar" and _amnt >= 1) then {
+				//	diag_log format["LT template DEBUG: Defense Module::%1 Arty Rounds: %2",_logic, _amnt];
+				//	[_searchArea,_artyAmmoType,_amnt,_artyDelay,_artyDamage] call LT_fnc_doMortar;
+				//};
 
 			} forEach _SpawnAmountArray;
 
