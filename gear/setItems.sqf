@@ -159,9 +159,9 @@ _TypeName = typename (_lt_camo_var_array select 2);
 _CamoVarBag = _lt_camo_var_array select 2;
 _bag = _CamoVarBag;
 _baguav = switch (side player) do {
-  case WEST: "B_UAV_01_backpack_F";
-  case EAST: "O_UAV_01_backpack_F";
-  case resistance: "I_UAV_01_backpack_F";
+  case west: {"B_UAV_01_backpack_F";};
+  case east: {"O_UAV_01_backpack_F";};
+  case independent: {"I_UAV_01_backpack_F";};
 };
 _bagmediumdiver = if (isNil "lt_template_bagmediumdiver") then {"B_AssaultPack_blk"} else {lt_template_bagmediumdiver};			// used by divers
 _baghmgg 		= if (isNil "lt_template_baghmgg") then {"B_HMG_01_weapon_F"} else {lt_template_baghmgg};			// used by Heavy MG gunner
