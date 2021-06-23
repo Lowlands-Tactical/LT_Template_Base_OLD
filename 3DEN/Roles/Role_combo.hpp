@@ -238,7 +238,7 @@ class LT_role_combo: Title
 				};
 				class LT_Role_RANGER {
 					data = "ranger";
-					text = "Imperial - Skitarii Ranger AT";
+					text = "Imperial - Skitarii Ranger";
 				};
 				class LT_Role_RANGERAT {
 					data = "rangerAT";
