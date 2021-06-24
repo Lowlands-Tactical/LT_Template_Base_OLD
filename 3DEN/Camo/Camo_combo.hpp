@@ -709,7 +709,7 @@ class LT_Camo_combo_smarine: Title
 /* Officer */		["TIOW_NecronLord_Charnovokh_Uni","None","None","TIOW_NecronLord_Helm","TIOW_NecronLord_Head_Charnovokh"]
 							];
 				};
-				class Necron_Necrons
+				class Necron_Desert_Necrons
 				{
 					text = "Necrons - Desert Necrons (Nephrekh)";
 					data = [
