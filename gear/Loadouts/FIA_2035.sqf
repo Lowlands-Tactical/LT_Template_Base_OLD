@@ -68,9 +68,9 @@ lt_template_DMriflemag     	 = 	 "20Rnd_762x51_Mag";
 lt_template_RAT = "launch_NLAW_F";
 
 // Medium AT Gunner, Medium AT Gunner Assistant (alleen magazijnen)
-lt_template_MAT    	 = 	 "launch_B_Titan_short_tna_F";
-lt_template_MATmag1        	 = 	 "Titan_AT";
-lt_template_MATmag2        	 = 	 "Titan_AT";
+lt_template_MAT 	 = 	 "launch_MRAWS_green_rail_F";
+lt_template_MATmag1 	 = 	 "MRAWS_HEAT_F";
+lt_template_MATmag2 	 = 	 "MRAWS_HE_F";
 
 // Medium SAM Gunner, Medium SAM Gunner Assistant (alleen magazijnen)
 lt_template_SAM    	 = 	 "launch_B_Titan_tna_F";
