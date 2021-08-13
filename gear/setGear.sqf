@@ -694,7 +694,7 @@ if (hasInterface) then {
 
         _unit linkItem _uavterminal;
         _unit addWeapon _laserdesignator;
-        _unit addmagazines _laserdesignatorBattery;
+        _unit addmagazines [_laserdesignatorBattery,1];
       };
 
     // LOADOUT: Diver
