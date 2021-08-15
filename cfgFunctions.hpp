@@ -27,6 +27,7 @@ class cfgFunctions
       class EqualArrayLengths {};
       class isLauncherDisposable {};
       class SupplyDrop {};
+      class acreChannelPresets {};
     };
     class UPSMON
     {
