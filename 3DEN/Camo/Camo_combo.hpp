@@ -198,8 +198,7 @@ class LT_Camo_combo: Title
                                 class LT_GUR_Jungle
                                 {
                                         text = "[GUR] Jungle";
-                                        data = [["U_I_C_Soldier_Bandit_3_F", "U_I_C_Soldier_Bandit_1_F", "U_I_C_Soldier_Bandit_5_F"],["V_Chestrig_blk", "V_BandollierB_rgr", "V_TacVest_oli", "V_TacChestrig_grn_F"],["B_FieldPack_cb_Bandit_3_F", "B_FieldPack_blk_Bandit_8_F"],["B_FieldPack_cb_Bandit_3_F", "B_FieldPack_blk_Bandit_8_F"]	
-                                                                        ["H_Bandanna_khk_hs", "H_Watchcap_blk", "H_Cap_marshal"],["tf_rt1523g_bwmod", "tf_rt1523g_green"], ];
+                                        data = [["U_I_C_Soldier_Bandit_3_F", "U_I_C_Soldier_Bandit_1_F", "U_I_C_Soldier_Bandit_5_F"],["V_Chestrig_blk", "V_BandollierB_rgr", "V_TacVest_oli", "V_TacChestrig_grn_F"],["B_FieldPack_cb_Bandit_3_F", "B_FieldPack_blk_Bandit_8_F"],["B_FieldPack_cb_Bandit_3_F", "B_FieldPack_blk_Bandit_8_F"],["H_Bandanna_khk_hs", "H_Watchcap_blk", "H_Cap_marshal"],["tf_rt1523g_bwmod", "tf_rt1523g_green"], ];
                                 };
                                 class LT_GER_Flecktarn
                                 {
@@ -209,8 +208,7 @@ class LT_Camo_combo: Title
                                 class LT_GER_Tropentarn
                                 {
                                         text = "[BW] Tropentarn";
-                                        data = [["CUP_U_B_GER_Tropentarn_2","CUP_U_B_GER_Tropentarn_1","CUP_U_B_GER_Tropentarn_1"],["CUP_V_I_RACS_Carrier_Vest_2","CUP_V_I_RACS_Carrier_Vest","CUP_V_I_RACS_Carrier_Vest_3"], s
-                                                                        "CUP_B_GER_Pack_Tropentarn",["CUP_H_RACS_Helmet_Headset_DES","CUP_H_RACS_Helmet_Headset_DES","CUP_H_RACS_Helmet_Headset_DES"],"tf_rt1523g_big_bwmod_tropen","CUP_B_GER_Pack_Tropentarn" ];
+                                        data = [["CUP_U_B_GER_Tropentarn_2","CUP_U_B_GER_Tropentarn_1","CUP_U_B_GER_Tropentarn_1"],["CUP_V_I_RACS_Carrier_Vest_2","CUP_V_I_RACS_Carrier_Vest","CUP_V_I_RACS_Carrier_Vest_3"], "CUP_B_GER_Pack_Tropentarn",["CUP_H_RACS_Helmet_Headset_DES","CUP_H_RACS_Helmet_Headset_DES","CUP_H_RACS_Helmet_Headset_DES"],"tf_rt1523g_big_bwmod_tropen","CUP_B_GER_Pack_Tropentarn" ];
                                 };
                                 class LT_UK_Forest
                                 {
@@ -270,8 +268,7 @@ class LT_Camo_combo: Title
                                 class LT_RUS_Desert
                                 {
                                         text = "[RUS] Desert";
-                                        data = ["CUP_U_O_RUS_Ratnik_Desert", "CUP_Vest_RUS_6B45_Sh117_Desert", ["CUP_O_RUS_Patrol_bag_Desert","CUP_O_RUS_Patrol_bag_Desert_Shovel"], ["CUP_H_RUS_6B47_v2_Desert","CUP_H_RUS_6B47_v2_GogglesClosed_Desert","CUP_H_RUS_6B47_v2_GogglesUp_Desert"], "CUP_O_RUS_Patrol_bag_Desert", ["CUP_O_RUS_Patrol_bag_Desert","CUP_O_RUS_Patrol_bag_Desert_Shovel"] 
-                                ];
+                                        data = ["CUP_U_O_RUS_Ratnik_Desert", "CUP_Vest_RUS_6B45_Sh117_Desert", ["CUP_O_RUS_Patrol_bag_Desert","CUP_O_RUS_Patrol_bag_Desert_Shovel"], ["CUP_H_RUS_6B47_v2_Desert","CUP_H_RUS_6B47_v2_GogglesClosed_Desert","CUP_H_RUS_6B47_v2_GogglesUp_Desert"], "CUP_O_RUS_Patrol_bag_Desert", ["CUP_O_RUS_Patrol_bag_Desert","CUP_O_RUS_Patrol_bag_Desert_Shovel"] ];
                                 };
                                 class LT_RUS_Winter
                                 {

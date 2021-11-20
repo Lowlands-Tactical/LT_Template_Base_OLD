@@ -9,6 +9,7 @@ if (_activated) then {
 
 		lt_template_attach1 = _logic getVariable ["lt_template_attach1", "acc_pointer_IR" ];
 		lt_template_attach2 = _logic getVariable ["lt_template_attach2", "acc_flashlight" ];
+                lt_template_attach3 = _logic getVariable ["lt_template_attach3", "CUP_acc_LLM01_F" ];
 		lt_template_silencer1 = _logic getVariable ["lt_template_silencer1", "muzzle_snds_M" ];
 		lt_template_silencerSMG = _logic getVariable ["lt_template_silencerSMG", "muzzle_snds_H" ];
 		lt_template_scope1 = _logic getVariable ["lt_template_scope1", "CUP_optic_CompM4"];

@@ -5,6 +5,7 @@ _lt_camo_var_array = call compile lt_camo_var;
 // ATTACHMENTS - PRIMARY
 _attach1 = if (isNil "lt_template_attach1") then {"acc_pointer_IR"} else {lt_template_attach1};		// IR Laser
 _attach2 = if (isNil "lt_template_attach2") then {"acc_flashlight"} else {lt_template_attach2};		// Flashlight
+_attach3 = if (isNil "lt_template_attach3") then {"CUP_acc_LLM01_F"} else {lt_template_attach3};		// Hybride van IR en Flashlight
 _attachDM = if (isNil "lt_template_attachDM") then {"acc_pointer_IR"} else {lt_template_attachDM};		// DM
 _attachSNP = if (isNil "lt_template_attachSNP") then {"acc_pointer_IR"} else {lt_template_attachSNP};		// Sniper
 

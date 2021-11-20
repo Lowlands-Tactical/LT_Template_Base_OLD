@@ -22,6 +22,7 @@ class cfgFunctions
       class checkUnitWeight {};
       class getWeaponMagazineClasses {};
       class NVGParameters {};
+      class FlashLightParameters {};
       class teleportGroup {};
       class PreInitFactionCompositions {preInit = 1;};
       class EqualArrayLengths {};

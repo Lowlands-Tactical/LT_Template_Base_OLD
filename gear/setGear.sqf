@@ -3,6 +3,7 @@ if (hasInterface) then {
   _role = _unit getvariable ["LT_unit_role","server"];
   _exclude = _unit getVariable ["LT_camo_exclude", 0];
   _nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
+  _flashlight_type = ["lt_flashlight_setting", 0] call BIS_fnc_getParamValue;
 
   _RolesArray = ["custom","co","dc","m","ftl","ar","aar","rat","dm","mmgg","mmgag","hmgg","hmgag","matg","matag","hatg","hatag","mtrg","mtrag","msamg","msamag","hsamg","hsamag","sn","sp","vc","vd","vg","pp","pcc","pc","eng","engm","uav","jtac","div","r","car","smg","gren","lvdw"];
 
@@ -824,6 +825,9 @@ if (hasInterface) then {
     _nvgLinked = hmd _unit;
     _nvg_enabled = "lt_nvg_onoff" call BIS_fnc_getParamValue;
    [_unit, _nvgLinked, _nvg_enabled, _nvg] call LT_fnc_NVGParameters;
+
+    //In geval van parameter-forced laser / IR, dit afhandelen:
+    [_unit, _flashlight_type, [_attach1, _attach2, _attach3]] call LT_fnc_FlashLightParameters;
 
     diag_log format ["LT Template DEBUG: setGear.sqf finished"];
     diag_log format ["LT Template DEBUG: setGear.sqf attachments attached to weapons"];
