@@ -30,7 +30,7 @@ _smokeColor = "Orange";
 _smoke = createVehicle ["SmokeShell"+_smokeColor, [0,0,0], [], 0 , ""];
 _smoke attachTo [_crate, [0,0,0]];
 
-waitUntil {((_h select 2) < 0.5) || isNull _para};
+waitUntil {(((position _crate) select 2) < 0.5) || isNull _para};
 detach _crate;
 _crate setPos [position _crate select 0, position _crate select 1, 0];
 
