@@ -28,6 +28,9 @@ class cfgFunctions
       class EqualArrayLengths {};
       class isLauncherDisposable {};
       class SupplyDrop {};
+      class resupply {};
+      class resupplycreateveh {};
+      class actualdrop {};
     };
     class UPSMON
     {

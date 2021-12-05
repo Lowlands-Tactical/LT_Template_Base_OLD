@@ -1,5 +1,15 @@
 //diag_log format ["Template Base waituntil Permadeath is pubvarred at %1", time];
 
+//WIP:
+//addMissionEventHandler ["OnUserAdminStateChanged", {
+//	params ["_networkId", "_loggedIn", "_votedIn"];
+//        diag_log format ["AdminStateChanged: %1 LoggedIn: %2 %3", _networkId, _loggedIn, _votedIn];
+//        if((_loggedIn isEqualTo true) && (_networkId == (getPlayerID player))) then {
+//            null = execVM "\lt_template_base\briefing\admin.sqf";
+//        };
+//}];
+
+
 waitUntil {!isNil "LT_PermaDeath"};
 
 diag_log format ["Template Base Permadeath = %2 is pubvarred at %1", time, LT_PermaDeath];
@@ -17,3 +27,4 @@ if (LT_PermaDeath == 1) then {
   [true] call acre_api_fnc_setSpectator;
   ["Initialize", [player, [], true, true, true, true, true, true, true, true]] call BIS_fnc_EGSpectator;
 };
+
