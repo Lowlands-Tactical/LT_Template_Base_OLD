@@ -14,10 +14,10 @@ if ( _setting == 0 ) then {
    //Default zou al gezet moeten zijn.
 };
 if(_setting == 1) then {
-_unit addPrimaryWeaponItem (_attachments select 0);
+_unit addPrimaryWeaponItem (_attachments select 1);
 };
  if(_setting == 2) then {
-_unit addPrimaryWeaponItem (_attachments select 1);
+_unit addPrimaryWeaponItem (_attachments select 0);
 };
 if(_setting == 3) then {
 _unit addPrimaryWeaponItem (_attachments select 2);
