@@ -90,7 +90,7 @@ if (_activated) then {
 		};
 
 		// Define spawned quantities of units
-		_inputArray = [_infy , _veh , _mech , _armor, _air, _artyRounds];
+		_inputArray = [_infy , _veh , _mech , _armor, _air];
 		_outputArray = [[],[],[],[],[],[]];
 		_tempArray = [];
 
