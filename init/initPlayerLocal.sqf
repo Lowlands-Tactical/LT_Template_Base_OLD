@@ -1,4 +1,4 @@
-[] call lt_fnc_AcreChannelPresets;
+// [] call lt_fnc_AcreChannelPresets;
 
 //diag_log format ["Template Base waituntil Permadeath is pubvarred at %1", time];
 
@@ -29,4 +29,3 @@ if (LT_PermaDeath == 1) then {
   [true] call acre_api_fnc_setSpectator;
   ["Initialize", [player, [], true, true, true, true, true, true, true, true]] call BIS_fnc_EGSpectator;
 };
-
