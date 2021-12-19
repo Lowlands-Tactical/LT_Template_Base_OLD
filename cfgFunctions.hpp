@@ -31,6 +31,8 @@ class cfgFunctions
       class resupply {};
       class resupplycreateveh {};
       class actualdrop {};
+      class setSupplyVehicle {};
+      class setSupplyCrate {};
     };
     class UPSMON
     {
