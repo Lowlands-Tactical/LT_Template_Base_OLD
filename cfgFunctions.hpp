@@ -22,12 +22,15 @@ class cfgFunctions
       class checkUnitWeight {};
       class getWeaponMagazineClasses {};
       class NVGParameters {};
+      class FlashLightParameters {};
       class teleportGroup {};
       class PreInitFactionCompositions {preInit = 1;};
       class EqualArrayLengths {};
       class isLauncherDisposable {};
       class SupplyDrop {};
-      class acreChannelPresets {};
+      class resupply {};
+      class resupplycreateveh {};
+      class actualdrop {};
     };
     class UPSMON
     {

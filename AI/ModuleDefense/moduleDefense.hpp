@@ -76,12 +76,12 @@ class LT_Defense_Module: Module_F
 		  typeName = "STRING";
 		  defaultValue = 0;
 		};
-		class Defense_ArtyRounds {
-		  displayName = "Amount of mortar rounds per wave";
-		  description = "Amount of rounds per wave. If waveamount is -1 then you need to enter artillery rounds per wave";
-		  typeName = "STRING";
-		  defaultValue = 0;
-		};
+		// class Defense_ArtyRounds {
+		//   displayName = "Amount of mortar rounds per wave";
+		//   description = "Amount of rounds per wave. If waveamount is -1 then you need to enter artillery rounds per wave";
+		//   typeName = "STRING";
+		//   defaultValue = 0;
+		// };
 
 		// Spawn Settings
 		class EmptyLine0 {
@@ -200,7 +200,7 @@ class LT_Defense_Module: Module_F
 		  description = "Formation";
 		  typeName = "STRING";
 		  class values {
-		    class empty 	{name = "None"; value="NONE"; default = 1;};
+		    class empty 	{name = "None"; value="NO CHANGE"; default = 1;};
 		    class Line 		{name = "Line"; value="LINE";};
 		    class StagColumn {name = "Staggered column"; value="STAG COLUMN";};
 		    class Column 	{name = "Column"; value="COLUMN";};
@@ -224,40 +224,40 @@ class LT_Defense_Module: Module_F
 		  defaultValue = 100;
 		};
 
-		class EmptyLine5 {
-		  displayName = "Artillery settings";
-		  description = "";
-		  typeName = "STRING";
-		  class values {
-		    class Empty {name = "-----------"; value = ""; default = 1;};
-		  };
-		};
-		class Defense_ArtyAmmoType {
-		  displayName = "Type of ordanence";
-		  description = "Choose the type of ordanence";
-		  typeName = "STRING";
-		  class values {
-		    class ModuleOrdnanceMortar_F_ammo {name = "Mortar"; value = "ModuleOrdnanceMortar_F_ammo"; default = 1;};
-		    class ModuleOrdnanceHowitzer_F_ammo {name = "Howitzer HE"; value = "ModuleOrdnanceHowitzer_F_ammo";};
-		    class ModuleOrdnanceRocket_F_ammo {name = "MLRS Rockets (cluster)"; value = "ModuleOrdnanceRocket_F_ammo";};
-		    class ModuleOrdnanceRocket_F_subammo {name = "MLRS Rockets (single)"; value = "ModuleOrdnanceRocket_F_subammo";};
-		  };
-		};
-		class Defense_ArtyDelay {
-		  displayName = "Delay between rounds";
-		  description = "Delay between rounds";
-		  typeName = "NUMBER";
-		  defaultValue = 7;
-		};
-		class Defense_ArtyDamagePlayers {
-		  displayName = "Player Safety";
-		  description = "Do mortars try to avoid the player";
-		  typeName = "BOOL";
-		  class values {
-		    class True 	{name = "Yes"; value = true;};
-		    class False {name = "No"; value = false;};
-		  };
-		};
+		// class EmptyLine5 {
+		//   displayName = "Artillery settings";
+		//   description = "";
+		//   typeName = "STRING";
+		//   class values {
+		//     class Empty {name = "-----------"; value = ""; default = 1;};
+		//   };
+		// };
+		// class Defense_ArtyAmmoType {
+		//   displayName = "Type of ordanence";
+		//   description = "Choose the type of ordanence";
+		//   typeName = "STRING";
+		//   class values {
+		//     class ModuleOrdnanceMortar_F_ammo {name = "Mortar"; value = "ModuleOrdnanceMortar_F_ammo"; default = 1;};
+		//     class ModuleOrdnanceHowitzer_F_ammo {name = "Howitzer HE"; value = "ModuleOrdnanceHowitzer_F_ammo";};
+		//     class ModuleOrdnanceRocket_F_ammo {name = "MLRS Rockets (cluster)"; value = "ModuleOrdnanceRocket_F_ammo";};
+		//     class ModuleOrdnanceRocket_F_subammo {name = "MLRS Rockets (single)"; value = "ModuleOrdnanceRocket_F_subammo";};
+		//   };
+		// };
+		// class Defense_ArtyDelay {
+		//   displayName = "Delay between rounds";
+		//   description = "Delay between rounds";
+		//   typeName = "NUMBER";
+		//   defaultValue = 7;
+		// };
+		// class Defense_ArtyDamagePlayers {
+		//   displayName = "Player Safety";
+		//   description = "Do mortars try to avoid the player";
+		//   typeName = "BOOL";
+		//   class values {
+		//     class True 	{name = "Yes"; value = true;};
+		//     class False {name = "No"; value = false;};
+		//   };
+		// };
 
 	};
 	class ModuleDescription {};
