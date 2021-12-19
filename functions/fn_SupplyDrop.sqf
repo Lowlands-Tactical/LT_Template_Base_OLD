@@ -12,9 +12,9 @@ _side = if (typename _p == "STRING") then {
 //Case selection doen, iedere side heeft zijn eigen voertuigen-pool.
 
 //select by string of side, want ArmA doet raar als je dit niet doet.
-_array_of_vehicles call compile LT_fnc_setSupplyVehicle;
+_array_of_vehicles call LT_fnc_setSupplyVehicle;
 
-_array_of_crates call compile LT_fnc_setSupplyCrate;
+_array_of_crates call LT_fnc_setSupplyCrate;
 
 //Random uit de _array_of_vehicles selecteren:
 _randomized_vehicle_and_height = selectRandom _array_of_vehicles;
