@@ -2,8 +2,8 @@
 
 private ["_lt_main","_action"];
 
-// Flendurs, SvenBrandt99, Tybalty, L0neSenti
-staff = ["76561197972110272","76561198069718715","76561198042684200","76561198028914656"];
+// Flendurs, Tybalty, L0neSenti, Wishmaster86,
+staff = ["76561197972110272","76561198042684200","76561198028914656","76561197974557659"];
 
 lt_group_teleport = 0;
 
