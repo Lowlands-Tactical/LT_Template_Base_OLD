@@ -49,8 +49,8 @@ lt_template_ARmag_tr = "100Rnd_65x39_caseless_black_mag_tracer";
 
 // Medium MG Gunner
 lt_template_MMG = "LMG_Mk200_black_F";
-lt_template_MMGmag    = "ACE_200Rnd_65x39_cased_Box_red";
-lt_template_MMGmag_tr = "ACE_200Rnd_65x39_cased_Box_red";
+lt_template_MMGmag    = "200Rnd_65x39_cased_Box";
+lt_template_MMGmag_tr = "200Rnd_65x39_cased_Box_Tracer_Red";
 
 // Heavy MG Gunner
 lt_template_HMG = "MMG_02_black_F";
