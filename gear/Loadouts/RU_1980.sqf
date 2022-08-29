@@ -66,9 +66,9 @@ lt_template_DMrifle        	 = 	 "CUP_srifle_SVD";
 lt_template_DMriflemag     	 = 	 "CUP_10Rnd_762x54_SVD_M";
 
 // Rifleman AT
-lt_template_RAT    	 = 	 "CUP_launch_RPG18";
-lt_template_RATmag1    	 = 	 "";
-lt_template_RATmag2    	 = 	 "";
+lt_template_RAT    	 = 	 "CUP_launch_RPG7V";
+lt_template_RATmag1    	 = 	 "CUP_PG7V_M";
+lt_template_RATmag2    	 = 	 "CUP_OG7_M";
 
 // Medium AT Gunner, Medium AT Gunner Assistant (alleen magazijnen)
 lt_template_MAT    	 = 	 "CUP_launch_RPG7V";
