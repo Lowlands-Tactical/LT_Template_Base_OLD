@@ -53,8 +53,8 @@ lt_template_pistolmag      	 = 	 "CUP_8Rnd_9x18_Makarov_M";
 
 // Automatic Rifleman
 lt_template_AR     	 = 	 "CUP_arifle_RPK74";
-lt_template_ARmag          	 = 	 "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
-lt_template_ARmag_tr       	 = 	 "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
+lt_template_ARmag          	 = 	 "75rnd_762x39_AK12_Mag_F";
+lt_template_ARmag_tr       	 = 	 "75rnd_762x39_AK12_Mag_Tracer_F";
 
 // Medium MG Gunner
 lt_template_MMG    	 = 	 "CUP_lmg_Pecheneg"; //CUP_optic_PechenegScope
