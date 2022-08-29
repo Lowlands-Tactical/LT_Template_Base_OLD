@@ -7,6 +7,7 @@ lt_template_attach2        	 = 	 "";
 lt_template_silencer1      	 = 	 "";
 lt_template_silencerSMG      	 = 	 "";
 lt_template_scope1         	 = 	 "";
+lt_template_scopeMG		 =	 "";
 lt_template_bipod1         	 = 	 "";
 lt_template_bipod2         	 = 	 "";
 lt_template_attachments    	 = 	 [lt_template_attach1,lt_template_scope1];
