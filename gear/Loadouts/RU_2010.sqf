@@ -7,6 +7,7 @@ lt_template_attach2        	 = 	 "CUP_acc_Flashlight"; // flashlight
 lt_template_silencer1      	 = 	 "CUP_muzzle_Bizon"; // rifles
 lt_template_silencerSMG      	 = 	 "CUP_muzzle_Bizon"; // MG
 lt_template_scope1         	 = 	 "optic_ACO_grn"; // normal scope
+lt_template_scopeMG          =   "CUP_optic_ekp_8_02";
 lt_template_scopeSNP         = 	 "CUP_optic_PSO_3"; // Sniper Scope
 lt_template_scopeDM          = 	 "CUP_optic_PSO_3"; // DM Scope
 lt_template_bipod1         	 = 	 ""; // MG
@@ -53,8 +54,8 @@ lt_template_pistolmag      	 = 	 "CUP_8Rnd_9x18_Makarov_M";
 
 // Automatic Rifleman
 lt_template_AR     	 = 	 "CUP_arifle_RPK74";
-lt_template_ARmag          	 = 	 "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
-lt_template_ARmag_tr       	 = 	 "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
+lt_template_ARmag          	 = 	 "75rnd_762x39_AK12_Mag_F";
+lt_template_ARmag_tr       	 = 	 "75rnd_762x39_AK12_Mag_Tracer_F";
 
 // Medium MG Gunner
 lt_template_MMG    	 = 	 "CUP_lmg_Pecheneg"; // CUP_optic_PechenegScope
