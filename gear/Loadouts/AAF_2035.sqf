@@ -82,7 +82,7 @@ lt_template_HATmag2        	 = 	 "Titan_AT";
 
 // Sniper
 lt_template_SNrifle             =      "srifle_GM6_F";
-lt_template_SNrifleMag          =      "7Rnd_408_Mag";
+lt_template_SNrifleMag          =      "5Rnd_127x108_Mag";
 
 // Grenades
 lt_template_grenade        	 = 	 "CUP_HandGrenade_M67";
