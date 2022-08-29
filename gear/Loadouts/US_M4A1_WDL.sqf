@@ -6,6 +6,7 @@ lt_template_attach1        	 = 	 "CUP_acc_ANPEQ_2_camo";
 lt_template_attach2        	 = 	 "CUP_acc_Flashlight_wdl";
 lt_template_silencer1      	 = 	 "CUP_muzzle_snds_M16_camo";
 lt_template_scope1         	 = 	 "CUP_optic_CompM2_Woodland2";
+lt_template_scopeMG          	= 	 "CUP_optic_CompM2_Woodland2"; 
 lt_template_attachments    	 = 	 [lt_template_attach1,lt_template_scope1];
 
 // Handgun attachements
