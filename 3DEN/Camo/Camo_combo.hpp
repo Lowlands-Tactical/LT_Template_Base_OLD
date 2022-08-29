@@ -118,12 +118,12 @@ class LT_Camo_combo: Title
                                 class LT_CSAT
                                 {
                                   text = "CSAT";
-                                  data = ["U_O_CombatUniform_ocamo","V_HarnessO_brn","B_AssaultPack_ocamo","H_HelmetO_ocamo","tf_rt1523g_bwmod","B_AssaultPack_ocamo" ];
+                                  data = ["U_O_CombatUniform_ocamo","V_HarnessO_brn","B_AssaultPack_ocamo","H_HelmetO_ocamo","B_RadioBag_01_hex_F","B_AssaultPack_ocamo" ];
                                 };
                                 class LT_CSAT_URBAN
                                 {
                                   text = "CSAT (Urban)";
-                                  data = ["U_O_CombatUniform_oucamo","V_HarnessO_gry","B_Carryall_oucamo","H_HelmetO_oucamo","tf_rt1523g_green","B_Carryall_oucamo" ];
+                                  data = ["U_O_CombatUniform_oucamo","V_HarnessO_gry","B_Carryall_oucamo","H_HelmetO_oucamo","B_RadioBag_01_oucamo_F","B_Carryall_oucamo" ];
                                 };
                                 class LT_CSAT_RECON
                                 {
@@ -133,7 +133,7 @@ class LT_Camo_combo: Title
                                 class LT_CSAT_VIPER
                                 {
                                   text = "CSAT (VIPER)";
-                                  data = ["U_O_V_Soldier_Viper_F","CUP_V_PMC_IOTV_Coyote_Patrol","B_ViperHarness_ghex_JTAC_F","H_HelmetO_ViperSP_ghex_F","tf_rt1523g_big_bwmod","B_ViperHarness_ghex_JTAC_F" ];
+                                  data = ["U_O_V_Soldier_Viper_F","CUP_V_PMC_IOTV_Coyote_Patrol","V_CarrierRigKBT_01_EAF_F","H_HelmetO_ViperSP_ghex_F","tf_anprc155","B_ViperHarness_ghex_JTAC_F" ];
                                 };
                                 class LT_CSAT_TANOA
                                 {
