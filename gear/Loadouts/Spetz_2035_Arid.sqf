@@ -5,7 +5,7 @@
 lt_template_attach1        	 = 	 "acc_pointer_IR"; // ir laser
 lt_template_attach2        	 = 	 "acc_flashlight"; // flashlight
 lt_template_attachDM         = 	 "acc_pointer_IR"; // DM
-lt_template_attachSNP        = 	 "CUP_SVD_camo_d"; // Snip
+lt_template_attachSNP        = 	 "CUP_optic_PSO_3"; // Snip
 
 lt_template_silencer1      	 = 	 "muzzle_snds_B_arid_F"; // rifles
 lt_template_silencerSMG      	 = 	 "muzzle_snds_B_arid_F"; // MG
