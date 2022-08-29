@@ -7,6 +7,7 @@ lt_template_attach2        	 = 	 "CUP_acc_Flashlight"; // flashlight
 lt_template_silencer1      	 = 	 "CUP_muzzle_snds_L85"; // rifles
 lt_template_silencerSMG      	 = 	 ""; // MG
 lt_template_scope1         	 = 	 "CUP_optic_HoloBlack"; // normal scope
+lt_template_scopeMG		       =	 "CUP_optic_HoloBlack";
 lt_template_scopeSNP         = 	 "CUP_bipod_Harris_1A2_L"; // Sniper Scope
 lt_template_scopeDM          = 	 ""; // DM Scope
 lt_template_bipod1         	 = 	 ""; // MG
