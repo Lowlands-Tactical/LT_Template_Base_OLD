@@ -133,7 +133,7 @@ class LT_Camo_combo: Title
                                 class LT_CSAT_VIPER
                                 {
                                   text = "CSAT (VIPER)";
-                                  data = ["U_O_V_Soldier_Viper_F","CUP_V_PMC_IOTV_Coyote_Patrol","V_CarrierRigKBT_01_EAF_F","H_HelmetO_ViperSP_ghex_F","tf_anprc155","B_ViperHarness_ghex_JTAC_F" ];
+                                  data = ["U_O_V_Soldier_Viper_F","CUP_V_PMC_IOTV_Coyote_Patrol","V_CarrierRigKBT_01_EAF_F","H_HelmetO_ViperSP_hex_F","B_RadioBag_01_hex_F","B_ViperHarness_ghex_JTAC_F" ];
                                 };
                                 class LT_CSAT_TANOA
                                 {
@@ -195,21 +195,15 @@ class LT_Camo_combo: Title
                                         text = "[GUR] Desert";
                                         data = [["CUP_O_TKI_Khet_Partug_02", "CUP_O_TKI_Khet_Partug_03", "CUP_O_TKI_Khet_Partug_05", "CUP_O_TKI_Khet_Partug_06", "CUP_O_TKI_Khet_Partug_08", "CUP_O_TKI_Khet_Partug_07"],["CUP_V_OI_TKI_Jacket4_02", "CUP_V_OI_TKI_Jacket2_03", "CUP_V_OI_TKI_Jacket4_03", "CUP_V_OI_TKI_Jacket4_06"],["B_Kitbag_sgg", "CUP_B_AlicePack_Bedroll"],["CUP_H_TKI_Lungee_01", "CUP_H_TKI_Lungee_02", "CUP_H_TKI_Lungee_03","CUP_H_TKI_Lungee_04", "CUP_H_TKI_Lungee_05", "B_Messenger_Coyote_F", "CUP_B_CivPack_WDL", "B_Respawn_Sleeping_bag_brown_F", "CUP_B_AlicePack_khaki", "CUP_B_AlicePack_Bedroll"],["tf_rt1523g_RHS", "tf_rt1523g"],["B_Kitbag_sgg", "CUP_B_AlicePack_Bedroll"]];
                                 };
-                                class LT_GUR_Jungle
-                                {
-                                        text = "[GUR] Jungle";
-                                        data = [["U_I_C_Soldier_Bandit_3_F", "U_I_C_Soldier_Bandit_1_F", "U_I_C_Soldier_Bandit_5_F"],["V_Chestrig_blk", "V_BandollierB_rgr", "V_TacVest_oli", "V_TacChestrig_grn_F"],["B_FieldPack_cb_Bandit_3_F", "B_FieldPack_blk_Bandit_8_F"],["B_FieldPack_cb_Bandit_3_F", "B_FieldPack_blk_Bandit_8_F"],["H_Bandanna_khk_hs", "H_Watchcap_blk", "H_Cap_marshal"],["tf_rt1523g_bwmod", "tf_rt1523g_green"], ];
-                                };
                                 class LT_GER_Flecktarn
                                 {
                                         text = "[BW] Flecktarn";
-                                        data = [["CUP_U_B_GER_Flecktarn_2","CUP_U_B_GER_Flecktarn_1"],["CUP_V_B_GER_Vest_2","CUP_V_B_GER_Vest_1","CUP_V_B_GER_Carrier_Vest_2","CUP_V_B_GER_Carrier_Vest","CUP_V_B_GER_Carrier_Vest_3"],"CUP_B_GER_Pack_Flecktarn",["CUP_H_USMC_Goggles_HelmetWDL","CUP_H_USMC_Headset_GoggleW_HelmetWDL","CUP_H_USMC_Headset_HelmetWDL","CUP_H_USMC_HelmetWDL"],"tf_rt1523g_big_bwmod","CUP_B_GER_Pack_Flecktarn" ];
+                                        data = [["CUP_U_B_GER_Flecktarn_2","CUP_U_B_GER_Flecktarn_1"],["CUP_V_B_GER_Vest_2","CUP_V_B_GER_Vest_1","CUP_V_B_GER_Carrier_Vest_2","CUP_V_B_GER_Carrier_Vest","CUP_V_B_GER_Carrier_Vest_3"],"CUP_B_GER_Pack_Flecktarn",["CUP_H_Ger_M92_Cover","CUP_H_Ger_M92_Cover_GG_CB","CUP_H_Ger_M92_Cover_GG_CF","CUP_H_Ger_M92_Cover_GG"],"tf_rt1523g_big_bwmod","CUP_B_GER_Pack_Flecktarn" ];
                                 };
                                 class LT_GER_Tropentarn
                                 {
                                         text = "[BW] Tropentarn";
-                                        data = [["CUP_U_B_GER_Tropentarn_2","CUP_U_B_GER_Tropentarn_1","CUP_U_B_GER_Tropentarn_1"],["CUP_V_I_RACS_Carrier_Vest_2","CUP_V_I_RACS_Carrier_Vest","CUP_V_I_RACS_Carrier_Vest_3"], "CUP_B_GER_Pack_Tropentarn",["CUP_H_RACS_Helmet_Headset_DES","CUP_H_RACS_Helmet_Headset_DES","CUP_H_RACS_Helmet_Headset_DES"],"tf_rt1523g_big_bwmod_tropen","CUP_B_GER_Pack_Tropentarn" ];
-                                };
+                                        data = [["CUP_U_B_GER_Tropentarn_2","CUP_U_B_GER_Tropentarn_1","CUP_U_B_GER_Tropentarn_1"],["CUP_V_I_RACS_Carrier_Vest_2","CUP_V_I_RACS_Carrier_Vest","CUP_V_I_RACS_Carrier_Vest_3"], "CUP_B_GER_Pack_Tropentarn",["CUP_H_Ger_M92_Cover_Trop","CUP_H_Ger_M92_Cover_Trop_GG","CUP_H_Ger_M92_Cover_Trop_GG_CF","CUP_H_Ger_M92_Cover_Trop_GG_CB"],"tf_rt1523g_big_bwmod_tropen","CUP_B_GER_Pack_Tropentarn" ];                                };
                                 class LT_UK_Forest
                                 {
                                         text = "[UK] Woodland";
@@ -253,7 +247,7 @@ class LT_Camo_combo: Title
                                 class LT_ChDKZ_Woodland
                                 {
                                         text = "[ChDKZ] Woodland";
-                                        data = [["CUP_U_O_CHDKZ_Kam_01","CUP_U_O_CHDKZ_Kam_02","CUP_U_O_CHDKZ_Kam_03","CUP_U_O_CHDKZ_Kam_04","CUP_U_O_CHDKZ_Kam_05","CUP_U_O_CHDKZ_Kam_06","CUP_U_O_CHDKZ_Kam_07","CUP_U_O_CHDKZ_Kam_08"],"CUP_V_O_Ins_Carrier_Rig",["CUP_B_INS_AlicePack_Ammo","B_AssaultPack_khk","B_FieldPack_oli","CUP_B_CivPack_WDL"],["CUP_H_ChDKZ_Beanie","CUP_H_ChDKZ_Beret","CUP_H_ChDKZ_Cap"],"tf_rt1523g_green",["CUP_B_INS_AlicePack_Ammo","B_AssaultPack_khk","B_FieldPack_oli","CUP_B_CivPack_WDL"]];
+                                        data = [["CUP_U_O_CHDKZ_Kam_01","CUP_U_O_CHDKZ_Kam_02","CUP_U_O_CHDKZ_Kam_03","CUP_U_O_CHDKZ_Kam_04","CUP_U_O_CHDKZ_Kam_05","CUP_U_O_CHDKZ_Kam_06","CUP_U_O_CHDKZ_Kam_07","CUP_U_O_CHDKZ_Kam_08"],"CUP_V_O_Ins_Carrier_Rig",["CUP_B_INS_AlicePack_Ammo","B_AssaultPack_khk","B_FieldPack_oli","CUP_B_CivPack_WDL"],["CUP_H_ChDKZ_Beanie","CUP_H_ChDKZ_Beret","CUP_H_ChDKZ_Cap"],"NLD_Radiobag_WDL",["CUP_B_INS_AlicePack_Ammo","B_AssaultPack_khk","B_FieldPack_oli","CUP_B_CivPack_WDL"]];
                                 };
                                 class LT_RUS_Spetsnaz
                                 {
@@ -293,17 +287,17 @@ class LT_Camo_combo: Title
                                 class LT_SLA_Partisans
                                 {
                                         text = "[SLA] Partisans";
-                                        data = [["CUP_U_O_Partisan_VSR_Mixed2", "CUP_U_O_Partisan_TTsKO"],["CUP_V_O_SLA_Carrier_Belt02", "CUP_V_O_SLA_Carrier_Belt"],["CUP_B_AlicePack_Khaki", "CUP_B_AlicePack_Bedroll"],["CUP_H_SLA_BeanieGreen", "CUP_H_SLA_BeretRed"],["tf_rt1523g_big_bwmod", "tf_rt1523g_big_rhs"],["CUP_B_AlicePack_Khaki", "CUP_B_AlicePack_Bedroll"]];
+                                        data = [["CUP_U_O_Partisan_VSR_Mixed2", "CUP_U_O_Partisan_TTsKO"],["CUP_V_O_SLA_Carrier_Belt02", "CUP_V_O_SLA_Carrier_Belt"],["CUP_B_AlicePack_Khaki", "CUP_B_AlicePack_Bedroll"],["H_Watchcap_camo", "CUP_H_SLA_BeretRed"],["B_RadioBag_01_tropic_F", "B_RadioBag_01_eaf_F"],["CUP_B_AlicePack_OD", "CUP_B_AlicePack_Bedroll"]];
                                 };
                                 class LT_SLA_Urban
                                 {
                                         text = "[SLA] Urban";
-                                        data = ["CUP_U_O_SLA_Urban","CUP_V_O_SLA_Flak_Vest01",["CUP_B_AlicePack_Khaki", "CUP_B_AlicePack_Bedroll"],"CUP_H_SLA_Helmet",["tf_rt1523g_fabric", "tf_rt1523g_big_bwmod_tropen"],["CUP_B_AlicePack_Khaki", "CUP_B_AlicePack_Bedroll"]];
+                                        data = ["CUP_U_O_SLA_Urban","CUP_V_O_SLA_Flak_Vest01",["CUP_B_AlicePack_Khaki", "CUP_B_AlicePack_Bedroll"],"CUP_H_SLA_Helmet",["tf_rt1523g_fabric", "tf_rt1523g_black"],["CUP_B_AlicePack_Khaki", "CUP_B_AlicePack_Bedroll"]];
                                 };
                                 class LT_TKA_Army
                                 {
                                         text = "[TKA] Army";
-                                        data = ["CUP_U_O_TK_Green","CUP_V_O_TK_Vest_1","CUP_U_O_TK_Green","CUP_H_TK_Helmet","tf_rt1523g_big_rhs","CUP_U_O_TK_Green" ];
+                                        data = ["CUP_U_O_TK_Green","CUP_V_O_TK_Vest_1","CUP_U_O_TK_Green","CUP_H_TK_Helmet","tf_rt1523g_big_bwmod","CUP_U_O_TK_Green" ];
                                 };
                                 class LT_TKI_OPF_Desert
                                 {
@@ -313,7 +307,7 @@ class LT_Camo_combo: Title
                                 class LT_95TH_Airmobile_Brigade
                                 {
                                         text = "[95th] Airmobile Brigade Ukraine";
-                                        data = ["nldo_ua_uaf_95_Camo","nldo_ua_uaf_95_Vest","nldo_ua_uaf_95_bp_empty","nldo_ua_uaf_95_Helmet","tf_rt1523g_big_bwmod","nldo_ua_uaf_95_bp_empty" ];
+                                        data = ["nldo_ua_uaf_95_Camo","nldo_ua_uaf_95_Vest","nldo_ua_uaf_95_bp_empty","nldo_ua_uaf_95_Helmet","B_RadioBag_01_ghex_F","nldo_ua_uaf_95_bp_empty" ];
                                 };
                                 class LT_UBG_Border_Guard
                                 {
@@ -333,7 +327,7 @@ class LT_Camo_combo: Title
                                 class LT_NAPA_Units
                                 {
                                         text = "[NAPA] NAPA";
-                                        data = [["CUP_U_I_GUE_Flecktarn","CUP_U_I_GUE_Flecktarn3","CUP_U_I_GUE_Woodland1"],"CUP_V_I_Carrier_Belt",["B_TacticalPack_blk","CUP_B_HikingPack_Civ"],"H_HelmetSpecB","tf_rt1523g_sage",["B_TacticalPack_blk","CUP_B_HikingPack_Civ"]];
+                                        data = [["CUP_U_I_GUE_Flecktarn","CUP_U_I_GUE_Flecktarn3","CUP_U_I_GUE_Woodland1"],"CUP_V_I_Carrier_Belt",["B_TacticalPack_blk","CUP_B_HikingPack_Civ"],"H_HelmetSpecB","tf_rt1523g_big_bwmod",["B_TacticalPack_blk","CUP_B_HikingPack_Civ"]];
                                 };
                                 class LT_RACS_Desert
                                 {
