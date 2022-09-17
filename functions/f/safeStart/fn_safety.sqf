@@ -26,7 +26,7 @@ switch (_this select 0) do
 		};
 
 		// Make player invincible
-		player allowDamage true;
+		player allowDamage false;
 	};
 
 	//Turn safety off
