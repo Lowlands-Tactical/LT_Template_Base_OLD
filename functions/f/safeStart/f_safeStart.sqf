@@ -18,11 +18,11 @@ if (lt_param_timer > 0) then
 {
     // The server will handle the loop and notifications
     if (isServer) then {
-        [] remoteExec ["LT_fnc_safeStartLoop"];
+        [] remoteExec ["f_fnc_safeStartLoop"];
     };
 
     // Enable invincibility for players
     if (!isDedicated) then {
-        [true] remoteExec ["LT_fnc_safety",allPlayers];
+        [true] remoteExec ["f_fnc_safety",allPlayers];
     };
 }; 
