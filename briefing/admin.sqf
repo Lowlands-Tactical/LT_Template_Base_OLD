@@ -101,18 +101,19 @@ if (serverCommandAvailable "#kick" or getPlayerUID player in _staff) then
 	// SAFE START SECTION
 	
 	_briefing = _briefing + "
+
 	<font size='18'>SAFE START CONTROL</font><br/>
 	|- <execute expression=""lt_param_timer = lt_param_timer + 1; publicVariable 'lt_param_timer'; hintSilent format ['Mission timer: %1', lt_param_timer];"">Increase Safe Start timer by 1 minute</execute><br/>
-
+    
 	|- <execute expression=""lt_param_timer = lt_param_timer - 1; publicVariable 'lt_param_timer'; hintSilent format ['Mission timer: %1', lt_param_timer];"">Decrease Safe Start timer by 1 minute</execute><br/>
-
-	|- <execute expression=""lt_param_timer = 10; publicVariable 'lt_param_timer';['SafeStartmissionStarting',['Mission safety is on!']] call BIS_fnc_showNotification;[true] remoteExec ['LT_fnc_safety',allPlayers];[] remoteExec ['LT_fnc_safeStartLoop'];hintSilent 'Safe Start started!';"">Begin Safe Start timer</execute><br/>
-
-	|- <execute expression=""lt_param_timer = -1; publicVariable 'lt_param_timer';['SafeStartmissionStarting',['Mission starting now!']] call BIS_fnc_showNotification;[false] remoteExec ['LT_fnc_safety',allPlayers];hintSilent 'Safe Start ended!';"">End Safe Start timer</execute><br/>
-
-	|- <execute expression=""[true] remoteExec ['LT_fnc_safety',allPlayers];hintSilent 'Safety on!' "">Force safety on for all players</execute><br/>
-
-	|- <execute expression=""[false] remoteExec ['LT_fnc_safety',allPlayers];hintSilent 'Safety off!' "">Force safety off for all players</execute><br/><br/>
+    
+	|- <execute expression=""lt_param_timer = 10; publicVariable 'lt_param_timer';['SafeStartmissionStarting',['Mission safety is on!']] call BIS_fnc_showNotification;[true] remoteExec ['f_fnc_safety',allPlayers];[] remoteExec ['f_fnc_safeStartLoop'];hintSilent 'Safe Start started!';"">Begin Safe Start timer</execute><br/>
+    
+	|- <execute expression=""lt_param_timer = -1; publicVariable 'lt_param_timer';['SafeStartmissionStarting',['Mission starting now!']] call BIS_fnc_showNotification;[false] remoteExec ['f_fnc_safety',allPlayers];hintSilent 'Safe Start ended!';"">End Safe Start timer</execute><br/>
+    
+	|- <execute expression=""[true] remoteExec ['f_fnc_safety',allPlayers];hintSilent 'Safety on!' "">Force safety on for all players</execute><br/>
+    
+	|- <execute expression=""[false] remoteExec ['f_fnc_safety',allPlayers];hintSilent 'Safety off!' "">Force safety off for all players</execute><br/><br/>
 	"; 
 
 	// ====================================================================================
