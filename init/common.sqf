@@ -11,7 +11,7 @@ if (hasInterface) then {
 	
 	// Give pretty colour, or white when non-exist
 	// this setVariable ["lt_unit_color", "RED", true];
-	player assignTeam (player getVariable ["lt_unit_color","MAIN"]);
+	// player assignTeam (player getVariable ["lt_unit_color","MAIN"]);
 };
 
 // Disable saving ever.
