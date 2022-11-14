@@ -1,5 +1,5 @@
-// filename 	"NLD_SPESHAL.sqf"
-// loadout name "NLD Speshal"
+// filename 	"NLD_HK416_CQB.sqf"
+// loadout name "NLD HK416 CQB"
 
 // Attachments Primary weapon
 lt_template_attach1        	 = 	 "cup_acc_llm01_l"; // ir laser
