@@ -59,10 +59,15 @@ class LT_Gear_combo: Title
 					text = "NLD DSI";
 					data = "\lt_template_base\gear\Loadouts\NLD_DSI.sqf";
 				};
-				class LT_Gear_NLD_SPESHAL
+				class LT_Gear_NLD_HK416
 				{
-					text = "NLD Specials";
-					data = "\lt_template_base\gear\Loadouts\NLD_SPESHAL.sqf";
+					text = "NLD HK416";
+					data = "\lt_template_base\gear\Loadouts\NLD_HK416.sqf";
+				};
+				class LT_Gear_NLD_HK416_CQB
+				{
+					text = "NLD HK416 CQB";
+					data = "\lt_template_base\gear\Loadouts\NLD_HK416_CQB.sqf";
 				};
 				class LT_Gear_USM16A2
 				{
