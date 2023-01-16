@@ -30,7 +30,7 @@ lt_template_smgmag    = "CUP_30Rnd_9x19_MP5";
 lt_template_smgmag_tr = "30Rnd_9x21_Mag_SMG_02_Tracer_Green";
 
 // Commander, Squadleader, Fireteam leader, Spotter, Grenadier
-lt_template_glrifle = "CUP_arifle_HK416_AG36";
+lt_template_glrifle = "CUP_arifle_HK416_M203_Black";
 lt_template_glriflemag    = "CUP_30Rnd_556x45_PMAG_QP";
 lt_template_glriflemag_tr = "CUP_30Rnd_556x45_PMAG_QP_Tracer_Green";
 lt_template_glmag         = "1Rnd_HE_Grenade_shell";
