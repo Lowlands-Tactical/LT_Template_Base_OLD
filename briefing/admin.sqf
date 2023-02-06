@@ -1,7 +1,7 @@
 private ["_staff"];
 
-// Flendurs, Tybalty, Lonesentinel , Wishmaster86
-_staff = ["76561197972110272","76561198042684200","76561198028914656","76561197974557659"];
+// Tybalty, Lonesentinel , Wishmaster86, R.Hoods
+_staff = ["76561198042684200","76561198028914656","76561197974557659","76561198014060493"];
 
 // if (serverCommandAvailable "#kick" or getPlayerUID player == "76561197972132272" or getPlayerUID player == "76561198023151588" or getPlayerUID player == "76561197972110272") then
 if (serverCommandAvailable "#kick" or getPlayerUID player in _staff) then
